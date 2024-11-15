@@ -1,0 +1,230 @@
+[
+    {
+        "activity_name": "Enter prescription details",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive prescription from customer",
+                "classification": "VA",
+                "reasoning": "Initiates the process and directly contributes to fulfilling customer need"
+            },
+            {
+                "step_number": 2,
+                "description": "Log into pharmacy system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to prescription filling"
+            },
+            {
+                "step_number": 3,
+                "description": "Input patient information",
+                "classification": "VA",
+                "reasoning": "Essential for accurate prescription filling and patient safety"
+            },
+            {
+                "step_number": 4,
+                "description": "Enter medication details (name, dosage, quantity)",
+                "classification": "VA",
+                "reasoning": "Critical for accurate prescription filling"
+            },
+            {
+                "step_number": 5,
+                "description": "Input prescriber information",
+                "classification": "VA",
+                "reasoning": "Important for verification and potential follow-up"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform DUR (Drug Utilization Review)",
+        "performer": "Pharmacy system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check for drug-drug interactions",
+                "classification": "VA",
+                "reasoning": "Crucial for patient safety and effective treatment"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify appropriate dosage",
+                "classification": "VA",
+                "reasoning": "Essential for patient safety and treatment efficacy"
+            },
+            {
+                "step_number": 3,
+                "description": "Check for allergies",
+                "classification": "VA",
+                "reasoning": "Critical for patient safety"
+            },
+            {
+                "step_number": 4,
+                "description": "Identify potential adverse effects",
+                "classification": "VA",
+                "reasoning": "Important for patient safety and informed decision-making"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform thorough check",
+        "performer": "Pharmacist",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review prescription details",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy and appropriateness of prescription"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate DUR alarms",
+                "classification": "VA",
+                "reasoning": "Critical for addressing potential safety issues"
+            },
+            {
+                "step_number": 3,
+                "description": "Consult with prescriber if necessary",
+                "classification": "VA",
+                "reasoning": "Resolves potential issues and ensures appropriate treatment"
+            },
+            {
+                "step_number": 4,
+                "description": "Make professional judgment on proceeding",
+                "classification": "VA",
+                "reasoning": "Applies expertise to ensure safe and effective treatment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check insurance",
+        "performer": "Pharmacy system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify patient's insurance information",
+                "classification": "BVA",
+                "reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit claim to insurance provider",
+                "classification": "BVA",
+                "reasoning": "Required for payment process but doesn't change the prescription"
+            },
+            {
+                "step_number": 3,
+                "description": "Process insurance response",
+                "classification": "BVA",
+                "reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "step_number": 4,
+                "description": "Calculate patient's co-pay (if applicable)",
+                "classification": "BVA",
+                "reasoning": "Important for billing but doesn't change the prescription itself"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect drugs from shelves",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate prescribed medication in inventory",
+                "classification": "VA",
+                "reasoning": "Direct step in fulfilling the prescription"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify medication name and strength",
+                "classification": "VA",
+                "reasoning": "Crucial for ensuring correct medication is dispensed"
+            },
+            {
+                "step_number": 3,
+                "description": "Check expiration date",
+                "classification": "VA",
+                "reasoning": "Essential for patient safety and medication efficacy"
+            },
+            {
+                "step_number": 4,
+                "description": "Retrieve correct quantity",
+                "classification": "VA",
+                "reasoning": "Directly fulfills prescription requirements"
+            },
+            {
+                "step_number": 5,
+                "description": "Label medication container",
+                "classification": "VA",
+                "reasoning": "Crucial for patient safety and correct usage"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check quality",
+        "performer": "Pharmacist",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify correct medication",
+                "classification": "VA",
+                "reasoning": "Critical for patient safety and correct treatment"
+            },
+            {
+                "step_number": 2,
+                "description": "Check medication appearance",
+                "classification": "VA",
+                "reasoning": "Ensures medication quality and safety"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm correct dosage and quantity",
+                "classification": "VA",
+                "reasoning": "Essential for accurate prescription fulfillment"
+            },
+            {
+                "step_number": 4,
+                "description": "Review label for accuracy",
+                "classification": "VA",
+                "reasoning": "Crucial for patient safety and correct usage"
+            },
+            {
+                "step_number": 5,
+                "description": "Ensure proper packaging",
+                "classification": "VA",
+                "reasoning": "Important for medication integrity and patient safety"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect payment",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Inform patient of total cost",
+                "classification": "BVA",
+                "reasoning": "Necessary for transaction but doesn't affect medication"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payment (cash, card, or insurance co-pay)",
+                "classification": "BVA",
+                "reasoning": "Required for business operation but doesn't change prescription"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue receipt",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't affect medication"
+            },
+            {
+                "step_number": 4,
+                "description": "Update system with payment information",
+                "classification": "BVA",
+                "reasoning": "Necessary for business records but doesn't change prescription"
+            }
+        ]
+    }
+]

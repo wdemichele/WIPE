@@ -1,0 +1,82 @@
+{
+    "activities": [
+      {
+        "step": "Review application and budget forms",
+        "performer": "Course organizer",
+        "classification": "BVA",
+        "reasoning": "Essential for planning but doesn't directly add value to participants"
+      },
+      {
+        "step": "Room booking",
+        "performer": "Course organizer",
+        "classification": "VA",
+        "reasoning": "Directly contributes to the ability to deliver the course"
+      },
+      {
+        "step": "Set up account",
+        "performer": "Course organizer",
+        "classification": "BVA",
+        "reasoning": "Necessary for process but doesn't directly add value to participants"
+      },
+      {
+        "step": "Set up course website",
+        "performer": "Web services",
+        "classification": "VA",
+        "reasoning": "Provides valuable information and resources to participants"
+      },
+      {
+        "step": "Registration website setup",
+        "performer": "Finance department",
+        "classification": "BVA",
+        "reasoning": "Necessary for enrollment but doesn't directly add educational value"
+      },
+      {
+        "step": "Promote course",
+        "performer": "Marketing department",
+        "classification": "BVA",
+        "reasoning": "Important for attracting participants but doesn't directly add educational value"
+      },
+      {
+        "step": "Registration website closed",
+        "performer": "System",
+        "classification": "NVA",
+        "reasoning": "Administrative step that doesn't add value to participants"
+      },
+      {
+        "step": "Handle payments",
+        "performer": "Finance department",
+        "classification": "BVA",
+        "reasoning": "Necessary for business but doesn't directly add educational value"
+      },
+      {
+        "step": "Notify registered participants of cancellation",
+        "performer": "Course organizer",
+        "classification": "NVA",
+        "reasoning": "Indicates a failure in the process, doesn't add value"
+      },
+      {
+        "step": "Print name badges",
+        "performer": "Administrative staff",
+        "classification": "BVA",
+        "reasoning": "Enhances organization but doesn't directly contribute to learning"
+      },
+      {
+        "step": "Set up Blackboard website for students",
+        "performer": "IT department",
+        "classification": "VA",
+        "reasoning": "Directly contributes to the learning experience"
+      },
+      {
+        "step": "Catering arranging",
+        "performer": "Administrative staff",
+        "classification": "BVA",
+        "reasoning": "Enhances participant experience but not directly related to learning"
+      },
+      {
+        "step": "Course delivery",
+        "performer": "Instructor",
+        "classification": "VA",
+        "reasoning": "Core value-adding activity, directly fulfills the purpose of the process"
+      }
+    ]
+  }

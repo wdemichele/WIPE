@@ -1,0 +1,101 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Special order received",
+            "substeps": []
+        },
+        {
+            "activity_name": "Register order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Check order details",
+            "substeps": []
+        },
+        {
+            "activity_name": "Order checked",
+            "substeps": []
+        },
+        {
+            "activity_name": "Manufacture custom product",
+            "substeps": []
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Product manufactured",
+            "substeps": []
+        },
+        {
+            "activity_name": "Plan shipment",
+            "substeps": []
+        },
+        {
+            "activity_name": "Check customer type and shipment status",
+            "substeps": []
+        },
+        {
+            "activity_name": "Customer type?",
+            "substeps": []
+        },
+        {
+            "activity_name": "Ship custom product",
+            "substeps": []
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": []
+        },
+        {
+            "activity_name": "Charge customer account",
+            "substeps": []
+        },
+        {
+            "activity_name": "Update customer",
+            "substeps": []
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Order fulfilled",
+            "substeps": []
+        },
+        {
+            "activity_name": "Change request received",
+            "substeps": []
+        },
+        {
+            "activity_name": "Handle change request",
+            "substeps": []
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                12,
+                100.0
+            ]
+        },
+        "average_confidence": 0.0,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 0,
+        "response_coverage": 50.0,
+        "average_sequence_alignment": 0.0,
+        "average_overall_similarity_score": 0.0
+    }
+}

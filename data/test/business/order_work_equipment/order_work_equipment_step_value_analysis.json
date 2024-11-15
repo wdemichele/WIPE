@@ -1,0 +1,278 @@
+[
+    {
+        "activity_name": "Seller displays items on the webpage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare item descriptions and shipment details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to informing buyers about the product"
+            },
+            {
+                "step_number": 2,
+                "description": "Upload information to seller's software or eBay platform",
+                "classification": "VA",
+                "reasoning": "Makes the product available for purchase"
+            },
+            {
+                "step_number": 3,
+                "description": "Ensure data is stored in eBay data stores",
+                "classification": "BVA",
+                "reasoning": "Necessary for system functionality but not directly valued by buyer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller receives buyer's order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive order notification through web or mobile application",
+                "classification": "VA",
+                "reasoning": "Initiates the fulfillment process"
+            },
+            {
+                "step_number": 2,
+                "description": "Review order details",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy of the order"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify payment status",
+                "classification": "VA",
+                "reasoning": "Confirms transaction validity"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller sends to the buyer the order purchase confirmation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate order confirmation",
+                "classification": "BVA",
+                "reasoning": "Prepares for communication but not directly valued by buyer"
+            },
+            {
+                "step_number": 2,
+                "description": "Include relevant order and shipping details",
+                "classification": "VA",
+                "reasoning": "Provides valuable information to buyer"
+            },
+            {
+                "step_number": 3,
+                "description": "Send confirmation to buyer through eBay platform",
+                "classification": "VA",
+                "reasoning": "Delivers important information to buyer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller sends the order to the shipping company",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare item for shipment",
+                "classification": "VA",
+                "reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "step_number": 2,
+                "description": "Create shipping label",
+                "classification": "BVA",
+                "reasoning": "Necessary for shipping but not directly valued by buyer"
+            },
+            {
+                "step_number": 3,
+                "description": "Hand over item to shipping company",
+                "classification": "VA",
+                "reasoning": "Progresses the order towards delivery"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer purchases the item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select item on eBay platform",
+                "classification": "VA",
+                "reasoning": "Direct action towards obtaining desired product"
+            },
+            {
+                "step_number": 2,
+                "description": "Choose payment method (credit card or PayPal)",
+                "classification": "VA",
+                "reasoning": "Facilitates transaction completion"
+            },
+            {
+                "step_number": 3,
+                "description": "Complete purchase and receive payment confirmation",
+                "classification": "VA",
+                "reasoning": "Finalizes transaction and provides assurance to buyer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer asks for reshipment of the item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact seller through eBay platform",
+                "classification": "VA",
+                "reasoning": "Initiates resolution process"
+            },
+            {
+                "step_number": 2,
+                "description": "Explain issue and request reshipment",
+                "classification": "VA",
+                "reasoning": "Communicates problem and desired solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Await seller's response and further instructions",
+                "classification": "BVA",
+                "reasoning": "Necessary step but waiting time doesn't add direct value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer asks for money reimbursement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact seller through eBay platform",
+                "classification": "VA",
+                "reasoning": "Initiates resolution process"
+            },
+            {
+                "step_number": 2,
+                "description": "Explain issue and request reimbursement",
+                "classification": "VA",
+                "reasoning": "Communicates problem and desired solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide necessary details for refund process",
+                "classification": "VA",
+                "reasoning": "Facilitates refund process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Shipping company gets item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive item from seller",
+                "classification": "VA",
+                "reasoning": "Initiates delivery process"
+            },
+            {
+                "step_number": 2,
+                "description": "Scan and enter item into shipping system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by buyer"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign to appropriate shipping route",
+                "classification": "BVA",
+                "reasoning": "Facilitates efficient delivery but not directly valued by buyer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Shipping company delivers item to the customer in proper dates",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Transport item through shipping network",
+                "classification": "VA",
+                "reasoning": "Moves item closer to buyer"
+            },
+            {
+                "step_number": 2,
+                "description": "Attempt delivery to customer",
+                "classification": "VA",
+                "reasoning": "Directly fulfills buyer's order"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain proof of delivery",
+                "classification": "BVA",
+                "reasoning": "Important for verification but not directly valued by buyer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Company does not deliver the purchase",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify reason for non-delivery",
+                "classification": "BVA",
+                "reasoning": "Necessary for problem-solving but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Update shipping status in system",
+                "classification": "VA",
+                "reasoning": "Provides important information to buyer"
+            },
+            {
+                "step_number": 3,
+                "description": "Notify seller and buyer of delivery issue",
+                "classification": "VA",
+                "reasoning": "Communicates crucial information to both parties"
+            }
+        ]
+    },
+    {
+        "activity_name": "eBay tracks the order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor order status through web/mobile applications",
+                "classification": "BVA",
+                "reasoning": "Facilitates tracking but not directly valued by buyer or seller"
+            },
+            {
+                "step_number": 2,
+                "description": "Update order status based on shipping company updates",
+                "classification": "VA",
+                "reasoning": "Provides valuable information to buyer and seller"
+            },
+            {
+                "step_number": 3,
+                "description": "Record buyer satisfaction and seller evaluation",
+                "classification": "BVA",
+                "reasoning": "Important for eBay's system but not directly valued by transaction parties"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller receives buyer's decision and reimburses money",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review buyer's reimbursement request",
+                "classification": "VA",
+                "reasoning": "Directly addresses buyer's concern"
+            },
+            {
+                "step_number": 2,
+                "description": "Process refund through eBay platform",
+                "classification": "VA",
+                "reasoning": "Fulfills buyer's request for reimbursement"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status and financial records",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by buyer"
+            }
+        ]
+    }
+]

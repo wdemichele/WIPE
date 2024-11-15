@@ -1,0 +1,140 @@
+[
+    {
+        "activity_name": "Record the data of each patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Greet the patient and explain the registration process",
+                "classification": "VA",
+                "reasoning": "Enhances patient experience and ensures cooperation"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare the registration form or system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly valued by patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Begin collecting patient information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to patient's care process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the SSN of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their Social Security Number (SSN)",
+                "classification": "BVA",
+                "reasoning": "Necessary for identification but not directly related to care"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify the SSN format for accuracy",
+                "classification": "BVA",
+                "reasoning": "Ensures data quality but not directly valued by patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Input the SSN into the registration system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by patient"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the Name of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their first name",
+                "classification": "VA",
+                "reasoning": "Essential for patient identification and personalized care"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm the spelling of the name with the patient",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy, preventing future issues in patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter the name into the registration system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by patient"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the Surname of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their surname (last name)",
+                "classification": "VA",
+                "reasoning": "Essential for patient identification and personalized care"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm the spelling of the surname with the patient",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy, preventing future issues in patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter the surname into the registration system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by patient"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print referral document",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate the referral document using the registered information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to patient's care process"
+            },
+            {
+                "step_number": 2,
+                "description": "Review the document for accuracy and completeness",
+                "classification": "VA",
+                "reasoning": "Ensures quality of care and prevents potential issues"
+            },
+            {
+                "step_number": 3,
+                "description": "Print the referral document",
+                "classification": "VA",
+                "reasoning": "Provides tangible output for patient's next steps in care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive the record in file system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare the patient's record for archiving",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by patient"
+            },
+            {
+                "step_number": 2,
+                "description": "Store the physical record in the appropriate file system",
+                "classification": "BVA",
+                "reasoning": "Ensures future accessibility but not directly valued by patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Update the database with the record's storage location",
+                "classification": "BVA",
+                "reasoning": "Facilitates future retrieval but not directly valued by patient"
+            }
+        ]
+    }
+]

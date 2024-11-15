@@ -1,0 +1,386 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Receive loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application from customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the loan application process by receiving the application from the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log application in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the loan application process by logging the application in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign application ID",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the loan application process by assigning an ID to the application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial eligibility check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for completeness",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the initial eligibility check by reviewing the application for completeness."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check applicant's age and residency status",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the initial eligibility check by checking the applicant's age and residency status."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify loan amount against eligibility criteria",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the initial eligibility check by verifying the loan amount against eligibility criteria."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make initial eligibility decision",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the initial eligibility check by making the initial eligibility decision."
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit history check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the credit history check by requesting the credit report from the credit bureau."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the credit history check by reviewing the credit score."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze payment history",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the credit history check by analyzing the payment history."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Check for bankruptcies or defaults",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the credit history check by checking for bankruptcies or defaults."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check applicant's income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review provided income documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the applicant's income sources by reviewing the provided income documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify employment status",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the applicant's income sources by verifying the employment status."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate total income",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the applicant's income sources by calculating the total income."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess income stability",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the applicant's income sources by assessing the income stability."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraisal of property to be mortgaged",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule property appraisal",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the appraisal of the property by scheduling the property appraisal."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site property inspection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the appraisal of the property by conducting an on-site property inspection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate property condition and location",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the appraisal of the property by evaluating the property condition and location."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine property market value",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the appraisal of the property by determining the property market value."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Prepare appraisal report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the appraisal of the property by preparing the appraisal report.\")classify(\"VA\", \"Assess applicant's credit risk\", \"Review credit history check results\", \"Directly contributes to assessing the credit risk of the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess applicant's credit risk",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review credit history check results",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze income sources",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the credit risk of the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the credit risk of the applicant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine overall credit risk level",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the credit risk of the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraise other collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify additional collateral",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the collateral."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess value of additional collateral",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the collateral."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify ownership of collateral",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the collateral."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Document collateral appraisal results",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the collateral."
+                }
+            ]
+        },
+        {
+            "activity_name": "Loan risk assessment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all gathered information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze loan-to-value ratio",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate overall financial profile",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine final risk assessment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Prepare risk assessment report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan."
+                }
+            ]
+        },
+        {
+            "activity_name": "Customer informed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication for ineligible application",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to informing the customer about the ineligible application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to informing the customer about the ineligible application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record communication in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to informing the customer about the ineligible application."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 36,
+        "correct_classifications": 23,
+        "accuracy": 0.6388888888888888,
+        "misclassifications": [
+            {
+                "activity": "Receive loan application",
+                "substep": "Receive application from customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the loan application process by receiving the application from the customer.",
+                "ground_truth_reasoning": "Necessary to start the process but doesn't directly assess loan eligibility"
+            },
+            {
+                "activity": "Receive loan application",
+                "substep": "Log application in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the loan application process by logging the application in the system.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly contribute to loan decision"
+            },
+            {
+                "activity": "Receive loan application",
+                "substep": "Assign application ID",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the loan application process by assigning an ID to the application.",
+                "ground_truth_reasoning": "Necessary for process management but doesn't affect loan evaluation"
+            },
+            {
+                "activity": "Initial eligibility check",
+                "substep": "Review application for completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the initial eligibility check by reviewing the application for completeness.",
+                "ground_truth_reasoning": "Ensures all necessary information is present but doesn't directly assess eligibility"
+            },
+            {
+                "activity": "Credit history check",
+                "substep": "Request credit report from credit bureau",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the credit history check by requesting the credit report from the credit bureau.",
+                "ground_truth_reasoning": "Necessary to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "activity": "Appraisal of property to be mortgaged",
+                "substep": "Schedule property appraisal",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the appraisal of the property by scheduling the property appraisal.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly assess property value"
+            },
+            {
+                "activity": "Appraisal of property to be mortgaged",
+                "substep": "Prepare appraisal report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the appraisal of the property by preparing the appraisal report.\")classify(\"VA\", \"Assess applicant's credit risk\", \"Review credit history check results\", \"Directly contributes to assessing the credit risk of the applicant.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Assess applicant's credit risk",
+                "substep": "Review credit history check results",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Directly contributes to risk assessment"
+            },
+            {
+                "activity": "Appraise other collateral",
+                "substep": "Document collateral appraisal results",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to appraising the collateral.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't add new value to assessment"
+            },
+            {
+                "activity": "Loan risk assessment",
+                "substep": "Prepare risk assessment report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to assessing the risk of the loan.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't add new value to assessment"
+            },
+            {
+                "activity": "Customer informed",
+                "substep": "Prepare communication for ineligible application",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to informing the customer about the ineligible application.",
+                "ground_truth_reasoning": "Necessary for process closure but doesn't affect decision"
+            },
+            {
+                "activity": "Customer informed",
+                "substep": "Send notification to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to informing the customer about the ineligible application.",
+                "ground_truth_reasoning": "Important for customer service but doesn't change outcome"
+            },
+            {
+                "activity": "Customer informed",
+                "substep": "Record communication in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to informing the customer about the ineligible application.",
+                "ground_truth_reasoning": "Necessary for documentation but doesn't add value to decision"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 12
+            },
+            "VA": {
+                "VA": 23,
+                "Unclassified": 1
+            }
+        }
+    }
+}

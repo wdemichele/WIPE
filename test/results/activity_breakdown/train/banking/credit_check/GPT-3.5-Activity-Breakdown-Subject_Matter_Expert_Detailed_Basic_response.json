@@ -1,0 +1,98 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all required information is provided"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve credit history data"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect income source information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Analyze credit history and income data"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make credit offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate credit offer based on assessment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send rejection notification to applicant"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                3,
+                50.0
+            ],
+            "Functional Equivalence": [
+                1,
+                16.666666666666664
+            ],
+            "No Match": [
+                1,
+                16.666666666666664
+            ],
+            "Identical Match": [
+                1,
+                16.666666666666664
+            ]
+        },
+        "average_confidence": 71.66666666666667,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "Functional Equivalence": 90.0,
+            "No Match": 0.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 85.71428571428571,
+        "response_coverage": 56.00000000000001,
+        "average_sequence_alignment": 31.94444444444444,
+        "average_overall_similarity_score": 60.5
+    }
+}

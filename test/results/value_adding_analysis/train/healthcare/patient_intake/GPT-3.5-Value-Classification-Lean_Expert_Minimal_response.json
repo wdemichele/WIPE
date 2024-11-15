@@ -1,0 +1,695 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Answer notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive phone call",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving the initial phone call from the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Greet caller",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by providing a friendly and professional greeting to the caller."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Listen to notice details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by actively listening to the details of the notice provided by the caller."
+                }
+            ]
+        },
+        {
+            "activity_name": "Record notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open notice recording system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the notice and is not directly adding value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input caller's information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by capturing the caller's information accurately."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document notice details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by documenting the details of the notice accurately."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Save notice record",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by saving the notice record for future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Store and print notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Save notice in digital system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to store the notice digitally and is not directly adding value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print physical copy of notice",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to have a physical copy of the notice and is not directly adding value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "File printed notice",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to organize and store the printed notice and is not directly adding value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create patient file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open patient management system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to create a new patient file and is not directly adding value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input new patient details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by capturing the new patient's details accurately."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign unique patient ID",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by assigning a unique patient ID for identification purposes."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Save new patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by saving the new patient file for future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Close case",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review case details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the details of the case."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all necessary information is recorded",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring that all necessary information related to the case is accurately recorded."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Mark case as closed in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by marking the case as closed in the system for proper closure and documentation.\")classify(\"VA\", \"Assign intakers\", \"Review available intakers\", \"This step directly contributes to the process by reviewing the available intakers."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assign intakers",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available intakers",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Match patient needs with intaker skills",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by matching the patient needs with the intaker skills."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign first intaker",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by assigning the first intaker."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assign second intaker",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by assigning the second intaker."
+                }
+            ]
+        },
+        {
+            "activity_name": "Store assignment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open assignment tracking system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to store the assignment information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record intaker assignments",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the intaker assignments."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Link assignments to patient file",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to link the assignments to the patient file."
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand out cards",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare assignment cards",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by preparing the assignment cards."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Distribute cards to assigned intakers",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by distributing the cards to the assigned intakers."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm receipt of cards",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by confirming the receipt of the cards."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ask for medical file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify appropriate medical provider",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by identifying the appropriate medical provider."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare medical file request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by preparing the medical file request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send request to medical provider",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by sending the request to the medical provider."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Log request in patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by logging the request in the patient file."
+                }
+            ]
+        },
+        {
+            "activity_name": "Update patient file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive medical file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by receiving the medical file."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review medical file contents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by reviewing the medical file contents."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add relevant information to patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by adding relevant information to the patient file."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Save updated patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by saving the updated patient file.\")classify(\"BVA\", \"Plan meeting first intaker\", \"Check first intaker's availability\", \"Checking availability is necessary for scheduling the meeting."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan meeting first intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check first intaker's availability",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Propose meeting times",
+                    "classification": "BVA",
+                    "reasoning": "Proposing meeting times is necessary for scheduling the meeting."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm meeting time",
+                    "classification": "BVA",
+                    "reasoning": "Confirming the meeting time is necessary for scheduling the meeting."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule meeting in system",
+                    "classification": "BVA",
+                    "reasoning": "Scheduling the meeting in the system is necessary for tracking and coordination."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan meeting second intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check second intaker's availability",
+                    "classification": "BVA",
+                    "reasoning": "Checking availability is necessary for scheduling the meeting."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Propose meeting times",
+                    "classification": "BVA",
+                    "reasoning": "Proposing meeting times is necessary for scheduling the meeting."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm meeting time",
+                    "classification": "BVA",
+                    "reasoning": "Confirming the meeting time is necessary for scheduling the meeting."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule meeting in system",
+                    "classification": "BVA",
+                    "reasoning": "Scheduling the meeting in the system is necessary for tracking and coordination."
+                }
+            ]
+        },
+        {
+            "activity_name": "Meet with first intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare for meeting",
+                    "classification": "VA",
+                    "reasoning": "Preparing for the meeting directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct intake interview",
+                    "classification": "VA",
+                    "reasoning": "Conducting the intake interview directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record key information",
+                    "classification": "VA",
+                    "reasoning": "Recording key information directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Discuss next steps with patient",
+                    "classification": "VA",
+                    "reasoning": "Discussing next steps with the patient directly contributes to meeting the patient's needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete file with 1st information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review notes from first intake meeting",
+                    "classification": "VA",
+                    "reasoning": "Reviewing notes from the first intake meeting directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Organize information",
+                    "classification": "VA",
+                    "reasoning": "Organizing information directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update patient file with new information",
+                    "classification": "VA",
+                    "reasoning": "Updating the patient file with new information directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Save updated file",
+                    "classification": "VA",
+                    "reasoning": "Saving the updated file directly contributes to meeting the patient's needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Meet with second intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review first intake information",
+                    "classification": "VA",
+                    "reasoning": "Reviewing the first intake information directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct second intake interview",
+                    "classification": "VA",
+                    "reasoning": "Conducting the second intake interview directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record additional information",
+                    "classification": "VA",
+                    "reasoning": "Recording additional information directly contributes to meeting the patient's needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Discuss treatment possibilities with patient",
+                    "classification": "VA",
+                    "reasoning": "Discussing treatment possibilities with the patient directly contributes to meeting the patient's needs.\")classify(\"VA\", \"Type out conversation\", \"Review notes from second intake meeting\", \"This step directly contributes to the process by reviewing important information from the second intake meeting."
+                }
+            ]
+        },
+        {
+            "activity_name": "Type out conversation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review notes from second intake meeting",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transcribe key points of conversation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by transcribing the key points of the conversation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Organize transcribed information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by organizing the transcribed information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete file with 2nd information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review transcribed conversation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by reviewing the transcribed conversation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update patient file with new information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by updating the patient file with new information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Cross-reference with first intake information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by cross-referencing the new information with the first intake information."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Save completed patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by saving the completed patient file."
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine treatment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complete patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by reviewing the complete patient file."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult with intakers if necessary",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by consulting with intakers if necessary."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess treatment options",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by assessing the treatment options."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Select appropriate treatment plan",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by selecting the appropriate treatment plan."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Document treatment decision in patient file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by documenting the treatment decision in the patient file."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 67,
+        "correct_classifications": 46,
+        "accuracy": 0.6865671641791045,
+        "misclassifications": [
+            {
+                "activity": "Answer notice",
+                "substep": "Receive phone call",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by receiving the initial phone call from the customer.",
+                "ground_truth_reasoning": "Necessary for initiating the process but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Answer notice",
+                "substep": "Greet caller",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by providing a friendly and professional greeting to the caller.",
+                "ground_truth_reasoning": "Important for customer service but doesn't directly contribute to patient care"
+            },
+            {
+                "activity": "Record notice",
+                "substep": "Save notice record",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by saving the notice record for future reference.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Store and print notice",
+                "substep": "Print physical copy of notice",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to have a physical copy of the notice and is not directly adding value for the customer.",
+                "ground_truth_reasoning": "May be unnecessary if digital records are sufficient"
+            },
+            {
+                "activity": "Store and print notice",
+                "substep": "File printed notice",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to organize and store the printed notice and is not directly adding value for the customer.",
+                "ground_truth_reasoning": "May be redundant if digital records are maintained"
+            },
+            {
+                "activity": "Create patient file",
+                "substep": "Assign unique patient ID",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by assigning a unique patient ID for identification purposes.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Create patient file",
+                "substep": "Save new patient file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by saving the new patient file for future reference.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Close case",
+                "substep": "Mark case as closed in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by marking the case as closed in the system for proper closure and documentation.\")classify(\"VA\", \"Assign intakers\", \"Review available intakers\", \"This step directly contributes to the process by reviewing the available intakers.",
+                "ground_truth_reasoning": "Important for workflow management but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Hand out cards",
+                "substep": "Prepare assignment cards",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to the process by preparing the assignment cards.",
+                "ground_truth_reasoning": "May be unnecessary if digital assignment system is in place"
+            },
+            {
+                "activity": "Hand out cards",
+                "substep": "Distribute cards to assigned intakers",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to the process by distributing the cards to the assigned intakers.",
+                "ground_truth_reasoning": "May be redundant if assignments are digitally accessible"
+            },
+            {
+                "activity": "Hand out cards",
+                "substep": "Confirm receipt of cards",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to the process by confirming the receipt of the cards.",
+                "ground_truth_reasoning": "May be unnecessary if digital confirmation system exists"
+            },
+            {
+                "activity": "Ask for medical file",
+                "substep": "Prepare medical file request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by preparing the medical file request.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Ask for medical file",
+                "substep": "Send request to medical provider",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by sending the request to the medical provider.",
+                "ground_truth_reasoning": "Important for obtaining information but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Ask for medical file",
+                "substep": "Log request in patient file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by logging the request in the patient file.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Update patient file",
+                "substep": "Receive medical file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by receiving the medical file.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Update patient file",
+                "substep": "Save updated patient file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by saving the updated patient file.\")classify(\"BVA\", \"Plan meeting first intaker\", \"Check first intaker's availability\", \"Checking availability is necessary for scheduling the meeting.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Meet with first intaker",
+                "substep": "Prepare for meeting",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Preparing for the meeting directly contributes to meeting the patient's needs.",
+                "ground_truth_reasoning": "Improves meeting efficiency but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Complete file with 1st information",
+                "substep": "Organize information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Organizing information directly contributes to meeting the patient's needs.",
+                "ground_truth_reasoning": "Improves accessibility of information but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Complete file with 1st information",
+                "substep": "Save updated file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Saving the updated file directly contributes to meeting the patient's needs.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Type out conversation",
+                "substep": "Organize transcribed information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by organizing the transcribed information.",
+                "ground_truth_reasoning": "Improves accessibility of information but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Complete file with 2nd information",
+                "substep": "Save completed patient file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by saving the completed patient file.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 31
+            },
+            "BVA": {
+                "VA": 16,
+                "BVA": 15
+            },
+            "NVA": {
+                "BVA": 2,
+                "VA": 3
+            }
+        }
+    }
+}

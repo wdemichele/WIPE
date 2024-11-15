@@ -1,0 +1,494 @@
+[
+    {
+        "activity_name": "Answer notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive phone call",
+                "classification": "BVA",
+                "reasoning": "Necessary for initiating the process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Greet caller",
+                "classification": "BVA",
+                "reasoning": "Important for customer service but doesn't directly contribute to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Listen to notice details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding patient needs and initiating care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open notice recording system",
+                "classification": "BVA",
+                "reasoning": "Necessary for documentation but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Input caller's information",
+                "classification": "VA",
+                "reasoning": "Essential for patient identification and future care"
+            },
+            {
+                "step_number": 3,
+                "description": "Document notice details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding patient needs and initiating care"
+            },
+            {
+                "step_number": 4,
+                "description": "Save notice record",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Store and print notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Save notice in digital system",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Print physical copy of notice",
+                "classification": "NVA",
+                "reasoning": "May be unnecessary if digital records are sufficient"
+            },
+            {
+                "step_number": 3,
+                "description": "File printed notice",
+                "classification": "NVA",
+                "reasoning": "May be redundant if digital records are maintained"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create patient file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open patient management system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Input new patient details",
+                "classification": "VA",
+                "reasoning": "Essential for patient identification and future care"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign unique patient ID",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Save new patient file",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close case",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review case details",
+                "classification": "VA",
+                "reasoning": "Ensures all necessary information has been captured"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure all necessary information is recorded",
+                "classification": "VA",
+                "reasoning": "Critical for comprehensive patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Mark case as closed in system",
+                "classification": "BVA",
+                "reasoning": "Important for workflow management but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assign intakers",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review available intakers",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Match patient needs with intaker skills",
+                "classification": "VA",
+                "reasoning": "Directly contributes to quality of patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign first intaker",
+                "classification": "VA",
+                "reasoning": "Essential for initiating patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Assign second intaker",
+                "classification": "VA",
+                "reasoning": "Contributes to comprehensive patient assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Store assignment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open assignment tracking system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Record intaker assignments",
+                "classification": "BVA",
+                "reasoning": "Important for workflow management but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Link assignments to patient file",
+                "classification": "BVA",
+                "reasoning": "Ensures continuity of care but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Hand out cards",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare assignment cards",
+                "classification": "NVA",
+                "reasoning": "May be unnecessary if digital assignment system is in place"
+            },
+            {
+                "step_number": 2,
+                "description": "Distribute cards to assigned intakers",
+                "classification": "NVA",
+                "reasoning": "May be redundant if assignments are digitally accessible"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm receipt of cards",
+                "classification": "NVA",
+                "reasoning": "May be unnecessary if digital confirmation system exists"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ask for medical file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify appropriate medical provider",
+                "classification": "VA",
+                "reasoning": "Essential for obtaining accurate medical history"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare medical file request",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Send request to medical provider",
+                "classification": "BVA",
+                "reasoning": "Important for obtaining information but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Log request in patient file",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update patient file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive medical file",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Review medical file contents",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding patient's medical history"
+            },
+            {
+                "step_number": 3,
+                "description": "Add relevant information to patient file",
+                "classification": "VA",
+                "reasoning": "Essential for comprehensive patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Save updated patient file",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan meeting first intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check first intaker's availability",
+                "classification": "BVA",
+                "reasoning": "Necessary for scheduling but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Propose meeting times",
+                "classification": "BVA",
+                "reasoning": "Facilitates process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm meeting time",
+                "classification": "BVA",
+                "reasoning": "Ensures meeting occurs but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule meeting in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan meeting second intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check second intaker's availability",
+                "classification": "BVA",
+                "reasoning": "Necessary for scheduling but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Propose meeting times",
+                "classification": "BVA",
+                "reasoning": "Facilitates process but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm meeting time",
+                "classification": "BVA",
+                "reasoning": "Ensures meeting occurs but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule meeting in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Meet with first intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare for meeting",
+                "classification": "BVA",
+                "reasoning": "Improves meeting efficiency but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct intake interview",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding patient needs and planning care"
+            },
+            {
+                "step_number": 3,
+                "description": "Record key information",
+                "classification": "VA",
+                "reasoning": "Essential for accurate patient assessment and care planning"
+            },
+            {
+                "step_number": 4,
+                "description": "Discuss next steps with patient",
+                "classification": "VA",
+                "reasoning": "Directly contributes to patient engagement and care planning"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete file with 1st information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review notes from first intake meeting",
+                "classification": "VA",
+                "reasoning": "Ensures accurate understanding of patient information"
+            },
+            {
+                "step_number": 2,
+                "description": "Organize information",
+                "classification": "BVA",
+                "reasoning": "Improves accessibility of information but doesn't directly add value to patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Update patient file with new information",
+                "classification": "VA",
+                "reasoning": "Essential for comprehensive patient care"
+            },
+            {
+                "step_number": 4,
+                "description": "Save updated file",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Meet with second intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review first intake information",
+                "classification": "VA",
+                "reasoning": "Ensures continuity of care and comprehensive assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct second intake interview",
+                "classification": "VA",
+                "reasoning": "Directly contributes to comprehensive patient assessment"
+            },
+            {
+                "step_number": 3,
+                "description": "Record additional information",
+                "classification": "VA",
+                "reasoning": "Essential for accurate patient assessment and care planning"
+            },
+            {
+                "step_number": 4,
+                "description": "Discuss treatment possibilities with patient",
+                "classification": "VA",
+                "reasoning": "Directly contributes to patient engagement and care planning"
+            }
+        ]
+    },
+    {
+        "activity_name": "Type out conversation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review notes from second intake meeting",
+                "classification": "VA",
+                "reasoning": "Ensures accurate understanding of patient information"
+            },
+            {
+                "step_number": 2,
+                "description": "Transcribe key points of conversation",
+                "classification": "VA",
+                "reasoning": "Essential for accurate documentation of patient information"
+            },
+            {
+                "step_number": 3,
+                "description": "Organize transcribed information",
+                "classification": "BVA",
+                "reasoning": "Improves accessibility of information but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete file with 2nd information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review transcribed conversation",
+                "classification": "VA",
+                "reasoning": "Ensures accurate understanding of patient information"
+            },
+            {
+                "step_number": 2,
+                "description": "Update patient file with new information",
+                "classification": "VA",
+                "reasoning": "Essential for comprehensive patient care"
+            },
+            {
+                "step_number": 3,
+                "description": "Cross-reference with first intake information",
+                "classification": "VA",
+                "reasoning": "Ensures consistency and comprehensiveness of patient information"
+            },
+            {
+                "step_number": 4,
+                "description": "Save completed patient file",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to patient care"
+            }
+        ]
+    },
+    {
+        "activity_name": "Determine treatment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complete patient file",
+                "classification": "VA",
+                "reasoning": "Critical for making informed treatment decisions"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult with intakers if necessary",
+                "classification": "VA",
+                "reasoning": "Ensures comprehensive understanding of patient needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess treatment options",
+                "classification": "VA",
+                "reasoning": "Directly contributes to determining the best care for the patient"
+            },
+            {
+                "step_number": 4,
+                "description": "Select appropriate treatment plan",
+                "classification": "VA",
+                "reasoning": "Core value-adding activity in patient care"
+            },
+            {
+                "step_number": 5,
+                "description": "Document treatment decision in patient file",
+                "classification": "VA",
+                "reasoning": "Essential for implementing and tracking patient care"
+            }
+        ]
+    }
+]

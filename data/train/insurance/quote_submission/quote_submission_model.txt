@@ -1,0 +1,25 @@
+graph TB
+    subgraph Client
+        Start((Quote needed)) --> RequestQuote[Request insurance quote]
+        RequestQuote --> EvaluateQuote[Evaluate insurance quote]
+        EvaluateQuote --> Decision{Decision}
+        Decision -->|Accept| AcceptQuote[Accept quote]
+        Decision -->|Reject| RejectQuote[Reject quote]
+        RejectQuote --> End1((Quote rejected))
+        AcceptQuote --> End2((Quote Accepted))
+    end
+
+    subgraph Insurer
+        ReceiveRequest[/Request for quote received/] --> PrepareQuote[Prepare insurance quote]
+        PrepareQuote --> QuoteReady{Quote ready}
+        QuoteReady -->|Acceptance| ReceiveAcceptance[/Quote acceptance received/]
+        QuoteReady -->|Rejection| ReceiveRejection[/Quote rejection received/]
+        ReceiveAcceptance --> PrepareContract[Prepare insurance contract]
+        PrepareContract --> End3((Contract Finalised))
+        ReceiveRejection --> End4((Quote rejected))
+    end
+
+    RequestQuote -.-> ReceiveRequest
+    PrepareQuote -.-> EvaluateQuote
+    AcceptQuote -.-> ReceiveAcceptance
+    RejectQuote -.-> ReceiveRejection

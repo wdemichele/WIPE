@@ -1,0 +1,184 @@
+[
+    {
+        "activity_name": "Package receipt at dock",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package",
+                "performer": "Dock team",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Stockpile package",
+                "performer": "Dock team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Move to pallets",
+                "performer": "Dock team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Wait until pallet is full",
+                "performer": "Dock team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 5,
+                "description": "Move to receiving room",
+                "performer": "Dock team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package processing in the receiving room",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Move to workstation",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Check destination",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Set as unknown",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Register package into ERP",
+                "performer": "Main room team",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 5,
+                "description": "Write details on package",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 6,
+                "description": "Print delivery form",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 7,
+                "description": "Fold and insert the form into a plastic packet",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 8,
+                "description": "Tape plastic packet to package",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 9,
+                "description": "Place in temporary location",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 10,
+                "description": "Move package to pallet",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 11,
+                "description": "Wait until 8 packages are processed",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 12,
+                "description": "Move to rack room",
+                "performer": "Main room team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package processing in the rack room",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Move to rack",
+                "performer": "Rack room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Sort package",
+                "performer": "Rack room team",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Load package to designated pallet",
+                "performer": "Rack room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Deliver to designated par location",
+                "performer": "Rack room team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package delivery to par location",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package from pallet",
+                "performer": "Par location delivery team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Scan package",
+                "performer": "Par location delivery team",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Discard package",
+                "performer": "Par location delivery team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify requester",
+                "performer": "Par location delivery team",
+                "classification": "VA"
+            },
+            {
+                "step_number": 5,
+                "description": "Return to receiving room",
+                "performer": "Par location delivery team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 6,
+                "description": "Stock package",
+                "performer": "Par location delivery team",
+                "classification": "BVA"
+            }
+        ]
+    }
+]

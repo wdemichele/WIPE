@@ -1,0 +1,172 @@
+[
+    {
+        "activity_name": "Receipt of application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive application documents from applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Log application in HR system"
+            },
+            {
+                "step_number": 3,
+                "description": "Perform initial screening of application"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send receipt confirmation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate confirmation message"
+            },
+            {
+                "step_number": 2,
+                "description": "Send confirmation to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Record confirmation sent in HR system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Invite to job interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select suitable interview time slots"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare and send interview invitation to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare employment agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve employment contract template"
+            },
+            {
+                "step_number": 2,
+                "description": "Customize contract with applicant details"
+            },
+            {
+                "step_number": 3,
+                "description": "Send draft to Head of Human Resources for review"
+            }
+        ]
+    },
+    {
+        "activity_name": "Carry out job interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare interview questions and materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct interview with applicant and Head of HR"
+            },
+            {
+                "step_number": 3,
+                "description": "Document interview results and recommendations"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send employment contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize employment contract"
+            },
+            {
+                "step_number": 2,
+                "description": "Send contract to successful applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare rejection letter"
+            },
+            {
+                "step_number": 2,
+                "description": "Send rejection letter to unsuccessful applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receipt of signed employment contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive signed contract from applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify contract details and signatures"
+            },
+            {
+                "step_number": 3,
+                "description": "File signed contract and update HR records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Applicant verified",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's documents and interview results"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult with Head of Development if necessary"
+            },
+            {
+                "step_number": 3,
+                "description": "Make final decision on applicant's suitability"
+            }
+        ]
+    },
+    {
+        "activity_name": "Rejection sent",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Confirm rejection decision with HR Department"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure rejection letter is sent"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status to 'Rejected' in HR system"
+            }
+        ]
+    }
+]

@@ -1,0 +1,163 @@
+[
+    {
+        "activity_name": "Verify request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review incoming request details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and addressing the request"
+            },
+            {
+                "step_number": 2,
+                "description": "Check request against predefined criteria",
+                "classification": "BVA",
+                "reasoning": "Ensures request validity but doesn't directly add value to requester"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm request validity",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly valued by requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send to queue for request handling",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Assign request to appropriate handling queue",
+                "classification": "BVA",
+                "reasoning": "Facilitates efficient processing but not directly valued by requester"
+            },
+            {
+                "step_number": 2,
+                "description": "Update request status in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly adding value to requester"
+            },
+            {
+                "step_number": 3,
+                "description": "Notify relevant team of new request in queue",
+                "classification": "BVA",
+                "reasoning": "Improves internal efficiency but not directly valued by requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send follow-up report",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather information on request outcome",
+                "classification": "VA",
+                "reasoning": "Directly contributes to informing requester about result"
+            },
+            {
+                "step_number": 2,
+                "description": "Compile follow-up report",
+                "classification": "VA",
+                "reasoning": "Creates valuable information for requester"
+            },
+            {
+                "step_number": 3,
+                "description": "Distribute report to relevant stakeholders",
+                "classification": "VA",
+                "reasoning": "Delivers valuable information to requester and stakeholders"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prioritize request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Assess request urgency and impact",
+                "classification": "VA",
+                "reasoning": "Directly affects how quickly requester's needs are addressed"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign priority level based on assessment",
+                "classification": "VA",
+                "reasoning": "Determines order of handling, impacting requester satisfaction"
+            },
+            {
+                "step_number": 3,
+                "description": "Update request priority in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly valued by requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Classify request and assign action",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine request category",
+                "classification": "BVA",
+                "reasoning": "Aids in processing but not directly adding value to requester"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify appropriate action for request",
+                "classification": "VA",
+                "reasoning": "Directly contributes to addressing requester's needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign request to relevant team or individual",
+                "classification": "BVA",
+                "reasoning": "Facilitates efficient handling but not directly valued by requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan Monitoring and Operation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Define monitoring parameters for request",
+                "classification": "BVA",
+                "reasoning": "Ensures quality handling but not directly valued by requester"
+            },
+            {
+                "step_number": 2,
+                "description": "Establish operational procedures",
+                "classification": "BVA",
+                "reasoning": "Improves internal efficiency but not directly valued by requester"
+            },
+            {
+                "step_number": 3,
+                "description": "Set up monitoring and reporting schedule",
+                "classification": "BVA",
+                "reasoning": "Aids in process control but not directly adding value to requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request Handle Execution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review assigned request details",
+                "classification": "BVA",
+                "reasoning": "Necessary for accurate handling but not directly valued by requester"
+            },
+            {
+                "step_number": 2,
+                "description": "Execute actions to fulfill request",
+                "classification": "VA",
+                "reasoning": "Directly addresses requester's needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Document actions taken and outcomes",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but not directly valued by requester"
+            }
+        ]
+    }
+]

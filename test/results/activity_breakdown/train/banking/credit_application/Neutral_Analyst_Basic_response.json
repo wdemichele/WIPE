@@ -1,0 +1,209 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate appointment request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide necessary details for appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appointment Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate appointment request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Approve or deny appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule appointment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm appointment details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In Credit Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit credit application form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify Borrower's Information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review borrower's personal information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate borrower's documents"
+                }
+            ]
+        },
+        {
+            "activity_name": "Verification Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess verification outcome"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine next steps based on verification result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Submit File to Underwriter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send borrower's file to underwriter for review"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify borrower about application rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Co-Signer On Loan",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine need for co-signer on loan"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Initiate co-signer request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Visit to Assess Collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule visit to assess collateral"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct collateral assessment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Co-Signer Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate co-signer request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to obtain co-signer or not"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assessment Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess collateral assessment outcome"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine next steps based on assessment result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Underwriter Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review borrower's file and assessment results"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision on loan approval or denial"
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Loan Agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare loan agreement for borrower's signature"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Obtain borrower's signature on loan agreement"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                35.714285714285715
+            ],
+            "No Match": [
+                5,
+                35.714285714285715
+            ],
+            "Granularity Difference": [
+                4,
+                28.57142857142857
+            ]
+        },
+        "average_confidence": 52.142857142857146,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.0,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 81.25,
+        "response_coverage": 65.71428571428571,
+        "average_sequence_alignment": 63.541666666666664,
+        "average_overall_similarity_score": 52.08375
+    }
+}

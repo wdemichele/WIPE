@@ -1,0 +1,188 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Prepare dough",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather ingredients for muffin dough",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring all necessary ingredients are gathered."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Mix dry ingredients",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the dry ingredients for the muffin dough."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add wet ingredients and combine",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by adding the wet ingredients and combining them with the dry ingredients to create the muffin dough."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare cooking paper",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Select appropriate cooking paper",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins do not stick to the muffin tins."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Cut paper to fit muffin tins",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the cooking paper fits properly in the muffin tins."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Place paper liners in muffin tins",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins are easily removable from the muffin tins."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Confirm delivery address",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins are delivered to the correct address."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Schedule delivery time",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins are delivered at the desired time."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign delivery personnel",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins are delivered by the appropriate personnel."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare muffins",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Portion dough into prepared muffin tins",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by portioning the muffin dough into the muffin tins."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Add any toppings or mix-ins",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by allowing customers to customize their muffins with toppings or mix-ins."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare muffins for baking",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the muffins for baking.\")classify(\"VA\", \"Cook muffins\", \"Preheat oven to specified temperature\", \"This step directly contributes to the process of cooking muffins by preparing the oven for baking."
+                }
+            ]
+        },
+        {
+            "activity_name": "Cook muffins",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Preheat oven to specified temperature",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Place muffins in oven",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of cooking muffins by placing the muffins in the oven for baking."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Bake for specified time",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of cooking muffins by baking them for the specified time."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Apply cooking tips as needed",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the muffins are cooked properly, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Present payment options to customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of payment by providing the customer with options to choose from."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment through chosen method",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of payment by processing the customer's chosen payment method."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm payment and provide receipt",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of payment by confirming the payment and providing a receipt to the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Apply refunding policy if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to handle refunds if necessary, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Dispatch muffins",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package cooled muffins for delivery",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of dispatching muffins by packaging them for delivery."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign order to delivery personnel",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of dispatching muffins by assigning the order to delivery personnel."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide delivery instructions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of dispatching muffins by providing delivery instructions to the personnel."
+                }
+            ]
+        }
+    ]
+}

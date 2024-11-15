@@ -1,0 +1,197 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "customer_advocate",
+            "task_description": "efficiency_focused",
+            "classification_types": "basic",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Cost planning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather relevant financial data",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to estimating project costs and is necessary for creating an accurate cost plan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Estimate project costs",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating an accurate cost plan by estimating the costs involved in the project."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Create cost breakdown structure",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to organizing and categorizing the project costs, which is necessary for developing an accurate cost plan."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Develop initial cost plan",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the initial cost plan, which is necessary for managing and controlling project expenses."
+                }
+            ]
+        },
+        {
+            "activity_name": "Recalculation of costs",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review initial cost plan",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for ensuring the accuracy and completeness of the initial cost plan, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify areas for cost reduction or optimization",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to optimizing project costs and is necessary for improving cost efficiency."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Adjust cost estimates",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the cost estimates based on the identified areas for cost reduction or optimization."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update cost plan",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the cost plan based on the adjusted cost estimates."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan data transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare cost plan data for transfer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the cost plan data for transfer, which is necessary for sharing the cost plan with relevant stakeholders."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify relevant stakeholders for data sharing",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to identifying the stakeholders who need to receive the cost plan data."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Transfer cost plan data to appropriate systems or departments",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to transferring the cost plan data to the appropriate systems or departments, ensuring its availability for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get approval for expenses",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile finalized cost plan",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to compiling the finalized cost plan, which is necessary for presenting it to the approving authority."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Present cost plan to approving authority",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to obtaining approval for the cost plan from the appropriate authority."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Address any questions or concerns",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to addressing any questions or concerns raised by the approving authority, ensuring a clear understanding of the cost plan."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain formal approval for expenses",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to obtaining formal approval for the project expenses, ensuring their legitimacy."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Document approval decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to documenting the approval decision, providing a record of the authorized expenses."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 16,
+        "correct_classifications": 10,
+        "accuracy": 0.625,
+        "misclassifications": [
+            {
+                "activity": "Recalculation of costs",
+                "substep": "Review initial cost plan",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for ensuring the accuracy and completeness of the initial cost plan, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical for identifying areas of improvement"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Prepare cost plan data for transfer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to preparing the cost plan data for transfer, which is necessary for sharing the cost plan with relevant stakeholders.",
+                "ground_truth_reasoning": "Necessary for sharing but doesn't change the plan"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Identify relevant stakeholders for data sharing",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to identifying the stakeholders who need to receive the cost plan data.",
+                "ground_truth_reasoning": "Important for communication but doesn't alter the plan"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Transfer cost plan data to appropriate systems or departments",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to transferring the cost plan data to the appropriate systems or departments, ensuring its availability for further processing.",
+                "ground_truth_reasoning": "Essential for process but doesn't add value to the plan itself"
+            },
+            {
+                "activity": "Get approval for expenses",
+                "substep": "Compile finalized cost plan",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to compiling the finalized cost plan, which is necessary for presenting it to the approving authority.",
+                "ground_truth_reasoning": "Prepares for approval but doesn't change the plan"
+            },
+            {
+                "activity": "Get approval for expenses",
+                "substep": "Document approval decision",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to documenting the approval decision, providing a record of the authorized expenses.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't change the outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 10,
+                "BVA": 1
+            },
+            "BVA": {
+                "VA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

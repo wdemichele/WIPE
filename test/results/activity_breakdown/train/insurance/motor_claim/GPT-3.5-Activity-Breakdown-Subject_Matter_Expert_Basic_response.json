@@ -1,0 +1,191 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive claim documentation from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Claim Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check completeness of the claim"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Register the claim"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Reject the claim if incomplete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine if the claim is complete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the claim is complete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Register claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Register the claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Reject the claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Covered?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the claim is covered"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess the claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assessment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine the assessment result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Schedule payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule the payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Authorize repayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Authorize the repayment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Garage Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive authorization for repayment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Garage End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notification letter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare and send notification letter to the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End the process"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Identical Match": [
+                1,
+                10.0
+            ],
+            "Functional Equivalence": [
+                4,
+                40.0
+            ],
+            "No Match": [
+                5,
+                50.0
+            ]
+        },
+        "average_confidence": 43.0,
+        "average_confidence_by_match_type": {
+            "Identical Match": 100.0,
+            "Functional Equivalence": 82.5,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 71.42857142857143,
+        "response_coverage": 47.368421052631575,
+        "average_sequence_alignment": 70.83333333333333,
+        "average_overall_similarity_score": 39.58375
+    }
+}

@@ -1,0 +1,10 @@
+graph LR
+    Start((Start)) --> CT1[CT1: Check financial coverage]
+    CT1 --> G1{X}
+    G1 --> CT2[CT2: Check property]
+    G1 --> AW[AW: Reject mortgage application]
+    CT2 --> G2{X}
+    G2 --> AC[AC: Accept mortgage application]
+    G2 --> AW
+    AC --> End1((End))
+    AW --> End2((End))

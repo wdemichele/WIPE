@@ -1,0 +1,574 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Review application and budget forms",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application and budget forms",
+                    "classification": "NVA",
+                    "reasoning": "This step involves receiving forms, which is necessary for the process but does not directly contribute to creating value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review application details",
+                    "classification": "VA",
+                    "reasoning": "Reviewing the application details is a value-adding step as it contributes to the overall process of assessing the application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Examine budget information",
+                    "classification": "VA",
+                    "reasoning": "Examining the budget information is a value-adding step as it contributes to the overall process of assessing the application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Room booking",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check available rooms",
+                    "classification": "VA",
+                    "reasoning": "Checking available rooms is a value-adding step as it directly contributes to the process of selecting an appropriate room."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate room",
+                    "classification": "VA",
+                    "reasoning": "Selecting an appropriate room is a value-adding step as it directly contributes to the process of reserving a room for the course dates."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Reserve room for course dates",
+                    "classification": "VA",
+                    "reasoning": "Reserving a room for the course dates is a value-adding step as it directly contributes to the process of confirming the room booking."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm room booking",
+                    "classification": "VA",
+                    "reasoning": "Confirming the room booking is a value-adding step as it finalizes the process of reserving a room for the course dates."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new account in system",
+                    "classification": "VA",
+                    "reasoning": "Creating a new account in the system is a value-adding step as it directly contributes to the process of setting up an account."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input course details",
+                    "classification": "VA",
+                    "reasoning": "Inputting course details is a value-adding step as it directly contributes to the process of setting up an account."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign account permissions",
+                    "classification": "VA",
+                    "reasoning": "Assigning account permissions is a value-adding step as it directly contributes to the process of setting up an account."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up course website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new website",
+                    "classification": "VA",
+                    "reasoning": "Creating a new website is a value-adding step as it directly contributes to the process of setting up a course website."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Design website layout",
+                    "classification": "VA",
+                    "reasoning": "Designing the website layout is a value-adding step as it directly contributes to the process of setting up a course website."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add course information",
+                    "classification": "VA",
+                    "reasoning": "Adding course information is a value-adding step as it directly contributes to the process of setting up a course website."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Publish website",
+                    "classification": "VA",
+                    "reasoning": "Publishing the website is a value-adding step as it finalizes the process of setting up a course website."
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website setup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create registration website",
+                    "classification": "VA",
+                    "reasoning": "Creating a registration website is a value-adding step as it directly contributes to the process of setting up a registration system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create registration form",
+                    "classification": "VA",
+                    "reasoning": "Creating a registration form is a value-adding step as it directly contributes to the process of setting up a registration system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set up payment gateway",
+                    "classification": "VA",
+                    "reasoning": "Setting up a payment gateway is a value-adding step as it directly contributes to the process of setting up a registration system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Promote course",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Develop marketing materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating awareness and interest in the course."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify target audience",
+                    "classification": "VA",
+                    "reasoning": "Enables targeted marketing efforts, increasing effectiveness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Distribute promotional content",
+                    "classification": "VA",
+                    "reasoning": "Delivers marketing materials to potential customers, generating leads."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Monitor marketing effectiveness",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for evaluating the success of marketing efforts and making data-driven decisions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website closed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check registration deadline",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Close registration portal",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update website with closure information",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare registration data for review",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle payments",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect payment information",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payments",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipts",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Reconcile payment records",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify registered participants of cancellation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft cancellation message",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compile list of registered participants",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send cancellation notifications",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Process refunds if applicable",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Print name badges",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect participant information",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Design badge template",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Print badges",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Organise badges for distribution",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up Blackboard website for students",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create course shell in Blackboard",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to setting up the platform for students to access course materials and interact with the course."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Upload course materials",
+                    "classification": "VA",
+                    "reasoning": "Directly adds value by providing students with the necessary resources for the course."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enroll registered students",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the students' ability to access the course and participate."
+                }
+            ]
+        },
+        {
+            "activity_name": "Catering arranging",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine catering requirements",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses the need for catering and ensures the provision of appropriate food and services."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact catering providers",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of securing catering services for the event."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Select menu options",
+                    "classification": "VA",
+                    "reasoning": "Directly adds value by allowing for customization of the catering menu based on preferences and dietary restrictions."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm catering order and logistics",
+                    "classification": "VA",
+                    "reasoning": "Directly ensures the successful delivery of catering services for the event."
+                }
+            ]
+        },
+        {
+            "activity_name": "Course delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare course materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the availability of course materials for participants."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up course venue",
+                    "classification": "VA",
+                    "reasoning": "Directly enables the physical environment for the course sessions to take place."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Conduct course sessions",
+                    "classification": "VA",
+                    "reasoning": "Directly delivers the core value of the course by providing knowledge and learning opportunities to participants."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Collect feedback from participants",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the improvement of future course sessions and enhances the overall learning experience."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 48,
+        "correct_classifications": 25,
+        "accuracy": 0.5208333333333334,
+        "misclassifications": [
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Receive application and budget forms",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step involves receiving forms, which is necessary for the process but does not directly contribute to creating value for the customer.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Review application details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Reviewing the application details is a value-adding step as it contributes to the overall process of assessing the application.",
+                "ground_truth_reasoning": "Ensures course viability but doesn't directly enhance student experience"
+            },
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Examine budget information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Examining the budget information is a value-adding step as it contributes to the overall process of assessing the application.",
+                "ground_truth_reasoning": "Important for financial planning but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Room booking",
+                "substep": "Check available rooms",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Checking available rooms is a value-adding step as it directly contributes to the process of selecting an appropriate room.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Room booking",
+                "substep": "Confirm room booking",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Confirming the room booking is a value-adding step as it finalizes the process of reserving a room for the course dates.",
+                "ground_truth_reasoning": "Administrative task that doesn't directly add value to the course"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Create new account in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creating a new account in the system is a value-adding step as it directly contributes to the process of setting up an account.",
+                "ground_truth_reasoning": "Necessary for administration but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Input course details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Inputting course details is a value-adding step as it directly contributes to the process of setting up an account.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to students"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Assign account permissions",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Assigning account permissions is a value-adding step as it directly contributes to the process of setting up an account.",
+                "ground_truth_reasoning": "Ensures proper access but doesn't directly enhance course content"
+            },
+            {
+                "activity": "Set up course website",
+                "substep": "Create new website",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creating a new website is a value-adding step as it directly contributes to the process of setting up a course website.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the course content"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Create registration website",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creating a registration website is a value-adding step as it directly contributes to the process of setting up a registration system.",
+                "ground_truth_reasoning": "Facilitates enrollment process but doesn't directly add course value"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Create registration form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creating a registration form is a value-adding step as it directly contributes to the process of setting up a registration system.",
+                "ground_truth_reasoning": "Necessary for enrollment but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Set up payment gateway",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Setting up a payment gateway is a value-adding step as it directly contributes to the process of setting up a registration system.",
+                "ground_truth_reasoning": "Enables payment processing but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Develop marketing materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating awareness and interest in the course.",
+                "ground_truth_reasoning": "Helps attract students but doesn't directly enhance course quality"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Identify target audience",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Enables targeted marketing efforts, increasing effectiveness.",
+                "ground_truth_reasoning": "Important for marketing but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Distribute promotional content",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Delivers marketing materials to potential customers, generating leads.",
+                "ground_truth_reasoning": "Necessary for attracting students but doesn't improve course content"
+            },
+            {
+                "activity": "Set up Blackboard website for students",
+                "substep": "Create course shell in Blackboard",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to setting up the platform for students to access course materials and interact with the course.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to course content"
+            },
+            {
+                "activity": "Set up Blackboard website for students",
+                "substep": "Enroll registered students",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the students' ability to access the course and participate.",
+                "ground_truth_reasoning": "Necessary for access but doesn't directly improve course content"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Determine catering requirements",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly addresses the need for catering and ensures the provision of appropriate food and services.",
+                "ground_truth_reasoning": "Enhances comfort but doesn't directly improve learning"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Contact catering providers",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process of securing catering services for the event.",
+                "ground_truth_reasoning": "Necessary for arranging food but doesn't add to course content"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Select menu options",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly adds value by allowing for customization of the catering menu based on preferences and dietary restrictions.",
+                "ground_truth_reasoning": "Improves experience but doesn't directly enhance learning"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Confirm catering order and logistics",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly ensures the successful delivery of catering services for the event.",
+                "ground_truth_reasoning": "Ensures food availability but doesn't add to course content"
+            },
+            {
+                "activity": "Course delivery",
+                "substep": "Set up course venue",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly enables the physical environment for the course sessions to take place.",
+                "ground_truth_reasoning": "Necessary for delivery but doesn't directly add to course content"
+            },
+            {
+                "activity": "Course delivery",
+                "substep": "Collect feedback from participants",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the improvement of future course sessions and enhances the overall learning experience.",
+                "ground_truth_reasoning": "Helps improve future courses but doesn't add value to current course"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8
+            },
+            "BVA": {
+                "NVA": 1,
+                "VA": 22,
+                "BVA": 13
+            },
+            "NVA": {
+                "NVA": 4
+            }
+        }
+    }
+}

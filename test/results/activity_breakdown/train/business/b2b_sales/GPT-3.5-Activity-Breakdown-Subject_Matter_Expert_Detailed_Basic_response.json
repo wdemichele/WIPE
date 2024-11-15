@@ -1,0 +1,210 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record application details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare marketing materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send marketing materials to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check email for response"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check mail for response"
+                }
+            ]
+        },
+        {
+            "activity_name": "X",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "No action required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application documents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate applicant qualifications"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application OK",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Proceed with next steps"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application not OK",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection letter to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Clarification needed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify information gaps"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact applicant for clarification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule appointment with applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appointment day",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Meet with applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application together"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address applicant's questions or concerns"
+                }
+            ]
+        },
+        {
+            "activity_name": "+",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Proceed with next steps"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send offer letter to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Organize application documents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Store application in appropriate location"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process completed"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                7,
+                53.84615384615385
+            ],
+            "Granularity Difference": [
+                2,
+                15.384615384615385
+            ],
+            "Functional Equivalence": [
+                4,
+                30.76923076923077
+            ]
+        },
+        "average_confidence": 35.38461538461539,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Granularity Difference": 75.0,
+            "Functional Equivalence": 77.5
+        },
+        "ground_truth_coverage": 87.5,
+        "response_coverage": 52.94117647058824,
+        "average_sequence_alignment": 73.95833333333333,
+        "average_overall_similarity_score": 38.75
+    }
+}

@@ -1,0 +1,86 @@
+[
+    {
+        "activity_name": "CT1: Check financial coverage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's financial information"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify income sources"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate debt-to-income ratio"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess ability to repay mortgage"
+            }
+        ]
+    },
+    {
+        "activity_name": "CT2: Check property",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review property details"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify property value"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess property condition"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate property location and market trends"
+            }
+        ]
+    },
+    {
+        "activity_name": "AC: Accept mortgage application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review overall application"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm all criteria are met"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare acceptance documentation"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify applicant of acceptance"
+            }
+        ]
+    },
+    {
+        "activity_name": "AW: Reject mortgage application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter"
+            },
+            {
+                "step_number": 3,
+                "description": "Update application status to 'Rejected'"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify applicant of rejection"
+            }
+        ]
+    }
+]

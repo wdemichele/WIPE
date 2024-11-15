@@ -1,0 +1,107 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Package receipt at dock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive package at dock"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify package details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record package receipt"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the receiving room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect package contents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for damages"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Scan package barcode"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the rack room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign package to rack location"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update inventory system"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store package in designated rack"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package delivery to par location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve package from rack"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify package contents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Deliver package to par location"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                38.46153846153847
+            ],
+            "No Match": [
+                6,
+                46.15384615384615
+            ],
+            "Granularity Difference": [
+                2,
+                15.384615384615385
+            ]
+        },
+        "average_confidence": 42.69230769230769,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 79.0,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 55.55555555555556,
+        "average_sequence_alignment": 83.75,
+        "average_overall_similarity_score": 40.75
+    }
+}

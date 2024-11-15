@@ -1,0 +1,335 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "\n    You are an AI assistant with expertise in Lean methodology and process improvement.\n    Your role is to analyze business processes through the lens of Lean principles, identifying value-adding activities\n    and potential areas for waste reduction.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): \n       - Directly contributes to creating a product or service the customer is willing to pay for\n       - Transforms or shapes material or information towards the end product/service\n       - Done right the first time\n\n    2. Business Value Adding (BVA):\n       - Required by law, regulation, or company policy\n       - Reduces financial risk, supports financial reporting, or ensures security\n       - Necessary for business operations but not directly valued by the customer\n\n    3. Non-Value Adding (NVA):\n       - Consumes resources without adding value to the customer or business\n       - Includes waiting, rework, overprocessing, or unnecessary movement\n       - Can often be eliminated without impacting the quality of the product/service or business operations\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, keep in mind the following Lean principles:\n\n    1. Identify value: Classify as VA only those steps that directly contribute to what the customer \n       is willing to pay for.\n\n    2. Map the value stream: Consider how each step fits into the overall flow of value creation. \n       Some BVA steps might be crucial for enabling VA steps.\n\n    3. Create flow: Steps that cause delays or interruptions in the process flow should be \n       scrutinized and potentially classified as NVA.\n\n    4. Establish pull: Steps that are performed \"just-in-time\" based on actual demand tend to be \n       more value-adding than those done in anticipation of demand.\n\n    5. Seek perfection: Always consider if there's a way to convert BVA or NVA steps into VA steps, \n       or to eliminate NVA steps entirely.\n\n    6. Respect for people: Remember that some steps might seem NVA but are crucial for employee \n       well-being or safety, which indirectly benefits the customer through better service.\n    ",
+            "_raw_input": {
+                "role_description": "lean_expert",
+                "task_description": "efficiency_focused",
+                "classification_types": "detailed",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "lean_principles"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact loan officer or financial institution",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to initiate the appointment request process and ensure proper communication with the loan officer or financial institution."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide initial information for appointment request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the creation of the appointment request and provides the necessary information for further processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit appointment request",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the initial information into a formal appointment request, which is a value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available time slots",
+                    "classification": "VA",
+                    "reasoning": "This step is necessary to identify the available time slots for scheduling the appointment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable date and time",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the creation of the appointment by selecting a suitable date and time."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm appointment with applicant",
+                    "classification": "VA",
+                    "reasoning": "This step finalizes the appointment by confirming it with the applicant, ensuring proper communication and agreement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In Credit Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out credit application form",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the creation of the credit application, providing the necessary information for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather necessary supporting documents",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that all the required supporting documents are collected, which is essential for the credit application process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit completed application and documents",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the completed application and supporting documents into a formal submission, which is a value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify Borrower's Information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted application and documents",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the submitted application and documents are reviewed for completeness and accuracy."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Cross-check information with available databases",
+                    "classification": "VA",
+                    "reasoning": "This step verifies the accuracy of the borrower's information by cross-checking it with available databases."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Conduct credit check",
+                    "classification": "VA",
+                    "reasoning": "This step is necessary to assess the borrower's creditworthiness and evaluate the risk associated with the loan."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Verify employment and income information",
+                    "classification": "VA",
+                    "reasoning": "This step verifies the borrower's employment and income information, which is crucial for assessing their ability to repay the loan."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Co-Signer On Loan",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform applicant of need for co-signer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to inform the applicant about the requirement of a co-signer, which is a business policy."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide co-signer requirements",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to provide the applicant with the requirements for a co-signer, which is a business policy."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Collect co-signer information and documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the loan application process by collecting the necessary information and documents from the co-signer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Visit to Assess Collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule visit to assess collateral",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to schedule a visit to assess the collateral, which is a business policy."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site inspection of collateral",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the collateral by conducting an on-site inspection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document collateral condition and value",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the collateral by documenting its condition and value."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare assessment report",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the collateral by preparing a report based on the inspection and documentation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Submit File to Underwriter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all verified information and documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the submission of a complete file to the underwriting department by compiling all the necessary information and documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare summary of application for underwriter",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the submission of a complete file to the underwriting department by preparing a summary of the application for the underwriter."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit complete file to underwriting department",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the submission of a complete file to the underwriting department."
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Loan Agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review loan terms and conditions with applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the signing of the loan agreement by reviewing the terms and conditions with the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Answer any questions from applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the signing of the loan agreement by addressing any questions or concerns from the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Obtain applicant's signature on loan agreement",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the signing of the loan agreement by obtaining the applicant's signature."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Provide copy of signed agreement to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the signing of the loan agreement by providing a copy of the signed agreement to the applicant."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 27,
+        "correct_classifications": 16,
+        "accuracy": 0.5925925925925926,
+        "misclassifications": [
+            {
+                "activity": "Request Appointment",
+                "substep": "Provide initial information for appointment request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the creation of the appointment request and provides the necessary information for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request Appointment",
+                "substep": "Submit appointment request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the initial information into a formal appointment request, which is a value-adding activity.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Review available time slots",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary to identify the available time slots for scheduling the appointment.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Select suitable date and time",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the creation of the appointment by selecting a suitable date and time.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Confirm appointment with applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step finalizes the appointment by confirming it with the applicant, ensuring proper communication and agreement.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Hand In Credit Application",
+                "substep": "Gather necessary supporting documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that all the required supporting documents are collected, which is essential for the credit application process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Hand In Credit Application",
+                "substep": "Submit completed application and documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the completed application and supporting documents into a formal submission, which is a value-adding activity.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Submit File to Underwriter",
+                "substep": "Compile all verified information and documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the submission of a complete file to the underwriting department by compiling all the necessary information and documents.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Submit File to Underwriter",
+                "substep": "Prepare summary of application for underwriter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the submission of a complete file to the underwriting department by preparing a summary of the application for the underwriter.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Submit File to Underwriter",
+                "substep": "Submit complete file to underwriting department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the submission of a complete file to the underwriting department.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Sign Loan Agreement",
+                "substep": "Provide copy of signed agreement to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the signing of the loan agreement by providing a copy of the signed agreement to the applicant.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 12
+            },
+            "BVA": {
+                "BVA": 4,
+                "VA": 10
+            },
+            "NVA": {
+                "VA": 1
+            }
+        }
+    }
+}

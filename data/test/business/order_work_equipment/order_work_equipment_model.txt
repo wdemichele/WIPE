@@ -1,0 +1,40 @@
+flowchart TD
+    subgraph ACME AG[ACME AG: Procurement]
+        Start([Start]) --> CheckStock[Check stock]
+        CheckStock --> DecisionGateway{Work equipment in stock?}
+        DecisionGateway -->|Yes| RetrieveEquipment[Retrieve work equipment from the storeroom]
+        RetrieveEquipment --> EquipmentRemoved([Work equipment removed from the storeroom])
+        DecisionGateway -->|No| SpecifyRequirements[Specify and quantify requirements]
+        SpecifyRequirements --> PlaceOrder[Place order]
+        PlaceOrder --> ReceiptGateway{Receipt of work equipment}
+        ReceiptGateway --> MergeGateway
+        EquipmentRemoved --> MergeGateway
+        MergeGateway --> End([Work equipment procured])
+
+        TimerEvent((5 days)) --> PlaceOrderEmail[Place order by e-mail]
+        PlaceOrderEmail -.-> ReceiptGateway
+
+        WorkEquipment[(Work equipment)]:::dataObject -.-> CheckStock
+        OrderRequestTemplate[(Order request template)]:::dataObject -.-> PlaceOrderEmail
+        ERPSystem[ERP System]:::system -.-> PlaceOrder
+    end
+
+    subgraph Supplier
+        SupplierLane
+    end
+
+    PlaceOrder -.-> SupplierLane
+    SupplierLane -.-> ReceiptGateway
+    PlaceOrderEmail -.-> SupplierLane
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:note;
+    classDef system fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:hexagon;
+
+    class CheckStock,RetrieveEquipment,SpecifyRequirements,PlaceOrder,PlaceOrderEmail activity;
+    class DecisionGateway,ReceiptGateway,MergeGateway gateway;
+    class Start,EquipmentRemoved,End,TimerEvent event;
+    class WorkEquipment,OrderRequestTemplate dataObject;
+    class ERPSystem system;

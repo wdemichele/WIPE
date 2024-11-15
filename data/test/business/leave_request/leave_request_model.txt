@@ -1,0 +1,40 @@
+graph TD
+    Start([fa:fa-play Start]) --> VerifyDays[Verify Available Vacation Days]
+    VerifyDays --> Register[Register Vacation Leave Request]
+    Register --> DeclineGateway{Decline?}
+    DeclineGateway -->|Yes| RequestChange((Request Change))
+    RequestChange --> Register
+    DeclineGateway -->|No| Approve[Approve Vacation Leave Request]
+    Approve --> ApprovedGateway{Approved?}
+    ApprovedGateway -->|No| SendRejection[Send Rejection Message]
+    SendRejection --> End1((End))
+    ApprovedGateway -->|Yes| SendApproval[Send Approval Message]
+    SendApproval --> UpdatePayroll1[Update Payroll System]
+    UpdatePayroll1 --> End2((End))
+    VerifyDays --> UpdatePayroll2[Update Payroll System]
+    UpdatePayroll2 --> End3((End))
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+
+    class DeclineGateway,ApprovedGateway gateway;
+    class Start,RequestChange,End1,End2,End3 event;
+    class VerifyDays,Register,Approve,SendRejection,SendApproval,UpdatePayroll1,UpdatePayroll2 activity;
+
+    subgraph "Lane 1: Vacation Leave Request"
+        Start
+        VerifyDays
+        Register
+        DeclineGateway
+        Approve
+        ApprovedGateway
+        SendRejection
+        SendApproval
+        UpdatePayroll1
+        UpdatePayroll2
+        RequestChange
+        End1
+        End2
+        End3
+    end

@@ -1,0 +1,294 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Detailed",
+        "components": {
+            "role_description": "process_engineer",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Claim Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive claim documentation from customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the creation of a claim, which is the end product of this activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of claim in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for tracking and record-keeping purposes, but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted claim documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to determining the completeness of the claim, which is essential for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required information is provided",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to determining the completeness of the claim, ensuring all necessary information is available."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if claim is complete or incomplete",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the determination of whether the claim is complete or incomplete, which is crucial for subsequent steps."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign unique claim identifier",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the registration of the claim, providing a unique identifier for tracking purposes."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter claim details into system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the registration of the claim, capturing all necessary details for further processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Forward registered claim to Handling Department",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the handover of the registered claim to the Handling Department for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reason for rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to documenting the reason for rejecting the claim, providing a record for future reference."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update claim status to 'Rejected'",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to updating the claim status to 'Rejected', indicating the outcome of the rejection process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare rejection information for customer notification",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the necessary information to notify the customer about the rejection of their claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review claim details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the claim and determining its validity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate damage extent and repair costs",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the claim and determining its validity."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine validity of claim",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the claim and determining its validity."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Decide on claim approval or rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the final decision on claim approval or rejection."
+                }
+            ]
+        },
+        {
+            "activity_name": "Schedule payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate approved payment amount",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to calculating the approved payment amount."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine payment date",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to determining the payment date."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter payment details into system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to entering the payment details into the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Authorize repayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review scheduled payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to reviewing the scheduled payment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Approve payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to approving the payment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate authorization for garage",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to generating the authorization for the garage."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send payment details to garage",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to sending the payment details to the garage."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare notification letter",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the notification letter."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include claim status (rejected or approved)",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to including the claim status in the notification letter."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add payment details if claim approved",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to adding the payment details to the notification letter if the claim is approved."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send notification letter to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to sending the notification letter to the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 26,
+        "correct_classifications": 18,
+        "accuracy": 0.6923076923076923,
+        "misclassifications": [
+            {
+                "activity": "Register claim",
+                "substep": "Assign unique claim identifier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the registration of the claim, providing a unique identifier for tracking purposes.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Register claim",
+                "substep": "Enter claim details into system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the registration of the claim, capturing all necessary details for further processing.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly impact claim decision"
+            },
+            {
+                "activity": "Register claim",
+                "substep": "Forward registered claim to Handling Department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the handover of the registered claim to the Handling Department for further processing.",
+                "ground_truth_reasoning": "Facilitates process flow but doesn't directly add value to claim"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Update claim status to 'Rejected'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to updating the claim status to 'Rejected', indicating the outcome of the rejection process.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't add value to claim processing"
+            },
+            {
+                "activity": "Schedule payment",
+                "substep": "Determine payment date",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to determining the payment date.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to claim"
+            },
+            {
+                "activity": "Schedule payment",
+                "substep": "Enter payment details into system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to entering the payment details into the system.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly impact claim value"
+            },
+            {
+                "activity": "Notify Customer",
+                "substep": "Prepare notification letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to preparing the notification letter.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly add value to claim"
+            },
+            {
+                "activity": "Notify Customer",
+                "substep": "Send notification letter to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to sending the notification letter to the customer.",
+                "ground_truth_reasoning": "Necessary for process completion but doesn't directly add value to claim"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 17
+            },
+            "BVA": {
+                "BVA": 1,
+                "VA": 8
+            },
+            "NVA": {}
+        }
+    }
+}

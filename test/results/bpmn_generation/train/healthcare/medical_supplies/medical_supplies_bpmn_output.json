@@ -1,0 +1,1 @@
+{"equivalent": true, "num_iterations": 1, "final_mermaid_code": "graph TD\n    A[Start] --> B[Package receipt at dock]\n    B --> C[Package processing in the receiving room]\n    C --> D[Package processing in the rack room]\n    D --> E[Package delivery to par location]\n    E --> F[End]"}

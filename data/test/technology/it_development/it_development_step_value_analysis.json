@@ -1,0 +1,140 @@
+[
+    {
+        "activity_name": "Develop prototype and import it to Test Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze development request requirements",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and defining the product"
+            },
+            {
+                "step_number": 2,
+                "description": "Design and code prototype based on requirements",
+                "classification": "VA",
+                "reasoning": "Core activity that creates the product"
+            },
+            {
+                "step_number": 3,
+                "description": "Import prototype into Test Environment",
+                "classification": "BVA",
+                "reasoning": "Necessary for testing but doesn't directly add features to the product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Test and correct version to import it in Staging Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Conduct initial testing in Test Environment",
+                "classification": "VA",
+                "reasoning": "Directly improves product quality"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify and fix any issues or bugs",
+                "classification": "VA",
+                "reasoning": "Directly improves product functionality and quality"
+            },
+            {
+                "step_number": 3,
+                "description": "Import corrected version into Staging Environment",
+                "classification": "BVA",
+                "reasoning": "Necessary for further testing but doesn't directly add features"
+            }
+        ]
+    },
+    {
+        "activity_name": "Test and adjust with the feedback of the ticket owner and users",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather feedback from ticket owner and users",
+                "classification": "VA",
+                "reasoning": "Directly contributes to product improvement and user satisfaction"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze feedback and prioritize adjustments",
+                "classification": "VA",
+                "reasoning": "Ensures most valuable improvements are made"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement adjustments and retest in Staging Environment",
+                "classification": "VA",
+                "reasoning": "Directly improves product based on user needs"
+            }
+        ]
+    },
+    {
+        "activity_name": "Import version with new functionality in Production Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare deployment plan for Production Environment",
+                "classification": "BVA",
+                "reasoning": "Ensures smooth deployment but doesn't directly add features"
+            },
+            {
+                "step_number": 2,
+                "description": "Execute deployment of new version to Production",
+                "classification": "VA",
+                "reasoning": "Makes new functionality available to end-users"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify successful implementation in Production Environment",
+                "classification": "VA",
+                "reasoning": "Ensures new functionality is working correctly for users"
+            }
+        ]
+    },
+    {
+        "activity_name": "Communicate new version and adjust with feedback of the ticket owner",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Notify ticket owner of new version deployment",
+                "classification": "BVA",
+                "reasoning": "Important for process but doesn't directly improve product"
+            },
+            {
+                "step_number": 2,
+                "description": "Collect and review feedback from ticket owner",
+                "classification": "VA",
+                "reasoning": "Directly contributes to ensuring product meets requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Make final adjustments based on feedback if necessary",
+                "classification": "VA",
+                "reasoning": "Directly improves product based on stakeholder input"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close ticket by deliberated new functionality and update KMS",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document final implementation details",
+                "classification": "BVA",
+                "reasoning": "Important for future reference but doesn't directly improve current product"
+            },
+            {
+                "step_number": 2,
+                "description": "Update Knowledge Management System (KMS) with new information",
+                "classification": "BVA",
+                "reasoning": "Valuable for organization but doesn't directly improve current product"
+            },
+            {
+                "step_number": 3,
+                "description": "Close the development ticket in the system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process completion but doesn't directly add value to product"
+            }
+        ]
+    }
+]

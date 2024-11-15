@@ -1,0 +1,49 @@
+flowchart TD
+    Start([New Order]) --> ParallelSplit1
+    ParallelSplit1 --> PrepareDough[Prepare dough]
+    ParallelSplit1 --> PreparePaper[prepare cooking paper]
+    ParallelSplit1 --> SetupDelivery[set up delivery]
+    
+    PrepareDough --> ParallelJoin1
+    PreparePaper --> ParallelJoin1
+    SetupDelivery --> ParallelJoin1
+    
+    ParallelJoin1 --> PrepareMuffins[prepare muffins]
+    PrepareMuffins --> CookMuffins[cook muffins]
+    
+    CookMuffins --> RequirementsGateway{Requirements for phase 3}
+    RequirementsGateway --> ParallelSplit2
+    
+    ParallelSplit2 --> Payment[payment]
+    ParallelSplit2 --> DispatchMuffins[Dispatch muffins]
+    
+    Payment --> ParallelJoin2
+    DispatchMuffins --> ParallelJoin2
+    
+    ParallelJoin2 --> End([end of process])
+    
+    %% Data Objects
+    PayPal[(PayPal)]:::dataObject -.-> Payment1[(payment #1)]:::dataObject
+    ApplePay[(Apple pay)]:::dataObject -.-> Payment1
+    GoldGiftCard[(gold gift card)]:::dataObject -.-> Payment2[(Payment #2)]:::dataObject
+    TemporaryGiftCard[(temporary gift card)]:::dataObject -.-> Payment2
+    RefundingPolicy[(Refunding Policy)]:::dataObject -.-> Payment
+    Payment1 -.-> Payment
+    Payment2 -.-> Payment
+    
+    OvenTemperature[(oven temperature)]:::dataObject -.-> CookMuffins
+    CookTime[(cook time)]:::dataObject -.-> CookMuffins
+    Tip1[(tip 1 in cooking)]:::dataObject -.-> CookMuffins
+    Tip2[(tip 2 in cooking)]:::dataObject -.-> CookMuffins
+    
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef parallelGateway fill:#fff,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:note;
+    
+    class Start,End event;
+    class PrepareDough,PreparePaper,SetupDelivery,PrepareMuffins,CookMuffins,Payment,DispatchMuffins activity;
+    class RequirementsGateway gateway;
+    class ParallelSplit1,ParallelJoin1,ParallelSplit2,ParallelJoin2 parallelGateway;
+    class PayPal,ApplePay,GoldGiftCard,TemporaryGiftCard,RefundingPolicy,Payment1,Payment2,OvenTemperature,CookTime,Tip1,Tip2 dataObject;

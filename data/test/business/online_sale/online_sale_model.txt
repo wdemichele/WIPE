@@ -1,0 +1,59 @@
+flowchart TD
+    subgraph Seller
+        S_Start([Start]) --> S_DisplayItems[Seller displays items on the webpage]
+        S_DisplayItems --> S_ReceiveOrder[Seller receives buyer's order]
+        S_ReceiveOrder --> S_SendConfirmation[Seller sends to the buyer the order purchase confirmation]
+        S_SendConfirmation --> S_SendToShipping[Seller sends the order to the shipping company]
+    end
+
+    subgraph Buyer
+        B_PurchaseItem[Buyer purchases the item] --> B_AskReshipment[Buyer asks for reshipment of the item]
+        B_AskReshipment --> B_AskReimbursement[Buyer asks for money reimbursement]
+        B_AskReimbursement --> B_End([Purchase wasn't continued])
+    end
+
+    subgraph ShippingCompany
+        SC_GetItem[Shipping company gets item] --> SC_Gateway{On Time?}
+        SC_Gateway -->|Yes| SC_DeliverItem[Shipping company delivers item to the customer in proper dates]
+        SC_Gateway -->|No| SC_NotDeliver[Company does not deliver the purchase]
+        SC_NotDeliver --> SC_BuyerDecision{What will the buyer do?}
+    end
+
+    subgraph eBay
+        E_TrackOrder[eBay tracks the order] --> E_End([Buyer closed the order])
+    end
+
+    S_Start --> B_PurchaseItem
+    S_SendToShipping --> SC_GetItem
+    SC_DeliverItem --> E_TrackOrder
+    SC_BuyerDecision -->|Item| B_AskReshipment
+    SC_BuyerDecision -->|Money| B_AskReimbursement
+    B_AskReimbursement --> S_Reimburse[Seller receives buyer's decision and reimburses money]
+    S_Reimburse --> B_End
+
+    %% Data Stores and Artifacts
+    S_DisplayItems -.-> ItemDescription[("Item's description & shipment details")]
+    S_DisplayItems -.-> eBayDataStores[(eBay data stores)]
+    B_PurchaseItem -.-> PaymentMethods[("Payment methods: credit card, PayPal")]
+    B_PurchaseItem -.-> PaymentConfirmation[("Payment confirmation")]
+    E_TrackOrder -.-> BuyerDissatisfaction[("Buyer states any dissatisfaction regarding the shipping process or rating the seller")]
+    E_TrackOrder -.-> SellerEvaluation[("Seller FVF evaluation")]
+
+    %% External Systems
+    S_DisplayItems -.-> SellerSoftware[("Seller's software (web/mobile apps)")]
+    S_ReceiveOrder -.-> WebMobileApp[("Web or mobile application for users")]
+    B_PurchaseItem -.-> WebMobileAppBuyer[("Web/mobile applications")]
+    E_TrackOrder -.-> WebMobileAppeBay[("Web/mobile applications")]
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef dataArtifact fill:#fff,stroke:#333,stroke-width:2px,shape:note;
+    classDef datastore fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class S_Start,B_End,E_End event;
+    class SC_Gateway,SC_BuyerDecision gateway;
+    class S_DisplayItems,S_ReceiveOrder,S_SendConfirmation,S_SendToShipping,B_PurchaseItem,B_AskReshipment,B_AskReimbursement,SC_GetItem,SC_DeliverItem,SC_NotDeliver,E_TrackOrder,S_Reimburse activity;
+    class ItemDescription,PaymentMethods,PaymentConfirmation,BuyerDissatisfaction,SellerEvaluation dataArtifact;
+    class eBayDataStores datastore;
+    class SellerSoftware,WebMobileApp,WebMobileAppBuyer,WebMobileAppeBay dataArtifact;

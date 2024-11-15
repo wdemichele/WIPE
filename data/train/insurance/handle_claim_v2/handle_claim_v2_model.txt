@@ -1,0 +1,17 @@
+graph LR
+    Start((Start)) -->|New claim received| A[Determine likelihood of the claim]
+    A --> B{Insured liable?}
+    B -->|Insured liable| C[Assess claim]
+    B -->|Insured not liable| End1((Case closed))
+    C --> D{Decision}
+    D -->|Decision is positive| E[Initiate payment]
+    D -->|All cases| F[Advise claimant]
+    E --> G{Join}
+    F --> G
+    G --> End2((Claim closed))
+
+    Claim[Claim]-.->A
+    Claim-.->C
+    ClaimDecision[Claim decision]-.->C
+    ClaimDecision-.->F
+    ClaimDecision-.->E

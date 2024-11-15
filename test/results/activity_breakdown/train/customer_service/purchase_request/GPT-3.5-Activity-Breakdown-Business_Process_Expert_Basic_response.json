@@ -1,0 +1,452 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Fill purchase request form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open purchase request form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter required information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save and submit the form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect vendor quotes",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Research potential vendors"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Request quotes from vendors"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Receive and review vendor quotes"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill in remaining information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Double-check form for completeness"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get supervisor approvals",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit form to supervisor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Wait for supervisor's review and approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Modify and resubmit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive feedback on form modifications"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make necessary changes to the form"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resubmit the modified form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward to Purchasing Dept",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send approved form to the Purchasing Department"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review the received purchase request form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all required information is provided"
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify employee about incomplete form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Return the form to the employee for completion"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter request in enterprise system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open the enterprise system"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter the purchase request details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save the request in the system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Select vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available vendors"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate vendor options"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Choose the most suitable vendor"
+                }
+            ]
+        },
+        {
+            "activity_name": "Add new vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect necessary information about the new vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter vendor details into the system"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save the new vendor in the system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a purchase order based on the selected vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include relevant details in the purchase order"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate the purchase order document"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attach the purchase order document to an email"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the email to the selected vendor"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the email with the purchase order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO copy to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a copy of the purchase order document"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the copy to the Accounts Payable department"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the copy of the purchase order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive goods",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive the delivered goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify the accuracy of the received goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quantity and quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Count the quantity of received goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect the quality of received goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate goods receipt form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open the goods receipt form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter the details of the received goods"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate the goods receipt form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward goods to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the employee about the received goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver the goods to the employee"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send form to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attach the goods receipt form to an email"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the email to the Accounts Payable department"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the email with the goods receipt form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the vendor about the issues with the goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for the return of the goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Purchasing and Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform the Purchasing and Accounts Payable departments about the return"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide details of the return"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive the invoice from the vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify the accuracy of the invoice"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform three-way matching",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compare the purchase order, goods receipt, and invoice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all three documents match"
+                }
+            ]
+        },
+        {
+            "activity_name": "Trigger bank transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate the bank transfer process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide necessary payment details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send payment notice to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare a payment notice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the notice to the vendor"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the payment notice"
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Reach out to the vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Discuss the payment issue"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Seek resolution or clarification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Attempt transfer again",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retry the bank transfer process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all necessary details are correct"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate the transfer again"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                52,
+                74.28571428571429
+            ],
+            "No Match": [
+                8,
+                11.428571428571429
+            ],
+            "Identical Match": [
+                4,
+                5.714285714285714
+            ],
+            "Granularity Difference": [
+                4,
+                5.714285714285714
+            ],
+            "Process Alternative": [
+                2,
+                2.857142857142857
+            ]
+        },
+        "average_confidence": 74.71428571428571,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.84615384615384,
+            "No Match": 0.0,
+            "Identical Match": 100.0,
+            "Granularity Difference": 82.5,
+            "Process Alternative": 70.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 93.42105263157895,
+        "average_sequence_alignment": 77.16049382716048,
+        "average_overall_similarity_score": 77.46888888888888
+    }
+}

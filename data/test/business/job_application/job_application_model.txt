@@ -1,0 +1,50 @@
+graph TD
+    subgraph Applicant
+        A_Start([Start]) --> A_End([End])
+    end
+
+    subgraph "Human Resources Department"
+        HR_Start([Start]) --> HR_ReceiveApp[Receipt of application]
+        HR_ReceiveApp --> HR_SendReceipt[Send receipt confirmation]
+        HR_SendReceipt --> HR_InviteInterview[Invite to job interview]
+        HR_InviteInterview --> HR_PrepareContract[Prepare employment agreement]
+        HR_PrepareContract --> HR_Interview[Carry out job interview]
+        HR_Interview --> HR_Decision{Applicant suitable?}
+        HR_Decision -->|Yes| HR_SendContract[Send employment contract]
+        HR_Decision -->|No| HR_SendRejection[Send rejection]
+        HR_SendContract --> HR_ReceiveSignedContract[Receipt of signed employment contract]
+        HR_ReceiveSignedContract --> HR_End([End])
+        HR_SendRejection --> HR_End
+    end
+
+    subgraph "Head of Human Resources"
+        HHR_Start([Start]) --> HHR_VerifyApplicant[Applicant verified]
+        HHR_VerifyApplicant --> HHR_Decision{Application status?}
+        HHR_Decision -->|Accept| HHR_End([End])
+        HHR_Decision -->|Reject| HHR_RejectSent[Rejection sent]
+        HHR_RejectSent --> HHR_Rejected([Applicant rejected])
+    end
+
+    %% Connections between pools
+    A_Start -.-> HR_ReceiveApp
+    HR_SendReceipt -.-> A_Start
+    HR_InviteInterview -.-> A_Start
+    HR_SendContract -.-> A_Start
+    A_End -.-> HR_ReceiveSignedContract
+    HR_PrepareContract --> HHR_Start
+    HHR_RejectSent -.-> HR_SendRejection
+
+    %% Artifacts
+    HR_PrepareContract -.-> EmploymentContract[("Employment contract template")]
+    HHR_Start -.-> HeadOfDevelopment[("Head of Development")]
+    HR_Interview -.-> HeadOfHR[("Head of Human Resources")]
+
+    classDef event fill:#fff,stroke:#333,stroke-width:2px;
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef task fill:#fff,stroke:#333,stroke-width:2px;
+    classDef artifact fill:#fff,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class A_Start,A_End,HR_Start,HR_End,HHR_Start,HHR_Rejected event;
+    class HR_Decision,HHR_Decision gateway;
+    class HR_ReceiveApp,HR_SendReceipt,HR_InviteInterview,HR_PrepareContract,HR_Interview,HR_SendContract,HR_SendRejection,HR_ReceiveSignedContract,HHR_VerifyApplicant,HHR_RejectSent task;
+    class EmploymentContract,HeadOfDevelopment,HeadOfHR artifact;

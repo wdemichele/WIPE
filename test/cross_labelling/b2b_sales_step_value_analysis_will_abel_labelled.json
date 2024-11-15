@@ -1,0 +1,222 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare relevant marketing materials",
+                "classification": "NVA",
+                "reasoning": "This is not relevant for the customer or the business"
+            },
+            {
+                "step_number": 2,
+                "description": "Customize information based on application",
+                "classification": "VA",
+                "reasoning": "As a customer I do not want to receive irrelevant information"
+            },
+            {
+                "step_number": 3,
+                "description": "Send marketing package to applicant",
+                "classification": "VA",
+                "reasoning": "Assuming I am interested in their products, I would like to receive information about it"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor incoming communications",
+                "classification": "NVA",
+                "reasoning": "The monitoring is not delivering VAlue for the business and it is not for control"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify response from applicant",
+                "classification": "BVA",
+                "reasoning": ""
+            },
+            {
+                "step_number": 3,
+                "description": "Log response method (email or post)",
+                "classification": "NVA",
+                "reasoning": "NVA if this information is used by the business for control. It could be BVA if it is important for the company"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application details",
+                "classification": "BVA",
+                "reasoning": "Assuming there is no feedback to the customer (e.g., seek clarification for address), as a customer I do not care if the company checks my details"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify provided information",
+                "classification": "BVA",
+                "reasoning": "The company would like to check there is no problem with the information"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate applicant's eligibility",
+                "classification": "VA",
+                "reasoning": "As a customer, I would like to know if you will supply the product or service"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine if clarification is needed",
+                "classification": "BVA",
+                "reasoning": "Assuming the information is for control. The business needs to check everything is correct"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection",
+                "classification": "BVA",
+                "reasoning": "As a company, I would like to know why a customer is rejected for future reference. It could be 'VA' too, the customer would like to know why they were rejected."
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter",
+                "classification": "NVA",
+                "reasoning": "The preparation itself is not delivering value to anyone"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to applicant",
+                "classification": "VA",
+                "reasoning": "If  the application was rejected, then as a customer I would like to know"
+            },
+            {
+                "step_number": 4,
+                "description": "Update application status to 'Rejected'",
+                "classification": "BVA",
+                "reasoning": "For control, the company needs to keep track of the rejected applications"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify available time slots",
+                "classification": "NVA",
+                "reasoning": "This seems to be a matter of organization"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact applicant to schedule appointment",
+                "classification": "VA",
+                "reasoning": "As a customer I would be interested to schedule an appointment"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm appointment details",
+                "classification": "BVA",
+                "reasoning": "This is for control"
+            },
+            {
+                "step_number": 4,
+                "description": "Send appointment reminder",
+                "classification": "VA",
+                "reasoning": "As a customer I would like to receive a reminder so I do not forget"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application with applicant",
+                "classification": "VA",
+                "reasoning": "As a customer I would like to corroborate details of the application"
+            },
+            {
+                "step_number": 2,
+                "description": "Clarify any unclear points",
+                "classification": "BVA",
+                "reasoning": "This may be more important for the business than for the customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Gather additional information if needed",
+                "classification": "BVA",
+                "reasoning": "This may be more important for the business than for the customer. It could be also a 'NVA', as this could be avoided in the first place"
+            },
+            {
+                "step_number": 4,
+                "description": "Update application with new information",
+                "classification": "BVA",
+                "reasoning": "This may be more important for the business than for the customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare offer details",
+                "classification": "NVA",
+                "reasoning": "Depends what this activity is, but if it is only preparation, then it does not look Valuable for the business or the customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft offer letter",
+                "classification": "NVA",
+                "reasoning": "This does not look like a control activity"
+            },
+            {
+                "step_number": 3,
+                "description": "Review offer for accuracy",
+                "classification": "BVA",
+                "reasoning": "Ensuring correct information"
+            },
+            {
+                "step_number": 4,
+                "description": "Send offer to applicant",
+                "classification": "VA",
+                "reasoning": "As a customer I want to receive my offer if it was approved"
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Organize all application documents",
+                "classification": "NVA",
+                "reasoning": "Depends what this activity is, but if it is only organization, then it does not look valuable for the business or the customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status",
+                "classification": "BVA",
+                "reasoning": "Looks important for control"
+            },
+            {
+                "step_number": 3,
+                "description": "Store application in appropriate system",
+                "classification": "BVA",
+                "reasoning": "Looks important for control"
+            },
+            {
+                "step_number": 4,
+                "description": "Ensure all data protection requirements are met",
+                "classification": "BVA",
+                "reasoning": "Looks important for control"
+            }
+        ]
+    }
+]

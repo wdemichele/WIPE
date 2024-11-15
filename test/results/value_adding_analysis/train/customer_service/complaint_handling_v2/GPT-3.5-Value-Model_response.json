@@ -1,0 +1,373 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Send automatic reply to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive complaint notification",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by receiving and acknowledging their complaint."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate automatic acknowledgement message",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by automatically acknowledging their complaint."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send acknowledgement to customer's contact email",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the customer of the acknowledgement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by understanding the complaint."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult relevant team members or departments",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering input from relevant parties."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm potential solutions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by generating ideas for resolving the complaint."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate feasibility and effectiveness of solutions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the viability and impact of potential solutions."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select most appropriate solution",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by choosing the best solution for resolving the complaint."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send apology",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft personalized apology message",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing a personalized apology."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Have apology reviewed by appropriate authority",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the apology is appropriate and meets company standards."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send apology to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by delivering the apology to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Propose solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Formulate detailed solution proposal",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by developing a detailed plan for resolving the complaint."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft message explaining proposed solution",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by communicating the proposed solution to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send solution proposal to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by sharing the proposed solution with the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Record proposed solution in complaint management system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by documenting the proposed solution for future reference.\")classify(\"VA\", \"Execute solution\", \"Create action plan for implementing solution\", \"Directly contributes to meeting customer needs by providing a clear plan for implementing the solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create action plan for implementing solution",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign tasks to relevant team members",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assigning responsibilities to team members."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Implement solution actions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by executing the planned solution."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Verify solution implementation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring that the solution has been implemented correctly."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Follow up with customer to ensure satisfaction",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by checking if the customer is satisfied with the implemented solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate acceptable alternative",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review customer's negative response",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to understand the customer's concerns."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze reasons for rejection of initial solution",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to identify the reasons for the customer's rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm alternative solutions",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to explore other options."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess viability of alternative solutions",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to evaluate the feasibility of the alternative solutions."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select best alternative solution if available",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to choose the most suitable alternative solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Go to court",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Consult with legal department",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by seeking legal advice."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare necessary documentation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering and organizing the required legal documents."
+                },
+                {
+                    "step_number": 3,
+                    "description": "File legal action",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the legal process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Engage in legal proceedings",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by actively participating in the legal proceedings."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Update complaint status to 'In Litigation'",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by keeping them informed about the progress of the legal case."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 13,
+        "accuracy": 0.43333333333333335,
+        "misclassifications": [
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Receive complaint notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by receiving and acknowledging their complaint.",
+                "ground_truth_reasoning": "Necessary to initiate process but doesn't directly resolve complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Generate automatic acknowledgement message",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by automatically acknowledging their complaint.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly address complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Send acknowledgement to customer's contact email",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying the customer of the acknowledgement.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't resolve issue"
+            },
+            {
+                "activity": "Send apology",
+                "substep": "Have apology reviewed by appropriate authority",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring the apology is appropriate and meets company standards.",
+                "ground_truth_reasoning": "Ensures quality but doesn't directly add value to the apology"
+            },
+            {
+                "activity": "Propose solution",
+                "substep": "Record proposed solution in complaint management system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by documenting the proposed solution for future reference.\")classify(\"VA\", \"Execute solution\", \"Create action plan for implementing solution\", \"Directly contributes to meeting customer needs by providing a clear plan for implementing the solution.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Execute solution",
+                "substep": "Create action plan for implementing solution",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Directly contributes to resolving the complaint"
+            },
+            {
+                "activity": "Execute solution",
+                "substep": "Assign tasks to relevant team members",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by assigning responsibilities to team members.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Review customer's negative response",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to understand the customer's concerns.",
+                "ground_truth_reasoning": "Directly contributes to understanding customer's needs"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Analyze reasons for rejection of initial solution",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to identify the reasons for the customer's rejection.",
+                "ground_truth_reasoning": "Crucial for improving the solution"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Brainstorm alternative solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to explore other options.",
+                "ground_truth_reasoning": "Directly contributes to finding a better resolution"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Assess viability of alternative solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to evaluate the feasibility of the alternative solutions.",
+                "ground_truth_reasoning": "Ensures proposed alternatives are feasible and effective"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Select best alternative solution if available",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to choose the most suitable alternative solution.",
+                "ground_truth_reasoning": "Directly leads to improved complaint resolution"
+            },
+            {
+                "activity": "Go to court",
+                "substep": "Consult with legal department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by seeking legal advice.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly resolve complaint"
+            },
+            {
+                "activity": "Go to court",
+                "substep": "Prepare necessary documentation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by gathering and organizing the required legal documents.",
+                "ground_truth_reasoning": "Required for legal action but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Go to court",
+                "substep": "File legal action",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the legal process.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Go to court",
+                "substep": "Engage in legal proceedings",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by actively participating in the legal proceedings.",
+                "ground_truth_reasoning": "Required process but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Go to court",
+                "substep": "Update complaint status to 'In Litigation'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by keeping them informed about the progress of the legal case.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly resolve the complaint"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 11
+            },
+            "VA": {
+                "VA": 13,
+                "Unclassified": 1,
+                "BVA": 5
+            }
+        }
+    }
+}

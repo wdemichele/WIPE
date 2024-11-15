@@ -1,0 +1,104 @@
+[
+    {
+        "activity_name": "Develop prototype and import it to Test Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze development request requirements"
+            },
+            {
+                "step_number": 2,
+                "description": "Design and code prototype based on requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Import prototype into Test Environment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Test and correct version to import it in Staging Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Conduct initial testing in Test Environment"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify and fix any issues or bugs"
+            },
+            {
+                "step_number": 3,
+                "description": "Import corrected version into Staging Environment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Test and adjust with the feedback of the ticket owner and users",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather feedback from ticket owner and users"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze feedback and prioritize adjustments"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement adjustments and retest in Staging Environment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Import version with new functionality in Production Environment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare deployment plan for Production Environment"
+            },
+            {
+                "step_number": 2,
+                "description": "Execute deployment of new version to Production"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify successful implementation in Production Environment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Communicate new version and adjust with feedback of the ticket owner",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Notify ticket owner of new version deployment"
+            },
+            {
+                "step_number": 2,
+                "description": "Collect and review feedback from ticket owner"
+            },
+            {
+                "step_number": 3,
+                "description": "Make final adjustments based on feedback if necessary"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close ticket by deliberated new functionality and update KMS",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document final implementation details"
+            },
+            {
+                "step_number": 2,
+                "description": "Update Knowledge Management System (KMS) with new information"
+            },
+            {
+                "step_number": 3,
+                "description": "Close the development ticket in the system"
+            }
+        ]
+    }
+]

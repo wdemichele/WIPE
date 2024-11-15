@@ -1,0 +1,417 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "\n    You are an AI assistant representing the voice of the customer in process analysis. Your role is to evaluate\n    business processes from the customer's perspective, focusing on identifying steps that directly contribute\n    to customer satisfaction and value delivery.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): Activities that directly contribute to meeting customer needs or requirements.\n    2. Business Value Adding (BVA): Activities that are necessary for the business but don't directly add value for the customer.\n    3. Non-Value Adding (NVA): Activities that neither contribute to customer requirements nor are necessary for business functions.\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, consider the following additional guidelines:\n\n    1. Context is crucial: A step's classification may depend on its position in the overall process. \n       What seems non-value adding in isolation might be necessary when considering the bigger picture.\n\n    2. Customer perspective: Always try to view the process from the customer's point of view. \n       What they perceive as valuable should guide your VA classifications.\n\n    3. Industry standards: Some steps might be BVA due to industry regulations or standards, \n       even if they don't directly add value for the customer.\n\n    4. Potential for improvement: When classifying NVA steps, consider if they could be eliminated \n       or combined with other steps to improve efficiency.\n\n    5. Consistency: Ensure similar steps across different activities are classified consistently \n       unless there's a clear reason for differentiation.\n    ",
+            "_raw_input": {
+                "role_description": "customer_advocate",
+                "task_description": "efficiency_focused",
+                "classification_types": "basic",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "context_aware"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Receive loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application from customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of submitting their loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log application in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of received loan applications."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign application ID",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to uniquely identify each loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial eligibility check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for completeness",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of ensuring their application is complete."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check applicant's age and residency status",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of determining their eligibility based on age and residency."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify loan amount against eligibility criteria",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of determining their eligibility based on the requested loan amount."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make initial eligibility decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of receiving an initial eligibility decision."
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit history check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assess the applicant's credit history."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the applicant's creditworthiness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze payment history",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assess the applicant's payment behavior."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Check for bankruptcies or defaults",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to identify any financial risks associated with the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check applicant's income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review provided income documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of verifying their income."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify employment status",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of confirming their employment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate total income",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of determining their total income."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess income stability",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of evaluating the stability of their income."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraisal of property to be mortgaged",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule property appraisal",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of having their property appraised."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site property inspection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of having their property physically inspected."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate property condition and location",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of assessing the condition and location of their property."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine property market value",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of determining the market value of their property."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Prepare appraisal report",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of receiving an appraisal report for their property."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess applicant's credit risk",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review credit history check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to gather information about the applicant's credit history, which is important for assessing their credit risk."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze income sources",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the applicant's credit risk by evaluating their income sources."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "Calculating the debt-to-income ratio is essential for determining the applicant's credit risk."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine overall credit risk level",
+                    "classification": "VA",
+                    "reasoning": "This step is the final outcome of the credit risk assessment and directly contributes to the overall process efficiency."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraise other collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify additional collateral",
+                    "classification": "BVA",
+                    "reasoning": "Identifying additional collateral is necessary to consider all available assets for the loan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess value of additional collateral",
+                    "classification": "VA",
+                    "reasoning": "Assessing the value of additional collateral directly contributes to determining the loan's overall collateral value."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify ownership of collateral",
+                    "classification": "VA",
+                    "reasoning": "Verifying ownership ensures that the collateral can be used for the loan."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Document collateral appraisal results",
+                    "classification": "VA",
+                    "reasoning": "Documenting the collateral appraisal results is necessary for record-keeping and future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Loan risk assessment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all gathered information",
+                    "classification": "BVA",
+                    "reasoning": "Reviewing all gathered information is necessary to consider all relevant factors for the loan risk assessment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze loan-to-value ratio",
+                    "classification": "VA",
+                    "reasoning": "Analyzing the loan-to-value ratio directly contributes to assessing the loan's risk."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate overall financial profile",
+                    "classification": "VA",
+                    "reasoning": "Evaluating the overall financial profile of the applicant is crucial for determining the loan's risk."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine final risk assessment",
+                    "classification": "VA",
+                    "reasoning": "This step is the final outcome of the loan risk assessment and directly contributes to the overall process efficiency."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Prepare risk assessment report",
+                    "classification": "VA",
+                    "reasoning": "Preparing a risk assessment report is necessary for documenting the assessment and communicating the results."
+                }
+            ]
+        },
+        {
+            "activity_name": "Customer informed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication for ineligible application",
+                    "classification": "BVA",
+                    "reasoning": "Preparing communication for ineligible applications is necessary to inform customers about the status of their application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to customer",
+                    "classification": "VA",
+                    "reasoning": "Sending notifications to customers is a direct value-added step that keeps them informed about the status of their application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record communication in system",
+                    "classification": "VA",
+                    "reasoning": "Recording communication in the system is necessary for record-keeping and future reference."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 36,
+        "correct_classifications": 22,
+        "accuracy": 0.6111111111111112,
+        "misclassifications": [
+            {
+                "activity": "Receive loan application",
+                "substep": "Receive application from customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of submitting their loan application.",
+                "ground_truth_reasoning": "Necessary to start the process but doesn't directly assess loan eligibility"
+            },
+            {
+                "activity": "Initial eligibility check",
+                "substep": "Review application for completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of ensuring their application is complete.",
+                "ground_truth_reasoning": "Ensures all necessary information is present but doesn't directly assess eligibility"
+            },
+            {
+                "activity": "Credit history check",
+                "substep": "Review credit score",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the applicant's creditworthiness.",
+                "ground_truth_reasoning": "Directly contributes to assessing creditworthiness"
+            },
+            {
+                "activity": "Credit history check",
+                "substep": "Analyze payment history",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to assess the applicant's payment behavior.",
+                "ground_truth_reasoning": "Critical for evaluating applicant's financial behavior"
+            },
+            {
+                "activity": "Credit history check",
+                "substep": "Check for bankruptcies or defaults",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to identify any financial risks associated with the applicant.",
+                "ground_truth_reasoning": "Crucial for assessing financial risk"
+            },
+            {
+                "activity": "Appraisal of property to be mortgaged",
+                "substep": "Schedule property appraisal",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of having their property appraised.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly assess property value"
+            },
+            {
+                "activity": "Appraisal of property to be mortgaged",
+                "substep": "Prepare appraisal report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of receiving an appraisal report for their property.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Assess applicant's credit risk",
+                "substep": "Review credit history check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to gather information about the applicant's credit history, which is important for assessing their credit risk.",
+                "ground_truth_reasoning": "Directly contributes to risk assessment"
+            },
+            {
+                "activity": "Appraise other collateral",
+                "substep": "Identify additional collateral",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Identifying additional collateral is necessary to consider all available assets for the loan.",
+                "ground_truth_reasoning": "Directly contributes to assessing total security for the loan"
+            },
+            {
+                "activity": "Appraise other collateral",
+                "substep": "Document collateral appraisal results",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Documenting the collateral appraisal results is necessary for record-keeping and future reference.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't add new value to assessment"
+            },
+            {
+                "activity": "Loan risk assessment",
+                "substep": "Review all gathered information",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Reviewing all gathered information is necessary to consider all relevant factors for the loan risk assessment.",
+                "ground_truth_reasoning": "Crucial for comprehensive risk evaluation"
+            },
+            {
+                "activity": "Loan risk assessment",
+                "substep": "Prepare risk assessment report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Preparing a risk assessment report is necessary for documenting the assessment and communicating the results.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't add new value to assessment"
+            },
+            {
+                "activity": "Customer informed",
+                "substep": "Send notification to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sending notifications to customers is a direct value-added step that keeps them informed about the status of their application.",
+                "ground_truth_reasoning": "Important for customer service but doesn't change outcome"
+            },
+            {
+                "activity": "Customer informed",
+                "substep": "Record communication in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Recording communication in the system is necessary for record-keeping and future reference.",
+                "ground_truth_reasoning": "Necessary for documentation but doesn't add value to decision"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 18,
+                "BVA": 6
+            },
+            "BVA": {
+                "VA": 8,
+                "BVA": 4
+            },
+            "NVA": {}
+        }
+    }
+}

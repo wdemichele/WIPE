@@ -1,0 +1,263 @@
+[
+  {
+    "activity_name": "Receive loan application",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Receive application from customer",
+        "classification": "BVA",
+        "reasoning": "Necessary to start the process but doesn't directly assess loan eligibility"
+      },
+      {
+        "step_number": 2,
+        "description": "Log application in system",
+        "classification": "BVA",
+        "reasoning": "Important for tracking but doesn't directly contribute to loan decision"
+      },
+      {
+        "step_number": 3,
+        "description": "Assign application ID",
+        "classification": "BVA",
+        "reasoning": "Necessary for process management but doesn't affect loan evaluation"
+      }
+    ]
+  },
+  {
+    "activity_name": "Initial eligibility check",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Review application for completeness",
+        "classification": "BVA",
+        "reasoning": "Ensures all necessary information is present but doesn't directly assess eligibility"
+      },
+      {
+        "step_number": 2,
+        "description": "Check applicant's age and residency status",
+        "classification": "BVA",
+        "reasoning": "This step ensures compliance with legal and regulatory requirements."
+      },
+      {
+        "step_number": 3,
+        "description": "Verify loan amount against eligibility criteria",
+        "classification": "VA",
+        "reasoning": "Crucial for assessing if the loan request meets basic requirements"
+      },
+      {
+        "step_number": 4,
+        "description": "Make initial eligibility decision",
+        "classification": "VA",
+        "reasoning": "Direct contribution to the loan approval process"
+      }
+    ]
+  },
+  {
+    "activity_name": "Credit history check",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Request credit report from credit bureau",
+        "classification": "BVA",
+        "reasoning": "Necessary to obtain information, but doesn't directly analyze it"
+      },
+      {
+        "step_number": 2,
+        "description": "Review credit score",
+        "classification": "VA",
+        "reasoning": "Directly contributes to assessing creditworthiness"
+      },
+      {
+        "step_number": 3,
+        "description": "Analyze payment history",
+        "classification": "VA",
+        "reasoning": "Critical for evaluating applicant's financial behavior"
+      },
+      {
+        "step_number": 4,
+        "description": "Check for bankruptcies or defaults",
+        "classification": "VA",
+        "reasoning": "Crucial for assessing financial risk"
+      }
+    ]
+  },
+  {
+    "activity_name": "Check applicant's income sources",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Review provided income documents",
+        "classification": "VA",
+        "reasoning": "Directly contributes to verifying income claims"
+      },
+      {
+        "step_number": 2,
+        "description": "Verify employment status",
+        "classification": "VA",
+        "reasoning": "Essential for confirming income stability"
+      },
+      {
+        "step_number": 3,
+        "description": "Calculate total income",
+        "classification": "VA",
+        "reasoning": "Crucial for determining loan affordability"
+      },
+      {
+        "step_number": 4,
+        "description": "Assess income stability",
+        "classification": "VA",
+        "reasoning": "Critical for evaluating long-term ability to repay"
+      }
+    ]
+  },
+  {
+    "activity_name": "Appraisal of property to be mortgaged",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Schedule property appraisal",
+        "classification": "BVA",
+        "reasoning": "Necessary for process but doesn't directly assess property value"
+      },
+      {
+        "step_number": 2,
+        "description": "Conduct on-site property inspection",
+        "classification": "VA",
+        "reasoning": "Directly contributes to assessing property condition and value"
+      },
+      {
+        "step_number": 3,
+        "description": "Evaluate property condition and location",
+        "classification": "VA",
+        "reasoning": "Critical for determining property value and risk"
+      },
+      {
+        "step_number": 4,
+        "description": "Determine property market value",
+        "classification": "VA",
+        "reasoning": "Crucial for establishing loan-to-value ratio"
+      },
+      {
+        "step_number": 5,
+        "description": "Prepare appraisal report",
+        "classification": "BVA",
+        "reasoning": "Summarizes findings but doesn't directly add new value"
+      }
+    ]
+  },
+  {
+    "activity_name": "Assess applicant's credit risk",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Review credit history check results",
+        "classification": "VA",
+        "reasoning": "Directly contributes to risk assessment"
+      },
+      {
+        "step_number": 2,
+        "description": "Analyze income sources",
+        "classification": "VA",
+        "reasoning": "Critical for evaluating repayment capacity"
+      },
+      {
+        "step_number": 3,
+        "description": "Calculate debt-to-income ratio",
+        "classification": "VA",
+        "reasoning": "Key metric for determining loan affordability"
+      },
+      {
+        "step_number": 4,
+        "description": "Determine overall credit risk level",
+        "classification": "VA",
+        "reasoning": "Crucial for final loan decision"
+      }
+    ]
+  },
+  {
+    "activity_name": "Appraise other collateral",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Identify additional collateral",
+        "classification": "VA",
+        "reasoning": "Directly contributes to assessing total security for the loan"
+      },
+      {
+        "step_number": 2,
+        "description": "Assess value of additional collateral",
+        "classification": "VA",
+        "reasoning": "Critical for determining total loan security"
+      },
+      {
+        "step_number": 3,
+        "description": "Verify ownership of collateral",
+        "classification": "VA",
+        "reasoning": "Essential for confirming the validity of the collateral"
+      },
+      {
+        "step_number": 4,
+        "description": "Document collateral appraisal results",
+        "classification": "BVA",
+        "reasoning": "Important for record-keeping but doesn't add new value to assessment"
+      }
+    ]
+  },
+  {
+    "activity_name": "Loan risk assessment",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Review all gathered information",
+        "classification": "VA",
+        "reasoning": "Crucial for comprehensive risk evaluation"
+      },
+      {
+        "step_number": 2,
+        "description": "Analyze loan-to-value ratio",
+        "classification": "VA",
+        "reasoning": "Key metric for assessing loan risk"
+      },
+      {
+        "step_number": 3,
+        "description": "Evaluate overall financial profile",
+        "classification": "VA",
+        "reasoning": "Critical for holistic assessment of loan application"
+      },
+      {
+        "step_number": 4,
+        "description": "Determine final risk assessment",
+        "classification": "VA",
+        "reasoning": "Directly leads to loan decision"
+      },
+      {
+        "step_number": 5,
+        "description": "Prepare risk assessment report",
+        "classification": "BVA",
+        "reasoning": "Summarizes findings but doesn't add new value to assessment"
+      }
+    ]
+  },
+  {
+    "activity_name": "Customer informed",
+    "substeps": [
+      {
+        "step_number": 1,
+        "description": "Prepare communication for ineligible application",
+        "classification": "BVA",
+        "reasoning": "Necessary for process closure but doesn't affect decision"
+      },
+      {
+        "step_number": 2,
+        "description": "Send notification to customer",
+        "classification": "BVA",
+        "reasoning": "Important for customer service but doesn't change outcome"
+      },
+      {
+        "step_number": 3,
+        "description": "Record communication in system",
+        "classification": "BVA",
+        "reasoning": "Necessary for documentation but doesn't add value to decision"
+      }
+    ]
+  }
+]

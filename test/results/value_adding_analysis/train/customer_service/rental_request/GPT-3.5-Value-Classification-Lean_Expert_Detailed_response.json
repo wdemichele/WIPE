@@ -1,0 +1,169 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Submit equipment rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a rental request, which is a service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to clerk",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the rental request and sends it to the clerk for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Select suitable equipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open and read request",
+                    "classification": "VA",
+                    "reasoning": "This step is necessary to understand the rental request and select suitable equipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable equipment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to selecting the appropriate equipment for the rental request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check equipment availability",
+                    "classification": "VA",
+                    "reasoning": "This step is crucial for determining the availability of the requested equipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record recommended equipment & supplier",
+                    "classification": "VA",
+                    "reasoning": "This step records the recommended equipment and supplier for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request to works engineer",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the rental request is forwarded to the works engineer for review."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open and examine request",
+                    "classification": "VA",
+                    "reasoning": "This step is necessary to review the rental request and identify any issues."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate issues",
+                    "classification": "VA",
+                    "reasoning": "This step involves communicating any issues identified during the review process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create PO",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request back to clerk",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the rental request is forwarded back to the clerk for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create PO",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a purchase order for the rental request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send PO to supplier",
+                    "classification": "VA",
+                    "reasoning": "This step sends the purchase order to the supplier for equipment procurement."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 12,
+        "correct_classifications": 7,
+        "accuracy": 0.5833333333333334,
+        "misclassifications": [
+            {
+                "activity": "Submit equipment rental request",
+                "substep": "Send request to clerk",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the rental request and sends it to the clerk for further processing.",
+                "ground_truth_reasoning": "Necessary for process flow but doesn't directly add value to the request"
+            },
+            {
+                "activity": "Select suitable equipment",
+                "substep": "Open and read request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step is necessary to understand the rental request and select suitable equipment.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the selection"
+            },
+            {
+                "activity": "Check availability",
+                "substep": "Record recommended equipment & supplier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step records the recommended equipment and supplier for further processing.",
+                "ground_truth_reasoning": "Supports the process but doesn't directly add value to the requester"
+            },
+            {
+                "activity": "Review rental request",
+                "substep": "Forward request to works engineer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that the rental request is forwarded to the works engineer for review.",
+                "ground_truth_reasoning": "Necessary for approval process but doesn't directly add value"
+            },
+            {
+                "activity": "Create PO",
+                "substep": "Forward request back to clerk",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that the rental request is forwarded back to the clerk for further processing.",
+                "ground_truth_reasoning": "Necessary for process flow but doesn't directly add value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 7
+            },
+            "BVA": {
+                "VA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

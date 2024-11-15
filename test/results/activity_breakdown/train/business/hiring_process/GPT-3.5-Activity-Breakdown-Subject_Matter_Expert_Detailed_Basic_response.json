@@ -1,0 +1,321 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Hand In Job Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete job application form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Attach resume and cover letter"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit application online"
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for basic qualifications"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for completeness and accuracy"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's eligibility for further screening"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule phone interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct phone interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate candidate's communication skills and fit"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify candidate of rejection"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide feedback (optional)"
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate background check process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify candidate's employment history and credentials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's suitability for the role"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule screening interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct screening interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's technical skills and experience"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate extensive background check process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify candidate's references and conduct additional checks"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate candidate's integrity and character"
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule coding interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct coding interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's coding skills and problem-solving abilities"
+                }
+            ]
+        },
+        {
+            "activity_name": "Frontend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule frontend interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct frontend interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's frontend development skills"
+                }
+            ]
+        },
+        {
+            "activity_name": "ML Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule machine learning interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct machine learning interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's machine learning knowledge and experience"
+                }
+            ]
+        },
+        {
+            "activity_name": "Backend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule backend interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct backend interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's backend development skills"
+                }
+            ]
+        },
+        {
+            "activity_name": "Behavioral Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule behavioral interview with candidate"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct behavioral interview"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess candidate's interpersonal skills and cultural fit"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Job Offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare job offer package"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Present job offer to candidate"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Negotiate terms and conditions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Candidate Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Candidate accepts job offer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Candidate rejects job offer"
+                }
+            ]
+        },
+        {
+            "activity_name": "End - Hired",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Onboard new employee"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Complete necessary paperwork"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Introduce employee to team and company culture"
+                }
+            ]
+        },
+        {
+            "activity_name": "End - Not Hired",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify candidate of rejection"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide feedback (optional)"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reconsider?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate the need for reconsideration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review candidate's qualifications and feedback"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Make a decision on reconsideration"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                19,
+                50.0
+            ],
+            "No Match": [
+                17,
+                44.73684210526316
+            ],
+            "Granularity Difference": [
+                1,
+                2.631578947368421
+            ],
+            "Identical Match": [
+                1,
+                2.631578947368421
+            ]
+        },
+        "average_confidence": 46.18421052631579,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.36842105263158,
+            "No Match": 0.0,
+            "Granularity Difference": 90.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 84.44444444444444,
+        "response_coverage": 80.43478260869566,
+        "average_sequence_alignment": 91.02564102564102,
+        "average_overall_similarity_score": 48.07692307692308
+    }
+}

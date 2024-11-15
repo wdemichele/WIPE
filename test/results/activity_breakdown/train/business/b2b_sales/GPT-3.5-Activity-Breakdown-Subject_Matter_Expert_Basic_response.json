@@ -1,0 +1,148 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare marketing materials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send marketing materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive response via email"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive response by post"
+                }
+            ]
+        },
+        {
+            "activity_name": "X",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection letter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact applicant for clarification"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Schedule appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Discuss application with applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "+",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send offer"
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Organize application documents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "File application"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                2,
+                12.5
+            ],
+            "Functional Equivalence": [
+                8,
+                50.0
+            ],
+            "Granularity Difference": [
+                5,
+                31.25
+            ],
+            "Identical Match": [
+                1,
+                6.25
+            ]
+        },
+        "average_confidence": 75.0,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Functional Equivalence": 83.75,
+            "Granularity Difference": 86.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 94.11764705882352,
+        "response_coverage": 80.64516129032258,
+        "average_sequence_alignment": 34.375,
+        "average_overall_similarity_score": 77.91624999999999
+    }
+}

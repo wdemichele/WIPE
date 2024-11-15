@@ -1,0 +1,5 @@
+{
+    "equivalent": true,
+    "num_iterations": 3,
+    "final_mermaid_code": "graph TB\n    subgraph ACME_AG_Procurement\n        A([Need arises]) --> B[Check stock]\n        B -->|Work equipment in stock| C{XORGateway}\n        C -->|Work equipment in stock| D[Retrieve work equipment from the storeroom]\n        D --> E([Work equipment removed from the storeroom])\n        C -->|Work equipment not in stock| F[Specify and quantify requirements]\n        F --> G[Place order]\n        \n        G --> H([ERP-System])\n        \n        G --> I{ParallelGateway}\n        I --> J([Order request template])\n        J --> K([5 days])\n        K --> L[Place order by e-mail]\n        L --> M([Receipt of work equipment])\n        \n        M --> N{XORGateway}\n        N -->|Work equipment procured| O([Work equipment procured])\n    end\n\n    subgraph Supplier\n        M --> P([Receipt of work equipment])\n    end"
+}

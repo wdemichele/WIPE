@@ -1,0 +1,158 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Client starts the quote process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Client provides necessary information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Client submits the quote request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives the quote request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Insurer reviews the provided information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Insurer assesses the risk and calculates the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decision is made based on the calculated quote"
+                },
+                {
+                    "step_number": 2,
+                    "description": "If quote is accepted, proceed to acceptance step"
+                },
+                {
+                    "step_number": 3,
+                    "description": "If quote is rejected, proceed to rejection step"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives acceptance of the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives rejection of the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares the quote based on the provided information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Quote ready",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer checks if the quote is ready for acceptance or rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive acceptance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives acceptance of the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives rejection of the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares the insurance contract based on the accepted quote"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                6,
+                40.0
+            ],
+            "Granularity Difference": [
+                1,
+                6.666666666666667
+            ],
+            "No Match": [
+                7,
+                46.666666666666664
+            ],
+            "Process Alternative": [
+                1,
+                6.666666666666667
+            ]
+        },
+        "average_confidence": 44.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.5,
+            "Granularity Difference": 90.0,
+            "No Match": 0.0,
+            "Process Alternative": 75.0
+        },
+        "ground_truth_coverage": 83.33333333333334,
+        "response_coverage": 44.44444444444444,
+        "average_sequence_alignment": 90.87301587301587,
+        "average_overall_similarity_score": 35.55555555555556
+    }
+}

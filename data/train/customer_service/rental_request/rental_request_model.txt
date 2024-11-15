@@ -1,0 +1,19 @@
+graph TD
+    subgraph "Site Engineer"
+        A((Start)) --> B[Submit equipment rental request]
+    end
+    
+    subgraph "Clerk"
+        B --> C[Select suitable equipment]
+        C --> D[Check availability]
+        D --> E{Available?}
+        E -->|No| C
+        F --> G((End))
+    end
+    
+    subgraph "Works Engineer"
+        E -->|Yes| H[Review rental request]
+        H --> I{Decision}
+        I -->|Approved| F[Create PO]
+        I -->|Rejected| J((End))
+    end

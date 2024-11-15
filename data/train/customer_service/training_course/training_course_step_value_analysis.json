@@ -1,0 +1,368 @@
+[
+    {
+        "activity_name": "Review application and budget forms",
+        "analysis": "This activity is Business Value Adding (BVA) as it ensures the course meets requirements but doesn't directly add value to the students' experience.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive application and budget forms",
+                "classification": "BVA",
+                "reasoning": "Necessary for process initiation but doesn't directly add value to the course"
+            },
+            {
+                "step_number": 2,
+                "description": "Review application details",
+                "classification": "BVA",
+                "reasoning": "Ensures course viability but doesn't directly enhance student experience"
+            },
+            {
+                "step_number": 3,
+                "description": "Examine budget information",
+                "classification": "BVA",
+                "reasoning": "Important for financial planning but doesn't directly impact course quality"
+            }
+        ]
+    },
+    {
+        "activity_name": "Room booking",
+        "analysis": "This activity is Value Adding (VA) as it directly contributes to providing a suitable learning environment for students.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check available rooms",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to the course"
+            },
+            {
+                "step_number": 2,
+                "description": "Select appropriate room",
+                "classification": "VA",
+                "reasoning": "Directly impacts the quality of the learning environment"
+            },
+            {
+                "step_number": 3,
+                "description": "Reserve room for course dates",
+                "classification": "VA",
+                "reasoning": "Ensures availability of suitable learning space"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm room booking",
+                "classification": "BVA",
+                "reasoning": "Administrative task that doesn't directly add value to the course"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up account",
+        "analysis": "This activity is Business Value Adding (BVA) as it's necessary for course administration but doesn't directly enhance the learning experience.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create new account in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for administration but doesn't directly impact course quality"
+            },
+            {
+                "step_number": 2,
+                "description": "Input course details",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to students"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign account permissions",
+                "classification": "BVA",
+                "reasoning": "Ensures proper access but doesn't directly enhance course content"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up course website",
+        "analysis": "This activity is Value Adding (VA) as it directly contributes to student access to course information and resources.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create new website",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to the course content"
+            },
+            {
+                "step_number": 2,
+                "description": "Design website layout",
+                "classification": "VA",
+                "reasoning": "Enhances user experience and accessibility of course information"
+            },
+            {
+                "step_number": 3,
+                "description": "Add course information",
+                "classification": "VA",
+                "reasoning": "Directly provides value to students by offering course details"
+            },
+            {
+                "step_number": 4,
+                "description": "Publish website",
+                "classification": "VA",
+                "reasoning": "Makes course information accessible to students"
+            }
+        ]
+    },
+    {
+        "activity_name": "Registration website setup",
+        "analysis": "This activity is Business Value Adding (BVA) as it facilitates enrollment but doesn't directly enhance the course content.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create registration website",
+                "classification": "BVA",
+                "reasoning": "Facilitates enrollment process but doesn't directly add course value"
+            },
+            {
+                "step_number": 2,
+                "description": "Create registration form",
+                "classification": "BVA",
+                "reasoning": "Necessary for enrollment but doesn't directly impact course quality"
+            },
+            {
+                "step_number": 3,
+                "description": "Set up payment gateway",
+                "classification": "BVA",
+                "reasoning": "Enables payment processing but doesn't directly add value to the course"
+            }
+        ]
+    },
+    {
+        "activity_name": "Promote course",
+        "analysis": "This activity is Business Value Adding (BVA) as it's necessary for attracting students but doesn't directly improve the course content.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Develop marketing materials",
+                "classification": "BVA",
+                "reasoning": "Helps attract students but doesn't directly enhance course quality"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify target audience",
+                "classification": "BVA",
+                "reasoning": "Important for marketing but doesn't directly add value to the course"
+            },
+            {
+                "step_number": 3,
+                "description": "Distribute promotional content",
+                "classification": "BVA",
+                "reasoning": "Necessary for attracting students but doesn't improve course content"
+            },
+            {
+                "step_number": 4,
+                "description": "Monitor marketing effectiveness",
+                "classification": "BVA",
+                "reasoning": "Helps improve future marketing but doesn't directly impact current course"
+            }
+        ]
+    },
+    {
+        "activity_name": "Registration website closed",
+        "analysis": "This activity is Business Value Adding (BVA) as it manages the enrollment process but doesn't directly enhance the course content.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check registration deadline",
+                "classification": "BVA",
+                "reasoning": "Necessary for process management but doesn't add direct value to course"
+            },
+            {
+                "step_number": 2,
+                "description": "Close registration portal",
+                "classification": "BVA",
+                "reasoning": "Administrative task that doesn't directly improve course quality"
+            },
+            {
+                "step_number": 3,
+                "description": "Update website with closure information",
+                "classification": "BVA",
+                "reasoning": "Informs potential students but doesn't enhance course content"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare registration data for review",
+                "classification": "BVA",
+                "reasoning": "Necessary for administration but doesn't directly add value to students"
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle payments",
+        "analysis": "This activity is Business Value Adding (BVA) as it's necessary for course operation but doesn't directly improve the learning experience.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect payment information",
+                "classification": "BVA",
+                "reasoning": "Necessary for enrollment but doesn't directly add value to the course"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payments",
+                "classification": "BVA",
+                "reasoning": "Essential for course operation but doesn't enhance course content"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue receipts",
+                "classification": "BVA",
+                "reasoning": "Administrative task that doesn't directly improve course quality"
+            },
+            {
+                "step_number": 4,
+                "description": "Reconcile payment records",
+                "classification": "BVA",
+                "reasoning": "Important for financial management but doesn't impact course content"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify registered participants of cancellation",
+        "analysis": "This activity is Non-Value Adding (NVA) as it represents a scenario where the course doesn't proceed, providing no value to students.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft cancellation message",
+                "classification": "NVA",
+                "reasoning": "Necessary due to cancellation but doesn't add value to students"
+            },
+            {
+                "step_number": 2,
+                "description": "Compile list of registered participants",
+                "classification": "NVA",
+                "reasoning": "Required for communication but doesn't provide course value"
+            },
+            {
+                "step_number": 3,
+                "description": "Send cancellation notifications",
+                "classification": "NVA",
+                "reasoning": "Informs students but represents a lack of value delivery"
+            },
+            {
+                "step_number": 4,
+                "description": "Process refunds if applicable",
+                "classification": "NVA",
+                "reasoning": "Necessary due to cancellation but doesn't provide course value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print name badges",
+        "analysis": "This activity is Business Value Adding (BVA) as it facilitates course operation but doesn't directly improve course content.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect participant information",
+                "classification": "BVA",
+                "reasoning": "Necessary for badge creation but doesn't directly add course value"
+            },
+            {
+                "step_number": 2,
+                "description": "Design badge template",
+                "classification": "BVA",
+                "reasoning": "Enhances organization but doesn't directly improve course content"
+            },
+            {
+                "step_number": 3,
+                "description": "Print badges",
+                "classification": "BVA",
+                "reasoning": "Facilitates identification but doesn't directly add to learning"
+            },
+            {
+                "step_number": 4,
+                "description": "Organise badges for distribution",
+                "classification": "BVA",
+                "reasoning": "Aids in course management but doesn't enhance course quality"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up Blackboard website for students",
+        "analysis": "This activity is Value Adding (VA) as it directly contributes to student access to course materials and information.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create course shell in Blackboard",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to course content"
+            },
+            {
+                "step_number": 2,
+                "description": "Upload course materials",
+                "classification": "VA",
+                "reasoning": "Directly provides value by giving students access to learning materials"
+            },
+            {
+                "step_number": 3,
+                "description": "Enroll registered students",
+                "classification": "BVA",
+                "reasoning": "Necessary for access but doesn't directly improve course content"
+            }
+        ]
+    },
+    {
+        "activity_name": "Catering arranging",
+        "analysis": "This activity is Business Value Adding (BVA) as it enhances the overall experience but doesn't directly improve course content.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine catering requirements",
+                "classification": "BVA",
+                "reasoning": "Enhances comfort but doesn't directly improve learning"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact catering providers",
+                "classification": "BVA",
+                "reasoning": "Necessary for arranging food but doesn't add to course content"
+            },
+            {
+                "step_number": 3,
+                "description": "Select menu options",
+                "classification": "BVA",
+                "reasoning": "Improves experience but doesn't directly enhance learning"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm catering order and logistics",
+                "classification": "BVA",
+                "reasoning": "Ensures food availability but doesn't add to course content"
+            }
+        ]
+    },
+    {
+        "activity_name": "Course delivery",
+        "analysis": "This activity is Value Adding (VA) as it directly provides the learning experience to students.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare course materials",
+                "classification": "VA",
+                "reasoning": "Directly contributes to the quality of the learning experience"
+            },
+            {
+                "step_number": 2,
+                "description": "Set up course venue",
+                "classification": "BVA",
+                "reasoning": "Necessary for delivery but doesn't directly add to course content"
+            },
+            {
+                "step_number": 3,
+                "description": "Conduct course sessions",
+                "classification": "VA",
+                "reasoning": "Core value-adding activity that delivers the learning experience"
+            },
+            {
+                "step_number": 4,
+                "description": "Collect feedback from participants",
+                "classification": "BVA",
+                "reasoning": "Helps improve future courses but doesn't add value to current course"
+            }
+        ]
+    }
+]

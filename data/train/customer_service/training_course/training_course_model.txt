@@ -1,0 +1,24 @@
+graph TD
+    Start((Review application and budget forms)) --> RoomBooking[Room booking]
+    RoomBooking --> SetupAccount[Set up account]
+    SetupAccount --> ParallelSplit1{{"Parallel Split"}}
+    ParallelSplit1 -->|web services| SetupWebsite[Set up course website]
+    ParallelSplit1 -->|finance| RegistrationSetup[Registration website setup]
+    ParallelSplit1 -->|marketing| PromoteCourse[Promote course]
+    SetupWebsite --> ParallelJoin1{{"Parallel Join"}}
+    RegistrationSetup --> ParallelJoin1
+    PromoteCourse --> ParallelJoin1
+    ParallelJoin1 --> RegistrationClosed[Registration website closed]
+    RegistrationClosed --> HandlePayments[Handle payments]
+    HandlePayments --> PaymentCheck{Sufficient registrations?}
+    PaymentCheck -->|Yes| RequirementsCheck{{"Requirements Check"}}
+    PaymentCheck -->|No| NotifyCancel[Notify registered participants of cancellation]
+    NotifyCancel --> End1((Course cancelled))
+    RequirementsCheck -->|Badges required| PrintBadges[Print name badges]
+    RequirementsCheck -->|Blackboard required| SetupBlackboard[Set up Blackboard website for students]
+    RequirementsCheck -->|Catering required| ArrangeCatering[Catering arranging]
+    PrintBadges --> FinalJoin{{"Final Join"}}
+    SetupBlackboard --> FinalJoin
+    ArrangeCatering --> FinalJoin
+    FinalJoin --> CourseDelivery[Course delivery]
+    CourseDelivery --> End2((Close))

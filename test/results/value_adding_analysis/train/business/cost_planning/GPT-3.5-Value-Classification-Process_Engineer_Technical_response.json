@@ -1,0 +1,188 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "process_engineer",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic",
+            "example_output": "complex_process"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Cost planning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather relevant financial data",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a cost plan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Estimate project costs",
+                    "classification": "VA",
+                    "reasoning": "Transforms financial data into estimated costs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Create cost breakdown structure",
+                    "classification": "VA",
+                    "reasoning": "Shapes cost data into a structured breakdown."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Develop initial cost plan",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating the initial cost plan."
+                }
+            ]
+        },
+        {
+            "activity_name": "Recalculation of costs",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review initial cost plan",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the recalculation process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify areas for cost reduction or optimization",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to identifying cost reduction opportunities."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Adjust cost estimates",
+                    "classification": "VA",
+                    "reasoning": "Transforms cost estimates based on identified areas for optimization."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update cost plan",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to updating the cost plan."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan data transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare cost plan data for transfer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing cost plan data for transfer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify relevant stakeholders for data sharing",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to identifying stakeholders for data sharing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Transfer cost plan data to appropriate systems or departments",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to transferring cost plan data."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get approval for expenses",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile finalized cost plan",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to compiling the finalized cost plan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Present cost plan to approving authority",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to presenting the cost plan for approval."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Address any questions or concerns",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to addressing questions or concerns."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain formal approval for expenses",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to obtaining formal approval."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Document approval decision",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to documenting the approval decision."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 16,
+        "correct_classifications": 11,
+        "accuracy": 0.6875,
+        "misclassifications": [
+            {
+                "activity": "Plan data transfer",
+                "substep": "Prepare cost plan data for transfer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to preparing cost plan data for transfer.",
+                "ground_truth_reasoning": "Necessary for sharing but doesn't change the plan"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Identify relevant stakeholders for data sharing",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to identifying stakeholders for data sharing.",
+                "ground_truth_reasoning": "Important for communication but doesn't alter the plan"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Transfer cost plan data to appropriate systems or departments",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to transferring cost plan data.",
+                "ground_truth_reasoning": "Essential for process but doesn't add value to the plan itself"
+            },
+            {
+                "activity": "Get approval for expenses",
+                "substep": "Compile finalized cost plan",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to compiling the finalized cost plan.",
+                "ground_truth_reasoning": "Prepares for approval but doesn't change the plan"
+            },
+            {
+                "activity": "Get approval for expenses",
+                "substep": "Document approval decision",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to documenting the approval decision.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't change the outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 11
+            },
+            "BVA": {
+                "VA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

@@ -1,0 +1,188 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "business_consultant",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check destination",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without directly adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open package and pull out the packaging slip",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without directly adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter purchase order number into ERP to check destination",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations to ensure accurate destination information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set package as unknown",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record unknown package in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations to track and manage unknown packages."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register package into ERP",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter information on packaging slip in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations to record package information in the ERP system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Write details on package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Write area and/or room number on package",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without directly adding value to the customer or business."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print delivery form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Print delivery form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating the end product, which is the delivery form."
+                }
+            ]
+        },
+        {
+            "activity_name": "Secure form in plastic packet",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fold and palce in envelope",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Tap platstic packet to package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Tap platstic packet to package",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 9,
+        "correct_classifications": 1,
+        "accuracy": 0.1111111111111111,
+        "misclassifications": [
+            {
+                "activity": "Check destination",
+                "substep": "Unload package from pallet",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Open package and pull out the packaging slip",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Enter purchase order number into ERP to check destination",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations to ensure accurate destination information.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set package as unknown",
+                "substep": "Record unknown package in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations to track and manage unknown packages.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Register package into ERP",
+                "substep": "Enter information on packaging slip in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations to record package information in the ERP system.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Write details on package",
+                "substep": "Write area and/or room number on package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Secure form in plastic packet",
+                "substep": "Fold and palce in envelope",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Tap platstic packet to package",
+                "substep": "Tap platstic packet to package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 1
+            },
+            "BVA": {
+                "BVA": 3
+            },
+            "NVA": {
+                "NVA": 5
+            }
+        }
+    }
+}

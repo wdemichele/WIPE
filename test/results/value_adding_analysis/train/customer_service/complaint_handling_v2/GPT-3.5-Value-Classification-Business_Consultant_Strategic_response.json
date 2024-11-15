@@ -1,0 +1,281 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "business_consultant",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send automatic reply to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive complaint notification",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses customer needs and initiates value creation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate automatic acknowledgement message",
+                    "classification": "VA",
+                    "reasoning": "Transforms complaint notification into an automatic acknowledgement message."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send acknowledgement to customer's contact email",
+                    "classification": "VA",
+                    "reasoning": "Delivers the acknowledgement message to the customer, directly adding value."
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details",
+                    "classification": "VA",
+                    "reasoning": "Gathers necessary information to understand the complaint and find a solution."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult relevant team members or departments",
+                    "classification": "VA",
+                    "reasoning": "Involves other experts to gather insights and perspectives."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm potential solutions",
+                    "classification": "VA",
+                    "reasoning": "Generates multiple ideas for addressing the complaint."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate feasibility and effectiveness of solutions",
+                    "classification": "VA",
+                    "reasoning": "Assesses the practicality and impact of each potential solution."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select most appropriate solution",
+                    "classification": "VA",
+                    "reasoning": "Chooses the best solution to address the complaint."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send apology",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft personalized apology message",
+                    "classification": "VA",
+                    "reasoning": "Creates a customized apology message for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Have apology reviewed by appropriate authority",
+                    "classification": "BVA",
+                    "reasoning": "Ensures the apology message meets company standards and avoids legal issues."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send apology to customer",
+                    "classification": "VA",
+                    "reasoning": "Delivers the apology message to the customer, directly adding value."
+                }
+            ]
+        },
+        {
+            "activity_name": "Propose solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Formulate detailed solution proposal",
+                    "classification": "VA",
+                    "reasoning": "Develops a comprehensive plan to address the complaint."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft message explaining proposed solution",
+                    "classification": "VA",
+                    "reasoning": "Prepares a clear explanation of the proposed solution for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send solution proposal to customer",
+                    "classification": "VA",
+                    "reasoning": "Delivers the solution proposal to the customer, directly adding value."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Record proposed solution in complaint management system",
+                    "classification": "BVA",
+                    "reasoning": "Ensures proper documentation and tracking of the proposed solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create action plan for implementing solution",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to implementing the solution and creating value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign tasks to relevant team members",
+                    "classification": "VA",
+                    "reasoning": "Enables efficient execution of the solution and contributes to value creation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Implement solution actions",
+                    "classification": "VA",
+                    "reasoning": "Directly transforms the current state into the desired state and adds value."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Verify solution implementation",
+                    "classification": "VA",
+                    "reasoning": "Ensures the solution has been implemented correctly, contributing to customer satisfaction."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Follow up with customer to ensure satisfaction",
+                    "classification": "VA",
+                    "reasoning": "Directly engages with the customer to ensure their satisfaction and improve the solution if needed."
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate acceptable alternative",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review customer's negative response",
+                    "classification": "VA",
+                    "reasoning": "Addresses customer concerns and identifies the need for alternative solutions."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze reasons for rejection of initial solution",
+                    "classification": "VA",
+                    "reasoning": "Identifies the root causes of the rejection and informs the search for alternative solutions."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm alternative solutions",
+                    "classification": "VA",
+                    "reasoning": "Generates potential solutions to address the customer's needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess viability of alternative solutions",
+                    "classification": "VA",
+                    "reasoning": "Evaluates the feasibility and potential impact of each alternative solution."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select best alternative solution if available",
+                    "classification": "VA",
+                    "reasoning": "Chooses the most suitable alternative solution to address the customer's needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Go to court",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Consult with legal department",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for legal compliance and risk management."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare necessary documentation",
+                    "classification": "BVA",
+                    "reasoning": "Ensures legal proceedings are properly documented and supports the case."
+                },
+                {
+                    "step_number": 3,
+                    "description": "File legal action",
+                    "classification": "BVA",
+                    "reasoning": "Required to initiate legal proceedings and protect the company's interests."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Engage in legal proceedings",
+                    "classification": "BVA",
+                    "reasoning": "Necessary to pursue legal action and resolve the dispute."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Update complaint status to 'In Litigation'",
+                    "classification": "BVA",
+                    "reasoning": "Maintains accurate records and tracks the progress of the legal case."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 26,
+        "accuracy": 0.8666666666666667,
+        "misclassifications": [
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Receive complaint notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly addresses customer needs and initiates value creation.",
+                "ground_truth_reasoning": "Necessary to initiate process but doesn't directly resolve complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Generate automatic acknowledgement message",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms complaint notification into an automatic acknowledgement message.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly address complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Send acknowledgement to customer's contact email",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Delivers the acknowledgement message to the customer, directly adding value.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't resolve issue"
+            },
+            {
+                "activity": "Execute solution",
+                "substep": "Assign tasks to relevant team members",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Enables efficient execution of the solution and contributes to value creation.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 19
+            },
+            "BVA": {
+                "VA": 4,
+                "BVA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

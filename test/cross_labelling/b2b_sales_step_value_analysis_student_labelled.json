@@ -1,0 +1,192 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare marketing materials",
+                "classification": "BVA",
+                "reasoning": "Necessary for business communication, but not directly adding customer value."
+            },
+            {
+                "step_number": 2,
+                "description": "Retrieve customer information from the system",
+                "classification": "BVA",
+                "reasoning": "Essential for personalized communication, though could be optimized."
+            },
+            {
+                "step_number": 3,
+                "description": "Email customer marketing information",
+                "classification": "VA",
+                "reasoning": "Directly communicates value to the customer."
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Read email from customer",
+                "classification": "VA",
+                "reasoning": "Direct engagement with customer feedback."
+            },
+            {
+                "step_number": 2,
+                "description": "Update customer status",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal tracking and follow-up."
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check document completeness",
+                "classification": "BVA",
+                "reasoning": "Ensures proper processing of application."
+            },
+            {
+                "step_number": 2,
+                "description": "Request further information",
+                "classification": "VA",
+                "reasoning": "Helps customer complete their application correctly."
+            },
+            {
+                "step_number": 3,
+                "description": "Check customer eligibility",
+                "classification": "BVA",
+                "reasoning": "Necessary for business risk management."
+            },
+            {
+                "step_number": 4,
+                "description": "Record customer details",
+                "classification": "BVA",
+                "reasoning": "Important for future reference and compliance."
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Email customer the rejection with reason",
+                "classification": "VA",
+                "reasoning": "Provides important feedback to the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal record-keeping."
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Send calendar booking to customer",
+                "classification": "VA",
+                "reasoning": "Directly serves the customer's needs."
+            },
+            {
+                "step_number": 2,
+                "description": "Receive reply from customer",
+                "classification": "VA",
+                "reasoning": "Direct customer interaction and confirmation."
+            },
+            {
+                "step_number": 3,
+                "description": "Update booking details in the system",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal organization."
+            },
+            {
+                "step_number": 4,
+                "description": "Send notification to remind customer",
+                "classification": "VA",
+                "reasoning": "Enhances customer experience and reduces no-shows."
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Present customer the product information",
+                "classification": "VA",
+                "reasoning": "Directly informs and educates the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Answer customer's queries",
+                "classification": "VA",
+                "reasoning": "Provides direct value to the customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm customer's customisation",
+                "classification": "VA",
+                "reasoning": "Ensures the product meets customer's specific needs."
+            },
+            {
+                "step_number": 4,
+                "description": "Update the details in the system",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processing and record-keeping."
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare the offer",
+                "classification": "BVA",
+                "reasoning": "Necessary step to create value for the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Email customer the offer",
+                "classification": "VA",
+                "reasoning": "Directly provides value proposition to the customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm customer's offer",
+                "classification": "VA",
+                "reasoning": "Ensures customer agreement and satisfaction."
+            },
+            {
+                "step_number": 4,
+                "description": "Update customer status",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal tracking and next steps."
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Update application status",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes and tracking."
+            },
+            {
+                "step_number": 2,
+                "description": "Send information to the accounting team to generate invoice",
+                "classification": "BVA",
+                "reasoning": "Necessary for business operations and revenue collection."
+            }
+        ]
+    }
+]

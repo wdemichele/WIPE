@@ -1,0 +1,123 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Begin the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "CT1: Check financial coverage",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify customer's financial information"
+                }
+            ]
+        },
+        {
+            "activity_name": "G1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate financial coverage"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Proceed if financial coverage is sufficient"
+                }
+            ]
+        },
+        {
+            "activity_name": "CT2: Check property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess property value and condition"
+                }
+            ]
+        },
+        {
+            "activity_name": "G2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate property assessment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Proceed if property meets requirements"
+                }
+            ]
+        },
+        {
+            "activity_name": "AC: Accept mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Approve the mortgage application"
+                }
+            ]
+        },
+        {
+            "activity_name": "AW: Reject mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decline the mortgage application"
+                }
+            ]
+        },
+        {
+            "activity_name": "End1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "End2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End the process"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                3,
+                50.0
+            ],
+            "No Match": [
+                3,
+                50.0
+            ]
+        },
+        "average_confidence": 40.833333333333336,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 81.66666666666667,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 71.42857142857143,
+        "response_coverage": 38.88888888888889,
+        "average_sequence_alignment": 87.5,
+        "average_overall_similarity_score": 33.75
+    }
+}

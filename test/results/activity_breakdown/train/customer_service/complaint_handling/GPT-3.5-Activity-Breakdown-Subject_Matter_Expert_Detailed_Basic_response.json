@@ -1,0 +1,182 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Incoming call",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Answer the call"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather customer information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Identify reason for the call"
+                }
+            ]
+        },
+        {
+            "activity_name": "Call registration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a new case"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record customer details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complaint analysis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze complaint for resolution"
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Reach out to the complainant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Discuss complaint details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archiving system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store case information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Close case",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify resolution"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status to closed"
+                }
+            ]
+        },
+        {
+            "activity_name": "External referral with form B4",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate external referral"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Complete form B4"
+                }
+            ]
+        },
+        {
+            "activity_name": "Internal referral with form B2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate internal referral"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Complete form B2"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephone confirmation to external party",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact external party"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm details of referral"
+                }
+            ]
+        },
+        {
+            "activity_name": "Incident agenda",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule incident agenda meeting"
+                }
+            ]
+        },
+        {
+            "activity_name": "Inform complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Provide resolution to complainant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Close the case"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                6,
+                31.57894736842105
+            ],
+            "Granularity Difference": [
+                2,
+                10.526315789473683
+            ],
+            "No Match": [
+                11,
+                57.89473684210527
+            ]
+        },
+        "average_confidence": 35.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.5,
+            "Granularity Difference": 85.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 90.47619047619048,
+        "response_coverage": 71.42857142857143,
+        "average_sequence_alignment": 85.18518518518518,
+        "average_overall_similarity_score": 32.0
+    }
+}

@@ -1,0 +1,16 @@
+graph TD
+    Start((Start)) --> CheckStock[Check stock availability]
+    CheckStock --> ProductAvailable{Product available?}
+    ProductAvailable -->|No| RejectOrder[Reject order]
+    RejectOrder --> OrderRejected((Order rejected))
+    ProductAvailable -->|Yes| RetrieveProduct[Retrieve product from warehouse]
+    RetrieveProduct --> ConfirmOrder[Confirm order]
+    ConfirmOrder --> ParallelSplit1{{Parallel Split}}
+    ParallelSplit1 --> GetAddress[Get shipment address]
+    ParallelSplit1 --> EmitInvoice[Emit invoice]
+    GetAddress --> ShipProduct[Ship product]
+    EmitInvoice --> ReceivePayment[Receive payment]
+    ShipProduct --> ParallelJoin{{Parallel Join}}
+    ReceivePayment --> ParallelJoin
+    ParallelJoin --> ArchiveOrder[Archive order]
+    ArchiveOrder --> OrderFulfilled((Order fulfilled))

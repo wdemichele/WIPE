@@ -1,0 +1,186 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive claim documentation from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Claim Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check completeness of the claim"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Register the claim"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Reject the claim if incomplete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify if all required information is provided"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the claim is complete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Register claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record the claim details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the customer about the rejected claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Covered?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the claim is covered by the insurance policy"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate the claim for payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assessment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine the assessment result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Schedule payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Plan the payment for the approved claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Authorize repayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Obtain authorization for claim repayment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify the customer about the authorized repayment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send a notification letter to the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Garage Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive authorization for claim repayment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Garage End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Provide payment details to the garage"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Identical Match": [
+                1,
+                10.0
+            ],
+            "Functional Equivalence": [
+                3,
+                30.0
+            ],
+            "No Match": [
+                6,
+                60.0
+            ]
+        },
+        "average_confidence": 35.5,
+        "average_confidence_by_match_type": {
+            "Identical Match": 100.0,
+            "Functional Equivalence": 85.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 71.42857142857143,
+        "response_coverage": 42.857142857142854,
+        "average_sequence_alignment": 66.66666666666666,
+        "average_overall_similarity_score": 30.208750000000002
+    }
+}

@@ -1,0 +1,269 @@
+[
+    {
+        "activity_name": "Request insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify insurance needs",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Gather necessary personal and property information",
+                "performer": "Client",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact insurer or fill out online quote request form",
+                "performer": "Client",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Submit quote request",
+                "performer": "Client",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request for quote received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's quote request",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Log request in system",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign request to appropriate department or agent",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's information and requirements",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess risk factors",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate premium based on risk assessment",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine coverage details",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 5,
+                "description": "Compile quote document",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 6,
+                "description": "Send quote to client",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Evaluate insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive quote from insurer",
+                "performer": "Client",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Review coverage details",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Compare premium to budget",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess if quote meets needs",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 5,
+                "description": "Consider alternatives if available",
+                "performer": "Client",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Accept quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Decide to proceed with the quote",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify insurer of acceptance",
+                "performer": "Client",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide any additional required information",
+                "performer": "Client",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Decide not to proceed with the quote",
+                "performer": "Client",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify insurer of rejection",
+                "performer": "Client",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide reason for rejection (optional)",
+                "performer": "Client",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Quote acceptance received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's acceptance notification",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Update quote status in system",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate contract preparation process",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Quote rejection received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's rejection notification",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Update quote status in system",
+                "performer": "Insurer's System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Record reason for rejection if provided",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Close quote request",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare insurance contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve accepted quote details",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft insurance contract",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Include all agreed terms and conditions",
+                "performer": "Insurance Agent",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Review contract for accuracy and completeness",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 5,
+                "description": "Obtain necessary internal approvals",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 6,
+                "description": "Send contract to client for review and signature",
+                "performer": "Insurance Agent",
+                "classification": "BVA"
+            }
+        ]
+    }
+]

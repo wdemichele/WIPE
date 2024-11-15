@@ -1,0 +1,192 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive start signal"
+                }
+            ]
+        },
+        {
+            "activity_name": "Scoring request received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive scoring request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request credit score",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send request for credit score"
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit score available?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if credit score is available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit score received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive credit score"
+                }
+            ]
+        },
+        {
+            "activity_name": "Delay information received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive delay information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Report delay",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send delay report"
+                }
+            ]
+        },
+        {
+            "activity_name": "Merge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Merge credit scores"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send credit score",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send credit score"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Compute credit score level 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compute credit score level 1"
+                }
+            ]
+        },
+        {
+            "activity_name": "Score available?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if score is available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send credit score",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send credit score"
+                }
+            ]
+        },
+        {
+            "activity_name": "Report delay",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Report delay"
+                }
+            ]
+        },
+        {
+            "activity_name": "Compute credit score level 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compute credit score level 2"
+                }
+            ]
+        },
+        {
+            "activity_name": "Merge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Merge credit scores"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End the process"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                2,
+                22.22222222222222
+            ],
+            "No Match": [
+                6,
+                66.66666666666666
+            ],
+            "Granularity Difference": [
+                1,
+                11.11111111111111
+            ]
+        },
+        "average_confidence": 27.22222222222222,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.5,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 69.23076923076923,
+        "response_coverage": 41.66666666666667,
+        "average_sequence_alignment": 77.77777777777777,
+        "average_overall_similarity_score": 27.22222222222222
+    }
+}

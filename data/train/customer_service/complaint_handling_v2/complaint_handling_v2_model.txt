@@ -1,0 +1,13 @@
+graph LR
+    Start((Start)) -->|Complaint received| A[Send automatic reply to customer]
+    A --> B[Discuss solution]
+    B --> C[Send apology]
+    C --> D[Propose solution]
+    D --> E{Customer response?}
+    E -->|Positive response received| F[Execute solution]
+    F --> End1((End))
+    E -->|Negative response received| G[Evaluate acceptable alternative]
+    G --> H{Alternative solution exists?}
+    H -->|Yes| B
+    H -->|No alternative solutions| I[Go to court]
+    I --> End2((End))

@@ -1,0 +1,154 @@
+[
+    {
+        "activity_name": "Determine likelihood of the claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive new claim",
+                "classification": "BVA",
+                "reasoning": "Necessary to initiate the process but doesn't directly add value to claim assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Review claim details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and evaluating the claim"
+            },
+            {
+                "step_number": 3,
+                "description": "Analyze policy coverage",
+                "classification": "VA",
+                "reasoning": "Critical for determining if the claim is valid under the policy"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate initial evidence",
+                "classification": "VA",
+                "reasoning": "Directly contributes to assessing the claim's validity"
+            },
+            {
+                "step_number": 5,
+                "description": "Estimate probability of claim validity",
+                "classification": "VA",
+                "reasoning": "Synthesizes information to make an initial assessment, guiding further actions"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather additional information if needed",
+                "classification": "VA",
+                "reasoning": "Directly contributes to a more accurate claim assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Review claim details thoroughly",
+                "classification": "VA",
+                "reasoning": "Critical for comprehensive understanding and evaluation of the claim"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify policy terms and conditions",
+                "classification": "VA",
+                "reasoning": "Essential for determining if the claim is covered under the policy"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate evidence and documentation",
+                "classification": "VA",
+                "reasoning": "Directly contributes to validating the claim"
+            },
+            {
+                "step_number": 5,
+                "description": "Consult with relevant experts if necessary",
+                "classification": "VA",
+                "reasoning": "Adds specialized knowledge to accurately assess complex claims"
+            },
+            {
+                "step_number": 6,
+                "description": "Determine claim validity and value",
+                "classification": "VA",
+                "reasoning": "Core decision-making step that directly affects the outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Initiate payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate payment amount",
+                "classification": "VA",
+                "reasoning": "Directly determines the value to be provided to the claimant"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify claimant's payment details",
+                "classification": "BVA",
+                "reasoning": "Ensures correct payment but doesn't affect the claim decision or amount"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare payment documentation",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't change the payment itself"
+            },
+            {
+                "step_number": 4,
+                "description": "Obtain necessary approvals",
+                "classification": "BVA",
+                "reasoning": "Important for internal controls but doesn't directly add value to the claimant"
+            },
+            {
+                "step_number": 5,
+                "description": "Process payment through financial system",
+                "classification": "VA",
+                "reasoning": "Direct action that provides value to the claimant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Advise claimant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare communication detailing claim decision",
+                "classification": "VA",
+                "reasoning": "Directly informs claimant of the outcome, adding value through information"
+            },
+            {
+                "step_number": 2,
+                "description": "Include explanation of decision rationale",
+                "classification": "VA",
+                "reasoning": "Provides valuable information to claimant, enhancing understanding"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide information on payment (if applicable)",
+                "classification": "VA",
+                "reasoning": "Directly informs claimant about the value they will receive"
+            },
+            {
+                "step_number": 4,
+                "description": "Include details on appeal process (if applicable)",
+                "classification": "VA",
+                "reasoning": "Provides valuable information on claimant's options"
+            },
+            {
+                "step_number": 5,
+                "description": "Send communication to claimant",
+                "classification": "BVA",
+                "reasoning": "Necessary to deliver information but doesn't add new value"
+            },
+            {
+                "step_number": 6,
+                "description": "Record communication in claim file",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to claimant"
+            }
+        ]
+    }
+]

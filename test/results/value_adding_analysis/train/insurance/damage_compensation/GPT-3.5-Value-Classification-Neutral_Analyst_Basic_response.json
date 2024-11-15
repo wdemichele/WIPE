@@ -1,0 +1,307 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Compensation Request Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive request for compensation",
+                    "classification": "NVA",
+                    "reasoning": "This step does not contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of compensation request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of received compensation requests."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve related file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access Premises files DB",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to access the database containing premises files."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate relevant file",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to locate the relevant file within the premises files database."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Retrieve file from database",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to retrieve the file from the premises files database."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check compliance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review request details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the details of the compensation request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compare against compliance criteria",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to compare the compensation request against compliance criteria."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine compliance status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine the compliance status of the compensation request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Update request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record compliance status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the compliance status of the compensation request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update request with additional information if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the compensation request with any additional information if necessary.\")classify(\"BVA\", \"Check fee payment\", \"Determine required fees\", \"This step is necessary for determining the fees required for the payment process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check fee payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine required fees",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify received payments",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for verifying the payments received."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if fees are fully paid",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining if the fees have been fully paid."
+                }
+            ]
+        },
+        {
+            "activity_name": "Produce fees notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate outstanding fees",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for calculating the outstanding fees."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate fees notice document",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for generating the fees notice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send fees notice to requester",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for sending the fees notice to the requester."
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate receipt for additional fees",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process additional fee payment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for processing the additional fee payment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate receipt",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for generating the receipt for the additional fees."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record receipt in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for recording the receipt in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Allocate hearing date",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check available dates",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for checking the available dates for allocating a hearing date."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate hearing date",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for selecting the appropriate hearing date."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record allocated date in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for recording the allocated date in the system."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify relevant parties of hearing date",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for notifying the relevant parties of the allocated hearing date."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 23,
+        "correct_classifications": 11,
+        "accuracy": 0.4782608695652174,
+        "misclassifications": [
+            {
+                "activity": "Compensation Request Received",
+                "substep": "Receive request for compensation",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step does not contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": "Initiates the process and directly contributes to fulfilling the customer's need"
+            },
+            {
+                "activity": "Retrieve related file",
+                "substep": "Locate relevant file",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to locate the relevant file within the premises files database.",
+                "ground_truth_reasoning": "Directly contributes to understanding and processing the request"
+            },
+            {
+                "activity": "Check compliance",
+                "substep": "Review request details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to review the details of the compensation request.",
+                "ground_truth_reasoning": "Directly contributes to understanding and evaluating the request"
+            },
+            {
+                "activity": "Check compliance",
+                "substep": "Compare against compliance criteria",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to compare the compensation request against compliance criteria.",
+                "ground_truth_reasoning": "Critical for determining the validity of the request"
+            },
+            {
+                "activity": "Check compliance",
+                "substep": "Determine compliance status",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to determine the compliance status of the compensation request.",
+                "ground_truth_reasoning": "Directly impacts the decision on the request"
+            },
+            {
+                "activity": "Update request",
+                "substep": "Update request with additional information if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to update the compensation request with any additional information if necessary.\")classify(\"BVA\", \"Check fee payment\", \"Determine required fees\", \"This step is necessary for determining the fees required for the payment process.",
+                "ground_truth_reasoning": "Directly contributes to the completeness and accuracy of the request"
+            },
+            {
+                "activity": "Check fee payment",
+                "substep": "Verify received payments",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for verifying the payments received.",
+                "ground_truth_reasoning": "Crucial for confirming the validity of the request"
+            },
+            {
+                "activity": "Check fee payment",
+                "substep": "Determine if fees are fully paid",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for determining if the fees have been fully paid.",
+                "ground_truth_reasoning": "Directly impacts the progression of the request"
+            },
+            {
+                "activity": "Produce fees notice",
+                "substep": "Calculate outstanding fees",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for calculating the outstanding fees.",
+                "ground_truth_reasoning": "Directly related to processing the request"
+            },
+            {
+                "activity": "Generate receipt for additional fees",
+                "substep": "Process additional fee payment",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for processing the additional fee payment.",
+                "ground_truth_reasoning": "Directly contributes to fulfilling the request requirements"
+            },
+            {
+                "activity": "Allocate hearing date",
+                "substep": "Select appropriate hearing date",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for selecting the appropriate hearing date.",
+                "ground_truth_reasoning": "Directly progresses the request towards resolution"
+            },
+            {
+                "activity": "Allocate hearing date",
+                "substep": "Notify relevant parties of hearing date",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for notifying the relevant parties of the allocated hearing date.",
+                "ground_truth_reasoning": "Directly contributes to moving the request forward and involving necessary parties"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "NVA": 1,
+                "BVA": 11,
+                "VA": 1
+            },
+            "BVA": {
+                "BVA": 10
+            },
+            "NVA": {}
+        }
+    }
+}

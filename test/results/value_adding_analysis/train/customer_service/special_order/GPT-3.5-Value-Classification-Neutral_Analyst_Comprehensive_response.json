@@ -1,0 +1,475 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Register order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive special order request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a new order in the system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create new order entry in system",
+                    "classification": "VA",
+                    "reasoning": "Transforms the special order request into a new order entry."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign unique order number",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for order tracking and internal record-keeping, but not directly valued by the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Record initial order details",
+                    "classification": "VA",
+                    "reasoning": "Captures the initial order information for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check order details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order specifications",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the order specifications meet the customer's requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify customer information",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for accurate customer record-keeping and order processing, but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm product customisation requirements",
+                    "classification": "VA",
+                    "reasoning": "Verifies the specific customisation requirements of the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture custom product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create production order",
+                    "classification": "VA",
+                    "reasoning": "Initiates the production process for the custom product."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Allocate resources and materials",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the necessary resources and materials are available for production."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Produce custom product",
+                    "classification": "VA",
+                    "reasoning": "Transforms the allocated resources and materials into the custom product."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate order confirmation document",
+                    "classification": "VA",
+                    "reasoning": "Creates a document confirming the details of the order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review order details with customer",
+                    "classification": "VA",
+                    "reasoning": "Verifies the order details with the customer to ensure accuracy."
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle change request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive change request",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses customer needs and initiates value creation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess impact on current order",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for ensuring order accuracy and minimizing errors, but not directly valuable to customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate changes and implications to relevant departments",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for coordinating internal processes and ensuring smooth execution, but not directly valuable to customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order details with approved changes",
+                    "classification": "VA",
+                    "reasoning": "Directly modifies the order to reflect the approved changes, adding value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan shipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine shipping method",
+                    "classification": "VA",
+                    "reasoning": "Directly tailors the shipping method to customer preferences, adding value."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate shipping costs",
+                    "classification": "VA",
+                    "reasoning": "Directly provides the customer with accurate shipping cost information, adding value."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Schedule pickup or delivery",
+                    "classification": "VA",
+                    "reasoning": "Directly facilitates the shipment process, adding value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check customer type and shipment status",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer information",
+                    "classification": "VA",
+                    "reasoning": "Directly accesses customer information for further processing, adding value."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify customer type",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for determining customer-specific requirements, but not directly valuable to customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check shipment status",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for providing accurate information to the customer, but not directly valuable to customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship custom product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare product for shipping",
+                    "classification": "VA",
+                    "reasoning": "Directly prepares the product for shipment, adding value."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate shipping label",
+                    "classification": "VA",
+                    "reasoning": "Directly creates the shipping label for the product, adding value."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Hand over to shipping carrier",
+                    "classification": "VA",
+                    "reasoning": "Directly initiates the shipping process, adding value."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to shipped",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the order status to reflect the shipment, adding value."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice for casual customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating the invoice, which is a product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send invoice to customer",
+                    "classification": "VA",
+                    "reasoning": "Transfers the invoice to the customer, directly contributing to the delivery of the product."
+                }
+            ]
+        },
+        {
+            "activity_name": "Charge customer account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total charge",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to determining the amount to be charged to the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment from account",
+                    "classification": "VA",
+                    "reasoning": "Transforms the payment from the customer's account, directly contributing to the completion of the transaction."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate and send receipt",
+                    "classification": "VA",
+                    "reasoning": "Creates and sends the receipt to the customer, directly contributing to the completion of the transaction."
+                }
+            ]
+        },
+        {
+            "activity_name": "Update customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify reason for shipment delay",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to identifying the reason for the delay, which is valuable information for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare customer communication",
+                    "classification": "VA",
+                    "reasoning": "Prepares the communication to be sent to the customer, directly contributing to keeping the customer informed."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Contact customer with update",
+                    "classification": "VA",
+                    "reasoning": "Contacts the customer to provide an update, directly contributing to keeping the customer informed."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Record communication in customer file",
+                    "classification": "VA",
+                    "reasoning": "Records the communication in the customer file, directly contributing to maintaining accurate customer records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order completion",
+                    "classification": "BVA",
+                    "reasoning": "Verifies that the order has been completed, which is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transfer order to archive system",
+                    "classification": "VA",
+                    "reasoning": "Transfers the order to the archive system, directly contributing to maintaining organized records."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to archived",
+                    "classification": "VA",
+                    "reasoning": "Updates the order status to archived, directly contributing to maintaining accurate order records."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 38,
+        "correct_classifications": 19,
+        "accuracy": 0.5,
+        "misclassifications": [
+            {
+                "activity": "Register order",
+                "substep": "Create new order entry in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the special order request into a new order entry.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Manufacture custom product",
+                "substep": "Create production order",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Initiates the production process for the custom product.",
+                "ground_truth_reasoning": "Necessary for production process but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Manufacture custom product",
+                "substep": "Allocate resources and materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Ensures that the necessary resources and materials are available for production.",
+                "ground_truth_reasoning": "Enables production but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Generate order confirmation document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates a document confirming the details of the order.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Handle change request",
+                "substep": "Assess impact on current order",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for ensuring order accuracy and minimizing errors, but not directly valuable to customer.",
+                "ground_truth_reasoning": "Ensures feasibility of changes and informs customer decision"
+            },
+            {
+                "activity": "Plan shipment",
+                "substep": "Calculate shipping costs",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly provides the customer with accurate shipping cost information, adding value.",
+                "ground_truth_reasoning": "Necessary for pricing but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Check customer type and shipment status",
+                "substep": "Retrieve customer information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly accesses customer information for further processing, adding value.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Ship custom product",
+                "substep": "Generate shipping label",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly creates the shipping label for the product, adding value.",
+                "ground_truth_reasoning": "Necessary for shipping but doesn't directly add product value"
+            },
+            {
+                "activity": "Ship custom product",
+                "substep": "Update order status to shipped",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the order status to reflect the shipment, adding value.",
+                "ground_truth_reasoning": "Helps with tracking but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice for casual customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating the invoice, which is a product the customer is willing to pay for.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly add product value"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transfers the invoice to the customer, directly contributing to the delivery of the product.",
+                "ground_truth_reasoning": "Required for payment process but doesn't add direct value"
+            },
+            {
+                "activity": "Charge customer account",
+                "substep": "Calculate total charge",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to determining the amount to be charged to the customer.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly add product value"
+            },
+            {
+                "activity": "Charge customer account",
+                "substep": "Process payment from account",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the payment from the customer's account, directly contributing to the completion of the transaction.",
+                "ground_truth_reasoning": "Completes transaction but doesn't directly add product value"
+            },
+            {
+                "activity": "Charge customer account",
+                "substep": "Generate and send receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates and sends the receipt to the customer, directly contributing to the completion of the transaction.",
+                "ground_truth_reasoning": "Provides proof of payment but doesn't add direct product value"
+            },
+            {
+                "activity": "Update customer",
+                "substep": "Identify reason for shipment delay",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to identifying the reason for the delay, which is valuable information for the customer.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly add product value"
+            },
+            {
+                "activity": "Update customer",
+                "substep": "Prepare customer communication",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Prepares the communication to be sent to the customer, directly contributing to keeping the customer informed.",
+                "ground_truth_reasoning": "Aids in customer service but doesn't directly add product value"
+            },
+            {
+                "activity": "Update customer",
+                "substep": "Record communication in customer file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Records the communication in the customer file, directly contributing to maintaining accurate customer records.",
+                "ground_truth_reasoning": "Useful for future reference but doesn't directly add current value"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Transfer order to archive system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transfers the order to the archive system, directly contributing to maintaining organized records.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't add direct value"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Update order status to archived",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Updates the order status to archived, directly contributing to maintaining accurate order records.",
+                "ground_truth_reasoning": "Aids in order management but doesn't add direct customer value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 13,
+                "BVA": 1
+            },
+            "BVA": {
+                "VA": 18,
+                "BVA": 6
+            },
+            "NVA": {}
+        }
+    }
+}

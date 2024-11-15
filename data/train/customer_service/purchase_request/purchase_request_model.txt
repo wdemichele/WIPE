@@ -1,0 +1,47 @@
+graph TD
+    subgraph Employee
+        A((Start)) --> B[Fill purchase request form]
+        B --> C[Collect vendor quotes]
+        C --> D[Complete form]
+        D --> E[Get supervisor approvals]
+        E --> F{Approved?}
+        F -->|No| G[Modify and resubmit]
+        G --> E
+        F -->|Yes| H[Forward to Purchasing Dept]
+    end
+
+    subgraph Purchasing Department
+        H --> I[Check completeness]
+        I --> J{Complete?}
+        J -->|No| K[Return to employee]
+        K --> D
+        J -->|Yes| L[Enter request in enterprise system]
+        L --> M[Select vendor]
+        M --> N{Vendor in system?}
+        N -->|No| O[Add new vendor]
+        O --> P[Generate purchase order]
+        N -->|Yes| P
+        P --> Q[Send PO to vendor]
+        P --> R[Send PO copy to Accounts Payable]
+    end
+    
+    subgraph Goods Receipt Department
+        S[Receive goods] --> T[Check quantity and quality]
+        T --> U[Generate goods receipt form]
+        U --> V[Forward goods to employee]
+        U --> W[Send form to Accounts Payable]
+        T --> X{Issues with goods?}
+        X -->|Yes| Y[Return to vendor]
+        Y --> Z[Notify Purchasing and Accounts Payable]
+    end
+
+    subgraph Accounts Payable
+        AA[Receive invoice] --> AB[Perform three-way matching]
+        AB --> AC[Trigger bank transfer]
+        AC --> AD[Send payment notice to vendor]
+        AD --> AE{Payment successful?}
+        AE -->|No| AF[Contact vendor]
+        AF --> AG[Attempt transfer again]
+        AG --> AE
+        AE -->|Yes| AH((End))
+    end

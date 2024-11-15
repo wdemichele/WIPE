@@ -1,0 +1,227 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Review application and budget forms",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application forms"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review budget forms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Room booking",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Search for available rooms"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select desired room"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Book the room"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create account"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up account settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up course website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Design website layout"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create website pages"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure website settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website setup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Design registration website layout"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create registration website pages"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure registration website settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Promote course",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create promotional materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Distribute promotional materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle payments",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Requirements check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if badges are required"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if Blackboard is required"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check if catering is required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Print name badges",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare badge template"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print participant names on badges"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up Blackboard website for students",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create Blackboard course site"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Upload course materials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure Blackboard settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Catering arranging",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine catering requirements"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact catering service"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange catering logistics"
+                }
+            ]
+        },
+        {
+            "activity_name": "Course delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare course materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver course sessions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Engage participants"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                3,
+                9.375
+            ],
+            "No Match": [
+                18,
+                56.25
+            ],
+            "Functional Equivalence": [
+                11,
+                34.375
+            ]
+        },
+        "average_confidence": 36.71875,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "No Match": 0.0,
+            "Functional Equivalence": 85.0
+        },
+        "ground_truth_coverage": 84.21052631578947,
+        "response_coverage": 62.0,
+        "average_sequence_alignment": 77.08333333333333,
+        "average_overall_similarity_score": 38.583333333333336
+    }
+}

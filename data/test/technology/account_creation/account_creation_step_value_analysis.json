@@ -1,0 +1,186 @@
+[
+    {
+        "activity_name": "Log on email provider website",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open web browser and navigate to email provider's website",
+                "classification": "BVA",
+                "reasoning": "Necessary to start the process but doesn't directly add value to the account"
+            },
+            {
+                "step_number": 2,
+                "description": "Locate the 'Create Account' or similar option",
+                "classification": "BVA",
+                "reasoning": "Essential for process but doesn't directly contribute to account creation"
+            },
+            {
+                "step_number": 3,
+                "description": "Click on the option to begin account creation process",
+                "classification": "VA",
+                "reasoning": "Initiates the actual account creation process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Choose package",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review available email account packages",
+                "classification": "VA",
+                "reasoning": "Directly contributes to selecting appropriate account features"
+            },
+            {
+                "step_number": 2,
+                "description": "Compare features and pricing of different packages",
+                "classification": "VA",
+                "reasoning": "Helps user make informed decision about account type"
+            },
+            {
+                "step_number": 3,
+                "description": "Select desired email account package",
+                "classification": "VA",
+                "reasoning": "Directly determines the type of account to be created"
+            }
+        ]
+    },
+    {
+        "activity_name": "Enter Private account welcome page",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Load private account creation page",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to the account"
+            },
+            {
+                "step_number": 2,
+                "description": "Review account creation instructions",
+                "classification": "BVA",
+                "reasoning": "Helps user understand process but doesn't directly create value"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare necessary information for account creation",
+                "classification": "VA",
+                "reasoning": "Directly contributes to successful account creation"
+            }
+        ]
+    },
+    {
+        "activity_name": "Provide personal information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill in basic personal details (e.g., name, date of birth)",
+                "classification": "VA",
+                "reasoning": "Essential information for account creation"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter contact information (e.g., phone number, alternative email)",
+                "classification": "VA",
+                "reasoning": "Necessary for account security and recovery"
+            },
+            {
+                "step_number": 3,
+                "description": "Review entered information for accuracy",
+                "classification": "VA",
+                "reasoning": "Ensures correct account setup and prevents future issues"
+            }
+        ]
+    },
+    {
+        "activity_name": "Enter Full Names",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Input first name in designated field",
+                "classification": "VA",
+                "reasoning": "Directly contributes to account personalization"
+            },
+            {
+                "step_number": 2,
+                "description": "Input middle name(s) if applicable",
+                "classification": "BVA",
+                "reasoning": "May be required but not always essential for account creation"
+            },
+            {
+                "step_number": 3,
+                "description": "Input last name in designated field",
+                "classification": "VA",
+                "reasoning": "Directly contributes to account personalization"
+            }
+        ]
+    },
+    {
+        "activity_name": "Upload photo ID",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare a clear, valid photo ID",
+                "classification": "BVA",
+                "reasoning": "Necessary for verification but not directly part of account creation"
+            },
+            {
+                "step_number": 2,
+                "description": "Use website's upload function to select ID image file",
+                "classification": "VA",
+                "reasoning": "Directly contributes to account verification process"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm successful upload of photo ID",
+                "classification": "VA",
+                "reasoning": "Ensures completion of verification step"
+            }
+        ]
+    },
+    {
+        "activity_name": "Personal Data confirmed",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all entered personal information",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy of account details"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify uploaded photo ID matches entered information",
+                "classification": "VA",
+                "reasoning": "Critical for account security and verification"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm accuracy of all provided data",
+                "classification": "VA",
+                "reasoning": "Final check to ensure correct account setup"
+            }
+        ]
+    },
+    {
+        "activity_name": "New email ID & password generated",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System generates unique email address",
+                "classification": "VA",
+                "reasoning": "Creates the core component of the email account"
+            },
+            {
+                "step_number": 2,
+                "description": "User creates strong password following provider's guidelines",
+                "classification": "VA",
+                "reasoning": "Essential for account security"
+            },
+            {
+                "step_number": 3,
+                "description": "System confirms email ID and password creation",
+                "classification": "VA",
+                "reasoning": "Finalizes account creation process"
+            }
+        ]
+    }
+]

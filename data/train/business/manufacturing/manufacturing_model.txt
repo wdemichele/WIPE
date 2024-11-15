@@ -1,0 +1,24 @@
+graph TD
+    Start((Start)) --> CheckStock[Check stock availability]
+    CheckStock --> ProductAvailable{Product in stock?}
+    ProductAvailable -->|Yes| RetrieveProduct[Retrieve product from warehouse]
+    ProductAvailable -->|No| CheckRawMaterials[Check raw materials availability]
+    CheckRawMaterials --> RawMaterialsGateway{Raw materials source}
+    RawMaterialsGateway -->|Supplier 1| RequestSupplier1[Request raw materials from Supplier 1]
+    RawMaterialsGateway -->|Supplier 2| RequestSupplier2[Request raw materials from Supplier 2]
+    RequestSupplier1 --> ObtainSupplier1[Obtain raw materials from Supplier 1]
+    RequestSupplier2 --> ObtainSupplier2[Obtain raw materials from Supplier 2]
+    ObtainSupplier1 --> ManufactureProduct
+    ObtainSupplier2 --> ManufactureProduct
+    ManufactureProduct[Manufacture product] --> MergeGateway{Merge}
+    RetrieveProduct --> MergeGateway
+    MergeGateway --> ConfirmOrder[Confirm order]
+    ConfirmOrder --> ParallelSplit{{Parallel Split}}
+    ParallelSplit --> GetAddress[Get shipment address]
+    ParallelSplit --> EmitInvoice[Emit invoice]
+    GetAddress --> ShipProduct[Ship product]
+    EmitInvoice --> ReceivePayment[Receive payment]
+    ShipProduct --> ParallelJoin{{Parallel Join}}
+    ReceivePayment --> ParallelJoin
+    ParallelJoin --> ArchiveOrder[Archive order]
+    ArchiveOrder --> OrderFulfilled((Order fulfilled))

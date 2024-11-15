@@ -1,0 +1,186 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Incoming call",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Answer the call"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather caller's information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record reason for call"
+                }
+            ]
+        },
+        {
+            "activity_name": "Call registration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new case"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign case number"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complaint analysis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify key issues"
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Call complainant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Discuss complaint details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archiving system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter case details into system"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Save relevant documents"
+                }
+            ]
+        },
+        {
+            "activity_name": "Close case",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all necessary actions are completed"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status to closed"
+                }
+            ]
+        },
+        {
+            "activity_name": "External referral with form B4",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare referral form B4"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send referral form to external party"
+                }
+            ]
+        },
+        {
+            "activity_name": "Internal referral with form B2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare referral form B2"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send referral form to internal department"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephone confirmation to external party",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Call external party for confirmation"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify referral details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Incident agenda",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule incident agenda meeting"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Invite relevant stakeholders"
+                }
+            ]
+        },
+        {
+            "activity_name": "Inform complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication to complainant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send communication to complainant"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                21.052631578947366
+            ],
+            "No Match": [
+                14,
+                73.68421052631578
+            ],
+            "Granularity Difference": [
+                1,
+                5.263157894736842
+            ]
+        },
+        "average_confidence": 22.36842105263158,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 88.75,
+            "No Match": 0.0,
+            "Granularity Difference": 70.0
+        },
+        "ground_truth_coverage": 90.47619047619048,
+        "response_coverage": 68.96551724137932,
+        "average_sequence_alignment": 74.07407407407408,
+        "average_overall_similarity_score": 20.055555555555557
+    }
+}

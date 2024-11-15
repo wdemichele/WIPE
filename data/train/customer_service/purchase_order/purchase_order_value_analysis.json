@@ -1,0 +1,47 @@
+[
+    {
+      "step": "Check stock availability",
+      "performer": "System",
+      "classification": "BVA"
+    },
+    {
+      "step": "Reject order",
+      "performer": "System",
+      "classification": "NVA"
+    },
+    {
+      "step": "Retrieve product from warehouse",
+      "performer": "Warehouse staff",
+      "classification": "VA"
+    },
+    {
+      "step": "Confirm order",
+      "performer": "System",
+      "classification": "BVA"
+    },
+    {
+      "step": "Get shipment address",
+      "performer": "System",
+      "classification": "BVA"
+    },
+    {
+      "step": "Ship product",
+      "performer": "Shipping department",
+      "classification": "VA"
+    },
+    {
+      "step": "Emit invoice",
+      "performer": "Accounting department",
+      "classification": "BVA"
+    },
+    {
+      "step": "Receive payment",
+      "performer": "Accounting department",
+      "classification": "VA"
+    },
+    {
+      "step": "Archive order",
+      "performer": "System",
+      "classification": "BVA"
+    }
+  ]

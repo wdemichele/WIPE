@@ -1,0 +1,298 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate the hiring process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In Job Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit job application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review job application"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to proceed or reject"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct telephonic screening"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify applicant about rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate telephonic screening result"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to proceed or reject"
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct background check"
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate background check result"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to pass or fail"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Decide whether more information is needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct screening interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct extensive background check"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate screening interview result"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to proceed or reject"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Decide whether more information is needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct coding interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate extensive background check result"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to pass or fail"
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate coding interview result"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to proceed or reject"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Decide whether more information is needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Frontend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct frontend interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "ML Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct machine learning interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Backend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct backend interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Behavioral Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct behavioral interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Final Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate all interview results"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to make a job offer or reject"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Job Offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Extend a job offer to the candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Candidate Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Wait for candidate's decision"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether the candidate accepts or rejects the offer"
+                }
+            ]
+        },
+        {
+            "activity_name": "End - Hired",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete the hiring process for the hired candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "End - Not Hired",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete the hiring process for the not hired candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reconsider?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the decision needs to be reconsidered"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to reconsider or not"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                18,
+                90.0
+            ],
+            "Granularity Difference": [
+                2,
+                10.0
+            ]
+        },
+        "average_confidence": 8.0,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 74.07407407407408,
+        "response_coverage": 55.55555555555556,
+        "average_sequence_alignment": 53.84615384615384,
+        "average_overall_similarity_score": 9.23076923076923
+    }
+}

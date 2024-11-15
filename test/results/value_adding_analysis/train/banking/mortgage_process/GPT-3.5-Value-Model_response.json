@@ -1,0 +1,153 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "CT1: Check financial coverage",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review applicant's financial information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the applicant's financial situation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify income sources",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to verifying the applicant's income."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the applicant's ability to repay the mortgage."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess ability to repay mortgage",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the applicant's ability to repay the mortgage."
+                }
+            ]
+        },
+        {
+            "activity_name": "CT2: Check property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review property details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the property."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify property value",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to verifying the property value."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess property condition",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the property condition."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate property location and market trends",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to evaluating the property location and market trends."
+                }
+            ]
+        },
+        {
+            "activity_name": "AC: Accept mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review overall application",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for reviewing the overall application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm all criteria are met",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for confirming all criteria are met but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare acceptance documentation",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for preparing acceptance documentation but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify applicant of acceptance",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for notifying the applicant of acceptance but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "AW: Reject mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for documenting the reasons for rejection but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for preparing the rejection letter but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status to 'Rejected'",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for updating the application status to 'Rejected' but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify applicant of rejection",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for notifying the applicant of rejection but doesn't directly add value for the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 16,
+        "correct_classifications": 14,
+        "accuracy": 0.875,
+        "misclassifications": [
+            {
+                "activity": "AC: Accept mortgage application",
+                "substep": "Review overall application",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for reviewing the overall application but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Final assessment of all collected information"
+            },
+            {
+                "activity": "AC: Accept mortgage application",
+                "substep": "Confirm all criteria are met",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for confirming all criteria are met but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Crucial for ensuring the application meets all requirements"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8,
+                "BVA": 2
+            },
+            "BVA": {
+                "BVA": 6
+            }
+        }
+    }
+}

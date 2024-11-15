@@ -1,0 +1,397 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "customer_advocate",
+            "task_description": "efficiency_focused",
+            "classification_types": "basic",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Hand In Job Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Candidate prepares application materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting a job application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Candidate submits application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting a job application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR receives and logs application",
+                    "classification": "BVA",
+                    "reasoning": "While this step is necessary for the business to track and process applications, it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR reviews application for completeness",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure that all required information is provided, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR checks if candidate meets basic qualifications",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine if the candidate meets the minimum requirements, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR decides whether to proceed or reject",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to make a decision on whether to proceed with the candidate, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR schedules phone call with candidate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of conducting a phone interview."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts phone interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of conducting a phone interview."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's responses",
+                    "classification": "BVA",
+                    "reasoning": "While this step is necessary for the business to assess the candidate's suitability, it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR initiates background check process",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to initiate the background check, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Third-party agency conducts check",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to obtain the background check results, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR reviews background check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assess the candidate's background, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR requests additional information from candidate",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to gather additional information for the extensive background check, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Third-party agency conducts in-depth check",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to obtain the in-depth background check results, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR thoroughly reviews extensive check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assess the candidate's extensive background, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR schedules in-person or video interview",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for coordinating and arranging interviews, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts screening interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's fit and qualifications, which is valuable for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's fit and qualifications",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's fit and qualifications, which is valuable for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technical team prepares coding challenges",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for preparing the coding challenges, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Candidate completes coding tasks",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's coding skills, which is valuable for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Technical team evaluates coding performance",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's coding performance, which is valuable for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Frontend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Frontend team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for preparing the interview questions/tasks, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Frontend team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's frontend skills, which is valuable for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Frontend team assesses candidate's skills",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the candidate's frontend skills, which is valuable for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "ML Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "ML team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for preparing the interview questions/tasks, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "ML team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's ML expertise, which is valuable for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "ML team evaluates candidate's ML expertise",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's ML expertise, which is valuable for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Backend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Backend team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for preparing the interview questions/tasks, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Backend team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's backend skills, which is valuable for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Backend team assesses candidate's skills",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the candidate's backend skills, which is valuable for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Behavioral Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares behavioral questions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the HR team to gather relevant information about the candidate's behavior and skills."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts behavioral interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the evaluation of the candidate's behavioral responses and helps in assessing their suitability for the role."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's soft skills and cultural fit",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the evaluation of the candidate's soft skills and cultural fit, which are important factors in determining their suitability for the role."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Job Offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares job offer package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the HR team to prepare the job offer package, including the terms and conditions of employment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR presents offer to candidate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of making a job offer to the candidate and allows for negotiation and discussion."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR answers any questions from candidate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to addressing any questions or concerns the candidate may have about the job offer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares rejection notification",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the HR team to inform the candidate about the rejection of their application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR sends rejection to candidate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to notifying the candidate about the rejection of their application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR updates application status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the HR team to update the application status in the system and maintain accurate records."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 39,
+        "correct_classifications": 31,
+        "accuracy": 0.7948717948717948,
+        "misclassifications": [
+            {
+                "activity": "Initial Screening",
+                "substep": "HR checks if candidate meets basic qualifications",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to determine if the candidate meets the minimum requirements, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Directly contributes to identifying suitable candidates"
+            },
+            {
+                "activity": "Initial Screening",
+                "substep": "HR decides whether to proceed or reject",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to make a decision on whether to proceed with the candidate, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical decision point in the selection process"
+            },
+            {
+                "activity": "Telephonic Screening",
+                "substep": "HR schedules phone call with candidate",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's requirement of conducting a phone interview.",
+                "ground_truth_reasoning": "Necessary for coordination but doesn't directly assess the candidate"
+            },
+            {
+                "activity": "Telephonic Screening",
+                "substep": "HR evaluates candidate's responses",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "While this step is necessary for the business to assess the candidate's suitability, it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical for determining candidate's fit and progression in the hiring process"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "Third-party agency conducts check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to obtain the background check results, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Provides crucial information for candidate evaluation"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "HR reviews background check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to assess the candidate's background, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Direct evaluation of candidate's background, crucial for hiring decision"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "Third-party agency conducts in-depth check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to obtain the in-depth background check results, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Provides detailed information crucial for candidate evaluation"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "HR thoroughly reviews extensive check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to assess the candidate's extensive background, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical evaluation of candidate's detailed background"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 18,
+                "BVA": 7
+            },
+            "BVA": {
+                "BVA": 13,
+                "VA": 1
+            },
+            "NVA": {}
+        }
+    }
+}

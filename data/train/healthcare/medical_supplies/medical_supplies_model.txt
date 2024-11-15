@@ -1,0 +1,6 @@
+graph TD
+    A((Start)) --> B[Package receipt at dock]
+    B --> C[Package processing in the receiving room]
+    C --> D[Package processing in the rack room]
+    D --> E[Package delivery to par location]
+    E --> F((End))

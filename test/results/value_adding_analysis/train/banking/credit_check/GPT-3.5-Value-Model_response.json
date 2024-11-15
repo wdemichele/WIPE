@@ -1,0 +1,250 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted application documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring all necessary documents are available."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required fields are filled",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring all required information is provided."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure all necessary supporting documents are attached",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the application but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by obtaining necessary information for credit assessment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by evaluating creditworthiness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze payment history and outstanding debts",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing financial stability."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify employment status",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming income source."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review salary statements or tax returns",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying income level."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess stability and reliability of income sources",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by evaluating income stability.\")classify(\"VA\", \"Assess application\", \"Review results of completeness check\", \"Directly contributes to the assessment of the application's completeness."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review results of completeness check",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze credit history findings",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the assessment of the applicant's credit history."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate income source information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the evaluation of the applicant's income sources."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the calculation of the applicant's debt-to-income ratio."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Determine overall creditworthiness",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the determination of the applicant's overall creditworthiness."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make credit offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine credit limit",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the determination of the credit limit for the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set interest rate",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the setting of the interest rate for the credit offer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare credit offer document",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the preparation of the credit offer document."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send offer to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the sending of the credit offer to the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the documentation of the reasons for rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the preparation of the rejection letter."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the sending of the rejection notification to the applicant."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 21,
+        "correct_classifications": 12,
+        "accuracy": 0.5714285714285714,
+        "misclassifications": [
+            {
+                "activity": "Check completeness",
+                "substep": "Review all submitted application documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring all necessary documents are available.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly assess creditworthiness"
+            },
+            {
+                "activity": "Check completeness",
+                "substep": "Verify all required fields are filled",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring all required information is provided.",
+                "ground_truth_reasoning": "Ensures application completeness but doesn't directly evaluate credit risk"
+            },
+            {
+                "activity": "Check credit history",
+                "substep": "Request credit report from credit bureau",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by obtaining necessary information for credit assessment.",
+                "ground_truth_reasoning": "Necessary step to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "activity": "Assess application",
+                "substep": "Review results of completeness check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Ensures all information is present but doesn't directly assess credit risk"
+            },
+            {
+                "activity": "Make credit offer",
+                "substep": "Prepare credit offer document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the preparation of the credit offer document.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly add value to the offer"
+            },
+            {
+                "activity": "Make credit offer",
+                "substep": "Send offer to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the sending of the credit offer to the applicant.",
+                "ground_truth_reasoning": "Required for process completion but doesn't change the offer's value"
+            },
+            {
+                "activity": "Notify rejection",
+                "substep": "Document reasons for rejection",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the documentation of the reasons for rejection.",
+                "ground_truth_reasoning": "Important for compliance and future reference but doesn't add direct value"
+            },
+            {
+                "activity": "Notify rejection",
+                "substep": "Prepare rejection letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the preparation of the rejection letter.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change the decision"
+            },
+            {
+                "activity": "Notify rejection",
+                "substep": "Send rejection notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the sending of the rejection notification to the applicant.",
+                "ground_truth_reasoning": "Required for process completion but doesn't alter the outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 8,
+                "BVA": 1,
+                "Unclassified": 1
+            },
+            "VA": {
+                "VA": 11
+            }
+        }
+    }
+}

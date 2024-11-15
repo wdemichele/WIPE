@@ -1,0 +1,433 @@
+[
+    {
+        "activity_name": "Fill purchase request form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access purchase request form"
+            },
+            {
+                "step_number": 2,
+                "description": "Input initial request details"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect vendor quotes",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify potential vendors"
+            },
+            {
+                "step_number": 2,
+                "description": "Request quotes from vendors"
+            },
+            {
+                "step_number": 3,
+                "description": "Compile received quotes"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review collected quotes"
+            },
+            {
+                "step_number": 2,
+                "description": "Fill in remaining form details"
+            },
+            {
+                "step_number": 3,
+                "description": "Attach supporting documents"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get supervisor approvals",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Submit form to supervisor"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor reviews request"
+            },
+            {
+                "step_number": 3,
+                "description": "Supervisor makes approval decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Modify and resubmit",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review supervisor feedback"
+            },
+            {
+                "step_number": 2,
+                "description": "Make necessary modifications"
+            },
+            {
+                "step_number": 3,
+                "description": "Resubmit for approval"
+            }
+        ]
+    },
+    {
+        "activity_name": "Forward to Purchasing Dept",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare approved request for forwarding"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request to Purchasing Department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review received request"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required information is present"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if request is complete"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return to employee",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document missing information"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request back to employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Enter request in enterprise system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access enterprise system"
+            },
+            {
+                "step_number": 2,
+                "description": "Input request details"
+            },
+            {
+                "step_number": 3,
+                "description": "Save request in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Select vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review vendor quotes"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate vendors based on criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Choose most suitable vendor"
+            }
+        ]
+    },
+    {
+        "activity_name": "Add new vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect vendor information"
+            },
+            {
+                "step_number": 2,
+                "description": "Create new vendor profile in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify vendor details"
+            }
+        ]
+    },
+    {
+        "activity_name": "Generate purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile purchase order details"
+            },
+            {
+                "step_number": 2,
+                "description": "Create purchase order in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Review and finalize purchase order"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send PO to vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare PO for sending"
+            },
+            {
+                "step_number": 2,
+                "description": "Send PO to selected vendor"
+            },
+            {
+                "step_number": 3,
+                "description": "Record PO transmission"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send PO copy to Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate PO copy for Accounts Payable"
+            },
+            {
+                "step_number": 2,
+                "description": "Forward copy to Accounts Payable department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive goods",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Accept delivery from vendor"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of goods"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check quantity and quality",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Count received items"
+            },
+            {
+                "step_number": 2,
+                "description": "Inspect quality of goods"
+            },
+            {
+                "step_number": 3,
+                "description": "Compare with PO specifications"
+            }
+        ]
+    },
+    {
+        "activity_name": "Generate goods receipt form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document received goods details"
+            },
+            {
+                "step_number": 2,
+                "description": "Create goods receipt form"
+            },
+            {
+                "step_number": 3,
+                "description": "Sign and date form"
+            }
+        ]
+    },
+    {
+        "activity_name": "Forward goods to employee",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare goods for internal delivery"
+            },
+            {
+                "step_number": 2,
+                "description": "Deliver goods to requesting employee"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain employee signature for receipt"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send form to Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare goods receipt form for sending"
+            },
+            {
+                "step_number": 2,
+                "description": "Forward form to Accounts Payable"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return to vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document issues with received goods"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare goods for return"
+            },
+            {
+                "step_number": 3,
+                "description": "Arrange return shipment to vendor"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Purchasing and Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification of goods return"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to Purchasing Department"
+            },
+            {
+                "step_number": 3,
+                "description": "Send notification to Accounts Payable"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Accept invoice from vendor"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of invoice"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform three-way matching",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compare PO, goods receipt, and invoice"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify matching details"
+            },
+            {
+                "step_number": 3,
+                "description": "Resolve any discrepancies"
+            }
+        ]
+    },
+    {
+        "activity_name": "Trigger bank transfer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare payment details"
+            },
+            {
+                "step_number": 2,
+                "description": "Initiate bank transfer"
+            },
+            {
+                "step_number": 3,
+                "description": "Record payment in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send payment notice to vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate payment notice"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notice to vendor"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notice sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contact vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare communication about payment issue"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact vendor to resolve issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Document communication in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Attempt transfer again",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review and update payment details"
+            },
+            {
+                "step_number": 2,
+                "description": "Initiate new bank transfer"
+            },
+            {
+                "step_number": 3,
+                "description": "Monitor transfer status"
+            }
+        ]
+    }
+]

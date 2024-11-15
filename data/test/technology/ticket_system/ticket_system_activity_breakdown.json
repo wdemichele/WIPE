@@ -1,0 +1,155 @@
+[
+    {
+        "activity_name": "Ticket receive",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive new support ticket in the system"
+            },
+            {
+                "step_number": 2,
+                "description": "Review initial ticket information"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign ticket to appropriate support staff"
+            }
+        ]
+    },
+    {
+        "activity_name": "Solve the problem without involving customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze the problem based on available information"
+            },
+            {
+                "step_number": 2,
+                "description": "Research potential solutions"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement solution without customer interaction"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contacting the customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare initial response email"
+            },
+            {
+                "step_number": 2,
+                "description": "Send email to customer acknowledging the issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Schedule follow-up communication if necessary"
+            }
+        ]
+    },
+    {
+        "activity_name": "Detailed interview of the problem",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare list of detailed questions about the issue"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct interview with customer to gather more information"
+            },
+            {
+                "step_number": 3,
+                "description": "Document all relevant details from the interview"
+            }
+        ]
+    },
+    {
+        "activity_name": "Connecting to the item of the customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initiate remote maintenance connection"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify successful connection to customer's item"
+            },
+            {
+                "step_number": 3,
+                "description": "Begin diagnostic procedures on connected item"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ask for further information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify gaps in current understanding of the problem"
+            },
+            {
+                "step_number": 2,
+                "description": "Formulate specific questions to address these gaps"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact customer to request additional information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Solve problem",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze all gathered information and diagnostics"
+            },
+            {
+                "step_number": 2,
+                "description": "Develop and implement solution via remote maintenance"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify problem resolution through testing"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create notes for documentation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Summarize the problem and solution"
+            },
+            {
+                "step_number": 2,
+                "description": "Document steps taken to resolve the issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Record any relevant insights or lessons learned"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirmation ticket completed",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review entire ticket history and notes"
+            },
+            {
+                "step_number": 2,
+                "description": "Update ticket status to 'Completed' in ticket system"
+            },
+            {
+                "step_number": 3,
+                "description": "Send confirmation of resolution to customer"
+            }
+        ]
+    }
+]

@@ -1,0 +1,21 @@
+graph TD
+    Start((Claim received)) --> CreateClaim[Create claim]
+    CreateClaim --> Gateway1{Gateway}
+    Gateway1 --> RecordClaim[Record claim]
+    RecordClaim --> DecideOnClaim[Decide on claim]
+    DecideOnClaim --> ClaimDecision{Claim decision}
+    ClaimDecision -->|Claim to be accepted| OfferBenefit[Offer benefit]
+    OfferBenefit --> PrepareClaimDischarge[Prepare claim discharge]
+    PrepareClaimDischarge --> RecordBenefitPayment[Record benefit payment]
+    RecordBenefitPayment --> Gateway2{Gateway}
+    Gateway2 --> CloseClaim[Close claim]
+    Gateway2 --> OperateOutgoingPayment[Operate outgoing payment]
+    OperateOutgoingPayment --> Gateway3{Gateway}
+    CloseClaim --> Gateway3 
+    ClaimDecision -->|Claim to be rejected| RejectClaim[Reject claim]
+    RejectClaim --> ReviewClaimRejection[Review claim rejection]
+    ReviewClaimRejection --> RejectionDecision{Rejection decision}
+    RejectionDecision -->|Claim rejection not accepted| Gateway1
+    RejectionDecision -->|Claim rejection accepted| Gateway4{Gateway}
+    Gateway3 --> Gateway4
+    Gateway4 --> End((Claim handled))

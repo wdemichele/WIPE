@@ -1,0 +1,223 @@
+[
+    {
+        "activity_name": "Hand In Job Application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Candidate prepares application materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Candidate submits application"
+            },
+            {
+                "step_number": 3,
+                "description": "HR receives and logs application"
+            }
+        ]
+    },
+    {
+        "activity_name": "Initial Screening",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR reviews application for completeness"
+            },
+            {
+                "step_number": 2,
+                "description": "HR checks if candidate meets basic qualifications"
+            },
+            {
+                "step_number": 3,
+                "description": "HR decides whether to proceed or reject"
+            }
+        ]
+    },
+    {
+        "activity_name": "Telephonic Screening",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR schedules phone call with candidate"
+            },
+            {
+                "step_number": 2,
+                "description": "HR conducts phone interview"
+            },
+            {
+                "step_number": 3,
+                "description": "HR evaluates candidate's responses"
+            }
+        ]
+    },
+    {
+        "activity_name": "Background Check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR initiates background check process"
+            },
+            {
+                "step_number": 2,
+                "description": "Third-party agency conducts check"
+            },
+            {
+                "step_number": 3,
+                "description": "HR reviews background check results"
+            }
+        ]
+    },
+    {
+        "activity_name": "Extensive Background Check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR requests additional information from candidate"
+            },
+            {
+                "step_number": 2,
+                "description": "Third-party agency conducts in-depth check"
+            },
+            {
+                "step_number": 3,
+                "description": "HR thoroughly reviews extensive check results"
+            }
+        ]
+    },
+    {
+        "activity_name": "Screening Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR schedules in-person or video interview"
+            },
+            {
+                "step_number": 2,
+                "description": "HR conducts screening interview"
+            },
+            {
+                "step_number": 3,
+                "description": "HR evaluates candidate's fit and qualifications"
+            }
+        ]
+    },
+    {
+        "activity_name": "Coding Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Technical team prepares coding challenges"
+            },
+            {
+                "step_number": 2,
+                "description": "Candidate completes coding tasks"
+            },
+            {
+                "step_number": 3,
+                "description": "Technical team evaluates coding performance"
+            }
+        ]
+    },
+    {
+        "activity_name": "Frontend Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Frontend team prepares specific questions/tasks"
+            },
+            {
+                "step_number": 2,
+                "description": "Frontend team conducts interview"
+            },
+            {
+                "step_number": 3,
+                "description": "Frontend team assesses candidate's skills"
+            }
+        ]
+    },
+    {
+        "activity_name": "ML Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "ML team prepares specific questions/tasks"
+            },
+            {
+                "step_number": 2,
+                "description": "ML team conducts interview"
+            },
+            {
+                "step_number": 3,
+                "description": "ML team evaluates candidate's ML expertise"
+            }
+        ]
+    },
+    {
+        "activity_name": "Backend Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Backend team prepares specific questions/tasks"
+            },
+            {
+                "step_number": 2,
+                "description": "Backend team conducts interview"
+            },
+            {
+                "step_number": 3,
+                "description": "Backend team assesses candidate's skills"
+            }
+        ]
+    },
+    {
+        "activity_name": "Behavioral Interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR prepares behavioral questions"
+            },
+            {
+                "step_number": 2,
+                "description": "HR conducts behavioral interview"
+            },
+            {
+                "step_number": 3,
+                "description": "HR evaluates candidate's soft skills and cultural fit"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make Job Offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR prepares job offer package"
+            },
+            {
+                "step_number": 2,
+                "description": "HR presents offer to candidate"
+            },
+            {
+                "step_number": 3,
+                "description": "HR answers any questions from candidate"
+            }
+        ]
+    },
+    {
+        "activity_name": "Application Rejected",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "HR prepares rejection notification"
+            },
+            {
+                "step_number": 2,
+                "description": "HR sends rejection to candidate"
+            },
+            {
+                "step_number": 3,
+                "description": "HR updates application status in system"
+            }
+        ]
+    }
+]

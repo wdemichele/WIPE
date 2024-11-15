@@ -1,0 +1,250 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Begin the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Create Fine",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate fine record"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Received?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if payment is received"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Fine",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send fine notification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Insert Fine Notification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record fine notification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if appeal is made"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Received?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if payment is received"
+                }
+            ]
+        },
+        {
+            "activity_name": "Add penalty",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply penalty to fine"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Received?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if payment is received"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if appeal is made"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send for Credit Collection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send fine for credit collection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Type of Appeal?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine type of appeal"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal to Prefecture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit appeal to prefecture"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive Result Appeal from Prefecture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive appeal result from prefecture"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Result Appeal to Offender",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform offender of appeal result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal Successful?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if appeal is successful"
+                }
+            ]
+        },
+        {
+            "activity_name": "End Process",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Terminate the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Received?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if payment is received"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal to Judge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit appeal to judge"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal Successful?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if appeal is successful"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Received?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if payment is received"
+                }
+            ]
+        },
+        {
+            "activity_name": "Full Amount Paid?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if full amount is paid"
+                }
+            ]
+        },
+        {
+            "activity_name": "Additional Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process additional payment"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                28.57142857142857
+            ],
+            "No Match": [
+                10,
+                71.42857142857143
+            ]
+        },
+        "average_confidence": 22.857142857142858,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 63.63636363636363,
+        "response_coverage": 50.0,
+        "average_sequence_alignment": 51.388888888888886,
+        "average_overall_similarity_score": 20.0
+    }
+}

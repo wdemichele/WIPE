@@ -1,0 +1,76 @@
+{
+    "activities": [
+      {
+        "step": "Register order",
+        "performer": "Order Clerk",
+        "classification": "BVA",
+        "reasoning": "Necessary for tracking and processing, but doesn't directly add value to the customer"
+      },
+      {
+        "step": "Check order details",
+        "performer": "Order Specialist",
+        "classification": "BVA",
+        "reasoning": "Ensures accuracy and prevents errors, indirectly benefiting the customer"
+      },
+      {
+        "step": "Manufacture custom product",
+        "performer": "Production Team",
+        "classification": "VA",
+        "reasoning": "Directly creates the value the customer is paying for"
+      },
+      {
+        "step": "Confirm order",
+        "performer": "Order Specialist",
+        "classification": "BVA",
+        "reasoning": "Ensures customer's requirements are met, indirectly adding value"
+      },
+      {
+        "step": "Plan shipment",
+        "performer": "Logistics Team",
+        "classification": "BVA",
+        "reasoning": "Necessary for delivery but doesn't directly add value to the product"
+      },
+      {
+        "step": "Check customer type and shipment status",
+        "performer": "Customer Service Representative",
+        "classification": "BVA",
+        "reasoning": "Ensures appropriate handling but doesn't directly add value to the product"
+      },
+      {
+        "step": "Ship custom product",
+        "performer": "Shipping Department",
+        "classification": "VA",
+        "reasoning": "Directly delivers value to the customer"
+      },
+      {
+        "step": "Emit invoice",
+        "performer": "Accounting Department",
+        "classification": "BVA",
+        "reasoning": "Necessary for business operations but doesn't directly add value for the customer"
+      },
+      {
+        "step": "Charge customer account",
+        "performer": "Accounting Department",
+        "classification": "BVA",
+        "reasoning": "Necessary for business operations but doesn't directly add value for the customer"
+      },
+      {
+        "step": "Update customer",
+        "performer": "Customer Service Representative",
+        "classification": "VA",
+        "reasoning": "Directly addresses customer's need for information, especially in case of delays"
+      },
+      {
+        "step": "Archive order",
+        "performer": "System",
+        "classification": "BVA",
+        "reasoning": "Necessary for record-keeping but doesn't directly add value to the customer"
+      },
+      {
+        "step": "Handle change request",
+        "performer": "Order Specialist",
+        "classification": "VA",
+        "reasoning": "Directly responds to customer's changing needs, adding value to their experience"
+      }
+    ]
+  }

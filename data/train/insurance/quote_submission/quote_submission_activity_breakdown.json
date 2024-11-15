@@ -1,0 +1,195 @@
+[
+    {
+        "activity_name": "Request insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify insurance needs"
+            },
+            {
+                "step_number": 2,
+                "description": "Gather necessary personal and property information"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact insurer or fill out online quote request form"
+            },
+            {
+                "step_number": 4,
+                "description": "Submit quote request"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request for quote received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's quote request"
+            },
+            {
+                "step_number": 2,
+                "description": "Log request in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign request to appropriate department or agent"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's information and requirements"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess risk factors"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate premium based on risk assessment"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine coverage details"
+            },
+            {
+                "step_number": 5,
+                "description": "Compile quote document"
+            },
+            {
+                "step_number": 6,
+                "description": "Send quote to client"
+            }
+        ]
+    },
+    {
+        "activity_name": "Evaluate insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive quote from insurer"
+            },
+            {
+                "step_number": 2,
+                "description": "Review coverage details"
+            },
+            {
+                "step_number": 3,
+                "description": "Compare premium to budget"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess if quote meets needs"
+            },
+            {
+                "step_number": 5,
+                "description": "Consider alternatives if available"
+            }
+        ]
+    },
+    {
+        "activity_name": "Accept quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Decide to proceed with the quote"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify insurer of acceptance"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide any additional required information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Decide not to proceed with the quote"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify insurer of rejection"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide reason for rejection (optional)"
+            }
+        ]
+    },
+    {
+        "activity_name": "Quote acceptance received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's acceptance notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Update quote status in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate contract preparation process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Quote rejection received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive client's rejection notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Update quote status in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Record reason for rejection if provided"
+            },
+            {
+                "step_number": 4,
+                "description": "Close quote request"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare insurance contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve accepted quote details"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft insurance contract"
+            },
+            {
+                "step_number": 3,
+                "description": "Include all agreed terms and conditions"
+            },
+            {
+                "step_number": 4,
+                "description": "Review contract for accuracy and completeness"
+            },
+            {
+                "step_number": 5,
+                "description": "Obtain necessary internal approvals"
+            },
+            {
+                "step_number": 6,
+                "description": "Send contract to client for review and signature"
+            }
+        ]
+    }
+]

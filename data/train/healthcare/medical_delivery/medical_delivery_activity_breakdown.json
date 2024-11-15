@@ -1,0 +1,91 @@
+[
+    {
+        "activity_name": "Check destination",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package from pallet",
+                "performer": "Main room team",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Open package and pull out the packaging slip",
+                "performer": "Main room team",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter purchase order number into ERP to check destination",
+                "performer": "Main room team",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set package as unknown",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record unknown package in ERP",
+                "performer": "Main room team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register package into ERP",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter information on packaging slip in ERP",
+                "performer": "Main room team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Write details on package",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Write area and/or room number on package",
+                "performer": "Main room team",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print delivery form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Print delivery form",
+                "performer": "Main room team",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Secure form in plastic packet",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fold and palce in envelope",
+                "performer": "Main room team",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Tap platstic packet to package",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Tap platstic packet to package",
+                "performer": "Main room team",
+                "classification": "NVA"
+            }
+        ]
+    }
+]

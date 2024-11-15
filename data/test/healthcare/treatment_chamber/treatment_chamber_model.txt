@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph Treatment_Chambers["Treatment Chambers"]
+        subgraph Technicians
+            TestPatient[Test the patient in laboratory]
+            LabTests[/"Laboratory tests performed by Technician"/]:::annotation
+        end
+        subgraph Doctors
+            Start([Enter short-term treatment]) --> EvaluatePatient[Evaluate the condition of patient]
+            EvaluatePatient --> TestPatient
+            TestPatient --> TreatPatient[Treat patient]
+            TreatPatient --> PrescribeMedicines[Prescribe medicines]
+            PrescribeMedicines --> End([Prescription delivered])
+            
+            Assessment[/"Assessment performed by medical doctor and nurse"/]:::annotation
+            PerformedBy[/"Performed by medical doctor and nurse"/]:::annotation
+            
+            EvaluatePatient -.-> Assessment
+            TreatPatient -.-> PerformedBy
+        end
+    end
+    
+    PrescribeMedicines -.-> Prescription[("Issue medicine prescription")]:::dataObject
+    Prescription -.-> End
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef annotation fill:#fff,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:note;
+
+    class Start,End event;
+    class EvaluatePatient,TestPatient,TreatPatient,PrescribeMedicines activity;
+    class LabTests,Assessment,PerformedBy annotation;
+    class Prescription dataObject;

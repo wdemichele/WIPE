@@ -1,0 +1,168 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send automatic reply to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive complaint from customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate automatic reply"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send automatic reply to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify potential solutions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss potential solutions with team"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send apology",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft apology message"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and finalize apology message"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send apology message to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Propose solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Analyze complaint and identify root cause"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Develop solution proposal"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Present solution proposal to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Implement agreed solution"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Monitor progress of solution implementation"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure solution meets customer's expectations"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate acceptable alternative",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess available alternative solutions"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate feasibility and impact of each alternative"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Select most acceptable alternative"
+                }
+            ]
+        },
+        {
+            "activity_name": "Go to court",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Consult legal team"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare legal documents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate legal proceedings"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                15,
+                65.21739130434783
+            ],
+            "Identical Match": [
+                2,
+                8.695652173913043
+            ],
+            "No Match": [
+                2,
+                8.695652173913043
+            ],
+            "Granularity Difference": [
+                3,
+                13.043478260869565
+            ],
+            "Process Alternative": [
+                1,
+                4.3478260869565215
+            ]
+        },
+        "average_confidence": 76.08695652173913,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.0,
+            "Identical Match": 100.0,
+            "No Match": 0.0,
+            "Granularity Difference": 76.66666666666667,
+            "Process Alternative": 75.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 93.75,
+        "average_sequence_alignment": 62.142857142857146,
+        "average_overall_similarity_score": 77.25
+    }
+}

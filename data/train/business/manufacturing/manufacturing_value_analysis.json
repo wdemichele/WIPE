@@ -1,0 +1,74 @@
+[
+    {
+      "step": "Check stock availability",
+      "performer": "System",
+      "classification": "BVA",
+      "reasoning": "Necessary for inventory management but doesn't directly add value to the customer"
+    },
+    {
+      "step": "Retrieve product from warehouse",
+      "performer": "Warehouse staff",
+      "classification": "VA",
+      "reasoning": "Directly contributes to fulfilling the customer's order"
+    },
+    {
+      "step": "Check raw materials availability",
+      "performer": "System",
+      "classification": "BVA",
+      "reasoning": "Essential for production planning but doesn't directly add value to the customer"
+    },
+    {
+      "step": "Request raw materials from Supplier 1/2",
+      "performer": "Procurement department",
+      "classification": "BVA",
+      "reasoning": "Necessary for production but doesn't directly add value to the customer"
+    },
+    {
+      "step": "Obtain raw materials from Supplier 1/2",
+      "performer": "Supplier",
+      "classification": "VA",
+      "reasoning": "Essential for creating the product the customer wants"
+    },
+    {
+      "step": "Manufacture product",
+      "performer": "Production department",
+      "classification": "VA",
+      "reasoning": "Directly creates the value the customer is paying for"
+    },
+    {
+      "step": "Confirm order",
+      "performer": "System",
+      "classification": "BVA",
+      "reasoning": "Improves customer experience but doesn't directly add value to the product"
+    },
+    {
+      "step": "Get shipment address",
+      "performer": "System",
+      "classification": "BVA",
+      "reasoning": "Necessary for shipping but doesn't directly add value to the product"
+    },
+    {
+      "step": "Ship product",
+      "performer": "Shipping department",
+      "classification": "VA",
+      "reasoning": "Directly contributes to delivering value to the customer"
+    },
+    {
+      "step": "Emit invoice",
+      "performer": "Accounting department",
+      "classification": "BVA",
+      "reasoning": "Necessary for business operations but doesn't directly add value for the customer"
+    },
+    {
+      "step": "Receive payment",
+      "performer": "Accounting department",
+      "classification": "VA",
+      "reasoning": "Completes the transaction from the customer's perspective"
+    },
+    {
+      "step": "Archive order",
+      "performer": "System",
+      "classification": "BVA",
+      "reasoning": "Important for record-keeping but doesn't directly add value for the customer"
+    }
+  ]

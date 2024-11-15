@@ -1,0 +1,716 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Drop off prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Choose drop-off location (drive-through or front counter)",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by allowing them to choose a convenient drop-off location."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Hand over prescription to staff",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by providing the staff with the prescription for processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Wait 15min - 1h",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive estimated wait time",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for managing customer expectations and providing them with an estimated wait time."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Wait in designated area or return later",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for managing customer flow and ensuring a smooth process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Nominate pickup time",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Discuss available pickup times with staff",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for coordinating the pickup time with the customer and ensuring availability."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable pickup time",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by allowing them to choose a convenient pickup time."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ask for pickup time",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inquire about customer's preferred pickup time",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by gathering information about their preferred pickup time."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm pickup time with customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by finalizing the pickup time with their confirmation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Place in time-labeled box",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify appropriate time-labeled box",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by ensuring the prescription is placed in the correct box for easy retrieval."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Place prescription in correct box",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's needs by organizing the prescriptions in time-labeled boxes for efficient pickup.\")classify(\"VA\", \"Collect prescriptions for current hour\", \"Identify current hour's time-labeled box\", \"This step directly contributes to the process by identifying the current hour's time-labeled box, which is necessary for collecting prescriptions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect prescriptions for current hour",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify current hour's time-labeled box",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve all prescriptions from the box",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by retrieving all prescriptions from the box, which is necessary for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details in system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access pharmacy system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by accessing the pharmacy system, which is necessary for entering prescription details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input prescription information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by inputting prescription information, which is necessary for further processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify entered data for accuracy",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by verifying entered data for accuracy, which is necessary for ensuring the correctness of the prescription details."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform automated DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate Drug Utilization Review (DUR) process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by initiating the Drug Utilization Review (DUR) process, which is necessary for checking drug interactions and contraindications."
+                },
+                {
+                    "step_number": 2,
+                    "description": "System checks for drug interactions and contraindications",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by checking for drug interactions and contraindications, which is necessary for ensuring patient safety."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate DUR report",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by generating the Drug Utilization Review (DUR) report, which is necessary for documenting the results of the review."
+                }
+            ]
+        },
+        {
+            "activity_name": "Pharmacist review",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Examine DUR alarms",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by examining Drug Utilization Review (DUR) alarms, which is necessary for identifying potential risks or interactions."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess potential risks or interactions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by assessing potential risks or interactions, which is necessary for ensuring patient safety."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine need for doctor consultation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by determining the need for doctor consultation, which is necessary for making informed decisions about the prescription."
+                }
+            ]
+        },
+        {
+            "activity_name": "Call doctor to confirm",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare relevant information for discussion",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by preparing relevant information for discussion with the prescribing doctor, which is necessary for a productive conversation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact prescribing doctor",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by contacting the prescribing doctor, which is necessary for discussing concerns and confirming or modifying the prescription."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss concerns and confirm or modify prescription",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by discussing concerns and confirming or modifying the prescription with the prescribing doctor, which is necessary for ensuring the correctness of the prescription."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform insurance check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit claim to insurance provider",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by initiating the insurance claim process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive insurance response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by obtaining the insurance response."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process insurance information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to process the insurance information, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review insurance check results",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Examine insurance response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by reviewing the insurance response."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine if drug is covered",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by determining if the drug is covered by insurance."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess need for drug replacement",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by assessing the need for drug replacement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Call doctor/patient for replacement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare alternative drug options",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by preparing alternative drug options."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact doctor or patient",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by contacting the doctor or patient."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss replacement options and decide on alternative",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by discussing replacement options and deciding on an alternative."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assign to technician for filling",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare filling instructions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to provide instructions for filling the prescription, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign prescription to available technician",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assign the prescription to a technician for filling, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs and bag",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate prescribed drugs in inventory",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by locating the prescribed drugs in the inventory."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Count or measure required amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by counting or measuring the required amount of drugs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Package drugs in appropriate container",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by packaging the drugs in an appropriate container."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Place container in bag with patient information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by placing the container in a bag with the patient's information.\")classify(\"VA\", \"Double-check prescription\", \"Review prescription details\", \"Reviewing prescription details ensures accuracy and prevents errors"
+                }
+            ]
+        },
+        {
+            "activity_name": "Double-check prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify correct drug and dosage",
+                    "classification": "VA",
+                    "reasoning": "Verifying the correct drug and dosage ensures patient safety"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check patient information accuracy",
+                    "classification": "VA",
+                    "reasoning": "Checking patient information accuracy ensures correct prescription dispensing"
+                }
+            ]
+        },
+        {
+            "activity_name": "Seal bag and place in pickup area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Seal prescription bag",
+                    "classification": "BVA",
+                    "reasoning": "Sealing the prescription bag is necessary for safe transportation"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Label bag with patient name and pickup information",
+                    "classification": "BVA",
+                    "reasoning": "Labeling the bag with patient information ensures correct delivery"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Place bag in designated pickup area",
+                    "classification": "BVA",
+                    "reasoning": "Placing the bag in the designated pickup area ensures easy retrieval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Arrive for pickup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter pharmacy",
+                    "classification": "VA",
+                    "reasoning": "Entering the pharmacy is necessary to pick up the prescription"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Approach pickup counter",
+                    "classification": "VA",
+                    "reasoning": "Approaching the pickup counter is necessary to receive the prescription"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Provide name and pickup information to staff",
+                    "classification": "VA",
+                    "reasoning": "Providing name and pickup information helps staff locate the prescription"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Wait while staff locates prescription",
+                    "classification": "VA",
+                    "reasoning": "Waiting for staff to locate the prescription is necessary for retrieval"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Receive prescription bag from staff",
+                    "classification": "VA",
+                    "reasoning": "Receiving the prescription bag completes the retrieval process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment amount from staff",
+                    "classification": "VA",
+                    "reasoning": "Receiving the payment amount is necessary for the transaction"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Choose payment method",
+                    "classification": "VA",
+                    "reasoning": "Choosing the payment method is necessary to complete the transaction"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Complete payment transaction",
+                    "classification": "VA",
+                    "reasoning": "Completing the payment transaction finalizes the purchase"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Receive receipt",
+                    "classification": "VA",
+                    "reasoning": "Receiving the receipt provides proof of payment"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 54,
+        "correct_classifications": 22,
+        "accuracy": 0.4074074074074074,
+        "misclassifications": [
+            {
+                "activity": "Drop off prescription",
+                "substep": "Choose drop-off location (drive-through or front counter)",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by allowing them to choose a convenient drop-off location.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Drop off prescription",
+                "substep": "Hand over prescription to staff",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by providing the staff with the prescription for processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Wait 15min - 1h",
+                "substep": "Wait in designated area or return later",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for managing customer flow and ensuring a smooth process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Nominate pickup time",
+                "substep": "Select suitable pickup time",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by allowing them to choose a convenient pickup time.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Ask for pickup time",
+                "substep": "Inquire about customer's preferred pickup time",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by gathering information about their preferred pickup time.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Ask for pickup time",
+                "substep": "Confirm pickup time with customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by finalizing the pickup time with their confirmation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Place in time-labeled box",
+                "substep": "Identify appropriate time-labeled box",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by ensuring the prescription is placed in the correct box for easy retrieval.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Place in time-labeled box",
+                "substep": "Place prescription in correct box",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's needs by organizing the prescriptions in time-labeled boxes for efficient pickup.\")classify(\"VA\", \"Collect prescriptions for current hour\", \"Identify current hour's time-labeled box\", \"This step directly contributes to the process by identifying the current hour's time-labeled box, which is necessary for collecting prescriptions.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Collect prescriptions for current hour",
+                "substep": "Retrieve all prescriptions from the box",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to the process by retrieving all prescriptions from the box, which is necessary for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Enter prescription details in system",
+                "substep": "Access pharmacy system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to the process by accessing the pharmacy system, which is necessary for entering prescription details.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Enter prescription details in system",
+                "substep": "Input prescription information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by inputting prescription information, which is necessary for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Enter prescription details in system",
+                "substep": "Verify entered data for accuracy",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by verifying entered data for accuracy, which is necessary for ensuring the correctness of the prescription details.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Perform automated DUR",
+                "substep": "Initiate Drug Utilization Review (DUR) process",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by initiating the Drug Utilization Review (DUR) process, which is necessary for checking drug interactions and contraindications.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Perform automated DUR",
+                "substep": "Generate DUR report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by generating the Drug Utilization Review (DUR) report, which is necessary for documenting the results of the review.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Call doctor to confirm",
+                "substep": "Prepare relevant information for discussion",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process by preparing relevant information for discussion with the prescribing doctor, which is necessary for a productive conversation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Perform insurance check",
+                "substep": "Submit claim to insurance provider",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by initiating the insurance claim process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Perform insurance check",
+                "substep": "Receive insurance response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by obtaining the insurance response.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Review insurance check results",
+                "substep": "Examine insurance response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by reviewing the insurance response.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Review insurance check results",
+                "substep": "Determine if drug is covered",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by determining if the drug is covered by insurance.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Assign to technician for filling",
+                "substep": "Assign prescription to available technician",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to assign the prescription to a technician for filling, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Collect drugs and bag",
+                "substep": "Locate prescribed drugs in inventory",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by locating the prescribed drugs in the inventory.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Collect drugs and bag",
+                "substep": "Place container in bag with patient information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by placing the container in a bag with the patient's information.\")classify(\"VA\", \"Double-check prescription\", \"Review prescription details\", \"Reviewing prescription details ensures accuracy and prevents errors",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Seal bag and place in pickup area",
+                "substep": "Seal prescription bag",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Sealing the prescription bag is necessary for safe transportation",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Seal bag and place in pickup area",
+                "substep": "Place bag in designated pickup area",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Placing the bag in the designated pickup area ensures easy retrieval",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Arrive for pickup",
+                "substep": "Enter pharmacy",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Entering the pharmacy is necessary to pick up the prescription",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Arrive for pickup",
+                "substep": "Approach pickup counter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Approaching the pickup counter is necessary to receive the prescription",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Retrieve prescription",
+                "substep": "Provide name and pickup information to staff",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Providing name and pickup information helps staff locate the prescription",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Retrieve prescription",
+                "substep": "Wait while staff locates prescription",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Waiting for staff to locate the prescription is necessary for retrieval",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make payment",
+                "substep": "Receive payment amount from staff",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Receiving the payment amount is necessary for the transaction",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make payment",
+                "substep": "Choose payment method",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Choosing the payment method is necessary to complete the transaction",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make payment",
+                "substep": "Complete payment transaction",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Completing the payment transaction finalizes the purchase",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make payment",
+                "substep": "Receive receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Receiving the receipt provides proof of payment",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 16
+            },
+            "BVA": {
+                "VA": 18,
+                "BVA": 5
+            },
+            "NVA": {
+                "VA": 10,
+                "BVA": 4,
+                "NVA": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "equivalent": true,
+    "num_iterations": 2,
+    "final_mermaid_code": "graph TB\n    subgraph Lane 1\n        A([ ]) --> B[Verify Available Vacation Days]\n        B --> C[Register Vacation Leave Request]\n        C --> D{Decline?}\n        D -- Yes --> E([ ])\n        D -- No --> F{Request Change}\n        F -- Request Change --> C\n        F --> G[Approve Vacation Leave Request]\n        G --> H{Approved?}\n        H -- No --> I[Send Rejection Message]\n        H -- Yes --> J[Send Approval Message]\n        J --> K[Update Payroll System]\n        I --> L([ ])\n        K --> M([ ])\n    end"
+}

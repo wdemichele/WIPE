@@ -1,0 +1,360 @@
+[
+    {
+        "activity_name": "Answer notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive phone call"
+            },
+            {
+                "step_number": 2,
+                "description": "Greet caller"
+            },
+            {
+                "step_number": 3,
+                "description": "Listen to notice details"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open notice recording system"
+            },
+            {
+                "step_number": 2,
+                "description": "Input caller's information"
+            },
+            {
+                "step_number": 3,
+                "description": "Document notice details"
+            },
+            {
+                "step_number": 4,
+                "description": "Save notice record"
+            }
+        ]
+    },
+    {
+        "activity_name": "Store and print notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Save notice in digital system"
+            },
+            {
+                "step_number": 2,
+                "description": "Print physical copy of notice"
+            },
+            {
+                "step_number": 3,
+                "description": "File printed notice"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create patient file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open patient management system"
+            },
+            {
+                "step_number": 2,
+                "description": "Input new patient details"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign unique patient ID"
+            },
+            {
+                "step_number": 4,
+                "description": "Save new patient file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close case",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review case details"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure all necessary information is recorded"
+            },
+            {
+                "step_number": 3,
+                "description": "Mark case as closed in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assign intakers",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review available intakers"
+            },
+            {
+                "step_number": 2,
+                "description": "Match patient needs with intaker skills"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign first intaker"
+            },
+            {
+                "step_number": 4,
+                "description": "Assign second intaker"
+            }
+        ]
+    },
+    {
+        "activity_name": "Store assignment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open assignment tracking system"
+            },
+            {
+                "step_number": 2,
+                "description": "Record intaker assignments"
+            },
+            {
+                "step_number": 3,
+                "description": "Link assignments to patient file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Hand out cards",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare assignment cards"
+            },
+            {
+                "step_number": 2,
+                "description": "Distribute cards to assigned intakers"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm receipt of cards"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ask for medical file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify appropriate medical provider"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare medical file request"
+            },
+            {
+                "step_number": 3,
+                "description": "Send request to medical provider"
+            },
+            {
+                "step_number": 4,
+                "description": "Log request in patient file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update patient file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive medical file"
+            },
+            {
+                "step_number": 2,
+                "description": "Review medical file contents"
+            },
+            {
+                "step_number": 3,
+                "description": "Add relevant information to patient file"
+            },
+            {
+                "step_number": 4,
+                "description": "Save updated patient file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan meeting first intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check first intaker's availability"
+            },
+            {
+                "step_number": 2,
+                "description": "Propose meeting times"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm meeting time"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule meeting in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan meeting second intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check second intaker's availability"
+            },
+            {
+                "step_number": 2,
+                "description": "Propose meeting times"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm meeting time"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule meeting in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Meet with first intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare for meeting"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct intake interview"
+            },
+            {
+                "step_number": 3,
+                "description": "Record key information"
+            },
+            {
+                "step_number": 4,
+                "description": "Discuss next steps with patient"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete file with 1st information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review notes from first intake meeting"
+            },
+            {
+                "step_number": 2,
+                "description": "Organize information"
+            },
+            {
+                "step_number": 3,
+                "description": "Update patient file with new information"
+            },
+            {
+                "step_number": 4,
+                "description": "Save updated file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Meet with second intaker",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review first intake information"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct second intake interview"
+            },
+            {
+                "step_number": 3,
+                "description": "Record additional information"
+            },
+            {
+                "step_number": 4,
+                "description": "Discuss treatment possibilities with patient"
+            }
+        ]
+    },
+    {
+        "activity_name": "Type out conversation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review notes from second intake meeting"
+            },
+            {
+                "step_number": 2,
+                "description": "Transcribe key points of conversation"
+            },
+            {
+                "step_number": 3,
+                "description": "Organize transcribed information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete file with 2nd information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review transcribed conversation"
+            },
+            {
+                "step_number": 2,
+                "description": "Update patient file with new information"
+            },
+            {
+                "step_number": 3,
+                "description": "Cross-reference with first intake information"
+            },
+            {
+                "step_number": 4,
+                "description": "Save completed patient file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Determine treatment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complete patient file"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult with intakers if necessary"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess treatment options"
+            },
+            {
+                "step_number": 4,
+                "description": "Select appropriate treatment plan"
+            },
+            {
+                "step_number": 5,
+                "description": "Document treatment decision in patient file"
+            }
+        ]
+    }
+]

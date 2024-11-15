@@ -1,0 +1,146 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check prescription details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure correct dosage"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Check for allergies"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect drug packaging"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check expiration date"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record patient information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter drug name and dosage"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Capture prescribing physician details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate drug in inventory"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve correct quantity"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total cost"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Accept payment from patient"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review drug utilization history"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for potential drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess appropriateness of drug therapy"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance coverage"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine copay amount"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                22.22222222222222
+            ],
+            "No Match": [
+                12,
+                66.66666666666666
+            ],
+            "Granularity Difference": [
+                2,
+                11.11111111111111
+            ]
+        },
+        "average_confidence": 25.27777777777778,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 78.75,
+            "No Match": 0.0,
+            "Granularity Difference": 70.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 55.55555555555556,
+        "average_sequence_alignment": 79.52380952380952,
+        "average_overall_similarity_score": 23.357142857142858
+    }
+}

@@ -1,0 +1,37 @@
+graph TB
+    subgraph Customer
+        CustomerStart([Start]) -.->|Claim documentation| ClaimReceived
+        NotifyCustomer -->|Notification letter| CustomerEnd([End])
+    end
+
+    subgraph "Car Insurer"
+        subgraph "Notification Department"
+            ClaimReceived[/Claim Received/] --> CheckCompleteness[Check completeness]
+            CheckCompleteness --> CompleteCheck{Complete?}
+            CompleteCheck -->|complete| RegisterClaim[Register claim]
+            CompleteCheck -->|incomplete| RejectClaim[Reject claim]
+        end
+
+        subgraph "Handling Department"
+            RegisterClaim --> CoverageCheck{Covered?}
+            CoverageCheck -->|Not covered| RejectClaim
+            CoverageCheck -->|Covered| AssessClaim[Assess claim]
+            AssessClaim --> AssessmentResult{Assessment}
+            AssessmentResult -->|negative| RejectClaim
+            AssessmentResult -->|positive| SchedulePayment[Schedule payment]
+            SchedulePayment --> AuthorizeRepayment[Authorize repayment]
+        end
+
+        RejectClaim --> NotifyCustomer[Notify Customer]
+        AuthorizeRepayment --> NotifyCustomer
+    end
+
+    subgraph Garage
+        AuthorizeRepayment -.->|Authorization| GarageStart([Start])
+        AuthorizeRepayment -.->|Payment details| GarageEnd([End])
+    end
+
+    %% Message Flows
+    CustomerStart -.->|Claim documentation| ClaimReceived
+    RegisterClaim -.->|Registered claim| CoverageCheck
+    NotifyCustomer -->|Notification letter| CustomerEnd

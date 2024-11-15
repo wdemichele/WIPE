@@ -1,0 +1,416 @@
+[
+    {
+        "activity_name": "Prepare implements",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather necessary medical equipment"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify equipment sterility"
+            },
+            {
+                "step_number": 3,
+                "description": "Arrange implements in order of use"
+            }
+        ]
+    },
+    {
+        "activity_name": "Hand washing",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Use appropriate antiseptic solution"
+            },
+            {
+                "step_number": 2,
+                "description": "Wash hands thoroughly following medical protocol"
+            },
+            {
+                "step_number": 3,
+                "description": "Dry hands with sterile towel"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get in sterile clothes",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Don sterile gown"
+            },
+            {
+                "step_number": 2,
+                "description": "Put on sterile gloves"
+            },
+            {
+                "step_number": 3,
+                "description": "Ensure proper coverage of all non-sterile areas"
+            }
+        ]
+    },
+    {
+        "activity_name": "Clean puncture area",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify appropriate puncture site"
+            },
+            {
+                "step_number": 2,
+                "description": "Apply antiseptic solution to site"
+            },
+            {
+                "step_number": 3,
+                "description": "Allow area to dry completely"
+            }
+        ]
+    },
+    {
+        "activity_name": "Drap puncture area",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Place sterile drapes around puncture site"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure complete coverage of non-sterile areas"
+            },
+            {
+                "step_number": 3,
+                "description": "Secure drapes in place"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ultrasound configuration",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Power on ultrasound machine"
+            },
+            {
+                "step_number": 2,
+                "description": "Select appropriate settings for procedure"
+            },
+            {
+                "step_number": 3,
+                "description": "Adjust image quality as needed"
+            }
+        ]
+    },
+    {
+        "activity_name": "Gel in probe",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Apply sterile ultrasound gel to probe"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure even distribution of gel"
+            }
+        ]
+    },
+    {
+        "activity_name": "Cover probe",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Apply sterile cover to ultrasound probe"
+            },
+            {
+                "step_number": 2,
+                "description": "Secure cover in place"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify integrity of sterile barrier"
+            }
+        ]
+    },
+    {
+        "activity_name": "Put sterile gel",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Apply sterile gel to patient's skin at probe site"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure sufficient gel for good contact"
+            }
+        ]
+    },
+    {
+        "activity_name": "Position probe",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Place ultrasound probe on patient's skin"
+            },
+            {
+                "step_number": 2,
+                "description": "Adjust probe position for optimal view"
+            },
+            {
+                "step_number": 3,
+                "description": "Maintain sterile technique throughout"
+            }
+        ]
+    },
+    {
+        "activity_name": "Position patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Adjust patient position for optimal access"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure patient comfort"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify maintained sterility of prepared area"
+            }
+        ]
+    },
+    {
+        "activity_name": "Doppler identification",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Activate Doppler function on ultrasound"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify blood flow in target vessel"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm vessel identity"
+            }
+        ]
+    },
+    {
+        "activity_name": "Anatomic identification",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Visualize anatomical landmarks on ultrasound"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify target vessel based on anatomy"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm vessel identity"
+            }
+        ]
+    },
+    {
+        "activity_name": "Compression identification",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Apply gentle pressure with ultrasound probe"
+            },
+            {
+                "step_number": 2,
+                "description": "Observe vessel compression on ultrasound"
+            },
+            {
+                "step_number": 3,
+                "description": "Differentiate artery (non-compressible) from vein (compressible)"
+            }
+        ]
+    },
+    {
+        "activity_name": "Anesthetize",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare local anesthetic"
+            },
+            {
+                "step_number": 2,
+                "description": "Inject anesthetic at puncture site"
+            },
+            {
+                "step_number": 3,
+                "description": "Allow time for anesthetic to take effect"
+            }
+        ]
+    },
+    {
+        "activity_name": "Puncture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Insert needle at identified site"
+            },
+            {
+                "step_number": 2,
+                "description": "Advance needle under ultrasound guidance"
+            },
+            {
+                "step_number": 3,
+                "description": "Maintain visualization of needle tip"
+            }
+        ]
+    },
+    {
+        "activity_name": "Blood return",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Observe for blood return in needle"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm position in target vessel"
+            }
+        ]
+    },
+    {
+        "activity_name": "Guidewire install",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Insert guidewire through needle"
+            },
+            {
+                "step_number": 2,
+                "description": "Advance guidewire into vessel"
+            },
+            {
+                "step_number": 3,
+                "description": "Monitor for any resistance or arrhythmias"
+            }
+        ]
+    },
+    {
+        "activity_name": "Remove trocar",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Carefully withdraw needle"
+            },
+            {
+                "step_number": 2,
+                "description": "Maintain guidewire position"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check wire in long axis",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Adjust ultrasound to visualize vessel length"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm guidewire position along vessel"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check wire in short axis",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Adjust ultrasound for cross-sectional view"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm guidewire position within vessel lumen"
+            }
+        ]
+    },
+    {
+        "activity_name": "Widen pathway",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select appropriate dilator"
+            },
+            {
+                "step_number": 2,
+                "description": "Pass dilator over guidewire"
+            },
+            {
+                "step_number": 3,
+                "description": "Enlarge tissue tract"
+            }
+        ]
+    },
+    {
+        "activity_name": "Advance catheter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Thread catheter over guidewire"
+            },
+            {
+                "step_number": 2,
+                "description": "Advance catheter to appropriate depth"
+            },
+            {
+                "step_number": 3,
+                "description": "Monitor for any resistance"
+            }
+        ]
+    },
+    {
+        "activity_name": "Remove guidewire",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Carefully withdraw guidewire"
+            },
+            {
+                "step_number": 2,
+                "description": "Maintain catheter position"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check flow and reflow",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Aspirate blood from each lumen"
+            },
+            {
+                "step_number": 2,
+                "description": "Flush each lumen with saline"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify easy flow and reflow"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check catheter position",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Perform chest X-ray or other imaging"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm proper catheter tip position"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify absence of complications"
+            }
+        ]
+    }
+]

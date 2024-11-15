@@ -1,0 +1,44 @@
+flowchart TD
+    Start([Email account needed]) --> LogOn[Log on email provider website]
+    LogOn --> ChoosePackage[Choose package]
+    ChoosePackage --> AccountAvailable{Personal account available?}
+    AccountAvailable -->|No| End1([Private account unavailable])
+    AccountAvailable -->|Yes| EnterWelcome[Enter Private account welcome page]
+    EnterWelcome --> ProvideInfo[Provide personal information]
+    ProvideInfo --> ParallelSplit1
+    ParallelSplit1 --> EnterNames[Enter Full Names]
+    ParallelSplit1 --> UploadPhoto[Upload photo ID]
+    EnterNames --> ParallelJoin1
+    UploadPhoto --> ParallelJoin1
+    ParallelJoin1 --> DataConfirmed[Personal Data confirmed]
+    DataConfirmed --> GenerateID[New email ID & password generated]
+    GenerateID --> End2([Private email created])
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    class AccountAvailable gateway;
+
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    class Start,End1,End2 event;
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    class LogOn,ChoosePackage,EnterWelcome,ProvideInfo,EnterNames,UploadPhoto,DataConfirmed,GenerateID activity;
+
+    classDef parallelGateway fill:#fff,stroke:#333,stroke-width:2px,shape:diamond;
+    class ParallelSplit1,ParallelJoin1 parallelGateway;
+
+    subgraph "Email Account Creation Portal"
+        Start
+        LogOn
+        ChoosePackage
+        AccountAvailable
+        End1
+        EnterWelcome
+        ProvideInfo
+        ParallelSplit1
+        EnterNames
+        UploadPhoto
+        ParallelJoin1
+        DataConfirmed
+        GenerateID
+        End2
+    end

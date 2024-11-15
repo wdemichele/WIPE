@@ -1,0 +1,30 @@
+graph TD
+    A[Start] --> B[Scoring request received]
+    B --> C[Request credit score]
+    C --> D{Credit score available?}
+    D -->|Yes| E[Credit score received]
+    D -->|No| F[Delay information received]
+    F --> G[Report delay]
+    G --> H[Credit score received]
+    E --> I{Merge}
+    H --> I
+    I --> J[Send credit score]
+    J --> K[End]
+
+    subgraph "Scoring Service"
+    L[Start] --> M[Scoring request received]
+    M --> N[Compute credit score level 1]
+    N --> O{Score available?}
+    O -->|Yes| P[Send credit score]
+    O -->|No| Q[Report delay]
+    Q --> R[Compute credit score level 2]
+    R --> S[Send credit score]
+    P --> T{Merge}
+    S --> T
+    T --> U[End]
+    end
+
+    B -.-> M
+    P -.-> E
+    S -.-> H
+    Q -.-> F

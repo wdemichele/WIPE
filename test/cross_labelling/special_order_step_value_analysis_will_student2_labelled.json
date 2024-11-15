@@ -1,0 +1,290 @@
+[
+    {
+        "activity_name": "Register order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive special order request",
+                "classification": "BVA",
+                "reasoning": "It is essential to start the processing, but it does not add value to the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Create new order entry in system",
+                "classification": "BVA",
+                "reasoning": "It is essential to start the processing, but it does not add value to the customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Assign unique order number",
+                "classification": "BVA",
+                "reasoning": "This is for the system record that helps data management but does not add value to the customer."
+            },
+            {
+                "step_number": 4,
+                "description": "Record initial order details",
+                "classification": "BVA",
+                "reasoning": "This is for the system record that helps data management but does not add value to the customer."
+            }
+        ]
+    },
+    {
+        "activity_name": "Check order details",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order specifications",
+                "classification": "BVA",
+                "reasoning": "It ensures the order specifications are accurate for further processing and will impact whether the manufactured product meets customer requirements."
+            },
+            {
+                "step_number": 2,
+                "description": "Verify customer information",
+                "classification": "BVA",
+                "reasoning": "It ensures the customer information is accurate for further processing but does not add value to the customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm product customisation requirements",
+                "classification":  "VA",
+                "reasoning": "It ensures the manufactured product is customised as the customer requested."
+            }
+        ]
+    },
+    {
+        "activity_name": "Manufacture custom product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create production order",
+                "classification": "BVA",
+                "reasoning": "The creation of order is for system record, does not add value to the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Allocate resources and materials",
+                "classification": "VA",
+                "reasoning": "The appropriate allocation of resources and materials will affect the quality and time for the product"
+            },
+            {
+                "step_number": 3,
+                "description": "Produce custom product",
+                "classification":  "VA",
+                "reasoning": "It produces the product."
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirm order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate order confirmation document",
+                "classification": "NVA",
+                "reasoning": "This is a context-switch step."
+            },
+            {
+                "step_number": 2,
+                "description": "Review order details with customer",
+                "classification": "VA",
+                "reasoning": "This helps ensure the order detail is exactly what the customer wants."
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle change request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive change request",
+                "classification": "BVA",
+                "reasoning": "It is essential to change the product, but it does not add value to the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Assess the impact on current order",
+                "classification":  "VA",
+                "reasoning": "Whether the final product can be changed as customer requests depends on this step."
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate changes and implications to relevant departments",
+                "classification": "BVA",
+                "reasoning": "This step ensures the changes can be implemented but does not add value to the customer."
+            },
+            {
+                "step_number": 4,
+                "description": "Update order details with approved changes",
+                "classification": "VA",
+                "reasoning": "This step makes the changes as per customer request."
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan shipment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine shipping method",
+                "classification":  "BVA",
+                "reasoning": "This step is essential to determine how the product will be delivered to the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate shipping costs",
+                "classification":  "BVA",
+                "reasoning": "This step help ensure the shipping costs is appropriately charged to the customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Schedule pickup or delivery",
+                "classification": "VA",
+                "reasoning": "Assume the customer can decide the time and company schedule accordingly, this is value-adding."
+            }
+        ]
+    },
+    {
+        "activity_name": "Check customer type and shipment status",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve customer information",
+                "classification":  "NVA",
+                "reasoning": "This is context-switching."
+            },
+            {
+                "step_number": 2,
+                "description": "Identify customer type",
+                "classification": "NVA",
+                "reasoning": "Not sure what's the purpose for checking the customer type and shipment status before shippping."
+            },
+            {
+                "step_number": 3,
+                "description": "Check shipment status",
+                "classification":  "NVA",
+                "reasoning": "Not sure what's the purpose for checking the customer type and shipment status before shippping."
+            }
+        ]
+    },
+    {
+        "activity_name": "Ship custom product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare product for shipping",
+                "classification":  "NVA",
+                "reasoning": "This is context-switching"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate shipping label",
+                "classification":  "NVA",
+                "reasoning": "Some shipments no longer need shipping labels."
+            },
+            {
+                "step_number": 3,
+                "description": "Hand over to shipping carrier",
+                "classification": "VA",
+                "reasoning": "This is when the shipment is passed to a carrier, and the customer will get the product."
+            },
+            {
+                "step_number": 4,
+                "description": "Update order status to shipped",
+                "classification":  "BVA",
+                "reasoning": "This is for company internal order management, no value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Emit invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate invoice for casual customer",
+                "classification":  "BVA",
+                "reasoning": "This is a generally required business process, does not add value to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Send invoice to customer",
+                "classification": "NVA" ,
+                "reasoning": "This is a handover task."
+            }
+        ]
+    },
+    {
+        "activity_name": "Charge customer account",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate total charge",
+                "classification": "BVA",
+                "reasoning": "This calculates the amount to charge the customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Process payment from account",
+                "classification":  "BVA",
+                "reasoning": "This collects payment from customer's account."
+            },
+            {
+                "step_number": 3,
+                "description": "Generate and send receipt",
+                "classification":  "BVA",
+                "reasoning": "This is a generally required business process, does not add value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify reason for shipment delay",
+                "classification":  "VA",
+                "reasoning": "This is a piece of information the customer would like to know."
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare customer communication",
+                "classification":  "NVA",
+                "reasoning": "This is a handover task."
+            },
+            {
+                "step_number": 3,
+                "description": "Contact customer with update",
+                "classification":  "VA",
+                "reasoning": "This is a piece of information the customer would like to know."
+            },
+            {
+                "step_number": 4,
+                "description": "Record communication in customer file",
+                "classification": "BVA",
+                "reasoning": "This is for company internal control, not adding value to customer."
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify order completion",
+                "classification":  "BVA",
+                "reasoning": "This is part of internal control, not adding value to customer."
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer order to archive system",
+                "classification": "BVA",
+                "reasoning": "This is part of internal control, not adding value to customer."
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status to archived",
+                "classification": "BVA",
+                "reasoning": "This is part of internal control, not adding value to customer."
+            }
+        ]
+    }
+]

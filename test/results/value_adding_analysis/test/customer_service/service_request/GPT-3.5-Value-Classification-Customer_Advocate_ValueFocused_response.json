@@ -1,0 +1,222 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Retrieve parts from storage",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate parts in storage area",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Collect required parts",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by gathering the necessary parts for the process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory records",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the inventory, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Specify and quantify requirements",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify specific parts needed",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by identifying the specific parts required for the process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine required quantities",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by determining the quantities of the required parts."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document specifications for procurement",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to document the specifications for procurement, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete a purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access ERP-System",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by accessing the ERP-System to complete the purchase order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter purchase order details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by entering the details of the purchase order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit purchase order for review",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the purchase order, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review purchase order details in ERP-System",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the purchase order details in the ERP-System."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify accuracy and completeness of order",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the accuracy and completeness of the order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Identify vendor status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to identify the vendor status, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather new vendor information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by gathering the necessary information for creating a new vendor."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter vendor details into system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by entering the vendor details into the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Validate and approve new vendor",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to validate and approve the new vendor, but it does not directly add value for the customer.\")classify(\"VA\", \"Create order template from purchase order\", \"Access ERP-System\", \"This step directly contributes to the process by accessing the ERP-System, which is necessary for generating the order template."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create order template from purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access ERP-System",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate order template based on purchase order",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by generating the order template based on the purchase order, which meets customer requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save template for future use",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by saving the order template for future use, which is necessary for business functions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Approve purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details in ERP-System",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the order details in the ERP-System, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check against approval criteria",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to check the purchase order against approval criteria, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide approval or rejection decision",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to provide an approval or rejection decision for the purchase order, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Adjust order status",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify delivery problems",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to identify any delivery problems, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status in the system, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate status change to relevant parties",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to communicate the status change to relevant parties, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receipt of goods",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive delivered parts",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by receiving the delivered parts, which meets customer requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify received parts against order",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by verifying the received parts against the order, which meets customer requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory and order status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the inventory and order status in the system, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

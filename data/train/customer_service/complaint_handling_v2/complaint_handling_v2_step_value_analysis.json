@@ -1,0 +1,217 @@
+[
+    {
+        "activity_name": "Send automatic reply to customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive complaint notification",
+                "classification": "BVA",
+                "reasoning": "Necessary to initiate process but doesn't directly resolve complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate automatic acknowledgement message",
+                "classification": "BVA",
+                "reasoning": "Improves customer experience but doesn't directly address complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Send acknowledgement to customer's contact email",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't resolve issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complaint details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and resolving the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult relevant team members or departments",
+                "classification": "VA",
+                "reasoning": "Adds value by bringing in necessary expertise for resolution"
+            },
+            {
+                "step_number": 3,
+                "description": "Brainstorm potential solutions",
+                "classification": "VA",
+                "reasoning": "Directly contributes to resolving the complaint"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate feasibility and effectiveness of solutions",
+                "classification": "VA",
+                "reasoning": "Crucial for selecting the best resolution for the customer"
+            },
+            {
+                "step_number": 5,
+                "description": "Select most appropriate solution",
+                "classification": "VA",
+                "reasoning": "Directly leads to complaint resolution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send apology",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft personalized apology message",
+                "classification": "VA",
+                "reasoning": "Adds value by acknowledging customer's experience and rebuilding trust"
+            },
+            {
+                "step_number": 2,
+                "description": "Have apology reviewed by appropriate authority",
+                "classification": "BVA",
+                "reasoning": "Ensures quality but doesn't directly add value to the apology"
+            },
+            {
+                "step_number": 3,
+                "description": "Send apology to customer",
+                "classification": "VA",
+                "reasoning": "Directly contributes to customer satisfaction and relationship repair"
+            }
+        ]
+    },
+    {
+        "activity_name": "Propose solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Formulate detailed solution proposal",
+                "classification": "VA",
+                "reasoning": "Directly addresses the customer's complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft message explaining proposed solution",
+                "classification": "VA",
+                "reasoning": "Adds value by clearly communicating the resolution to the customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Send solution proposal to customer",
+                "classification": "VA",
+                "reasoning": "Directly engages customer in the resolution process"
+            },
+            {
+                "step_number": 4,
+                "description": "Record proposed solution in complaint management system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly resolve the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Execute solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create action plan for implementing solution",
+                "classification": "VA",
+                "reasoning": "Directly contributes to resolving the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign tasks to relevant team members",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement solution actions",
+                "classification": "VA",
+                "reasoning": "Directly resolves the customer's complaint"
+            },
+            {
+                "step_number": 4,
+                "description": "Verify solution implementation",
+                "classification": "VA",
+                "reasoning": "Ensures the complaint is effectively resolved"
+            },
+            {
+                "step_number": 5,
+                "description": "Follow up with customer to ensure satisfaction",
+                "classification": "VA",
+                "reasoning": "Directly adds value by confirming resolution and customer satisfaction"
+            }
+        ]
+    },
+    {
+        "activity_name": "Evaluate acceptable alternative",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review customer's negative response",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding customer's needs"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze reasons for rejection of initial solution",
+                "classification": "VA",
+                "reasoning": "Crucial for improving the solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Brainstorm alternative solutions",
+                "classification": "VA",
+                "reasoning": "Directly contributes to finding a better resolution"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess viability of alternative solutions",
+                "classification": "VA",
+                "reasoning": "Ensures proposed alternatives are feasible and effective"
+            },
+            {
+                "step_number": 5,
+                "description": "Select best alternative solution if available",
+                "classification": "VA",
+                "reasoning": "Directly leads to improved complaint resolution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Go to court",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Consult with legal department",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly resolve complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare necessary documentation",
+                "classification": "BVA",
+                "reasoning": "Required for legal action but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "File legal action",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 4,
+                "description": "Engage in legal proceedings",
+                "classification": "BVA",
+                "reasoning": "Required process but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 5,
+                "description": "Update complaint status to 'In Litigation'",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly resolve the complaint"
+            }
+        ]
+    }
+]

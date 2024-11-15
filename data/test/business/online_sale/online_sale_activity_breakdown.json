@@ -1,0 +1,206 @@
+[
+    {
+        "activity_name": "Seller displays items on the webpage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare item descriptions and shipment details"
+            },
+            {
+                "step_number": 2,
+                "description": "Upload information to seller's software or eBay platform"
+            },
+            {
+                "step_number": 3,
+                "description": "Ensure data is stored in eBay data stores"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller receives buyer's order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive order notification through web or mobile application"
+            },
+            {
+                "step_number": 2,
+                "description": "Review order details"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify payment status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller sends to the buyer the order purchase confirmation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate order confirmation"
+            },
+            {
+                "step_number": 2,
+                "description": "Include relevant order and shipping details"
+            },
+            {
+                "step_number": 3,
+                "description": "Send confirmation to buyer through eBay platform"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller sends the order to the shipping company",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare item for shipment"
+            },
+            {
+                "step_number": 2,
+                "description": "Create shipping label"
+            },
+            {
+                "step_number": 3,
+                "description": "Hand over item to shipping company"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer purchases the item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select item on eBay platform"
+            },
+            {
+                "step_number": 2,
+                "description": "Choose payment method (credit card or PayPal)"
+            },
+            {
+                "step_number": 3,
+                "description": "Complete purchase and receive payment confirmation"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer asks for reshipment of the item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact seller through eBay platform"
+            },
+            {
+                "step_number": 2,
+                "description": "Explain issue and request reshipment"
+            },
+            {
+                "step_number": 3,
+                "description": "Await seller's response and further instructions"
+            }
+        ]
+    },
+    {
+        "activity_name": "Buyer asks for money reimbursement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact seller through eBay platform"
+            },
+            {
+                "step_number": 2,
+                "description": "Explain issue and request reimbursement"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide necessary details for refund process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Shipping company gets item",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive item from seller"
+            },
+            {
+                "step_number": 2,
+                "description": "Scan and enter item into shipping system"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign to appropriate shipping route"
+            }
+        ]
+    },
+    {
+        "activity_name": "Shipping company delivers item to the customer in proper dates",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Transport item through shipping network"
+            },
+            {
+                "step_number": 2,
+                "description": "Attempt delivery to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain proof of delivery"
+            }
+        ]
+    },
+    {
+        "activity_name": "Company does not deliver the purchase",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify reason for non-delivery"
+            },
+            {
+                "step_number": 2,
+                "description": "Update shipping status in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Notify seller and buyer of delivery issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "eBay tracks the order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor order status through web/mobile applications"
+            },
+            {
+                "step_number": 2,
+                "description": "Update order status based on shipping company updates"
+            },
+            {
+                "step_number": 3,
+                "description": "Record buyer satisfaction and seller evaluation"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seller receives buyer's decision and reimburses money",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review buyer's reimbursement request"
+            },
+            {
+                "step_number": 2,
+                "description": "Process refund through eBay platform"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status and financial records"
+            }
+        ]
+    }
+]

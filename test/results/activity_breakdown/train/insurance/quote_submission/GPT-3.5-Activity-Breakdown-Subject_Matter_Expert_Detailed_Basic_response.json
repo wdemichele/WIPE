@@ -1,0 +1,154 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Client requests insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer evaluates insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer makes a decision on the quote"
+                },
+                {
+                    "step_number": 2,
+                    "description": "If accepted, proceed to accept quote"
+                },
+                {
+                    "step_number": 3,
+                    "description": "If rejected, proceed to reject quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer accepts the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer rejects the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares the insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Quote ready",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer determines if the quote is ready"
+                },
+                {
+                    "step_number": 2,
+                    "description": "If ready, proceed to receive acceptance"
+                },
+                {
+                    "step_number": 3,
+                    "description": "If not ready, proceed to receive rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive acceptance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives acceptance of the quote"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Proceed to prepare insurance contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares the insurance contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives rejection of the quote"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                3,
+                21.428571428571427
+            ],
+            "Functional Equivalence": [
+                6,
+                42.857142857142854
+            ],
+            "Process Alternative": [
+                1,
+                7.142857142857142
+            ],
+            "No Match": [
+                4,
+                28.57142857142857
+            ]
+        },
+        "average_confidence": 55.714285714285715,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 76.66666666666667,
+            "Functional Equivalence": 80.0,
+            "Process Alternative": 70.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 62.16216216216216,
+        "average_sequence_alignment": 69.44444444444443,
+        "average_overall_similarity_score": 59.07444444444445
+    }
+}

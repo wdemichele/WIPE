@@ -1,0 +1,5 @@
+{
+    "equivalent": true,
+    "num_iterations": 1,
+    "final_mermaid_code": "graph TB\n    A[Purchase order received]\n    B[Check stock availability]\n    C{XORGateway}\n    D[Reject order]\n    E[Order rejected]\n    F[Retrieve product from warehouse]\n    G[Confirm order]\n    H{ParallelGateway}\n    I[Get shipment address]\n    J[Ship product]\n    K[Emit invoice]\n    L[Receive payment]\n    M{ParallelGateway}\n    N[Archive order]\n    O[Order fulfilled]\n\n    A --> B\n    B --> C\n    C -->|product not in stock| D\n    C -->|product in stock| F\n    D --> E\n    F --> G\n    G --> H\n    H --> I\n    H --> K\n    I --> J\n    K --> L\n    J --> M\n    L --> M\n    M --> N\n    N --> O"
+}

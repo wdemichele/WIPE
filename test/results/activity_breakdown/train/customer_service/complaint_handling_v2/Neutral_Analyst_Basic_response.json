@@ -1,0 +1,163 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send automatic reply to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive complaint from customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate automatic reply"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send automatic reply to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review customer complaint"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify potential solutions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss potential solutions with team"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send apology",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Acknowledge mistake"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Craft apology message"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send apology message to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Propose solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Analyze customer complaint"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify appropriate solution"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Create proposal for customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive positive response from customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Implement proposed solution"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Monitor solution implementation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate acceptable alternative",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive negative response from customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess customer's concerns"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Identify alternative solutions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Go to court",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine no alternative solutions available"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare legal documentation"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate legal proceedings"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                13,
+                56.52173913043478
+            ],
+            "Granularity Difference": [
+                6,
+                26.08695652173913
+            ],
+            "No Match": [
+                2,
+                8.695652173913043
+            ],
+            "Identical Match": [
+                2,
+                8.695652173913043
+            ]
+        },
+        "average_confidence": 77.82608695652173,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.84615384615384,
+            "Granularity Difference": 83.33333333333333,
+            "No Match": 0.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 93.33333333333333,
+        "average_sequence_alignment": 54.047619047619044,
+        "average_overall_similarity_score": 79.0
+    }
+}

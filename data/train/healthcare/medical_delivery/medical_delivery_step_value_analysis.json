@@ -1,0 +1,73 @@
+[
+    {
+        "activity_name": "Check destination",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package from pallet"
+            },
+            {
+                "step_number": 2,
+                "description": "Open package and pull out the packaging slip"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter purchase order number into ERP to check destination"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set package as unknown",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record unknown package in ERP"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register package into ERP",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter information on packaging slip in ERP"
+            }
+        ]
+    },
+    {
+        "activity_name": "Write details on package",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Write area and/or room number on package"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print delivery form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Print delivery form"
+            }
+        ]
+    },
+    {
+        "activity_name": "Secure form in plastic packet",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fold and palce in envelope"
+            }
+        ]
+    },
+    {
+        "activity_name": "Tap platstic packet to package",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Tap platstic packet to package"
+            }
+        ]
+    }
+]

@@ -1,0 +1,317 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "\n    You are an AI assistant with expertise in Lean methodology and process improvement.\n    Your role is to analyze business processes through the lens of Lean principles, identifying value-adding activities\n    and potential areas for waste reduction.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): \n       - Directly contributes to creating a product or service the customer is willing to pay for\n       - Transforms or shapes material or information towards the end product/service\n       - Done right the first time\n\n    2. Business Value Adding (BVA):\n       - Required by law, regulation, or company policy\n       - Reduces financial risk, supports financial reporting, or ensures security\n       - Necessary for business operations but not directly valued by the customer\n\n    3. Non-Value Adding (NVA):\n       - Consumes resources without adding value to the customer or business\n       - Includes waiting, rework, overprocessing, or unnecessary movement\n       - Can often be eliminated without impacting the quality of the product/service or business operations\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, keep in mind the following Lean principles:\n\n    1. Identify value: Classify as VA only those steps that directly contribute to what the customer \n       is willing to pay for.\n\n    2. Map the value stream: Consider how each step fits into the overall flow of value creation. \n       Some BVA steps might be crucial for enabling VA steps.\n\n    3. Create flow: Steps that cause delays or interruptions in the process flow should be \n       scrutinized and potentially classified as NVA.\n\n    4. Establish pull: Steps that are performed \"just-in-time\" based on actual demand tend to be \n       more value-adding than those done in anticipation of demand.\n\n    5. Seek perfection: Always consider if there's a way to convert BVA or NVA steps into VA steps, \n       or to eliminate NVA steps entirely.\n\n    6. Respect for people: Remember that some steps might seem NVA but are crucial for employee \n       well-being or safety, which indirectly benefits the customer through better service.\n    ",
+            "_raw_input": {
+                "role_description": "lean_expert",
+                "task_description": "efficiency_focused",
+                "classification_types": "detailed",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "lean_principles"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Scoring request received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive incoming scoring request",
+                    "classification": "NVA",
+                    "reasoning": "This step is necessary to initiate the process, but it does not directly contribute to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of request",
+                    "classification": "BVA",
+                    "reasoning": "Logging the receipt of the request is necessary for record-keeping and audit purposes, but it does not directly add value to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Validate request format and completeness",
+                    "classification": "BVA",
+                    "reasoning": "Validating the request format and completeness is necessary to ensure that the subsequent steps can be executed properly, but it does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request credit score",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare credit score request",
+                    "classification": "VA",
+                    "reasoning": "Preparing the credit score request directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to Scoring Service",
+                    "classification": "VA",
+                    "reasoning": "Sending the request to the Scoring Service is a value-adding step as it directly contributes to obtaining the credit score."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log outgoing request",
+                    "classification": "BVA",
+                    "reasoning": "Logging the outgoing request is necessary for record-keeping and audit purposes, but it does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit score received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive credit score from Scoring Service",
+                    "classification": "VA",
+                    "reasoning": "Receiving the credit score from the Scoring Service directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate received score",
+                    "classification": "BVA",
+                    "reasoning": "Validating the received score is necessary to ensure its accuracy and reliability, but it does not directly add value to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log receipt of score",
+                    "classification": "BVA",
+                    "reasoning": "Logging the receipt of the score is necessary for record-keeping and audit purposes, but it does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Delay information received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive delay notification from Scoring Service",
+                    "classification": "NVA",
+                    "reasoning": "This step is necessary to receive information about delays, but it does not directly contribute to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log delay information",
+                    "classification": "BVA",
+                    "reasoning": "Logging the delay information is necessary for record-keeping and audit purposes, but it does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Report delay",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare delay report",
+                    "classification": "VA",
+                    "reasoning": "Preparing the delay report directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify relevant parties of delay",
+                    "classification": "VA",
+                    "reasoning": "Notifying relevant parties of the delay directly contributes to managing customer expectations and ensuring transparency."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update request status",
+                    "classification": "VA",
+                    "reasoning": "Updating the request status directly contributes to managing the overall process and providing accurate information to stakeholders."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send credit score",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare credit score report",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the credit score report, which is the end product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send report to requestor",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to delivering the credit score report to the requestor, which is the end product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log completion of request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations to track and record the completion of the credit score request, but it does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Compute credit score level 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve relevant financial data",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to obtaining the necessary financial data to compute the credit score, which is the end product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Apply level 1 scoring algorithm",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to applying the scoring algorithm to the financial data, which is necessary to compute the credit score."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate initial credit score",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to generating the initial credit score, which is the end product the customer is willing to pay for."
+                }
+            ]
+        },
+        {
+            "activity_name": "Compute credit score level 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve additional financial data",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to obtaining the additional financial data required for a comprehensive credit score calculation, which is the end product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Apply level 2 scoring algorithm",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to applying the more advanced scoring algorithm to the financial data, which is necessary to compute the comprehensive credit score."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate comprehensive credit score",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to generating the comprehensive credit score, which is the end product the customer is willing to pay for."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send credit score (Scoring Service)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare credit score response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the credit score response, which is the end product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send score to main process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to sending the credit score to the main process, which is necessary for further processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log completion of scoring request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations to track and record the completion of the scoring request, but it does not directly add value to the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 26,
+        "correct_classifications": 17,
+        "accuracy": 0.6538461538461539,
+        "misclassifications": [
+            {
+                "activity": "Scoring request received",
+                "substep": "Receive incoming scoring request",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step is necessary to initiate the process, but it does not directly contribute to creating a product or service the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request credit score",
+                "substep": "Prepare credit score request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Preparing the credit score request directly contributes to creating a product or service the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Delay information received",
+                "substep": "Receive delay notification from Scoring Service",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step is necessary to receive information about delays, but it does not directly contribute to creating a product or service the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Report delay",
+                "substep": "Prepare delay report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Preparing the delay report directly contributes to creating a product or service the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Report delay",
+                "substep": "Update request status",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Updating the request status directly contributes to managing the overall process and providing accurate information to stakeholders.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Send credit score",
+                "substep": "Prepare credit score report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating the credit score report, which is the end product the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Compute credit score level 1",
+                "substep": "Retrieve relevant financial data",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to obtaining the necessary financial data to compute the credit score, which is the end product the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Compute credit score level 2",
+                "substep": "Retrieve additional financial data",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to obtaining the additional financial data required for a comprehensive credit score calculation, which is the end product the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Send credit score (Scoring Service)",
+                "substep": "Prepare credit score response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to preparing the credit score response, which is the end product the customer is willing to pay for.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 9
+            },
+            "BVA": {
+                "NVA": 2,
+                "BVA": 8,
+                "VA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

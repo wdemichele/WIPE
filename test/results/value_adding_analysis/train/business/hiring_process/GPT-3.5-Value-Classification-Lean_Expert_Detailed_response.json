@@ -1,0 +1,412 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Hand In Job Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Candidate prepares application materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a complete and accurate job application, which is valued by the HR department."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Candidate submits application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to submitting the job application, which is the desired end result of the process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR receives and logs application",
+                    "classification": "BVA",
+                    "reasoning": "While this step is not directly valued by the customer, it is necessary for business operations and ensures that the application is properly recorded and tracked."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR reviews application for completeness",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that all required information is provided in the application, reducing the risk of incomplete applications."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR checks if candidate meets basic qualifications",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to determine if the candidate meets the minimum requirements for the position, reducing the risk of wasting time on unqualified candidates."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR decides whether to proceed or reject",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to make an informed decision on whether to move forward with the candidate, reducing the risk of wasting resources on unsuitable candidates."
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR schedules phone call with candidate",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to coordinate and schedule the phone interview, ensuring that both parties are available."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts phone interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's qualifications and suitability for the position."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's responses",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to assess the candidate's performance during the phone interview and make an informed decision."
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR initiates background check process",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to start the background check process, which is often required by company policy or legal regulations."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Third-party agency conducts check",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to outsource the background check process to a specialized agency, ensuring accuracy and compliance."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR reviews background check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to evaluate the background check results and make an informed decision based on the findings."
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR requests additional information from candidate",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to gather additional information required for the extensive background check, ensuring a thorough evaluation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Third-party agency conducts in-depth check",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to conduct a more detailed and comprehensive background check, reducing the risk of missing important information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR thoroughly reviews extensive check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to carefully review the extensive background check results and make an informed decision based on the findings."
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR schedules in-person or video interview",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to schedule and coordinate the interview process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts screening interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's fit and qualifications."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's fit and qualifications",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's fit and qualifications."
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technical team prepares coding challenges",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the coding challenges for the candidate."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Candidate completes coding tasks",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's coding performance."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Technical team evaluates coding performance",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's coding performance."
+                }
+            ]
+        },
+        {
+            "activity_name": "Frontend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Frontend team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the specific questions and tasks for the frontend interview."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Frontend team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's frontend skills."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Frontend team assesses candidate's skills",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the candidate's frontend skills."
+                }
+            ]
+        },
+        {
+            "activity_name": "ML Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "ML team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the specific questions and tasks for the ML interview."
+                },
+                {
+                    "step_number": 2,
+                    "description": "ML team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's ML expertise."
+                },
+                {
+                    "step_number": 3,
+                    "description": "ML team evaluates candidate's ML expertise",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's ML expertise."
+                }
+            ]
+        },
+        {
+            "activity_name": "Backend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Backend team prepares specific questions/tasks",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the specific questions and tasks for the backend interview."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Backend team conducts interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's backend skills."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Backend team assesses candidate's skills",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the candidate's backend skills."
+                }
+            ]
+        },
+        {
+            "activity_name": "Behavioral Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares behavioral questions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that the interview process is structured and consistent."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR conducts behavioral interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the candidate's skills and qualifications."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR evaluates candidate's soft skills and cultural fit",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that the candidate is a good fit for the company culture."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Job Offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares job offer package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that the job offer is complete and accurate."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR presents offer to candidate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to making the job offer to the candidate."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR answers any questions from candidate",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to address any concerns or queries the candidate may have."
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "HR prepares rejection notification",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to inform the candidate about the rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "HR sends rejection to candidate",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to communicate the rejection to the candidate."
+                },
+                {
+                    "step_number": 3,
+                    "description": "HR updates application status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to maintain accurate records and track the application status."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 39,
+        "correct_classifications": 29,
+        "accuracy": 0.7435897435897436,
+        "misclassifications": [
+            {
+                "activity": "Initial Screening",
+                "substep": "HR checks if candidate meets basic qualifications",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to determine if the candidate meets the minimum requirements for the position, reducing the risk of wasting time on unqualified candidates.",
+                "ground_truth_reasoning": "Directly contributes to identifying suitable candidates"
+            },
+            {
+                "activity": "Initial Screening",
+                "substep": "HR decides whether to proceed or reject",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to make an informed decision on whether to move forward with the candidate, reducing the risk of wasting resources on unsuitable candidates.",
+                "ground_truth_reasoning": "Critical decision point in the selection process"
+            },
+            {
+                "activity": "Telephonic Screening",
+                "substep": "HR evaluates candidate's responses",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to assess the candidate's performance during the phone interview and make an informed decision.",
+                "ground_truth_reasoning": "Critical for determining candidate's fit and progression in the hiring process"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "Third-party agency conducts check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to outsource the background check process to a specialized agency, ensuring accuracy and compliance.",
+                "ground_truth_reasoning": "Provides crucial information for candidate evaluation"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "HR reviews background check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to evaluate the background check results and make an informed decision based on the findings.",
+                "ground_truth_reasoning": "Direct evaluation of candidate's background, crucial for hiring decision"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "Third-party agency conducts in-depth check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to conduct a more detailed and comprehensive background check, reducing the risk of missing important information.",
+                "ground_truth_reasoning": "Provides detailed information crucial for candidate evaluation"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "HR thoroughly reviews extensive check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to carefully review the extensive background check results and make an informed decision based on the findings.",
+                "ground_truth_reasoning": "Critical evaluation of candidate's detailed background"
+            },
+            {
+                "activity": "Behavioral Interview",
+                "substep": "HR evaluates candidate's soft skills and cultural fit",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to ensure that the candidate is a good fit for the company culture.",
+                "ground_truth_reasoning": "Critical evaluation of candidate's non-technical qualities"
+            },
+            {
+                "activity": "Make Job Offer",
+                "substep": "HR answers any questions from candidate",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to address any concerns or queries the candidate may have.",
+                "ground_truth_reasoning": "Directly contributes to candidate's decision-making process"
+            },
+            {
+                "activity": "Application Rejected",
+                "substep": "HR sends rejection to candidate",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to communicate the rejection to the candidate.",
+                "ground_truth_reasoning": "Provides closure to the candidate and maintains company reputation"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 15,
+                "BVA": 10
+            },
+            "BVA": {
+                "BVA": 14
+            },
+            "NVA": {}
+        }
+    }
+}

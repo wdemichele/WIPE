@@ -1,0 +1,142 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check prescription details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check dosage instructions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect drug packaging"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check expiration date"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Capture patient information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record drug name and dosage"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter quantity and frequency"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate drug on shelves"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve correct quantity"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total amount due"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Accept payment from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review drug utilization history"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for potential drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess appropriateness of drug therapy"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance coverage"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine copay amount"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                3,
+                17.647058823529413
+            ],
+            "No Match": [
+                12,
+                70.58823529411765
+            ],
+            "Granularity Difference": [
+                2,
+                11.76470588235294
+            ]
+        },
+        "average_confidence": 23.529411764705884,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 55.26315789473685,
+        "average_sequence_alignment": 71.19047619047619,
+        "average_overall_similarity_score": 21.714285714285715
+    }
+}

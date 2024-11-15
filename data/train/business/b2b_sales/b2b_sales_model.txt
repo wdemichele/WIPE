@@ -1,0 +1,20 @@
+graph LR
+    Start((Start)) -->|Application received| A[Send marketing information]
+    A --> B{Receive response}
+    B -->|Via email| C{X}
+    B -->|By post| C
+    C --> D[Assess application]
+    D --> E{X}
+    E -->|Application OK| F{X}
+    E -->|Application not OK| G[Send rejection]
+    G --> End1((End))
+    E -->|Clarification needed| H[Make appointment]
+    H --> I((Appointment day))
+    I --> J[Discuss application]
+    J --> F
+    F --> K{+}
+    K --> L[Send offer]
+    K --> M[File application]
+    L --> N{+}
+    M --> N
+    N --> End2((End))

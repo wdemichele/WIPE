@@ -1,0 +1,129 @@
+[
+    {
+        "activity_name": "Prepare dough",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather ingredients for muffin dough"
+            },
+            {
+                "step_number": 2,
+                "description": "Mix dry ingredients"
+            },
+            {
+                "step_number": 3,
+                "description": "Add wet ingredients and combine"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare cooking paper",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select appropriate cooking paper"
+            },
+            {
+                "step_number": 2,
+                "description": "Cut paper to fit muffin tins"
+            },
+            {
+                "step_number": 3,
+                "description": "Place paper liners in muffin tins"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up delivery",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Confirm delivery address"
+            },
+            {
+                "step_number": 2,
+                "description": "Schedule delivery time"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign delivery personnel"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare muffins",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Portion dough into prepared muffin tins"
+            },
+            {
+                "step_number": 2,
+                "description": "Add any toppings or mix-ins"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare muffins for baking"
+            }
+        ]
+    },
+    {
+        "activity_name": "Cook muffins",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Preheat oven to specified temperature"
+            },
+            {
+                "step_number": 2,
+                "description": "Place muffins in oven"
+            },
+            {
+                "step_number": 3,
+                "description": "Bake for specified time"
+            },
+            {
+                "step_number": 4,
+                "description": "Apply cooking tips as needed"
+            }
+        ]
+    },
+    {
+        "activity_name": "Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Present payment options to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payment through chosen method"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm payment and provide receipt"
+            },
+            {
+                "step_number": 4,
+                "description": "Apply refunding policy if necessary"
+            }
+        ]
+    },
+    {
+        "activity_name": "Dispatch muffins",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Package cooled muffins for delivery"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign order to delivery personnel"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide delivery instructions"
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+graph TD
+    A[Start] --> B[Hand In Job Application]
+    B --> C{Initial Screening}
+    C -->|Proceed| D[Telephonic Screening]
+    C -->|Reject| E[Application Rejected]
+    D --> F{Telephonic Screening Result}
+    F -->|Proceed| G[Background Check]
+    F -->|Reject| E
+    G --> H{Background Check Result}
+    H -->|Pass| I[Screening Interview]
+    H -->|Fail| E
+    H -->|Need More Info| J[Extensive Background Check]
+    I --> K{Screening Interview Result}
+    K -->|Proceed| L[Coding Interview]
+    K -->|Reject| E
+    K -->|Need More Info| J
+    J --> M{Extensive Background Check Result}
+    M -->|Pass| L
+    M -->|Fail| E
+    L --> N{Coding Interview Result}
+    N -->|Proceed| O[Frontend Interview]
+    N -->|Reject| E
+    O --> P[ML Interview]
+    P --> Q[Backend Interview]
+    Q --> R[Behavioral Interview]
+    R --> S{Final Decision}
+    S -->|Offer| T[Make Job Offer]
+    S -->|Reject| E
+    T --> U{Candidate Decision}
+    U -->|Accept| V[End - Hired]
+    U -->|Reject| W[End - Not Hired]
+    E --> X{Reconsider?}
+    X -->|Yes| R
+    X -->|No| W

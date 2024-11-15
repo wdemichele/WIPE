@@ -1,0 +1,179 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check destination",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to creating a product or service the customer is willing to pay for. It consumes resources without adding value."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open package and pull out the packaging slip",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to creating a product or service the customer is willing to pay for. It consumes resources without adding value."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter purchase order number into ERP to check destination",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer. It reduces financial risk and supports accurate order fulfillment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set package as unknown",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record unknown package in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer. It ensures accurate tracking and management of unknown packages."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register package into ERP",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter information on packaging slip in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer. It ensures accurate tracking and management of package information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Write details on package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Write area and/or room number on package",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product the customer is willing to pay for. It provides necessary information for accurate delivery and location identification."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print delivery form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Print delivery form",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the product, which is the printed delivery form."
+                }
+            ]
+        },
+        {
+            "activity_name": "Secure form in plastic packet",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fold and palce in envelope",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Tap platstic packet to package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Tap platstic packet to package",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 9,
+        "correct_classifications": 2,
+        "accuracy": 0.2222222222222222,
+        "misclassifications": [
+            {
+                "activity": "Check destination",
+                "substep": "Unload package from pallet",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step does not directly contribute to creating a product or service the customer is willing to pay for. It consumes resources without adding value.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Open package and pull out the packaging slip",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step does not directly contribute to creating a product or service the customer is willing to pay for. It consumes resources without adding value.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Enter purchase order number into ERP to check destination",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations but does not directly add value to the customer. It reduces financial risk and supports accurate order fulfillment.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set package as unknown",
+                "substep": "Record unknown package in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations but does not directly add value to the customer. It ensures accurate tracking and management of unknown packages.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Register package into ERP",
+                "substep": "Enter information on packaging slip in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for business operations but does not directly add value to the customer. It ensures accurate tracking and management of package information.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Secure form in plastic packet",
+                "substep": "Fold and palce in envelope",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Tap platstic packet to package",
+                "substep": "Tap platstic packet to package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 2
+            },
+            "BVA": {
+                "BVA": 3
+            },
+            "NVA": {
+                "NVA": 4
+            }
+        }
+    }
+}

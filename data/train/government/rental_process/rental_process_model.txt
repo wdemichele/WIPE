@@ -1,0 +1,35 @@
+graph TD
+    A[Start] --> B[Apply for Viewing Appointment]
+    B --> C{Application Accepted?}
+    C -->|Yes| D[Set Appointment]
+    C -->|No| E[Reject Prospective Tenant]
+    D --> F[View The Property]
+    F --> G{Interested?}
+    G -->|Yes| H[Hand In The Paperwork]
+    G -->|No| E
+    H --> I[Check Paperwork]
+    I --> J[Screen Prospective Tenant]
+    J --> K{Initial Screening Result?}
+    K -->|Pass| L[Sign Contract]
+    K -->|Fail| E
+    K -->|Need More Info| M[Extensive Screening]
+    M --> N{Extensive Screening Result?}
+    N -->|Pass| L
+    N -->|Fail| E
+    L --> O[Move In]
+    O --> P[Pay Rent]
+    P --> Q{Continue Renting?}
+    Q -->|Yes| R{On Time?}
+    R -->|Yes| P
+    R -->|No| S[Miss Rent Payment]
+    S --> T[Issue Warning]
+    T --> U{Resolved?}
+    U -->|Yes| V[Accept Late Payment]
+    U -->|No| W[Evict Tenant]
+    V --> X{Continue Renting?}
+    X -->|Yes| P
+    X -->|No| S
+    Q -->|No| Y[Tenant Cancels Apartment]
+    W --> Z[End]
+    Y --> Z
+    E --> Z

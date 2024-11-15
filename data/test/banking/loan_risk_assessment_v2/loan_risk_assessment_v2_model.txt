@@ -1,0 +1,49 @@
+flowchart TD
+    subgraph Administrator
+        A_End([End])
+        A_SendRejection[Send rejection letter]
+    end
+
+    subgraph Risk Assessment
+        RA_Start([Start])
+        RA_PerformCredit[Perform credit check]
+        RA_PerformCredibility[Perform credibility check]
+    end
+
+    subgraph TBA
+        TBA_Gateway{Gateway}
+    end
+
+    subgraph Customer Advisor
+        CA_CallClient[Call client to complement information]
+        CA_CreateLoan[Create loan offer]
+        CA_SendOffer[Send loan offer]
+        CA_RemindClient[Remind client]
+    end
+
+    subgraph Finalize
+        F_ActivateLoan[Activate loan application]
+        F_ExecuteLoan[Execute initial payment]
+        F_End([End])
+    end
+
+    RA_Start --> RA_PerformCredit
+    RA_PerformCredit --> RA_PerformCredibility
+    RA_PerformCredibility --> TBA_Gateway
+    TBA_Gateway --> |Credit/Assessment Rejected| A_SendRejection
+    A_SendRejection --> A_End
+    TBA_Gateway --> |Credit/Assessment Accepted| CA_CallClient
+    CA_CallClient --> CA_CreateLoan
+    CA_CreateLoan --> CA_SendOffer
+    CA_SendOffer --> CA_RemindClient
+    CA_RemindClient --> F_ActivateLoan
+    F_ActivateLoan --> F_ExecuteLoan
+    F_ExecuteLoan --> F_End
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+
+    class RA_Start,A_End,F_End event;
+    class TBA_Gateway gateway;
+    class RA_PerformCredit,RA_PerformCredibility,A_SendRejection,CA_CallClient,CA_CreateLoan,CA_SendOffer,CA_RemindClient,F_ActivateLoan,F_ExecuteLoan activity;

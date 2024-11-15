@@ -1,0 +1,618 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Apply for Viewing Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prospective tenant submits application for viewing",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the viewing process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Landlord/agent receives application",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initial review of application",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to evaluate the application but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check available time slots",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finding suitable viewing times."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Propose viewing time to prospective tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by suggesting a viewing time."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm appointment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finalizing the viewing appointment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection notification",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to inform the prospective tenant of the rejection but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to prospective tenant",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to inform the prospective tenant of the rejection but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to update the application status but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "View The Property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Landlord/agent prepares property for viewing",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the property is ready for viewing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct property tour with prospective tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by showing the property to the prospective tenant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Answer questions about the property",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing information about the property.\")classify(\"VA\", \"Hand In The Paperwork\", \"Provide necessary forms to prospective tenant\", \"Directly contributes to meeting customer needs by providing necessary forms."
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In The Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Provide necessary forms to prospective tenant",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prospective tenant completes required documents",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the paperwork but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Collect completed paperwork",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering all necessary documents."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted documents for completeness",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring all required documents are complete."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify information provided",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by validating the accuracy of the provided information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Flag any discrepancies or missing information",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to identify and address any issues with the submitted documents."
+                }
+            ]
+        },
+        {
+            "activity_name": "Screen Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct background check",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the safety and security of the property."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify employment and income",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the tenant's ability to pay rent."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check references",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering information about the tenant's rental history."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review credit history",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the tenant's financial responsibility."
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify areas requiring further investigation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by identifying potential risks or concerns."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct in-depth checks on flagged areas",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by thoroughly investigating any flagged areas."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Request additional information if necessary",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to gather additional information to make an informed decision."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Compile comprehensive screening report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing a comprehensive assessment of the prospective tenant.\")classify(\"VA\", \"Sign Contract\", \"Prepare rental agreement\", \"Directly contributes to meeting customer needs by creating the rental agreement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rental agreement",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review contract terms with tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the tenant understands the contract terms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Collect necessary signatures",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by obtaining the required signatures."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Provide copy of signed contract to tenant",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to provide a copy of the signed contract to the tenant, but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Move In",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct property condition assessment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the property is in good condition before the tenant moves in."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Hand over keys to tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing the tenant with the keys to the property."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update property status to occupied",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the property status to reflect that it is occupied."
+                }
+            ]
+        },
+        {
+            "activity_name": "Pay Rent",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send rent reminder to tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reminding the tenant to pay their rent."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive rent payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by receiving the rent payment from the tenant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record payment in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the rent payment in the system."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Issue receipt to tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing the tenant with a receipt for their rent payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Miss Rent Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify overdue payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by identifying that a rent payment is overdue."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record missed payment in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the missed rent payment in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate late payment process",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the process for handling late rent payments.\")classify(\"VA\", \"Issue Warning\", \"Prepare late payment notice\", \"Directly contributes to meeting customer needs by informing them of the late payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Issue Warning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare late payment notice",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send warning to tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the tenant of the late payment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record warning issued in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by documenting the warning for future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept Late Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive late payment from tenant",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the payment but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Apply any late fees if applicable",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to enforce payment policies but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update payment record in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to keep accurate records but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Issue receipt for late payment",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to provide proof of payment but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Evict Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare eviction notice",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the eviction process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Serve eviction notice to tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the tenant of the eviction."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Follow legal eviction procedures",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the eviction is carried out legally."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Reclaim property",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by regaining possession of the property."
+                }
+            ]
+        },
+        {
+            "activity_name": "Tenant Cancels Apartment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive cancellation notice from tenant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by acknowledging the cancellation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review lease terms for cancellation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining the terms and conditions for cancellation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process lease termination",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finalizing the cancellation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Arrange property inspection and key return",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the return of keys and inspection of the property."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 55,
+        "correct_classifications": 32,
+        "accuracy": 0.5818181818181818,
+        "misclassifications": [
+            {
+                "activity": "Apply for Viewing Appointment",
+                "substep": "Initial review of application",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to evaluate the application but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "First step in assessing potential tenant suitability"
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Check available time slots",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by finding suitable viewing times.",
+                "ground_truth_reasoning": "Necessary for scheduling but doesn't directly add value to tenant selection"
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Propose viewing time to prospective tenant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by suggesting a viewing time.",
+                "ground_truth_reasoning": "Facilitates the process but doesn't directly assess tenant suitability"
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Confirm appointment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by finalizing the viewing appointment.",
+                "ground_truth_reasoning": "Ensures smooth process but doesn't directly add value to tenant selection"
+            },
+            {
+                "activity": "Hand In The Paperwork",
+                "substep": "Provide necessary forms to prospective tenant",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Facilitates the process but doesn't directly add value"
+            },
+            {
+                "activity": "Hand In The Paperwork",
+                "substep": "Prospective tenant completes required documents",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to process the paperwork but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Provides crucial information for tenant assessment"
+            },
+            {
+                "activity": "Hand In The Paperwork",
+                "substep": "Collect completed paperwork",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by gathering all necessary documents.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Check Paperwork",
+                "substep": "Review submitted documents for completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring all required documents are complete.",
+                "ground_truth_reasoning": "Ensures process integrity but doesn't directly assess tenant suitability"
+            },
+            {
+                "activity": "Check Paperwork",
+                "substep": "Flag any discrepancies or missing information",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to identify and address any issues with the submitted documents.",
+                "ground_truth_reasoning": "Identifies potential issues in tenant application"
+            },
+            {
+                "activity": "Extensive Screening",
+                "substep": "Request additional information if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to gather additional information to make an informed decision.",
+                "ground_truth_reasoning": "Clarifies uncertainties in tenant application"
+            },
+            {
+                "activity": "Extensive Screening",
+                "substep": "Compile comprehensive screening report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing a comprehensive assessment of the prospective tenant.\")classify(\"VA\", \"Sign Contract\", \"Prepare rental agreement\", \"Directly contributes to meeting customer needs by creating the rental agreement.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't add new value to assessment"
+            },
+            {
+                "activity": "Sign Contract",
+                "substep": "Prepare rental agreement",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Defines terms of tenancy, critical for both parties"
+            },
+            {
+                "activity": "Move In",
+                "substep": "Update property status to occupied",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the property status to reflect that it is occupied.",
+                "ground_truth_reasoning": "Important for records but doesn't directly add value to tenancy"
+            },
+            {
+                "activity": "Pay Rent",
+                "substep": "Send rent reminder to tenant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by reminding the tenant to pay their rent.",
+                "ground_truth_reasoning": "Facilitates timely payment but doesn't directly add value"
+            },
+            {
+                "activity": "Pay Rent",
+                "substep": "Record payment in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the rent payment in the system.",
+                "ground_truth_reasoning": "Necessary for accounting but doesn't directly add value"
+            },
+            {
+                "activity": "Pay Rent",
+                "substep": "Issue receipt to tenant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing the tenant with a receipt for their rent payment.",
+                "ground_truth_reasoning": "Important for records but doesn't add new value to transaction"
+            },
+            {
+                "activity": "Miss Rent Payment",
+                "substep": "Identify overdue payment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by identifying that a rent payment is overdue.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Miss Rent Payment",
+                "substep": "Record missed payment in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the missed rent payment in the system.",
+                "ground_truth_reasoning": "Important for records but doesn't resolve the issue"
+            },
+            {
+                "activity": "Issue Warning",
+                "substep": "Prepare late payment notice",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary for communication but doesn't resolve payment issue"
+            },
+            {
+                "activity": "Issue Warning",
+                "substep": "Record warning issued in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by documenting the warning for future reference.",
+                "ground_truth_reasoning": "Important for records but doesn't directly resolve issue"
+            },
+            {
+                "activity": "Accept Late Payment",
+                "substep": "Receive late payment from tenant",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to process the payment but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Resolves payment issue, core value of rental process"
+            },
+            {
+                "activity": "Accept Late Payment",
+                "substep": "Apply any late fees if applicable",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to enforce payment policies but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Compensates for late payment, incentivizes future timeliness"
+            },
+            {
+                "activity": "Tenant Cancels Apartment",
+                "substep": "Receive cancellation notice from tenant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by acknowledging the cancellation.",
+                "ground_truth_reasoning": "Initiates process but doesn't directly add value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 25,
+                "BVA": 6,
+                "Unclassified": 1
+            },
+            "BVA": {
+                "BVA": 7,
+                "VA": 14,
+                "Unclassified": 2
+            }
+        }
+    }
+}

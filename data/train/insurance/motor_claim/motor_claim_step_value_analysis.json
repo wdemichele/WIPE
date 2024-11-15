@@ -1,0 +1,198 @@
+[
+    {
+        "activity_name": "Claim Received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive claim documentation from customer",
+                "classification": "VA",
+                "reasoning": "Initiates the claim process and provides essential information"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of claim in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value to claim processing"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all submitted claim documents",
+                "classification": "VA",
+                "reasoning": "Directly contributes to assessing claim validity"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required information is provided",
+                "classification": "VA",
+                "reasoning": "Ensures all necessary information for claim processing is available"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if claim is complete or incomplete",
+                "classification": "VA",
+                "reasoning": "Critical for deciding next steps in claim processing"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Assign unique claim identifier",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value to claim assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter claim details into system",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly impact claim decision"
+            },
+            {
+                "step_number": 3,
+                "description": "Forward registered claim to Handling Department",
+                "classification": "BVA",
+                "reasoning": "Facilitates process flow but doesn't directly add value to claim"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reason for rejection",
+                "classification": "VA",
+                "reasoning": "Directly relates to claim decision and provides basis for customer communication"
+            },
+            {
+                "step_number": 2,
+                "description": "Update claim status to 'Rejected'",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't add value to claim processing"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare rejection information for customer notification",
+                "classification": "VA",
+                "reasoning": "Directly contributes to customer communication and understanding"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review claim details",
+                "classification": "VA",
+                "reasoning": "Critical for understanding and evaluating the claim"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate damage extent and repair costs",
+                "classification": "VA",
+                "reasoning": "Directly contributes to determining claim value"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine validity of claim",
+                "classification": "VA",
+                "reasoning": "Core activity in claim processing"
+            },
+            {
+                "step_number": 4,
+                "description": "Decide on claim approval or rejection",
+                "classification": "VA",
+                "reasoning": "Critical decision point in claim processing"
+            }
+        ]
+    },
+    {
+        "activity_name": "Schedule payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate approved payment amount",
+                "classification": "VA",
+                "reasoning": "Directly determines the value provided to the customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine payment date",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to claim"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter payment details into system",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly impact claim value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Authorize repayment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review scheduled payment",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy of claim payout"
+            },
+            {
+                "step_number": 2,
+                "description": "Approve payment",
+                "classification": "VA",
+                "reasoning": "Critical step in finalizing claim process"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate authorization for garage",
+                "classification": "VA",
+                "reasoning": "Directly facilitates repair process for customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Send payment details to garage",
+                "classification": "VA",
+                "reasoning": "Enables repair process to begin, adding value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification letter",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't directly add value to claim"
+            },
+            {
+                "step_number": 2,
+                "description": "Include claim status (rejected or approved)",
+                "classification": "VA",
+                "reasoning": "Provides essential information to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Add payment details if claim approved",
+                "classification": "VA",
+                "reasoning": "Provides crucial information about claim value to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Send notification letter to customer",
+                "classification": "BVA",
+                "reasoning": "Necessary for process completion but doesn't directly add value to claim"
+            }
+        ]
+    }
+]

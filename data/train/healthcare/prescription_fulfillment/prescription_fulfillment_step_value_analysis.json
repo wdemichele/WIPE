@@ -1,0 +1,426 @@
+[
+    {
+        "activity_name": "Drop off prescription",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Choose drop-off location (drive-through or front counter)",
+                "performer": "Customer",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Hand over prescription to staff",
+                "performer": "Customer",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Wait 15min - 1h",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive estimated wait time",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Wait in designated area or return later",
+                "performer": "Customer",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Nominate pickup time",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Discuss available pickup times with staff",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Select suitable pickup time",
+                "performer": "Customer",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ask for pickup time",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Inquire about customer's preferred pickup time",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm pickup time with customer",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Place in time-labeled box",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify appropriate time-labeled box",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Place prescription in correct box",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect prescriptions for current hour",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify current hour's time-labeled box",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Retrieve all prescriptions from the box",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Enter prescription details in system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access pharmacy system",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Input prescription information",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify entered data for accuracy",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform automated DUR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initiate Drug Utilization Review (DUR) process",
+                "performer": "Pharmacy System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "System checks for drug interactions and contraindications",
+                "performer": "Pharmacy System",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate DUR report",
+                "performer": "Pharmacy System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Pharmacist review",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Examine DUR alarms",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess potential risks or interactions",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine need for doctor consultation",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Call doctor to confirm",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare relevant information for discussion",
+                "performer": "Pharmacist",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact prescribing doctor",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Discuss concerns and confirm or modify prescription",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform insurance check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Submit claim to insurance provider",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Receive insurance response",
+                "performer": "Pharmacy System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Process insurance information",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Review insurance check results",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Examine insurance response",
+                "performer": "Pharmacist",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine if drug is covered",
+                "performer": "Pharmacist",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess need for drug replacement",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Call doctor/patient for replacement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare alternative drug options",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact doctor or patient",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Discuss replacement options and decide on alternative",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assign to technician for filling",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare filling instructions",
+                "performer": "Pharmacist",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign prescription to available technician",
+                "performer": "Pharmacist",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect drugs and bag",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate prescribed drugs in inventory",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Count or measure required amount",
+                "performer": "Pharmacy Technician",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Package drugs in appropriate container",
+                "performer": "Pharmacy Technician",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Place container in bag with patient information",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Double-check prescription",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review prescription details",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify correct drug and dosage",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Check patient information accuracy",
+                "performer": "Pharmacist",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Seal bag and place in pickup area",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Seal prescription bag",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Label bag with patient name and pickup information",
+                "performer": "Pharmacy Technician",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Place bag in designated pickup area",
+                "performer": "Pharmacy Technician",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Arrive for pickup",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter pharmacy",
+                "performer": "Customer",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Approach pickup counter",
+                "performer": "Customer",
+                "classification": "NVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve prescription",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Provide name and pickup information to staff",
+                "performer": "Customer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Wait while staff locates prescription",
+                "performer": "Customer",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Receive prescription bag from staff",
+                "performer": "Customer",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive payment amount from staff",
+                "performer": "Customer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Choose payment method",
+                "performer": "Customer",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Complete payment transaction",
+                "performer": "Customer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 4,
+                "description": "Receive receipt",
+                "performer": "Customer",
+                "classification": "BVA"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1 @@
+{"equivalent": true, "num_iterations": 1, "final_mermaid_code": "graph TD\n    A([Start]) --> B[Check destination]\n    B --> C[Set package as unknown]\n    C --> D[Register package into ERP]\n    D --> E[Write details on package]\n    E --> F[Print delivery form]\n    F --> G[Secure form in plastic packet]\n    G --> H[Tap plastic packet to package]\n    H --> I([End])"}

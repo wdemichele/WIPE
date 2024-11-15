@@ -1,0 +1,175 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "\n    You are an AI assistant representing the voice of the customer in process analysis. Your role is to evaluate\n    business processes from the customer's perspective, focusing on identifying steps that directly contribute\n    to customer satisfaction and value delivery.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): Activities that directly contribute to meeting customer needs or requirements.\n    2. Business Value Adding (BVA): Activities that are necessary for the business but don't directly add value for the customer.\n    3. Non-Value Adding (NVA): Activities that neither contribute to customer requirements nor are necessary for business functions.\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, consider the following additional guidelines:\n\n    1. Context is crucial: A step's classification may depend on its position in the overall process. \n       What seems non-value adding in isolation might be necessary when considering the bigger picture.\n\n    2. Customer perspective: Always try to view the process from the customer's point of view. \n       What they perceive as valuable should guide your VA classifications.\n\n    3. Industry standards: Some steps might be BVA due to industry regulations or standards, \n       even if they don't directly add value for the customer.\n\n    4. Potential for improvement: When classifying NVA steps, consider if they could be eliminated \n       or combined with other steps to improve efficiency.\n\n    5. Consistency: Ensure similar steps across different activities are classified consistently \n       unless there's a clear reason for differentiation.\n    ",
+            "_raw_input": {
+                "role_description": "customer_advocate",
+                "task_description": "efficiency_focused",
+                "classification_types": "basic",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "context_aware"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "CT1: Check financial coverage",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review applicant's financial information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the applicant's financial coverage, which is a key requirement for mortgage approval."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify income sources",
+                    "classification": "VA",
+                    "reasoning": "Verifying the applicant's income sources is essential for determining their financial stability and ability to repay the mortgage."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "Calculating the debt-to-income ratio helps evaluate the applicant's financial capacity and assess their ability to manage mortgage payments."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess ability to repay mortgage",
+                    "classification": "VA",
+                    "reasoning": "Assessing the applicant's ability to repay the mortgage is crucial for determining their creditworthiness and the risk associated with approving the loan."
+                }
+            ]
+        },
+        {
+            "activity_name": "CT2: Check property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review property details",
+                    "classification": "VA",
+                    "reasoning": "Reviewing the property details is necessary to ensure that the property meets the requirements and specifications for mortgage approval."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify property value",
+                    "classification": "VA",
+                    "reasoning": "Verifying the property value is essential for determining the loan amount and assessing the collateral's adequacy."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess property condition",
+                    "classification": "VA",
+                    "reasoning": "Assessing the property condition helps evaluate its market value, potential risks, and the need for any repairs or renovations."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate property location and market trends",
+                    "classification": "VA",
+                    "reasoning": "Evaluating the property location and market trends is important for assessing the property's long-term value and potential appreciation."
+                }
+            ]
+        },
+        {
+            "activity_name": "AC: Accept mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review overall application",
+                    "classification": "BVA",
+                    "reasoning": "Reviewing the overall application is necessary to ensure that all required documents and information are provided."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm all criteria are met",
+                    "classification": "BVA",
+                    "reasoning": "Confirming that all criteria are met ensures compliance with internal policies and regulatory requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare acceptance documentation",
+                    "classification": "BVA",
+                    "reasoning": "Preparing acceptance documentation is necessary for record-keeping and legal compliance."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify applicant of acceptance",
+                    "classification": "BVA",
+                    "reasoning": "Notifying the applicant of acceptance is a standard communication step to keep them informed about the status of their application."
+                }
+            ]
+        },
+        {
+            "activity_name": "AW: Reject mortgage application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "BVA",
+                    "reasoning": "Documenting the reasons for rejection is necessary for record-keeping and legal compliance."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "BVA",
+                    "reasoning": "Preparing a rejection letter is a standard communication step to inform the applicant about the decision."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status to 'Rejected'",
+                    "classification": "BVA",
+                    "reasoning": "Updating the application status to 'Rejected' is necessary for internal tracking and reporting purposes."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify applicant of rejection",
+                    "classification": "BVA",
+                    "reasoning": "Notifying the applicant of rejection is a standard communication step to inform them about the decision and provide closure to the application process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 16,
+        "correct_classifications": 14,
+        "accuracy": 0.875,
+        "misclassifications": [
+            {
+                "activity": "AC: Accept mortgage application",
+                "substep": "Review overall application",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Reviewing the overall application is necessary to ensure that all required documents and information are provided.",
+                "ground_truth_reasoning": "Final assessment of all collected information"
+            },
+            {
+                "activity": "AC: Accept mortgage application",
+                "substep": "Confirm all criteria are met",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Confirming that all criteria are met ensures compliance with internal policies and regulatory requirements.",
+                "ground_truth_reasoning": "Crucial for ensuring the application meets all requirements"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8,
+                "BVA": 2
+            },
+            "BVA": {
+                "BVA": 6
+            },
+            "NVA": {}
+        }
+    }
+}

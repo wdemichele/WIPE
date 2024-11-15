@@ -1,0 +1,287 @@
+[
+    {
+        "activity_name": "Declaration SUBMITTED by EMPLOYEE",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Employee fills out declaration form"
+            },
+            {
+                "step_number": 2,
+                "description": "Employee attaches necessary documents"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee submits declaration"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to pre-approver"
+            },
+            {
+                "step_number": 2,
+                "description": "Pre-approver notified of pending declaration"
+            },
+            {
+                "step_number": 3,
+                "description": "Pre-approver reviews declaration"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by SUPERVISOR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to supervisor"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor notified of pending declaration"
+            },
+            {
+                "step_number": 3,
+                "description": "Supervisor reviews declaration"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Pre-approver approves declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to next approval stage"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Pre-approver rejects declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by MISSING",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Reviewer identifies missing information"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of missing information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by ADMINISTRATION",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to administration"
+            },
+            {
+                "step_number": 2,
+                "description": "Administration notified of pending declaration"
+            },
+            {
+                "step_number": 3,
+                "description": "Administration reviews declaration"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by SUPERVISOR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Supervisor rejects declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by ADMINISTRATION",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Administration approves declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to next approval stage"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by ADMINISTRATION",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Administration rejects declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by BUDGET OWNER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to budget owner"
+            },
+            {
+                "step_number": 2,
+                "description": "Budget owner notified of pending declaration"
+            },
+            {
+                "step_number": 3,
+                "description": "Budget owner reviews declaration"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by BUDGET OWNER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Budget owner approves declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to final approval"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by BUDGET OWNER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Budget owner rejects declaration"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FINAL_APPROVED by SUPERVISOR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Supervisor performs final review"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor gives final approval"
+            },
+            {
+                "step_number": 3,
+                "description": "System updates declaration as finally approved"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System generates payment request"
+            },
+            {
+                "step_number": 2,
+                "description": "Payment request sent to finance department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Payment Handled",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finance department processes payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Payment transferred to employee"
+            },
+            {
+                "step_number": 3,
+                "description": "System updated with payment status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by EMPLOYEE",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Employee reviews rejection reason"
+            },
+            {
+                "step_number": 2,
+                "description": "Employee decides whether to resubmit"
+            },
+            {
+                "step_number": 3,
+                "description": "If resubmitting, employee updates declaration"
+            }
+        ]
+    }
+]

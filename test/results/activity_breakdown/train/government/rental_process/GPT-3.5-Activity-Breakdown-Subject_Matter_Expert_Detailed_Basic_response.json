@@ -1,0 +1,198 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Apply for Viewing Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit application form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide required documents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Wait for application acceptance"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule viewing appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify applicant of rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "View The Property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visit the property for viewing"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In The Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit completed paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screen Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct initial screening process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare contract for signing"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and sign the contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Perform additional screening checks"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather more information if needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Move In",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Coordinate move-in logistics"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Complete move-in inspection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pay Rent",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit rent payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Issue Warning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify tenant of rent payment delay"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Document the warning issued"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept Late Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive and process late rent payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evict Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate eviction process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Tenant Cancels Apartment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive cancellation notice from tenant"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                6,
+                25.0
+            ],
+            "No Match": [
+                12,
+                50.0
+            ],
+            "Granularity Difference": [
+                6,
+                25.0
+            ]
+        },
+        "average_confidence": 40.833333333333336,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.33333333333333,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 87.5,
+        "response_coverage": 66.66666666666666,
+        "average_sequence_alignment": 63.888888888888886,
+        "average_overall_similarity_score": 45.8
+    }
+}

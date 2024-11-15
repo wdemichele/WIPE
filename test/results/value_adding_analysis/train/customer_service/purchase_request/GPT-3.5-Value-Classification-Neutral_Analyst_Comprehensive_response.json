@@ -1,0 +1,898 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Fill purchase request form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access purchase request form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a purchase request, which is a value-adding step."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input initial request details",
+                    "classification": "VA",
+                    "reasoning": "Transforms the purchase request form by adding initial request details, directly contributing to the creation of the purchase request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect vendor quotes",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify potential vendors",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of collecting vendor quotes by identifying potential vendors."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Request quotes from vendors",
+                    "classification": "VA",
+                    "reasoning": "Initiates the process of collecting vendor quotes by requesting quotes from the identified vendors."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Compile received quotes",
+                    "classification": "VA",
+                    "reasoning": "Transforms the received quotes into a compiled format, directly contributing to the collection of vendor quotes."
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review collected quotes",
+                    "classification": "VA",
+                    "reasoning": "Reviews the collected vendor quotes, which is a value-adding step in completing the form."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Fill in remaining form details",
+                    "classification": "VA",
+                    "reasoning": "Transforms the form by adding the remaining details, directly contributing to the completion of the form."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Attach supporting documents",
+                    "classification": "VA",
+                    "reasoning": "Transforms the form by attaching supporting documents, directly contributing to the completion of the form."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get supervisor approvals",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit form to supervisor",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to obtain supervisor approvals, which reduces financial risk and ensures compliance."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Supervisor reviews request",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to ensure proper review of the request, which supports financial reporting and ensures compliance."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Supervisor makes approval decision",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to obtain supervisor approvals, which reduces financial risk and ensures compliance."
+                }
+            ]
+        },
+        {
+            "activity_name": "Modify and resubmit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review supervisor feedback",
+                    "classification": "VA",
+                    "reasoning": "Reviews the feedback provided by the supervisor, which is a value-adding step in the modification process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make necessary modifications",
+                    "classification": "VA",
+                    "reasoning": "Transforms the request by making necessary modifications based on the supervisor feedback, directly contributing to the modification process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resubmit for approval",
+                    "classification": "VA",
+                    "reasoning": "Initiates the process of resubmitting the modified request for approval, directly contributing to the modification process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward to Purchasing Dept",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare approved request for forwarding",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by preparing the request for forwarding."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to Purchasing Department",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by sending the request to the Purchasing Department."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review received request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by reviewing the received request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required information is present",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by verifying the presence of all required information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if request is complete",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by determining if the request is complete."
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document missing information",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request back to employee",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without adding value to the customer or business."
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter request in enterprise system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access enterprise system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by accessing the enterprise system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input request details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by inputting the request details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save request in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by saving the request in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Select vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review vendor quotes",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by reviewing vendor quotes."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate vendors based on criteria",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by evaluating vendors based on criteria."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Choose most suitable vendor",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process by choosing the most suitable vendor."
+                }
+            ]
+        },
+        {
+            "activity_name": "Add new vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect vendor information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a new vendor profile."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create new vendor profile in system",
+                    "classification": "VA",
+                    "reasoning": "Transforms collected vendor information into a new vendor profile."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify vendor details",
+                    "classification": "BVA",
+                    "reasoning": "Necessary to ensure accuracy and compliance with company policies."
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile purchase order details",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create purchase order in system",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review and finalize purchase order",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare PO for sending",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send PO to selected vendor",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record PO transmission",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO copy to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate PO copy for Accounts Payable",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Forward copy to Accounts Payable department",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive goods",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Accept delivery from vendor",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of goods",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quantity and quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Count received items",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to ensuring accurate inventory management and prevents overstocking or understocking."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect quality of goods",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the received goods meet the required quality standards, preventing the delivery of defective products to customers."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Compare with PO specifications",
+                    "classification": "VA",
+                    "reasoning": "Verifies that the received goods match the specifications mentioned in the purchase order, preventing discrepancies and potential issues downstream."
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate goods receipt form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document received goods details",
+                    "classification": "BVA",
+                    "reasoning": "Required for financial reporting and auditing purposes, ensuring accurate record-keeping."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create goods receipt form",
+                    "classification": "VA",
+                    "reasoning": "Creates a formal record of the received goods, facilitating traceability and accountability."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Sign and date form",
+                    "classification": "BVA",
+                    "reasoning": "Required for legal and compliance purposes, providing evidence of receipt and acceptance of goods."
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward goods to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare goods for internal delivery",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the goods are properly packaged and ready for internal transportation, minimizing the risk of damage during transit."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver goods to requesting employee",
+                    "classification": "VA",
+                    "reasoning": "Enables timely delivery of goods to the employee who requested them, supporting operational efficiency."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Obtain employee signature for receipt",
+                    "classification": "VA",
+                    "reasoning": "Confirms that the goods have been received by the employee, providing proof of delivery and accountability."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send form to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare goods receipt form for sending",
+                    "classification": "BVA",
+                    "reasoning": "Ensures that the goods receipt form is properly prepared and organized for submission to the Accounts Payable department."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Forward form to Accounts Payable",
+                    "classification": "BVA",
+                    "reasoning": "Transfers the goods receipt form to the Accounts Payable department for further processing and payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document issues with received goods",
+                    "classification": "BVA",
+                    "reasoning": "Records any issues or discrepancies with the received goods, providing evidence for potential claims or disputes with the vendor."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare goods for return",
+                    "classification": "BVA",
+                    "reasoning": "Ensures that the goods are properly packaged and prepared for return to the vendor, minimizing the risk of damage during transit."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange return shipment to vendor",
+                    "classification": "BVA",
+                    "reasoning": "Coordinates the logistics and transportation of the returned goods to the vendor, ensuring proper handling and tracking."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Purchasing and Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare notification of goods return",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources without directly adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to Purchasing Department",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly contribute to the end product or service."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send notification to Accounts Payable",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly contribute to the end product or service."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Accept invoice from vendor",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of receiving and processing invoices from vendors."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of invoice",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of receiving and processing invoices from vendors."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform three-way matching",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compare PO, goods receipt, and invoice",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify matching details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of verifying the matching details between purchase orders, goods receipts, and invoices."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resolve any discrepancies",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of resolving any discrepancies found during the three-way matching process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Trigger bank transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare payment details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of preparing payment details for bank transfers."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Initiate bank transfer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of initiating bank transfers."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record payment in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of recording payments in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send payment notice to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate payment notice",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of generating payment notices for vendors."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notice to vendor",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of sending payment notices to vendors."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record notice sent in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process of recording the sent payment notices in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication about payment issue",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses the payment issue and initiates resolution."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact vendor to resolve issue",
+                    "classification": "VA",
+                    "reasoning": "Directly resolves the payment issue and contributes to customer satisfaction."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document communication in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for record-keeping and compliance purposes, but not directly valuable to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Attempt transfer again",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review and update payment details",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses the payment issue and ensures accurate information for the transfer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Initiate new bank transfer",
+                    "classification": "VA",
+                    "reasoning": "Directly resolves the payment issue and initiates the transfer process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Monitor transfer status",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for tracking the progress of the transfer, but not directly valuable to the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 74,
+        "correct_classifications": 39,
+        "accuracy": 0.527027027027027,
+        "misclassifications": [
+            {
+                "activity": "Fill purchase request form",
+                "substep": "Access purchase request form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating a purchase request, which is a value-adding step.",
+                "ground_truth_reasoning": "Necessary to start the process, but doesn't directly add value"
+            },
+            {
+                "activity": "Collect vendor quotes",
+                "substep": "Compile received quotes",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the received quotes into a compiled format, directly contributing to the collection of vendor quotes.",
+                "ground_truth_reasoning": "Organizes information but doesn't directly add value"
+            },
+            {
+                "activity": "Complete form",
+                "substep": "Attach supporting documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the form by attaching supporting documents, directly contributing to the completion of the form.",
+                "ground_truth_reasoning": "Supports the request but doesn't directly add value"
+            },
+            {
+                "activity": "Get supervisor approvals",
+                "substep": "Supervisor reviews request",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by company policy to ensure proper review of the request, which supports financial reporting and ensures compliance.",
+                "ground_truth_reasoning": "Critical for ensuring purchase validity and necessity"
+            },
+            {
+                "activity": "Get supervisor approvals",
+                "substep": "Supervisor makes approval decision",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by company policy to obtain supervisor approvals, which reduces financial risk and ensures compliance.",
+                "ground_truth_reasoning": "Directly impacts the progression of the purchase"
+            },
+            {
+                "activity": "Modify and resubmit",
+                "substep": "Resubmit for approval",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Initiates the process of resubmitting the modified request for approval, directly contributing to the modification process.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Forward to Purchasing Dept",
+                "substep": "Prepare approved request for forwarding",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by preparing the request for forwarding.",
+                "ground_truth_reasoning": "Administrative task that doesn't directly add value"
+            },
+            {
+                "activity": "Forward to Purchasing Dept",
+                "substep": "Send request to Purchasing Department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by sending the request to the Purchasing Department.",
+                "ground_truth_reasoning": "Necessary for process flow but doesn't directly add value"
+            },
+            {
+                "activity": "Check completeness",
+                "substep": "Review received request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by reviewing the received request.",
+                "ground_truth_reasoning": "Ensures process integrity but doesn't directly add value"
+            },
+            {
+                "activity": "Check completeness",
+                "substep": "Verify all required information is present",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by verifying the presence of all required information.",
+                "ground_truth_reasoning": "Necessary for completeness but doesn't enhance value"
+            },
+            {
+                "activity": "Check completeness",
+                "substep": "Determine if request is complete",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by determining if the request is complete.",
+                "ground_truth_reasoning": "Decision point for process flow, but doesn't add direct value"
+            },
+            {
+                "activity": "Return to employee",
+                "substep": "Document missing information",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": "Aids in improving request but doesn't directly add value"
+            },
+            {
+                "activity": "Enter request in enterprise system",
+                "substep": "Access enterprise system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by accessing the enterprise system.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value"
+            },
+            {
+                "activity": "Enter request in enterprise system",
+                "substep": "Input request details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by inputting the request details.",
+                "ground_truth_reasoning": "Facilitates tracking but doesn't directly add value to purchase"
+            },
+            {
+                "activity": "Enter request in enterprise system",
+                "substep": "Save request in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the process by saving the request in the system.",
+                "ground_truth_reasoning": "Ensures record-keeping but doesn't directly add value"
+            },
+            {
+                "activity": "Add new vendor",
+                "substep": "Collect vendor information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating a new vendor profile.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to current purchase"
+            },
+            {
+                "activity": "Add new vendor",
+                "substep": "Create new vendor profile in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms collected vendor information into a new vendor profile.",
+                "ground_truth_reasoning": "Facilitates future processes but doesn't add direct value now"
+            },
+            {
+                "activity": "Generate goods receipt form",
+                "substep": "Create goods receipt form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates a formal record of the received goods, facilitating traceability and accountability.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly add value"
+            },
+            {
+                "activity": "Forward goods to employee",
+                "substep": "Prepare goods for internal delivery",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Ensures that the goods are properly packaged and ready for internal transportation, minimizing the risk of damage during transit.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value"
+            },
+            {
+                "activity": "Forward goods to employee",
+                "substep": "Obtain employee signature for receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Confirms that the goods have been received by the employee, providing proof of delivery and accountability.",
+                "ground_truth_reasoning": "Ensures accountability but doesn't directly add value"
+            },
+            {
+                "activity": "Return to vendor",
+                "substep": "Prepare goods for return",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Ensures that the goods are properly packaged and prepared for return to the vendor, minimizing the risk of damage during transit.",
+                "ground_truth_reasoning": "Represents rework and doesn't add value to the process"
+            },
+            {
+                "activity": "Return to vendor",
+                "substep": "Arrange return shipment to vendor",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Coordinates the logistics and transportation of the returned goods to the vendor, ensuring proper handling and tracking.",
+                "ground_truth_reasoning": "Necessary due to error but doesn't add value"
+            },
+            {
+                "activity": "Notify Purchasing and Accounts Payable",
+                "substep": "Prepare notification of goods return",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Receive invoice",
+                "substep": "Accept invoice from vendor",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of receiving and processing invoices from vendors.",
+                "ground_truth_reasoning": "Necessary for payment process but doesn't directly add value"
+            },
+            {
+                "activity": "Receive invoice",
+                "substep": "Log receipt of invoice",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of receiving and processing invoices from vendors.",
+                "ground_truth_reasoning": "Ensures tracking but doesn't directly add value"
+            },
+            {
+                "activity": "Perform three-way matching",
+                "substep": "Verify matching details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of verifying the matching details between purchase orders, goods receipts, and invoices.",
+                "ground_truth_reasoning": "Crucial for ensuring payment accuracy but doesn't directly contribute to the end product/service"
+            },
+            {
+                "activity": "Perform three-way matching",
+                "substep": "Resolve any discrepancies",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of resolving any discrepancies found during the three-way matching process.",
+                "ground_truth_reasoning": "Important for maintaining financial integrity but doesn't directly add value to the customer"
+            },
+            {
+                "activity": "Trigger bank transfer",
+                "substep": "Prepare payment details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of preparing payment details for bank transfers.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly add value to the product/service"
+            },
+            {
+                "activity": "Trigger bank transfer",
+                "substep": "Record payment in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of recording payments in the system.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to the product/service"
+            },
+            {
+                "activity": "Send payment notice to vendor",
+                "substep": "Generate payment notice",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of generating payment notices for vendors.",
+                "ground_truth_reasoning": "Supports vendor communication but doesn't directly add value to the product/service"
+            },
+            {
+                "activity": "Send payment notice to vendor",
+                "substep": "Send notice to vendor",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of sending payment notices to vendors.",
+                "ground_truth_reasoning": "Maintains vendor relationship but doesn't directly contribute to the end product/service"
+            },
+            {
+                "activity": "Send payment notice to vendor",
+                "substep": "Record notice sent in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the process of recording the sent payment notices in the system.",
+                "ground_truth_reasoning": "Important for documentation but doesn't directly add value to the customer"
+            },
+            {
+                "activity": "Contact vendor",
+                "substep": "Prepare communication about payment issue",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly addresses the payment issue and initiates resolution.",
+                "ground_truth_reasoning": "Necessary for issue resolution but doesn't directly add value to the product/service"
+            },
+            {
+                "activity": "Contact vendor",
+                "substep": "Contact vendor to resolve issue",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly resolves the payment issue and contributes to customer satisfaction.",
+                "ground_truth_reasoning": "Important for maintaining vendor relationships but doesn't directly contribute to the end product/service"
+            },
+            {
+                "activity": "Attempt transfer again",
+                "substep": "Review and update payment details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly addresses the payment issue and ensures accurate information for the transfer.",
+                "ground_truth_reasoning": "Necessary for correct payment but doesn't directly add value to the product/service"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 21,
+                "BVA": 2
+            },
+            "BVA": {
+                "VA": 29,
+                "BVA": 17,
+                "NVA": 2
+            },
+            "NVA": {
+                "NVA": 1,
+                "BVA": 2
+            }
+        }
+    }
+}

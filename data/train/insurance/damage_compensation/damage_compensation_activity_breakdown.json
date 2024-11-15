@@ -1,0 +1,134 @@
+[
+    {
+        "activity_name": "Compensation Request Received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive request for compensation"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of compensation request"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve related file",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access Premises files DB"
+            },
+            {
+                "step_number": 2,
+                "description": "Locate relevant file"
+            },
+            {
+                "step_number": 3,
+                "description": "Retrieve file from database"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check compliance",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review request details"
+            },
+            {
+                "step_number": 2,
+                "description": "Compare against compliance criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine compliance status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record compliance status"
+            },
+            {
+                "step_number": 2,
+                "description": "Update request with additional information if necessary"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check fee payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine required fees"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify received payments"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if fees are fully paid"
+            }
+        ]
+    },
+    {
+        "activity_name": "Produce fees notice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate outstanding fees"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate fees notice document"
+            },
+            {
+                "step_number": 3,
+                "description": "Send fees notice to requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Generate receipt for additional fees",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Process additional fee payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate receipt"
+            },
+            {
+                "step_number": 3,
+                "description": "Record receipt in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Allocate hearing date",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check available dates"
+            },
+            {
+                "step_number": 2,
+                "description": "Select appropriate hearing date"
+            },
+            {
+                "step_number": 3,
+                "description": "Record allocated date in system"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify relevant parties of hearing date"
+            }
+        ]
+    }
+]

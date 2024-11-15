@@ -1,0 +1,57 @@
+graph TB
+    subgraph Applicant
+        A((Start)) --> B[Submit loan application]
+    end
+    
+    subgraph Loan Officer
+        B --> C{Check application completeness}
+        C -->|Incomplete| D[Return application to applicant]
+        D --> E((End))
+        C -->|Complete| F[Check application details]
+        F --> G{Assess eligibility}
+        G -->|Not eligible| H[Reject application]
+        H --> I((End))
+        G -->|Eligible| J[Prepare acceptance pack]
+        J --> K[Check if home insurance quote is requested]
+        K -->|Yes| L[Send home insurance quote]
+        K -->|No| M[Send acceptance pack]
+        M --> N{Verify repayment agreement}
+        N -->|Applicant disagrees| O[Cancel application]
+        O --> P[Notify cancellation]
+        P --> Q((End))
+        N -->|Applicant agrees| R[Approve application]
+        R --> S[Notify approval]
+        S --> T((End))
+    end
+    
+    subgraph Financial Officer
+        F --> U[Check credit history]
+        U --> V[Assess loan risk]
+    end
+    
+    subgraph Property Appraiser
+        F --> W[Appraise property]
+    end
+    
+    subgraph Insurance Sales Rep
+        L --> M
+    end
+    
+    %% Data objects
+    V -.-> X[(Risk rules DB)]
+    W -.-> Y[Property appraisal]
+    U -.-> Z[Credit history report]
+    V -.-> AA[Risk assessment]
+    
+    %% Time events
+    B --> BB((5 days))
+    BB --> C
+    M --> CC((2 weeks))
+    CC --> N
+    
+    %% Message flows
+    B -.-> D
+    H -.-> I
+    M -.-> N
+    P -.-> Q
+    S -.-> T

@@ -1,0 +1,58 @@
+{
+    "activities": [
+      {
+        "step": "Submit request for compensation",
+        "performer": "Owner",
+        "classification": "VA",
+        "reasoning": "Initiates the process and provides necessary information for claim processing"
+      },
+      {
+        "step": "Retrieve related file",
+        "performer": "Tribunal Cashier",
+        "classification": "BVA",
+        "reasoning": "Necessary for processing but doesn't directly add value to the owner"
+      },
+      {
+        "step": "Check compliance",
+        "performer": "Tribunal Cashier",
+        "classification": "BVA",
+        "reasoning": "Ensures request meets requirements, potentially preventing delays later"
+      },
+      {
+        "step": "Update request",
+        "performer": "Tribunal Cashier",
+        "classification": "BVA",
+        "reasoning": "Necessary for accurate processing but doesn't directly add value to the owner"
+      },
+      {
+        "step": "Check fee payment",
+        "performer": "Tribunal Cashier",
+        "classification": "BVA",
+        "reasoning": "Ensures proper payment, necessary for the tribunal but not directly valuable to the owner"
+      },
+      {
+        "step": "Produce fees notice",
+        "performer": "Tribunal Cashier",
+        "classification": "NVA",
+        "reasoning": "Indicates a failure in the process (fees not paid), doesn't add value"
+      },
+      {
+        "step": "Make payment",
+        "performer": "Owner",
+        "classification": "BVA",
+        "reasoning": "Necessary for process continuation but doesn't directly contribute to compensation"
+      },
+      {
+        "step": "Generate receipt for additional fees",
+        "performer": "Tribunal Cashier",
+        "classification": "BVA",
+        "reasoning": "Provides proof of payment, indirectly valuable to the owner"
+      },
+      {
+        "step": "Allocate hearing date",
+        "performer": "Tribunal Cashier",
+        "classification": "VA",
+        "reasoning": "Direct progress towards resolving the compensation request"
+      }
+    ]
+  }

@@ -1,0 +1,174 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if product is in stock"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve product from warehouse"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check raw materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if raw materials are available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send request to Supplier 1"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send request to Supplier 2"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive raw materials from Supplier 1"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive raw materials from Supplier 2"
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Manufacture the product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Merge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Merge the manufactured product with retrieved product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Confirm the order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve shipment address"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate and send invoice"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare and ship the product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment for the order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Archive the order"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                6,
+                37.5
+            ],
+            "No Match": [
+                8,
+                50.0
+            ],
+            "Functional Equivalence": [
+                2,
+                12.5
+            ]
+        },
+        "average_confidence": 43.125,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 83.33333333333333,
+            "No Match": 0.0,
+            "Functional Equivalence": 95.0
+        },
+        "ground_truth_coverage": 73.68421052631578,
+        "response_coverage": 58.06451612903226,
+        "average_sequence_alignment": 51.785714285714285,
+        "average_overall_similarity_score": 49.285714285714285
+    }
+}

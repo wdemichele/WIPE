@@ -1,0 +1,132 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if product is in stock"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify customer about order rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in the warehouse"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve product from the designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status to confirmed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request customer's shipment address"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice for the order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package the product for shipment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for shipping with the designated carrier"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment from the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order details for future reference"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                35.714285714285715
+            ],
+            "Granularity Difference": [
+                4,
+                28.57142857142857
+            ],
+            "No Match": [
+                5,
+                35.714285714285715
+            ]
+        },
+        "average_confidence": 54.285714285714285,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 86.0,
+            "Granularity Difference": 82.5,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 92.3076923076923,
+        "response_coverage": 67.64705882352942,
+        "average_sequence_alignment": 58.333333333333336,
+        "average_overall_similarity_score": 66.11111111111111
+    }
+}

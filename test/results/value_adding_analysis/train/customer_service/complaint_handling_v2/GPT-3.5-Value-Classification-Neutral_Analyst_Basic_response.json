@@ -1,0 +1,352 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send automatic reply to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive complaint notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving the complaint notification."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate automatic acknowledgement message",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by generating an automatic acknowledgement message."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send acknowledgement to customer's contact email",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the acknowledgement to the customer's contact email."
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to understand the complaint details, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult relevant team members or departments",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to consult with relevant team members or departments, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm potential solutions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to brainstorm potential solutions, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate feasibility and effectiveness of solutions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the feasibility and effectiveness of solutions, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select most appropriate solution",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by selecting the most appropriate solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send apology",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft personalized apology message",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by drafting a personalized apology message."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Have apology reviewed by appropriate authority",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to have the apology reviewed by the appropriate authority, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send apology to customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the apology to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Propose solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Formulate detailed solution proposal",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by formulating a detailed solution proposal."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft message explaining proposed solution",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by drafting a message explaining the proposed solution."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send solution proposal to customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the solution proposal to the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Record proposed solution in complaint management system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the proposed solution in the complaint management system, but it does not directly add value for the customer.\")classify(\"VA\", \"Execute solution\", \"Create action plan for implementing solution\", \"This step directly contributes to meeting customer needs by creating a plan for implementing the solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute solution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create action plan for implementing solution",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign tasks to relevant team members",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by assigning tasks to the team members responsible for implementing the solution."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Implement solution actions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by executing the actions necessary to implement the solution."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Verify solution implementation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying that the solution has been implemented correctly."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Follow up with customer to ensure satisfaction",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by following up with the customer to ensure their satisfaction with the implemented solution."
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate acceptable alternative",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review customer's negative response",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the customer's negative response and determine the appropriate course of action."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze reasons for rejection of initial solution",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to understand the reasons behind the customer's rejection of the initial solution."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Brainstorm alternative solutions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate potential alternative solutions to address the customer's concerns."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess viability of alternative solutions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the feasibility and effectiveness of the alternative solutions."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Select best alternative solution if available",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to choose the most suitable alternative solution if one is available."
+                }
+            ]
+        },
+        {
+            "activity_name": "Go to court",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Consult with legal department",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to seek legal advice and guidance before proceeding with legal action."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare necessary documentation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to gather and organize the required documentation for the legal proceedings."
+                },
+                {
+                    "step_number": 3,
+                    "description": "File legal action",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to initiate the legal action."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Engage in legal proceedings",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to actively participate in the legal proceedings."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Update complaint status to 'In Litigation'",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the status of the legal complaint."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 17,
+        "accuracy": 0.5666666666666667,
+        "misclassifications": [
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Receive complaint notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by receiving the complaint notification.",
+                "ground_truth_reasoning": "Necessary to initiate process but doesn't directly resolve complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Generate automatic acknowledgement message",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by generating an automatic acknowledgement message.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly address complaint"
+            },
+            {
+                "activity": "Send automatic reply to customer",
+                "substep": "Send acknowledgement to customer's contact email",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending the acknowledgement to the customer's contact email.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't resolve issue"
+            },
+            {
+                "activity": "Discuss solution",
+                "substep": "Review complaint details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to understand the complaint details, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Directly contributes to understanding and resolving the complaint"
+            },
+            {
+                "activity": "Discuss solution",
+                "substep": "Consult relevant team members or departments",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to consult with relevant team members or departments, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Adds value by bringing in necessary expertise for resolution"
+            },
+            {
+                "activity": "Discuss solution",
+                "substep": "Brainstorm potential solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to brainstorm potential solutions, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Directly contributes to resolving the complaint"
+            },
+            {
+                "activity": "Discuss solution",
+                "substep": "Evaluate feasibility and effectiveness of solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the feasibility and effectiveness of solutions, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Crucial for selecting the best resolution for the customer"
+            },
+            {
+                "activity": "Execute solution",
+                "substep": "Assign tasks to relevant team members",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by assigning tasks to the team members responsible for implementing the solution.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Review customer's negative response",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the customer's negative response and determine the appropriate course of action.",
+                "ground_truth_reasoning": "Directly contributes to understanding customer's needs"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Analyze reasons for rejection of initial solution",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to understand the reasons behind the customer's rejection of the initial solution.",
+                "ground_truth_reasoning": "Crucial for improving the solution"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Brainstorm alternative solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to generate potential alternative solutions to address the customer's concerns.",
+                "ground_truth_reasoning": "Directly contributes to finding a better resolution"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Assess viability of alternative solutions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the feasibility and effectiveness of the alternative solutions.",
+                "ground_truth_reasoning": "Ensures proposed alternatives are feasible and effective"
+            },
+            {
+                "activity": "Evaluate acceptable alternative",
+                "substep": "Select best alternative solution if available",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to choose the most suitable alternative solution if one is available.",
+                "ground_truth_reasoning": "Directly leads to improved complaint resolution"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "BVA": 9,
+                "VA": 10
+            },
+            "BVA": {
+                "VA": 4,
+                "BVA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

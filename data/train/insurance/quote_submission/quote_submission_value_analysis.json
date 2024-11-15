@@ -1,0 +1,60 @@
+{
+    "client_activities": [
+      {
+        "step": "Request insurance quote",
+        "performer": "Client",
+        "classification": "VA",
+        "reasoning": "Initiates the process and directly contributes to the client's goal of obtaining insurance"
+      },
+      {
+        "step": "Evaluate insurance quote",
+        "performer": "Client",
+        "classification": "VA",
+        "reasoning": "Critical for the client to assess if the quote meets their needs and budget"
+      },
+      {
+        "step": "Accept quote",
+        "performer": "Client",
+        "classification": "VA",
+        "reasoning": "Directly moves the process towards the client's goal of obtaining insurance"
+      },
+      {
+        "step": "Reject quote",
+        "performer": "Client",
+        "classification": "BVA",
+        "reasoning": "While not directly adding value, it allows the client to avoid unsuitable insurance options"
+      }
+    ],
+    "insurer_activities": [
+      {
+        "step": "Receive request for quote",
+        "performer": "Insurer",
+        "classification": "BVA",
+        "reasoning": "Necessary for the process but doesn't directly add value to the client"
+      },
+      {
+        "step": "Prepare insurance quote",
+        "performer": "Insurer",
+        "classification": "VA",
+        "reasoning": "Directly contributes to providing the client with the requested service"
+      },
+      {
+        "step": "Receive quote acceptance",
+        "performer": "Insurer",
+        "classification": "BVA",
+        "reasoning": "Necessary for process continuation but doesn't directly add value to the client"
+      },
+      {
+        "step": "Receive quote rejection",
+        "performer": "Insurer",
+        "classification": "NVA",
+        "reasoning": "Doesn't add value and indicates a potentially wasted effort in quote preparation"
+      },
+      {
+        "step": "Prepare insurance contract",
+        "performer": "Insurer",
+        "classification": "VA",
+        "reasoning": "Directly contributes to finalizing the insurance service for the client"
+      }
+    ]
+  }

@@ -1,0 +1,157 @@
+[
+    {
+        "activity_name": "Send automatic reply to customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive complaint notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate automatic acknowledgement message"
+            },
+            {
+                "step_number": 3,
+                "description": "Send acknowledgement to customer's contact email"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complaint details"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult relevant team members or departments"
+            },
+            {
+                "step_number": 3,
+                "description": "Brainstorm potential solutions"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate feasibility and effectiveness of solutions"
+            },
+            {
+                "step_number": 5,
+                "description": "Select most appropriate solution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send apology",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft personalized apology message"
+            },
+            {
+                "step_number": 2,
+                "description": "Have apology reviewed by appropriate authority"
+            },
+            {
+                "step_number": 3,
+                "description": "Send apology to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Propose solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Formulate detailed solution proposal"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft message explaining proposed solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Send solution proposal to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Record proposed solution in complaint management system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Execute solution",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create action plan for implementing solution"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign tasks to relevant team members"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement solution actions"
+            },
+            {
+                "step_number": 4,
+                "description": "Verify solution implementation"
+            },
+            {
+                "step_number": 5,
+                "description": "Follow up with customer to ensure satisfaction"
+            }
+        ]
+    },
+    {
+        "activity_name": "Evaluate acceptable alternative",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review customer's negative response"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze reasons for rejection of initial solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Brainstorm alternative solutions"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess viability of alternative solutions"
+            },
+            {
+                "step_number": 5,
+                "description": "Select best alternative solution if available"
+            }
+        ]
+    },
+    {
+        "activity_name": "Go to court",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Consult with legal department"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare necessary documentation"
+            },
+            {
+                "step_number": 3,
+                "description": "File legal action"
+            },
+            {
+                "step_number": 4,
+                "description": "Engage in legal proceedings"
+            },
+            {
+                "step_number": 5,
+                "description": "Update complaint status to 'In Litigation'"
+            }
+        ]
+    }
+]

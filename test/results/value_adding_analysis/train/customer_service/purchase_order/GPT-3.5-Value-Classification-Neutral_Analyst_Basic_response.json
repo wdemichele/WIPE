@@ -1,0 +1,364 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Query inventory database",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by checking the availability of the requested product in the inventory database."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compare requested quantity with available stock",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by comparing the requested quantity with the available stock to determine if it can be fulfilled."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update stock status",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the stock status in the system after checking the availability and fulfilling the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate rejection notification",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the customer about the rejection of their order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection email to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to communicate the rejection of the order to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status in the system after rejecting the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by locating the requested product in the warehouse."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by picking the requested product from the shelf."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify product details and quantity",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the details and quantity of the picked product."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare product for shipping",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the picked product for shipping."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate order confirmation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate an order confirmation for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send confirmation email to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to send an order confirmation email to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status in the system after confirming the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer address from database",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by retrieving the customer's address from the database."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate address format",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by validating the format of the customer's address."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm shipping address with customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by confirming the shipping address with the customer.\")classify(\"VA\", \"Ship product\", \"Package product securely\", \"This step directly contributes to meeting customer needs by ensuring the product is securely packaged for shipping."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package product securely",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate shipping label",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by generating the necessary shipping label for the product."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange pickup with courier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by arranging for the product to be picked up by the courier for delivery."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to shipped",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the order status to reflect that the product has been shipped."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice with order details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to emit an invoice to the customer, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate total amount including taxes and shipping",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to calculate the total amount to be invoiced, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send invoice to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to send the invoice to the customer, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process customer payment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to process the customer's payment, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment amount",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to verify the amount of the customer's payment, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to paid",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status to reflect that the payment has been received, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Issue payment receipt",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to issue a receipt for the customer's payment, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all order-related documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to compile all the necessary documents related to the order, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Store order information in long-term database",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to store the order information in a long-term database, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to archived",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status to reflect that the order has been archived, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 17,
+        "accuracy": 0.5666666666666667,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Query inventory database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by checking the availability of the requested product in the inventory database.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Compare requested quantity with available stock",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by comparing the requested quantity with the available stock to determine if it can be fulfilled.",
+                "ground_truth_reasoning": "Essential for order fulfillment but doesn't transform the product"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Update stock status",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by updating the stock status in the system after checking the availability and fulfilling the order.",
+                "ground_truth_reasoning": "Maintains accurate inventory records, indirectly supporting the process"
+            },
+            {
+                "activity": "Reject order",
+                "substep": "Generate rejection notification",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to inform the customer about the rejection of their order.",
+                "ground_truth_reasoning": "Doesn't contribute to order fulfillment, but necessary for customer service"
+            },
+            {
+                "activity": "Reject order",
+                "substep": "Send rejection email to customer",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to communicate the rejection of the order to the customer.",
+                "ground_truth_reasoning": "Communication step that doesn't add value to the product or process"
+            },
+            {
+                "activity": "Reject order",
+                "substep": "Update order status in system",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business to update the order status in the system after rejecting the order.",
+                "ground_truth_reasoning": "Administrative task that doesn't contribute to order fulfillment"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Retrieve customer address from database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by retrieving the customer's address from the database.",
+                "ground_truth_reasoning": "Necessary for shipping but doesn't directly add value to the product"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Validate address format",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by validating the format of the customer's address.",
+                "ground_truth_reasoning": "Ensures accurate shipping but doesn't transform the product"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Confirm shipping address with customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by confirming the shipping address with the customer.\")classify(\"VA\", \"Ship product\", \"Package product securely\", \"This step directly contributes to meeting customer needs by ensuring the product is securely packaged for shipping.",
+                "ground_truth_reasoning": "Important for successful delivery but doesn't add direct value"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Process customer payment",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to process the customer's payment, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Directly contributes to completing the transaction"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Verify payment amount",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to verify the amount of the customer's payment, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Ensures correct payment, adding value to the transaction"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to update the order status to reflect that the payment has been received, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Confirms completion of transaction, adding value to customer"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Issue payment receipt",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to issue a receipt for the customer's payment, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Provides necessary documentation to customer, adding value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8,
+                "BVA": 4
+            },
+            "BVA": {
+                "VA": 6,
+                "BVA": 9
+            },
+            "NVA": {
+                "BVA": 3
+            }
+        }
+    }
+}

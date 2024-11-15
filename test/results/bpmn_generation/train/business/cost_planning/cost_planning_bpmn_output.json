@@ -1,0 +1,1 @@
+{"equivalent": true, "num_iterations": 1, "final_mermaid_code": "graph TB\n    A[Cost planning must be conducted] --> B[Cost planning]\n    B -->|yes| C{Acceptable?}\n    C -->|yes| D[Plan data transfer]\n    C -->|no| E[Recalculation of costs]\n    D --> F{XORGateway}\n    E --> F\n    F --> G[Get approval for expenses]\n    G --> H[Approved]"}

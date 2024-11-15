@@ -1,0 +1,21 @@
+graph TD
+    Start([Incoming call]) --> CallRegistration[Call registration]
+    CallRegistration --> Gateway1{Gateway}
+    Gateway1 -->|Complaint| ComplaintAnalysis[Complaint analysis]
+    ComplaintAnalysis --> ContactComplainant[Contact complainant]
+    ContactComplainant --> ArchivingSystem1[Archiving system]
+    ArchivingSystem1 --> End1((close case))
+    Gateway1 -->|External referral| ExternalReferral[External referral with form B4]
+    Gateway1 -->|Internal referral| InternalReferral[Internal referral with form B2]
+    ExternalReferral --> ParallelSplit1{{"Parallel Split"}}
+    ParallelSplit1 --> TelephoneConfirmation[Telephone confirmation to external party]
+    ParallelSplit1 --> Gateway2{Gateway}
+    InternalReferral --> ParallelSplit2{{"Parallel Split"}}
+    ParallelSplit2 --> Gateway2
+    ParallelSplit2 --> IncidentAgenda[Incident agenda]
+    Gateway2 --> ArchivingSystem2[Archiving system]
+    TelephoneConfirmation --> Gateway3{Gateway}
+    ArchivingSystem2 --> Gateway3
+    IncidentAgenda --> Gateway3
+    Gateway3 --> InformComplainant[Inform complainant]
+    InformComplainant --> End2((case closed))

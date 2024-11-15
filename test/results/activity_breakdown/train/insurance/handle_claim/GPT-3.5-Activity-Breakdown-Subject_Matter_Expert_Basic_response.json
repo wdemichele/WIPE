@@ -1,0 +1,182 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Create claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive claim details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate claim information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign claim number"
+                }
+            ]
+        },
+        {
+            "activity_name": "Record claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Capture claim details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify claim documentation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Decide on claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess claim validity"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate claim against policy terms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Offer benefit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine eligible benefits"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate benefit amount"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate benefit offer to claimant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare claim discharge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate claim discharge documents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and finalize claim discharge"
+                }
+            ]
+        },
+        {
+            "activity_name": "Record benefit payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process benefit payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update payment records"
+                }
+            ]
+        },
+        {
+            "activity_name": "Close claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify completion of all claim activities"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update claim status to closed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Operate outgoing payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate outgoing payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment transaction"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review claim rejection reasons"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Communicate claim rejection to claimant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Review claim rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate claim rejection decision"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consider additional information or evidence"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                15,
+                60.0
+            ],
+            "Granularity Difference": [
+                6,
+                24.0
+            ],
+            "Identical Match": [
+                2,
+                8.0
+            ],
+            "No Match": [
+                2,
+                8.0
+            ]
+        },
+        "average_confidence": 77.8,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 85.0,
+            "Granularity Difference": 78.33333333333333,
+            "Identical Match": 100.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 93.93939393939394,
+        "average_sequence_alignment": 59.166666666666664,
+        "average_overall_similarity_score": 82.133
+    }
+}

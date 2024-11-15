@@ -1,0 +1,129 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Client requests insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer evaluates insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decision is made to accept or reject quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Quote is accepted by the decision maker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Quote is rejected by the decision maker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares insurance quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Quote ready",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Quote is ready for acceptance or rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive acceptance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives acceptance of the quote"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer prepares insurance contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insurer receives rejection of the quote"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                2,
+                22.22222222222222
+            ],
+            "Functional Equivalence": [
+                5,
+                55.55555555555556
+            ],
+            "No Match": [
+                2,
+                22.22222222222222
+            ]
+        },
+        "average_confidence": 62.22222222222222,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 81.81818181818183,
+        "response_coverage": 50.0,
+        "average_sequence_alignment": 73.14814814814814,
+        "average_overall_similarity_score": 55.55555555555556
+    }
+}

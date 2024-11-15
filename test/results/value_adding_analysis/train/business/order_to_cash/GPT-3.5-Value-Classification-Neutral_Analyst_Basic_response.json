@@ -1,0 +1,534 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access inventory management system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for checking stock availability but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Search for ordered product",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by searching for the specific product"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify current stock levels",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the availability of the product in stock"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate pick list",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for retrieving the product from the warehouse but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by locating the product in the warehouse"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by picking the product from the shelf"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update inventory records",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for updating the inventory records but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access raw materials inventory",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for checking materials availability but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check quantity of required materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by checking the quantity of required materials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if sufficient materials are available",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by determining if sufficient materials are available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from suppliers",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify needed materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by identifying the needed materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate suppliers",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by selecting the appropriate suppliers"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate purchase orders",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by generating purchase orders"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send purchase orders to suppliers",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending purchase orders to suppliers"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipments from suppliers",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving shipments from suppliers"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by inspecting the received materials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the inventory with new materials\")classify(\"VA\", \"Manufacture product\", \"Create production order\", \"This step directly contributes to meeting customer needs by initiating the production process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create production order",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Allocate resources and materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the availability of necessary resources and materials for production."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Produce product",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by manufacturing the product."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Perform quality control checks",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the quality of the product before delivery."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to verify the order details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify product availability",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to check the availability of the product."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate order confirmation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate an order confirmation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send confirmation to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the customer about the order confirmation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Escalate order confirmation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify reason for confirmation failure",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to identify the reason for order confirmation failure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Forward issue to appropriate department or manager",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to escalate the order confirmation issue to the appropriate department or manager."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Track escalation status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to track the status of the order confirmation escalation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total order cost",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to calculate the total cost of the order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate invoice document",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate an invoice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send invoice to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to send the invoice to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Monitor incoming payments",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to monitor the incoming payments."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Match payment to invoice",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to match the payment to the corresponding invoice."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process payment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to process the payment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to paid",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status to paid.\")classify(\"BVA\", \"Archive order\", \"Collect all order-related documents\", \"This step is necessary for archiving the order but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect all order-related documents",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify order completion",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for archiving the order but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Transfer order to archive system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for archiving the order but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine cancellation penalty",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining the cancellation penalty but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check cancellation policy",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining the cancellation penalty but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate applicable penalty",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining the cancellation penalty but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify penalty to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare penalty notification",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for notifying the penalty to the customer but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for notifying the penalty to the customer but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record notification in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for notifying the penalty to the customer but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Cancel order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update order status to cancelled",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Reverse any inventory allocations",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process cancellation penalty if applicable",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify relevant departments of cancellation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Stop cancellation request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update system to remove cancellation request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for stopping the cancellation request but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm continuation of order with customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for stopping the cancellation request but does not directly add value for the customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resume normal order processing",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for stopping the cancellation request but does not directly add value for the customer"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 51,
+        "correct_classifications": 36,
+        "accuracy": 0.7058823529411765,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Search for ordered product",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by searching for the specific product",
+                "ground_truth_reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Locate product in warehouse",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by locating the product in the warehouse",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Select appropriate suppliers",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by selecting the appropriate suppliers",
+                "ground_truth_reasoning": "Necessary for procurement but doesn't directly add value to product"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Generate purchase orders",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by generating purchase orders",
+                "ground_truth_reasoning": "Required for process but doesn't directly add value"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Send purchase orders to suppliers",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending purchase orders to suppliers",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials",
+                "substep": "Update inventory with new materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by updating the inventory with new materials\")classify(\"VA\", \"Manufacture product\", \"Create production order\", \"This step directly contributes to meeting customer needs by initiating the production process.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Allocate resources and materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by ensuring the availability of necessary resources and materials for production.",
+                "ground_truth_reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Verify product availability",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to check the availability of the product.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Calculate total order cost",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to calculate the total cost of the order.",
+                "ground_truth_reasoning": "Directly relates to the value exchange with customer"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Process payment",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to process the payment.",
+                "ground_truth_reasoning": "Directly relates to the value exchange with customer"
+            },
+            {
+                "activity": "Determine cancellation penalty",
+                "substep": "Calculate applicable penalty",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for determining the cancellation penalty but does not directly add value for the customer",
+                "ground_truth_reasoning": "Directly determines financial impact for customer and company"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Reverse any inventory allocations",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer",
+                "ground_truth_reasoning": "Directly impacts inventory management and future order fulfillment"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Process cancellation penalty if applicable",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for cancelling the order but does not directly add value for the customer",
+                "ground_truth_reasoning": "Directly relates to the financial transaction with customer"
+            },
+            {
+                "activity": "Stop cancellation request",
+                "substep": "Confirm continuation of order with customer",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for stopping the cancellation request but does not directly add value for the customer",
+                "ground_truth_reasoning": "Directly impacts customer satisfaction and order fulfillment"
+            },
+            {
+                "activity": "Stop cancellation request",
+                "substep": "Resume normal order processing",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for stopping the cancellation request but does not directly add value for the customer",
+                "ground_truth_reasoning": "Directly contributes to fulfilling customer's order"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 9,
+                "BVA": 8
+            },
+            "BVA": {
+                "BVA": 27,
+                "VA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

@@ -1,0 +1,34 @@
+graph TD
+    A[Start] --> B[Declaration SUBMITTED by EMPLOYEE]
+    B --> C{Pre-approval required?}
+    C -->|Yes| D[Declaration FOR_APPROVAL by PRE_APPROVER]
+    C -->|No| E[Declaration FOR_APPROVAL by SUPERVISOR]
+    D --> F{Pre-approver decision}
+    F -->|Approved| G[Declaration APPROVED by PRE_APPROVER]
+    F -->|Rejected| H[Declaration REJECTED by PRE_APPROVER]
+    F -->|Missing info| I[Declaration REJECTED by MISSING]
+    E --> J{Supervisor decision}
+    J -->|Approved| K[Declaration FOR_APPROVAL by ADMINISTRATION]
+    J -->|Rejected| L[Declaration REJECTED by SUPERVISOR]
+    J -->|Missing info| I
+    G --> K
+    K --> M{Administration decision}
+    M -->|Approved| N[Declaration APPROVED by ADMINISTRATION]
+    M -->|Rejected| O[Declaration REJECTED by ADMINISTRATION]
+    N --> P[Declaration FOR_APPROVAL by BUDGET OWNER]
+    P --> Q{Budget owner decision}
+    Q -->|Approved| R[Declaration APPROVED by BUDGET OWNER]
+    Q -->|Rejected| S[Declaration REJECTED by BUDGET OWNER]
+    R --> T[Declaration FINAL_APPROVED by SUPERVISOR]
+    T --> U[Request Payment]
+    U --> V[Payment Handled]
+    V --> W[End]
+    
+    H --> X[Declaration REJECTED by EMPLOYEE]
+    L --> X
+    O --> X
+    S --> X
+    I --> X
+    X --> Y{Resubmit?}
+    Y -->|Yes| B
+    Y -->|No| W

@@ -1,0 +1,281 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Package receipt at dock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package",
+                    "classification": "NVA",
+                    "reasoning": "This step involves unloading the package, which is necessary but does not directly add value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Stockpile package",
+                    "classification": "NVA",
+                    "reasoning": "Stockpiling the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Move to pallets",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to pallets consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Wait until pallet is full",
+                    "classification": "NVA",
+                    "reasoning": "Waiting until the pallet is full causes delays in the process flow and does not add value to the customer or business."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Move to receiving room",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to the receiving room consumes resources without adding value to the customer or business."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the receiving room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to workstation",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to the workstation consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check destination",
+                    "classification": "NVA",
+                    "reasoning": "Checking the destination of the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set as unknown",
+                    "classification": "NVA",
+                    "reasoning": "Setting the package as unknown consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Register package into ERP",
+                    "classification": "BVA",
+                    "reasoning": "Registering the package into the ERP system is necessary for business operations but does not directly add value to the customer."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Write details on package",
+                    "classification": "NVA",
+                    "reasoning": "Writing details on the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Print delivery form",
+                    "classification": "NVA",
+                    "reasoning": "Printing the delivery form consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 7,
+                    "description": "Fold and insert the form into a plastic packet",
+                    "classification": "NVA",
+                    "reasoning": "Folding and inserting the form into a plastic packet consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 8,
+                    "description": "Tape plastic packet to package",
+                    "classification": "NVA",
+                    "reasoning": "Taping the plastic packet to the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 9,
+                    "description": "Place in temporary location",
+                    "classification": "NVA",
+                    "reasoning": "Placing the package in a temporary location consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 10,
+                    "description": "Move package to pallet",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to a pallet consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 11,
+                    "description": "Wait until 8 packages are processed",
+                    "classification": "NVA",
+                    "reasoning": "Waiting until 8 packages are processed causes delays in the process flow and does not add value to the customer or business."
+                },
+                {
+                    "step_number": 12,
+                    "description": "Move to rack room",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to the rack room consumes resources without adding value to the customer or business."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the rack room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to rack",
+                    "classification": "NVA",
+                    "reasoning": "Moving the package to the rack consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Sort package",
+                    "classification": "NVA",
+                    "reasoning": "Sorting the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Load package to designated pallet",
+                    "classification": "NVA",
+                    "reasoning": "Loading the package to a designated pallet consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Deliver to designated par location",
+                    "classification": "NVA",
+                    "reasoning": "Delivering the package to a designated par location consumes resources without adding value to the customer or business."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package delivery to par location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "NVA",
+                    "reasoning": "Unloading the package from the pallet consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Scan package",
+                    "classification": "NVA",
+                    "reasoning": "Scanning the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discard package",
+                    "classification": "NVA",
+                    "reasoning": "Discarding the package consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify requester",
+                    "classification": "NVA",
+                    "reasoning": "Notifying the requester consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Return to receiving room",
+                    "classification": "NVA",
+                    "reasoning": "Returning to the receiving room consumes resources without adding value to the customer or business."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Stock package",
+                    "classification": "NVA",
+                    "reasoning": "Stocking the package consumes resources without adding value to the customer or business."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 27,
+        "correct_classifications": 19,
+        "accuracy": 0.7037037037037037,
+        "misclassifications": [
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Unload package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step involves unloading the package, which is necessary but does not directly add value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Move to receiving room",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Moving the package to the receiving room consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move to rack room",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Moving the package to the rack room consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Sort package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sorting the package consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Deliver to designated par location",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Delivering the package to a designated par location consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Scan package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Scanning the package consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Notify requester",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Notifying the requester consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Stock package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Stocking the package consumes resources without adding value to the customer or business.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "NVA": 1
+            },
+            "BVA": {
+                "NVA": 7,
+                "BVA": 1
+            },
+            "NVA": {
+                "NVA": 18
+            }
+        }
+    }
+}

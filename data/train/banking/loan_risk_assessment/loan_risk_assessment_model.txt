@@ -1,0 +1,19 @@
+graph TD
+    Start([Receive loan application]) --> InitialCheck[Initial eligibility check]
+    InitialCheck --> EligibilityDecision{Eligible?}
+    EligibilityDecision -->|Yes| ParallelSplit1{{Parallel Split}}
+    EligibilityDecision -->|No| Inform[Customer informed]
+    ParallelSplit1 --> CreditCheck[Credit history check]
+    ParallelSplit1 --> IncomeCheck[Check applicant's income sources]
+    ParallelSplit1 --> PropertyAppraisal[Appraisal of property to be mortgaged]
+    CreditCheck --> Merge1{{Merge}}
+    IncomeCheck --> Merge1
+    Merge1 --> AssessCredit[Assess applicant's credit risk]
+    PropertyAppraisal --> MortgageableDecision{Mortgageable?}
+    MortgageableDecision -->|Yes| AppraiseCollateral[Appraise other collateral]
+    MortgageableDecision -->|No| Inform
+    AppraiseCollateral --> Merge2{{Merge}}
+    AssessCredit --> Merge2
+    Merge2 --> RiskAssessment[Loan risk assessment]
+    RiskAssessment --> End([Risk assessed])
+    Inform --> End2([Application ineligible])

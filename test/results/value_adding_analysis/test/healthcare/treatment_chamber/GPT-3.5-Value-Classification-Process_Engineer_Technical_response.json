@@ -1,0 +1,125 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Evaluate the condition of patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Medical doctor reviews patient's medical history",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to understanding the patient's condition and making an accurate assessment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Doctor and nurse perform physical examination",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to understanding the patient's condition and making an accurate assessment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Doctor and nurse discuss initial assessment findings",
+                    "classification": "BVA",
+                    "reasoning": "While this step is necessary for communication and collaboration between the doctor and nurse, it does not directly contribute to meeting customer needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Test the patient in laboratory",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician prepares necessary laboratory equipment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to conducting laboratory tests and obtaining accurate results."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Technician collects required samples from patient",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to conducting laboratory tests and obtaining accurate results."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Technician performs specified laboratory tests",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to conducting laboratory tests and obtaining accurate results."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Technician documents and reports test results",
+                    "classification": "BVA",
+                    "reasoning": "While this step is necessary for documentation and reporting purposes, it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Treat patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Doctor reviews laboratory test results",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to understanding the patient's condition and determining appropriate treatment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Doctor and nurse discuss treatment options",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to developing a treatment plan that meets the patient's needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Doctor and nurse administer agreed-upon treatment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to providing the necessary treatment to the patient."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Doctor and nurse monitor patient's response to treatment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to ensuring the effectiveness and safety of the treatment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prescribe medicines",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Doctor determines appropriate medications based on diagnosis and treatment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the patient's medical needs by prescribing the right medications."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Doctor checks for potential drug interactions or allergies",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to ensuring the safety and effectiveness of the prescribed medications."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Doctor writes prescription including dosage and instructions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to providing clear instructions for the patient to follow."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Doctor issues medicine prescription to patient or caregiver",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to providing the necessary medication to the patient."
+                }
+            ]
+        }
+    ]
+}

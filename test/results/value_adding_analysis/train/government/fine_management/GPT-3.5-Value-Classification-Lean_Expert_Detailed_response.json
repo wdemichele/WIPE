@@ -1,0 +1,471 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Create Fine",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record details of the offense",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a fine document by recording the necessary details of the offense."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine fine amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a fine document by determining the amount to be fined."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate fine document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a fine document by generating the final document to be sent to the offender."
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the payment process by receiving the payment from the offender."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record payment in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the payment process by recording the payment in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue payment receipt",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the payment process by issuing a receipt to the offender."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Fine",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare fine notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to sending the fine notification by preparing the necessary documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to offender",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to sending the fine notification by delivering it to the offender."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record notification sent in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to sending the fine notification by recording the notification sent in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Insert Fine Notification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update system with fine notification details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for updating the system with the fine notification details, which is required for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set due date for payment or appeal",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for setting the due date for payment or appeal, which is required for managing the fine process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Add penalty",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate penalty amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the calculation of the penalty amount, which is a value-adding activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Add penalty to original fine",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to adding the penalty to the original fine, which is a value-adding activity."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update fine record in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the fine record in the system, which is a value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send for Credit Collection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare case for credit collection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transfer case to credit collection agency",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update system with collection status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Insert Date Appeal to Prefecture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record appeal date in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status to 'Under Appeal'",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but does not directly add value to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Appeal to Prefecture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare appeal documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the appeal documents, which is a value-adding activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit appeal to prefecture",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to submitting the appeal to the prefecture, which is a value-adding activity."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record appeal submission in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to recording the appeal submission in the system, which is a value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive Result Appeal from Prefecture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive appeal decision from prefecture",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to receive the appeal decision from the prefecture, which is required by law or regulation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record decision in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the system with the appeal decision, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update case status based on decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the case status based on the appeal decision, which is valuable to the overall process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Result Appeal to Offender",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare notification of appeal result",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the notification of the appeal result, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to offender",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to sending the notification of the appeal result to the offender, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record notification sent in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the system with the record of the notification sent, which is valuable to the overall process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appeal to Judge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare appeal documents for court",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the appeal documents for court, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit appeal to court",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to submitting the appeal to the court, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record court appeal in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the system with the record of the court appeal, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Await judge's decision",
+                    "classification": "NVA",
+                    "reasoning": "This step involves waiting for the judge's decision, which does not add value to the process and can potentially cause delays."
+                }
+            ]
+        },
+        {
+            "activity_name": "Additional Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate remaining balance",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to calculating the remaining balance, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify offender of remaining amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to notifying the offender of the remaining amount, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process additional payment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to processing the additional payment, which is valuable to the overall process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update payment record in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the system with the payment record, which is valuable to the overall process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 36,
+        "correct_classifications": 16,
+        "accuracy": 0.4444444444444444,
+        "misclassifications": [
+            {
+                "activity": "Create Fine",
+                "substep": "Generate fine document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a fine document by generating the final document to be sent to the offender.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly add value to the fine itself"
+            },
+            {
+                "activity": "Payment",
+                "substep": "Record payment in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the payment process by recording the payment in the system.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly add value"
+            },
+            {
+                "activity": "Payment",
+                "substep": "Issue payment receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the payment process by issuing a receipt to the offender.",
+                "ground_truth_reasoning": "Important for documentation but doesn't change the payment's value"
+            },
+            {
+                "activity": "Send Fine",
+                "substep": "Prepare fine notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to sending the fine notification by preparing the necessary documents.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter the fine itself"
+            },
+            {
+                "activity": "Send Fine",
+                "substep": "Send notification to offender",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to sending the fine notification by delivering it to the offender.",
+                "ground_truth_reasoning": "Required for process but doesn't change the fine's value"
+            },
+            {
+                "activity": "Send Fine",
+                "substep": "Record notification sent in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to sending the fine notification by recording the notification sent in the system.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly add value"
+            },
+            {
+                "activity": "Insert Fine Notification",
+                "substep": "Set due date for payment or appeal",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for setting the due date for payment or appeal, which is required for managing the fine process.",
+                "ground_truth_reasoning": "Directly impacts the terms of the fine"
+            },
+            {
+                "activity": "Add penalty",
+                "substep": "Update fine record in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the fine record in the system, which is a value-adding activity.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly add value"
+            },
+            {
+                "activity": "Send for Credit Collection",
+                "substep": "Transfer case to credit collection agency",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for business operations but does not directly add value to the customer.",
+                "ground_truth_reasoning": "Directly contributes to obtaining payment"
+            },
+            {
+                "activity": "Send Appeal to Prefecture",
+                "substep": "Record appeal submission in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to recording the appeal submission in the system, which is a value-adding activity.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly affect the appeal"
+            },
+            {
+                "activity": "Receive Result Appeal from Prefecture",
+                "substep": "Receive appeal decision from prefecture",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to receive the appeal decision from the prefecture, which is required by law or regulation.",
+                "ground_truth_reasoning": "Directly impacts the outcome of the fine"
+            },
+            {
+                "activity": "Receive Result Appeal from Prefecture",
+                "substep": "Record decision in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the system with the appeal decision, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Necessary for documentation but doesn't change the decision"
+            },
+            {
+                "activity": "Receive Result Appeal from Prefecture",
+                "substep": "Update case status based on decision",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the case status based on the appeal decision, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Important for process flow but doesn't alter the decision"
+            },
+            {
+                "activity": "Notify Result Appeal to Offender",
+                "substep": "Prepare notification of appeal result",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to preparing the notification of the appeal result, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change the result"
+            },
+            {
+                "activity": "Notify Result Appeal to Offender",
+                "substep": "Send notification to offender",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to sending the notification of the appeal result to the offender, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Required for process but doesn't alter the appeal outcome"
+            },
+            {
+                "activity": "Notify Result Appeal to Offender",
+                "substep": "Record notification sent in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the system with the record of the notification sent, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Important for tracking but doesn't add value to the process"
+            },
+            {
+                "activity": "Appeal to Judge",
+                "substep": "Record court appeal in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the system with the record of the court appeal, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly affect the appeal"
+            },
+            {
+                "activity": "Appeal to Judge",
+                "substep": "Await judge's decision",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step involves waiting for the judge's decision, which does not add value to the process and can potentially cause delays.",
+                "ground_truth_reasoning": "Critical part of the appeal process that determines the outcome"
+            },
+            {
+                "activity": "Additional Payment",
+                "substep": "Notify offender of remaining amount",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to notifying the offender of the remaining amount, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change the amount owed"
+            },
+            {
+                "activity": "Additional Payment",
+                "substep": "Update payment record in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the system with the payment record, which is valuable to the overall process.",
+                "ground_truth_reasoning": "Important for documentation but doesn't change the payment's value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 11,
+                "BVA": 3,
+                "NVA": 1
+            },
+            "BVA": {
+                "VA": 16,
+                "BVA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

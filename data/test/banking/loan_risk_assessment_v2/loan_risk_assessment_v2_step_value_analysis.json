@@ -1,0 +1,344 @@
+[
+    {
+        "activity_name": "perform BRM check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve BRM assessment data",
+                "classification": "BVA",
+                "reasoning": "Necessary for risk assessment but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze BRM criteria",
+                "classification": "VA",
+                "reasoning": "Critical for determining loan eligibility"
+            },
+            {
+                "step_number": 3,
+                "description": "Document BRM check results",
+                "classification": "BVA",
+                "reasoning": "Important for internal processes but not directly valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "perform ERM check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve ERM assessment data",
+                "classification": "BVA",
+                "reasoning": "Necessary for risk assessment but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze ERM criteria",
+                "classification": "VA",
+                "reasoning": "Critical for determining loan eligibility"
+            },
+            {
+                "step_number": 3,
+                "description": "Document ERM check results",
+                "classification": "BVA",
+                "reasoning": "Important for internal processes but not directly valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "perform credibility check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's financial history",
+                "classification": "VA",
+                "reasoning": "Directly impacts loan decision and terms"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify provided information",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy of application, critical for fair assessment"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess overall credibility",
+                "classification": "VA",
+                "reasoning": "Key factor in loan approval decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Document credibility check findings",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes and potential audits"
+            }
+        ]
+    },
+    {
+        "activity_name": "call client to complement information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify missing or unclear information",
+                "classification": "BVA",
+                "reasoning": "Improves application quality but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact client via phone",
+                "classification": "VA",
+                "reasoning": "Direct interaction with customer, potentially adding value"
+            },
+            {
+                "step_number": 3,
+                "description": "Request additional information",
+                "classification": "VA",
+                "reasoning": "Improves chances of loan approval"
+            },
+            {
+                "step_number": 4,
+                "description": "Update client's file with new information",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes but not directly valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "create loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's financial profile",
+                "classification": "VA",
+                "reasoning": "Directly impacts loan terms and conditions"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine suitable loan terms",
+                "classification": "VA",
+                "reasoning": "Core value proposition for the customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate interest rates and repayment schedule",
+                "classification": "VA",
+                "reasoning": "Critical information for customer decision-making"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare loan offer document",
+                "classification": "VA",
+                "reasoning": "Tangible output of value for the customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "send loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review final loan offer",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare accompanying explanation letter",
+                "classification": "VA",
+                "reasoning": "Adds value by providing clarity to the customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Send offer via preferred communication method",
+                "classification": "VA",
+                "reasoning": "Delivers value to the customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Log offer sent in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "remind client",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check status of sent offer",
+                "classification": "BVA",
+                "reasoning": "Necessary for process flow but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare reminder message",
+                "classification": "BVA",
+                "reasoning": "Aids process but may not be directly valued by all customers"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact client via preferred method",
+                "classification": "VA",
+                "reasoning": "Direct interaction potentially adding value to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Log reminder action in system",
+                "classification": "NVA",
+                "reasoning": "Internal record-keeping, not adding value to customer or process"
+            }
+        ]
+    },
+    {
+        "activity_name": "send rejection letter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review reason for rejection",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy of communication but not valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft rejection letter with explanation",
+                "classification": "VA",
+                "reasoning": "Provides valuable information to customer, even if unwelcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Send letter to client",
+                "classification": "VA",
+                "reasoning": "Delivers necessary information to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Update client's file with rejection status",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes but not valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "activate loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive accepted offer from client",
+                "classification": "VA",
+                "reasoning": "Critical step in providing loan to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required documents",
+                "classification": "BVA",
+                "reasoning": "Ensures compliance but not directly valued by customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Initialize loan in system",
+                "classification": "VA",
+                "reasoning": "Activates the loan, directly valuable to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify relevant departments",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes but not valued by customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "update loan activation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review activated loan details",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Update client's account status",
+                "classification": "VA",
+                "reasoning": "Enables customer to access loan, directly valuable"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare loan activation report",
+                "classification": "BVA",
+                "reasoning": "Internal process, not directly valued by customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Distribute report to relevant stakeholders",
+                "classification": "NVA",
+                "reasoning": "Internal communication, not adding value to customer or process"
+            }
+        ]
+    },
+    {
+        "activity_name": "execute initial payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify loan terms and conditions",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Process initial loan disbursement",
+                "classification": "VA",
+                "reasoning": "Direct transfer of loan value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Record transaction in financial system",
+                "classification": "BVA",
+                "reasoning": "Necessary for accounting but not directly valued by customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Send payment confirmation to client",
+                "classification": "VA",
+                "reasoning": "Provides valuable information to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "return documents to client",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather all client documents",
+                "classification": "BVA",
+                "reasoning": "Necessary but not directly adding value to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify completeness of document set",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare documents for return",
+                "classification": "BVA",
+                "reasoning": "Necessary step but not adding direct value to customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Send documents via secure method",
+                "classification": "VA",
+                "reasoning": "Returns valuable personal documents to customer"
+            },
+            {
+                "step_number": 5,
+                "description": "Log document return in system",
+                "classification": "NVA",
+                "reasoning": "Internal record-keeping, not adding value to customer or process"
+            }
+        ]
+    }
+]

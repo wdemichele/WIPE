@@ -1,0 +1,220 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Determine likelihood of the claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new claim",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the claim process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by understanding the details of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze policy coverage",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining if the claim is covered by the policy."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate initial evidence",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the initial evidence provided."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Estimate probability of claim validity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the likelihood of the claim being valid."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather additional information if needed",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by collecting any additional information required for the claim assessment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details thoroughly",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by thoroughly understanding the details of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify policy terms and conditions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring that the claim is in accordance with the policy terms and conditions."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate evidence and documentation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the evidence and documentation provided for the claim."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Consult with relevant experts if necessary",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by seeking expert advice for the claim assessment."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Determine claim validity and value",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining the validity and value of the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initiate payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate payment amount",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by calculating the amount to be paid for the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify claimant's payment details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring that the claimant's payment details are accurate."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare payment documentation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the necessary documentation for the payment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain necessary approvals",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by obtaining the required approvals for the payment."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Process payment through financial system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the payment process through the financial system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Advise claimant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication detailing claim decision",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing a communication that informs the claimant of the decision on the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include explanation of decision rationale",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing an explanation of the rationale behind the claim decision."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide information on payment (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing information on the payment, if applicable."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Include details on appeal process (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing details on the appeal process, if applicable."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Send communication to claimant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by sending the communication to the claimant."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Record communication in claim file",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the communication in the claim file."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 22,
+        "correct_classifications": 16,
+        "accuracy": 0.7272727272727273,
+        "misclassifications": [
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Receive new claim",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the claim process.",
+                "ground_truth_reasoning": "Necessary to initiate the process but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Initiate payment",
+                "substep": "Verify claimant's payment details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring that the claimant's payment details are accurate.",
+                "ground_truth_reasoning": "Ensures correct payment but doesn't affect the claim decision or amount"
+            },
+            {
+                "activity": "Initiate payment",
+                "substep": "Prepare payment documentation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the necessary documentation for the payment.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't change the payment itself"
+            },
+            {
+                "activity": "Initiate payment",
+                "substep": "Obtain necessary approvals",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by obtaining the required approvals for the payment.",
+                "ground_truth_reasoning": "Important for internal controls but doesn't directly add value to the claimant"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Send communication to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by sending the communication to the claimant.",
+                "ground_truth_reasoning": "Necessary to deliver information but doesn't add new value"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Record communication in claim file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the communication in the claim file.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to claimant"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 6
+            },
+            "VA": {
+                "VA": 16
+            }
+        }
+    }
+}

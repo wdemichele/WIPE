@@ -1,0 +1,145 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Submit equipment rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting an equipment rental request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to clerk",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to process the equipment rental request, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Select suitable equipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open and read request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of selecting suitable equipment based on the rental request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable equipment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of selecting suitable equipment based on the rental request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check equipment availability",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of checking the availability of the requested equipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record recommended equipment & supplier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of recording the recommended equipment and supplier."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request to works engineer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the rental request, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open and examine request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of reviewing the rental request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate issues",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of communicating any issues found during the review process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create PO",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request back to clerk",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to create a purchase order, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create PO",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of creating a purchase order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send PO to supplier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of sending the purchase order to the supplier."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 12,
+        "correct_classifications": 10,
+        "accuracy": 0.8333333333333334,
+        "misclassifications": [
+            {
+                "activity": "Select suitable equipment",
+                "substep": "Open and read request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's requirement of selecting suitable equipment based on the rental request.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the selection"
+            },
+            {
+                "activity": "Check availability",
+                "substep": "Record recommended equipment & supplier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's requirement of recording the recommended equipment and supplier.",
+                "ground_truth_reasoning": "Supports the process but doesn't directly add value to the requester"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 7
+            },
+            "BVA": {
+                "BVA": 3,
+                "VA": 2
+            },
+            "NVA": {}
+        }
+    }
+}

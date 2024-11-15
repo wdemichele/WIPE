@@ -1,0 +1,221 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Incoming call",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Answer the call"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather caller's information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record reason for call"
+                }
+            ]
+        },
+        {
+            "activity_name": "Call registration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new call record"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Capture caller's details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign unique call ID"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complaint analysis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify key issues"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze supporting evidence"
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve complainant's contact information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Initiate contact with complainant"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss complaint details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archiving system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve case information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store case documents"
+                }
+            ]
+        },
+        {
+            "activity_name": "Close case",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all necessary actions are completed"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update case status to closed"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Archive case documents"
+                }
+            ]
+        },
+        {
+            "activity_name": "External referral with form B4",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare referral form B4"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit referral form to external party"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Await response from external party"
+                }
+            ]
+        },
+        {
+            "activity_name": "Internal referral with form B2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare referral form B2"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit referral form internally"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign responsible party for follow-up"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephone confirmation to external party",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact external party for confirmation"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify details of referral"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document confirmation outcome"
+                }
+            ]
+        },
+        {
+            "activity_name": "Incident agenda",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule incident agenda meeting"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Invite relevant stakeholders"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss incident details and actions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Inform complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication to complainant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver communication to complainant"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm complainant's understanding"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                14.814814814814813
+            ],
+            "No Match": [
+                23,
+                85.18518518518519
+            ]
+        },
+        "average_confidence": 12.962962962962964,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 87.5,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 71.05263157894737,
+        "response_coverage": 63.63636363636363,
+        "average_sequence_alignment": 66.66666666666667,
+        "average_overall_similarity_score": 12.926666666666668
+    }
+}

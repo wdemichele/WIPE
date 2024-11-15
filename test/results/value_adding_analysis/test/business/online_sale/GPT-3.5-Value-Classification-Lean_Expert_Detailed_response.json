@@ -1,0 +1,291 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Seller displays items on the webpage",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare item descriptions and shipment details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to accurately describe the items and provide shipment details to the buyer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Upload information to seller's software or eBay platform",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to list the items on the seller's software or eBay platform."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure data is stored in eBay data stores",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to store the item data in eBay's data stores for future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Seller receives buyer's order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive order notification through web or mobile application",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to receive the buyer's order and initiate the order processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review order details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the order details and ensure accuracy."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify payment status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to verify the payment status and proceed with the order processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Seller sends to the buyer the order purchase confirmation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate order confirmation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate the order confirmation for the buyer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include relevant order and shipping details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to include relevant order and shipping details in the confirmation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send confirmation to buyer through eBay platform",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to send the order confirmation to the buyer through the eBay platform."
+                }
+            ]
+        },
+        {
+            "activity_name": "Seller sends the order to the shipping company",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare item for shipment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to prepare the item for shipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create shipping label",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to create a shipping label for the order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Hand over item to shipping company",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to hand over the item to the shipping company for delivery.\")classify(\"VA\", \"Buyer purchases the item\", \"Select item on eBay platform\", \"This step directly contributes to meeting the customer's need of selecting the item they want to purchase."
+                }
+            ]
+        },
+        {
+            "activity_name": "Buyer purchases the item",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Select item on eBay platform",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Choose payment method (credit card or PayPal)",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of selecting their preferred payment method."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Complete purchase and receive payment confirmation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of completing the purchase and receiving confirmation of the payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Buyer asks for reshipment of the item",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact seller through eBay platform",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to facilitate communication between the buyer and seller."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Explain issue and request reshipment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to understand the buyer's issue and request for reshipment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Await seller's response and further instructions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to wait for the seller's response and further instructions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Buyer asks for money reimbursement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact seller through eBay platform",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to facilitate communication between the buyer and seller."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Explain issue and request reimbursement",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to understand the buyer's issue and request for reimbursement."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide necessary details for refund process",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to gather the necessary details for the refund process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Shipping company gets item",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive item from seller",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to receive the item from the seller."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Scan and enter item into shipping system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to track and manage the item in the shipping system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign to appropriate shipping route",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assign the item to the appropriate shipping route.\")classify(\"VA\", \"Shipping company delivers item to the customer in proper dates\", \"Transport item through shipping network\", \"This step directly contributes to meeting customer needs by transporting the item to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Shipping company delivers item to the customer in proper dates",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Transport item through shipping network",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Attempt delivery to customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by attempting to deliver the item to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Obtain proof of delivery",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by obtaining proof of delivery."
+                }
+            ]
+        },
+        {
+            "activity_name": "Company does not deliver the purchase",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify reason for non-delivery",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to understand why the delivery was not made."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update shipping status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the shipping status in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Notify seller and buyer of delivery issue",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the seller and buyer about the delivery issue."
+                }
+            ]
+        },
+        {
+            "activity_name": "eBay tracks the order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Monitor order status through web/mobile applications",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to track the order status."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status based on shipping company updates",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status based on shipping company updates."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record buyer satisfaction and seller evaluation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record buyer satisfaction and seller evaluation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Seller receives buyer's decision and reimburses money",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review buyer's reimbursement request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the buyer's reimbursement request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process refund through eBay platform",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to process the refund through the eBay platform."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status and financial records",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the order status and financial records."
+                }
+            ]
+        }
+    ]
+}

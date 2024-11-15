@@ -1,0 +1,134 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine likelihood of the claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess claim liability"
+                }
+            ]
+        },
+        {
+            "activity_name": "Insured liable?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if insured is liable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate claim details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Insured not liable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Close the case"
+                }
+            ]
+        },
+        {
+            "activity_name": "Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Make a decision on the claim"
+                }
+            ]
+        },
+        {
+            "activity_name": "Initiate payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Start payment process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Advise claimant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Provide advice to the claimant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Join",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Combine claim and decision paths"
+                }
+            ]
+        },
+        {
+            "activity_name": "Claim closed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Close the claim"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Identical Match": [
+                1,
+                25.0
+            ],
+            "Granularity Difference": [
+                1,
+                25.0
+            ],
+            "No Match": [
+                1,
+                25.0
+            ],
+            "Functional Equivalence": [
+                1,
+                25.0
+            ]
+        },
+        "average_confidence": 65.0,
+        "average_confidence_by_match_type": {
+            "Identical Match": 100.0,
+            "Granularity Difference": 80.0,
+            "No Match": 0.0,
+            "Functional Equivalence": 80.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 40.909090909090914,
+        "average_sequence_alignment": 79.16666666666666,
+        "average_overall_similarity_score": 30.0
+    }
+}

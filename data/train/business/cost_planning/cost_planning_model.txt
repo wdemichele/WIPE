@@ -1,0 +1,9 @@
+graph LR
+    Start((Start)) -->|Cost planning must be conducted| A[Cost planning]
+    A --> B{Acceptable?}
+    B -->|yes| C[Plan data transfer]
+    B -->|no| D[Recalculation of costs]
+    C --> E{X}
+    D --> E
+    E --> F[Get approval for expenses]
+    F --> End((End))

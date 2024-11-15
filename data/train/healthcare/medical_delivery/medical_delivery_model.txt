@@ -1,0 +1,10 @@
+graph TD
+    A((Start)) --> B[Check destination]
+    B --> C[Set package as unknown]
+    C --> D[Register package into ERP]
+    D --> E[Write details on package]
+    E --> F[Print delivery form]
+    F --> G[Secure form in plastic packet]
+    G --> H[Tap plastic packet to package]
+    H --> I((End))
+    

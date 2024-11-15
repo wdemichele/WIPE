@@ -1,0 +1,284 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate the process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration SUBMITTED by EMPLOYEE",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Employee submits declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pre-approval required?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if pre-approval is required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver receives declaration for approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor receives declaration for approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pre-approver decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver reviews declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision: Approved, Rejected, or Missing info"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by MISSING",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Missing information in declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Pre-approver rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Supervisor decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor reviews declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision: Approved, Rejected, or Missing info"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by ADMINISTRATION",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration receives declaration for approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Administration decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration reviews declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision: Approved or Rejected"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by ADMINISTRATION",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by ADMINISTRATION",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by BUDGET OWNER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner receives declaration for approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Budget owner decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner reviews declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision: Approved or Rejected"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by BUDGET OWNER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by BUDGET OWNER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FINAL_APPROVED by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor gives final approval to declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate payment request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Handled",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process completed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by EMPLOYEE",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Employee rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Resubmit?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if resubmission is required"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                10,
+                45.45454545454545
+            ],
+            "Functional Equivalence": [
+                11,
+                50.0
+            ],
+            "Granularity Difference": [
+                1,
+                4.545454545454546
+            ]
+        },
+        "average_confidence": 42.04545454545455,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Functional Equivalence": 76.81818181818181,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 75.86206896551724,
+        "response_coverage": 45.3125,
+        "average_sequence_alignment": 86.27450980392157,
+        "average_overall_similarity_score": 38.6764705882353
+    }
+}

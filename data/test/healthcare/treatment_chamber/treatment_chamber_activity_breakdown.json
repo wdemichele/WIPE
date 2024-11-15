@@ -1,0 +1,82 @@
+[
+    {
+        "activity_name": "Evaluate the condition of patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Medical doctor reviews patient's medical history"
+            },
+            {
+                "step_number": 2,
+                "description": "Doctor and nurse perform physical examination"
+            },
+            {
+                "step_number": 3,
+                "description": "Doctor and nurse discuss initial assessment findings"
+            }
+        ]
+    },
+    {
+        "activity_name": "Test the patient in laboratory",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Technician prepares necessary laboratory equipment"
+            },
+            {
+                "step_number": 2,
+                "description": "Technician collects required samples from patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Technician performs specified laboratory tests"
+            },
+            {
+                "step_number": 4,
+                "description": "Technician documents and reports test results"
+            }
+        ]
+    },
+    {
+        "activity_name": "Treat patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Doctor reviews laboratory test results"
+            },
+            {
+                "step_number": 2,
+                "description": "Doctor and nurse discuss treatment options"
+            },
+            {
+                "step_number": 3,
+                "description": "Doctor and nurse administer agreed-upon treatment"
+            },
+            {
+                "step_number": 4,
+                "description": "Doctor and nurse monitor patient's response to treatment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prescribe medicines",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Doctor determines appropriate medications based on diagnosis and treatment"
+            },
+            {
+                "step_number": 2,
+                "description": "Doctor checks for potential drug interactions or allergies"
+            },
+            {
+                "step_number": 3,
+                "description": "Doctor writes prescription including dosage and instructions"
+            },
+            {
+                "step_number": 4,
+                "description": "Doctor issues medicine prescription to patient or caregiver"
+            }
+        ]
+    }
+]

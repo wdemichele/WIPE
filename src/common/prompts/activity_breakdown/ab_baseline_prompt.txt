@@ -1,0 +1,16 @@
+Break down the following business activities into their constituent substeps.
+
+Provide your output in JSON format, following this structure:
+{"activity_breakdown": [
+    {
+        "activity_name": "Name of the activity",
+        "substeps": [
+            {"step_number": 1, "description": "Description of substep 1"},
+            {"step_number": 2, "description": "Description of substep 2"},
+            ...
+        ]
+    },
+    ...
+]}
+
+For each activity, provide a list of substeps.

@@ -1,0 +1,245 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Receipt of application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application documents from applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving the necessary application documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log application in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of received applications, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Perform initial screening of application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by screening the application for initial eligibility."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send receipt confirmation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate confirmation message",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate the confirmation message, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send confirmation to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the confirmation message to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record confirmation sent in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of sent confirmations, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Invite to job interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Select suitable interview time slots",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by selecting interview time slots that are suitable for both the applicant and the business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare and send interview invitation to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the interview invitation to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update applicant status in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the applicant's status, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare employment agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve employment contract template",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by retrieving the employment contract template."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Customize contract with applicant details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by customizing the employment contract with the applicant's details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send draft to Head of Human Resources for review",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the employment contract, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Carry out job interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare interview questions and materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the necessary interview questions and materials."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct interview with applicant and Head of HR",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by conducting the job interview with the applicant and the Head of HR."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document interview results and recommendations",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by documenting the interview results and recommendations.\")classify(\"VA\", \"Send employment contract\", \"Finalize employment contract\", \"This step directly contributes to meeting customer needs by finalizing the employment contract."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send employment contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Finalize employment contract",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send contract to successful applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the employment contract to the successful applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update applicant status in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the applicant's status but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the rejection letter."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection letter to unsuccessful applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the rejection letter to the unsuccessful applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update applicant status in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the applicant's status but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receipt of signed employment contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive signed contract from applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving the signed employment contract from the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify contract details and signatures",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the contract details and signatures."
+                },
+                {
+                    "step_number": 3,
+                    "description": "File signed contract and update HR records",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by filing the signed contract and updating HR records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Applicant verified",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review applicant's documents and interview results",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the applicant's documents and interview results."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult with Head of Development if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to make informed decisions but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Make final decision on applicant's suitability",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by making the final decision on the applicant's suitability."
+                }
+            ]
+        },
+        {
+            "activity_name": "Rejection sent",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Confirm rejection decision with HR Department",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the rejection decision is confirmed but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure rejection letter is sent",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the rejection letter is sent."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update applicant status to 'Rejected' in HR system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the applicant's status but does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

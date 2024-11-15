@@ -1,0 +1,422 @@
+[
+    {
+        "activity_name": "Submit loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out loan application form",
+                "classification": "VA",
+                "reasoning": "Directly provides essential information for loan assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Attach required documents",
+                "classification": "VA",
+                "reasoning": "Provides crucial supporting evidence for loan application"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit application to Loan Officer",
+                "classification": "BVA",
+                "reasoning": "Necessary for process initiation but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check application completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all submitted documents",
+                "classification": "BVA",
+                "reasoning": "Ensures process integrity but doesn't directly assess loan eligibility"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required fields are filled",
+                "classification": "BVA",
+                "reasoning": "Necessary for completeness but doesn't evaluate loan worthiness"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if application is complete or incomplete",
+                "classification": "BVA",
+                "reasoning": "Crucial for process flow but doesn't directly assess the application"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return application to applicant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify missing or incomplete information",
+                "classification": "BVA",
+                "reasoning": "Necessary for completeness but doesn't evaluate loan worthiness"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare return notice with required corrections",
+                "classification": "BVA",
+                "reasoning": "Facilitates process completion but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Send application back to applicant",
+                "classification": "BVA",
+                "reasoning": "Necessary for process continuation but doesn't assess the application"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check application details",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's personal information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to assessing applicant's profile"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify loan amount and purpose",
+                "classification": "VA",
+                "reasoning": "Crucial for determining loan suitability"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate credit history check",
+                "classification": "BVA",
+                "reasoning": "Necessary step to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "step_number": 4,
+                "description": "Request property appraisal",
+                "classification": "BVA",
+                "reasoning": "Important for process but doesn't directly assess loan eligibility"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check credit history",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Request credit report from credit bureau",
+                "classification": "BVA",
+                "reasoning": "Necessary to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "step_number": 2,
+                "description": "Review credit score and payment history",
+                "classification": "VA",
+                "reasoning": "Directly contributes to assessing creditworthiness"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare credit history report",
+                "classification": "BVA",
+                "reasoning": "Summarizes findings but doesn't directly add new value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess loan risk",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review credit history report",
+                "classification": "VA",
+                "reasoning": "Directly contributes to risk assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult risk rules database",
+                "classification": "VA",
+                "reasoning": "Crucial for standardized risk evaluation"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate risk score",
+                "classification": "VA",
+                "reasoning": "Key metric for determining loan risk"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare risk assessment report",
+                "classification": "BVA",
+                "reasoning": "Summarizes findings but doesn't directly add new value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appraise property",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Schedule property inspection",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly assess property value"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct on-site property evaluation",
+                "classification": "VA",
+                "reasoning": "Directly determines property value"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare property appraisal report",
+                "classification": "BVA",
+                "reasoning": "Summarizes findings but doesn't directly add new value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess eligibility",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to eligibility decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze credit history report",
+                "classification": "VA",
+                "reasoning": "Critical for evaluating creditworthiness"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate risk assessment",
+                "classification": "VA",
+                "reasoning": "Crucial for determining loan risk"
+            },
+            {
+                "step_number": 4,
+                "description": "Consider property appraisal",
+                "classification": "VA",
+                "reasoning": "Important for assessing loan security"
+            },
+            {
+                "step_number": 5,
+                "description": "Make eligibility decision",
+                "classification": "VA",
+                "reasoning": "Final evaluation step directly leading to loan decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection",
+                "classification": "BVA",
+                "reasoning": "Important for compliance but doesn't change decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't alter outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to applicant",
+                "classification": "BVA",
+                "reasoning": "Required for process completion but doesn't add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare acceptance pack",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile loan terms and conditions",
+                "classification": "VA",
+                "reasoning": "Directly defines the value proposition to the customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare repayment schedule",
+                "classification": "VA",
+                "reasoning": "Crucial part of the loan offer"
+            },
+            {
+                "step_number": 3,
+                "description": "Include necessary legal documents",
+                "classification": "BVA",
+                "reasoning": "Necessary for compliance but doesn't directly add value to offer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check if home insurance quote is requested",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application for insurance request",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly relate to loan"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine if quote is needed",
+                "classification": "BVA",
+                "reasoning": "Process step but doesn't directly affect loan decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send home insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare home insurance quote",
+                "classification": "BVA",
+                "reasoning": "Adds value to customer but not directly related to loan"
+            },
+            {
+                "step_number": 2,
+                "description": "Include quote in acceptance pack",
+                "classification": "BVA",
+                "reasoning": "Enhances offer but doesn't directly affect loan terms"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send acceptance pack",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review acceptance pack for completeness",
+                "classification": "BVA",
+                "reasoning": "Ensures process integrity but doesn't change offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Send pack to applicant",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't alter offer"
+            },
+            {
+                "step_number": 3,
+                "description": "Set 2-week timer for response",
+                "classification": "BVA",
+                "reasoning": "Manages process flow but doesn't affect offer terms"
+            }
+        ]
+    },
+    {
+        "activity_name": "Verify repayment agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive applicant's response",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't change terms"
+            },
+            {
+                "step_number": 2,
+                "description": "Check if applicant agrees to terms",
+                "classification": "VA",
+                "reasoning": "Crucial for finalizing loan agreement"
+            },
+            {
+                "step_number": 3,
+                "description": "Record applicant's decision",
+                "classification": "BVA",
+                "reasoning": "Important for records but doesn't affect loan terms"
+            }
+        ]
+    },
+    {
+        "activity_name": "Cancel application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for cancellation",
+                "classification": "BVA",
+                "reasoning": "Important for records but doesn't change outcome"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status to 'Cancelled'",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify cancellation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare cancellation notice",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change outcome"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notice to applicant",
+                "classification": "BVA",
+                "reasoning": "Required for closure but doesn't add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Update internal records",
+                "classification": "BVA",
+                "reasoning": "Important for documentation but doesn't affect outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize loan terms",
+                "classification": "VA",
+                "reasoning": "Directly defines final value proposition to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status to 'Approved'",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't change terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare approval documentation",
+                "classification": "BVA",
+                "reasoning": "Important for records but doesn't affect loan terms"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify approval",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate approval letter",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change terms"
+            },
+            {
+                "step_number": 2,
+                "description": "Send approval notification to applicant",
+                "classification": "BVA",
+                "reasoning": "Required for process but doesn't alter loan terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate loan disbursement process",
+                "classification": "VA",
+                "reasoning": "Directly leads to delivery of loan value to customer"
+            }
+        ]
+    }
+]

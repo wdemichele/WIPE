@@ -1,0 +1,5 @@
+{
+    "equivalent": true,
+    "num_iterations": 1,
+    "final_mermaid_code": "%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px'}}}%%\nflowchart TB\n    subgraph ACME_AG\n        subgraph Applicant\n            A1([Receipt of application])\n        end\n        subgraph Human_Resources_Department\n            A1 --> B1[Send receipt confirmation]\n            B1 --> C1[Invite to job interview]\n            C1 --> D1[Prepare employment agreement]\n            D1 --> E1[Carry out job interview]\n            E1 --> F1{Applicant suitable?}\n            F1 -- Yes --> G1[Send employment contract]\n            G1 --> H1([Receipt of signed employment contract])\n            H1 --> I1([Signed employment contract is present])\n            F1 -- No --> J1[Send rejection]\n        end\n        subgraph Head_of_Human_Resources\n            B2[Applicant verified] --> L1{Application status?}\n            L1 -- Accept --> C1\n            L1 -- Reject --> J1\n            J1 --> M1[Rejection sent]\n            M1 --> K1([Applicant rejected])\n        end\n    end"
+}

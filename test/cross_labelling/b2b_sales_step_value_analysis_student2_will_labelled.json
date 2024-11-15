@@ -1,0 +1,156 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "Necessary for targeted marketing but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare marketing material",
+                "classification": "BVA",
+                "reasoning": "Essential for communication but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 3,
+                "description": "Send the marketing information",
+                "classification": "BVA",
+                "reasoning": "Initiates client contact but doesn't directly add value to the client"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check the response",
+                "classification": "VA",
+                "reasoning": "Directly engages with client's needs and interests"
+            },
+            {
+                "step_number": 2,
+                "description": "Record the response",
+                "classification": "BVA",
+                "reasoning": "Necessary for process tracking but doesn't directly add value to the client"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open application",
+                "classification": "NVA",
+                "reasoning": "Necessary step but doesn't directly add value to the application"
+            },
+            {
+                "step_number": 2,
+                "description": "Check application eligibility",
+                "classification": "VA",
+                "reasoning": "Directly contributes to determining if the client can receive the product/service"
+            },
+            {
+                "step_number": 3,
+                "description": "Record decision",
+                "classification": "BVA",
+                "reasoning": "Important for process management but doesn't directly add value to the client"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "Necessary for communication but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Send the rejection",
+                "classification": "VA",
+                "reasoning": "Provides important information to the client about their application status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "Necessary for communication but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact the client",
+                "classification": "VA",
+                "reasoning": "Directly engages with the client to move the process forward"
+            },
+            {
+                "step_number": 3,
+                "description": "Record the appointment detail",
+                "classification": "BVA",
+                "reasoning": "Important for internal organization but doesn't directly add value to the client"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare documentation",
+                "classification": "NVA",
+                "reasoning": "Necessary for effective discussion but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Attend appointment for discussion",
+                "classification": "VA",
+                "reasoning": "Directly engages with client to address needs and concerns"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "Necessary for communication but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Send the offer",
+                "classification": "VA",
+                "reasoning": "Directly provides value proposition to the client"
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify application status",
+                "classification": "BVA",
+                "reasoning": "Important for internal processes but doesn't directly add value to the client"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer application to filing",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to the client"
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+flowchart TD
+    Start([Patient registers in the hospital]) --> RecordData[Record the data of each patient]
+    RecordData --> ParallelSplit
+    ParallelSplit --> RegisterSSN[Register the SSN of the patient]
+    ParallelSplit --> RegisterName[Register the Name of the patient]
+    ParallelSplit --> RegisterSurname[Register the Surname of the patient]
+    RegisterSSN --> ParallelJoin
+    RegisterName --> ParallelJoin
+    RegisterSurname --> ParallelJoin
+    ParallelJoin --> PrintReferral[Print referral document]
+    PrintReferral --> ArchiveRecord[Archive the record in file system]
+    ArchiveRecord --> End([Registration completed])
+    
+    PrintReferral -.-> ReferralDoc[(Referral Document)]:::dataObject
+    ArchiveRecord -.-> Database[(Store record in data base)]:::dataObject
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef parallelGateway fill:#fff,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class Start,End event;
+    class RecordData,RegisterSSN,RegisterName,RegisterSurname,PrintReferral,ArchiveRecord activity;
+    class ParallelSplit,ParallelJoin parallelGateway;
+    class ReferralDoc,Database dataObject;
+
+    subgraph Clerks
+        Start
+        RecordData
+        ParallelSplit
+        RegisterSSN
+        RegisterName
+        RegisterSurname
+        ParallelJoin
+        PrintReferral
+        ArchiveRecord
+        End
+        ReferralDoc
+        Database
+    end

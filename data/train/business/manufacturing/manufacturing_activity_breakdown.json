@@ -1,0 +1,284 @@
+[
+    {
+        "activity_name": "Check stock availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access inventory management system"
+            },
+            {
+                "step_number": 2,
+                "description": "Search product in database"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify current stock levels"
+            },
+            {
+                "step_number": 4,
+                "description": "Update stock status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve product from warehouse",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate pick list"
+            },
+            {
+                "step_number": 2,
+                "description": "Locate product in warehouse"
+            },
+            {
+                "step_number": 3,
+                "description": "Pick product from shelf"
+            },
+            {
+                "step_number": 4,
+                "description": "Update inventory records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check raw materials availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access raw materials inventory"
+            },
+            {
+                "step_number": 2,
+                "description": "Check quantity of each required material"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if sufficient materials are available"
+            },
+            {
+                "step_number": 4,
+                "description": "Identify materials that need to be sourced"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request raw materials from Supplier 1",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare purchase order for Supplier 1"
+            },
+            {
+                "step_number": 2,
+                "description": "Send purchase order to Supplier 1"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm order receipt with Supplier 1"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule delivery of materials"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request raw materials from Supplier 2",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare purchase order for Supplier 2"
+            },
+            {
+                "step_number": 2,
+                "description": "Send purchase order to Supplier 2"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm order receipt with Supplier 2"
+            },
+            {
+                "step_number": 4,
+                "description": "Schedule delivery of materials"
+            }
+        ]
+    },
+    {
+        "activity_name": "Obtain raw materials from Supplier 1",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive shipment from Supplier 1"
+            },
+            {
+                "step_number": 2,
+                "description": "Inspect received materials"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory with new materials"
+            },
+            {
+                "step_number": 4,
+                "description": "Store materials in appropriate location"
+            }
+        ]
+    },
+    {
+        "activity_name": "Obtain raw materials from Supplier 2",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive shipment from Supplier 2"
+            },
+            {
+                "step_number": 2,
+                "description": "Inspect received materials"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory with new materials"
+            },
+            {
+                "step_number": 4,
+                "description": "Store materials in appropriate location"
+            }
+        ]
+    },
+    {
+        "activity_name": "Manufacture product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare manufacturing order"
+            },
+            {
+                "step_number": 2,
+                "description": "Set up production line"
+            },
+            {
+                "step_number": 3,
+                "description": "Produce product"
+            },
+            {
+                "step_number": 4,
+                "description": "Perform quality control checks"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirm order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order details"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify product availability or completion"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate order confirmation"
+            },
+            {
+                "step_number": 4,
+                "description": "Send confirmation to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get shipment address",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve customer information"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify shipping address"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm address with customer if necessary"
+            },
+            {
+                "step_number": 4,
+                "description": "Update shipping information in order"
+            }
+        ]
+    },
+    {
+        "activity_name": "Emit invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate total order cost"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate invoice document"
+            },
+            {
+                "step_number": 3,
+                "description": "Review invoice for accuracy"
+            },
+            {
+                "step_number": 4,
+                "description": "Send invoice to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ship product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Package product for shipping"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate shipping label"
+            },
+            {
+                "step_number": 3,
+                "description": "Arrange carrier pickup"
+            },
+            {
+                "step_number": 4,
+                "description": "Update order status to shipped"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Process payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Update order status to paid"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify order completion"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer order to archive system"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status to archived"
+            }
+        ]
+    }
+]

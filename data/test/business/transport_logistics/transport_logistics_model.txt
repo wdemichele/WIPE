@@ -1,0 +1,44 @@
+flowchart TD
+    subgraph Customer
+        C_Start([Start]) --> C_CreateOrder[Create Order]
+        C_CreateOrder --> C_SendOrder[Send Order Request]
+        C_ReceiveProduct([Receive Product]) --> C_Counter[Counter Proposal Received]
+        C_Counter --> C_CounterProposal[Counter Proposal]
+        C_CounterProposal --> C_End([End])
+    end
+
+    subgraph Supplier
+        S_Start([Start]) --> S_ReceiveOrder[Receive Order]
+        S_ReceiveOrder --> S_CheckStock{Check Stock}
+        S_CheckStock -->|Yes| S_PrepareShipping[Prepare for Shipping]
+        S_CheckStock -->|No| S_CheckMaterials{Check Materials}
+        S_CheckMaterials -->|Available| S_Manufacture[Manufacture Product]
+        S_CheckMaterials -->|Not Available| S_OrderMaterials[Order Materials]
+        S_OrderMaterials --> S_Manufacture
+        S_Manufacture --> S_PrepareShipping
+        S_PrepareShipping --> S_Ship[Ship Product]
+        S_Ship --> S_CalculateCosts[Calculate Costs]
+        S_CalculateCosts --> S_CreateInvoice[Create Invoice]
+        S_CreateInvoice --> S_SendInvoice[Send Invoice]
+        S_SendInvoice --> S_ReceivePayment[Receive Payment]
+        S_ReceivePayment --> S_End([End])
+    end
+
+    C_SendOrder --> S_ReceiveOrder
+    S_Ship --> C_ReceiveProduct
+    C_CounterProposal -.-> S_ReceiveOrder
+
+    %% Data Stores
+    C_CreateOrder -.-> OrderStore[(Order Store)]
+    S_ReceiveOrder -.-> OrderStore
+    S_ReceiveOrder -.-> TransportationStore[(Transportation Information)]
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef datastore fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class C_Start,C_ReceiveProduct,C_End,S_Start,S_End event;
+    class S_CheckStock,S_CheckMaterials gateway;
+    class C_CreateOrder,C_SendOrder,C_Counter,C_CounterProposal,S_ReceiveOrder,S_PrepareShipping,S_Manufacture,S_OrderMaterials,S_Ship,S_CalculateCosts,S_CreateInvoice,S_SendInvoice,S_ReceivePayment activity;
+    class OrderStore,TransportationStore datastore;

@@ -1,0 +1,130 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access work equipment inventory database",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for checking the stock levels and verifying the availability of required work equipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify availability of required work equipment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for ensuring that the required work equipment is available."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document current stock levels",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for keeping track of the stock levels and maintaining accurate inventory records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve work equipment from the storeroom",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate work equipment in storeroom",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of retrieving the work equipment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Remove equipment from storage",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of retrieving the work equipment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory records",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for keeping track of the stock levels and maintaining accurate inventory records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Specify and quantify requirements",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine exact type and model of work equipment needed",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of specifying the exact type and model of work equipment needed."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate required quantity",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of calculating the required quantity of work equipment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document specifications for procurement",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for documenting the specifications for procurement and ensuring that the correct work equipment is procured."
+                }
+            ]
+        },
+        {
+            "activity_name": "Place order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter order details into ERP System",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of placing an order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select supplier from approved vendor list",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for selecting a supplier from the approved vendor list."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit order through ERP System",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Place order by e-mail",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve order request template",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for retrieving the order request template."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Fill in template with order details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for filling in the order details in the order request template."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send e-mail to supplier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of placing an order by e-mail."
+                }
+            ]
+        }
+    ]
+}

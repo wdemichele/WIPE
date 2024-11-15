@@ -1,0 +1,407 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Package receipt at dock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by unloading the package."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Stockpile package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by organizing the packages for further processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Move to pallets",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the packages for transportation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Wait until pallet is full",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to efficiently utilize pallet space but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Move to receiving room",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by transferring the packages to the next processing area."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the receiving room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to workstation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the package for processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check destination",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the package is sent to the correct location."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set as unknown",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by flagging packages with unknown destinations for further investigation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Register package into ERP",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the package in the enterprise resource planning system."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Write details on package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information on the package."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Print delivery form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by generating a form for delivery."
+                },
+                {
+                    "step_number": 7,
+                    "description": "Fold and insert the form into a plastic packet",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by packaging the delivery form."
+                },
+                {
+                    "step_number": 8,
+                    "description": "Tape plastic packet to package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by securing the delivery form to the package."
+                },
+                {
+                    "step_number": 9,
+                    "description": "Place in temporary location",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by storing the package temporarily."
+                },
+                {
+                    "step_number": 10,
+                    "description": "Move package to pallet",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the package for transportation."
+                },
+                {
+                    "step_number": 11,
+                    "description": "Wait until 8 packages are processed",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to efficiently utilize resources but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 12,
+                    "description": "Move to rack room",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by transferring the packages to the next processing area."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the rack room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to rack",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by positioning the package for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Sort package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by organizing the packages for delivery."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Load package to designated pallet",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the package for transportation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Deliver to designated par location",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by delivering the package to the specified location."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package delivery to par location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the package for further processing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Scan package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the package in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discard package",
+                    "classification": "NVA",
+                    "reasoning": "Does not add value for the customer as the package is being discarded."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify requester",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by informing the requester about the package status."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Return to receiving room",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by transferring the package back to the receiving room."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Stock package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by organizing the package for further processing."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 27,
+        "correct_classifications": 2,
+        "accuracy": 0.07407407407407407,
+        "misclassifications": [
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Unload package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by unloading the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Stockpile package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by organizing the packages for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Move to pallets",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the packages for transportation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Wait until pallet is full",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for the business to efficiently utilize pallet space but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Move to receiving room",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by transferring the packages to the next processing area.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move to workstation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the package for processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Check destination",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring the package is sent to the correct location.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Set as unknown",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by flagging packages with unknown destinations for further investigation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Register package into ERP",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the package in the enterprise resource planning system.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Write details on package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing necessary information on the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Print delivery form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by generating a form for delivery.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Fold and insert the form into a plastic packet",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by packaging the delivery form.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Tape plastic packet to package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by securing the delivery form to the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Place in temporary location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by storing the package temporarily.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move package to pallet",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the package for transportation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Wait until 8 packages are processed",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for the business to efficiently utilize resources but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move to rack room",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by transferring the packages to the next processing area.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Move to rack",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by positioning the package for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Sort package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by organizing the packages for delivery.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Load package to designated pallet",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the package for transportation.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Deliver to designated par location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by delivering the package to the specified location.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Unload package from pallet",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the package for further processing.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Scan package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the package in the system.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Return to receiving room",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by transferring the package back to the receiving room.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Stock package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by organizing the package for further processing.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 8
+            },
+            "NVA": {
+                "VA": 15,
+                "BVA": 2,
+                "NVA": 1
+            },
+            "VA": {
+                "VA": 1
+            }
+        }
+    }
+}

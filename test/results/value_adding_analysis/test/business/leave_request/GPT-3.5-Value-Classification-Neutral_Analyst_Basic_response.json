@@ -1,0 +1,153 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Verify Available Vacation Days",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access employee's vacation day records",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of verifying available vacation days."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate remaining available vacation days",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of verifying available vacation days."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm if requested leave is within available days",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of verifying available vacation days."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register Vacation Leave Request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Input employee's vacation leave details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the employee's vacation leave details, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record requested dates in the system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the requested vacation leave dates in the system, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit request for review",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to submit the vacation leave request for review, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Approve Vacation Leave Request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review vacation leave request details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the vacation leave request details, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for conflicts with team schedules",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to check for conflicts with team schedules, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Make decision on approval or rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to make a decision on the approval or rejection of the vacation leave request, but it does not directly add value for the customer.\")classify(\"VA\", \"Send Rejection Message\", \"Prepare rejection notification\", \"This step directly contributes to meeting the customer's need of receiving a rejection notification."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Rejection Message",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection notification",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include reason for rejection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of understanding the reason for rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection message to employee",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of receiving the rejection message."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Approval Message",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare approval notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of receiving an approval notification."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include approved vacation dates",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of understanding the approved vacation dates."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send approval message to employee",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of receiving the approval message."
+                }
+            ]
+        },
+        {
+            "activity_name": "Update Payroll System",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access employee's payroll record",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to access the employee's payroll record, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record approved vacation days",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record the approved vacation days, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Adjust pay calculation for vacation period",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to adjust the pay calculation for the vacation period, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

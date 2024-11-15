@@ -1,0 +1,268 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check Application Procedure",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review RIS application guidelines",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for understanding the application process, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify relevant application paths (Nano, Data, EU)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Gather necessary documentation for chosen paths",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for completing the application process, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply to Nano Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare Nano-specific application materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of applying to the Nano program."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review Nano application requirements",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for understanding the application requirements, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate Nano application process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of applying to the Nano program."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply Data API",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare data-related application materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of applying for the Data API."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review Data API documentation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for understanding the Data API, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set up API access credentials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for accessing the Data API, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply to EU Projects",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify relevant EU project calls",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining the appropriate EU project to apply for, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare EU project proposal",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of applying for EU projects."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review EU application guidelines",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for understanding the EU application process, but it does not directly add value for the customer.\")classify(\"VA\", \"Apply via API (Nano)\", \"Set up API connection for Nano application\", \"This step directly contributes to meeting customer needs by establishing the API connection for the Nano application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply via API (Nano)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Set up API connection for Nano application",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Format application data according to API requirements",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by formatting the application data according to the API requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit Nano application through API",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by submitting the Nano application through the API."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send Request to European Commission",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all required Nano application documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to compile all the required documents for the Nano application, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit Nano application package to European Commission",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to submit the Nano application package to the European Commission, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Receive confirmation of submission",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to receive confirmation of the submission from the European Commission, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply via API (Data)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Set up API connection for Data application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by establishing the API connection for the Data application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Format data according to API specifications",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by formatting the data according to the API specifications."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit Data application through API",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by submitting the Data application through the API."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check Data",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted data for completeness",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the submitted data for completeness."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify data accuracy and format",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the accuracy and format of the data."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm successful data submission",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by confirming the successful submission of the data.\")classify(\"VA\", \"Apply via EU Portal\", \"Access EU application portal\", \"This step directly contributes to the process by allowing the user to access the EU application portal."
+                }
+            ]
+        },
+        {
+            "activity_name": "Apply via EU Portal",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access EU application portal",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Navigate to relevant project application section",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to navigate to the relevant project application section."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input project proposal details into portal",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to input project proposal details into the portal."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send your Documents",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Upload all required project documents to EU portal",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to upload all required project documents to the EU portal."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review uploaded documents for completeness",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to review uploaded documents for completeness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit final EU project application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to submit the final EU project application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get EU Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Monitor EU portal for decision updates",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to monitor the EU portal for decision updates."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive notification of EU project decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to receive notification of the EU project decision."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review decision details and any feedback provided",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by allowing the user to review decision details and any feedback provided."
+                }
+            ]
+        }
+    ]
+}

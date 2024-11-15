@@ -1,0 +1,228 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Perform credit check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve client's credit history",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by gathering information about the client's credit history."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze credit score and financial records",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by assessing the client's credit score and financial records."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document credit check results",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep a record of the credit check results, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform credibility check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify client's provided information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the accuracy of the client's provided information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess client's financial stability",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by evaluating the client's financial stability."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Compile credibility assessment report",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to document the credibility assessment, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection letter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft rejection letter with explanation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by providing an explanation for the rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and approve letter content",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the accuracy and quality of the rejection letter, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send letter to client and update records",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by notifying the client of the rejection and updating the records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Call client to complement information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify missing or unclear information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by identifying any missing or unclear information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact client and request additional details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reaching out to the client and requesting additional information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update client's file with new information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the client's file with the newly provided information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create loan offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine suitable loan terms based on assessment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by determining the loan terms that are suitable for the client."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate interest rates and repayment schedule",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by calculating the interest rates and repayment schedule for the loan."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare formal loan offer document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the formal loan offer document.\")classify(\"VA\", \"Send loan offer\", \"Review final loan offer for accuracy\", \"This step directly contributes to meeting customer needs by ensuring the accuracy of the loan offer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send loan offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review final loan offer for accuracy",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare accompanying explanation letter",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to provide additional information and context to the loan offer, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send offer to client and log in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the loan offer to the client and recording it in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Remind client",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check status of sent offer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine the status of the sent offer, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact client with reminder",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reminding the client about the loan offer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update client communication log",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of communication with the client, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Activate loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive and verify accepted offer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the acceptance of the loan offer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process loan activation in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by activating the loan application in the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Notify relevant departments",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform relevant departments about the activated loan application, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Execute initial payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify loan terms and client's account details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the accuracy of the loan terms and client's account details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process initial loan disbursement",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by disbursing the initial loan amount."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send payment confirmation to client",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by confirming the payment to the client."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update loan status in financial system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the loan status in the financial system, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

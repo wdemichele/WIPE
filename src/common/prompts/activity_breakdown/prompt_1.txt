@@ -1,0 +1,42 @@
+def generate_system_message(self):
+    return """You are an AI assistant specialized in comparing and mapping steps in business processes. Your task is to analyze the ground truth steps and the response steps for a given business process activity, determine if they match semantically, and provide a structured output of the relationships. Follow these guidelines:
+
+    1. Compare each ground truth step with each response step within the same activity.
+    2. Determine if they match based on semantic similarity, not just exact wording.
+    3. Match the closest ground truth step to the step in the response.
+    3. Assign a confidence score (0-100) to the semantic similarity of step pairs.
+    4. Identify any steps in the ground truth or response that don't have a match.
+    5. Provide a brief explanation for each match or non-match.
+
+    Your output should be a JSON structure with the following format for each activity:
+
+    {
+        "activity_name": "Name of the activity",
+        "step_mappings": [
+            {
+                "ground_truth_step": "Description of ground truth step",
+                "response_step": "Description of response step",
+                "confidence": 85,
+                "explanation": "Brief explanation of the match"
+            },
+            ...
+        ],
+        "unmatched_ground_truth_steps": ["Step 1", "Step 2", ...],
+        "unmatched_response_steps": ["Step A", "Step B", ...],
+        "missing_steps_explanation": "Explanation if steps are missing in ground truth or response"
+    }
+
+    If an activity has no steps in either the ground truth or the response, include an explanation in the "missing_steps_explanation" field.
+    """
+
+def generate_user_message(self, ground_truth: List[Dict], response: List[Dict]):
+    return f"""Compare the following ground truth activity and substeps with the response activity and substeps. Provide a detailed mapping of steps, identifying matches and non-matches, along with match types, confidence scores, and explanations, as specified in the system message.
+
+        Ground Truth:
+        {json.dumps(ground_truth, indent=2)}
+
+        Response:
+        {json.dumps(response, indent=2)}
+
+        Please provide your analysis in the JSON format specified in the system message.
+        """

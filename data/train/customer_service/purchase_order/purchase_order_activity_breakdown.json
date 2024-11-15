@@ -1,0 +1,176 @@
+[
+    {
+        "activity_name": "Check stock availability",
+        "performer": "System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Query inventory database"
+            },
+            {
+                "step_number": 2,
+                "description": "Compare requested quantity with available stock"
+            },
+            {
+                "step_number": 3,
+                "description": "Update stock status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject order",
+        "performer": "System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate rejection notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Send rejection email to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve product from warehouse",
+        "performer": "Warehouse staff",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate product in warehouse"
+            },
+            {
+                "step_number": 2,
+                "description": "Pick product from shelf"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify product details and quantity"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare product for shipping"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirm order",
+        "performer": "System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate order confirmation"
+            },
+            {
+                "step_number": 2,
+                "description": "Send confirmation email to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get shipment address",
+        "performer": "System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve customer address from database"
+            },
+            {
+                "step_number": 2,
+                "description": "Validate address format"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm shipping address with customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ship product",
+        "performer": "Shipping department",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Package product securely"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate shipping label"
+            },
+            {
+                "step_number": 3,
+                "description": "Arrange pickup with courier"
+            },
+            {
+                "step_number": 4,
+                "description": "Update order status to shipped"
+            }
+        ]
+    },
+    {
+        "activity_name": "Emit invoice",
+        "performer": "Accounting department",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate invoice with order details"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate total amount including taxes and shipping"
+            },
+            {
+                "step_number": 4,
+                "description": "Send invoice to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive payment",
+        "performer": "Accounting department",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Process customer payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify payment amount"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status to paid"
+            },
+            {
+                "step_number": 4,
+                "description": "Issue payment receipt"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive order",
+        "performer": "System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all order-related documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Store order information in long-term database"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status to archived"
+            }
+        ]
+    }
+]

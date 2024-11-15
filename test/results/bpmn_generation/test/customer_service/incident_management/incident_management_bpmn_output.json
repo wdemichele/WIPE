@@ -1,0 +1,5 @@
+{
+    "equivalent": true,
+    "num_iterations": 1,
+    "final_mermaid_code": "graph TB\n    subgraph Incident Manager\n        A([Receive the Request])\n    end\n\n    subgraph Incident Manager - 1st Level Support\n        B[Verify Request]\n        C[Sending the Order for Request Handling]\n    end\n\n    subgraph 1st Level Support\n        D[Receiving the Order]\n        E{Is the Request Authorized?}\n        F[Request Logging, Categorization and Prioritization]\n        G[Request Monitoring and Escalation]\n        H[Request Closure and Evaluation]\n    end\n\n    subgraph Service Request Fulfillment Group - 1st Level Support\n        I[Request Model Execution]\n    end\n\n    subgraph Request Fulfillment\n        J[Request Fulfillment Support]\n    end\n\n    %% Flows\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n    E -- yes --> F\n    E -- no --> G\n    G --> H\n    H -->|Was there a problem with the request processing or the request record?| I\n    I --> J\n    J -->|successful end to the process| K([End])\n    H -->|contact the incident manager about the problem| L([End])"
+}

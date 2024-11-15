@@ -1,0 +1,222 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare relevant marketing materials",
+                "classification": "NVA",
+                "reasoning": "Supports the process but doesn't directly assess application"
+            },
+            {
+                "step_number": 2,
+                "description": "Customize information based on application",
+                "classification": "BVA",
+                "reasoning": "Enhances customer experience but doesn't directly evaluate eligibility"
+            },
+            {
+                "step_number": 3,
+                "description": "Send marketing package to applicant",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't affect application assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor incoming communications",
+                "classification": "NVA",
+                "reasoning": "Necessary for process but doesn't directly evaluate application"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify response from applicant",
+                "classification": "BVA",
+                "reasoning": "Important for process flow but doesn't assess eligibility"
+            },
+            {
+                "step_number": 3,
+                "description": "Log response method (email or post)",
+                "classification": "NVA",
+                "reasoning": "Useful for record-keeping but doesn't affect application decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to evaluating the application"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify provided information",
+                "classification": "VA",
+                "reasoning": "Critical for ensuring accuracy of application data"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate applicant's eligibility",
+                "classification": "VA",
+                "reasoning": "Core step in determining whether to approve the application"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine if clarification is needed",
+                "classification": "VA",
+                "reasoning": "Directly impacts the quality of the assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection",
+                "classification": "BVA",
+                "reasoning": "Important for compliance but doesn't change the decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter",
+                "classification": "NVA",
+                "reasoning": "Necessary for communication but doesn't alter the outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to applicant",
+                "classification": "BVA",
+                "reasoning": "Required for process completion but doesn't affect decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Update application status to 'Rejected'",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't change the outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify available time slots",
+                "classification": "NVA",
+                "reasoning": "Facilitates process but doesn't directly assess application"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact applicant to schedule appointment",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't evaluate eligibility"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm appointment details",
+                "classification": "BVA",
+                "reasoning": "Ensures smooth process but doesn't affect application decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Send appointment reminder",
+                "classification": "BVA",
+                "reasoning": "Improves efficiency but doesn't impact application assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application with applicant",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and assessing the application"
+            },
+            {
+                "step_number": 2,
+                "description": "Clarify any unclear points",
+                "classification": "VA",
+                "reasoning": "Crucial for accurate assessment of the application"
+            },
+            {
+                "step_number": 3,
+                "description": "Gather additional information if needed",
+                "classification": "BVA",
+                "reasoning": "Directly impacts the quality of the assessment"
+            },
+            {
+                "step_number": 4,
+                "description": "Update application with new information",
+                "classification": "BVA",
+                "reasoning": "Ensures the most accurate and up-to-date information for decision-making"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare offer details",
+                "classification": "NVA",
+                "reasoning": "Preparation not valuable in itself, but necessary for the offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft offer letter",
+                "classification": "NVA",
+                "reasoning": "Necessary for communication but doesn't change offer terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Review offer for accuracy",
+                "classification": "VA",
+                "reasoning": "Ensures correctness of the offer, directly impacting the outcome"
+            },
+            {
+                "step_number": 4,
+                "description": "Send offer to applicant",
+                "classification": "BVA",
+                "reasoning": "Required for process completion but doesn't alter the offer"
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Organize all application documents",
+                "classification": "NVA",
+                "reasoning": "Important for record-keeping but doesn't affect decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't change the outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Store application in appropriate system",
+                "classification": "BVA",
+                "reasoning": "Essential for compliance and future reference but doesn't alter decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Ensure all data protection requirements are met",
+                "classification": "BVA",
+                "reasoning": "Critical for compliance but doesn't directly impact application decision"
+            }
+        ]
+    }
+]

@@ -1,0 +1,451 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Create claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initialize new claim in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by initializing a new claim in the system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign unique claim identifier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by assigning a unique identifier to the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input initial claim details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by inputting the initial details of the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Record claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review claim documentation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the claim documentation but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter detailed claim information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by entering detailed information about the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Attach supporting documents to claim record",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by attaching supporting documents to the claim record."
+                }
+            ]
+        },
+        {
+            "activity_name": "Decide on claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate claim details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the claim details but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check claim against policy terms",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to check the claim against policy terms but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine claim validity",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine the validity of the claim but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make decision on claim acceptance or rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to make a decision on whether to accept or reject the claim but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Offer benefit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate benefit amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by calculating the amount of benefit to be offered."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare benefit offer document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by preparing a document outlining the benefit offer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send benefit offer to claimant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by sending the benefit offer to the claimant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare claim discharge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate claim discharge document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by generating a document for claim discharge."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review discharge for accuracy",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by reviewing the claim discharge document for accuracy."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send discharge document to claimant for signature",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by sending the claim discharge document to the claimant for signature.\")classify(\"VA\", \"Record benefit payment\", \"Enter benefit payment details in system\", \"This step directly contributes to meeting customer needs by recording the payment details."
+                }
+            ]
+        },
+        {
+            "activity_name": "Record benefit payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter benefit payment details in system",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Link payment record to claim",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by linking the payment record to the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update claim status to 'Payment Recorded'",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the claim status to 'Payment Recorded'."
+                }
+            ]
+        },
+        {
+            "activity_name": "Close claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all claim processes are complete",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure that all claim processes are complete before closing the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update claim status to 'Closed'",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the claim status to 'Closed' after all processes are complete."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Archive claim documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to archive the claim documents after the claim is closed."
+                }
+            ]
+        },
+        {
+            "activity_name": "Operate outgoing payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate payment process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by initiating the payment process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the payment details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Execute payment transaction",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by executing the payment transaction."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm successful payment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by confirming the successful payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for claim rejection",
+                    "classification": "NVA",
+                    "reasoning": "This step does not contribute to meeting customer needs or business functions as it is only documenting the reasons for claim rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection notification",
+                    "classification": "NVA",
+                    "reasoning": "This step does not contribute to meeting customer needs or business functions as it is only preparing the rejection notification."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to claimant",
+                    "classification": "NVA",
+                    "reasoning": "This step does not contribute to meeting customer needs or business functions as it is only sending the rejection notification to the claimant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review claim rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive rejection appeal from claimant",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to receive the rejection appeal from the claimant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Re-examine claim details and rejection reasons",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to re-examine the claim details and rejection reasons."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with relevant departments if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to consult with relevant departments if further information is required."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make final decision on rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to make the final decision on the claim rejection."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 33,
+        "correct_classifications": 12,
+        "accuracy": 0.36363636363636365,
+        "misclassifications": [
+            {
+                "activity": "Create claim",
+                "substep": "Initialize new claim in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by initializing a new claim in the system.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Create claim",
+                "substep": "Assign unique claim identifier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by assigning a unique identifier to the claim.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly contribute to claim resolution"
+            },
+            {
+                "activity": "Record claim",
+                "substep": "Review claim documentation",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to review the claim documentation but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical for understanding claim details and validity"
+            },
+            {
+                "activity": "Decide on claim",
+                "substep": "Evaluate claim details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the claim details but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Core activity in determining claim validity"
+            },
+            {
+                "activity": "Decide on claim",
+                "substep": "Check claim against policy terms",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to check the claim against policy terms but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Essential for ensuring claim aligns with coverage"
+            },
+            {
+                "activity": "Decide on claim",
+                "substep": "Determine claim validity",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to determine the validity of the claim but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical decision point in claim process"
+            },
+            {
+                "activity": "Decide on claim",
+                "substep": "Make decision on claim acceptance or rejection",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to make a decision on whether to accept or reject the claim but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Final determination that directly affects claim outcome"
+            },
+            {
+                "activity": "Offer benefit",
+                "substep": "Prepare benefit offer document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by preparing a document outlining the benefit offer.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change benefit amount"
+            },
+            {
+                "activity": "Offer benefit",
+                "substep": "Send benefit offer to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by sending the benefit offer to the claimant.",
+                "ground_truth_reasoning": "Important for process but doesn't alter benefit decision"
+            },
+            {
+                "activity": "Prepare claim discharge",
+                "substep": "Generate claim discharge document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by generating a document for claim discharge.",
+                "ground_truth_reasoning": "Necessary for legal closure but doesn't affect claim outcome"
+            },
+            {
+                "activity": "Prepare claim discharge",
+                "substep": "Send discharge document to claimant for signature",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by sending the claim discharge document to the claimant for signature.\")classify(\"VA\", \"Record benefit payment\", \"Enter benefit payment details in system\", \"This step directly contributes to meeting customer needs by recording the payment details.",
+                "ground_truth_reasoning": "Required for process completion but doesn't change discharge terms"
+            },
+            {
+                "activity": "Record benefit payment",
+                "substep": "Link payment record to claim",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by linking the payment record to the claim.",
+                "ground_truth_reasoning": "Important for tracking but doesn't change payment"
+            },
+            {
+                "activity": "Record benefit payment",
+                "substep": "Update claim status to 'Payment Recorded'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by updating the claim status to 'Payment Recorded'.",
+                "ground_truth_reasoning": "Necessary for process management but doesn't affect claim outcome"
+            },
+            {
+                "activity": "Close claim",
+                "substep": "Verify all claim processes are complete",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to ensure that all claim processes are complete before closing the claim.",
+                "ground_truth_reasoning": "Ensures all necessary steps have been taken"
+            },
+            {
+                "activity": "Operate outgoing payment",
+                "substep": "Confirm successful payment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by confirming the successful payment.",
+                "ground_truth_reasoning": "Ensures process completion but doesn't change payment"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Document reasons for claim rejection",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step does not contribute to meeting customer needs or business functions as it is only documenting the reasons for claim rejection.",
+                "ground_truth_reasoning": "Provides essential justification for decision"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Prepare rejection notification",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not contribute to meeting customer needs or business functions as it is only preparing the rejection notification.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change decision"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Send rejection notification to claimant",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not contribute to meeting customer needs or business functions as it is only sending the rejection notification to the claimant.",
+                "ground_truth_reasoning": "Required for process but doesn't alter rejection decision"
+            },
+            {
+                "activity": "Review claim rejection",
+                "substep": "Re-examine claim details and rejection reasons",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to re-examine the claim details and rejection reasons.",
+                "ground_truth_reasoning": "Core activity in reassessing claim validity"
+            },
+            {
+                "activity": "Review claim rejection",
+                "substep": "Consult with relevant departments if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to consult with relevant departments if further information is required.",
+                "ground_truth_reasoning": "Contributes to thorough review of rejection decision"
+            },
+            {
+                "activity": "Review claim rejection",
+                "substep": "Make final decision on rejection",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to make the final decision on the claim rejection.",
+                "ground_truth_reasoning": "Critical determination that directly affects claim outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8,
+                "BVA": 9,
+                "NVA": 1
+            },
+            "BVA": {
+                "VA": 9,
+                "BVA": 4,
+                "NVA": 2
+            },
+            "NVA": {}
+        }
+    }
+}

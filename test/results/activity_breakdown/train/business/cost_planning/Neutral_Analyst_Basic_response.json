@@ -1,0 +1,71 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct cost planning"
+                }
+            ]
+        },
+        {
+            "activity_name": "Cost planning",
+            "substeps": []
+        },
+        {
+            "activity_name": "Acceptable?",
+            "substeps": []
+        },
+        {
+            "activity_name": "Plan data transfer",
+            "substeps": []
+        },
+        {
+            "activity_name": "Recalculation of costs",
+            "substeps": []
+        },
+        {
+            "activity_name": "X",
+            "substeps": []
+        },
+        {
+            "activity_name": "Get approval for expenses",
+            "substeps": []
+        },
+        {
+            "activity_name": "End",
+            "substeps": []
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                1,
+                20.0
+            ],
+            "No Match": [
+                4,
+                80.0
+            ]
+        },
+        "average_confidence": 16.0,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 66.66666666666666,
+        "response_coverage": 64.0,
+        "average_sequence_alignment": 6.25,
+        "average_overall_similarity_score": 20.0
+    }
+}

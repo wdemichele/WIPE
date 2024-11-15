@@ -1,0 +1,352 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Detailed",
+        "components": {
+            "role_description": "process_engineer",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive prescription from customer",
+                    "classification": "VA",
+                    "reasoning": "Directly initiates the process of fulfilling the customer's prescription."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log into pharmacy system",
+                    "classification": "VA",
+                    "reasoning": "Enables access to necessary information for processing the prescription."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input patient information",
+                    "classification": "VA",
+                    "reasoning": "Essential for identifying the patient and ensuring accurate prescription processing."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Enter medication details (name, dosage, quantity)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Input prescriber information",
+                    "classification": "VA",
+                    "reasoning": "Required for maintaining a record of the prescriber and ensuring accountability."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR (Drug Utilization Review)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for drug-drug interactions",
+                    "classification": "BVA",
+                    "reasoning": "Necessary to ensure patient safety and prevent harmful drug interactions."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify appropriate dosage",
+                    "classification": "BVA",
+                    "reasoning": "Critical for ensuring the prescribed dosage is safe and effective for the patient."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check for allergies",
+                    "classification": "BVA",
+                    "reasoning": "Important to identify any potential allergic reactions to the prescribed medication."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify potential adverse effects",
+                    "classification": "BVA",
+                    "reasoning": "Crucial for assessing the potential risks and benefits of the prescribed medication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details",
+                    "classification": "BVA",
+                    "reasoning": "Ensures accuracy and completeness of the prescription before proceeding."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate DUR alarms",
+                    "classification": "BVA",
+                    "reasoning": "Addresses any potential issues identified during the Drug Utilization Review."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with prescriber if necessary",
+                    "classification": "BVA",
+                    "reasoning": "Allows for clarification or modification of the prescription if needed."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make professional judgment on proceeding",
+                    "classification": "BVA",
+                    "reasoning": "Involves the pharmacist's expertise in assessing the appropriateness of the prescription."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance information",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for determining coverage and processing the prescription accordingly."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit claim to insurance provider",
+                    "classification": "BVA",
+                    "reasoning": "Required for reimbursement and financial processing of the prescription."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process insurance response",
+                    "classification": "BVA",
+                    "reasoning": "Involves handling the insurance provider's response and any necessary follow-up actions."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate patient's co-pay (if applicable)",
+                    "classification": "BVA",
+                    "reasoning": "Determines the patient's financial responsibility for the prescription."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate prescribed medication in inventory",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of collecting drugs for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify medication name and strength",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the correct medication is being collected, directly contributing to customer safety."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check expiration date",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication is not expired, directly contributing to customer safety."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Retrieve correct quantity",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the correct quantity of medication is being collected, directly contributing to customer satisfaction."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Label medication container",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication container is properly labeled, directly contributing to customer safety and ease of use."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify correct medication",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the correct medication is being provided to the customer, directly contributing to customer safety."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check medication appearance",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication is in the proper condition, directly contributing to customer safety and satisfaction."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm correct dosage and quantity",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication has the correct dosage and quantity, directly contributing to customer safety and satisfaction."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review label for accuracy",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication label is accurate, directly contributing to customer safety and ease of use."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Ensure proper packaging",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the medication is properly packaged, directly contributing to customer safety and ease of use."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform patient of total cost",
+                    "classification": "VA",
+                    "reasoning": "Provides transparency to the customer regarding the total cost of the medication."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment (cash, card, or insurance co-pay)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipt",
+                    "classification": "VA",
+                    "reasoning": "Provides the customer with a receipt for their payment, ensuring transparency and accountability."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update system with payment information",
+                    "classification": "VA",
+                    "reasoning": "Ensures that the payment information is accurately recorded in the system, contributing to efficient financial processes."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 31,
+        "correct_classifications": 19,
+        "accuracy": 0.6129032258064516,
+        "misclassifications": [
+            {
+                "activity": "Enter prescription details",
+                "substep": "Log into pharmacy system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Enables access to necessary information for processing the prescription.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to prescription filling"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for drug-drug interactions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary to ensure patient safety and prevent harmful drug interactions.",
+                "ground_truth_reasoning": "Crucial for patient safety and effective treatment"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Verify appropriate dosage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Critical for ensuring the prescribed dosage is safe and effective for the patient.",
+                "ground_truth_reasoning": "Essential for patient safety and treatment efficacy"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for allergies",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Important to identify any potential allergic reactions to the prescribed medication.",
+                "ground_truth_reasoning": "Critical for patient safety"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Identify potential adverse effects",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for assessing the potential risks and benefits of the prescribed medication.",
+                "ground_truth_reasoning": "Important for patient safety and informed decision-making"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Review prescription details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Ensures accuracy and completeness of the prescription before proceeding.",
+                "ground_truth_reasoning": "Ensures accuracy and appropriateness of prescription"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Evaluate DUR alarms",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Addresses any potential issues identified during the Drug Utilization Review.",
+                "ground_truth_reasoning": "Critical for addressing potential safety issues"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Consult with prescriber if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Allows for clarification or modification of the prescription if needed.",
+                "ground_truth_reasoning": "Resolves potential issues and ensures appropriate treatment"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Make professional judgment on proceeding",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Involves the pharmacist's expertise in assessing the appropriateness of the prescription.",
+                "ground_truth_reasoning": "Applies expertise to ensure safe and effective treatment"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Inform patient of total cost",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Provides transparency to the customer regarding the total cost of the medication.",
+                "ground_truth_reasoning": "Necessary for transaction but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Issue receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Provides the customer with a receipt for their payment, ensuring transparency and accountability.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Update system with payment information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Ensures that the payment information is accurately recorded in the system, contributing to efficient financial processes.",
+                "ground_truth_reasoning": "Necessary for business records but doesn't change prescription"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 14,
+                "BVA": 8
+            },
+            "BVA": {
+                "VA": 4,
+                "BVA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

@@ -1,0 +1,324 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Request Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact loan officer or financial institution",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the appointment request process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide initial information for appointment request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information for the appointment request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit appointment request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the appointment scheduling process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available time slots",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing information about available time slots."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable date and time",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by allowing the customer to choose a convenient date and time for the appointment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm appointment with applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finalizing the appointment details with the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In Credit Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out credit application form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information for the credit application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather necessary supporting documents",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the credit application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit completed application and documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the credit application process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify Borrower's Information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted application and documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the accuracy and completeness of the submitted application and documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Cross-check information with available databases",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the accuracy of the borrower's information through cross-checking with available databases."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Conduct credit check",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the borrower's creditworthiness."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Verify employment and income information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the borrower's employment and income information.\")classify(\"VA\", \"Request Co-Signer On Loan\", \"Inform applicant of need for co-signer\", \"Directly contributes to meeting customer needs by informing them of the requirement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Co-Signer On Loan",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform applicant of need for co-signer",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide co-signer requirements",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the loan application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Collect co-signer information and documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering necessary information for the loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Visit to Assess Collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule visit to assess collateral",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the collateral assessment process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site inspection of collateral",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assessing the condition of the collateral."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document collateral condition and value",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the condition and value of the collateral."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare assessment report",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to document the assessment but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Submit File to Underwriter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all verified information and documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing all necessary information for the underwriting process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare summary of application for underwriter",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to summarize the application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit complete file to underwriting department",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the underwriting process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Loan Agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review loan terms and conditions with applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring they understand the terms and conditions."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Answer any questions from applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by addressing any concerns or queries."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Obtain applicant's signature on loan agreement",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finalizing the loan agreement."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Provide copy of signed agreement to applicant",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to provide a copy of the agreement but doesn't directly add value for the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 27,
+        "correct_classifications": 15,
+        "accuracy": 0.5555555555555556,
+        "misclassifications": [
+            {
+                "activity": "Request Appointment",
+                "substep": "Contact loan officer or financial institution",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the appointment request process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request Appointment",
+                "substep": "Provide initial information for appointment request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing necessary information for the appointment request.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request Appointment",
+                "substep": "Submit appointment request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the appointment scheduling process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Review available time slots",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing information about available time slots.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Select suitable date and time",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by allowing the customer to choose a convenient date and time for the appointment.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set Appointment",
+                "substep": "Confirm appointment with applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by finalizing the appointment details with the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Hand In Credit Application",
+                "substep": "Submit completed application and documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the credit application process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request Co-Signer On Loan",
+                "substep": "Inform applicant of need for co-signer",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make Visit to Assess Collateral",
+                "substep": "Schedule visit to assess collateral",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the collateral assessment process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Make Visit to Assess Collateral",
+                "substep": "Prepare assessment report",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to document the assessment but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Submit File to Underwriter",
+                "substep": "Compile all verified information and documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing all necessary information for the underwriting process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Submit File to Underwriter",
+                "substep": "Submit complete file to underwriting department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the underwriting process.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 9,
+                "BVA": 4,
+                "Unclassified": 1
+            },
+            "NVA": {
+                "VA": 1
+            },
+            "VA": {
+                "VA": 11,
+                "BVA": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,250 @@
+[
+    {
+        "activity_name": "Create claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initialize new claim in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process initiation but doesn't directly add value to claim assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign unique claim identifier",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly contribute to claim resolution"
+            },
+            {
+                "step_number": 3,
+                "description": "Input initial claim details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to claim assessment and resolution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review claim documentation",
+                "classification": "VA",
+                "reasoning": "Critical for understanding claim details and validity"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter detailed claim information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to accurate claim assessment"
+            },
+            {
+                "step_number": 3,
+                "description": "Attach supporting documents to claim record",
+                "classification": "VA",
+                "reasoning": "Provides essential evidence for claim evaluation"
+            }
+        ]
+    },
+    {
+        "activity_name": "Decide on claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Evaluate claim details",
+                "classification": "VA",
+                "reasoning": "Core activity in determining claim validity"
+            },
+            {
+                "step_number": 2,
+                "description": "Check claim against policy terms",
+                "classification": "VA",
+                "reasoning": "Essential for ensuring claim aligns with coverage"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine claim validity",
+                "classification": "VA",
+                "reasoning": "Critical decision point in claim process"
+            },
+            {
+                "step_number": 4,
+                "description": "Make decision on claim acceptance or rejection",
+                "classification": "VA",
+                "reasoning": "Final determination that directly affects claim outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Offer benefit",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate benefit amount",
+                "classification": "VA",
+                "reasoning": "Directly determines value provided to claimant"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare benefit offer document",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change benefit amount"
+            },
+            {
+                "step_number": 3,
+                "description": "Send benefit offer to claimant",
+                "classification": "BVA",
+                "reasoning": "Important for process but doesn't alter benefit decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare claim discharge",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate claim discharge document",
+                "classification": "BVA",
+                "reasoning": "Necessary for legal closure but doesn't affect claim outcome"
+            },
+            {
+                "step_number": 2,
+                "description": "Review discharge for accuracy",
+                "classification": "VA",
+                "reasoning": "Ensures correctness of final agreement"
+            },
+            {
+                "step_number": 3,
+                "description": "Send discharge document to claimant for signature",
+                "classification": "BVA",
+                "reasoning": "Required for process completion but doesn't change discharge terms"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record benefit payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter benefit payment details in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't affect payment amount"
+            },
+            {
+                "step_number": 2,
+                "description": "Link payment record to claim",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't change payment"
+            },
+            {
+                "step_number": 3,
+                "description": "Update claim status to 'Payment Recorded'",
+                "classification": "BVA",
+                "reasoning": "Necessary for process management but doesn't affect claim outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify all claim processes are complete",
+                "classification": "VA",
+                "reasoning": "Ensures all necessary steps have been taken"
+            },
+            {
+                "step_number": 2,
+                "description": "Update claim status to 'Closed'",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't affect claim outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Archive claim documents",
+                "classification": "BVA",
+                "reasoning": "Necessary for compliance but doesn't change claim result"
+            }
+        ]
+    },
+    {
+        "activity_name": "Operate outgoing payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initiate payment process",
+                "classification": "VA",
+                "reasoning": "Starts the process of delivering value to claimant"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify payment details",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy of payment"
+            },
+            {
+                "step_number": 3,
+                "description": "Execute payment transaction",
+                "classification": "VA",
+                "reasoning": "Directly delivers value to claimant"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm successful payment",
+                "classification": "BVA",
+                "reasoning": "Ensures process completion but doesn't change payment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for claim rejection",
+                "classification": "VA",
+                "reasoning": "Provides essential justification for decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection notification",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change decision"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to claimant",
+                "classification": "BVA",
+                "reasoning": "Required for process but doesn't alter rejection decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Review claim rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive rejection appeal from claimant",
+                "classification": "BVA",
+                "reasoning": "Initiates review process but doesn't directly affect outcome"
+            },
+            {
+                "step_number": 2,
+                "description": "Re-examine claim details and rejection reasons",
+                "classification": "VA",
+                "reasoning": "Core activity in reassessing claim validity"
+            },
+            {
+                "step_number": 3,
+                "description": "Consult with relevant departments if necessary",
+                "classification": "VA",
+                "reasoning": "Contributes to thorough review of rejection decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Make final decision on rejection",
+                "classification": "VA",
+                "reasoning": "Critical determination that directly affects claim outcome"
+            }
+        ]
+    }
+]

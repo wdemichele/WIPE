@@ -1,0 +1,140 @@
+[
+    {
+        "activity_name": "Verify Available Vacation Days",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access employee's vacation day records",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to employee"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate remaining available vacation days",
+                "classification": "VA",
+                "reasoning": "Provides crucial information for employee's planning"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm if requested leave is within available days",
+                "classification": "VA",
+                "reasoning": "Directly impacts employee's ability to take desired leave"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register Vacation Leave Request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Input employee's vacation leave details",
+                "classification": "VA",
+                "reasoning": "Initiates the formal request process for employee benefit"
+            },
+            {
+                "step_number": 2,
+                "description": "Record requested dates in the system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by employee"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit request for review",
+                "classification": "VA",
+                "reasoning": "Moves process forward toward employee's goal"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve Vacation Leave Request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review vacation leave request details",
+                "classification": "VA",
+                "reasoning": "Direct evaluation of employee's request"
+            },
+            {
+                "step_number": 2,
+                "description": "Check for conflicts with team schedules",
+                "classification": "BVA",
+                "reasoning": "Ensures business continuity but not directly valued by employee"
+            },
+            {
+                "step_number": 3,
+                "description": "Make decision on approval or rejection",
+                "classification": "VA",
+                "reasoning": "Critical decision point directly affecting employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Rejection Message",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare rejection notification",
+                "classification": "BVA",
+                "reasoning": "Administrative step not adding direct value to employee"
+            },
+            {
+                "step_number": 2,
+                "description": "Include reason for rejection",
+                "classification": "VA",
+                "reasoning": "Provides valuable information for employee's understanding"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection message to employee",
+                "classification": "VA",
+                "reasoning": "Delivers necessary information to employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Approval Message",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare approval notification",
+                "classification": "BVA",
+                "reasoning": "Administrative step not adding direct value to employee"
+            },
+            {
+                "step_number": 2,
+                "description": "Include approved vacation dates",
+                "classification": "VA",
+                "reasoning": "Provides crucial confirmation for employee planning"
+            },
+            {
+                "step_number": 3,
+                "description": "Send approval message to employee",
+                "classification": "VA",
+                "reasoning": "Delivers valuable confirmation to employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update Payroll System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access employee's payroll record",
+                "classification": "BVA",
+                "reasoning": "Necessary but not directly adding value to employee"
+            },
+            {
+                "step_number": 2,
+                "description": "Record approved vacation days",
+                "classification": "BVA",
+                "reasoning": "Administrative requirement not directly valued by employee"
+            },
+            {
+                "step_number": 3,
+                "description": "Adjust pay calculation for vacation period",
+                "classification": "VA",
+                "reasoning": "Ensures correct compensation during vacation period"
+            }
+        ]
+    }
+]

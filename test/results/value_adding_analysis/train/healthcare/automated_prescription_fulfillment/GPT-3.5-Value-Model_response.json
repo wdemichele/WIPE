@@ -1,0 +1,380 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive prescription from customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by obtaining the prescription."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log into pharmacy system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by accessing the pharmacy system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input patient information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording patient information."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Enter medication details (name, dosage, quantity)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Input prescriber information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording prescriber information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR (Drug Utilization Review)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for drug-drug interactions",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify appropriate dosage",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check for allergies",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify potential adverse effects",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reviewing the prescription details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate DUR alarms",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by evaluating drug utilization review alarms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with prescriber if necessary",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by consulting with the prescriber if necessary."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make professional judgment on proceeding",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by making a professional judgment on how to proceed."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the patient's insurance information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit claim to insurance provider",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by submitting the claim to the insurance provider."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process insurance response",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by processing the insurance response."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate patient's co-pay (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by calculating the patient's co-pay if applicable.\")classify(\"VA\", \"Collect drugs from shelves\", \"Locate prescribed medication in inventory\", \"Directly contributes to meeting customer needs by finding the medication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate prescribed medication in inventory",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify medication name and strength",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the correct medication."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check expiration date",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the medication is not expired."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Retrieve correct quantity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing the correct amount of medication."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Label medication container",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to identify and organize the medication, but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify correct medication",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the correct medication."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check medication appearance",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the medication is in the proper condition."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm correct dosage and quantity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the medication is in the correct dosage and quantity."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review label for accuracy",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the medication is properly labeled."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Ensure proper packaging",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to package the medication, but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform patient of total cost",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by informing them of the total cost."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment (cash, card, or insurance co-pay)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipt",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing a receipt."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update system with payment information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the payment."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 31,
+        "correct_classifications": 14,
+        "accuracy": 0.45161290322580644,
+        "misclassifications": [
+            {
+                "activity": "Enter prescription details",
+                "substep": "Log into pharmacy system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by accessing the pharmacy system.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to prescription filling"
+            },
+            {
+                "activity": "Enter prescription details",
+                "substep": "Enter medication details (name, dosage, quantity)",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Critical for accurate prescription filling"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for drug-drug interactions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Crucial for patient safety and effective treatment"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Verify appropriate dosage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Essential for patient safety and treatment efficacy"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for allergies",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Critical for patient safety"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Identify potential adverse effects",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to perform a drug utilization review but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Important for patient safety and informed decision-making"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Verify patient's insurance information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by verifying the patient's insurance information.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Submit claim to insurance provider",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by submitting the claim to the insurance provider.",
+                "ground_truth_reasoning": "Required for payment process but doesn't change the prescription"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Process insurance response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by processing the insurance response.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Calculate patient's co-pay (if applicable)",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by calculating the patient's co-pay if applicable.\")classify(\"VA\", \"Collect drugs from shelves\", \"Locate prescribed medication in inventory\", \"Directly contributes to meeting customer needs by finding the medication.",
+                "ground_truth_reasoning": "Important for billing but doesn't change the prescription itself"
+            },
+            {
+                "activity": "Collect drugs from shelves",
+                "substep": "Locate prescribed medication in inventory",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Direct step in fulfilling the prescription"
+            },
+            {
+                "activity": "Collect drugs from shelves",
+                "substep": "Label medication container",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to identify and organize the medication, but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Crucial for patient safety and correct usage"
+            },
+            {
+                "activity": "Check quality",
+                "substep": "Ensure proper packaging",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to package the medication, but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Important for medication integrity and patient safety"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Inform patient of total cost",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by informing them of the total cost.",
+                "ground_truth_reasoning": "Necessary for transaction but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Process payment (cash, card, or insurance co-pay)",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Required for business operation but doesn't change prescription"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Issue receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing a receipt.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Update system with payment information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the payment.",
+                "ground_truth_reasoning": "Necessary for business records but doesn't change prescription"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 14,
+                "Unclassified": 2,
+                "BVA": 6
+            },
+            "BVA": {
+                "VA": 8,
+                "Unclassified": 1
+            }
+        }
+    }
+}

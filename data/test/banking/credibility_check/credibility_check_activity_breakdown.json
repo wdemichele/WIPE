@@ -1,0 +1,250 @@
+[
+    {
+        "activity_name": "perform BRM check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve BRM assessment data"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze BRM criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Document BRM check results"
+            }
+        ]
+    },
+    {
+        "activity_name": "perform ERM check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve ERM assessment data"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze ERM criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Document ERM check results"
+            }
+        ]
+    },
+    {
+        "activity_name": "perform credibility check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's financial history"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify provided information"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess overall credibility"
+            },
+            {
+                "step_number": 4,
+                "description": "Document credibility check findings"
+            }
+        ]
+    },
+    {
+        "activity_name": "call client to complement information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify missing or unclear information"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact client via phone"
+            },
+            {
+                "step_number": 3,
+                "description": "Request additional information"
+            },
+            {
+                "step_number": 4,
+                "description": "Update client's file with new information"
+            }
+        ]
+    },
+    {
+        "activity_name": "create loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review client's financial profile"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine suitable loan terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate interest rates and repayment schedule"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare loan offer document"
+            }
+        ]
+    },
+    {
+        "activity_name": "send loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review final loan offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare accompanying explanation letter"
+            },
+            {
+                "step_number": 3,
+                "description": "Send offer via preferred communication method"
+            },
+            {
+                "step_number": 4,
+                "description": "Log offer sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "remind client",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check status of sent offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare reminder message"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact client via preferred method"
+            },
+            {
+                "step_number": 4,
+                "description": "Log reminder action in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "send rejection letter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review reason for rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft rejection letter with explanation"
+            },
+            {
+                "step_number": 3,
+                "description": "Send letter to client"
+            },
+            {
+                "step_number": 4,
+                "description": "Update client's file with rejection status"
+            }
+        ]
+    },
+    {
+        "activity_name": "activate loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive accepted offer from client"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required documents"
+            },
+            {
+                "step_number": 3,
+                "description": "Initialize loan in system"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify relevant departments"
+            }
+        ]
+    },
+    {
+        "activity_name": "update loan activation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review activated loan details"
+            },
+            {
+                "step_number": 2,
+                "description": "Update client's account status"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare loan activation report"
+            },
+            {
+                "step_number": 4,
+                "description": "Distribute report to relevant stakeholders"
+            }
+        ]
+    },
+    {
+        "activity_name": "execute initial payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify loan terms and conditions"
+            },
+            {
+                "step_number": 2,
+                "description": "Process initial loan disbursement"
+            },
+            {
+                "step_number": 3,
+                "description": "Record transaction in financial system"
+            },
+            {
+                "step_number": 4,
+                "description": "Send payment confirmation to client"
+            }
+        ]
+    },
+    {
+        "activity_name": "return documents to client",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather all client documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify completeness of document set"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare documents for return"
+            },
+            {
+                "step_number": 4,
+                "description": "Send documents via secure method"
+            },
+            {
+                "step_number": 5,
+                "description": "Log document return in system"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+graph LR
+    Start((Start)) --> A[Check completeness]
+    A --> B{Complete?}
+    B -->|Yes| C[[Check credit history]]
+    B -->|Yes| D[[Check income sources]]
+    C --> E{All checks done?}
+    D --> E
+    E -->|Yes| F[Assess application]
+    F --> G{Decision}
+    G -->|Granted| H[Make credit offer]
+    G -->|Denied| I[Notify rejection]
+    H --> End((End))
+    I --> End

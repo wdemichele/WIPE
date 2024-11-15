@@ -1,0 +1,383 @@
+[
+    {
+        "activity_name": "Check stock availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access inventory management system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Search for ordered product",
+                "classification": "BVA",
+                "reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify current stock levels",
+                "classification": "VA",
+                "reasoning": "Directly contributes to order fulfillment capability"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve product from warehouse",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate pick list",
+                "classification": "BVA",
+                "reasoning": "Facilitates process but doesn't directly add value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Locate product in warehouse",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Pick product from shelf",
+                "classification": "VA",
+                "reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "step_number": 4,
+                "description": "Update inventory records",
+                "classification": "BVA",
+                "reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check materials availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access raw materials inventory",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Check quantity of required materials",
+                "classification": "VA",
+                "reasoning": "Directly contributes to production capability"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if sufficient materials are available",
+                "classification": "VA",
+                "reasoning": "Critical for production decision-making"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request raw materials from suppliers",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify needed materials",
+                "classification": "VA",
+                "reasoning": "Directly contributes to maintaining production capability"
+            },
+            {
+                "step_number": 2,
+                "description": "Select appropriate suppliers",
+                "classification": "BVA",
+                "reasoning": "Necessary for procurement but doesn't directly add value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate purchase orders",
+                "classification": "BVA",
+                "reasoning": "Required for process but doesn't directly add value"
+            },
+            {
+                "step_number": 4,
+                "description": "Send purchase orders to suppliers",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Obtain raw materials",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive shipments from suppliers",
+                "classification": "VA",
+                "reasoning": "Directly contributes to production capability"
+            },
+            {
+                "step_number": 2,
+                "description": "Inspect received materials",
+                "classification": "VA",
+                "reasoning": "Ensures quality of inputs, directly affecting product quality"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory with new materials",
+                "classification": "BVA",
+                "reasoning": "Maintains accuracy but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Manufacture product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create production order",
+                "classification": "BVA",
+                "reasoning": "Facilitates production but doesn't directly add value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Allocate resources and materials",
+                "classification": "BVA",
+                "reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Produce product",
+                "classification": "VA",
+                "reasoning": "Directly creates value for the customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Perform quality control checks",
+                "classification": "VA",
+                "reasoning": "Directly ensures product quality for customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirm order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order details",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify product availability",
+                "classification": "VA",
+                "reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate order confirmation",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "step_number": 4,
+                "description": "Send confirmation to customer",
+                "classification": "BVA",
+                "reasoning": "Improves customer experience but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Escalate order confirmation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify reason for confirmation failure",
+                "classification": "BVA",
+                "reasoning": "Helps resolve issues but doesn't directly add value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Forward issue to appropriate department or manager",
+                "classification": "BVA",
+                "reasoning": "Facilitates problem-solving but doesn't directly add value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Track escalation status",
+                "classification": "BVA",
+                "reasoning": "Ensures follow-up but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Emit invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate total order cost",
+                "classification": "VA",
+                "reasoning": "Directly relates to the value exchange with customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate invoice document",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Send invoice to customer",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor incoming payments",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Match payment to invoice",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Process payment",
+                "classification": "VA",
+                "reasoning": "Directly relates to the value exchange with customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Update order status to paid",
+                "classification": "BVA",
+                "reasoning": "Maintains accuracy but doesn't directly add value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect all order-related documents",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify order completion",
+                "classification": "BVA",
+                "reasoning": "Ensures process completion but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Transfer order to archive system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Determine cancellation penalty",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order status",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly affect penalty"
+            },
+            {
+                "step_number": 2,
+                "description": "Check cancellation policy",
+                "classification": "BVA",
+                "reasoning": "Necessary for determining penalty but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate applicable penalty",
+                "classification": "VA",
+                "reasoning": "Directly determines financial impact for customer and company"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify penalty to customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare penalty notification",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change the penalty"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to customer",
+                "classification": "BVA",
+                "reasoning": "Informs customer but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notification in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Cancel order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Update order status to cancelled",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Reverse any inventory allocations",
+                "classification": "VA",
+                "reasoning": "Directly impacts inventory management and future order fulfillment"
+            },
+            {
+                "step_number": 3,
+                "description": "Process cancellation penalty if applicable",
+                "classification": "VA",
+                "reasoning": "Directly relates to the financial transaction with customer"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify relevant departments of cancellation",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal processes but doesn't directly add value to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Stop cancellation request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Update system to remove cancellation request",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm continuation of order with customer",
+                "classification": "VA",
+                "reasoning": "Directly impacts customer satisfaction and order fulfillment"
+            },
+            {
+                "step_number": 3,
+                "description": "Resume normal order processing",
+                "classification": "VA",
+                "reasoning": "Directly contributes to fulfilling customer's order"
+            }
+        ]
+    }
+]

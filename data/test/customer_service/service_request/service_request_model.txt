@@ -1,0 +1,56 @@
+flowchart TD
+    subgraph Client
+        C_Start([New service]) --> C_EnterStore[Enter the store]
+        C_EnterStore --> C_LookService[Look for a specific service]
+        C_LookService --> C_TicketGateway{Take his/her ticket?}
+        C_TicketGateway -->|Yes| C_TakeTicket[Take his/her ticket representing his/her turn]
+        C_TicketGateway -->|No| C_End([End])
+        C_TakeTicket --> C_WhereTicket{Where is the ticket taken?}
+        C_WhereTicket -->|App| C_ChooseService[Choose the service]
+        C_ChooseService --> C_WaitingTime((waiting time))
+        C_WaitingTime --> C_LookCriteria[Look for the product and specific criteria]
+        C_LookCriteria --> C_CheckTickets[Check how many tickets are ahead]
+        C_CheckTickets --> C_ClientWait[Client waits for his/her turn]
+        C_WhereTicket -->|Physical| C_ClientWait
+        C_ClientWait --> C_AskRequest[Ask for a specific request]
+        C_CollectOrder[Collects his/her order] --> C_NewRequest{New request?}
+        C_NewRequest -->|Yes| C_LookService
+        C_NewRequest -->|No| C_ProcessEnded([Process Ended])
+    end
+
+    subgraph Request_Assistant
+        RA_Register[Register Request] --> RA_EnoughRequests{Are there enough requests to respond to customer demand?}
+        RA_EnoughRequests -->|Yes| RA_SendOrder[Send the order request document]
+        RA_EnoughRequests -->|No| RA_Register
+        RA_SendOrder --> RA_End([Registering over])
+        RA_RegisterTime((Register time))
+        RA_RegisterTime --> RA_Register
+        RA_ShopAssistants[/"Shop assistants' team lose responsibility of this task"/]:::annotation
+        RA_ShopAssistants -.-> RA_Register
+    end
+
+    subgraph Shop_Assistants_Team
+        SA_PrepareOrder[Preparate order] --> SA_DeliverOrder[Deliver order]
+        SA_DeliverOrder --> SA_End([Preparation finished])
+        SA_OrderDescription[/"Order description"/]:::messageEvent
+        SA_OrderDescription --> SA_PrepareOrder
+        SA_Specifications[/"Requires different specifications regarding the different services"/]:::annotation
+        SA_Specifications -.-> SA_PrepareOrder
+    end
+
+    C_AskRequest -.-> RA_Register
+    RA_SendOrder -.-> SA_PrepareOrder
+    SA_DeliverOrder -.-> C_CollectOrder
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef annotation fill:#fff,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef messageEvent fill:#fff,stroke:#333,stroke-width:2px,shape:circle
+
+    class C_Start,C_End,C_ProcessEnded,RA_End,SA_End event;
+    class C_EnterStore,C_LookService,C_TakeTicket,C_ChooseService,C_LookCriteria,C_CheckTickets,C_ClientWait,C_AskRequest,C_CollectOrder,RA_Register,RA_SendOrder,SA_PrepareOrder,SA_DeliverOrder activity;
+    class C_TicketGateway,C_WhereTicket,C_NewRequest,RA_EnoughRequests gateway;
+    class RA_ShopAssistants,SA_Specifications annotation;
+    class C_WaitingTime,RA_RegisterTime event;
+    class SA_OrderDescription messageEvent;

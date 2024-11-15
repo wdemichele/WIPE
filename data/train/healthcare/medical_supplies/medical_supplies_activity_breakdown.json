@@ -1,0 +1,130 @@
+[
+    {
+        "activity_name": "Package receipt at dock",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package"
+            },
+            {
+                "step_number": 2,
+                "description": "Stockpile package"
+            },
+            {
+                "step_number": 3,
+                "description": "Move to pallets"
+            },
+            {
+                "step_number": 4,
+                "description": "Wait until pallet is full"
+            },
+            {
+                "step_number": 5,
+                "description": "Move to receiving room"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package processing in the receiving room",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Move to workstation"
+            },
+            {
+                "step_number": 2,
+                "description": "Check destination"
+            },
+            {
+                "step_number": 3,
+                "description": "Set as unknown"
+            },
+            {
+                "step_number": 4,
+                "description": "Register package into ERP"
+            },
+            {
+                "step_number": 5,
+                "description": "Write details on package"
+            },
+            {
+                "step_number": 6,
+                "description": "Print delivery form"
+            },
+            {
+                "step_number": 7,
+                "description": "Fold and insert the form into a plastic packet"
+            },
+            {
+                "step_number": 8,
+                "description": "Tape plastic packet to package"
+            },
+            {
+                "step_number": 9,
+                "description": "Place in temporary location"
+            },
+            {
+                "step_number": 10,
+                "description": "Move package to pallet"
+            },
+            {
+                "step_number": 11,
+                "description": "Wait until 8 packages are processed"
+            },
+            {
+                "step_number": 12,
+                "description": "Move to rack room"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package processing in the rack room",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Move to rack"
+            },
+            {
+                "step_number": 2,
+                "description": "Sort package"
+            },
+            {
+                "step_number": 3,
+                "description": "Load package to designated pallet"
+            },
+            {
+                "step_number": 4,
+                "description": "Deliver to designated par location"
+            }
+        ]
+    },
+    {
+        "activity_name": "Package delivery to par location",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Unload package from pallet"
+            },
+            {
+                "step_number": 2,
+                "description": "Scan package"
+            },
+            {
+                "step_number": 3,
+                "description": "Discard package"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify requester"
+            },
+            {
+                "step_number": 5,
+                "description": "Return to receiving room"
+            },
+            {
+                "step_number": 6,
+                "description": "Stock package"
+            }
+        ]
+    }
+]

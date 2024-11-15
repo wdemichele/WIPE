@@ -1,0 +1,99 @@
+[
+    {
+        "activity_name": "Submit equipment rental request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill request",
+                "classification": "VA",
+                "reasoning": "Directly initiates the value creation process by specifying equipment needs"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request to clerk",
+                "classification": "BVA",
+                "reasoning": "Necessary for process flow but doesn't directly add value to the request"
+            }
+        ]
+    },
+    {
+        "activity_name": "Select suitable equipment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open and read request",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to the selection"
+            },
+            {
+                "step_number": 2,
+                "description": "Select suitable equipment",
+                "classification": "VA",
+                "reasoning": "Directly contributes to meeting the requester's needs"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check equipment availability",
+                "classification": "VA",
+                "reasoning": "Directly contributes to fulfilling the request efficiently"
+            },
+            {
+                "step_number": 2,
+                "description": "Record recommended equipment & supplier",
+                "classification": "BVA",
+                "reasoning": "Supports the process but doesn't directly add value to the requester"
+            }
+        ]
+    },
+    {
+        "activity_name": "Review rental request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Forward request to works engineer",
+                "classification": "BVA",
+                "reasoning": "Necessary for approval process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Open and examine request",
+                "classification": "VA",
+                "reasoning": "Ensures the request meets technical and safety requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate issues",
+                "classification": "VA",
+                "reasoning": "Addresses potential problems, improving the final outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create PO",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Forward request back to clerk",
+                "classification": "BVA",
+                "reasoning": "Necessary for process flow but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Create PO",
+                "classification": "VA",
+                "reasoning": "Directly contributes to acquiring the needed equipment"
+            },
+            {
+                "step_number": 3,
+                "description": "Send PO to supplier",
+                "classification": "VA",
+                "reasoning": "Initiates the equipment delivery process"
+            }
+        ]
+    }
+]

@@ -1,0 +1,176 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Verify request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review incoming request details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the details of the incoming request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check request against predefined criteria",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by checking the request against predefined criteria."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm request validity",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by confirming the validity of the request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send to queue for request handling",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign request to appropriate handling queue",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assign the request to the appropriate handling queue, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update request status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the request status in the system, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Notify relevant team of new request in queue",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to notify the relevant team of a new request in the queue, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send follow-up report",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather information on request outcome",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by gathering information on the outcome of the request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compile follow-up report",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by compiling a follow-up report."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Distribute report to relevant stakeholders",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by distributing the follow-up report to relevant stakeholders."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prioritize request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess request urgency and impact",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assess the urgency and impact of the request, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign priority level based on assessment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assign a priority level to the request based on the assessment, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update request priority in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the request priority in the system, but it does not directly add value for the customer.\")classify(\"BVA\", \"Classify request and assign action\", \"Determine request category\", \"This step is necessary for categorizing the request, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Classify request and assign action",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine request category",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify appropriate action for request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for determining the appropriate action to take, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign request to relevant team or individual",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for assigning the request to the appropriate team or individual, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan Monitoring and Operation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Define monitoring parameters for request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for defining the parameters for monitoring the request, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Establish operational procedures",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for establishing the operational procedures, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set up monitoring and reporting schedule",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for setting up the schedule for monitoring and reporting, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Handle Execution",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review assigned request details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for reviewing the details of the assigned request, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Execute actions to fulfill request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to fulfilling the customer's request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document actions taken and outcomes",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for documenting the actions taken and outcomes, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

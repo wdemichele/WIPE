@@ -1,0 +1,157 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check stock levels"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine if product is available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify customer about order rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in warehouse"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve product from designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status to confirmed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request customer's shipment address"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive and validate shipment address"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send invoice to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare product for shipment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Package product"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange shipment with courier"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send payment request to customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Receive payment from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order information in archive"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                6,
+                30.0
+            ],
+            "Granularity Difference": [
+                5,
+                25.0
+            ],
+            "No Match": [
+                8,
+                40.0
+            ],
+            "Identical Match": [
+                1,
+                5.0
+            ]
+        },
+        "average_confidence": 48.75,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 79.16666666666667,
+            "Granularity Difference": 80.0,
+            "No Match": 0.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 85.0,
+        "response_coverage": 76.47058823529412,
+        "average_sequence_alignment": 44.444444444444436,
+        "average_overall_similarity_score": 60.27777777777778
+    }
+}

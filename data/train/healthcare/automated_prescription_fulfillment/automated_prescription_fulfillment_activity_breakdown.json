@@ -1,0 +1,168 @@
+[
+    {
+        "activity_name": "Enter prescription details",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive prescription from customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Log into pharmacy system"
+            },
+            {
+                "step_number": 3,
+                "description": "Input patient information"
+            },
+            {
+                "step_number": 4,
+                "description": "Enter medication details (name, dosage, quantity)"
+            },
+            {
+                "step_number": 5,
+                "description": "Input prescriber information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform DUR (Drug Utilization Review)",
+        "performer": "Pharmacy system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check for drug-drug interactions"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify appropriate dosage"
+            },
+            {
+                "step_number": 3,
+                "description": "Check for allergies"
+            },
+            {
+                "step_number": 4,
+                "description": "Identify potential adverse effects"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform thorough check",
+        "performer": "Pharmacist",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review prescription details"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate DUR alarms"
+            },
+            {
+                "step_number": 3,
+                "description": "Consult with prescriber if necessary"
+            },
+            {
+                "step_number": 4,
+                "description": "Make professional judgment on proceeding"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check insurance",
+        "performer": "Pharmacy system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify patient's insurance information"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit claim to insurance provider"
+            },
+            {
+                "step_number": 3,
+                "description": "Process insurance response"
+            },
+            {
+                "step_number": 4,
+                "description": "Calculate patient's co-pay (if applicable)"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect drugs from shelves",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate prescribed medication in inventory"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify medication name and strength"
+            },
+            {
+                "step_number": 3,
+                "description": "Check expiration date"
+            },
+            {
+                "step_number": 4,
+                "description": "Retrieve correct quantity"
+            },
+            {
+                "step_number": 5,
+                "description": "Label medication container"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check quality",
+        "performer": "Pharmacist",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify correct medication"
+            },
+            {
+                "step_number": 2,
+                "description": "Check medication appearance"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm correct dosage and quantity"
+            },
+            {
+                "step_number": 4,
+                "description": "Review label for accuracy"
+            },
+            {
+                "step_number": 5,
+                "description": "Ensure proper packaging"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect payment",
+        "performer": "Technician",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Inform patient of total cost"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payment (cash, card, or insurance co-pay)"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue receipt"
+            },
+            {
+                "step_number": 4,
+                "description": "Update system with payment information"
+            }
+        ]
+    }
+]

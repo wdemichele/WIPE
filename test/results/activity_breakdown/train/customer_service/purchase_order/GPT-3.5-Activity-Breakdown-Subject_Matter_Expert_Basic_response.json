@@ -1,0 +1,140 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if product is in stock"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine if product is available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify customer about order rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in the warehouse"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve product from the designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Validate order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status to confirmed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request customer's shipment address"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify and validate the address"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice for the order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare the product for shipment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for shipping and packaging"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment from the customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order information for future reference"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                7,
+                41.17647058823529
+            ],
+            "Granularity Difference": [
+                4,
+                23.52941176470588
+            ],
+            "No Match": [
+                6,
+                35.294117647058826
+            ]
+        },
+        "average_confidence": 55.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 85.0,
+            "Granularity Difference": 85.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 93.33333333333333,
+        "response_coverage": 70.96774193548387,
+        "average_sequence_alignment": 66.66666666666667,
+        "average_overall_similarity_score": 63.518888888888895
+    }
+}

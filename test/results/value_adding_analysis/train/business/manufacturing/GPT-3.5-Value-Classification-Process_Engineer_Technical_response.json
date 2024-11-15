@@ -1,0 +1,655 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "process_engineer",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic",
+            "example_output": "complex_process"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access inventory management system",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources but does not directly add value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Search product in database",
+                    "classification": "VA",
+                    "reasoning": "This step transforms information by searching for the product in the database, contributing to the overall process flow."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify current stock levels",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by ensuring the availability of stock."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update stock status",
+                    "classification": "VA",
+                    "reasoning": "This step transforms information by updating the stock status, contributing to the overall process flow."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate pick list",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by generating a pick list."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by locating the product in the warehouse."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by picking the product from the shelf."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update inventory records",
+                    "classification": "VA",
+                    "reasoning": "This step transforms information by updating the inventory records, contributing to the overall process flow."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check raw materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access raw materials inventory",
+                    "classification": "NVA",
+                    "reasoning": "This step consumes resources but does not directly add value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check quantity of each required material",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by checking the quantity of each required material."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if sufficient materials are available",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by determining if sufficient materials are available."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify materials that need to be sourced",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by identifying materials that need to be sourced."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare purchase order for Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send purchase order to Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm order receipt with Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule delivery of materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare purchase order for Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send purchase order to Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm order receipt with Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule delivery of materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer.\")classify(\"VA\", \"Obtain raw materials from Supplier 1\", \"Receive shipment from Supplier 1\", \"Directly contributes to obtaining raw materials for production."
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipment from Supplier 1",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "Ensures the quality and suitability of the received materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "VA",
+                    "reasoning": "Keeps track of the available inventory for planning and production purposes."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Store materials in appropriate location",
+                    "classification": "VA",
+                    "reasoning": "Organizes the materials for easy access and retrieval during production."
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipment from Supplier 2",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to obtaining raw materials for production."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "Ensures the quality and suitability of the received materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "VA",
+                    "reasoning": "Keeps track of the available inventory for planning and production purposes."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Store materials in appropriate location",
+                    "classification": "VA",
+                    "reasoning": "Organizes the materials for easy access and retrieval during production."
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare manufacturing order",
+                    "classification": "VA",
+                    "reasoning": "Initiates the production process and specifies the requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up production line",
+                    "classification": "VA",
+                    "reasoning": "Prepares the production line for manufacturing the product."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Produce product",
+                    "classification": "VA",
+                    "reasoning": "Directly transforms raw materials into the final product."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Perform quality control checks",
+                    "classification": "VA",
+                    "reasoning": "Ensures the quality and conformity of the manufactured product."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details",
+                    "classification": "VA",
+                    "reasoning": "Verifies the accuracy and completeness of the order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify product availability or completion",
+                    "classification": "VA",
+                    "reasoning": "Checks if the product is available or has been completed."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate order confirmation",
+                    "classification": "VA",
+                    "reasoning": "Creates a confirmation document for the order."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send confirmation to customer",
+                    "classification": "VA",
+                    "reasoning": "Notifies the customer about the order confirmation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer information",
+                    "classification": "VA",
+                    "reasoning": "Obtains the necessary customer information for shipping."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify shipping address",
+                    "classification": "VA",
+                    "reasoning": "Ensures the accuracy and validity of the shipping address."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm address with customer if necessary",
+                    "classification": "VA",
+                    "reasoning": "Resolves any discrepancies or uncertainties regarding the shipping address."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update shipping information in order",
+                    "classification": "VA",
+                    "reasoning": "Updates the order with the correct shipping information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total order cost",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating the invoice by calculating the total order cost."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate invoice document",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating the invoice by generating the invoice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review invoice for accuracy",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for financial reporting and ensures accuracy of the invoice."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send invoice to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly delivers the invoice to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package product for shipping",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to shipping the product by packaging it."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate shipping label",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to shipping the product by generating the shipping label."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange carrier pickup",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to shipping the product by arranging the carrier pickup."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to shipped",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the order status to reflect that the product has been shipped."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to receiving the payment by processing it."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status to paid",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the order status to reflect that the payment has been received."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order completion",
+                    "classification": "VA",
+                    "reasoning": "Directly verifies that the order has been completed before archiving it."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transfer order to archive system",
+                    "classification": "VA",
+                    "reasoning": "Directly transfers the order to the archive system for storage."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to archived",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the order status to reflect that the order has been archived."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 53,
+        "correct_classifications": 24,
+        "accuracy": 0.4528301886792453,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Access inventory management system",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step consumes resources but does not directly add value to the customer or business.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Search product in database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms information by searching for the product in the database, contributing to the overall process flow.",
+                "ground_truth_reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Update stock status",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms information by updating the stock status, contributing to the overall process flow.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Generate pick list",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by generating a pick list.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Locate product in warehouse",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by locating the product in the warehouse.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Update inventory records",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms information by updating the inventory records, contributing to the overall process flow.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Check raw materials availability",
+                "substep": "Access raw materials inventory",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step consumes resources but does not directly add value to the customer or business.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Request raw materials from Supplier 1",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Request raw materials from Supplier 2",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for business operations but not directly valued by the customer.\")classify(\"VA\", \"Obtain raw materials from Supplier 1\", \"Receive shipment from Supplier 1\", \"Directly contributes to obtaining raw materials for production.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Update inventory with new materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Keeps track of the available inventory for planning and production purposes.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Store materials in appropriate location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Organizes the materials for easy access and retrieval during production.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Update inventory with new materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Keeps track of the available inventory for planning and production purposes.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Store materials in appropriate location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Organizes the materials for easy access and retrieval during production.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Prepare manufacturing order",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Initiates the production process and specifies the requirements.",
+                "ground_truth_reasoning": "Facilitates production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Set up production line",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Prepares the production line for manufacturing the product.",
+                "ground_truth_reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Review order details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Verifies the accuracy and completeness of the order.",
+                "ground_truth_reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Generate order confirmation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates a confirmation document for the order.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Send confirmation to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Notifies the customer about the order confirmation.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly add value to product"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Retrieve customer information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Obtains the necessary customer information for shipping.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Update shipping information in order",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Updates the order with the correct shipping information.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating the invoice by generating the invoice document.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly delivers the invoice to the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Generate shipping label",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to shipping the product by generating the shipping label.",
+                "ground_truth_reasoning": "Necessary for shipping but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Arrange carrier pickup",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to shipping the product by arranging the carrier pickup.",
+                "ground_truth_reasoning": "Facilitates delivery but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Update order status to shipped",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the order status to reflect that the product has been shipped.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the order status to reflect that the payment has been received.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Verify order completion",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly verifies that the order has been completed before archiving it.",
+                "ground_truth_reasoning": "Ensures process completion but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Transfer order to archive system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly transfers the order to the archive system for storage.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Update order status to archived",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the order status to reflect that the order has been archived.",
+                "ground_truth_reasoning": "Maintains system accuracy but doesn't directly add value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 17,
+                "BVA": 2
+            },
+            "BVA": {
+                "NVA": 2,
+                "VA": 25,
+                "BVA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

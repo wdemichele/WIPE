@@ -1,0 +1,290 @@
+[
+       {
+              "activity_name": "Register order",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Receive special order request",
+                            "classification": "VA",
+                            "reasoning": "Customer order received"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Create a new order entry in the system",
+                            "classification": "BVA",
+                            "reasoning": " keeping a record in the system "
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Assign unique order number",
+                            "classification": "BVA",
+                            "reasoning": "identification purpose"
+                     },
+                     {
+                            "step_number": 4,
+                            "description": "Record initial order details",
+                            "classification": "NVA",
+                            "reasoning": "does not add value to customer or business"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Check order details",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Review order specifications",
+                            "classification": "NVA",
+                            "reasoning": "no value added in this step"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Verify customer information",
+                            "classification": "NVA",
+                            "reasoning": "no value added in this step"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Confirm product customisation requirements",
+                            "classification": "VA",
+                            "reasoning": "Confirm and proceed the order to the next step"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Manufacture custom product",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Create production order",
+                            "classification": "BVA",
+                            "reasoning": "for record purpose"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Allocate resources and materials",
+                            "classification": "BVA",
+                            "reasoning": "needed to manage the business."
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Produce custom product",
+                            "classification": "VA",
+                            "reasoning": "actual produce product for customer"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Confirm Order",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Generate order confirmation document",
+                            "classification": "BVA",
+                            "reasoning": "business requirement"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Review order details with customer",
+                            "classification": "VA",
+                            "reasoning": "communicate with customer"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Handle change request",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Receive change request",
+                            "classification": "VA",
+                            "reasoning": "customer receive service"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Assess the impact on the current order",
+                            "classification": "BVA",
+                            "reasoning": "to check feasibility"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Communicate changes and implications to relevant departments",
+                            "classification": "BVA",
+                            "reasoning": "Communicate with internal team"
+                     },
+                     {
+                            "step_number": 4,
+                            "description": "Update order details with approved changes",
+                            "classification": "BVA",
+                            "reasoning": "governance purpose"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Plan shipment",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Determine shipping method",
+                            "classification": "BVA",
+                            "reasoning": "optimising the best resource"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Calculate shipping costs",
+                            "classification": "NVA",
+                            "reasoning": "addition step, can be simplified"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Schedule pickup or delivery",
+                            "classification": "NVA",
+                            "reasoning": "addition step, can be simplified"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Check customer type and shipment status",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Retrieve customer information",
+                            "classification": "NVA",
+                            "reasoning": "addition step, can be simplified"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Identify customer type",
+                            "classification": "NVA",
+                            "reasoning": "addition step, can be simplified"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Check shipment status",
+                            "classification": "BVA",
+                            "reasoning": "governance purpose"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Ship custom product",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Prepare product for shipping",
+                            "classification": "BVA",
+                            "reasoning": "require step to send the product"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Generate shipping label",
+                            "classification": "BVA",
+                            "reasoning": "logistic purpose"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Hand over to shipping carrier",
+                            "classification": "NVA",
+                            "reasoning": "moving waste"
+                     },
+                     {
+                            "step_number": 4,
+                            "description": "Update order status to shipped",
+                            "classification": "VA",
+                            "reasoning": "communicate with customer"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Emit invoice",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Generate invoice for casual customer",
+                            "classification": "BVA",
+                            "reasoning": "legal purpose"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Send invoice to the customer",
+                            "classification": "NVA",
+                            "reasoning": "can be simplified."
+                     }
+              ]
+       },
+       {
+              "activity_name": "Charge customer account",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Calculate total charge",
+                            "classification": "NVA",
+                            "reasoning": "can be automated"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Process payment from account",
+                            "classification": "BVA",
+                            "reasoning": "accounting purpose"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Generate and send receipt",
+                            "classification": "VA",
+                            "reasoning": "customer acknowledgement"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Update customer",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Identify the reason for shipment delay",
+                            "classification": "BVA",
+                            "reasoning": "business operation"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Prepare customer communication",
+                            "classification": "NVA",
+                            "reasoning": "can be simplified"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Contact customer with update",
+                            "classification": "VA",
+                            "reasoning": "communicate with customer"
+                     },
+                     {
+                            "step_number": 4,
+                            "description": "Record communication in customer file",
+                            "classification": "BVA",
+                            "reasoning": "governance purpose"
+                     }
+              ]
+       },
+       {
+              "activity_name": "Archive order",
+              "substeps": [
+                     {
+                            "step_number": 1,
+                            "description": "Verify order completion",
+                            "classification": "BVA",
+                            "reasoning": "governance purpose"
+                     },
+                     {
+                            "step_number": 2,
+                            "description": "Transfer order to archive system",
+                            "classification": "NVA",
+                            "reasoning": "can be automated"
+                     },
+                     {
+                            "step_number": 3,
+                            "description": "Update order status to archived",
+                            "classification": "BVA",
+                            "reasoning": "governance purpose"
+                     }
+              ]
+       }
+]

@@ -1,0 +1,212 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "business_consultant",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Determine likelihood of the claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new claim",
+                    "classification": "NVA",
+                    "reasoning": "This step involves receiving a new claim, which is necessary for the process to begin but does not directly add value to the customer or business."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details",
+                    "classification": "NVA",
+                    "reasoning": "Reviewing claim details is necessary for understanding the claim but does not directly add value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze policy coverage",
+                    "classification": "BVA",
+                    "reasoning": "Analyzing policy coverage is required to ensure compliance with company policies and regulations, but it does not directly add value to the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate initial evidence",
+                    "classification": "VA",
+                    "reasoning": "Evaluating initial evidence is a critical step in determining the likelihood of the claim and directly contributes to the process by assessing the validity of the claim."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Estimate probability of claim validity",
+                    "classification": "VA",
+                    "reasoning": "Estimating the probability of claim validity is a value-adding step as it helps in assessing the likelihood of the claim and making informed decisions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather additional information if needed",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details thoroughly",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify policy terms and conditions",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate evidence and documentation",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Consult with relevant experts if necessary",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 6,
+                    "description": "Determine claim validity and value",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Initiate payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate payment amount",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify claimant's payment details",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare payment documentation",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain necessary approvals",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Process payment through financial system",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Advise claimant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication detailing claim decision",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include explanation of decision rationale",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide information on payment (if applicable)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Include details on appeal process (if applicable)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Send communication to claimant",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 6,
+                    "description": "Record communication in claim file",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 22,
+        "correct_classifications": 19,
+        "accuracy": 0.8636363636363636,
+        "misclassifications": [
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Receive new claim",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step involves receiving a new claim, which is necessary for the process to begin but does not directly add value to the customer or business.",
+                "ground_truth_reasoning": "Necessary to initiate the process but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Review claim details",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Reviewing claim details is necessary for understanding the claim but does not directly add value to the customer or business.",
+                "ground_truth_reasoning": "Directly contributes to understanding and evaluating the claim"
+            },
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Analyze policy coverage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Analyzing policy coverage is required to ensure compliance with company policies and regulations, but it does not directly add value to the customer.",
+                "ground_truth_reasoning": "Critical for determining if the claim is valid under the policy"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "NVA": 1,
+                "BVA": 1,
+                "VA": 14
+            },
+            "BVA": {
+                "NVA": 1,
+                "BVA": 5
+            },
+            "NVA": {}
+        }
+    }
+}

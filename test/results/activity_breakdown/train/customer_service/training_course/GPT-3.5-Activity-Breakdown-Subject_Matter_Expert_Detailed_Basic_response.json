@@ -1,0 +1,232 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Review application and budget forms",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application forms"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review budget forms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Room booking",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Search for available rooms"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select desired room"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Book the room"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create user account"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up login credentials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up course website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Design website layout"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create website content"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure website settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website setup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create registration form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up payment gateway"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure registration settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Promote course",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create marketing materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Publish course on various platforms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle payments",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment from participants"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update payment records"
+                }
+            ]
+        },
+        {
+            "activity_name": "Requirements Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if badges are required"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if Blackboard is required"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check if catering is required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Print name badges",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate name badge designs"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print name badges"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up Blackboard website for students",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create Blackboard course shell"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Upload course materials"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Configure access permissions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Catering arranging",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine catering requirements"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact catering service provider"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Finalize catering arrangements"
+                }
+            ]
+        },
+        {
+            "activity_name": "Course delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare course materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver course to participants"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Collect feedback from participants"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                6,
+                16.666666666666664
+            ],
+            "No Match": [
+                22,
+                61.111111111111114
+            ],
+            "Functional Equivalence": [
+                7,
+                19.444444444444446
+            ],
+            "Process Alternative": [
+                1,
+                2.7777777777777777
+            ]
+        },
+        "average_confidence": 33.611111111111114,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 83.33333333333333,
+            "No Match": 0.0,
+            "Functional Equivalence": 90.0,
+            "Process Alternative": 80.0
+        },
+        "ground_truth_coverage": 78.04878048780488,
+        "response_coverage": 61.81818181818181,
+        "average_sequence_alignment": 60.416666666666664,
+        "average_overall_similarity_score": 39.445
+    }
+}

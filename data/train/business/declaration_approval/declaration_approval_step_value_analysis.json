@@ -1,0 +1,318 @@
+[
+    {
+        "activity_name": "Declaration SUBMITTED by EMPLOYEE",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Employee fills out declaration form",
+                "performer": "Employee",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Employee attaches necessary documents",
+                "performer": "Employee",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee submits declaration",
+                "performer": "Employee",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to pre-approver",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Pre-approver notified of pending declaration",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Pre-approver reviews declaration",
+                "performer": "Pre-approver",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by SUPERVISOR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to supervisor",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor notified of pending declaration",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Supervisor reviews declaration",
+                "performer": "Supervisor",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Pre-approver approves declaration",
+                "performer": "Pre-approver",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to next approval stage",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by PRE_APPROVER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Pre-approver rejects declaration",
+                "performer": "Pre-approver",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of rejection",
+                "performer": "System",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by MISSING",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Reviewer identifies missing information",
+                "performer": "Reviewer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Employee notified of missing information",
+                "performer": "System",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by ADMINISTRATION",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to administration",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Administration notified of pending declaration",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Administration reviews declaration",
+                "performer": "Administration",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by ADMINISTRATION",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Administration approves declaration",
+                "performer": "Administration",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to next approval stage",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FOR_APPROVAL by BUDGET OWNER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System routes declaration to budget owner",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Budget owner notified of pending declaration",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Budget owner reviews declaration",
+                "performer": "Budget Owner",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration APPROVED by BUDGET OWNER",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Budget owner approves declaration",
+                "performer": "Budget Owner",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "System updates declaration status",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Declaration forwarded to final approval",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration FINAL_APPROVED by SUPERVISOR",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Supervisor performs final review",
+                "performer": "Supervisor",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor gives final approval",
+                "performer": "Supervisor",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "System updates declaration as finally approved",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "System generates payment request",
+                "performer": "System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Payment request sent to finance department",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Payment Handled",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finance department processes payment",
+                "performer": "Finance Department",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Payment transferred to employee",
+                "performer": "Finance Department",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "System updated with payment status",
+                "performer": "System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Declaration REJECTED by EMPLOYEE",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Employee reviews rejection reason",
+                "performer": "Employee",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Employee decides whether to resubmit",
+                "performer": "Employee",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "If resubmitting, employee updates declaration",
+                "performer": "Employee",
+                "classification": "VA"
+            }
+        ]
+    }
+]

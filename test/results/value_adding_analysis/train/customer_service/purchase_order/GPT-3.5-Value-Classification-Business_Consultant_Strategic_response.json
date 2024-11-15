@@ -1,0 +1,333 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "business_consultant",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Query inventory database",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compare requested quantity with available stock",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update stock status",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate rejection notification",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection email to customer",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify product details and quantity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product or service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare product for shipping",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product or service the customer is willing to pay for."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate order confirmation",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send confirmation email to customer",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status in system",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer address from database",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate address format",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm shipping address with customer",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package product securely",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate shipping label",
+                    "classification": "VA",
+                    "reasoning": "Transforms the product by providing necessary information for shipping."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange pickup with courier",
+                    "classification": "VA",
+                    "reasoning": "Transforms the product by initiating the shipping process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to shipped",
+                    "classification": "VA",
+                    "reasoning": "Transforms the product by updating its status to reflect progress in the shipping process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice with order details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate total amount including taxes and shipping",
+                    "classification": "VA",
+                    "reasoning": "Transforms the service by determining the final amount to be paid."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send invoice to customer",
+                    "classification": "VA",
+                    "reasoning": "Transforms the service by delivering the invoice to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process customer payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to receiving payment for the service provided."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment amount",
+                    "classification": "VA",
+                    "reasoning": "Transforms the service by ensuring the payment amount is correct."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to paid",
+                    "classification": "VA",
+                    "reasoning": "Transforms the service by updating its status to reflect payment completion."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Issue payment receipt",
+                    "classification": "VA",
+                    "reasoning": "Transforms the service by providing a receipt for the payment received."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all order-related documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to organizing and storing order information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Store order information in long-term database",
+                    "classification": "VA",
+                    "reasoning": "Transforms the order by archiving it for future reference."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to archived",
+                    "classification": "VA",
+                    "reasoning": "Transforms the order by updating its status to reflect completion of archiving process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 21,
+        "accuracy": 0.7,
+        "misclassifications": [
+            {
+                "activity": "Reject order",
+                "substep": "Generate rejection notification",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Doesn't contribute to order fulfillment, but necessary for customer service"
+            },
+            {
+                "activity": "Reject order",
+                "substep": "Send rejection email to customer",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Communication step that doesn't add value to the product or process"
+            },
+            {
+                "activity": "Reject order",
+                "substep": "Update order status in system",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Administrative task that doesn't contribute to order fulfillment"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice with order details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating a service the customer is willing to pay for.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly add product value"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Calculate total amount including taxes and shipping",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the service by determining the final amount to be paid.",
+                "ground_truth_reasoning": "Required for accurate billing but doesn't transform the product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the service by delivering the invoice to the customer.",
+                "ground_truth_reasoning": "Necessary for payment process but doesn't add direct product value"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Compile all order-related documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to organizing and storing order information.",
+                "ground_truth_reasoning": "Necessary for records but doesn't add direct customer value"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Store order information in long-term database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the order by archiving it for future reference.",
+                "ground_truth_reasoning": "Important for future reference but doesn't transform the product"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Update order status to archived",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Transforms the order by updating its status to reflect completion of archiving process.",
+                "ground_truth_reasoning": "Completes the process but doesn't add direct value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 12
+            },
+            "BVA": {
+                "BVA": 9,
+                "VA": 6
+            },
+            "NVA": {
+                "BVA": 3
+            }
+        }
+    }
+}

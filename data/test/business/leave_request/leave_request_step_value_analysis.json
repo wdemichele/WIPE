@@ -1,0 +1,232 @@
+[
+    {
+        "activity_name": "Receipt of application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive application documents from applicant",
+                "classification": "VA",
+                "reasoning": "Initiates the hiring process, directly valuable to applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Log application in HR system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Perform initial screening of application",
+                "classification": "VA",
+                "reasoning": "Critical step in evaluating applicant's suitability"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send receipt confirmation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate confirmation message",
+                "classification": "BVA",
+                "reasoning": "Prepares for communication but not directly valued by applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Send confirmation to applicant",
+                "classification": "VA",
+                "reasoning": "Provides valuable information and assurance to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Record confirmation sent in HR system",
+                "classification": "NVA",
+                "reasoning": "Internal record-keeping, not adding value to applicant or process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Invite to job interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Select suitable interview time slots",
+                "classification": "BVA",
+                "reasoning": "Necessary for scheduling but not directly valued by applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare and send interview invitation to applicant",
+                "classification": "VA",
+                "reasoning": "Progresses the application process, directly valuable to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare employment agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve employment contract template",
+                "classification": "BVA",
+                "reasoning": "Necessary step but not directly adding value to applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Customize contract with applicant details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to potential employment offer"
+            },
+            {
+                "step_number": 3,
+                "description": "Send draft to Head of Human Resources for review",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Carry out job interview",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare interview questions and materials",
+                "classification": "BVA",
+                "reasoning": "Improves interview quality but not directly valued by applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct interview with applicant and Head of HR",
+                "classification": "VA",
+                "reasoning": "Critical step in evaluation, directly involves applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Document interview results and recommendations",
+                "classification": "BVA",
+                "reasoning": "Important for decision-making but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send employment contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize employment contract",
+                "classification": "VA",
+                "reasoning": "Direct step towards potential employment"
+            },
+            {
+                "step_number": 2,
+                "description": "Send contract to successful applicant",
+                "classification": "VA",
+                "reasoning": "Delivers key value to successful applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare rejection letter",
+                "classification": "BVA",
+                "reasoning": "Necessary step but not adding direct value to applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Send rejection letter to unsuccessful applicant",
+                "classification": "VA",
+                "reasoning": "Provides closure and information to applicant, even if unwelcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status in HR system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receipt of signed employment contract",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive signed contract from applicant",
+                "classification": "VA",
+                "reasoning": "Critical step in finalizing employment"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify contract details and signatures",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "File signed contract and update HR records",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but not directly valued by applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Applicant verified",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's documents and interview results",
+                "classification": "VA",
+                "reasoning": "Critical for final decision-making"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult with Head of Development if necessary",
+                "classification": "BVA",
+                "reasoning": "May improve decision quality but not directly valued by applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Make final decision on applicant's suitability",
+                "classification": "VA",
+                "reasoning": "Directly impacts the outcome for the applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Rejection sent",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Confirm rejection decision with HR Department",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly valued by applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Ensure rejection letter is sent",
+                "classification": "VA",
+                "reasoning": "Provides necessary information to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update applicant status to 'Rejected' in HR system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but not directly valued by applicant"
+            }
+        ]
+    }
+]

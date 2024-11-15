@@ -1,0 +1,306 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare relevant marketing materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Customize information based on application"
+            },
+            {
+                "step_number": 3,
+                "description": "Send marketing package to applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create electronic response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive email response"
+            },
+            {
+                "step_number": 2,
+                "description": "Log response in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Format response for assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Process post response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive physical mail"
+            },
+            {
+                "step_number": 2,
+                "description": "Open and sort mail"
+            },
+            {
+                "step_number": 3,
+                "description": "Scan documents into system"
+            },
+            {
+                "step_number": 4,
+                "description": "Log response in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review response contents"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify provided information"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate completeness of response"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine next steps based on assessment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify available time slots"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact applicant to schedule appointment"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm appointment details"
+            },
+            {
+                "step_number": 4,
+                "description": "Send appointment reminder"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Draft rejection letter"
+            },
+            {
+                "step_number": 3,
+                "description": "Review rejection for accuracy and completeness"
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Greet applicant and review purpose of meeting"
+            },
+            {
+                "step_number": 2,
+                "description": "Go through application details"
+            },
+            {
+                "step_number": 3,
+                "description": "Clarify any unclear points"
+            },
+            {
+                "step_number": 4,
+                "description": "Gather additional information if needed"
+            },
+            {
+                "step_number": 5,
+                "description": "Summarize discussion and next steps"
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle acceptance",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review final application details"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare acceptance documentation"
+            },
+            {
+                "step_number": 3,
+                "description": "Update application status to 'Accepted'"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize rejection letter"
+            },
+            {
+                "step_number": 2,
+                "description": "Send rejection notification to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update application status to 'Rejected'"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare offer details"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate terms and conditions"
+            },
+            {
+                "step_number": 3,
+                "description": "Draft offer document"
+            },
+            {
+                "step_number": 4,
+                "description": "Review offer for accuracy"
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Organize all application documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status"
+            },
+            {
+                "step_number": 3,
+                "description": "Store application in appropriate system"
+            },
+            {
+                "step_number": 4,
+                "description": "Ensure all data protection requirements are met"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare offer package"
+            },
+            {
+                "step_number": 2,
+                "description": "Send offer to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Log offer sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle revocation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive offer rejection from applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Log rejection in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Update application status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create offer revocation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft offer revocation document"
+            },
+            {
+                "step_number": 2,
+                "description": "Review revocation for accuracy"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare any necessary explanations"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer revocation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize offer revocation package"
+            },
+            {
+                "step_number": 2,
+                "description": "Send revocation to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Log revocation sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Delete application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify application status is 'Rejected'"
+            },
+            {
+                "step_number": 2,
+                "description": "Remove application data from active systems"
+            },
+            {
+                "step_number": 3,
+                "description": "Archive or destroy physical documents if any"
+            },
+            {
+                "step_number": 4,
+                "description": "Log deletion in compliance records"
+            }
+        ]
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "activity_name": "Check stock",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access work equipment inventory database",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to end-user"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify availability of required work equipment",
+                "classification": "VA",
+                "reasoning": "Directly contributes to fulfilling equipment needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Document current stock levels",
+                "classification": "BVA",
+                "reasoning": "Important for inventory management but not directly valued by end-user"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve work equipment from the storeroom",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate work equipment in storeroom",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value to end-user"
+            },
+            {
+                "step_number": 2,
+                "description": "Remove equipment from storage",
+                "classification": "VA",
+                "reasoning": "Directly contributes to providing equipment to end-user"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory records",
+                "classification": "BVA",
+                "reasoning": "Important for inventory management but not directly valued by end-user"
+            }
+        ]
+    },
+    {
+        "activity_name": "Specify and quantify requirements",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine exact type and model of work equipment needed",
+                "classification": "VA",
+                "reasoning": "Ensures correct equipment is procured, directly benefiting end-user"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate required quantity",
+                "classification": "VA",
+                "reasoning": "Ensures sufficient equipment is procured to meet needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Document specifications for procurement",
+                "classification": "BVA",
+                "reasoning": "Necessary for ordering process but not directly adding value to end-user"
+            }
+        ]
+    },
+    {
+        "activity_name": "Place order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter order details into ERP System",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to end-user"
+            },
+            {
+                "step_number": 2,
+                "description": "Select supplier from approved vendor list",
+                "classification": "BVA",
+                "reasoning": "Ensures quality but not directly valued by end-user"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit order through ERP System",
+                "classification": "VA",
+                "reasoning": "Initiates procurement of needed equipment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Place order by e-mail",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve order request template",
+                "classification": "BVA",
+                "reasoning": "Facilitates ordering process but not directly valued by end-user"
+            },
+            {
+                "step_number": 2,
+                "description": "Fill in template with order details",
+                "classification": "VA",
+                "reasoning": "Ensures accurate order of required equipment"
+            },
+            {
+                "step_number": 3,
+                "description": "Send e-mail to supplier",
+                "classification": "VA",
+                "reasoning": "Initiates procurement of needed equipment"
+            }
+        ]
+    }
+]

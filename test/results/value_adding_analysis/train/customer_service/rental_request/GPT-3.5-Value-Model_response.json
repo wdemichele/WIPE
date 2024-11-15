@@ -1,0 +1,157 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Submit equipment rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to clerk",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the rental process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Select suitable equipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open and read request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select suitable equipment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check equipment availability",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record recommended equipment & supplier",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request to works engineer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the rental process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open and examine request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Communicate issues",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create PO",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Forward request back to clerk",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the rental process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create PO",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send PO to supplier",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the rental process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 12,
+        "correct_classifications": 7,
+        "accuracy": 0.5833333333333334,
+        "misclassifications": [
+            {
+                "activity": "Submit equipment rental request",
+                "substep": "Send request to clerk",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the rental process.",
+                "ground_truth_reasoning": "Necessary for process flow but doesn't directly add value to the request"
+            },
+            {
+                "activity": "Select suitable equipment",
+                "substep": "Open and read request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing necessary information.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the selection"
+            },
+            {
+                "activity": "Check availability",
+                "substep": "Record recommended equipment & supplier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing necessary information.",
+                "ground_truth_reasoning": "Supports the process but doesn't directly add value to the requester"
+            },
+            {
+                "activity": "Review rental request",
+                "substep": "Forward request to works engineer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the rental process.",
+                "ground_truth_reasoning": "Necessary for approval process but doesn't directly add value"
+            },
+            {
+                "activity": "Create PO",
+                "substep": "Forward request back to clerk",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the rental process.",
+                "ground_truth_reasoning": "Necessary for process flow but doesn't directly add value"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 7
+            },
+            "BVA": {
+                "VA": 5
+            }
+        }
+    }
+}

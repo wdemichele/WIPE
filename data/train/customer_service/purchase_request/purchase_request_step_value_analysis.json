@@ -1,0 +1,586 @@
+[
+    {
+        "activity_name": "Fill purchase request form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access purchase request form",
+                "classification": "BVA",
+                "reasoning": "Necessary to start the process, but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Input initial request details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to defining the purchase need"
+            }
+        ]
+    },
+    {
+        "activity_name": "Collect vendor quotes",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify potential vendors",
+                "classification": "VA",
+                "reasoning": "Critical for ensuring competitive pricing and quality"
+            },
+            {
+                "step_number": 2,
+                "description": "Request quotes from vendors",
+                "classification": "VA",
+                "reasoning": "Essential for price comparison and vendor selection"
+            },
+            {
+                "step_number": 3,
+                "description": "Compile received quotes",
+                "classification": "BVA",
+                "reasoning": "Organizes information but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review collected quotes",
+                "classification": "VA",
+                "reasoning": "Directly contributes to informed decision-making"
+            },
+            {
+                "step_number": 2,
+                "description": "Fill in remaining form details",
+                "classification": "VA",
+                "reasoning": "Provides crucial information for purchase decision"
+            },
+            {
+                "step_number": 3,
+                "description": "Attach supporting documents",
+                "classification": "BVA",
+                "reasoning": "Supports the request but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get supervisor approvals",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Submit form to supervisor",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Supervisor reviews request",
+                "classification": "VA",
+                "reasoning": "Critical for ensuring purchase validity and necessity"
+            },
+            {
+                "step_number": 3,
+                "description": "Supervisor makes approval decision",
+                "classification": "VA",
+                "reasoning": "Directly impacts the progression of the purchase"
+            }
+        ]
+    },
+    {
+        "activity_name": "Modify and resubmit",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review supervisor feedback",
+                "classification": "VA",
+                "reasoning": "Essential for improving the purchase request"
+            },
+            {
+                "step_number": 2,
+                "description": "Make necessary modifications",
+                "classification": "VA",
+                "reasoning": "Directly enhances the quality of the request"
+            },
+            {
+                "step_number": 3,
+                "description": "Resubmit for approval",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Forward to Purchasing Dept",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare approved request for forwarding",
+                "classification": "BVA",
+                "reasoning": "Administrative task that doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request to Purchasing Department",
+                "classification": "BVA",
+                "reasoning": "Necessary for process flow but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review received request",
+                "classification": "BVA",
+                "reasoning": "Ensures process integrity but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required information is present",
+                "classification": "BVA",
+                "reasoning": "Necessary for completeness but doesn't enhance value"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if request is complete",
+                "classification": "BVA",
+                "reasoning": "Decision point for process flow, but doesn't add direct value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return to employee",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document missing information",
+                "classification": "BVA",
+                "reasoning": "Aids in improving request but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request back to employee",
+                "classification": "NVA",
+                "reasoning": "Represents rework and doesn't add value to the process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Enter request in enterprise system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access enterprise system",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Input request details",
+                "classification": "BVA",
+                "reasoning": "Facilitates tracking but doesn't directly add value to purchase"
+            },
+            {
+                "step_number": 3,
+                "description": "Save request in system",
+                "classification": "BVA",
+                "reasoning": "Ensures record-keeping but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Select vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review vendor quotes",
+                "classification": "VA",
+                "reasoning": "Directly contributes to optimizing purchase decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate vendors based on criteria",
+                "classification": "VA",
+                "reasoning": "Critical for ensuring best value and quality"
+            },
+            {
+                "step_number": 3,
+                "description": "Choose most suitable vendor",
+                "classification": "VA",
+                "reasoning": "Directly impacts the value and quality of the purchase"
+            }
+        ]
+    },
+    {
+        "activity_name": "Add new vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect vendor information",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to current purchase"
+            },
+            {
+                "step_number": 2,
+                "description": "Create new vendor profile in system",
+                "classification": "BVA",
+                "reasoning": "Facilitates future processes but doesn't add direct value now"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify vendor details",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but doesn't directly add value to purchase"
+            }
+        ]
+    },
+    {
+        "activity_name": "Generate purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile purchase order details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to defining the purchase"
+            },
+            {
+                "step_number": 2,
+                "description": "Create purchase order in system",
+                "classification": "VA",
+                "reasoning": "Formalizes the purchase agreement"
+            },
+            {
+                "step_number": 3,
+                "description": "Review and finalize purchase order",
+                "classification": "VA",
+                "reasoning": "Ensures accuracy and completeness of the order"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send PO to vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare PO for sending",
+                "classification": "BVA",
+                "reasoning": "Necessary but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Send PO to selected vendor",
+                "classification": "VA",
+                "reasoning": "Initiates the actual purchase process"
+            },
+            {
+                "step_number": 3,
+                "description": "Record PO transmission",
+                "classification": "BVA",
+                "reasoning": "Ensures tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send PO copy to Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate PO copy for Accounts Payable",
+                "classification": "BVA",
+                "reasoning": "Facilitates internal processes but doesn't add direct value"
+            },
+            {
+                "step_number": 2,
+                "description": "Forward copy to Accounts Payable department",
+                "classification": "BVA",
+                "reasoning": "Necessary for financial tracking but doesn't add direct value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive goods",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Accept delivery from vendor",
+                "classification": "VA",
+                "reasoning": "Direct receipt of purchased items"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of goods",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check quantity and quality",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Count received items",
+                "classification": "VA",
+                "reasoning": "Ensures correct quantity of purchase received"
+            },
+            {
+                "step_number": 2,
+                "description": "Inspect quality of goods",
+                "classification": "VA",
+                "reasoning": "Directly verifies value of received goods"
+            },
+            {
+                "step_number": 3,
+                "description": "Compare with PO specifications",
+                "classification": "VA",
+                "reasoning": "Ensures received goods match what was ordered"
+            }
+        ]
+    },
+    {
+        "activity_name": "Generate goods receipt form",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document received goods details",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't add direct value"
+            },
+            {
+                "step_number": 2,
+                "description": "Create goods receipt form",
+                "classification": "BVA",
+                "reasoning": "Facilitates process but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Sign and date form",
+                "classification": "BVA",
+                "reasoning": "Ensures accountability but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Forward goods to employee",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare goods for internal delivery",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Deliver goods to requesting employee",
+                "classification": "VA",
+                "reasoning": "Fulfills the original purchase request"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain employee signature for receipt",
+                "classification": "BVA",
+                "reasoning": "Ensures accountability but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send form to Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare goods receipt form for sending",
+                "classification": "BVA",
+                "reasoning": "Administrative task that doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Forward form to Accounts Payable",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return to vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document issues with received goods",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare goods for return",
+                "classification": "NVA",
+                "reasoning": "Represents rework and doesn't add value to the process"
+            },
+            {
+                "step_number": 3,
+                "description": "Arrange return shipment to vendor",
+                "classification": "NVA",
+                "reasoning": "Necessary due to error but doesn't add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Purchasing and Accounts Payable",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification of goods return",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to Purchasing Department",
+                "classification": "BVA",
+                "reasoning": "Ensures process alignment but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Send notification to Accounts Payable",
+                "classification": "BVA",
+                "reasoning": "Necessary for financial tracking but doesn't add direct value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Accept invoice from vendor",
+                "classification": "BVA",
+                "reasoning": "Necessary for payment process but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of invoice",
+                "classification": "BVA",
+                "reasoning": "Ensures tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform three-way matching",
+        "analysis": "This activity is Business Value Adding (BVA). While it doesn't directly add value to the product or service, it's crucial for ensuring accuracy and preventing errors or fraud.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compare PO, goods receipt, and invoice",
+                "classification": "BVA",
+                "reasoning": "Essential for verifying transaction accuracy but doesn't directly add value to the product/service"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify matching details",
+                "classification": "BVA",
+                "reasoning": "Crucial for ensuring payment accuracy but doesn't directly contribute to the end product/service"
+            },
+            {
+                "step_number": 3,
+                "description": "Resolve any discrepancies",
+                "classification": "BVA",
+                "reasoning": "Important for maintaining financial integrity but doesn't directly add value to the customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Trigger bank transfer",
+        "analysis": "This activity is Value Adding (VA) as it completes the transaction and ensures the vendor is paid for their products or services.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare payment details",
+                "classification": "BVA",
+                "reasoning": "Necessary for payment but doesn't directly add value to the product/service"
+            },
+            {
+                "step_number": 2,
+                "description": "Initiate bank transfer",
+                "classification": "VA",
+                "reasoning": "Directly fulfills the company's obligation and maintains the supply chain"
+            },
+            {
+                "step_number": 3,
+                "description": "Record payment in system",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to the product/service"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send payment notice to vendor",
+        "analysis": "This activity is Business Value Adding (BVA). It maintains good vendor relationships but doesn't directly add value to the product or service.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate payment notice",
+                "classification": "BVA",
+                "reasoning": "Supports vendor communication but doesn't directly add value to the product/service"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notice to vendor",
+                "classification": "BVA",
+                "reasoning": "Maintains vendor relationship but doesn't directly contribute to the end product/service"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notice sent in system",
+                "classification": "BVA",
+                "reasoning": "Important for documentation but doesn't directly add value to the customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contact vendor",
+        "analysis": "This activity is Business Value Adding (BVA). It's necessary for resolving issues but doesn't directly add value to the product or service.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare communication about payment issue",
+                "classification": "BVA",
+                "reasoning": "Necessary for issue resolution but doesn't directly add value to the product/service"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact vendor to resolve issue",
+                "classification": "BVA",
+                "reasoning": "Important for maintaining vendor relationships but doesn't directly contribute to the end product/service"
+            },
+            {
+                "step_number": 3,
+                "description": "Document communication in system",
+                "classification": "BVA",
+                "reasoning": "Essential for record-keeping but doesn't directly add value to the customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Attempt transfer again",
+        "analysis": "This activity is Value Adding (VA) as it ensures the vendor receives payment for their products or services, maintaining the supply chain.",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review and update payment details",
+                "classification": "BVA",
+                "reasoning": "Necessary for correct payment but doesn't directly add value to the product/service"
+            },
+            {
+                "step_number": 2,
+                "description": "Initiate new bank transfer",
+                "classification": "VA",
+                "reasoning": "Directly fulfills the company's obligation and maintains the supply chain"
+            },
+            {
+                "step_number": 3,
+                "description": "Monitor transfer status",
+                "classification": "BVA",
+                "reasoning": "Important for ensuring payment completion but doesn't directly add value to the product/service"
+            }
+        ]
+    }
+]

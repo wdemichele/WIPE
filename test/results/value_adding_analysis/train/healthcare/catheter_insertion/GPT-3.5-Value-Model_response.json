@@ -1,0 +1,675 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Prepare implements",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather necessary medical equipment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the preparation of implements for the medical procedure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify equipment sterility",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to ensuring the sterility of the medical equipment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange implements in order of use",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the organization and efficiency of the medical procedure."
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand washing",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Use appropriate antiseptic solution",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the cleanliness and hygiene of the medical procedure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Wash hands thoroughly following medical protocol",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the cleanliness and hygiene of the medical procedure."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Dry hands with sterile towel",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the hands."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get in sterile clothes",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Don sterile gown",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the healthcare professional."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Put on sterile gloves",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the healthcare professional."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure proper coverage of all non-sterile areas",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the healthcare professional."
+                }
+            ]
+        },
+        {
+            "activity_name": "Clean puncture area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify appropriate puncture site",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the accuracy and safety of the medical procedure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Apply antiseptic solution to site",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the cleanliness and hygiene of the puncture site."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Allow area to dry completely",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the cleanliness and hygiene of the puncture site."
+                }
+            ]
+        },
+        {
+            "activity_name": "Drap puncture area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Place sterile drapes around puncture site",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the puncture site."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure complete coverage of non-sterile areas",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the puncture site."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Secure drapes in place",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to maintaining the sterility of the puncture site.\")classify(\"VA\", \"Ultrasound configuration\", \"Power on ultrasound machine\", \"Directly contributes to the configuration of the ultrasound machine."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ultrasound configuration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Power on ultrasound machine",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate settings for procedure",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the configuration of the ultrasound machine."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Adjust image quality as needed",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the configuration of the ultrasound machine."
+                }
+            ]
+        },
+        {
+            "activity_name": "Gel in probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply sterile ultrasound gel to probe",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of applying gel to the ultrasound probe."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure even distribution of gel",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of applying gel to the ultrasound probe."
+                }
+            ]
+        },
+        {
+            "activity_name": "Cover probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply sterile cover to ultrasound probe",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of covering the ultrasound probe."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Secure cover in place",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of covering the ultrasound probe."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify integrity of sterile barrier",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of covering the ultrasound probe."
+                }
+            ]
+        },
+        {
+            "activity_name": "Put sterile gel",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply sterile gel to patient's skin at probe site",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of applying sterile gel to the patient's skin."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure sufficient gel for good contact",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of applying sterile gel to the patient's skin."
+                }
+            ]
+        },
+        {
+            "activity_name": "Position probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Place ultrasound probe on patient's skin",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of positioning the ultrasound probe."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Adjust probe position for optimal view",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of positioning the ultrasound probe."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Maintain sterile technique throughout",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the process of positioning the ultrasound probe.\")classify(\"VA\", \"Position patient\", \"Adjust patient position for optimal access\", \"Directly contributes to the success of the procedure by ensuring optimal access to the target area."
+                }
+            ]
+        },
+        {
+            "activity_name": "Position patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Adjust patient position for optimal access",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure patient comfort",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by ensuring patient comfort and cooperation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify maintained sterility of prepared area",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by ensuring a sterile environment for the patient."
+                }
+            ]
+        },
+        {
+            "activity_name": "Doppler identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Activate Doppler function on ultrasound",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by enabling the identification of blood flow in the target vessel."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify blood flow in target vessel",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by confirming the presence of blood flow in the target vessel."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm vessel identity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by confirming the identity of the target vessel."
+                }
+            ]
+        },
+        {
+            "activity_name": "Anatomic identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visualize anatomical landmarks on ultrasound",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by providing visual reference points for identifying the target vessel."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify target vessel based on anatomy",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by identifying the target vessel based on its anatomical location."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm vessel identity",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by confirming the identity of the target vessel."
+                }
+            ]
+        },
+        {
+            "activity_name": "Compression identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply gentle pressure with ultrasound probe",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by applying pressure to the target area to observe vessel compression."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Observe vessel compression on ultrasound",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by visually confirming vessel compression."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Differentiate artery (non-compressible) from vein (compressible)",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by distinguishing between arteries and veins based on their compressibility."
+                }
+            ]
+        },
+        {
+            "activity_name": "Anesthetize",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare local anesthetic",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by preparing the necessary anesthetic for the puncture site."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inject anesthetic at puncture site",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by administering local anesthesia at the puncture site."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Allow time for anesthetic to take effect",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to the success of the procedure by ensuring sufficient time for the anesthetic to take effect before proceeding with the next step.\")classify(\"VA\", \"Puncture\", \"Insert needle at identified site\", \"Directly contributes to meeting customer needs by initiating the puncture process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Puncture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insert needle at identified site",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Advance needle under ultrasound guidance",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Maintain visualization of needle tip",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring accurate needle placement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Blood return",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Observe for blood return in needle",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming successful puncture."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm position in target vessel",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to ensure correct needle placement but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Guidewire install",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insert guidewire through needle",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the guidewire installation process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Advance guidewire into vessel",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring accurate guidewire placement."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Monitor for any resistance or arrhythmias",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring patient safety."
+                }
+            ]
+        },
+        {
+            "activity_name": "Remove trocar",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Carefully withdraw needle",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by completing the puncture process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Maintain guidewire position",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring accurate guidewire placement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check wire in long axis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Adjust ultrasound to visualize vessel length",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm guidewire position along vessel",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring accurate guidewire placement.\")classify(\"VA\", \"Check wire in short axis\", \"Adjust ultrasound for cross-sectional view\", \"Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check wire in short axis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Adjust ultrasound for cross-sectional view",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm guidewire position within vessel lumen",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming the correct position of the guidewire."
+                }
+            ]
+        },
+        {
+            "activity_name": "Widen pathway",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Select appropriate dilator",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by selecting the correct dilator for the procedure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Pass dilator over guidewire",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by advancing the dilator over the guidewire."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enlarge tissue tract",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by enlarging the tissue tract to create a wider pathway."
+                }
+            ]
+        },
+        {
+            "activity_name": "Advance catheter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Thread catheter over guidewire",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by threading the catheter over the guidewire."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Advance catheter to appropriate depth",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by advancing the catheter to the appropriate depth."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Monitor for any resistance",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by monitoring for any resistance during catheter advancement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Remove guidewire",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Carefully withdraw guidewire",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by safely removing the guidewire."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Maintain catheter position",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by maintaining the position of the catheter."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check flow and reflow",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Aspirate blood from each lumen",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by removing any blood from each lumen."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Flush each lumen with saline",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by flushing each lumen with saline."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify easy flow and reflow",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying easy flow and reflow in each lumen.\")classify(\"VA\", \"Check catheter position\", \"Perform chest X-ray or other imaging\", \"Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check catheter position",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Perform chest X-ray or other imaging",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm proper catheter tip position",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring the catheter is in the correct position."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify absence of complications",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring there are no complications."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 71,
+        "correct_classifications": 59,
+        "accuracy": 0.8309859154929577,
+        "misclassifications": [
+            {
+                "activity": "Prepare implements",
+                "substep": "Gather necessary medical equipment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the preparation of implements for the medical procedure.",
+                "ground_truth_reasoning": "Essential for procedure but doesn't directly add value to patient care"
+            },
+            {
+                "activity": "Prepare implements",
+                "substep": "Arrange implements in order of use",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the organization and efficiency of the medical procedure.",
+                "ground_truth_reasoning": "Improves efficiency but doesn't directly affect patient outcome"
+            },
+            {
+                "activity": "Ultrasound configuration",
+                "substep": "Power on ultrasound machine",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary for procedure but doesn't directly add value"
+            },
+            {
+                "activity": "Position patient",
+                "substep": "Adjust patient position for optimal access",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Directly impacts procedure ease and success"
+            },
+            {
+                "activity": "Position patient",
+                "substep": "Ensure patient comfort",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the success of the procedure by ensuring patient comfort and cooperation.",
+                "ground_truth_reasoning": "Improves patient experience but doesn't directly affect procedure outcome"
+            },
+            {
+                "activity": "Doppler identification",
+                "substep": "Activate Doppler function on ultrasound",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the success of the procedure by enabling the identification of blood flow in the target vessel.",
+                "ground_truth_reasoning": "Facilitates vessel identification but isn't the only method"
+            },
+            {
+                "activity": "Anesthetize",
+                "substep": "Prepare local anesthetic",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the success of the procedure by preparing the necessary anesthetic for the puncture site.",
+                "ground_truth_reasoning": "Necessary but doesn't directly contribute to catheter placement"
+            },
+            {
+                "activity": "Puncture",
+                "substep": "Insert needle at identified site",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Critical first step in catheter insertion"
+            },
+            {
+                "activity": "Blood return",
+                "substep": "Confirm position in target vessel",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to ensure correct needle placement but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Essential for ensuring correct placement"
+            },
+            {
+                "activity": "Check wire in short axis",
+                "substep": "Adjust ultrasound for cross-sectional view",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Ensures proper guidewire placement"
+            },
+            {
+                "activity": "Widen pathway",
+                "substep": "Select appropriate dilator",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by selecting the correct dilator for the procedure.",
+                "ground_truth_reasoning": "Necessary but doesn't directly add value to catheter placement"
+            },
+            {
+                "activity": "Check catheter position",
+                "substep": "Perform chest X-ray or other imaging",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Essential for confirming proper catheter placement"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 6,
+                "Unclassified": 1
+            },
+            "VA": {
+                "VA": 59,
+                "Unclassified": 4,
+                "BVA": 1
+            }
+        }
+    }
+}

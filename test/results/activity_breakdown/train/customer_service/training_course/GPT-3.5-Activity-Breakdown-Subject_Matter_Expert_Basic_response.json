@@ -1,0 +1,221 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Review application and budget forms",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application forms"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review budget forms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Room booking",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Select suitable room"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm room availability"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create user account"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign account privileges"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up course website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Design website layout"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Configure website settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website setup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create registration form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Integrate payment gateway"
+                }
+            ]
+        },
+        {
+            "activity_name": "Promote course",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create marketing materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Distribute marketing materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website closed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Disable registration form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Remove payment gateway"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle payments",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Requirements Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if badges are required"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if Blackboard is required"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check if catering is required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify registered participants of cancellation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send cancellation notification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Print name badges",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate name badge designs"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print name badges"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up Blackboard website for students",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create Blackboard course shell"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Configure course settings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Catering arranging",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine catering requirements"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact catering service provider"
+                }
+            ]
+        },
+        {
+            "activity_name": "Course delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare course materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Deliver course sessions"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                3,
+                10.714285714285714
+            ],
+            "No Match": [
+                14,
+                50.0
+            ],
+            "Functional Equivalence": [
+                11,
+                39.285714285714285
+            ]
+        },
+        "average_confidence": 43.392857142857146,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "No Match": 0.0,
+            "Functional Equivalence": 88.63636363636364
+        },
+        "ground_truth_coverage": 89.65517241379311,
+        "response_coverage": 55.072463768115945,
+        "average_sequence_alignment": 53.205128205128204,
+        "average_overall_similarity_score": 43.92307692307692
+    }
+}

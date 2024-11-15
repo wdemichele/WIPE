@@ -1,0 +1,291 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer arrives at the pharmacy"
+                }
+            ]
+        },
+        {
+            "activity_name": "Drop-off location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer selects drive-through or front counter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Drop off prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer hands over prescription to pharmacy staff"
+                }
+            ]
+        },
+        {
+            "activity_name": "Immediate fill?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacy staff checks if prescription can be filled immediately"
+                }
+            ]
+        },
+        {
+            "activity_name": "Wait 15min - 1h",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer waits for prescription to be filled"
+                }
+            ]
+        },
+        {
+            "activity_name": "Nominate pickup time",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer selects a specific time for prescription pickup"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ask for pickup time",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician asks customer for pickup time"
+                }
+            ]
+        },
+        {
+            "activity_name": "Place in time-labeled box",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician puts prescription in a box labeled with pickup time"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect prescriptions for current hour",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician gathers all prescriptions due for pickup in the current hour"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details in system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician enters prescription information into the pharmacy system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform automated DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "System performs automated Drug Utilization Review (DUR)"
+                }
+            ]
+        },
+        {
+            "activity_name": "DUR alarms?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "System checks if any DUR alarms are triggered"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pharmacist review",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist reviews prescriptions with DUR alarms"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform insurance check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "System checks insurance coverage for the prescription"
+                }
+            ]
+        },
+        {
+            "activity_name": "Need to call doctor?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist determines if a doctor needs to be called for clarification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Call doctor to confirm",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist calls the doctor to confirm prescription details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Review insurance check results",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist reviews the results of the insurance check"
+                }
+            ]
+        },
+        {
+            "activity_name": "Drug replacement needed?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist determines if a drug replacement is needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Call doctor/patient for replacement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist calls the doctor or patient to discuss drug replacement"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assign to technician for filling",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pharmacist assigns the prescription to a technician for filling"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs and bag",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician collects the prescribed drugs and prepares them for bagging"
+                }
+            ]
+        },
+        {
+            "activity_name": "Double-check prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician2 double-checks the accuracy of the prescription"
+                }
+            ]
+        },
+        {
+            "activity_name": "Seal bag and place in pickup area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Technician2 seals the bag and puts it in the designated pickup area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Arrive for pickup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer arrives at the pharmacy for prescription pickup"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve prescription",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer retrieves the prescription from the pickup area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment needed?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer determines if payment is required for the prescription"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Customer makes payment for the prescription"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process ends, prescription pickup is complete"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                16,
+                80.0
+            ],
+            "Functional Equivalence": [
+                3,
+                15.0
+            ],
+            "Granularity Difference": [
+                1,
+                5.0
+            ]
+        },
+        "average_confidence": 16.0,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Functional Equivalence": 80.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 58.82352941176471,
+        "response_coverage": 41.46341463414634,
+        "average_sequence_alignment": 73.74999999999999,
+        "average_overall_similarity_score": 16.0
+    }
+}

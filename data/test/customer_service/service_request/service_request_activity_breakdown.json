@@ -1,0 +1,155 @@
+[
+    {
+        "activity_name": "Retrieve parts from storage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate parts in storage area"
+            },
+            {
+                "step_number": 2,
+                "description": "Collect required parts"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Specify and quantify requirements",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify specific parts needed"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine required quantities"
+            },
+            {
+                "step_number": 3,
+                "description": "Document specifications for procurement"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete a purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access ERP-System"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter purchase order details"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit purchase order for review"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review purchase order details in ERP-System"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify accuracy and completeness of order"
+            },
+            {
+                "step_number": 3,
+                "description": "Identify vendor status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather new vendor information"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter vendor details into system"
+            },
+            {
+                "step_number": 3,
+                "description": "Validate and approve new vendor"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create order template from purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access ERP-System"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate order template based on purchase order"
+            },
+            {
+                "step_number": 3,
+                "description": "Save template for future use"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order details in ERP-System"
+            },
+            {
+                "step_number": 2,
+                "description": "Check against approval criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide approval or rejection decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Adjust order status",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify delivery problems"
+            },
+            {
+                "step_number": 2,
+                "description": "Update order status in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate status change to relevant parties"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receipt of goods",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive delivered parts"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify received parts against order"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory and order status in system"
+            }
+        ]
+    }
+]

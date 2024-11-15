@@ -1,0 +1,187 @@
+[
+    {
+        "activity_name": "Receive loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive application from customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Log application in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign application ID"
+            }
+        ]
+    },
+    {
+        "activity_name": "Initial eligibility check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application for completeness"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify loan amount against eligibility criteria"
+            },
+            {
+                "step_number": 3,
+                "description": "Make initial eligibility decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Credit history check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Request credit report from credit bureau"
+            },
+            {
+                "step_number": 2,
+                "description": "Review credit score"
+            },
+            {
+                "step_number": 3,
+                "description": "Analyse payment history"
+            },
+            {
+                "step_number": 4,
+                "description": "Check for bankruptcies or defaults"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check applicant's income sources",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review provided income documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify employment status"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate total income"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess income stability"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appraisal of property to be mortgaged",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Schedule property appraisal"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct on-site property inspection"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate property condition and location"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine property market value"
+            },
+            {
+                "step_number": 5,
+                "description": "Prepare appraisal report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess applicant's credit risk",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review credit history check results"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze income sources"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate debt-to-income ratio"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine overall credit risk level"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appraise other collateral",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify additional collateral"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess value of additional collateral"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify ownership of collateral"
+            },
+            {
+                "step_number": 4,
+                "description": "Document collateral appraisal results"
+            }
+        ]
+    },
+    {
+        "activity_name": "Loan risk assessment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all gathered information"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyse loan-to-value ratio"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate overall financial profile"
+            },
+            {
+                "step_number": 4,
+                "description": "Determine final risk assessment"
+            },
+            {
+                "step_number": 5,
+                "description": "Prepare risk assessment report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Customer informed",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare communication for ineligible application"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Record communication in system"
+            }
+        ]
+    }
+]

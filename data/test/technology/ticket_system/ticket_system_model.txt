@@ -1,0 +1,43 @@
+flowchart TD
+    subgraph Support
+        S_Start([Solve problems]) --> S_TicketReceive[Ticket receive]
+        S_TicketReceive --> S_Gateway{Gateway}
+        S_Gateway -->|No| S_SolveWithout[Solve the problem without involving customer]
+        S_SolveWithout --> S_ProblemSolved
+        S_Gateway -->|Yes| S_ContactCustomer[Contacting the customer]
+        S_ContactCustomer --> S_DetailedInfo[Detailed interview of the problem]
+        S_DetailedInfo --> S_ConnectItem[Connecting to the item of the customer]
+        S_ConnectItem --> S_AskFurther[Ask for further information]
+        S_AskFurther --> S_ProblemSolved{Problem solved}
+        S_ProblemSolved -->|Yes| S_CreateNotes[Create notes for documentation]
+        S_CreateNotes --> S_Confirmation[Confirmation ticket completed]
+        S_Confirmation --> S_End([Problems solved])
+        S_ProblemSolved -->|No| S_AskFurther
+    end
+
+    subgraph SupportCustomer
+        SC_SolveProblem[Solve problem]
+    end
+
+    S_ConnectItem --> SC_SolveProblem
+    SC_SolveProblem --> S_AskFurther
+
+    %% Data Objects and Systems
+    S_TicketReceive -.-> Ticket[("Ticket")]
+    S_CreateNotes -.-> Notes[("Notes")]
+    S_ContactCustomer -.-> Email[("Email")]
+    S_ConnectItem -.-> RemoteMaintenance1[("Remote maintenance")]
+    SC_SolveProblem -.-> RemoteMaintenance2[("Remote maintenance")]
+    S_Confirmation -.-> TicketSystem[("Ticket system")]
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:note;
+    classDef system fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class S_Start,S_End event;
+    class S_Gateway,S_ProblemSolved gateway;
+    class S_TicketReceive,S_SolveWithout,S_ContactCustomer,S_DetailedInfo,S_ConnectItem,S_AskFurther,S_CreateNotes,S_Confirmation,SC_SolveProblem activity;
+    class Ticket,Notes dataObject;
+    class Email,RemoteMaintenance1,RemoteMaintenance2,TicketSystem system;

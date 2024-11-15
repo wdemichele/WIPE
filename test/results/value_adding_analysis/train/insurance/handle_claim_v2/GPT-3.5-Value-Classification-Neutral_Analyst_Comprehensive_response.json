@@ -1,0 +1,243 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Determine likelihood of the claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new claim",
+                    "classification": "VA",
+                    "reasoning": "Directly initiates the claim process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details",
+                    "classification": "VA",
+                    "reasoning": "Ensures accurate understanding of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze policy coverage",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for compliance and risk assessment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate initial evidence",
+                    "classification": "VA",
+                    "reasoning": "Determines initial claim validity."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Estimate probability of claim validity",
+                    "classification": "VA",
+                    "reasoning": "Assesses likelihood of claim being valid."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather additional information if needed",
+                    "classification": "VA",
+                    "reasoning": "Ensures complete understanding of the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details thoroughly",
+                    "classification": "VA",
+                    "reasoning": "Ensures accurate understanding of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify policy terms and conditions",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for compliance and risk assessment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate evidence and documentation",
+                    "classification": "VA",
+                    "reasoning": "Determines claim validity based on evidence."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Consult with relevant experts if necessary",
+                    "classification": "BVA",
+                    "reasoning": "Ensures accurate assessment of claim validity."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Determine claim validity and value",
+                    "classification": "VA",
+                    "reasoning": "Finalizes claim assessment and determines value."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initiate payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate payment amount",
+                    "classification": "VA",
+                    "reasoning": "Determines the amount to be paid."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify claimant's payment details",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for accurate payment processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare payment documentation",
+                    "classification": "VA",
+                    "reasoning": "Prepares necessary documentation for payment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain necessary approvals",
+                    "classification": "BVA",
+                    "reasoning": "Ensures compliance and financial control."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Process payment through financial system",
+                    "classification": "VA",
+                    "reasoning": "Initiates the payment process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Advise claimant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication detailing claim decision",
+                    "classification": "VA",
+                    "reasoning": "Informs claimant of the decision."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include explanation of decision rationale",
+                    "classification": "VA",
+                    "reasoning": "Provides transparency and understanding."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide information on payment (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Informs claimant of payment details."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Include details on appeal process (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Informs claimant of appeal process."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Send communication to claimant",
+                    "classification": "VA",
+                    "reasoning": "Delivers the communication to the claimant."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Record communication in claim file",
+                    "classification": "VA",
+                    "reasoning": "Documents the communication for future reference."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 22,
+        "correct_classifications": 15,
+        "accuracy": 0.6818181818181818,
+        "misclassifications": [
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Receive new claim",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly initiates the claim process.",
+                "ground_truth_reasoning": "Necessary to initiate the process but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Analyze policy coverage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for compliance and risk assessment.",
+                "ground_truth_reasoning": "Critical for determining if the claim is valid under the policy"
+            },
+            {
+                "activity": "Assess claim",
+                "substep": "Verify policy terms and conditions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for compliance and risk assessment.",
+                "ground_truth_reasoning": "Essential for determining if the claim is covered under the policy"
+            },
+            {
+                "activity": "Assess claim",
+                "substep": "Consult with relevant experts if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Ensures accurate assessment of claim validity.",
+                "ground_truth_reasoning": "Adds specialized knowledge to accurately assess complex claims"
+            },
+            {
+                "activity": "Initiate payment",
+                "substep": "Prepare payment documentation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Prepares necessary documentation for payment.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't change the payment itself"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Send communication to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Delivers the communication to the claimant.",
+                "ground_truth_reasoning": "Necessary to deliver information but doesn't add new value"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Record communication in claim file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Documents the communication for future reference.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to claimant"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 13,
+                "BVA": 3
+            },
+            "BVA": {
+                "VA": 4,
+                "BVA": 2
+            },
+            "NVA": {}
+        }
+    }
+}

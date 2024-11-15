@@ -1,0 +1,640 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "\n    You are an AI assistant representing the voice of the customer in process analysis. Your role is to evaluate\n    business processes from the customer's perspective, focusing on identifying steps that directly contribute\n    to customer satisfaction and value delivery.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): Activities that directly contribute to meeting customer needs or requirements.\n    2. Business Value Adding (BVA): Activities that are necessary for the business but don't directly add value for the customer.\n    3. Non-Value Adding (NVA): Activities that neither contribute to customer requirements nor are necessary for business functions.\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, consider the following additional guidelines:\n\n    1. Context is crucial: A step's classification may depend on its position in the overall process. \n       What seems non-value adding in isolation might be necessary when considering the bigger picture.\n\n    2. Customer perspective: Always try to view the process from the customer's point of view. \n       What they perceive as valuable should guide your VA classifications.\n\n    3. Industry standards: Some steps might be BVA due to industry regulations or standards, \n       even if they don't directly add value for the customer.\n\n    4. Potential for improvement: When classifying NVA steps, consider if they could be eliminated \n       or combined with other steps to improve efficiency.\n\n    5. Consistency: Ensure similar steps across different activities are classified consistently \n       unless there's a clear reason for differentiation.\n    ",
+            "_raw_input": {
+                "role_description": "customer_advocate",
+                "task_description": "efficiency_focused",
+                "classification_types": "basic",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "context_aware"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Submit loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out loan application form",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting a loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Attach required documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting all necessary documents."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit application to Loan Officer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of submitting the loan application to the Loan Officer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check application completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure that all required documents have been submitted."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required fields are filled",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure that all required fields in the application form have been filled."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if application is complete or incomplete",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine whether the application is complete or incomplete."
+                }
+            ]
+        },
+        {
+            "activity_name": "Return application to applicant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify missing or incomplete information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to identify any missing or incomplete information in the application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare return notice with required corrections",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the applicant about the missing or incomplete information and provide instructions for corrections."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send application back to applicant",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to return the application to the applicant after identifying the missing or incomplete information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check application details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review applicant's personal information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the personal information provided by the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify loan amount and purpose",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to verify the loan amount and purpose specified by the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate credit history check",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to initiate a credit history check for the applicant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Request property appraisal",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to request a property appraisal for the loan."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to obtain the credit report of the applicant from a credit bureau."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score and payment history",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the credit score and payment history of the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare credit history report",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to prepare a credit history report based on the obtained credit report and review."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess loan risk",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review credit history report",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to assess the risk of the loan applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult risk rules database",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to determine the risk associated with the loan applicant based on predefined rules."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate risk score",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of loan risk and helps in making informed decisions."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare risk assessment report",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by summarizing the risk assessment and providing a report for further analysis."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraise property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule property inspection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to arrange for the property inspection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site property evaluation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the property appraisal process by evaluating the property in person."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare property appraisal report",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by summarizing the property appraisal and providing a report for further analysis."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess eligibility",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the loan applicant's eligibility by reviewing their application details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze credit history report",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by analyzing the credit history report to assess the applicant's creditworthiness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate risk assessment",
+                    "classification": "VA",
+                    "reasoning": "This step contributes to the assessment of the loan applicant's eligibility by considering the risk assessment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Consider property appraisal",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by considering the property appraisal in the eligibility assessment process."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Make eligibility decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the eligibility assessment process by making a decision based on the applicant's information and assessments."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to document the reasons for rejecting the loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to inform the applicant about the rejection of their loan application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to notify the applicant about the rejection of their loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare acceptance pack",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile loan terms and conditions",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to compile the terms and conditions of the loan for the acceptance pack."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare repayment schedule",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the repayment schedule for the loan."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Include necessary legal documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to include the required legal documents in the acceptance pack."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check if home insurance quote is requested",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for insurance request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to determine if a home insurance quote is requested."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine if quote is needed",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to determine if a home insurance quote is needed."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send home insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare home insurance quote",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need for a home insurance quote."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include quote in acceptance pack",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by including the home insurance quote in the acceptance pack."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send acceptance pack",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review acceptance pack for completeness",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by ensuring the acceptance pack is complete."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send pack to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by sending the acceptance pack to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set 2-week timer for response",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure a timely response from the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify repayment agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive applicant's response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by receiving the applicant's response."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if applicant agrees to terms",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by checking if the applicant agrees to the repayment terms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record applicant's decision",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by recording the applicant's decision."
+                }
+            ]
+        },
+        {
+            "activity_name": "Cancel application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for cancellation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to document the reasons for cancelling the application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status to 'Cancelled'",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to update the application status to 'Cancelled'."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify cancellation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare cancellation notice",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the applicant about the cancellation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notice to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by notifying them about the cancellation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update internal records",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update its internal records regarding the cancellation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Approve application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Finalize loan terms",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to finalize the terms of the loan."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status to 'Approved'",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by updating the application status to 'Approved'."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare approval documentation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to prepare the documentation related to the approval."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify approval",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate approval letter",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by generating an approval letter."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send approval notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by notifying them about the approval."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate loan disbursement process",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to initiate the process of disbursing the loan."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 55,
+        "correct_classifications": 33,
+        "accuracy": 0.6,
+        "misclassifications": [
+            {
+                "activity": "Submit loan application",
+                "substep": "Submit application to Loan Officer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's requirement of submitting the loan application to the Loan Officer.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value"
+            },
+            {
+                "activity": "Check application details",
+                "substep": "Review applicant's personal information",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to review the personal information provided by the applicant.",
+                "ground_truth_reasoning": "Directly contributes to assessing applicant's profile"
+            },
+            {
+                "activity": "Check application details",
+                "substep": "Verify loan amount and purpose",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to verify the loan amount and purpose specified by the applicant.",
+                "ground_truth_reasoning": "Crucial for determining loan suitability"
+            },
+            {
+                "activity": "Check credit history",
+                "substep": "Review credit score and payment history",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to review the credit score and payment history of the applicant.",
+                "ground_truth_reasoning": "Directly contributes to assessing creditworthiness"
+            },
+            {
+                "activity": "Assess loan risk",
+                "substep": "Review credit history report",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to assess the risk of the loan applicant.",
+                "ground_truth_reasoning": "Directly contributes to risk assessment"
+            },
+            {
+                "activity": "Assess loan risk",
+                "substep": "Consult risk rules database",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to determine the risk associated with the loan applicant based on predefined rules.",
+                "ground_truth_reasoning": "Crucial for standardized risk evaluation"
+            },
+            {
+                "activity": "Assess loan risk",
+                "substep": "Prepare risk assessment report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step adds value by summarizing the risk assessment and providing a report for further analysis.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Appraise property",
+                "substep": "Prepare property appraisal report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step adds value by summarizing the property appraisal and providing a report for further analysis.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Prepare acceptance pack",
+                "substep": "Compile loan terms and conditions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to compile the terms and conditions of the loan for the acceptance pack.",
+                "ground_truth_reasoning": "Directly defines the value proposition to the customer"
+            },
+            {
+                "activity": "Prepare acceptance pack",
+                "substep": "Prepare repayment schedule",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to prepare the repayment schedule for the loan.",
+                "ground_truth_reasoning": "Crucial part of the loan offer"
+            },
+            {
+                "activity": "Send home insurance quote",
+                "substep": "Prepare home insurance quote",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need for a home insurance quote.",
+                "ground_truth_reasoning": "Adds value to customer but not directly related to loan"
+            },
+            {
+                "activity": "Send home insurance quote",
+                "substep": "Include quote in acceptance pack",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by including the home insurance quote in the acceptance pack.",
+                "ground_truth_reasoning": "Enhances offer but doesn't directly affect loan terms"
+            },
+            {
+                "activity": "Send acceptance pack",
+                "substep": "Review acceptance pack for completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by ensuring the acceptance pack is complete.",
+                "ground_truth_reasoning": "Ensures process integrity but doesn't change offer"
+            },
+            {
+                "activity": "Send acceptance pack",
+                "substep": "Send pack to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by sending the acceptance pack to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter offer"
+            },
+            {
+                "activity": "Verify repayment agreement",
+                "substep": "Receive applicant's response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by receiving the applicant's response.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change terms"
+            },
+            {
+                "activity": "Verify repayment agreement",
+                "substep": "Record applicant's decision",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by recording the applicant's decision.",
+                "ground_truth_reasoning": "Important for records but doesn't affect loan terms"
+            },
+            {
+                "activity": "Notify cancellation",
+                "substep": "Send notice to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by notifying them about the cancellation.",
+                "ground_truth_reasoning": "Required for closure but doesn't add value"
+            },
+            {
+                "activity": "Approve application",
+                "substep": "Finalize loan terms",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to finalize the terms of the loan.",
+                "ground_truth_reasoning": "Directly defines final value proposition to customer"
+            },
+            {
+                "activity": "Approve application",
+                "substep": "Update application status to 'Approved'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by updating the application status to 'Approved'.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change terms"
+            },
+            {
+                "activity": "Notify approval",
+                "substep": "Generate approval letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by generating an approval letter.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change terms"
+            },
+            {
+                "activity": "Notify approval",
+                "substep": "Send approval notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by notifying them about the approval.",
+                "ground_truth_reasoning": "Required for process but doesn't alter loan terms"
+            },
+            {
+                "activity": "Notify approval",
+                "substep": "Initiate loan disbursement process",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to initiate the process of disbursing the loan.",
+                "ground_truth_reasoning": "Directly leads to delivery of loan value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 10,
+                "BVA": 9
+            },
+            "BVA": {
+                "VA": 13,
+                "BVA": 23
+            },
+            "NVA": {}
+        }
+    }
+}

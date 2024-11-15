@@ -1,0 +1,278 @@
+[
+    {
+        "activity_name": "Create Fine",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record details of the offense",
+                "classification": "VA",
+                "reasoning": "Directly contributes to the core purpose of issuing a fine"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine fine amount",
+                "classification": "VA",
+                "reasoning": "Critical for establishing the financial penalty"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate fine document",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't directly add value to the fine itself"
+            }
+        ]
+    },
+    {
+        "activity_name": "Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive payment",
+                "classification": "VA",
+                "reasoning": "Direct fulfillment of the fine's purpose"
+            },
+            {
+                "step_number": 2,
+                "description": "Record payment in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue payment receipt",
+                "classification": "BVA",
+                "reasoning": "Important for documentation but doesn't change the payment's value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Fine",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare fine notification",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't alter the fine itself"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to offender",
+                "classification": "BVA",
+                "reasoning": "Required for process but doesn't change the fine's value"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notification sent in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Insert Fine Notification",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Update system with fine notification details",
+                "classification": "BVA",
+                "reasoning": "Necessary for process management but doesn't change the fine"
+            },
+            {
+                "step_number": 2,
+                "description": "Set due date for payment or appeal",
+                "classification": "VA",
+                "reasoning": "Directly impacts the terms of the fine"
+            }
+        ]
+    },
+    {
+        "activity_name": "Add penalty",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate penalty amount",
+                "classification": "VA",
+                "reasoning": "Directly increases the fine value"
+            },
+            {
+                "step_number": 2,
+                "description": "Add penalty to original fine",
+                "classification": "VA",
+                "reasoning": "Directly modifies the amount owed"
+            },
+            {
+                "step_number": 3,
+                "description": "Update fine record in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send for Credit Collection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare case for credit collection",
+                "classification": "BVA",
+                "reasoning": "Facilitates collection but doesn't directly add value"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer case to credit collection agency",
+                "classification": "VA",
+                "reasoning": "Directly contributes to obtaining payment"
+            },
+            {
+                "step_number": 3,
+                "description": "Update system with collection status",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly add value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Insert Date Appeal to Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record appeal date in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process management but doesn't change the appeal"
+            },
+            {
+                "step_number": 2,
+                "description": "Update case status to 'Under Appeal'",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't directly affect the appeal outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Appeal to Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare appeal documents",
+                "classification": "VA",
+                "reasoning": "Directly contributes to the appeal process"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit appeal to prefecture",
+                "classification": "VA",
+                "reasoning": "Critical step in initiating the appeal"
+            },
+            {
+                "step_number": 3,
+                "description": "Record appeal submission in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly affect the appeal"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive Result Appeal from Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive appeal decision from prefecture",
+                "classification": "VA",
+                "reasoning": "Directly impacts the outcome of the fine"
+            },
+            {
+                "step_number": 2,
+                "description": "Record decision in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for documentation but doesn't change the decision"
+            },
+            {
+                "step_number": 3,
+                "description": "Update case status based on decision",
+                "classification": "BVA",
+                "reasoning": "Important for process flow but doesn't alter the decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Result Appeal to Offender",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification of appeal result",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change the result"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to offender",
+                "classification": "BVA",
+                "reasoning": "Required for process but doesn't alter the appeal outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notification sent in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but doesn't add value to the process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appeal to Judge",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare appeal documents for court",
+                "classification": "VA",
+                "reasoning": "Directly contributes to the appeal process"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit appeal to court",
+                "classification": "VA",
+                "reasoning": "Critical step in initiating the court appeal"
+            },
+            {
+                "step_number": 3,
+                "description": "Record court appeal in system",
+                "classification": "BVA",
+                "reasoning": "Necessary for tracking but doesn't directly affect the appeal"
+            },
+            {
+                "step_number": 4,
+                "description": "Await judge's decision",
+                "classification": "VA",
+                "reasoning": "Critical part of the appeal process that determines the outcome"
+            }
+        ]
+    },
+    {
+        "activity_name": "Additional Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate remaining balance",
+                "classification": "VA",
+                "reasoning": "Directly determines the amount still owed"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify offender of remaining amount",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't change the amount owed"
+            },
+            {
+                "step_number": 3,
+                "description": "Process additional payment",
+                "classification": "VA",
+                "reasoning": "Direct fulfillment of the remaining fine amount"
+            },
+            {
+                "step_number": 4,
+                "description": "Update payment record in system",
+                "classification": "BVA",
+                "reasoning": "Important for documentation but doesn't change the payment's value"
+            }
+        ]
+    }
+]

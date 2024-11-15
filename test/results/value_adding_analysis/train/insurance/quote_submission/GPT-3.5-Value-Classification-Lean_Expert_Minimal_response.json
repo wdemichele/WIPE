@@ -1,0 +1,444 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify insurance needs",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Gather necessary personal and property information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Contact insurer or fill out online quote request form",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Submit quote request",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request for quote received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive client's quote request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to receive the customer's quote request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log request in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the customer's quote request."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign request to appropriate department or agent",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the customer's quote request is handled by the appropriate department or agent."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review client's information and requirements",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess risk factors",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate premium based on risk assessment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine coverage details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Compile quote document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Send quote to client",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                }
+            ]
+        },
+        {
+            "activity_name": "Evaluate insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive quote from insurer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the insurance quote."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review coverage details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the insurance quote."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Compare premium to budget",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the insurance quote."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Assess if quote meets needs",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the insurance quote."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Consider alternatives if available",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to evaluate the insurance quote."
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decide to proceed with the quote",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify insurer of acceptance",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide any additional required information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's insurance needs.\")classify(\"NVA\", \"Reject quote\", \"Decide not to proceed with the quote\", \"This step does not contribute to meeting customer needs or business functions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decide not to proceed with the quote",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify insurer of rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to inform the insurer of the rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide reason for rejection (optional)",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to gather additional information for analysis."
+                }
+            ]
+        },
+        {
+            "activity_name": "Quote acceptance received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive client's acceptance notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by acknowledging their acceptance."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update quote status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the quote status."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate contract preparation process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by starting the contract preparation process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Quote rejection received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive client's rejection notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by acknowledging their rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update quote status in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of the quote status."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record reason for rejection if provided",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to gather additional information for analysis."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Close quote request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to finalize the rejection process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare insurance contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve accepted quote details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by retrieving the accepted quote details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft insurance contract",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by creating the insurance contract."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Include all agreed terms and conditions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring all agreed terms and conditions are included."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review contract for accuracy and completeness",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring the contract is accurate and complete."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Obtain necessary internal approvals",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by obtaining the necessary internal approvals."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Send contract to client for review and signature",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the contract to the client for review and signature."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 37,
+        "correct_classifications": 19,
+        "accuracy": 0.5135135135135135,
+        "misclassifications": [
+            {
+                "activity": "Request insurance quote",
+                "substep": "Gather necessary personal and property information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request insurance quote",
+                "substep": "Contact insurer or fill out online quote request form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Request insurance quote",
+                "substep": "Submit quote request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance quote",
+                "substep": "Compile quote document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance quote",
+                "substep": "Send quote to client",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Evaluate insurance quote",
+                "substep": "Review coverage details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the insurance quote.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Evaluate insurance quote",
+                "substep": "Compare premium to budget",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the insurance quote.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Evaluate insurance quote",
+                "substep": "Assess if quote meets needs",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the insurance quote.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Evaluate insurance quote",
+                "substep": "Consider alternatives if available",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to evaluate the insurance quote.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Accept quote",
+                "substep": "Notify insurer of acceptance",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Accept quote",
+                "substep": "Provide any additional required information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's insurance needs.\")classify(\"NVA\", \"Reject quote\", \"Decide not to proceed with the quote\", \"This step does not contribute to meeting customer needs or business functions.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Quote acceptance received",
+                "substep": "Receive client's acceptance notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by acknowledging their acceptance.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Quote acceptance received",
+                "substep": "Initiate contract preparation process",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by starting the contract preparation process.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Quote rejection received",
+                "substep": "Receive client's rejection notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by acknowledging their rejection.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance contract",
+                "substep": "Retrieve accepted quote details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by retrieving the accepted quote details.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance contract",
+                "substep": "Review contract for accuracy and completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by ensuring the contract is accurate and complete.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance contract",
+                "substep": "Obtain necessary internal approvals",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by obtaining the necessary internal approvals.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Prepare insurance contract",
+                "substep": "Send contract to client for review and signature",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending the contract to the client for review and signature.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 9,
+                "BVA": 4
+            },
+            "BVA": {
+                "VA": 14,
+                "BVA": 10
+            },
+            "NVA": {}
+        }
+    }
+}

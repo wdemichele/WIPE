@@ -1,0 +1,101 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all required documents are submitted"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all fields are filled correctly"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve credit history from credit bureau"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect income information from applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate creditworthiness based on credit history and income"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make credit offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine credit terms and conditions"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare credit offer letter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform applicant about credit application rejection"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                50.0
+            ],
+            "No Match": [
+                3,
+                30.0
+            ],
+            "Granularity Difference": [
+                2,
+                20.0
+            ]
+        },
+        "average_confidence": 59.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 86.0,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0
+        },
+        "ground_truth_coverage": 88.88888888888889,
+        "response_coverage": 73.07692307692307,
+        "average_sequence_alignment": 39.444444444444436,
+        "average_overall_similarity_score": 57.778333333333336
+    }
+}

@@ -1,0 +1,353 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Package receipt at dock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Stockpile package",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Move to pallets",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Wait until pallet is full",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Move to receiving room",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the receiving room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to workstation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check destination",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set as unknown",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Register package into ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Write details on package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Print delivery form",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 7,
+                    "description": "Fold and insert the form into a plastic packet",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 8,
+                    "description": "Tape plastic packet to package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 9,
+                    "description": "Place in temporary location",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 10,
+                    "description": "Move package to pallet",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 11,
+                    "description": "Wait until 8 packages are processed",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 12,
+                    "description": "Move to rack room",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the rack room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Move to rack",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Sort package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Load package to designated pallet",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Deliver to designated par location",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Package delivery to par location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Scan package",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discard package",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify requester",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Return to receiving room",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Stock package",
+                    "classification": "NVA",
+                    "reasoning": "This step does not directly contribute to meeting customer needs or requirements."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 27,
+        "correct_classifications": 10,
+        "accuracy": 0.37037037037037035,
+        "misclassifications": [
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Unload package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package receipt at dock",
+                "substep": "Move to receiving room",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move to workstation",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Check destination",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Set as unknown",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Write details on package",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Print delivery form",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Fold and insert the form into a plastic packet",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Tape plastic packet to package",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Place in temporary location",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Move package to pallet",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the receiving room",
+                "substep": "Wait until 8 packages are processed",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Move to rack",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package processing in the rack room",
+                "substep": "Load package to designated pallet",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "This step is necessary for the business but does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Scan package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Notify requester",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Package delivery to par location",
+                "substep": "Stock package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "NVA": 1
+            },
+            "BVA": {
+                "NVA": 4,
+                "BVA": 4
+            },
+            "NVA": {
+                "NVA": 6,
+                "BVA": 12
+            }
+        }
+    }
+}

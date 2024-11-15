@@ -1,0 +1,33 @@
+graph TB
+    subgraph Pharmacist
+        B[Perform thorough check]
+        D[Check quality]
+        E{Quality OK?}
+    end
+
+    subgraph Technician
+        A((Every hour))
+        C[Enter prescription details]
+        F[Collect drugs from shelves]
+        G[Collect payment]
+        H((End))
+    end
+
+    subgraph Pharmacy_system
+        I[Perform DUR]
+        J{Alarms?}
+        K[Check insurance]
+    end
+
+    A --> C
+    C --> I
+    I --> J
+    J -->|Alarms| B
+    J -->|No alarms| K
+    B --> K
+    K --> F
+    F --> D
+    D --> E
+    E -->|OK| G
+    E -->|Not OK| F
+    G --> H

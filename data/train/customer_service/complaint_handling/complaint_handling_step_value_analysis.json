@@ -1,0 +1,197 @@
+[
+    {
+        "activity_name": "Call registration",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Answer incoming call",
+                "classification": "VA",
+                "reasoning": "Direct interaction with customer, initiating the complaint resolution process"
+            },
+            {
+                "step_number": 2,
+                "description": "Record caller's information",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Categorise call type (complaint, external referral, internal referral)",
+                "classification": "BVA",
+                "reasoning": "Helps in routing the complaint but doesn't directly add value to resolution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complaint analysis",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complaint details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and resolving the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess severity and urgency",
+                "classification": "VA",
+                "reasoning": "Critical for prioritizing and effectively addressing the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine appropriate action",
+                "classification": "VA",
+                "reasoning": "Directly contributes to resolving the complaint"
+            },
+            {
+                "step_number": 4,
+                "description": "Document analysis findings",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly resolve the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contact complainant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare response based on complaint analysis",
+                "classification": "VA",
+                "reasoning": "Directly contributes to addressing the customer's concern"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact complainant via preferred method",
+                "classification": "VA",
+                "reasoning": "Direct interaction with customer to resolve the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Discuss findings and proposed resolution",
+                "classification": "VA",
+                "reasoning": "Key step in resolving the complaint and ensuring customer satisfaction"
+            }
+        ]
+    },
+    {
+        "activity_name": "External referral with form B4",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Complete form B4 with relevant information",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify appropriate external party",
+                "classification": "BVA",
+                "reasoning": "Facilitates resolution but doesn't directly address the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Send form B4 to external party",
+                "classification": "BVA",
+                "reasoning": "Necessary step but doesn't directly resolve the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Internal referral with form B2",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out form B2 with case details",
+                "classification": "BVA",
+                "reasoning": "Necessary for internal process but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Route form to appropriate internal department",
+                "classification": "BVA",
+                "reasoning": "Facilitates resolution but doesn't directly address the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Telephone confirmation to external party",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Call external party",
+                "classification": "BVA",
+                "reasoning": "Ensures process continuity but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm receipt of form B4",
+                "classification": "BVA",
+                "reasoning": "Verifies process step but doesn't directly address the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Incident agenda",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Add incident to department meeting agenda",
+                "classification": "BVA",
+                "reasoning": "Facilitates internal communication but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare summary of internal referral",
+                "classification": "BVA",
+                "reasoning": "Aids in internal discussion but doesn't directly address the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archiving system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all case documents",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly resolve the complaint"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter case details into archiving system",
+                "classification": "BVA",
+                "reasoning": "Important for future reference but doesn't directly address the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Store physical documents (if any)",
+                "classification": "BVA",
+                "reasoning": "Necessary for record-keeping but doesn't directly resolve the complaint"
+            }
+        ]
+    },
+    {
+        "activity_name": "Inform complainant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare final communication",
+                "classification": "VA",
+                "reasoning": "Directly contributes to resolving the complaint and ensuring customer satisfaction"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact complainant with case outcome",
+                "classification": "VA",
+                "reasoning": "Direct interaction with customer to close the complaint"
+            },
+            {
+                "step_number": 3,
+                "description": "Record communication in system",
+                "classification": "BVA",
+                "reasoning": "Important for record-keeping but doesn't directly add value to the customer"
+            }
+        ]
+    }
+]

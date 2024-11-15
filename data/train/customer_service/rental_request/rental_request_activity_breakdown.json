@@ -1,0 +1,75 @@
+[
+    {
+        "activity_name": "Submit equipment rental request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill request"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request to clerk"
+            }
+        ]
+    },
+    {
+        "activity_name": "Select suitable equipment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open and read request"
+            },
+            {
+                "step_number": 2,
+                "description": "Select suitable equipment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check availability",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check equipment availability"
+            },
+            {
+                "step_number": 2,
+                "description": "Record recommended equipment & supplier"
+            }
+        ]
+    },
+    {
+        "activity_name": "Review rental request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Forward request to works engineer"
+            },
+            {
+                "step_number": 2,
+                "description": "Open and examine request"
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate issues"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create PO",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Forward request back to clerk"
+            },
+            {
+                "step_number": 2,
+                "description": "Create PO"
+            },
+            {
+                "step_number": 3,
+                "description": "Send PO to supplier"
+            }
+        ]
+    }
+]

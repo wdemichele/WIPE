@@ -1,0 +1,134 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check prescription details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure correct dosage"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect drug packaging"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check expiration date"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record patient information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter drug name and dosage"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate drug on shelves"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve correct quantity"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total amount"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Accept payment from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review drug utilization history"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for potential drug interactions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify insurance coverage"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine copay amount"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                3,
+                20.0
+            ],
+            "No Match": [
+                10,
+                66.66666666666666
+            ],
+            "Granularity Difference": [
+                2,
+                13.333333333333334
+            ]
+        },
+        "average_confidence": 27.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0,
+            "Granularity Difference": 82.5
+        },
+        "ground_truth_coverage": 88.23529411764706,
+        "response_coverage": 45.0,
+        "average_sequence_alignment": 86.66666666666666,
+        "average_overall_similarity_score": 24.357142857142858
+    }
+}

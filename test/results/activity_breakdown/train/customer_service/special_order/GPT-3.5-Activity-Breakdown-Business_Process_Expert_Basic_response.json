@@ -1,0 +1,228 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Special order received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive special order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Register order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect order information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter order details into system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check order details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for missing or incorrect details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Order checked",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Confirm order details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture custom product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Start manufacturing process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Follow production instructions"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Validate order confirmation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Product manufactured",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete manufacturing process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan shipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine shipment details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create shipment plan"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check customer type and shipment status",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify customer type"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check shipment status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship custom product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare product for shipment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange shipping logistics"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send invoice to customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Charge customer account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total amount to charge"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Update customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update customer information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Order fulfilled",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete order fulfillment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Change request received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive change request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle change request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review change request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess impact on order details"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                25.0
+            ],
+            "Granularity Difference": [
+                3,
+                15.0
+            ],
+            "No Match": [
+                12,
+                60.0
+            ]
+        },
+        "average_confidence": 31.0,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.0,
+            "Granularity Difference": 70.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 90.9090909090909,
+        "response_coverage": 57.14285714285714,
+        "average_sequence_alignment": 79.16666666666667,
+        "average_overall_similarity_score": 33.125
+    }
+}

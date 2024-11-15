@@ -1,0 +1,159 @@
+[
+    {
+        "activity_name": "Perform credit check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client's credit history"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze credit score and financial records"
+            },
+            {
+                "step_number": 3,
+                "description": "Document credit check results"
+            }
+        ]
+    },
+    {
+        "activity_name": "Perform credibility check",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify client's provided information"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess client's financial stability"
+            },
+            {
+                "step_number": 3,
+                "description": "Compile credibility assessment report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection letter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft rejection letter with explanation"
+            },
+            {
+                "step_number": 2,
+                "description": "Review and approve letter content"
+            },
+            {
+                "step_number": 3,
+                "description": "Send letter to client and update records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Call client to complement information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify missing or unclear information"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact client and request additional details"
+            },
+            {
+                "step_number": 3,
+                "description": "Update client's file with new information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine suitable loan terms based on assessment"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate interest rates and repayment schedule"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare formal loan offer document"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send loan offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review final loan offer for accuracy"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare accompanying explanation letter"
+            },
+            {
+                "step_number": 3,
+                "description": "Send offer to client and log in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Remind client",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check status of sent offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact client with reminder"
+            },
+            {
+                "step_number": 3,
+                "description": "Update client communication log"
+            }
+        ]
+    },
+    {
+        "activity_name": "Activate loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive and verify accepted offer"
+            },
+            {
+                "step_number": 2,
+                "description": "Process loan activation in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Notify relevant departments"
+            }
+        ]
+    },
+    {
+        "activity_name": "Execute initial payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify loan terms and client's account details"
+            },
+            {
+                "step_number": 2,
+                "description": "Process initial loan disbursement"
+            },
+            {
+                "step_number": 3,
+                "description": "Send payment confirmation to client"
+            },
+            {
+                "step_number": 4,
+                "description": "Update loan status in financial system"
+            }
+        ]
+    }
+]

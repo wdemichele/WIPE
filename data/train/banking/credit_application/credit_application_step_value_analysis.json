@@ -1,0 +1,204 @@
+[
+    {
+        "activity_name": "Request Appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact loan officer or financial institution",
+                "performer": "Applicant",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Provide initial information for appointment request",
+                "performer": "Applicant",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit appointment request",
+                "performer": "Applicant",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set Appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review available time slots",
+                "performer": "Loan Officer",
+                "classification": "NVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Select suitable date and time",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm appointment with applicant",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Hand In Credit Application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out credit application form",
+                "performer": "Applicant",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Gather necessary supporting documents",
+                "performer": "Applicant",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit completed application and documents",
+                "performer": "Applicant",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Verify Borrower's Information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review submitted application and documents",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Cross-check information with available databases",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Conduct credit check",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Verify employment and income information",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request Co-Signer On Loan",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Inform applicant of need for co-signer",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Provide co-signer requirements",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Collect co-signer information and documents",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make Visit to Assess Collateral",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Schedule visit to assess collateral",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct on-site inspection of collateral",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Document collateral condition and value",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare assessment report",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Submit File to Underwriter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all verified information and documents",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare summary of application for underwriter",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit complete file to underwriting department",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Sign Loan Agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review loan terms and conditions with applicant",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Answer any questions from applicant",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain applicant's signature on loan agreement",
+                "performer": "Loan Officer",
+                "classification": "VA"
+            },
+            {
+                "step_number": 4,
+                "description": "Provide copy of signed agreement to applicant",
+                "performer": "Loan Officer",
+                "classification": "BVA"
+            }
+        ]
+    }
+]

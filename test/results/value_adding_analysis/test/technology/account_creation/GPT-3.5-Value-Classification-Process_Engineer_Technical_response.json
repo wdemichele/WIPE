@@ -1,0 +1,199 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Log on email provider website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open web browser and navigate to email provider's website",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of accessing the email provider's website."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate the 'Create Account' or similar option",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of creating an account."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Click on the option to begin account creation process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of starting the account creation process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Choose package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available email account packages",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of exploring the available email account packages."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compare features and pricing of different packages",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of evaluating the features and pricing of different packages."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Select desired email account package",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of choosing a specific email account package."
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter Private account welcome page",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Load private account creation page",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of accessing the private account creation page."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review account creation instructions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of understanding the instructions for account creation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare necessary information for account creation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of gathering the required information for account creation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Provide personal information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill in basic personal details (e.g., name, date of birth)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter contact information (e.g., phone number, alternative email)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review entered information for accuracy",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of ensuring the accuracy of the entered information.\")classify(\"VA\", \"Enter Full Names\", \"Input first name in designated field\", \"This step directly contributes to meeting the customer's requirement of providing their full name."
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter Full Names",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Input first name in designated field",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input middle name(s) if applicable",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of providing their full name."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input last name in designated field",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of providing their full name."
+                }
+            ]
+        },
+        {
+            "activity_name": "Upload photo ID",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare a clear, valid photo ID",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Use website's upload function to select ID image file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of uploading their photo ID."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm successful upload of photo ID",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of uploading their photo ID."
+                }
+            ]
+        },
+        {
+            "activity_name": "Personal Data confirmed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all entered personal information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of confirming their personal data."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify uploaded photo ID matches entered information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of confirming their personal data."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm accuracy of all provided data",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of confirming their personal data."
+                }
+            ]
+        },
+        {
+            "activity_name": "New email ID & password generated",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "System generates unique email address",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to generate a unique email ID for the customer, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "User creates strong password following provider's guidelines",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the security of the customer's account, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "System confirms email ID and password creation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to confirm the successful creation of the customer's email ID and password, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

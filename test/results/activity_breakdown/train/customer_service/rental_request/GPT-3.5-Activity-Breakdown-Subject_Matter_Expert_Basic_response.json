@@ -1,0 +1,108 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Submit equipment rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out equipment rental form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Attach necessary documents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit the request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Select suitable equipment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available equipment options"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consider equipment specifications and requirements"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Choose the most suitable equipment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check equipment availability in inventory"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify equipment availability for requested dates"
+                }
+            ]
+        },
+        {
+            "activity_name": "Review rental request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted rental request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate equipment needs and justification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Create PO",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate purchase order based on approved request"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                7,
+                63.63636363636363
+            ],
+            "No Match": [
+                3,
+                27.27272727272727
+            ],
+            "Granularity Difference": [
+                1,
+                9.090909090909092
+            ]
+        },
+        "average_confidence": 58.18181818181818,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 81.42857142857143,
+            "No Match": 0.0,
+            "Granularity Difference": 70.0
+        },
+        "ground_truth_coverage": 78.57142857142857,
+        "response_coverage": 83.33333333333334,
+        "average_sequence_alignment": 60.0,
+        "average_overall_similarity_score": 61.5
+    }
+}

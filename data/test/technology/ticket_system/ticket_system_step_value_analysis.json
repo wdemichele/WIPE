@@ -1,0 +1,209 @@
+[
+    {
+        "activity_name": "Ticket receive",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive new support ticket in the system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process initiation but doesn't directly solve customer's problem"
+            },
+            {
+                "step_number": 2,
+                "description": "Review initial ticket information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and addressing the customer's issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign ticket to appropriate support staff",
+                "classification": "BVA",
+                "reasoning": "Ensures efficient handling but doesn't directly solve the problem"
+            }
+        ]
+    },
+    {
+        "activity_name": "Solve the problem without involving customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze the problem based on available information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to problem resolution"
+            },
+            {
+                "step_number": 2,
+                "description": "Research potential solutions",
+                "classification": "VA",
+                "reasoning": "Essential for finding the correct solution"
+            },
+            {
+                "step_number": 3,
+                "description": "Implement solution without customer interaction",
+                "classification": "VA",
+                "reasoning": "Directly resolves the customer's issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contacting the customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare initial response email",
+                "classification": "BVA",
+                "reasoning": "Important for communication but doesn't directly solve the problem"
+            },
+            {
+                "step_number": 2,
+                "description": "Send email to customer acknowledging the issue",
+                "classification": "VA",
+                "reasoning": "Provides value to customer through communication and assurance"
+            },
+            {
+                "step_number": 3,
+                "description": "Schedule follow-up communication if necessary",
+                "classification": "BVA",
+                "reasoning": "Ensures ongoing support but doesn't directly solve the issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Detailed interview of the problem",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare list of detailed questions about the issue",
+                "classification": "BVA",
+                "reasoning": "Helps in gathering information but doesn't directly solve the problem"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct interview with customer to gather more information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding and solving the issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Document all relevant details from the interview",
+                "classification": "BVA",
+                "reasoning": "Important for process but doesn't directly solve the problem"
+            }
+        ]
+    },
+    {
+        "activity_name": "Connecting to the item of the customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initiate remote maintenance connection",
+                "classification": "BVA",
+                "reasoning": "Enables problem-solving but doesn't directly resolve the issue"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify successful connection to customer's item",
+                "classification": "BVA",
+                "reasoning": "Ensures ability to diagnose but doesn't directly solve the problem"
+            },
+            {
+                "step_number": 3,
+                "description": "Begin diagnostic procedures on connected item",
+                "classification": "VA",
+                "reasoning": "Directly contributes to identifying and solving the issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ask for further information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify gaps in current understanding of the problem",
+                "classification": "VA",
+                "reasoning": "Directly contributes to problem resolution process"
+            },
+            {
+                "step_number": 2,
+                "description": "Formulate specific questions to address these gaps",
+                "classification": "BVA",
+                "reasoning": "Aids in information gathering but doesn't directly solve the problem"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact customer to request additional information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to gathering necessary information for problem-solving"
+            }
+        ]
+    },
+    {
+        "activity_name": "Solve problem",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Analyze all gathered information and diagnostics",
+                "classification": "VA",
+                "reasoning": "Directly contributes to problem resolution"
+            },
+            {
+                "step_number": 2,
+                "description": "Develop and implement solution via remote maintenance",
+                "classification": "VA",
+                "reasoning": "Core activity that resolves the customer's issue"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify problem resolution through testing",
+                "classification": "VA",
+                "reasoning": "Ensures the solution effectively resolves the issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create notes for documentation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Summarize the problem and solution",
+                "classification": "BVA",
+                "reasoning": "Important for future reference but doesn't directly solve current problem"
+            },
+            {
+                "step_number": 2,
+                "description": "Document steps taken to resolve the issue",
+                "classification": "BVA",
+                "reasoning": "Valuable for knowledge base but doesn't directly solve current problem"
+            },
+            {
+                "step_number": 3,
+                "description": "Record any relevant insights or lessons learned",
+                "classification": "BVA",
+                "reasoning": "Improves future problem-solving but doesn't directly solve current issue"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirmation ticket completed",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review entire ticket history and notes",
+                "classification": "BVA",
+                "reasoning": "Ensures completeness but doesn't directly add value to solution"
+            },
+            {
+                "step_number": 2,
+                "description": "Update ticket status to 'Completed' in ticket system",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "step_number": 3,
+                "description": "Send confirmation of resolution to customer",
+                "classification": "VA",
+                "reasoning": "Provides value to customer through communication and closure"
+            }
+        ]
+    }
+]

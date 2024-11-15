@@ -1,0 +1,88 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct cost planning"
+                }
+            ]
+        },
+        {
+            "activity_name": "Cost planning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Plan data transfer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Recalculate costs"
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan data transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if acceptable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Recalculation of costs",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if acceptable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get approval for expenses",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Obtain approval"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                2,
+                40.0
+            ],
+            "Functional Equivalence": [
+                2,
+                40.0
+            ],
+            "No Match": [
+                1,
+                20.0
+            ]
+        },
+        "average_confidence": 66.0,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 85.0,
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 83.33333333333334,
+        "response_coverage": 61.904761904761905,
+        "average_sequence_alignment": 44.58333333333333,
+        "average_overall_similarity_score": 61.25
+    }
+}

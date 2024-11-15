@@ -1,0 +1,42 @@
+graph TD
+    A[Start] --> B[Prepare implements]
+    B --> C[Hand washing]
+    C --> D[Get in sterile clothes]
+    D --> E[Clean puncture area]
+    E --> F[Drap puncture area]
+    F --> G[Ultrasound configuration]
+    G --> H[Gel in probe]
+    H --> I[Cover probe]
+    I --> J[Put sterile gel]
+    J --> K[Position probe]
+    K --> L[Position patient]
+    L --> M{Choose identification method}
+    M --> |Option 1| N[Doppler identification]
+    M --> |Option 2| O[Anatomic identification]
+    M --> |Option 3| P[Compression identification]
+    N --> Q
+    O --> Q
+    P --> Q
+    Q{Identification complete} --> R[Anesthetize]
+    R --> S{Proceed with puncture?}
+    S --> |Yes| T[Puncture]
+    T --> U[Blood return]
+    U --> V{Successful?}
+    V --> |No| S
+    V --> |Yes| W[Drop probe]
+    W --> X[Remove syringe]
+    X --> Y[Guidewire install]
+    Y --> Z[Remove trocar]
+    Z --> AA{Check wire position}
+    AA --> |Option 1| AB[Check wire in long axis]
+    AA --> |Option 2| AC[Check wire in short axis]
+    AB --> AD
+    AC --> AD
+    AD[Wire in good position] --> AE{Proceed with catheter?}
+    AE --> |No| S
+    AE --> |Yes| AF[Widen pathway]
+    AF --> AG[Advance catheter]
+    AG --> AH[Remove guidewire]
+    AH --> AI[Check flow and reflow]
+    AI --> AJ[Check catheter position]
+    AJ --> AK[End]

@@ -1,0 +1,50 @@
+graph TD
+    subgraph Customer
+        A((Start)) --> B{Drop-off location}
+        B -->|Drive-through| C[Drop off prescription]
+        B -->|Front counter| C
+        C --> D{Immediate fill?}
+        D -->|Yes| E[Wait 15min - 1h]
+        D -->|No| F[Nominate pickup time]
+    end
+
+    subgraph Technician
+        C --> G[Ask for pickup time]
+        G --> H[Place in time-labeled box]
+        I[Collect prescriptions for current hour]
+        I --> J[Enter prescription details in system]
+    end
+
+    subgraph System
+        J --> K[Perform automated DUR]
+        K --> L{DUR alarms?}
+        L -->|Yes| M[Pharmacist review]
+        L -->|No| N[Perform insurance check]
+    end
+
+    subgraph Pharmacist
+        M --> O{Need to call doctor?}
+        O -->|Yes| P[Call doctor to confirm]
+        O -->|No| N
+        Q[Review insurance check results]
+        Q --> R{Drug replacement needed?}
+        R -->|Yes| S[Call doctor/patient for replacement]
+        R -->|No| T[Assign to technician for filling]
+    end
+
+    subgraph Technician2
+        T --> U[Collect drugs and bag]
+    end
+
+    subgraph Pharmacist2
+        U --> V[Double-check prescription]
+        V --> W[Seal bag and place in pickup area]
+    end
+
+    subgraph Customer2
+        X[Arrive for pickup] --> Y[Retrieve prescription]
+        Y --> Z{Payment needed?}
+        Z -->|Yes| AA[Make payment]
+        Z -->|No| AB((End))
+        AA --> AB
+    end

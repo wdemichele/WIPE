@@ -1,0 +1,117 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Purchase order received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check stock availability"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Product in stock?"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": []
+        },
+        {
+            "activity_name": "Check materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Materials available?"
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": []
+        },
+        {
+            "activity_name": "Request raw materials from suppliers",
+            "substeps": []
+        },
+        {
+            "activity_name": "Obtain raw materials",
+            "substeps": []
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Order confirmed?",
+            "substeps": []
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": []
+        },
+        {
+            "activity_name": "Escalate order confirmation",
+            "substeps": []
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": []
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Determine cancellation penalty",
+            "substeps": []
+        },
+        {
+            "activity_name": "Notify penalty to customer",
+            "substeps": []
+        },
+        {
+            "activity_name": "Cancel order",
+            "substeps": []
+        },
+        {
+            "activity_name": "Stop cancellation request",
+            "substeps": []
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                2,
+                13.333333333333334
+            ],
+            "No Match": [
+                13,
+                86.66666666666667
+            ]
+        },
+        "average_confidence": 10.666666666666666,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 66.66666666666666,
+        "response_coverage": 56.043956043956044,
+        "average_sequence_alignment": 5.555555555555555,
+        "average_overall_similarity_score": 10.666666666666666
+    }
+}

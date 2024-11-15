@@ -1,0 +1,189 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Detailed_Basic",
+        "components": {
+            "role_description": "sme_detailed",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Request Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate appointment request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide necessary details for appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appointment Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review appointment request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make decision on appointment approval or denial"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule appointment date and time"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In Credit Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit credit application form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify Borrower's Information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Validate borrower's personal and financial information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Verification Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess verification outcome"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine next steps based on verification result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Submit File to Underwriter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send borrower's file to underwriter for evaluation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform borrower about application rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Co-Signer On Loan",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Ask borrower to provide a co-signer for the loan"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Visit to Assess Collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Physically inspect and evaluate collateral"
+                }
+            ]
+        },
+        {
+            "activity_name": "Co-Signer Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review co-signer's eligibility"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to accept or reject the co-signer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assessment Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate collateral assessment outcome"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine next steps based on assessment result"
+                }
+            ]
+        },
+        {
+            "activity_name": "Underwriter Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate borrower's file and make loan decision"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Decide whether to approve or deny the loan"
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Loan Agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare loan agreement for borrower's signature"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                33.33333333333333
+            ],
+            "No Match": [
+                5,
+                41.66666666666667
+            ],
+            "Granularity Difference": [
+                3,
+                25.0
+            ]
+        },
+        "average_confidence": 45.833333333333336,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 82.5,
+            "No Match": 0.0,
+            "Granularity Difference": 73.33333333333333
+        },
+        "ground_truth_coverage": 78.57142857142857,
+        "response_coverage": 57.14285714285714,
+        "average_sequence_alignment": 67.70833333333333,
+        "average_overall_similarity_score": 40.83375
+    }
+}

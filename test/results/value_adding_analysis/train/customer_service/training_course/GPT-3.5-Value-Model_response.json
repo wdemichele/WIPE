@@ -1,0 +1,651 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Review application and budget forms",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application and budget forms",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by receiving necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review application details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reviewing application details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Examine budget information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by examining budget information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Room booking",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check available rooms",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by checking room availability."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate room",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by selecting a suitable room."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Reserve room for course dates",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reserving a room for the course dates."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm room booking",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming the room booking."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up account",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new account in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by creating a new account."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Input course details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by inputting course details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign account permissions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by assigning account permissions."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up course website",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create new website",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by creating a new website."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Design website layout",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by designing the website layout."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add course information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by adding course information."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Publish website",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by publishing the website."
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website setup",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create registration website",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by creating a registration website."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create registration form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by creating a registration form."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set up payment gateway",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by setting up a payment gateway.\")classify(\"VA\", \"Promote course\", \"Develop marketing materials\", \"Directly contributes to promoting the course."
+                }
+            ]
+        },
+        {
+            "activity_name": "Promote course",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Develop marketing materials",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify target audience",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to promoting the course."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Distribute promotional content",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to promoting the course."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Monitor marketing effectiveness",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for evaluating the effectiveness of the marketing efforts but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Registration website closed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check registration deadline",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to closing the registration website."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Close registration portal",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to closing the registration website."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update website with closure information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to closing the registration website."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare registration data for review",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for reviewing the registration data but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle payments",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect payment information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to handling payments."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payments",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to handling payments."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipts",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to handling payments."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Reconcile payment records",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for reconciling payment records but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify registered participants of cancellation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft cancellation message",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to notifying registered participants of cancellation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compile list of registered participants",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to notifying registered participants of cancellation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send cancellation notifications",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to notifying registered participants of cancellation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Process refunds if applicable",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for processing refunds but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print name badges",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect participant information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to printing name badges."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Design badge template",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to printing name badges."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Print badges",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to printing name badges."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Organise badges for distribution",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for organizing badges for distribution but doesn't directly add value for the customer.\")classify(\"VA\", \"Set up Blackboard website for students\", \"Create course shell in Blackboard\", \"Directly contributes to meeting customer needs by providing a platform for course materials and communication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set up Blackboard website for students",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create course shell in Blackboard",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Upload course materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing access to course materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enroll registered students",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing access to the course for registered students."
+                }
+            ]
+        },
+        {
+            "activity_name": "Catering arranging",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine catering requirements",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by understanding the catering needs of the event."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact catering providers",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to arrange catering services but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Select menu options",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to choose the menu options but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm catering order and logistics",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by finalizing the catering order and ensuring smooth logistics."
+                }
+            ]
+        },
+        {
+            "activity_name": "Course delivery",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare course materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary materials for the course."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up course venue",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing a suitable venue for the course."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Conduct course sessions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by delivering the course content and facilitating learning."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Collect feedback from participants",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by gathering feedback to improve future courses."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 48,
+        "correct_classifications": 14,
+        "accuracy": 0.2916666666666667,
+        "misclassifications": [
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Receive application and budget forms",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by receiving necessary information.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Review application details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by reviewing application details.",
+                "ground_truth_reasoning": "Ensures course viability but doesn't directly enhance student experience"
+            },
+            {
+                "activity": "Review application and budget forms",
+                "substep": "Examine budget information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by examining budget information.",
+                "ground_truth_reasoning": "Important for financial planning but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Room booking",
+                "substep": "Check available rooms",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by checking room availability.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Room booking",
+                "substep": "Confirm room booking",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by confirming the room booking.",
+                "ground_truth_reasoning": "Administrative task that doesn't directly add value to the course"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Create new account in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by creating a new account.",
+                "ground_truth_reasoning": "Necessary for administration but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Input course details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by inputting course details.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to students"
+            },
+            {
+                "activity": "Set up account",
+                "substep": "Assign account permissions",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by assigning account permissions.",
+                "ground_truth_reasoning": "Ensures proper access but doesn't directly enhance course content"
+            },
+            {
+                "activity": "Set up course website",
+                "substep": "Create new website",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by creating a new website.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to the course content"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Create registration website",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by creating a registration website.",
+                "ground_truth_reasoning": "Facilitates enrollment process but doesn't directly add course value"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Create registration form",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by creating a registration form.",
+                "ground_truth_reasoning": "Necessary for enrollment but doesn't directly impact course quality"
+            },
+            {
+                "activity": "Registration website setup",
+                "substep": "Set up payment gateway",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by setting up a payment gateway.\")classify(\"VA\", \"Promote course\", \"Develop marketing materials\", \"Directly contributes to promoting the course.",
+                "ground_truth_reasoning": "Enables payment processing but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Develop marketing materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Helps attract students but doesn't directly enhance course quality"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Identify target audience",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to promoting the course.",
+                "ground_truth_reasoning": "Important for marketing but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Promote course",
+                "substep": "Distribute promotional content",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to promoting the course.",
+                "ground_truth_reasoning": "Necessary for attracting students but doesn't improve course content"
+            },
+            {
+                "activity": "Registration website closed",
+                "substep": "Check registration deadline",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to closing the registration website.",
+                "ground_truth_reasoning": "Necessary for process management but doesn't add direct value to course"
+            },
+            {
+                "activity": "Registration website closed",
+                "substep": "Close registration portal",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to closing the registration website.",
+                "ground_truth_reasoning": "Administrative task that doesn't directly improve course quality"
+            },
+            {
+                "activity": "Registration website closed",
+                "substep": "Update website with closure information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to closing the registration website.",
+                "ground_truth_reasoning": "Informs potential students but doesn't enhance course content"
+            },
+            {
+                "activity": "Handle payments",
+                "substep": "Collect payment information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to handling payments.",
+                "ground_truth_reasoning": "Necessary for enrollment but doesn't directly add value to the course"
+            },
+            {
+                "activity": "Handle payments",
+                "substep": "Process payments",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to handling payments.",
+                "ground_truth_reasoning": "Essential for course operation but doesn't enhance course content"
+            },
+            {
+                "activity": "Handle payments",
+                "substep": "Issue receipts",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to handling payments.",
+                "ground_truth_reasoning": "Administrative task that doesn't directly improve course quality"
+            },
+            {
+                "activity": "Notify registered participants of cancellation",
+                "substep": "Draft cancellation message",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to notifying registered participants of cancellation.",
+                "ground_truth_reasoning": "Necessary due to cancellation but doesn't add value to students"
+            },
+            {
+                "activity": "Notify registered participants of cancellation",
+                "substep": "Compile list of registered participants",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to notifying registered participants of cancellation.",
+                "ground_truth_reasoning": "Required for communication but doesn't provide course value"
+            },
+            {
+                "activity": "Notify registered participants of cancellation",
+                "substep": "Send cancellation notifications",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Directly contributes to notifying registered participants of cancellation.",
+                "ground_truth_reasoning": "Informs students but represents a lack of value delivery"
+            },
+            {
+                "activity": "Notify registered participants of cancellation",
+                "substep": "Process refunds if applicable",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": "Necessary for processing refunds but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Necessary due to cancellation but doesn't provide course value"
+            },
+            {
+                "activity": "Print name badges",
+                "substep": "Collect participant information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to printing name badges.",
+                "ground_truth_reasoning": "Necessary for badge creation but doesn't directly add course value"
+            },
+            {
+                "activity": "Print name badges",
+                "substep": "Design badge template",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to printing name badges.",
+                "ground_truth_reasoning": "Enhances organization but doesn't directly improve course content"
+            },
+            {
+                "activity": "Print name badges",
+                "substep": "Print badges",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to printing name badges.",
+                "ground_truth_reasoning": "Facilitates identification but doesn't directly add to learning"
+            },
+            {
+                "activity": "Set up Blackboard website for students",
+                "substep": "Create course shell in Blackboard",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to course content"
+            },
+            {
+                "activity": "Set up Blackboard website for students",
+                "substep": "Enroll registered students",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing access to the course for registered students.",
+                "ground_truth_reasoning": "Necessary for access but doesn't directly improve course content"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Determine catering requirements",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by understanding the catering needs of the event.",
+                "ground_truth_reasoning": "Enhances comfort but doesn't directly improve learning"
+            },
+            {
+                "activity": "Catering arranging",
+                "substep": "Confirm catering order and logistics",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by finalizing the catering order and ensuring smooth logistics.",
+                "ground_truth_reasoning": "Ensures food availability but doesn't add to course content"
+            },
+            {
+                "activity": "Course delivery",
+                "substep": "Set up course venue",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing a suitable venue for the course.",
+                "ground_truth_reasoning": "Necessary for delivery but doesn't directly add to course content"
+            },
+            {
+                "activity": "Course delivery",
+                "substep": "Collect feedback from participants",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by gathering feedback to improve future courses.",
+                "ground_truth_reasoning": "Helps improve future courses but doesn't add value to current course"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 28,
+                "Unclassified": 2,
+                "BVA": 6
+            },
+            "VA": {
+                "VA": 8
+            },
+            "NVA": {
+                "VA": 3,
+                "BVA": 1
+            }
+        }
+    }
+}

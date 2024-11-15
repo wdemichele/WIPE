@@ -1,0 +1,26 @@
+graph TD
+    Start((Start)) -->|Purchase order received| A[Check stock availability]
+    A --> B{Product in stock?}
+    B -->|Yes| C[Retrieve product from warehouse]
+    B -->|No| D[Check materials availability]
+    D --> E{Materials available?}
+    E -->|Yes| F[Manufacture product]
+    E -->|No| G[Request raw materials from suppliers]
+    G --> H[Obtain raw materials]
+    H --> F
+    F --> C
+    C --> I[Confirm order]
+    I --> J{Order confirmed?}
+    J -->|Yes| K[Emit invoice]
+    J -->|No| L[Escalate order confirmation]
+    L --> I
+    K --> M[Receive payment]
+    M --> N[Archive order]
+    N --> End((End))
+
+    subgraph Handle order cancellation
+    O[Determine cancellation penalty] --> P[Notify penalty to customer]
+    P --> Q{Cancellation continued?}
+    Q -->|Yes| R[Cancel order]
+    Q -->|No| S[Stop cancellation request]
+    end

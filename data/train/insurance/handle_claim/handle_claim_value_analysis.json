@@ -1,0 +1,62 @@
+[
+    {
+      "step": "Create claim",
+      "performer": "Claims department",
+      "classification": "BVA",
+      "reasoning": "Necessary to initiate the process, but doesn't directly add value to the customer"
+    },
+    {
+      "step": "Record claim",
+      "performer": "Claims department",
+      "classification": "BVA",
+      "reasoning": "Important for record-keeping and future reference, but doesn't directly benefit the customer"
+    },
+    {
+      "step": "Decide on claim",
+      "performer": "Claims adjuster",
+      "classification": "VA",
+      "reasoning": "Critical step that directly impacts the outcome for the customer"
+    },
+    {
+      "step": "Offer benefit",
+      "performer": "Claims department",
+      "classification": "VA",
+      "reasoning": "Directly provides value to the customer by fulfilling the insurance promise"
+    },
+    {
+      "step": "Prepare claim discharge",
+      "performer": "Legal department",
+      "classification": "BVA",
+      "reasoning": "Protects the company's interests but doesn't directly add value for the customer"
+    },
+    {
+      "step": "Record benefit payment",
+      "performer": "Finance department",
+      "classification": "BVA",
+      "reasoning": "Necessary for accounting purposes but doesn't directly benefit the customer"
+    },
+    {
+      "step": "Operate outgoing payment",
+      "performer": "Finance department",
+      "classification": "VA",
+      "reasoning": "Directly provides value to the customer by delivering the benefit"
+    },
+    {
+      "step": "Close claim",
+      "performer": "Claims department",
+      "classification": "BVA",
+      "reasoning": "Necessary for process completion but doesn't directly add value for the customer"
+    },
+    {
+      "step": "Reject claim",
+      "performer": "Claims adjuster",
+      "classification": "NVA",
+      "reasoning": "Doesn't provide value to the customer, but may be necessary based on policy terms"
+    },
+    {
+      "step": "Review claim rejection",
+      "performer": "Senior claims adjuster",
+      "classification": "BVA",
+      "reasoning": "Ensures fairness and accuracy, potentially benefiting the customer, but doesn't directly add value"
+    }
+  ]

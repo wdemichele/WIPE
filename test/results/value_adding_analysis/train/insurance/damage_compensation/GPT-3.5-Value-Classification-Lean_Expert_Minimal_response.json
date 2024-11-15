@@ -1,0 +1,283 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Compensation Request Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive request for compensation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by receiving the request for compensation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of compensation request",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep a record of the received compensation request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve related file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access Premises files DB",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by accessing the premises files database to retrieve the relevant file."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate relevant file",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by locating the relevant file."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Retrieve file from database",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by retrieving the file from the database."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check compliance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review request details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by reviewing the details of the request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Compare against compliance criteria",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by comparing the request against compliance criteria."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine compliance status",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by determining the compliance status of the request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Update request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record compliance status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep a record of the compliance status of the request."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update request with additional information if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to update the request with any additional information if necessary.\")classify(\"VA\", \"Check fee payment\", \"Determine required fees\", \"This step directly contributes to meeting customer needs by determining the required fees for the payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check fee payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine required fees",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify received payments",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the received payments."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if fees are fully paid",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by determining if the fees are fully paid."
+                }
+            ]
+        },
+        {
+            "activity_name": "Produce fees notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate outstanding fees",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by calculating the outstanding fees."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate fees notice document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by generating the fees notice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send fees notice to requester",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the fees notice to the requester."
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate receipt for additional fees",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process additional fee payment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by processing the additional fee payment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate receipt",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by generating the receipt for the additional fees."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record receipt in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by recording the receipt in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Allocate hearing date",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check available dates",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by checking the available dates for the hearing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate hearing date",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by selecting the appropriate hearing date."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record allocated date in system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by recording the allocated date in the system."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify relevant parties of hearing date",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by notifying the relevant parties of the hearing date."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 23,
+        "correct_classifications": 14,
+        "accuracy": 0.6086956521739131,
+        "misclassifications": [
+            {
+                "activity": "Retrieve related file",
+                "substep": "Access Premises files DB",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by accessing the premises files database to retrieve the relevant file.",
+                "ground_truth_reasoning": "Necessary step to obtain information, but doesn't directly process the request"
+            },
+            {
+                "activity": "Retrieve related file",
+                "substep": "Retrieve file from database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need by retrieving the file from the database.",
+                "ground_truth_reasoning": "Necessary for the process but doesn't directly add value to the request"
+            },
+            {
+                "activity": "Update request",
+                "substep": "Update request with additional information if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to update the request with any additional information if necessary.\")classify(\"VA\", \"Check fee payment\", \"Determine required fees\", \"This step directly contributes to meeting customer needs by determining the required fees for the payment.",
+                "ground_truth_reasoning": "Directly contributes to the completeness and accuracy of the request"
+            },
+            {
+                "activity": "Produce fees notice",
+                "substep": "Generate fees notice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by generating the fees notice document.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly process the request"
+            },
+            {
+                "activity": "Produce fees notice",
+                "substep": "Send fees notice to requester",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending the fees notice to the requester.",
+                "ground_truth_reasoning": "Important for process but doesn't directly add value to the request"
+            },
+            {
+                "activity": "Generate receipt for additional fees",
+                "substep": "Generate receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by generating the receipt for the additional fees.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly process the request"
+            },
+            {
+                "activity": "Generate receipt for additional fees",
+                "substep": "Record receipt in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by recording the receipt in the system.",
+                "ground_truth_reasoning": "Important for documentation but doesn't directly add value to the request"
+            },
+            {
+                "activity": "Allocate hearing date",
+                "substep": "Check available dates",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by checking the available dates for the hearing.",
+                "ground_truth_reasoning": "Necessary for scheduling but doesn't directly process the request"
+            },
+            {
+                "activity": "Allocate hearing date",
+                "substep": "Record allocated date in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by recording the allocated date in the system.",
+                "ground_truth_reasoning": "Important for documentation but doesn't directly add value to the request"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 12,
+                "BVA": 1
+            },
+            "BVA": {
+                "BVA": 2,
+                "VA": 8
+            },
+            "NVA": {}
+        }
+    }
+}

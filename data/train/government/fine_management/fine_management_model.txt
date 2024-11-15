@@ -1,0 +1,35 @@
+graph TD
+    A[Start] --> B[Create Fine]
+    B --> C{Payment Received?}
+    C -->|Yes| D[Payment]
+    C -->|No| E[Send Fine]
+    E --> F[Insert Fine Notification]
+    F --> G{Appeal?}
+    G -->|No| H{Payment Received?}
+    H -->|Yes| D
+    H -->|No| I[Add penalty]
+    I --> J{Payment Received?}
+    J -->|Yes| D
+    J -->|No| K{Appeal?}
+    K -->|No| L[Send for Credit Collection]
+    K -->|Yes| M{Type of Appeal?}
+    G -->|Yes| M
+    M -->|Prefecture| N[Insert Date Appeal to Prefecture]
+    N --> O[Send Appeal to Prefecture]
+    O --> P[Receive Result Appeal from Prefecture]
+    P --> Q[Notify Result Appeal to Offender]
+    Q --> R{Appeal Successful?}
+    R -->|Yes| S[End Process]
+    R -->|No| T{Payment Received?}
+    T -->|Yes| D
+    T -->|No| L
+    M -->|Judge| U[Appeal to Judge]
+    U --> V{Appeal Successful?}
+    V -->|Yes| S
+    V -->|No| W{Payment Received?}
+    W -->|Yes| D
+    W -->|No| L
+    D --> X{Full Amount Paid?}
+    X -->|Yes| S
+    X -->|No| Y[Additional Payment]
+    Y --> X

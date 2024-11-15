@@ -1,0 +1,170 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check destination",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by unloading the package from the pallet."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open package and pull out the packaging slip",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by opening the package and retrieving the packaging slip."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter purchase order number into ERP to check destination",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the process by entering the purchase order number into the ERP system to check the destination."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set package as unknown",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record unknown package in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to record unknown packages in the ERP system, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register package into ERP",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter information on packaging slip in ERP",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to register the package into the ERP system, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Write details on package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Write area and/or room number on package",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to write the area and/or room number on the package, but it does not directly add value for the customer.\")classify(\"VA\", \"Print delivery form\", \"Print delivery form\", \"This step directly contributes to meeting customer needs by printing the delivery form."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print delivery form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Print delivery form",
+                    "classification": "BVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Secure form in plastic packet",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fold and palce in envelope",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Tap platstic packet to package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Tap platstic packet to package",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 9,
+        "correct_classifications": 3,
+        "accuracy": 0.3333333333333333,
+        "misclassifications": [
+            {
+                "activity": "Set package as unknown",
+                "substep": "Record unknown package in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for the business to record unknown packages in the ERP system, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Register package into ERP",
+                "substep": "Enter information on packaging slip in ERP",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for the business to register the package into the ERP system, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Write details on package",
+                "substep": "Write area and/or room number on package",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": "This step is necessary for the business to write the area and/or room number on the package, but it does not directly add value for the customer.\")classify(\"VA\", \"Print delivery form\", \"Print delivery form\", \"This step directly contributes to meeting customer needs by printing the delivery form.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Print delivery form",
+                "substep": "Print delivery form",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Secure form in plastic packet",
+                "substep": "Fold and palce in envelope",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Tap platstic packet to package",
+                "substep": "Tap platstic packet to package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "Unclassified",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 3
+            },
+            "BVA": {
+                "BVA": 4
+            },
+            "NVA": {
+                "NVA": 2
+            }
+        }
+    }
+}

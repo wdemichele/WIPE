@@ -1,0 +1,34 @@
+graph TD
+    Start((Start)) -->|Notice received by phone| A[Answer notice]
+    A --> B[Record notice]
+    B --> C[Store and print notice]
+    C --> D{Patient known?}
+    D -->|Patient is unknown| E[Create patient file]
+    E --> F[Close case]
+    D -->|Patient is known| F
+    F --> G((Wednesday morning))
+    G --> H[Assign intakers]
+    H --> I[Store assignment]
+    I --> J{+}
+    J --> K[Hand out cards]
+    J --> L{Medical file required?}
+    L -->|Yes| M[Ask for medical file]
+    M --> N((Medical file received))
+    N --> O[Update patient file]
+    O --> P{+}
+    L -->|No| P
+    K --> P
+    P --> Q[Plan meeting first intaker]
+    P --> R[Plan meeting second intaker]
+    Q --> S((Meeting date 1st intaker))
+    S --> T[Meet with first intaker]
+    T --> U[Complete file with 1st information]
+    R --> V((Meeting date 2nd intaker))
+    V --> W[Meet with second intaker]
+    W --> X[Type out conversation]
+    X --> Y[Complete file with 2nd information]
+    U --> Z{+}
+    Y --> Z
+    Z --> AA((Wednesday morning 2))
+    AA --> AB[Determine treatment]
+    AB --> End((End))

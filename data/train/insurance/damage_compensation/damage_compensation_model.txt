@@ -1,0 +1,31 @@
+graph TB
+    subgraph Owner
+        OwnerStart([Start]) -.->|Request for compensation| CompensationReceived
+        UpdateRequest -.->|Payment| OwnerPayment[/Payment/]
+        ProduceFees -.->|Fees notice| OwnerEnd([End])
+    end
+
+    subgraph "Tribunal Cashier"
+        CompensationReceived[/Compensation Request Received/] --> RetrieveFile[Retrieve related file]
+        PremisesDB[(Premises files DB)] -.-> RetrieveFile
+        RetrieveFile --> CheckCompliance[Check compliance]
+        CheckCompliance --> CompliantCheck{Compliant?}
+        CompliantCheck -->|Yes| UpdateRequest[Update request]
+        CompliantCheck -->|No| UpdateRequest
+        UpdateRequest --> CheckFeePayment[Check fee payment]
+        CheckFeePayment --> FeesPaidCheck{Fees paid?}
+        FeesPaidCheck -->|No| ProduceFees[Produce fees notice]
+        FeesPaidCheck -->|Yes| FinalCheck{Final check}
+        ProduceFees --> FeesPaidCheck
+        FinalCheck -->|Additional fees required and paid| GenerateReceipt[Generate receipt for additional fees]
+        FinalCheck -->|All fees paid| AllocateHearing[Allocate hearing date]
+        GenerateReceipt --> AllocateHearing
+        AllocateHearing --> HearingAllocated((Hearing date allocated))
+    end
+
+    %% Data objects
+    RequestForCompensation[/Request for compensation/] -.-> RetrieveFile
+    RequestForCompensation -.-> CheckCompliance
+    RequestForCompensation -.-> CheckFeePayment
+    PremisesFile[/Premises file/] -.-> AllocateHearing
+    Receipt[/Receipt/] -.-> OwnerEnd

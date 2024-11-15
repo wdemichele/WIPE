@@ -1,0 +1,333 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Minimal",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Claim Received",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive claim documentation from customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving the necessary claim documentation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log receipt of claim in system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to keep track of received claims, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted claim documents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the submitted claim documents."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required information is provided",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by ensuring that all required information is provided."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if claim is complete or incomplete",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to determine the completeness of the claim, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign unique claim identifier",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by assigning a unique identifier to the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter claim details into system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by entering the claim details into the system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Forward registered claim to Handling Department",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by forwarding the registered claim to the Handling Department."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reason for rejection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by documenting the reason for rejecting the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update claim status to 'Rejected'",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the claim status to 'Rejected'."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare rejection information for customer notification",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the rejection information for customer notification.\")classify(\"VA\", \"Assess claim\", \"Review claim details\", \"This step directly contributes to the assessment of the claim by reviewing the claim details."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review claim details",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate damage extent and repair costs",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the claim by evaluating the damage extent and repair costs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine validity of claim",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the claim by determining its validity."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Decide on claim approval or rejection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the assessment of the claim by making a decision on its approval or rejection."
+                }
+            ]
+        },
+        {
+            "activity_name": "Schedule payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate approved payment amount",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the scheduling of payment by calculating the approved payment amount."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine payment date",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the scheduling of payment by determining the payment date."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter payment details into system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to the scheduling of payment by entering the payment details into the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Authorize repayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review scheduled payment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Approve payment",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate authorization for garage",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send payment details to garage",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare notification letter",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include claim status (rejected or approved)",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Add payment details if claim approved",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send notification letter to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 26,
+        "correct_classifications": 13,
+        "accuracy": 0.5,
+        "misclassifications": [
+            {
+                "activity": "Check completeness",
+                "substep": "Determine if claim is complete or incomplete",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to determine the completeness of the claim, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical for deciding next steps in claim processing"
+            },
+            {
+                "activity": "Register claim",
+                "substep": "Assign unique claim identifier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by assigning a unique identifier to the claim.",
+                "ground_truth_reasoning": "Necessary for tracking but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Register claim",
+                "substep": "Enter claim details into system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by entering the claim details into the system.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly impact claim decision"
+            },
+            {
+                "activity": "Register claim",
+                "substep": "Forward registered claim to Handling Department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by forwarding the registered claim to the Handling Department.",
+                "ground_truth_reasoning": "Facilitates process flow but doesn't directly add value to claim"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Update claim status to 'Rejected'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by updating the claim status to 'Rejected'.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't add value to claim processing"
+            },
+            {
+                "activity": "Schedule payment",
+                "substep": "Determine payment date",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the scheduling of payment by determining the payment date.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to claim"
+            },
+            {
+                "activity": "Schedule payment",
+                "substep": "Enter payment details into system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to the scheduling of payment by entering the payment details into the system.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly impact claim value"
+            },
+            {
+                "activity": "Authorize repayment",
+                "substep": "Review scheduled payment",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Ensures accuracy of claim payout"
+            },
+            {
+                "activity": "Authorize repayment",
+                "substep": "Approve payment",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Critical step in finalizing claim process"
+            },
+            {
+                "activity": "Authorize repayment",
+                "substep": "Generate authorization for garage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Directly facilitates repair process for customer"
+            },
+            {
+                "activity": "Authorize repayment",
+                "substep": "Send payment details to garage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to authorize repayment but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Enables repair process to begin, adding value to customer"
+            },
+            {
+                "activity": "Notify Customer",
+                "substep": "Include claim status (rejected or approved)",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Provides essential information to customer"
+            },
+            {
+                "activity": "Notify Customer",
+                "substep": "Add payment details if claim approved",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to notify the customer but does not directly add value for the customer.",
+                "ground_truth_reasoning": "Provides crucial information about claim value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 10,
+                "BVA": 7
+            },
+            "BVA": {
+                "BVA": 3,
+                "VA": 6
+            },
+            "NVA": {}
+        }
+    }
+}

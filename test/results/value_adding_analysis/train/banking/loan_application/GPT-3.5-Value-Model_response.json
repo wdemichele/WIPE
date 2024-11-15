@@ -1,0 +1,732 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Submit loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out loan application form",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Attach required documents",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the application but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Submit application to Loan Officer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the loan application review process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check application completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring all required documents are available."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required fields are filled",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring all required information is provided."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if application is complete or incomplete",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining if the application is ready for further processing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Return application to applicant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify missing or incomplete information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by identifying any missing or incomplete information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare return notice with required corrections",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing the applicant with the necessary corrections."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send application back to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by returning the application for completion."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check application details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review applicant's personal information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the applicant's personal information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify loan amount and purpose",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the requested loan amount and purpose."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate credit history check",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the credit history check process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Request property appraisal",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the property appraisal process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by obtaining the applicant's credit report."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score and payment history",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by evaluating the applicant's creditworthiness."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare credit history report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by summarizing the applicant's credit history.\")classify(\"VA\", \"Assess loan risk\", \"Review credit history report\", \"Directly contributes to assessing the risk of the loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess loan risk",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review credit history report",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Consult risk rules database",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate risk score",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan application."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Prepare risk assessment report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the risk of the loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraise property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule property inspection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the value of the property."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct on-site property evaluation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the value of the property."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare property appraisal report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to appraising the value of the property."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess eligibility",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the eligibility of the loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze credit history report",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the eligibility of the loan application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate risk assessment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the eligibility of the loan application."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Consider property appraisal",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the eligibility of the loan application."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Make eligibility decision",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to assessing the eligibility of the loan application."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to documenting the reasons for rejecting the loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the rejection letter for the loan application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to sending the rejection notification to the loan applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare acceptance pack",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile loan terms and conditions",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the acceptance pack for the loan application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare repayment schedule",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the acceptance pack for the loan application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Include necessary legal documents",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to preparing the acceptance pack for the loan application.\")classify(\"VA\", \"Check if home insurance quote is requested\", \"Review application for insurance request\", \"Directly contributes to meeting customer needs by reviewing the application for insurance request."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check if home insurance quote is requested",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for insurance request",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine if quote is needed",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining if a quote is needed."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send home insurance quote",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare home insurance quote",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the home insurance quote."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include quote in acceptance pack",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to include the quote in the acceptance pack, but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send acceptance pack",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review acceptance pack for completeness",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reviewing the acceptance pack for completeness."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send pack to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by sending the acceptance pack to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Set 2-week timer for response",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by setting a 2-week timer for the applicant's response."
+                }
+            ]
+        },
+        {
+            "activity_name": "Verify repayment agreement",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive applicant's response",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by receiving the applicant's response."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if applicant agrees to terms",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by checking if the applicant agrees to the terms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record applicant's decision",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the applicant's decision."
+                }
+            ]
+        },
+        {
+            "activity_name": "Cancel application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for cancellation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by documenting the reasons for cancellation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status to 'Cancelled'",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the application status to 'Cancelled'.\")classify(\"VA\", \"Notify cancellation\", \"Prepare cancellation notice\", \"Directly contributes to meeting customer needs by preparing the cancellation notice."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify cancellation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare cancellation notice",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notice to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the applicant of the cancellation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update internal records",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating internal records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Approve application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Finalize loan terms",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to finalize the loan terms but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status to 'Approved'",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to update the application status but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare approval documentation",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to prepare the approval documentation but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify approval",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate approval letter",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by generating the approval letter."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send approval notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the applicant of the approval."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Initiate loan disbursement process",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by initiating the loan disbursement process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 55,
+        "correct_classifications": 19,
+        "accuracy": 0.34545454545454546,
+        "misclassifications": [
+            {
+                "activity": "Submit loan application",
+                "substep": "Attach required documents",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to process the application but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Provides crucial supporting evidence for loan application"
+            },
+            {
+                "activity": "Submit loan application",
+                "substep": "Submit application to Loan Officer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the loan application review process.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value"
+            },
+            {
+                "activity": "Check application completeness",
+                "substep": "Review all submitted documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring all required documents are available.",
+                "ground_truth_reasoning": "Ensures process integrity but doesn't directly assess loan eligibility"
+            },
+            {
+                "activity": "Check application completeness",
+                "substep": "Verify all required fields are filled",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring all required information is provided.",
+                "ground_truth_reasoning": "Necessary for completeness but doesn't evaluate loan worthiness"
+            },
+            {
+                "activity": "Check application completeness",
+                "substep": "Determine if application is complete or incomplete",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by determining if the application is ready for further processing.",
+                "ground_truth_reasoning": "Crucial for process flow but doesn't directly assess the application"
+            },
+            {
+                "activity": "Return application to applicant",
+                "substep": "Identify missing or incomplete information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by identifying any missing or incomplete information.",
+                "ground_truth_reasoning": "Necessary for completeness but doesn't evaluate loan worthiness"
+            },
+            {
+                "activity": "Return application to applicant",
+                "substep": "Prepare return notice with required corrections",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing the applicant with the necessary corrections.",
+                "ground_truth_reasoning": "Facilitates process completion but doesn't directly add value"
+            },
+            {
+                "activity": "Return application to applicant",
+                "substep": "Send application back to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by returning the application for completion.",
+                "ground_truth_reasoning": "Necessary for process continuation but doesn't assess the application"
+            },
+            {
+                "activity": "Check application details",
+                "substep": "Initiate credit history check",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the credit history check process.",
+                "ground_truth_reasoning": "Necessary step to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "activity": "Check application details",
+                "substep": "Request property appraisal",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by initiating the property appraisal process.",
+                "ground_truth_reasoning": "Important for process but doesn't directly assess loan eligibility"
+            },
+            {
+                "activity": "Check credit history",
+                "substep": "Request credit report from credit bureau",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by obtaining the applicant's credit report.",
+                "ground_truth_reasoning": "Necessary to obtain information, but doesn't directly analyze it"
+            },
+            {
+                "activity": "Check credit history",
+                "substep": "Prepare credit history report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by summarizing the applicant's credit history.\")classify(\"VA\", \"Assess loan risk\", \"Review credit history report\", \"Directly contributes to assessing the risk of the loan application.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Assess loan risk",
+                "substep": "Review credit history report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Directly contributes to risk assessment"
+            },
+            {
+                "activity": "Assess loan risk",
+                "substep": "Prepare risk assessment report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to assessing the risk of the loan application.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Appraise property",
+                "substep": "Schedule property inspection",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to appraising the value of the property.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly assess property value"
+            },
+            {
+                "activity": "Appraise property",
+                "substep": "Prepare property appraisal report",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to appraising the value of the property.",
+                "ground_truth_reasoning": "Summarizes findings but doesn't directly add new value"
+            },
+            {
+                "activity": "Reject application",
+                "substep": "Document reasons for rejection",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to documenting the reasons for rejecting the loan application.",
+                "ground_truth_reasoning": "Important for compliance but doesn't change decision"
+            },
+            {
+                "activity": "Reject application",
+                "substep": "Prepare rejection letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to preparing the rejection letter for the loan application.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter outcome"
+            },
+            {
+                "activity": "Reject application",
+                "substep": "Send rejection notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to sending the rejection notification to the loan applicant.",
+                "ground_truth_reasoning": "Required for process completion but doesn't add value"
+            },
+            {
+                "activity": "Prepare acceptance pack",
+                "substep": "Include necessary legal documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to preparing the acceptance pack for the loan application.\")classify(\"VA\", \"Check if home insurance quote is requested\", \"Review application for insurance request\", \"Directly contributes to meeting customer needs by reviewing the application for insurance request.",
+                "ground_truth_reasoning": "Necessary for compliance but doesn't directly add value to offer"
+            },
+            {
+                "activity": "Check if home insurance quote is requested",
+                "substep": "Review application for insurance request",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary for process but doesn't directly relate to loan"
+            },
+            {
+                "activity": "Check if home insurance quote is requested",
+                "substep": "Determine if quote is needed",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by determining if a quote is needed.",
+                "ground_truth_reasoning": "Process step but doesn't directly affect loan decision"
+            },
+            {
+                "activity": "Send home insurance quote",
+                "substep": "Prepare home insurance quote",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the home insurance quote.",
+                "ground_truth_reasoning": "Adds value to customer but not directly related to loan"
+            },
+            {
+                "activity": "Send acceptance pack",
+                "substep": "Review acceptance pack for completeness",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by reviewing the acceptance pack for completeness.",
+                "ground_truth_reasoning": "Ensures process integrity but doesn't change offer"
+            },
+            {
+                "activity": "Send acceptance pack",
+                "substep": "Send pack to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by sending the acceptance pack to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter offer"
+            },
+            {
+                "activity": "Send acceptance pack",
+                "substep": "Set 2-week timer for response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by setting a 2-week timer for the applicant's response.",
+                "ground_truth_reasoning": "Manages process flow but doesn't affect offer terms"
+            },
+            {
+                "activity": "Verify repayment agreement",
+                "substep": "Receive applicant's response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by receiving the applicant's response.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change terms"
+            },
+            {
+                "activity": "Verify repayment agreement",
+                "substep": "Record applicant's decision",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the applicant's decision.",
+                "ground_truth_reasoning": "Important for records but doesn't affect loan terms"
+            },
+            {
+                "activity": "Cancel application",
+                "substep": "Document reasons for cancellation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by documenting the reasons for cancellation.",
+                "ground_truth_reasoning": "Important for records but doesn't change outcome"
+            },
+            {
+                "activity": "Cancel application",
+                "substep": "Update application status to 'Cancelled'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the application status to 'Cancelled'.\")classify(\"VA\", \"Notify cancellation\", \"Prepare cancellation notice\", \"Directly contributes to meeting customer needs by preparing the cancellation notice.",
+                "ground_truth_reasoning": "Necessary for process but doesn't add value"
+            },
+            {
+                "activity": "Notify cancellation",
+                "substep": "Prepare cancellation notice",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary for communication but doesn't change outcome"
+            },
+            {
+                "activity": "Notify cancellation",
+                "substep": "Send notice to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying the applicant of the cancellation.",
+                "ground_truth_reasoning": "Required for closure but doesn't add value"
+            },
+            {
+                "activity": "Notify cancellation",
+                "substep": "Update internal records",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating internal records.",
+                "ground_truth_reasoning": "Important for documentation but doesn't affect outcome"
+            },
+            {
+                "activity": "Approve application",
+                "substep": "Finalize loan terms",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to finalize the loan terms but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Directly defines final value proposition to customer"
+            },
+            {
+                "activity": "Notify approval",
+                "substep": "Generate approval letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by generating the approval letter.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change terms"
+            },
+            {
+                "activity": "Notify approval",
+                "substep": "Send approval notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying the applicant of the approval.",
+                "ground_truth_reasoning": "Required for process but doesn't alter loan terms"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 16,
+                "BVA": 2,
+                "Unclassified": 1
+            },
+            "BVA": {
+                "VA": 31,
+                "Unclassified": 2,
+                "BVA": 3
+            }
+        }
+    }
+}

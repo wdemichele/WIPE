@@ -1,0 +1,189 @@
+[
+    {
+        "activity_name": "Check Application Procedure",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review RIS application guidelines"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify relevant application paths (Nano, Data, EU)"
+            },
+            {
+                "step_number": 3,
+                "description": "Gather necessary documentation for chosen paths"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply to Nano Application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare Nano-specific application materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Review Nano application requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate Nano application process"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply Data API",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare data-related application materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Review Data API documentation"
+            },
+            {
+                "step_number": 3,
+                "description": "Set up API access credentials"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply to EU Projects",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify relevant EU project calls"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare EU project proposal"
+            },
+            {
+                "step_number": 3,
+                "description": "Review EU application guidelines"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply via API (Nano)",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Set up API connection for Nano application"
+            },
+            {
+                "step_number": 2,
+                "description": "Format application data according to API requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit Nano application through API"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Request to European Commission",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all required Nano application documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit Nano application package to European Commission"
+            },
+            {
+                "step_number": 3,
+                "description": "Receive confirmation of submission"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply via API (Data)",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Set up API connection for Data application"
+            },
+            {
+                "step_number": 2,
+                "description": "Format data according to API specifications"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit Data application through API"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check Data",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review submitted data for completeness"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify data accuracy and format"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm successful data submission"
+            }
+        ]
+    },
+    {
+        "activity_name": "Apply via EU Portal",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access EU application portal"
+            },
+            {
+                "step_number": 2,
+                "description": "Navigate to relevant project application section"
+            },
+            {
+                "step_number": 3,
+                "description": "Input project proposal details into portal"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send your Documents",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Upload all required project documents to EU portal"
+            },
+            {
+                "step_number": 2,
+                "description": "Review uploaded documents for completeness"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit final EU project application"
+            }
+        ]
+    },
+    {
+        "activity_name": "Get EU Decision",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Monitor EU portal for decision updates"
+            },
+            {
+                "step_number": 2,
+                "description": "Receive notification of EU project decision"
+            },
+            {
+                "step_number": 3,
+                "description": "Review decision details and any feedback provided"
+            }
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+{
+    "activities": [
+      {
+        "step": "Call registration",
+        "performer": "Call Center Agent",
+        "classification": "BVA",
+        "reasoning": "Necessary for tracking and processing, but doesn't directly resolve the complainant's issue"
+      },
+      {
+        "step": "Complaint analysis",
+        "performer": "Complaint Analyst",
+        "classification": "VA",
+        "reasoning": "Directly contributes to understanding and potentially resolving the complainant's issue"
+      },
+      {
+        "step": "Contact complainant",
+        "performer": "Customer Service Representative",
+        "classification": "VA",
+        "reasoning": "Directly addresses the complainant's concerns and provides resolution"
+      },
+      {
+        "step": "Archiving system",
+        "performer": "System",
+        "classification": "BVA",
+        "reasoning": "Necessary for record-keeping but doesn't directly add value to the complainant"
+      },
+      {
+        "step": "External referral with form B4",
+        "performer": "Referral Specialist",
+        "classification": "BVA",
+        "reasoning": "May be necessary for resolution but doesn't directly solve the complainant's issue"
+      },
+      {
+        "step": "Internal referral with form B2",
+        "performer": "Internal Coordinator",
+        "classification": "BVA",
+        "reasoning": "Facilitates internal problem-solving but doesn't directly address the complainant's concern"
+      },
+      {
+        "step": "Telephone confirmation to external party",
+        "performer": "External Relations Officer",
+        "classification": "BVA",
+        "reasoning": "Ensures proper handling of referral but doesn't directly solve the complainant's issue"
+      },
+      {
+        "step": "Incident agenda",
+        "performer": "Incident Manager",
+        "classification": "BVA",
+        "reasoning": "Helps track and manage issues internally but doesn't directly benefit the complainant"
+      },
+      {
+        "step": "Inform complainant",
+        "performer": "Customer Service Representative",
+        "classification": "VA",
+        "reasoning": "Directly provides information or resolution to the complainant"
+      }
+    ]
+  }

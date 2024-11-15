@@ -1,0 +1,147 @@
+[
+    {
+        "activity_name": "Call registration",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Answer incoming call"
+            },
+            {
+                "step_number": 2,
+                "description": "Record caller's information"
+            },
+            {
+                "step_number": 3,
+                "description": "Categorise call type (complaint, external referral, internal referral)"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complaint analysis",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review complaint details"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess severity and urgency"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine appropriate action"
+            },
+            {
+                "step_number": 4,
+                "description": "Document analysis findings"
+            }
+        ]
+    },
+    {
+        "activity_name": "Contact complainant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare response based on complaint analysis"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact complainant via preferred method"
+            },
+            {
+                "step_number": 3,
+                "description": "Discuss findings and proposed resolution"
+            }
+        ]
+    },
+    {
+        "activity_name": "External referral with form B4",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Complete form B4 with relevant information"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify appropriate external party"
+            },
+            {
+                "step_number": 3,
+                "description": "Send form B4 to external party"
+            }
+        ]
+    },
+    {
+        "activity_name": "Internal referral with form B2",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out form B2 with case details"
+            },
+            {
+                "step_number": 2,
+                "description": "Route form to appropriate internal department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Telephone confirmation to external party",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Call external party"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm receipt of form B4"
+            }
+        ]
+    },
+    {
+        "activity_name": "Incident agenda",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Add incident to department meeting agenda"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare summary of internal referral"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archiving system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all case documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter case details into archiving system"
+            },
+            {
+                "step_number": 3,
+                "description": "Store physical documents (if any)"
+            }
+        ]
+    },
+    {
+        "activity_name": "Inform complainant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare final communication"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact complainant with case outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Record communication in system"
+            }
+        ]
+    }
+]

@@ -1,0 +1,209 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Apply for Viewing Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit application form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide required documents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Wait for application review"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact prospective tenant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Schedule property viewing"
+                }
+            ]
+        },
+        {
+            "activity_name": "View The Property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visit the property"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess property condition"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In The Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit completed paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screen Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct background check"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify references"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess creditworthiness"
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare lease agreement"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and sign the contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Move In",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Coordinate move-in logistics"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Complete move-in inspection"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pay Rent",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit rent payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record payment in system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Issue Warning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify tenant of missed rent payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Document the warning"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept Late Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive late rent payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update payment records"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evict Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate eviction process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Follow legal procedures"
+                }
+            ]
+        },
+        {
+            "activity_name": "Tenant Cancels Apartment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive cancellation notice"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                8,
+                32.0
+            ],
+            "No Match": [
+                14,
+                56.00000000000001
+            ],
+            "Granularity Difference": [
+                2,
+                8.0
+            ],
+            "Process Alternative": [
+                1,
+                4.0
+            ]
+        },
+        "average_confidence": 35.6,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 81.25,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0,
+            "Process Alternative": 80.0
+        },
+        "ground_truth_coverage": 75.75757575757575,
+        "response_coverage": 50.943396226415096,
+        "average_sequence_alignment": 52.564102564102555,
+        "average_overall_similarity_score": 28.974615384615387
+    }
+}

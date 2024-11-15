@@ -1,0 +1,328 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "customer_advocate",
+            "task_description": "efficiency_focused",
+            "classification_types": "basic",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive prescription from customer",
+                    "classification": "NVA",
+                    "reasoning": "This step is necessary to start the process, but it does not directly contribute to meeting customer needs or requirements."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log into pharmacy system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to access the pharmacy system, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input patient information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by ensuring accurate patient information is recorded."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Enter medication details (name, dosage, quantity)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Input prescriber information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by accurately recording prescriber information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR (Drug Utilization Review)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for drug-drug interactions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by ensuring there are no harmful interactions between medications."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify appropriate dosage",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by ensuring the prescribed dosage is appropriate."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check for allergies",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by ensuring the prescribed medication does not cause allergic reactions."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify potential adverse effects",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by identifying potential adverse effects of the prescribed medication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by reviewing the accuracy of the prescription details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate DUR alarms",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by addressing any drug utilization review alarms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with prescriber if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the accuracy of the prescription, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make professional judgment on proceeding",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by making a professional judgment on whether to proceed with the prescription."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by ensuring accurate insurance information is recorded."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit claim to insurance provider",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by initiating the insurance claim process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process insurance response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by processing the insurance provider's response."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate patient's co-pay (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer requirements by calculating the patient's co-pay amount, if applicable."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate prescribed medication in inventory",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of obtaining the prescribed medication."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify medication name and strength",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the medication provided to the customer is correct and meets their requirements."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check expiration date",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the medication is safe and effective for the customer's use."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Retrieve correct quantity",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the customer receives the correct amount of medication as prescribed."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Label medication container",
+                    "classification": "VA",
+                    "reasoning": "This step provides important information to the customer and ensures proper usage of the medication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify correct medication",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the customer receives the correct medication as prescribed."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check medication appearance",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the medication is in the proper condition and meets quality standards."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm correct dosage and quantity",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the customer receives the correct dosage and quantity of medication."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review label for accuracy",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the information on the medication label is accurate and matches the customer's prescription."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Ensure proper packaging",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the medication is properly packaged to maintain its quality and integrity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform patient of total cost",
+                    "classification": "VA",
+                    "reasoning": "This step provides transparency to the customer by informing them of the total cost of their medication."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment (cash, card, or insurance co-pay)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipt",
+                    "classification": "VA",
+                    "reasoning": "This step provides the customer with a receipt for their payment, ensuring transparency and record-keeping."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update system with payment information",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the payment information is accurately recorded in the system for future reference."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 31,
+        "correct_classifications": 22,
+        "accuracy": 0.7096774193548387,
+        "misclassifications": [
+            {
+                "activity": "Enter prescription details",
+                "substep": "Receive prescription from customer",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to start the process, but it does not directly contribute to meeting customer needs or requirements.",
+                "ground_truth_reasoning": "Initiates the process and directly contributes to fulfilling customer need"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Consult with prescriber if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the business to ensure the accuracy of the prescription, but it does not directly add value for the customer.",
+                "ground_truth_reasoning": "Resolves potential issues and ensures appropriate treatment"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Verify patient's insurance information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer requirements by ensuring accurate insurance information is recorded.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Submit claim to insurance provider",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer requirements by initiating the insurance claim process.",
+                "ground_truth_reasoning": "Required for payment process but doesn't change the prescription"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Process insurance response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer requirements by processing the insurance provider's response.",
+                "ground_truth_reasoning": "Necessary for payment but doesn't directly affect the medication"
+            },
+            {
+                "activity": "Check insurance",
+                "substep": "Calculate patient's co-pay (if applicable)",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer requirements by calculating the patient's co-pay amount, if applicable.",
+                "ground_truth_reasoning": "Important for billing but doesn't change the prescription itself"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Inform patient of total cost",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step provides transparency to the customer by informing them of the total cost of their medication.",
+                "ground_truth_reasoning": "Necessary for transaction but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Issue receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step provides the customer with a receipt for their payment, ensuring transparency and record-keeping.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Update system with payment information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that the payment information is accurately recorded in the system for future reference.",
+                "ground_truth_reasoning": "Necessary for business records but doesn't change prescription"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "NVA": 1,
+                "VA": 20,
+                "BVA": 1
+            },
+            "BVA": {
+                "BVA": 2,
+                "VA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

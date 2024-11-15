@@ -1,0 +1,476 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Fill purchase request form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open purchase request form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter required information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save and submit the form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect vendor quotes",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Research potential vendors"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Request quotes from vendors"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Receive and review vendor quotes"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review the form for completeness"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Fill in any missing information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get supervisor approvals",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit the form for supervisor approval"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Follow up with supervisor if needed"
+                }
+            ]
+        },
+        {
+            "activity_name": "Approved?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the purchase request is approved"
+                }
+            ]
+        },
+        {
+            "activity_name": "Modify and resubmit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify required modifications"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make necessary changes to the form"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resubmit the modified form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward to Purchasing Dept",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send the approved form to the Purchasing Department"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review the purchase request for completeness"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all required information is provided"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the purchase request is complete"
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the employee about incomplete request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide instructions to complete the request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter request in enterprise system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open the enterprise system"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter the purchase request details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save the request in the system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Select vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review available vendors"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate vendor options"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Choose the preferred vendor"
+                }
+            ]
+        },
+        {
+            "activity_name": "Vendor in system?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the selected vendor is already in the system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Add new vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect necessary information about the new vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter vendor details in the system"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save the new vendor information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate purchase order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a purchase order based on the request"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include vendor and item details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign a unique purchase order number"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attach the purchase order to an email"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the email to the vendor"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the email with the purchase order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send PO copy to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a copy of the purchase order"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the copy to the Accounts Payable department"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the copy of the purchase order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive goods",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive the goods from the vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify the accuracy of the delivery"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quantity and quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Count the received items"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect the quality of the items"
+                }
+            ]
+        },
+        {
+            "activity_name": "Generate goods receipt form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Open the goods receipt form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter the received goods details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Save and generate the goods receipt form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Forward goods to employee",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the employee about the received goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for the goods to be delivered to the employee"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send form to Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attach the goods receipt form to an email"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the email to the Accounts Payable department"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the email with the goods receipt form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Issues with goods?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if there are any issues with the received goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Return to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify the vendor about the issues with the goods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for the return of the goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify Purchasing and Accounts Payable",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform the Purchasing and Accounts Payable departments about the issues with the goods"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive the invoice from the vendor"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform three-way matching",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compare the purchase order, goods receipt, and invoice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all details match and are accurate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Trigger bank transfer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate the bank transfer to pay the vendor"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide necessary payment details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send payment notice to vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create a payment notice"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address the notice to the vendor"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send the payment notice"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment successful?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if the payment was successful"
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact vendor",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Reach out to the vendor to resolve payment issues"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Communicate the payment status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Attempt transfer again",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retry the bank transfer process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure all necessary details are correct"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                14,
+                23.333333333333332
+            ],
+            "No Match": [
+                40,
+                66.66666666666666
+            ],
+            "Identical Match": [
+                1,
+                1.6666666666666667
+            ],
+            "Granularity Difference": [
+                5,
+                8.333333333333332
+            ]
+        },
+        "average_confidence": 26.833333333333332,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 81.42857142857143,
+            "No Match": 0.0,
+            "Identical Match": 100.0,
+            "Granularity Difference": 74.0
+        },
+        "ground_truth_coverage": 73.41772151898735,
+        "response_coverage": 60.18518518518518,
+        "average_sequence_alignment": 62.34567901234568,
+        "average_overall_similarity_score": 29.543333333333337
+    }
+}

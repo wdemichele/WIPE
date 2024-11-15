@@ -1,0 +1,112 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Package receipt at dock",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive package at dock"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify package details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record package receipt"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the receiving room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect package for damages"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Scan package barcode"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update package status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package processing in the rack room",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign package to rack location"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update rack inventory"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Notify par location for pickup"
+                }
+            ]
+        },
+        {
+            "activity_name": "Package delivery to par location",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve package from rack"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transport package to par location"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm package delivery"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                30.76923076923077
+            ],
+            "No Match": [
+                7,
+                53.84615384615385
+            ],
+            "Granularity Difference": [
+                1,
+                7.6923076923076925
+            ],
+            "Process Alternative": [
+                1,
+                7.6923076923076925
+            ]
+        },
+        "average_confidence": 34.61538461538461,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 77.5,
+            "No Match": 0.0,
+            "Granularity Difference": 70.0,
+            "Process Alternative": 70.0
+        },
+        "ground_truth_coverage": 80.0,
+        "response_coverage": 63.888888888888886,
+        "average_sequence_alignment": 62.916666666666664,
+        "average_overall_similarity_score": 37.5
+    }
+}

@@ -1,0 +1,357 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "customer_advocate",
+            "task_description": "efficiency_focused",
+            "classification_types": "basic",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare relevant marketing materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the marketing materials that will be sent to the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Customize information based on application",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by customizing the marketing information based on the applicant's specific application."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send marketing package to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the marketing package to the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Monitor incoming communications",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by monitoring incoming communications to identify the applicant's response."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify response from applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by identifying the applicant's response."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log response method (email or post)",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by logging the method of response (email or post)."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by reviewing the details of the applicant's application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify provided information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the information provided by the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate applicant's eligibility",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by evaluating the eligibility of the applicant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine if clarification is needed",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by determining if clarification is needed from the applicant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by documenting the reasons for rejecting the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing the rejection letter to be sent to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by sending the rejection notification to the applicant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update application status to 'Rejected'",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by updating the application status to 'Rejected'."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify available time slots",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by identifying the available time slots."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact applicant to schedule appointment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by contacting the applicant to schedule the appointment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm appointment details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by confirming the appointment details."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send appointment reminder",
+                    "classification": "BVA",
+                    "reasoning": "While this step is not directly adding value for the customer, it is necessary for the business to send appointment reminders to ensure the customer shows up for the appointment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application with applicant",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Clarify any unclear points",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Gather additional information if needed",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update application with new information",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer details",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft offer letter",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review offer for accuracy",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send offer to applicant",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Organize all application documents",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store application in appropriate system",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 4,
+                    "description": "Ensure all data protection requirements are met",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 17,
+        "accuracy": 0.5666666666666667,
+        "misclassifications": [
+            {
+                "activity": "Send marketing information",
+                "substep": "Prepare relevant marketing materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by preparing the marketing materials that will be sent to the applicant.",
+                "ground_truth_reasoning": "Supports the process but doesn't directly assess application"
+            },
+            {
+                "activity": "Send marketing information",
+                "substep": "Customize information based on application",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by customizing the marketing information based on the applicant's specific application.",
+                "ground_truth_reasoning": "Enhances customer experience but doesn't directly evaluate eligibility"
+            },
+            {
+                "activity": "Send marketing information",
+                "substep": "Send marketing package to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending the marketing package to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't affect application assessment"
+            },
+            {
+                "activity": "Receive response",
+                "substep": "Monitor incoming communications",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by monitoring incoming communications to identify the applicant's response.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly evaluate application"
+            },
+            {
+                "activity": "Receive response",
+                "substep": "Identify response from applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by identifying the applicant's response.",
+                "ground_truth_reasoning": "Important for process flow but doesn't assess eligibility"
+            },
+            {
+                "activity": "Receive response",
+                "substep": "Log response method (email or post)",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by logging the method of response (email or post).",
+                "ground_truth_reasoning": "Useful for record-keeping but doesn't affect application decision"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Document reasons for rejection",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by documenting the reasons for rejecting the applicant.",
+                "ground_truth_reasoning": "Important for compliance but doesn't change the decision"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Prepare rejection letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by preparing the rejection letter to be sent to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter the outcome"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Send rejection notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by sending the rejection notification to the applicant.",
+                "ground_truth_reasoning": "Required for process completion but doesn't affect decision"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Update application status to 'Rejected'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by updating the application status to 'Rejected'.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't change the outcome"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Identify available time slots",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by identifying the available time slots.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly assess application"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Contact applicant to schedule appointment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by contacting the applicant to schedule the appointment.",
+                "ground_truth_reasoning": "Necessary for process but doesn't evaluate eligibility"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Confirm appointment details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting the customer's need of scheduling an appointment by confirming the appointment details.",
+                "ground_truth_reasoning": "Ensures smooth process but doesn't affect application decision"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 10
+            },
+            "BVA": {
+                "VA": 13,
+                "BVA": 7
+            },
+            "NVA": {}
+        }
+    }
+}

@@ -1,0 +1,27 @@
+graph TD
+    Start([Special order received]) --> RegisterOrder[Register order]
+    RegisterOrder --> CheckOrderDetails[Check order details]
+    CheckOrderDetails --> OrderChecked((Order checked))
+    OrderChecked --> ParallelSplit{{"Parallel Split"}}
+    ParallelSplit --> ManufactureProduct[Manufacture custom product]
+    ParallelSplit --> ConfirmOrder[Confirm order]
+    ManufactureProduct --> ProductManufactured((Product manufactured))
+    ConfirmOrder --> OrderConfirmed((Order confirmed))
+    ProductManufactured --> Merge1{{"Merge"}}
+    OrderConfirmed --> Merge1
+    Merge1 --> PlanShipment[Plan shipment]
+    PlanShipment --> CheckCustomer[Check customer type and shipment status]
+    CheckCustomer --> CustomerTypeGateway{Customer type?}
+    CustomerTypeGateway -->|always| ShipCustomProduct[Ship custom product]
+    CustomerTypeGateway -->|casual customer| EmitInvoice[Emit invoice]
+    CustomerTypeGateway -->|ordinary customer| ChargeAccount[Charge customer account]
+    CustomerTypeGateway -->|shipment delayed| UpdateCustomer[Update customer]
+    ShipCustomProduct --> Merge2{{"Merge"}}
+    EmitInvoice --> Merge2
+    ChargeAccount --> Merge2
+    Merge2 --> ArchiveOrder[Archive order]
+    ArchiveOrder --> End((Order fulfilled))
+    UpdateCustomer --> CustomerUpdated((Customer updated))
+
+    ChangeRequest[/Change request received/] --> HandleChangeRequest[Handle change request]
+    HandleChangeRequest -.-> CheckOrderDetails

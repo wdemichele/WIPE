@@ -1,0 +1,209 @@
+[
+    {
+        "activity_name": "Retrieve parts from storage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate parts in storage area",
+                "classification": "BVA",
+                "reasoning": "Necessary for retrieval but doesn't directly add value to end product"
+            },
+            {
+                "step_number": 2,
+                "description": "Collect required parts",
+                "classification": "VA",
+                "reasoning": "Directly contributes to fulfilling production needs"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory records",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Specify and quantify requirements",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify specific parts needed",
+                "classification": "VA",
+                "reasoning": "Directly contributes to ensuring correct parts are procured"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine required quantities",
+                "classification": "VA",
+                "reasoning": "Ensures appropriate amount of parts are ordered"
+            },
+            {
+                "step_number": 3,
+                "description": "Document specifications for procurement",
+                "classification": "BVA",
+                "reasoning": "Necessary for ordering process but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Complete a purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access ERP-System",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter purchase order details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to acquiring needed parts"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit purchase order for review",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review purchase order details in ERP-System",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify accuracy and completeness of order",
+                "classification": "BVA",
+                "reasoning": "Quality control measure but not directly adding value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Identify vendor status",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create vendor",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather new vendor information",
+                "classification": "BVA",
+                "reasoning": "Necessary for procurement but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter vendor details into system",
+                "classification": "BVA",
+                "reasoning": "Facilitates future orders but not directly adding value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Validate and approve new vendor",
+                "classification": "BVA",
+                "reasoning": "Ensures vendor quality but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Create order template from purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access ERP-System",
+                "classification": "BVA",
+                "reasoning": "Necessary for process but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate order template based on purchase order",
+                "classification": "BVA",
+                "reasoning": "Improves future efficiency but not directly adding value to current product"
+            },
+            {
+                "step_number": 3,
+                "description": "Save template for future use",
+                "classification": "BVA",
+                "reasoning": "Facilitates future orders but not directly adding value to current product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve purchase order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order details in ERP-System",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Check against approval criteria",
+                "classification": "BVA",
+                "reasoning": "Quality control measure but not directly adding value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide approval or rejection decision",
+                "classification": "VA",
+                "reasoning": "Directly impacts acquisition of needed parts"
+            }
+        ]
+    },
+    {
+        "activity_name": "Adjust order status",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify delivery problems",
+                "classification": "BVA",
+                "reasoning": "Necessary for process management but not directly adding value to product"
+            },
+            {
+                "step_number": 2,
+                "description": "Update order status in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but not directly adding value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate status change to relevant parties",
+                "classification": "BVA",
+                "reasoning": "Facilitates process flow but not directly adding value to product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receipt of goods",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive delivered parts",
+                "classification": "VA",
+                "reasoning": "Directly contributes to acquiring needed parts for production"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify received parts against order",
+                "classification": "BVA",
+                "reasoning": "Ensures accuracy but not directly adding value to product"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory and order status in system",
+                "classification": "BVA",
+                "reasoning": "Important for tracking but not directly adding value to product"
+            }
+        ]
+    }
+]

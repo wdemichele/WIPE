@@ -1,0 +1,72 @@
+flowchart TD
+    subgraph Risk Manager
+        RM_Start([Start]) --> RM_Gateway1{Gateway}
+        RM_Gateway1 -->|BRMAssessment TN Accepted| RM_Check1[perform BRM check]
+        RM_Gateway1 -->|ERMAssessment TN Accepted| RM_Check2[perform ERM check]
+        RM_Check1 --> RM_Gateway2{Gateway}
+        RM_Check2 --> RM_Gateway2
+        RM_Gateway2 --> RM_FinalCheck[perform credibility check]
+    end
+
+    subgraph Account Manager
+        AM_Check[perform credibility check]
+        AM_Gateway{Gateway}
+    end
+
+    subgraph TBA
+        TBA_Gateway1{Gateway}
+        TBA_Gateway2{Gateway}
+    end
+
+    subgraph Customer Advisor
+        CA_Call[call client to complement information]
+        CA_Gateway{Gateway}
+        CA_Create[create loan offer]
+        CA_Send[send loan offer]
+        CA_Timer1((Timer 1))
+        CA_Timer2((Timer 2))
+        CA_Remind[remind client]
+    end
+
+    subgraph Administrator
+        AD_Send[send rejection letter]
+        AD_End([End])
+    end
+
+    subgraph Backend
+        BE_Activate[activate loan application]
+        BE_Update[update loan activation]
+        BE_Execute[execute initial payment]
+        BE_Return[return documents to client]
+        BE_End([End])
+    end
+
+    RM_FinalCheck --> AM_Check
+    AM_Check --> AM_Gateway
+    AM_Gateway --> TBA_Gateway1
+    TBA_Gateway1 --> CA_Call
+    CA_Call --> CA_Gateway
+    CA_Gateway --> CA_Create
+    CA_Create --> CA_Send
+    CA_Send --> CA_Timer1
+    CA_Timer1 --> TBA_Gateway2
+    TBA_Gateway2 -->|After one hour| CA_Timer2
+    CA_Timer2 --> CA_Remind
+    CA_Remind --> TBA_Gateway2
+    TBA_Gateway2 -->|Receive accepted offer| BE_Activate
+    TBA_Gateway1 -->|Reject| AD_Send
+    AD_Send --> AD_End
+    BE_Activate --> BE_Update
+    BE_Update --> BE_Execute
+    BE_Execute --> BE_Return
+    BE_Return --> BE_End
+
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef timer fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+
+    class RM_Start,AD_End,BE_End event;
+    class RM_Gateway1,RM_Gateway2,AM_Gateway,TBA_Gateway1,TBA_Gateway2,CA_Gateway gateway;
+    class RM_Check1,RM_Check2,RM_FinalCheck,AM_Check,CA_Call,CA_Create,CA_Send,CA_Remind,AD_Send,BE_Activate,BE_Update,BE_Execute,BE_Return activity;
+    class CA_Timer1,CA_Timer2 timer;

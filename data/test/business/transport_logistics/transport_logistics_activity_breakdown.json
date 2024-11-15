@@ -1,0 +1,87 @@
+[
+    {
+        "activity_name": "Check stock",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access work equipment inventory database"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify availability of required work equipment"
+            },
+            {
+                "step_number": 3,
+                "description": "Document current stock levels"
+            }
+        ]
+    },
+    {
+        "activity_name": "Retrieve work equipment from the storeroom",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Locate work equipment in storeroom"
+            },
+            {
+                "step_number": 2,
+                "description": "Remove equipment from storage"
+            },
+            {
+                "step_number": 3,
+                "description": "Update inventory records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Specify and quantify requirements",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine exact type and model of work equipment needed"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate required quantity"
+            },
+            {
+                "step_number": 3,
+                "description": "Document specifications for procurement"
+            }
+        ]
+    },
+    {
+        "activity_name": "Place order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter order details into ERP System"
+            },
+            {
+                "step_number": 2,
+                "description": "Select supplier from approved vendor list"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit order through ERP System"
+            }
+        ]
+    },
+    {
+        "activity_name": "Place order by e-mail",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve order request template"
+            },
+            {
+                "step_number": 2,
+                "description": "Fill in template with order details"
+            },
+            {
+                "step_number": 3,
+                "description": "Send e-mail to supplier"
+            }
+        ]
+    }
+]

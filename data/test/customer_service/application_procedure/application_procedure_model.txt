@@ -1,0 +1,50 @@
+graph TD
+    Start([Start]) --> CheckApplication[Check Application Procedure]
+    CheckApplication --> SplitGateway{Split Gateway}
+    SplitGateway --> ApplyNano[Apply to Nano Application]
+    SplitGateway --> ApplyData[Apply Data API]
+    SplitGateway --> ApplyEu[Apply to EU Projects]
+    
+    ApplyNano --> ApplyNanoAPI[Apply via API]
+    ApplyNanoAPI --> SendNanoRequest[Send Request to European Commission]
+    SendNanoRequest --> GetNanoDecision{Get Decision within 10-12 weeks}
+    
+    ApplyData --> ApplyDataAPI[Apply via API]
+    ApplyDataAPI --> CheckData[Check Data]
+    
+    ApplyEu --> ApplyEuAPI[Apply via EU Portal]
+    ApplyEuAPI --> SendEuRequest[Send your Documents]
+    SendEuRequest --> GetEuDecision[Get EU Decision]
+    
+    GetNanoDecision --> MergeGateway{Merge Gateway}
+    CheckData --> MergeGateway
+    GetEuDecision --> MergeGateway
+    
+    MergeGateway --> End([Receipt of Admission/ Rejection Letter])
+    
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    
+    class Start,End event;
+    class SplitGateway,GetNanoDecision,MergeGateway gateway;
+    class CheckApplication,ApplyNano,ApplyData,ApplyEu,ApplyNanoAPI,SendNanoRequest,ApplyDataAPI,CheckData,ApplyEuAPI,SendEuRequest,GetEuDecision activity;
+    
+    subgraph "Application for RIS"
+        Start
+        CheckApplication
+        SplitGateway
+        ApplyNano
+        ApplyData
+        ApplyEu
+        ApplyNanoAPI
+        SendNanoRequest
+        GetNanoDecision
+        ApplyDataAPI
+        CheckData
+        ApplyEuAPI
+        SendEuRequest
+        GetEuDecision
+        MergeGateway
+        End
+    end

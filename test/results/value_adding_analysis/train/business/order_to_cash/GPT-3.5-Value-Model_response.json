@@ -1,0 +1,668 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access inventory management system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by accessing the inventory management system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Search for ordered product",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by searching for the ordered product."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify current stock levels",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying the current stock levels."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate pick list",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by generating a pick list."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by locating the product in the warehouse."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by picking the product from the shelf."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update inventory records",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the inventory records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access raw materials inventory",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by accessing the raw materials inventory."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check quantity of required materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by checking the quantity of required materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if sufficient materials are available",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by determining if sufficient materials are available."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from suppliers",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify needed materials",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to request raw materials but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Select appropriate suppliers",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to select appropriate suppliers but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate purchase orders",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to generate purchase orders but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send purchase orders to suppliers",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to send purchase orders to suppliers but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipments from suppliers",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by receiving shipments from suppliers."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by inspecting received materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the inventory with new materials.\")classify(\"VA\", \"Manufacture product\", \"Create production order\", \"Directly contributes to meeting customer needs by initiating the production process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Create production order",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Allocate resources and materials",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by providing necessary resources and materials for production."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Produce product",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by manufacturing the product."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Perform quality control checks",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to ensure product quality but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by verifying order details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify product availability",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by checking product availability."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate order confirmation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming the order."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send confirmation to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the customer about the order confirmation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Escalate order confirmation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify reason for confirmation failure",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by identifying the reason for confirmation failure."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Forward issue to appropriate department or manager",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by escalating the issue to the appropriate department or manager."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Track escalation status",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by tracking the status of the escalation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total order cost",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by calculating the total cost of the order."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate invoice document",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by generating the invoice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send invoice to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by sending the invoice to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Monitor incoming payments",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by monitoring incoming payments."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Match payment to invoice",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by matching the payment to the invoice."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process payment",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by processing the payment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to paid",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the order status to paid.\")classify(\"VA\", \"Archive order\", \"Collect all order-related documents\", \"Directly contributes to meeting customer needs by collecting necessary order-related documents."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Collect all order-related documents",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify order completion",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by ensuring order completion."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Transfer order to archive system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by archiving the order for future reference."
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine cancellation penalty",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order status",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to determine if cancellation penalty is applicable but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check cancellation policy",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to determine the applicable cancellation penalty but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Calculate applicable penalty",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to calculate the applicable cancellation penalty but doesn't directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify penalty to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare penalty notification",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by preparing the penalty notification."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send notification to customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying the customer of the applicable penalty."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record notification in system",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by recording the penalty notification in the system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Cancel order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update order status to cancelled",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by updating the order status to cancelled."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Reverse any inventory allocations",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by reversing any inventory allocations made for the cancelled order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process cancellation penalty if applicable",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for the business to process the cancellation penalty if applicable but doesn't directly add value for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Notify relevant departments of cancellation",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by notifying relevant departments of the order cancellation."
+                }
+            ]
+        },
+        {
+            "activity_name": "Stop cancellation request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update system to remove cancellation request",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by removing the cancellation request from the system."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm continuation of order with customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by confirming with the customer if they want to continue with the order."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Resume normal order processing",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to meeting customer needs by resuming normal order processing after cancellation request is stopped."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 51,
+        "correct_classifications": 18,
+        "accuracy": 0.35294117647058826,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Access inventory management system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by accessing the inventory management system.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Search for ordered product",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by searching for the ordered product.",
+                "ground_truth_reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Generate pick list",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by generating a pick list.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Locate product in warehouse",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by locating the product in the warehouse.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Update inventory records",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the inventory records.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Check materials availability",
+                "substep": "Access raw materials inventory",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by accessing the raw materials inventory.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Identify needed materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to request raw materials but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Directly contributes to maintaining production capability"
+            },
+            {
+                "activity": "Obtain raw materials",
+                "substep": "Update inventory with new materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the inventory with new materials.\")classify(\"VA\", \"Manufacture product\", \"Create production order\", \"Directly contributes to meeting customer needs by initiating the production process.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Create production order",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Facilitates production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Allocate resources and materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by providing necessary resources and materials for production.",
+                "ground_truth_reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Perform quality control checks",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to ensure product quality but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Directly ensures product quality for customer"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Review order details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by verifying order details.",
+                "ground_truth_reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Generate order confirmation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by confirming the order.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Send confirmation to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying the customer about the order confirmation.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly add value to product"
+            },
+            {
+                "activity": "Escalate order confirmation",
+                "substep": "Identify reason for confirmation failure",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by identifying the reason for confirmation failure.",
+                "ground_truth_reasoning": "Helps resolve issues but doesn't directly add value to product"
+            },
+            {
+                "activity": "Escalate order confirmation",
+                "substep": "Forward issue to appropriate department or manager",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by escalating the issue to the appropriate department or manager.",
+                "ground_truth_reasoning": "Facilitates problem-solving but doesn't directly add value to product"
+            },
+            {
+                "activity": "Escalate order confirmation",
+                "substep": "Track escalation status",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by tracking the status of the escalation.",
+                "ground_truth_reasoning": "Ensures follow-up but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by generating the invoice document.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by sending the invoice to the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Monitor incoming payments",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by monitoring incoming payments.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Match payment to invoice",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by matching the payment to the invoice.",
+                "ground_truth_reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the order status to paid.\")classify(\"VA\", \"Archive order\", \"Collect all order-related documents\", \"Directly contributes to meeting customer needs by collecting necessary order-related documents.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Collect all order-related documents",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Verify order completion",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by ensuring order completion.",
+                "ground_truth_reasoning": "Ensures process completion but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Transfer order to archive system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by archiving the order for future reference.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Determine cancellation penalty",
+                "substep": "Calculate applicable penalty",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to calculate the applicable cancellation penalty but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Directly determines financial impact for customer and company"
+            },
+            {
+                "activity": "Notify penalty to customer",
+                "substep": "Prepare penalty notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by preparing the penalty notification.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change the penalty"
+            },
+            {
+                "activity": "Notify penalty to customer",
+                "substep": "Send notification to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying the customer of the applicable penalty.",
+                "ground_truth_reasoning": "Informs customer but doesn't directly add value"
+            },
+            {
+                "activity": "Notify penalty to customer",
+                "substep": "Record notification in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by recording the penalty notification in the system.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Update order status to cancelled",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by updating the order status to cancelled.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Process cancellation penalty if applicable",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for the business to process the cancellation penalty if applicable but doesn't directly add value for the customer.",
+                "ground_truth_reasoning": "Directly relates to the financial transaction with customer"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Notify relevant departments of cancellation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by notifying relevant departments of the order cancellation.",
+                "ground_truth_reasoning": "Necessary for internal processes but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Stop cancellation request",
+                "substep": "Update system to remove cancellation request",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to meeting customer needs by removing the cancellation request from the system.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "VA": 27,
+                "BVA": 5,
+                "Unclassified": 2
+            },
+            "VA": {
+                "VA": 13,
+                "BVA": 4
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if product is in stock"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine stock availability"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update stock status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in warehouse"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve product from designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if materials are available"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Determine materials availability"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update materials status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate manufacturing process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Follow production instructions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Monitor manufacturing progress"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Complete product manufacturing"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from suppliers",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify required raw materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send request to suppliers"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Track raw materials delivery status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive raw materials from suppliers"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect raw materials for quality"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store raw materials in designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Validate order information"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order confirmation status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice based on order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send invoice to customer"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Track invoice payment status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Escalate order confirmation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify escalation criteria"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify higher authority about order confirmation issue"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Follow escalation process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment from customer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment details"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update payment status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order details in archive"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Organize archived orders for easy retrieval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine cancellation penalty",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review cancellation policy"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate cancellation penalty amount"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Notify customer about cancellation penalty"
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify penalty to customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform customer about cancellation penalty"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide details of penalty amount and payment process"
+                }
+            ]
+        },
+        {
+            "activity_name": "Cancel order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update order status as cancelled"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Notify relevant parties about order cancellation"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process refund if applicable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Stop cancellation request",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Halt the cancellation process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update cancellation request status"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                16,
+                37.2093023255814
+            ],
+            "Granularity Difference": [
+                6,
+                13.953488372093023
+            ],
+            "No Match": [
+                18,
+                41.86046511627907
+            ],
+            "Identical Match": [
+                2,
+                4.651162790697675
+            ],
+            "Process Alternative": [
+                1,
+                2.3255813953488373
+            ]
+        },
+        "average_confidence": 47.55813953488372,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 80.625,
+            "Granularity Difference": 80.83333333333333,
+            "No Match": 0.0,
+            "Identical Match": 100.0,
+            "Process Alternative": 70.0
+        },
+        "ground_truth_coverage": 80.76923076923077,
+        "response_coverage": 73.01587301587301,
+        "average_sequence_alignment": 67.77777777777777,
+        "average_overall_similarity_score": 50.88933333333333
+    }
+}

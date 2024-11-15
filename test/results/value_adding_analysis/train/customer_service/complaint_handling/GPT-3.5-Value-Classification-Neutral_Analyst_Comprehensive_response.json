@@ -1,0 +1,333 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Call registration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Answer incoming call",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses customer needs and initiates value creation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record caller's information",
+                    "classification": "VA",
+                    "reasoning": "Collects necessary information to address customer needs."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Categorise call type (complaint, external referral, internal referral)",
+                    "classification": null,
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Complaint analysis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review complaint details",
+                    "classification": "VA",
+                    "reasoning": "Directly addresses customer concerns and initiates value creation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess severity and urgency",
+                    "classification": "VA",
+                    "reasoning": "Determines priority for addressing customer complaints."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine appropriate action",
+                    "classification": "VA",
+                    "reasoning": "Identifies the necessary steps to resolve the complaint."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Document analysis findings",
+                    "classification": "VA",
+                    "reasoning": "Records the analysis for future reference and process improvement."
+                }
+            ]
+        },
+        {
+            "activity_name": "Contact complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare response based on complaint analysis",
+                    "classification": "VA",
+                    "reasoning": "Tailors the response to address the specific complaint."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact complainant via preferred method",
+                    "classification": "VA",
+                    "reasoning": "Engages directly with the customer to address their concerns."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Discuss findings and proposed resolution",
+                    "classification": "VA",
+                    "reasoning": "Works with the customer to find a satisfactory resolution."
+                }
+            ]
+        },
+        {
+            "activity_name": "External referral with form B4",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete form B4 with relevant information",
+                    "classification": "VA",
+                    "reasoning": "Gathers necessary information for the referral process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Identify appropriate external party",
+                    "classification": "VA",
+                    "reasoning": "Determines the appropriate party to refer the complaint to."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send form B4 to external party",
+                    "classification": "VA",
+                    "reasoning": "Initiates the referral process to address the complaint."
+                }
+            ]
+        },
+        {
+            "activity_name": "Internal referral with form B2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out form B2 with case details",
+                    "classification": "VA",
+                    "reasoning": "Provides necessary information for internal referral."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Route form to appropriate internal department",
+                    "classification": "VA",
+                    "reasoning": "Directs the case to the relevant internal department for further action."
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephone confirmation to external party",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Call external party",
+                    "classification": "VA",
+                    "reasoning": "Directly initiates communication with external party, contributing to value creation."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm receipt of form B4",
+                    "classification": "VA",
+                    "reasoning": "Verifies receipt of required form, ensuring process accuracy and efficiency."
+                }
+            ]
+        },
+        {
+            "activity_name": "Incident agenda",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Add incident to department meeting agenda",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for internal coordination and decision-making, but not directly valuable to customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare summary of internal referral",
+                    "classification": "VA",
+                    "reasoning": "Summarizes internal referral, enabling efficient discussion and decision-making."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archiving system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compile all case documents",
+                    "classification": "VA",
+                    "reasoning": "Gathers all relevant case documents, contributing to efficient archiving process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter case details into archiving system",
+                    "classification": "VA",
+                    "reasoning": "Captures case details for future reference, ensuring accurate and efficient retrieval."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store physical documents (if any)",
+                    "classification": "BVA",
+                    "reasoning": "Required for compliance and legal purposes, but not directly valuable to customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Inform complainant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare final communication",
+                    "classification": "VA",
+                    "reasoning": "Creates final communication to inform complainant, directly addressing their needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact complainant with case outcome",
+                    "classification": "VA",
+                    "reasoning": "Directly communicates case outcome to complainant, adding value to their experience."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record communication in system",
+                    "classification": "VA",
+                    "reasoning": "Captures communication for future reference, ensuring process accuracy and efficiency."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 25,
+        "correct_classifications": 12,
+        "accuracy": 0.48,
+        "misclassifications": [
+            {
+                "activity": "Call registration",
+                "substep": "Record caller's information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Collects necessary information to address customer needs.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Complaint analysis",
+                "substep": "Document analysis findings",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Records the analysis for future reference and process improvement.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "External referral with form B4",
+                "substep": "Complete form B4 with relevant information",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Gathers necessary information for the referral process.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "External referral with form B4",
+                "substep": "Identify appropriate external party",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Determines the appropriate party to refer the complaint to.",
+                "ground_truth_reasoning": "Facilitates resolution but doesn't directly address the complaint"
+            },
+            {
+                "activity": "External referral with form B4",
+                "substep": "Send form B4 to external party",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Initiates the referral process to address the complaint.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Internal referral with form B2",
+                "substep": "Fill out form B2 with case details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Provides necessary information for internal referral.",
+                "ground_truth_reasoning": "Necessary for internal process but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Internal referral with form B2",
+                "substep": "Route form to appropriate internal department",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directs the case to the relevant internal department for further action.",
+                "ground_truth_reasoning": "Facilitates resolution but doesn't directly address the complaint"
+            },
+            {
+                "activity": "Telephone confirmation to external party",
+                "substep": "Call external party",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly initiates communication with external party, contributing to value creation.",
+                "ground_truth_reasoning": "Ensures process continuity but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Telephone confirmation to external party",
+                "substep": "Confirm receipt of form B4",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Verifies receipt of required form, ensuring process accuracy and efficiency.",
+                "ground_truth_reasoning": "Verifies process step but doesn't directly address the complaint"
+            },
+            {
+                "activity": "Incident agenda",
+                "substep": "Prepare summary of internal referral",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Summarizes internal referral, enabling efficient discussion and decision-making.",
+                "ground_truth_reasoning": "Aids in internal discussion but doesn't directly address the complaint"
+            },
+            {
+                "activity": "Archiving system",
+                "substep": "Compile all case documents",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Gathers all relevant case documents, contributing to efficient archiving process.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly resolve the complaint"
+            },
+            {
+                "activity": "Archiving system",
+                "substep": "Enter case details into archiving system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Captures case details for future reference, ensuring accurate and efficient retrieval.",
+                "ground_truth_reasoning": "Important for future reference but doesn't directly address the complaint"
+            },
+            {
+                "activity": "Inform complainant",
+                "substep": "Record communication in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Captures communication for future reference, ensuring process accuracy and efficiency.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to the customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 9
+            },
+            "BVA": {
+                "VA": 13,
+                "BVA": 3
+            },
+            "NVA": {}
+        }
+    }
+}

@@ -1,0 +1,146 @@
+[
+    {
+        "activity_name": "Claim Received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive claim documentation from customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of claim in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all submitted claim documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required information is provided"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if claim is complete or incomplete"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Assign unique claim identifier"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter claim details into system"
+            },
+            {
+                "step_number": 3,
+                "description": "Forward registered claim to Handling Department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reason for rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Update claim status to 'Rejected'"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare rejection information for customer notification"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review claim details"
+            },
+            {
+                "step_number": 2,
+                "description": "Evaluate damage extent and repair costs"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine validity of claim"
+            },
+            {
+                "step_number": 4,
+                "description": "Decide on claim approval or rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Schedule payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate approved payment amount"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine payment date"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter payment details into system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Authorize repayment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review scheduled payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Approve payment"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate authorization for garage"
+            },
+            {
+                "step_number": 4,
+                "description": "Send payment details to garage"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification letter"
+            },
+            {
+                "step_number": 2,
+                "description": "Include claim status (rejected or approved)"
+            },
+            {
+                "step_number": 3,
+                "description": "Add payment details if claim approved"
+            },
+            {
+                "step_number": 4,
+                "description": "Send notification letter to customer"
+            }
+        ]
+    }
+]

@@ -1,0 +1,218 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "customer_advocate",
+            "task_description": "efficiency_focused",
+            "classification_types": "basic",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Determine likelihood of the claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new claim",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by capturing the initial claim information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details",
+                    "classification": "VA",
+                    "reasoning": "Reviewing the claim details is essential for understanding the customer's situation and assessing the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze policy coverage",
+                    "classification": "VA",
+                    "reasoning": "Analyzing policy coverage is necessary to determine if the claim is covered by the insurance policy."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate initial evidence",
+                    "classification": "VA",
+                    "reasoning": "Evaluating the initial evidence helps in assessing the validity of the claim."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Estimate probability of claim validity",
+                    "classification": "VA",
+                    "reasoning": "Estimating the probability of claim validity is crucial for determining the likelihood of the claim being accepted."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather additional information if needed",
+                    "classification": "VA",
+                    "reasoning": "Gathering additional information, if needed, helps in making an informed decision about the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review claim details thoroughly",
+                    "classification": "VA",
+                    "reasoning": "Thoroughly reviewing the claim details ensures a comprehensive assessment of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify policy terms and conditions",
+                    "classification": "VA",
+                    "reasoning": "Verifying policy terms and conditions is necessary to ensure compliance with the insurance contract."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Evaluate evidence and documentation",
+                    "classification": "VA",
+                    "reasoning": "Evaluating the evidence and documentation is essential for determining the validity of the claim."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Consult with relevant experts if necessary",
+                    "classification": "VA",
+                    "reasoning": "Consulting with relevant experts helps in making an accurate assessment of the claim."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Determine claim validity and value",
+                    "classification": "VA",
+                    "reasoning": "Determining the claim validity and value is the final step in assessing the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Initiate payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate payment amount",
+                    "classification": "BVA",
+                    "reasoning": "Calculating the payment amount is necessary for processing the payment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify claimant's payment details",
+                    "classification": "BVA",
+                    "reasoning": "Verifying the claimant's payment details ensures accurate payment processing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare payment documentation",
+                    "classification": "BVA",
+                    "reasoning": "Preparing payment documentation is necessary for record-keeping and compliance purposes."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Obtain necessary approvals",
+                    "classification": "BVA",
+                    "reasoning": "Obtaining necessary approvals ensures compliance with internal controls and policies."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Process payment through financial system",
+                    "classification": "VA",
+                    "reasoning": "Processing the payment through the financial system directly contributes to meeting the customer's needs by providing timely payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Advise claimant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare communication detailing claim decision",
+                    "classification": "VA",
+                    "reasoning": "Preparing communication detailing the claim decision is necessary to inform the claimant about the outcome."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Include explanation of decision rationale",
+                    "classification": "VA",
+                    "reasoning": "Including an explanation of the decision rationale helps the claimant understand the reasoning behind the decision."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Provide information on payment (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Providing information on payment, if applicable, ensures transparency and clarity for the claimant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Include details on appeal process (if applicable)",
+                    "classification": "VA",
+                    "reasoning": "Including details on the appeal process, if applicable, helps the claimant understand their options."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Send communication to claimant",
+                    "classification": "VA",
+                    "reasoning": "Sending the communication to the claimant ensures timely and effective communication."
+                },
+                {
+                    "step_number": 6,
+                    "description": "Record communication in claim file",
+                    "classification": "VA",
+                    "reasoning": "Recording the communication in the claim file is necessary for documentation and future reference."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 22,
+        "correct_classifications": 18,
+        "accuracy": 0.8181818181818182,
+        "misclassifications": [
+            {
+                "activity": "Determine likelihood of the claim",
+                "substep": "Receive new claim",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to meeting customer needs by capturing the initial claim information.",
+                "ground_truth_reasoning": "Necessary to initiate the process but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Initiate payment",
+                "substep": "Calculate payment amount",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Calculating the payment amount is necessary for processing the payment.",
+                "ground_truth_reasoning": "Directly determines the value to be provided to the claimant"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Send communication to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sending the communication to the claimant ensures timely and effective communication.",
+                "ground_truth_reasoning": "Necessary to deliver information but doesn't add new value"
+            },
+            {
+                "activity": "Advise claimant",
+                "substep": "Record communication in claim file",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Recording the communication in the claim file is necessary for documentation and future reference.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't directly add value to claimant"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 15,
+                "BVA": 1
+            },
+            "BVA": {
+                "VA": 3,
+                "BVA": 3
+            },
+            "NVA": {}
+        }
+    }
+}

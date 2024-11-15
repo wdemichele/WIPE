@@ -1,0 +1,104 @@
+[
+    {
+        "activity_name": "Verify Available Vacation Days",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access employee's vacation day records"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate remaining available vacation days"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm if requested leave is within available days"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register Vacation Leave Request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Input employee's vacation leave details"
+            },
+            {
+                "step_number": 2,
+                "description": "Record requested dates in the system"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit request for review"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve Vacation Leave Request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review vacation leave request details"
+            },
+            {
+                "step_number": 2,
+                "description": "Check for conflicts with team schedules"
+            },
+            {
+                "step_number": 3,
+                "description": "Make decision on approval or rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Rejection Message",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare rejection notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Include reason for rejection"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection message to employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Approval Message",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare approval notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Include approved vacation dates"
+            },
+            {
+                "step_number": 3,
+                "description": "Send approval message to employee"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update Payroll System",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Access employee's payroll record"
+            },
+            {
+                "step_number": 2,
+                "description": "Record approved vacation days"
+            },
+            {
+                "step_number": 3,
+                "description": "Adjust pay calculation for vacation period"
+            }
+        ]
+    }
+]

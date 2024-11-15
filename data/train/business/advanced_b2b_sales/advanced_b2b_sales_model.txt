@@ -1,0 +1,33 @@
+graph TD
+    Start((Start)) -->|Application received| A[Send marketing information]
+    A --> B{Response type}
+    B -->|Email| C[Create electronic response]
+    B -->|Post| D[Process post response]
+    B -->|No response| E((1 week))
+    E --> F((Application aborted))
+    C --> G[Assess response]
+    D --> G
+    G --> H{Application OK?}
+    H -->|Yes| I[Make appointment]
+    H -->|No, clarification needed| I
+    H -->|No| J[Prepare rejection]
+    I --> K((Appointment day))
+    K --> L[Discuss application]
+    L --> M{Application decision}
+    M -->|OK| N[Handle acceptance]
+    M -->|Not OK| O((Application rejected))
+    J --> P[Send rejection]
+    P --> O
+    N --> Q{+}
+    Q --> R[Make offer]
+    Q --> S[File application]
+    R --> T[Send offer]
+    T --> U{Offer accepted?}
+    U -->|Yes| V((Application accepted))
+    U -->|No| W[Handle revocation]
+    W --> X[Create offer revocation]
+    X --> Y[Send offer revocation]
+    Y --> Z((Revocation handled))
+    S --> AA{Application status}
+    AA -->|Rejected| AB[Delete application]
+    AA -->|Accepted| V

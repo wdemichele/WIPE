@@ -1,0 +1,62 @@
+[
+    {
+      "step": "Fill request",
+      "performer": "Site engineer",
+      "classification": "VA"
+    },
+    {
+      "step": "Send request to clerk",
+      "performer": "Site engineer",
+      "classification": "NVA"
+    },
+    {
+      "step": "Open and read request",
+      "performer": "Clerk",
+      "classification": "NVA"
+    },
+    {
+      "step": "Select suitable equipment",
+      "performer": "Clerk",
+      "classification": "VA"
+    },
+    {
+      "step": "Check equipment availability",
+      "performer": "Clerk",
+      "classification": "VA"
+    },
+    {
+      "step": "Record recommended equipment & supplier",
+      "performer": "Clerk",
+      "classification": "BVA"
+    },
+    {
+      "step": "Forward request to works engineer",
+      "performer": "Clerk",
+      "classification": "NVA"
+    },
+    {
+      "step": "Open and examine request",
+      "performer": "Works engineer",
+      "classification": "BVA"
+    },
+    {
+      "step": "Communicate issues",
+      "performer": "Works engineer",
+      "classification": "BVA"
+    },
+    {
+      "step": "Forward request back to clerk",
+      "performer": "Works engineer",
+      "classification": "NVA"
+    },
+    {
+      "step": "Create PO",
+      "performer": "Clerk",
+      "classification": "BVA"
+    },
+    {
+      "step": "Send PO to supplier",
+      "performer": "Clerk",
+      "classification": "VA"
+    }
+  ]

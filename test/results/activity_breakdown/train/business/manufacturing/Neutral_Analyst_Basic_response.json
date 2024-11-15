@@ -1,0 +1,186 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if product is in stock"
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate product in warehouse"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve product from designated location"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check raw materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if raw materials are available"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send request to Supplier 1 for raw materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send request to Supplier 2 for raw materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive raw materials from Supplier 1"
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive raw materials from Supplier 2"
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assemble raw materials into finished product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Merge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Combine manufactured product with retrieved product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Validate order details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm order with customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer's shipment address"
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate invoice for the order"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package the product for shipment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Arrange for shipping of the product"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive payment from customer"
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store order information for future reference"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                5,
+                26.31578947368421
+            ],
+            "Functional Equivalence": [
+                6,
+                31.57894736842105
+            ],
+            "No Match": [
+                8,
+                42.10526315789473
+            ]
+        },
+        "average_confidence": 48.68421052631579,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "Functional Equivalence": 87.5,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 70.83333333333334,
+        "response_coverage": 50.847457627118644,
+        "average_sequence_alignment": 41.07142857142857,
+        "average_overall_similarity_score": 48.392857142857146
+    }
+}

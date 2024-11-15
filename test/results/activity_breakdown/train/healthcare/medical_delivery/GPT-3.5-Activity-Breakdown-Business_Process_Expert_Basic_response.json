@@ -1,0 +1,118 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check destination",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify destination address"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm recipient details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set package as unknown",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Mark package as unidentified"
+                }
+            ]
+        },
+        {
+            "activity_name": "Register package into ERP",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter package details into ERP system"
+                }
+            ]
+        },
+        {
+            "activity_name": "Write details on package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Write recipient's name on package"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Write destination address on package"
+                }
+            ]
+        },
+        {
+            "activity_name": "Print delivery form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate delivery form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print delivery form"
+                }
+            ]
+        },
+        {
+            "activity_name": "Secure form in plastic packet",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Place delivery form in plastic packet"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Seal plastic packet"
+                }
+            ]
+        },
+        {
+            "activity_name": "Tap plastic packet to package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attach plastic packet to package"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                3,
+                30.0
+            ],
+            "Granularity Difference": [
+                1,
+                10.0
+            ],
+            "Functional Equivalence": [
+                6,
+                60.0
+            ]
+        },
+        "average_confidence": 57.5,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Granularity Difference": 70.0,
+            "Functional Equivalence": 84.16666666666667
+        },
+        "ground_truth_coverage": 83.33333333333334,
+        "response_coverage": 69.23076923076923,
+        "average_sequence_alignment": 80.95238095238095,
+        "average_overall_similarity_score": 66.07142857142857
+    }
+}

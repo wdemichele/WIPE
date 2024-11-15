@@ -1,0 +1,156 @@
+[
+    {
+        "activity_name": "Send marketing information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare marketing material",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 3,
+                "description": "Send the marketing information",
+                "classification": "BVA",
+                "reasoning": "This is a critical step in involving more clients to apply for their services."
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive response",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check the response",
+                "classification": "NVA",
+                "reasoning": "This is a context-swtich step"
+            },
+            {
+                "step_number": 2,
+                "description": "Record the response",
+                "classification": "BVA",
+                "reasoning": "This is an internal control step to record clients' responses."
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Open application",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Check application eligibility",
+                "classification": "VA",
+                "reasoning": "This step determines if the client will receive the service they requested."
+            },
+            {
+                "step_number": 3,
+                "description": "Record decision",
+                "classification": "BVA",
+                "reasoning": "This is an internal control step, not delivering value to the clients."
+            }
+        ]
+    },
+    {
+        "activity_name": "Send rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Send the rejection",
+                "classification": "VA",
+                "reasoning": "The client would like to know the status of their application even if it is rejected."
+            }
+        ]
+    },
+    {
+        "activity_name": "Make appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact the client",
+                "classification": "VA",
+                "reasoning": "Accepted client would like to know the status of their application and process further."
+            },
+            {
+                "step_number": 3,
+                "description": "Record the appointment detail",
+                "classification": "BVA",
+                "reasoning": "This is an internal control for the company to ensure the appointment is recorded."
+            }
+        ]
+    },
+    {
+        "activity_name": "Discuss application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare documentation",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Attend appointment for discussion",
+                "classification": "VA",
+                "reasoning": "This step will help clients clarify details of the offer and ensure it fits their needs."
+            }
+        ]
+    },
+    {
+        "activity_name": "Send offer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve client contacts",
+                "classification": "NVA",
+                "reasoning": "This is a preparation step"
+            },
+            {
+                "step_number": 2,
+                "description": "Send the offer",
+                "classification": "VA",
+                "reasoning": "Client would like an official offer documentation for review and process"
+            }
+        ]
+    },
+    {
+        "activity_name": "File application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify application status",
+                "classification": "BVA",
+                "reasoning": "This step confirms the application is handled"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer application to filing",
+                "classification": "BVA",
+                "reasoning": "This is part of the control process, not adding value to clients."
+            }
+        ]
+    }
+]

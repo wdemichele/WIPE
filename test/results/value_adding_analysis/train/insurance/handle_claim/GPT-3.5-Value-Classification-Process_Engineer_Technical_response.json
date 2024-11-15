@@ -1,0 +1,410 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Process_Engineer_Technical",
+        "components": {
+            "role_description": "process_engineer",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic",
+            "example_output": "complex_process"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Create claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initialize new claim in system",
+                    "classification": "VA",
+                    "reasoning": "Directly starts the claim creation process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assign unique claim identifier",
+                    "classification": "VA",
+                    "reasoning": "Uniquely identifies the claim for tracking and reference."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input initial claim details",
+                    "classification": "VA",
+                    "reasoning": "Captures the initial information required for the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Record claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review claim documentation",
+                    "classification": "VA",
+                    "reasoning": "Ensures the claim documentation is complete and accurate."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Enter detailed claim information",
+                    "classification": "VA",
+                    "reasoning": "Records the specific details of the claim."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Attach supporting documents to claim record",
+                    "classification": "VA",
+                    "reasoning": "Associates relevant supporting documents with the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Decide on claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate claim details",
+                    "classification": "VA",
+                    "reasoning": "Assesses the claim information for decision-making."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check claim against policy terms",
+                    "classification": "VA",
+                    "reasoning": "Verifies if the claim aligns with the policy terms."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine claim validity",
+                    "classification": "VA",
+                    "reasoning": "Determines if the claim is valid based on the evaluation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make decision on claim acceptance or rejection",
+                    "classification": "VA",
+                    "reasoning": "Finalizes the decision on accepting or rejecting the claim."
+                }
+            ]
+        },
+        {
+            "activity_name": "Offer benefit",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate benefit amount",
+                    "classification": "VA",
+                    "reasoning": "Determines the amount of benefit to be offered."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare benefit offer document",
+                    "classification": "VA",
+                    "reasoning": "Creates the document outlining the benefit offer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send benefit offer to claimant",
+                    "classification": "VA",
+                    "reasoning": "Sends the benefit offer to the claimant for review and acceptance."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare claim discharge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate claim discharge document",
+                    "classification": "VA",
+                    "reasoning": "Creates the document for claim discharge."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review discharge for accuracy",
+                    "classification": "VA",
+                    "reasoning": "Ensures the accuracy of the claim discharge document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send discharge document to claimant for signature",
+                    "classification": "VA",
+                    "reasoning": "Sends the claim discharge document to the claimant for signature.\")classify(\"VA\", \"Record benefit payment\", \"Enter benefit payment details in system\", \"Directly contributes to recording the benefit payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Record benefit payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter benefit payment details in system",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Link payment record to claim",
+                    "classification": "VA",
+                    "reasoning": "Directly associates the payment with the claim, ensuring accurate record keeping."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update claim status to 'Payment Recorded'",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the claim status, indicating progress in the process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Close claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify all claim processes are complete",
+                    "classification": "BVA",
+                    "reasoning": "Necessary step to ensure all processes related to the claim are finished before closing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update claim status to 'Closed'",
+                    "classification": "VA",
+                    "reasoning": "Directly updates the claim status, indicating the claim is closed."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Archive claim documents",
+                    "classification": "BVA",
+                    "reasoning": "Required for record keeping and compliance purposes."
+                }
+            ]
+        },
+        {
+            "activity_name": "Operate outgoing payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate payment process",
+                    "classification": "VA",
+                    "reasoning": "Directly starts the payment process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify payment details",
+                    "classification": "BVA",
+                    "reasoning": "Necessary to ensure accuracy and prevent errors in the payment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Execute payment transaction",
+                    "classification": "VA",
+                    "reasoning": "Directly carries out the payment transaction."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Confirm successful payment",
+                    "classification": "VA",
+                    "reasoning": "Directly confirms the successful completion of the payment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject claim",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for claim rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly records the reasons for rejecting the claim."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection notification",
+                    "classification": "VA",
+                    "reasoning": "Directly prepares the notification to inform the claimant about the rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to claimant",
+                    "classification": "VA",
+                    "reasoning": "Directly sends the rejection notification to the claimant."
+                }
+            ]
+        },
+        {
+            "activity_name": "Review claim rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive rejection appeal from claimant",
+                    "classification": "VA",
+                    "reasoning": "Directly receives the appeal from the claimant regarding the rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Re-examine claim details and rejection reasons",
+                    "classification": "VA",
+                    "reasoning": "Directly reviews the claim details and the reasons for rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with relevant departments if necessary",
+                    "classification": "BVA",
+                    "reasoning": "Necessary to gather additional information or input from other departments."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make final decision on rejection",
+                    "classification": "VA",
+                    "reasoning": "Directly makes the final decision on the rejection appeal."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 33,
+        "correct_classifications": 17,
+        "accuracy": 0.5151515151515151,
+        "misclassifications": [
+            {
+                "activity": "Create claim",
+                "substep": "Initialize new claim in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly starts the claim creation process.",
+                "ground_truth_reasoning": "Necessary for process initiation but doesn't directly add value to claim assessment"
+            },
+            {
+                "activity": "Create claim",
+                "substep": "Assign unique claim identifier",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Uniquely identifies the claim for tracking and reference.",
+                "ground_truth_reasoning": "Important for tracking but doesn't directly contribute to claim resolution"
+            },
+            {
+                "activity": "Offer benefit",
+                "substep": "Prepare benefit offer document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates the document outlining the benefit offer.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change benefit amount"
+            },
+            {
+                "activity": "Offer benefit",
+                "substep": "Send benefit offer to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sends the benefit offer to the claimant for review and acceptance.",
+                "ground_truth_reasoning": "Important for process but doesn't alter benefit decision"
+            },
+            {
+                "activity": "Prepare claim discharge",
+                "substep": "Generate claim discharge document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates the document for claim discharge.",
+                "ground_truth_reasoning": "Necessary for legal closure but doesn't affect claim outcome"
+            },
+            {
+                "activity": "Prepare claim discharge",
+                "substep": "Send discharge document to claimant for signature",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sends the claim discharge document to the claimant for signature.\")classify(\"VA\", \"Record benefit payment\", \"Enter benefit payment details in system\", \"Directly contributes to recording the benefit payment.",
+                "ground_truth_reasoning": "Required for process completion but doesn't change discharge terms"
+            },
+            {
+                "activity": "Record benefit payment",
+                "substep": "Link payment record to claim",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly associates the payment with the claim, ensuring accurate record keeping.",
+                "ground_truth_reasoning": "Important for tracking but doesn't change payment"
+            },
+            {
+                "activity": "Record benefit payment",
+                "substep": "Update claim status to 'Payment Recorded'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the claim status, indicating progress in the process.",
+                "ground_truth_reasoning": "Necessary for process management but doesn't affect claim outcome"
+            },
+            {
+                "activity": "Close claim",
+                "substep": "Verify all claim processes are complete",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step to ensure all processes related to the claim are finished before closing.",
+                "ground_truth_reasoning": "Ensures all necessary steps have been taken"
+            },
+            {
+                "activity": "Close claim",
+                "substep": "Update claim status to 'Closed'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly updates the claim status, indicating the claim is closed.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't affect claim outcome"
+            },
+            {
+                "activity": "Operate outgoing payment",
+                "substep": "Verify payment details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary to ensure accuracy and prevent errors in the payment.",
+                "ground_truth_reasoning": "Ensures accuracy of payment"
+            },
+            {
+                "activity": "Operate outgoing payment",
+                "substep": "Confirm successful payment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly confirms the successful completion of the payment.",
+                "ground_truth_reasoning": "Ensures process completion but doesn't change payment"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Prepare rejection notification",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly prepares the notification to inform the claimant about the rejection.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change decision"
+            },
+            {
+                "activity": "Reject claim",
+                "substep": "Send rejection notification to claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly sends the rejection notification to the claimant.",
+                "ground_truth_reasoning": "Required for process but doesn't alter rejection decision"
+            },
+            {
+                "activity": "Review claim rejection",
+                "substep": "Receive rejection appeal from claimant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly receives the appeal from the claimant regarding the rejection.",
+                "ground_truth_reasoning": "Initiates review process but doesn't directly affect outcome"
+            },
+            {
+                "activity": "Review claim rejection",
+                "substep": "Consult with relevant departments if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary to gather additional information or input from other departments.",
+                "ground_truth_reasoning": "Contributes to thorough review of rejection decision"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 15,
+                "BVA": 3
+            },
+            "BVA": {
+                "VA": 13,
+                "BVA": 2
+            },
+            "NVA": {}
+        }
+    }
+}

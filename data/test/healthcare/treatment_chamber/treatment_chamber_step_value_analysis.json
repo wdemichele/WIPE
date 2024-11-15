@@ -1,0 +1,112 @@
+[
+    {
+      "activity_name": "Evaluate the condition of patient",
+      "substeps": [
+        {
+          "step_number": 1,
+          "description": "Medical doctor reviews patient's medical history",
+          "classification": "VA",
+          "reasoning": "Directly contributes to understanding patient's condition and informing diagnosis"
+        },
+        {
+          "step_number": 2,
+          "description": "Doctor and nurse perform physical examination",
+          "classification": "VA",
+          "reasoning": "Essential for assessing current health status and identifying issues"
+        },
+        {
+          "step_number": 3,
+          "description": "Doctor and nurse discuss initial assessment findings",
+          "classification": "VA",
+          "reasoning": "Collaborative analysis enhances diagnosis accuracy and treatment planning"
+        }
+      ]
+    },
+    {
+      "activity_name": "Test the patient in laboratory",
+      "substeps": [
+        {
+          "step_number": 1,
+          "description": "Technician prepares necessary laboratory equipment",
+          "classification": "BVA",
+          "reasoning": "Necessary for accurate testing but not directly adding value to patient"
+        },
+        {
+          "step_number": 2,
+          "description": "Technician collects required samples from patient",
+          "classification": "VA",
+          "reasoning": "Directly contributes to diagnostic process"
+        },
+        {
+          "step_number": 3,
+          "description": "Technician performs specified laboratory tests",
+          "classification": "VA",
+          "reasoning": "Provides crucial diagnostic information for patient care"
+        },
+        {
+          "step_number": 4,
+          "description": "Technician documents and reports test results",
+          "classification": "VA",
+          "reasoning": "Ensures accurate communication of results for patient diagnosis and treatment"
+        }
+      ]
+    },
+    {
+      "activity_name": "Treat patient",
+      "substeps": [
+        {
+          "step_number": 1,
+          "description": "Doctor reviews laboratory test results",
+          "classification": "VA",
+          "reasoning": "Critical for accurate diagnosis and treatment planning"
+        },
+        {
+          "step_number": 2,
+          "description": "Doctor and nurse discuss treatment options",
+          "classification": "VA",
+          "reasoning": "Collaborative decision-making enhances quality of care"
+        },
+        {
+          "step_number": 3,
+          "description": "Doctor and nurse administer agreed-upon treatment",
+          "classification": "VA",
+          "reasoning": "Direct application of medical care to improve patient's condition"
+        },
+        {
+          "step_number": 4,
+          "description": "Doctor and nurse monitor patient's response to treatment",
+          "classification": "VA",
+          "reasoning": "Ensures effectiveness of treatment and allows for timely adjustments"
+        }
+      ]
+    },
+    {
+      "activity_name": "Prescribe medicines",
+      "substeps": [
+        {
+          "step_number": 1,
+          "description": "Doctor determines appropriate medications based on diagnosis and treatment",
+          "classification": "VA",
+          "reasoning": "Directly contributes to patient's treatment and recovery"
+        },
+        {
+          "step_number": 2,
+          "description": "Doctor checks for potential drug interactions or allergies",
+          "classification": "VA",
+          "reasoning": "Ensures patient safety and treatment effectiveness"
+        },
+        {
+          "step_number": 3,
+          "description": "Doctor writes prescription including dosage and instructions",
+          "classification": "VA",
+          "reasoning": "Provides clear guidance for patient's medication use"
+        },
+        {
+          "step_number": 4,
+          "description": "Doctor issues medicine prescription to patient or caregiver",
+          "classification": "VA",
+          "reasoning": "Enables patient to obtain necessary medications for treatment"
+        }
+      ]
+    }
+  ]

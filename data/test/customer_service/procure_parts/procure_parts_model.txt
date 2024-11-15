@@ -1,0 +1,43 @@
+flowchart TD
+    subgraph Department
+        Start([Parts required]) --> PartsInStock{Parts in stock?}
+        PartsInStock -->|Yes| RetrieveParts[Retrieve parts from storage]
+        RetrieveParts --> PartsRetrieved([Parts retrieved from storage])
+        PartsInStock -->|No| SpecifyRequirements[Specify and quantify requirements]
+        SpecifyRequirements --> CompletePurchase[Complete a purchase order]
+    end
+
+    subgraph "ACME AG"
+        subgraph "Central Purchasing"
+            CompletePurchase --> CheckPurchase[Check purchase order]
+            CheckPurchase --> VendorKnown{Vendor known?}
+            VendorKnown -->|Yes| CreateTemplate[Create order template from purchase order]
+            VendorKnown -->|No| CreateVendor[Create vendor]
+            CreateVendor --> CreateTemplate
+            CreateTemplate --> ApproveOrder[Approve purchase order]
+            ApproveOrder --> DeliveryProblems{Delivery Problems}
+            DeliveryProblems -->|Yes| AdjustOrder[Adjust order status]
+            AdjustOrder --> Cancelled([Cancelled due to delivery problems])
+            DeliveryProblems -->|No| ReceiveGoods[Receipt of goods]
+            ReceiveGoods --> PartsProc([Parts procured])
+        end
+        
+        subgraph Approver
+            ApproveOrder
+        end
+    end
+
+    ERPSystem1[("ERP-System")]:::dataObject -.-> CompletePurchase
+    ERPSystem1 -.-> CheckPurchase
+    ERPSystem2[("ERP-System")]:::dataObject -.-> CreateTemplate
+    ERPSystem2 -.-> ApproveOrder
+
+    classDef activity fill:#f0f0f0,stroke:#333,stroke-width:2px,shape:rect;
+    classDef event fill:#fff,stroke:#333,stroke-width:2px,shape:circle;
+    classDef gateway fill:#fffdd0,stroke:#333,stroke-width:2px,shape:diamond;
+    classDef dataObject fill:#fff,stroke:#333,stroke-width:2px,shape:cylinder;
+
+    class Start,PartsRetrieved,Cancelled,PartsProc event;
+    class RetrieveParts,SpecifyRequirements,CompletePurchase,CheckPurchase,CreateVendor,CreateTemplate,ApproveOrder,AdjustOrder,ReceiveGoods activity;
+    class PartsInStock,VendorKnown,DeliveryProblems gateway;
+    class ERPSystem1,ERPSystem2 dataObject;

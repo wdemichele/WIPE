@@ -1,0 +1,272 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "\n    You are an AI assistant with expertise in Lean methodology and process improvement.\n    Your role is to analyze business processes through the lens of Lean principles, identifying value-adding activities\n    and potential areas for waste reduction.\n    ",
+            "task_description": "\n    Your task is to evaluate the efficiency of a business process by analyzing the given JSON-formatted BPMN \n    process output. Classify each step as value adding (VA), business value adding (BVA), or non-value adding (NVA), \n    with a focus on identifying potential areas for process improvement. For each step:\n    1. Assess its contribution to overall process efficiency.\n    2. Classify it based on its value contribution.\n    3. Provide a concise explanation for your classification, highlighting any efficiency considerations.\n    4. Format your response as a function call for each step, including the classification, activity name, \n       step name, and your efficiency-focused justification.\n    ",
+            "classification_types": "\n    1. Value Adding (VA): \n       - Directly contributes to creating a product or service the customer is willing to pay for\n       - Transforms or shapes material or information towards the end product/service\n       - Done right the first time\n\n    2. Business Value Adding (BVA):\n       - Required by law, regulation, or company policy\n       - Reduces financial risk, supports financial reporting, or ensures security\n       - Necessary for business operations but not directly valued by the customer\n\n    3. Non-Value Adding (NVA):\n       - Consumes resources without adding value to the customer or business\n       - Includes waiting, rework, overprocessing, or unnecessary movement\n       - Can often be eliminated without impacting the quality of the product/service or business operations\n    ",
+            "function_definition": "\n    Use the following function to classify each step:\n\n    classify(classification: str, activity: str, step: str, justification: str) -> None\n\n    Parameters:\n    - classification (str): The type of classification for the step. \n      Must be one of the following:\n      * \"VA\" for Value Adding\n      * \"BVA\" for Business Value Adding\n      * \"NVA\" for Non-Value Adding\n    - activity (str): The name of the activity this step belongs to. \n      Use the exact activity name as provided in the input JSON.\n    - step (str): A short, descriptive name for the step. \n      Use the step description as provided in the input JSON.\n    - justification (str): A brief explanation (1-2 sentences) for why this \n      classification was chosen. Be specific and relate to the step's function.\n\n    Note: This function doesn't return a value. It's used to structure your output.\n    ",
+            "parsing_instructions": "\n    To parse the input JSON and generate the appropriate function calls:\n\n    1. First, review the entire JSON input to understand the full context of the process.\n    2. Identify the main activities and their relationships within the process.\n    3. For each activity:\n       a. Consider how it fits into the overall process flow.\n       b. Examine each substep within the context of both its activity and the entire process.\n       c. For each substep:\n          i. Determine its classification based on its contribution to the activity and the overall process.\n          ii. Formulate a justification that considers the substep's role in the broader context.\n          iii. Create a classify() function call, ensuring the activity name and step description match the input exactly.\n    4. After classifying all substeps, review your classifications for consistency across the entire process.\n    5. Output the classify() function calls, each on a new line.\n    ",
+            "output_format": "\n    Format your output as a series of function calls, grouped by activity. Use the following structure:\n\n    # Activity Name\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    # Next Activity Name\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 1 Description\", \"Justification for classification\")\n    classify(\"CLASSIFICATION\", \"Next Activity Name\", \"Step 2 Description\", \"Justification for classification\")\n    ...\n\n    Replace CLASSIFICATION with VA, BVA, or NVA as appropriate. Use the exact activity name and step description from the input JSON. Provide a concise but informative justification for each classification.\n    ",
+            "example_output": "",
+            "additional_guidelines": "\n    When classifying steps, keep in mind the following Lean principles:\n\n    1. Identify value: Classify as VA only those steps that directly contribute to what the customer \n       is willing to pay for.\n\n    2. Map the value stream: Consider how each step fits into the overall flow of value creation. \n       Some BVA steps might be crucial for enabling VA steps.\n\n    3. Create flow: Steps that cause delays or interruptions in the process flow should be \n       scrutinized and potentially classified as NVA.\n\n    4. Establish pull: Steps that are performed \"just-in-time\" based on actual demand tend to be \n       more value-adding than those done in anticipation of demand.\n\n    5. Seek perfection: Always consider if there's a way to convert BVA or NVA steps into VA steps, \n       or to eliminate NVA steps entirely.\n\n    6. Respect for people: Remember that some steps might seem NVA but are crucial for employee \n       well-being or safety, which indirectly benefits the customer through better service.\n    ",
+            "_raw_input": {
+                "role_description": "lean_expert",
+                "task_description": "efficiency_focused",
+                "classification_types": "detailed",
+                "function_definition": "detailed",
+                "parsing_instructions": "holistic",
+                "output_format": "structured",
+                "additional_guidelines": "lean_principles"
+            }
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check completeness",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review all submitted application documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that all required documents are present and complete."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify all required fields are filled",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that all required information is provided."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Ensure all necessary supporting documents are attached",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that all required supporting documents are included."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check credit history",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request credit report from credit bureau",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to obtain the credit report for analysis."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review credit score",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to assess the creditworthiness of the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Analyze payment history and outstanding debts",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to evaluate the applicant's financial responsibility."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify employment status",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to confirm the applicant's employment status."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review salary statements or tax returns",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to verify the applicant's income."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess stability and reliability of income sources",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to evaluate the stability and reliability of the applicant's income sources."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review results of completeness check",
+                    "classification": "BVA",
+                    "reasoning": "This step is required to ensure that all necessary information is provided in the application, reducing the risk of processing incomplete applications."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Analyze credit history findings",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the creditworthiness of the applicant, which is a key factor in the decision-making process."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate income source information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to assessing the applicant's ability to repay the credit, which is crucial for determining creditworthiness."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate debt-to-income ratio",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to evaluating the applicant's financial stability and ability to manage debt."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Determine overall creditworthiness",
+                    "classification": "VA",
+                    "reasoning": "This step is the final evaluation of the applicant's creditworthiness, which is the main objective of the assessment process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make credit offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine credit limit",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to determining the credit limit that can be offered to the applicant, which is a key aspect of the credit offer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set interest rate",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to setting the interest rate for the credit offer, which is an important factor for both the applicant and the lender."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare credit offer document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the credit offer document, which is necessary for formalizing the credit offer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send offer to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to delivering the credit offer to the applicant, which is a crucial part of the process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Notify rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is required to maintain a record of the reasons for rejecting an application, which is important for compliance and risk management purposes."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare rejection letter",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the rejection letter, which is necessary for notifying the applicant of the rejection."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to delivering the rejection notification to the applicant, which is an important part of the process."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 21,
+        "correct_classifications": 12,
+        "accuracy": 0.5714285714285714,
+        "misclassifications": [
+            {
+                "activity": "Check credit history",
+                "substep": "Review credit score",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to assess the creditworthiness of the applicant.",
+                "ground_truth_reasoning": "Directly contributes to assessing creditworthiness"
+            },
+            {
+                "activity": "Check credit history",
+                "substep": "Analyze payment history and outstanding debts",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to evaluate the applicant's financial responsibility.",
+                "ground_truth_reasoning": "Critical for evaluating credit risk"
+            },
+            {
+                "activity": "Check income sources",
+                "substep": "Verify employment status",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to confirm the applicant's employment status.",
+                "ground_truth_reasoning": "Directly contributes to assessing ability to repay"
+            },
+            {
+                "activity": "Check income sources",
+                "substep": "Review salary statements or tax returns",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to verify the applicant's income.",
+                "ground_truth_reasoning": "Crucial for determining income and ability to repay"
+            },
+            {
+                "activity": "Check income sources",
+                "substep": "Assess stability and reliability of income sources",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to evaluate the stability and reliability of the applicant's income sources.",
+                "ground_truth_reasoning": "Critical for evaluating long-term ability to repay"
+            },
+            {
+                "activity": "Make credit offer",
+                "substep": "Prepare credit offer document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating the credit offer document, which is necessary for formalizing the credit offer.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't directly add value to the offer"
+            },
+            {
+                "activity": "Make credit offer",
+                "substep": "Send offer to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to delivering the credit offer to the applicant, which is a crucial part of the process.",
+                "ground_truth_reasoning": "Required for process completion but doesn't change the offer's value"
+            },
+            {
+                "activity": "Notify rejection",
+                "substep": "Prepare rejection letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating the rejection letter, which is necessary for notifying the applicant of the rejection.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change the decision"
+            },
+            {
+                "activity": "Notify rejection",
+                "substep": "Send rejection notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to delivering the rejection notification to the applicant, which is an important part of the process.",
+                "ground_truth_reasoning": "Required for process completion but doesn't alter the outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "BVA": 5,
+                "VA": 6
+            },
+            "BVA": {
+                "BVA": 6,
+                "VA": 4
+            },
+            "NVA": {}
+        }
+    }
+}

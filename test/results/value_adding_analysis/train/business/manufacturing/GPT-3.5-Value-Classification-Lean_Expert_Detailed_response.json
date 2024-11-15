@@ -1,0 +1,606 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Check stock availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access inventory management system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to access the inventory management system, which is crucial for checking stock availability."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Search product in database",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking stock availability by searching for the product in the database."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify current stock levels",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking stock availability by verifying the current stock levels."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update stock status",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking stock availability by updating the stock status."
+                }
+            ]
+        },
+        {
+            "activity_name": "Retrieve product from warehouse",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate pick list",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to retrieving the product from the warehouse by generating a pick list."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Locate product in warehouse",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to retrieving the product from the warehouse by locating the product."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Pick product from shelf",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to retrieving the product from the warehouse by picking the product from the shelf."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update inventory records",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to retrieving the product from the warehouse by updating the inventory records."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check raw materials availability",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Access raw materials inventory",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to access the raw materials inventory, which is crucial for checking raw materials availability."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check quantity of each required material",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking raw materials availability by checking the quantity of each required material."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Determine if sufficient materials are available",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking raw materials availability by determining if sufficient materials are available."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify materials that need to be sourced",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to checking raw materials availability by identifying materials that need to be sourced."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare purchase order for Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the purchase order for Supplier 1, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send purchase order to Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to send the purchase order to Supplier 1, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm order receipt with Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to confirm the order receipt with Supplier 1, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule delivery of materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to schedule the delivery of materials from Supplier 1, which is required for requesting raw materials."
+                }
+            ]
+        },
+        {
+            "activity_name": "Request raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare purchase order for Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the purchase order for Supplier 2, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send purchase order to Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to send the purchase order to Supplier 2, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm order receipt with Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to confirm the order receipt with Supplier 2, which is required for requesting raw materials."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Schedule delivery of materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to schedule the delivery of materials from Supplier 2, which is required for requesting raw materials."
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 1",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipment from Supplier 1",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to obtain the raw materials from Supplier 1."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by ensuring the received materials meet the required quality standards."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to keep track of the inventory levels."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Store materials in appropriate location",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by organizing the materials for easy retrieval during production."
+                }
+            ]
+        },
+        {
+            "activity_name": "Obtain raw materials from Supplier 2",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive shipment from Supplier 2",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to obtain the raw materials from Supplier 2."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Inspect received materials",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by ensuring the received materials meet the required quality standards."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update inventory with new materials",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to keep track of the inventory levels."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Store materials in appropriate location",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by organizing the materials for easy retrieval during production."
+                }
+            ]
+        },
+        {
+            "activity_name": "Manufacture product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare manufacturing order",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to initiate the manufacturing process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Set up production line",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to prepare the production line for manufacturing."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Produce product",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by transforming the raw materials into the final product."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Perform quality control checks",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by ensuring the product meets the required quality standards."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirm order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review order details",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to verify the order details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify product availability or completion",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to check if the product is available or has been completed."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Generate order confirmation",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to create the order confirmation."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send confirmation to customer",
+                    "classification": "VA",
+                    "reasoning": "This step adds value by providing the customer with confirmation of their order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Get shipment address",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve customer information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to obtain the customer's information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify shipping address",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure the accuracy of the shipping address."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm address with customer if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to confirm the shipping address with the customer if there are any discrepancies."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update shipping information in order",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to update the shipping information in the order."
+                }
+            ]
+        },
+        {
+            "activity_name": "Emit invoice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total order cost",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the invoice by calculating the total order cost."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate invoice document",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the invoice by generating the invoice document."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review invoice for accuracy",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure the accuracy of the invoice and reduce financial risk."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send invoice to customer",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to delivering the invoice to the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ship product",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Package product for shipping",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to preparing the product for shipping."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Generate shipping label",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating the shipping label."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange carrier pickup",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to arranging the pickup of the package by the carrier."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update order status to shipped",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the order status to reflect that the product has been shipped."
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process payment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to processing the payment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update order status to paid",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the order status to reflect that the payment has been received."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive order",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify order completion",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary to ensure that the order has been completed before archiving it."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Transfer order to archive system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to transferring the order to the archive system."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update order status to archived",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to updating the order status to reflect that the order has been archived."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 53,
+        "correct_classifications": 30,
+        "accuracy": 0.5660377358490566,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Search product in database",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to checking stock availability by searching for the product in the database.",
+                "ground_truth_reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "activity": "Check stock availability",
+                "substep": "Update stock status",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to checking stock availability by updating the stock status.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Generate pick list",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to retrieving the product from the warehouse by generating a pick list.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Locate product in warehouse",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to retrieving the product from the warehouse by locating the product.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Update inventory records",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to retrieving the product from the warehouse by updating the inventory records.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Request raw materials from Supplier 1",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to schedule the delivery of materials from Supplier 1, which is required for requesting raw materials.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Request raw materials from Supplier 2",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to schedule the delivery of materials from Supplier 2, which is required for requesting raw materials.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Receive shipment from Supplier 1",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to obtain the raw materials from Supplier 1.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Store materials in appropriate location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step adds value by organizing the materials for easy retrieval during production.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Receive shipment from Supplier 2",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to obtain the raw materials from Supplier 2.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Store materials in appropriate location",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step adds value by organizing the materials for easy retrieval during production.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Verify product availability or completion",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to check if the product is available or has been completed.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Send confirmation to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step adds value by providing the customer with confirmation of their order.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly add value to product"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Verify shipping address",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to ensure the accuracy of the shipping address.",
+                "ground_truth_reasoning": "Directly contributes to successful product delivery"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Confirm address with customer if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary to confirm the shipping address with the customer if there are any discrepancies.",
+                "ground_truth_reasoning": "Ensures accurate delivery, directly affecting customer satisfaction"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating the invoice by generating the invoice document.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to delivering the invoice to the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Generate shipping label",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating the shipping label.",
+                "ground_truth_reasoning": "Necessary for shipping but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Arrange carrier pickup",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to arranging the pickup of the package by the carrier.",
+                "ground_truth_reasoning": "Facilitates delivery but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Update order status to shipped",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the order status to reflect that the product has been shipped.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the order status to reflect that the payment has been received.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Transfer order to archive system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to transferring the order to the archive system.",
+                "ground_truth_reasoning": "Necessary for record-keeping but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Update order status to archived",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to updating the order status to reflect that the order has been archived.",
+                "ground_truth_reasoning": "Maintains system accuracy but doesn't directly add value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 12,
+                "BVA": 7
+            },
+            "BVA": {
+                "BVA": 18,
+                "VA": 16
+            },
+            "NVA": {}
+        }
+    }
+}

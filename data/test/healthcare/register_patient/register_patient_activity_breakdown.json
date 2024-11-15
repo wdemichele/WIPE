@@ -1,0 +1,104 @@
+[
+    {
+        "activity_name": "Record the data of each patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Greet the patient and explain the registration process"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare the registration form or system"
+            },
+            {
+                "step_number": 3,
+                "description": "Begin collecting patient information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the SSN of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their Social Security Number (SSN)"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify the SSN format for accuracy"
+            },
+            {
+                "step_number": 3,
+                "description": "Input the SSN into the registration system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the Name of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their first name"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm the spelling of the name with the patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter the name into the registration system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Register the Surname of the patient",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Ask the patient for their surname (last name)"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm the spelling of the surname with the patient"
+            },
+            {
+                "step_number": 3,
+                "description": "Enter the surname into the registration system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print referral document",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate the referral document using the registered information"
+            },
+            {
+                "step_number": 2,
+                "description": "Review the document for accuracy and completeness"
+            },
+            {
+                "step_number": 3,
+                "description": "Print the referral document"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive the record in file system",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare the patient's record for archiving"
+            },
+            {
+                "step_number": 2,
+                "description": "Store the physical record in the appropriate file system"
+            },
+            {
+                "step_number": 3,
+                "description": "Update the database with the record's storage location"
+            }
+        ]
+    }
+]

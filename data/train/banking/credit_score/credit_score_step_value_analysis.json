@@ -1,0 +1,203 @@
+[
+    {
+        "activity_name": "Scoring request received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive incoming scoring request",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Log receipt of request",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Validate request format and completeness",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request credit score",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare credit score request",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Send request to Scoring Service",
+                "performer": "Main System",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Log outgoing request",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Credit score received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive credit score from Scoring Service",
+                "performer": "Main System",
+                "classification": "VA"
+            },
+            {
+                "step_number": 2,
+                "description": "Validate received score",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 3,
+                "description": "Log receipt of score",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Delay information received",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive delay notification from Scoring Service",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Log delay information",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Report delay",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare delay report",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify relevant parties of delay",
+                "performer": "Main System",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Update request status",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send credit score",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare credit score report",
+                "performer": "Main System",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Send report to requestor",
+                "performer": "Main System",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Log completion of request",
+                "performer": "Main System",
+                "classification": "BVA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Compute credit score level 1",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve relevant financial data",
+                "performer": "Scoring Service",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Apply level 1 scoring algorithm",
+                "performer": "Scoring Service",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate initial credit score",
+                "performer": "Scoring Service",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Compute credit score level 2",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve additional financial data",
+                "performer": "Scoring Service",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Apply level 2 scoring algorithm",
+                "performer": "Scoring Service",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate comprehensive credit score",
+                "performer": "Scoring Service",
+                "classification": "VA"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send credit score (Scoring Service)",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare credit score response",
+                "performer": "Scoring Service",
+                "classification": "BVA"
+            },
+            {
+                "step_number": 2,
+                "description": "Send score to main process",
+                "performer": "Scoring Service",
+                "classification": "VA"
+            },
+            {
+                "step_number": 3,
+                "description": "Log completion of scoring request",
+                "performer": "Scoring Service",
+                "classification": "BVA"
+            }
+        ]
+    }
+]

@@ -1,0 +1,204 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request for compensation"
+                }
+            ]
+        },
+        {
+            "activity_name": "CompensationReceived",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compensation request received"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve related file"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check compliance"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update request"
+                },
+                {
+                    "step_number": 5,
+                    "description": "Check fee payment"
+                },
+                {
+                    "step_number": 6,
+                    "description": "Produce fees notice"
+                },
+                {
+                    "step_number": 7,
+                    "description": "Fees paid check"
+                },
+                {
+                    "step_number": 8,
+                    "description": "Final check"
+                },
+                {
+                    "step_number": 9,
+                    "description": "Generate receipt for additional fees"
+                },
+                {
+                    "step_number": 10,
+                    "description": "Allocate hearing date"
+                }
+            ]
+        },
+        {
+            "activity_name": "OwnerPayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "OwnerEnd",
+            "substeps": []
+        },
+        {
+            "activity_name": "RetrieveFile",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Retrieve related file"
+                }
+            ]
+        },
+        {
+            "activity_name": "CheckCompliance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check compliance"
+                }
+            ]
+        },
+        {
+            "activity_name": "CompliantCheck",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Compliant?"
+                }
+            ]
+        },
+        {
+            "activity_name": "UpdateRequest",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update request"
+                }
+            ]
+        },
+        {
+            "activity_name": "CheckFeePayment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check fee payment"
+                }
+            ]
+        },
+        {
+            "activity_name": "ProduceFees",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Produce fees notice"
+                }
+            ]
+        },
+        {
+            "activity_name": "FeesPaidCheck",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fees paid?"
+                }
+            ]
+        },
+        {
+            "activity_name": "FinalCheck",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Additional fees required and paid"
+                },
+                {
+                    "step_number": 2,
+                    "description": "All fees paid"
+                }
+            ]
+        },
+        {
+            "activity_name": "GenerateReceipt",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate receipt for additional fees"
+                }
+            ]
+        },
+        {
+            "activity_name": "AllocateHearing",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Allocate hearing date"
+                }
+            ]
+        },
+        {
+            "activity_name": "HearingAllocated",
+            "substeps": []
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                1,
+                5.88235294117647
+            ],
+            "No Match": [
+                15,
+                88.23529411764706
+            ],
+            "Identical Match": [
+                1,
+                5.88235294117647
+            ]
+        },
+        "average_confidence": 11.176470588235293,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 90.0,
+            "No Match": 0.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 76.19047619047619,
+        "response_coverage": 71.21212121212122,
+        "average_sequence_alignment": 41.875,
+        "average_overall_similarity_score": 12.5
+    }
+}

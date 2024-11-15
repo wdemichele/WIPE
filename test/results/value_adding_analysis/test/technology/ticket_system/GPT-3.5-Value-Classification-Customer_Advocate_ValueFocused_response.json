@@ -1,0 +1,222 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Customer_Advocate_ValueFocused",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Ticket receive",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive new support ticket in the system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by receiving new support tickets."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review initial ticket information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to review the initial ticket information, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assign ticket to appropriate support staff",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to assign the ticket to the appropriate support staff, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Solve the problem without involving customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Analyze the problem based on available information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by analyzing the problem based on available information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Research potential solutions",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by researching potential solutions."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Implement solution without customer interaction",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by implementing the solution without customer interaction."
+                }
+            ]
+        },
+        {
+            "activity_name": "Contacting the customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare initial response email",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to prepare the initial response email, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send email to customer acknowledging the issue",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to send an email to the customer acknowledging the issue, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Schedule follow-up communication if necessary",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to schedule follow-up communication if necessary, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Detailed interview of the problem",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare list of detailed questions about the issue",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by preparing a list of detailed questions about the issue."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct interview with customer to gather more information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by conducting an interview with the customer to gather more information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Document all relevant details from the interview",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by documenting all relevant details from the interview."
+                }
+            ]
+        },
+        {
+            "activity_name": "Connecting to the item of the customer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate remote maintenance connection",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by initiating a remote maintenance connection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify successful connection to customer's item",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying a successful connection to the customer's item."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Begin diagnostic procedures on connected item",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by beginning diagnostic procedures on the connected item.\")classify(\"VA\", \"Ask for further information\", \"Identify gaps in current understanding of the problem\", \"This step directly contributes to meeting customer needs by identifying gaps in the understanding of the problem."
+                }
+            ]
+        },
+        {
+            "activity_name": "Ask for further information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify gaps in current understanding of the problem",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Formulate specific questions to address these gaps",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by formulating specific questions to address the identified gaps."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Contact customer to request additional information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by contacting the customer to request additional information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Solve problem",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Analyze all gathered information and diagnostics",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by analyzing all gathered information and diagnostics to solve the problem."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Develop and implement solution via remote maintenance",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by developing and implementing a solution via remote maintenance."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Verify problem resolution through testing",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting customer needs by verifying the resolution of the problem through testing."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create notes for documentation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Summarize the problem and solution",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for documenting the problem and solution, but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Document steps taken to resolve the issue",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for documenting the steps taken to resolve the issue, but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Record any relevant insights or lessons learned",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for recording any relevant insights or lessons learned, but does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Confirmation ticket completed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review entire ticket history and notes",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for reviewing the entire ticket history and notes, but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update ticket status to 'Completed' in ticket system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for updating the ticket status to 'Completed' in the ticket system, but does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send confirmation of resolution to customer",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for sending confirmation of resolution to the customer, but does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}

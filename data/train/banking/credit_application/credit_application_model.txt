@@ -1,0 +1,28 @@
+graph TD
+    A[Start] --> B[Request Appointment]
+    B --> C{Appointment Decision}
+    C -->|Approved| D[Set Appointment]
+    C -->|Denied| E[Appointment Denied]
+    D --> F[Hand In Credit Application]
+    F --> G[Verify Borrower's Information]
+    G --> H{Verification Result}
+    H -->|Proceed| I[Submit File to Underwriter]
+    H -->|Reject| J[Application Rejected]
+    H -->|Need Co-Signer| K[Request Co-Signer On Loan]
+    H -->|Need Assessment| L[Make Visit to Assess Collateral]
+    H -->|Skip Examination| M[skipped_examination]
+    K --> N{Co-Signer Decision}
+    N -->|Obtained| I
+    N -->|Not Obtained| L
+    L --> O{Assessment Result}
+    O -->|Proceed| I
+    O -->|Need Reassessment| L
+    O -->|Need Co-Signer| K
+    I --> P{Underwriter Decision}
+    P -->|Approved| Q[Sign Loan Agreement]
+    P -->|Denied| R[Loan Denied]
+    M --> Q
+    Q --> S[End - Loan Granted]
+    R --> T[End - Loan Denied]
+    J --> T
+    E --> T

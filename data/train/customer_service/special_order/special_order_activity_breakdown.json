@@ -1,0 +1,214 @@
+[
+    {
+        "activity_name": "Register order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive special order request"
+            },
+            {
+                "step_number": 2,
+                "description": "Create new order entry in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign unique order number"
+            },
+            {
+                "step_number": 4,
+                "description": "Record initial order details"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check order details",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review order specifications"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify customer information"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm product customisation requirements"
+            }
+        ]
+    },
+    {
+        "activity_name": "Manufacture custom product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create production order"
+            },
+            {
+                "step_number": 2,
+                "description": "Allocate resources and materials"
+            },
+            {
+                "step_number": 3,
+                "description": "Produce custom product"
+            }
+        ]
+    },
+    {
+        "activity_name": "Confirm order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate order confirmation document"
+            },
+            {
+                "step_number": 2,
+                "description": "Review order details with customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle change request",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive change request"
+            },
+            {
+                "step_number": 2,
+                "description": "Assess impact on current order"
+            },
+            {
+                "step_number": 3,
+                "description": "Communicate changes and implications to relevant departments"
+            },
+            {
+                "step_number": 4,
+                "description": "Update order details with approved changes"
+            }
+        ]
+    },
+    {
+        "activity_name": "Plan shipment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine shipping method"
+            },
+            {
+                "step_number": 2,
+                "description": "Calculate shipping costs"
+            },
+            {
+                "step_number": 3,
+                "description": "Schedule pickup or delivery"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check customer type and shipment status",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Retrieve customer information"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify customer type"
+            },
+            {
+                "step_number": 3,
+                "description": "Check shipment status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Ship custom product",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare product for shipping"
+            },
+            {
+                "step_number": 2,
+                "description": "Generate shipping label"
+            },
+            {
+                "step_number": 3,
+                "description": "Hand over to shipping carrier"
+            },
+            {
+                "step_number": 4,
+                "description": "Update order status to shipped"
+            }
+        ]
+    },
+    {
+        "activity_name": "Emit invoice",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate invoice for casual customer"
+            },
+            {
+                "step_number": 2,
+                "description": "Send invoice to customer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Charge customer account",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate total charge"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payment from account"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate and send receipt"
+            }
+        ]
+    },
+    {
+        "activity_name": "Update customer",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify reason for shipment delay"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare customer communication"
+            },
+            {
+                "step_number": 3,
+                "description": "Contact customer with update"
+            },
+            {
+                "step_number": 4,
+                "description": "Record communication in customer file"
+            }
+        ]
+    },
+    {
+        "activity_name": "Archive order",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify order completion"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer order to archive system"
+            },
+            {
+                "step_number": 3,
+                "description": "Update order status to archived"
+            }
+        ]
+    }
+]

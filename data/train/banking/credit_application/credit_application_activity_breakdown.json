@@ -1,0 +1,150 @@
+[
+    {
+        "activity_name": "Request Appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Contact loan officer or financial institution"
+            },
+            {
+                "step_number": 2,
+                "description": "Provide initial information for appointment request"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit appointment request"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set Appointment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review available time slots"
+            },
+            {
+                "step_number": 2,
+                "description": "Select suitable date and time"
+            },
+            {
+                "step_number": 3,
+                "description": "Confirm appointment with applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Hand In Credit Application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out credit application form"
+            },
+            {
+                "step_number": 2,
+                "description": "Gather necessary supporting documents"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit completed application and documents"
+            }
+        ]
+    },
+    {
+        "activity_name": "Verify Borrower's Information",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review submitted application and documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Cross-check information with available databases"
+            },
+            {
+                "step_number": 3,
+                "description": "Conduct credit check"
+            },
+            {
+                "step_number": 4,
+                "description": "Verify employment and income information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Request Co-Signer On Loan",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Inform applicant of need for co-signer"
+            },
+            {
+                "step_number": 2,
+                "description": "Provide co-signer requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Collect co-signer information and documents"
+            }
+        ]
+    },
+    {
+        "activity_name": "Make Visit to Assess Collateral",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Schedule visit to assess collateral"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct on-site inspection of collateral"
+            },
+            {
+                "step_number": 3,
+                "description": "Document collateral condition and value"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare assessment report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Submit File to Underwriter",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile all verified information and documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare summary of application for underwriter"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit complete file to underwriting department"
+            }
+        ]
+    },
+    {
+        "activity_name": "Sign Loan Agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review loan terms and conditions with applicant"
+            },
+            {
+                "step_number": 2,
+                "description": "Answer any questions from applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Obtain applicant's signature on loan agreement"
+            },
+            {
+                "step_number": 4,
+                "description": "Provide copy of signed agreement to applicant"
+            }
+        ]
+    }
+]

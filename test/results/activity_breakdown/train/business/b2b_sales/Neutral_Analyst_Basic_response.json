@@ -1,0 +1,206 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record application details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare marketing materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send marketing materials to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Receive response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for response from applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "X",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "No action required"
+                }
+            ]
+        },
+        {
+            "activity_name": "By post",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Send response by post"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application documents"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate applicant's qualifications"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Assess applicant's suitability for the role"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application OK",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Proceed with next steps"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application not OK",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection letter to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Clarification needed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify areas requiring clarification"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact applicant for clarification"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule appointment with applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appointment day",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Meet with applicant on scheduled day"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application with applicant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Address any concerns or questions"
+                }
+            ]
+        },
+        {
+            "activity_name": "+",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Proceed with next steps"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare job offer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send job offer to applicant"
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Organize and store application documents"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                9,
+                64.28571428571429
+            ],
+            "Granularity Difference": [
+                2,
+                14.285714285714285
+            ],
+            "Functional Equivalence": [
+                3,
+                21.428571428571427
+            ]
+        },
+        "average_confidence": 27.857142857142858,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Granularity Difference": 75.0,
+            "Functional Equivalence": 80.0
+        },
+        "ground_truth_coverage": 86.66666666666667,
+        "response_coverage": 51.162790697674424,
+        "average_sequence_alignment": 61.45833333333333,
+        "average_overall_similarity_score": 24.375
+    }
+}

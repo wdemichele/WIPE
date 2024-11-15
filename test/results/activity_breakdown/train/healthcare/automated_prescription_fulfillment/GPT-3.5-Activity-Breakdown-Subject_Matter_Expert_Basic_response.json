@@ -1,0 +1,138 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify drug interactions"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check for allergies"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inspect drug packaging"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check expiration date"
+                }
+            ]
+        },
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Capture patient information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Record drug name and dosage"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter quantity and frequency"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate drugs on prescription"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Retrieve correct quantity"
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Calculate total cost"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Accept payment from patient"
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for drug-drug interactions"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review patient's medical history"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance coverage"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm medication is covered"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                2,
+                12.5
+            ],
+            "No Match": [
+                13,
+                81.25
+            ],
+            "Granularity Difference": [
+                1,
+                6.25
+            ]
+        },
+        "average_confidence": 14.6875,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 80.0,
+            "No Match": 0.0,
+            "Granularity Difference": 75.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 47.5,
+        "average_sequence_alignment": 86.66666666666666,
+        "average_overall_similarity_score": 12.977142857142857
+    }
+}

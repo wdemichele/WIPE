@@ -1,0 +1,110 @@
+[
+    {
+        "activity_name": "Determine likelihood of the claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive new claim"
+            },
+            {
+                "step_number": 2,
+                "description": "Review claim details"
+            },
+            {
+                "step_number": 3,
+                "description": "Analyze policy coverage"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate initial evidence"
+            },
+            {
+                "step_number": 5,
+                "description": "Estimate probability of claim validity"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Gather additional information if needed"
+            },
+            {
+                "step_number": 2,
+                "description": "Review claim details thoroughly"
+            },
+            {
+                "step_number": 3,
+                "description": "Verify policy terms and conditions"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate evidence and documentation"
+            },
+            {
+                "step_number": 5,
+                "description": "Consult with relevant experts if necessary"
+            },
+            {
+                "step_number": 6,
+                "description": "Determine claim validity and value"
+            }
+        ]
+    },
+    {
+        "activity_name": "Initiate payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate payment amount"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify claimant's payment details"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare payment documentation"
+            },
+            {
+                "step_number": 4,
+                "description": "Obtain necessary approvals"
+            },
+            {
+                "step_number": 5,
+                "description": "Process payment through financial system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Advise claimant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare communication detailing claim decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Include explanation of decision rationale"
+            },
+            {
+                "step_number": 3,
+                "description": "Provide information on payment (if applicable)"
+            },
+            {
+                "step_number": 4,
+                "description": "Include details on appeal process (if applicable)"
+            },
+            {
+                "step_number": 5,
+                "description": "Send communication to claimant"
+            },
+            {
+                "step_number": 6,
+                "description": "Record communication in claim file"
+            }
+        ]
+    }
+]

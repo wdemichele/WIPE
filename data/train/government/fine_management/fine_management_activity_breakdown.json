@@ -1,0 +1,206 @@
+[
+    {
+        "activity_name": "Create Fine",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record details of the offense"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine fine amount"
+            },
+            {
+                "step_number": 3,
+                "description": "Generate fine document"
+            }
+        ]
+    },
+    {
+        "activity_name": "Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive payment"
+            },
+            {
+                "step_number": 2,
+                "description": "Record payment in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue payment receipt"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Fine",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare fine notification"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to offender"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notification sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Insert Fine Notification",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Update system with fine notification details"
+            },
+            {
+                "step_number": 2,
+                "description": "Set due date for payment or appeal"
+            }
+        ]
+    },
+    {
+        "activity_name": "Add penalty",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate penalty amount"
+            },
+            {
+                "step_number": 2,
+                "description": "Add penalty to original fine"
+            },
+            {
+                "step_number": 3,
+                "description": "Update fine record in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send for Credit Collection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare case for credit collection"
+            },
+            {
+                "step_number": 2,
+                "description": "Transfer case to credit collection agency"
+            },
+            {
+                "step_number": 3,
+                "description": "Update system with collection status"
+            }
+        ]
+    },
+    {
+        "activity_name": "Insert Date Appeal to Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Record appeal date in system"
+            },
+            {
+                "step_number": 2,
+                "description": "Update case status to 'Under Appeal'"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send Appeal to Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare appeal documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit appeal to prefecture"
+            },
+            {
+                "step_number": 3,
+                "description": "Record appeal submission in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Receive Result Appeal from Prefecture",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive appeal decision from prefecture"
+            },
+            {
+                "step_number": 2,
+                "description": "Record decision in system"
+            },
+            {
+                "step_number": 3,
+                "description": "Update case status based on decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify Result Appeal to Offender",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare notification of appeal result"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notification to offender"
+            },
+            {
+                "step_number": 3,
+                "description": "Record notification sent in system"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appeal to Judge",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare appeal documents for court"
+            },
+            {
+                "step_number": 2,
+                "description": "Submit appeal to court"
+            },
+            {
+                "step_number": 3,
+                "description": "Record court appeal in system"
+            },
+            {
+                "step_number": 4,
+                "description": "Await judge's decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Additional Payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate remaining balance"
+            },
+            {
+                "step_number": 2,
+                "description": "Notify offender of remaining amount"
+            },
+            {
+                "step_number": 3,
+                "description": "Process additional payment"
+            },
+            {
+                "step_number": 4,
+                "description": "Update payment record in system"
+            }
+        ]
+    }
+]

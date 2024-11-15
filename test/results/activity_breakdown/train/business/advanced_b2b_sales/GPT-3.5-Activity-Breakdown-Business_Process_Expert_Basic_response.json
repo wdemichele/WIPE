@@ -1,0 +1,311 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Start",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare marketing materials"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send marketing materials"
+                }
+            ]
+        },
+        {
+            "activity_name": "Response type",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check response type"
+                }
+            ]
+        },
+        {
+            "activity_name": "Create electronic response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate electronic response"
+                }
+            ]
+        },
+        {
+            "activity_name": "Process post response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive post response"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process post response"
+                }
+            ]
+        },
+        {
+            "activity_name": "1 week",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Wait for 1 week"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application aborted",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Abort application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review response"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application OK?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if application is OK"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appointment day",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attend appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Discuss application details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate application decision"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle acceptance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process accepted application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application rejected",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Reject application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare rejection letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection letter"
+                }
+            ]
+        },
+        {
+            "activity_name": "+",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if additional action is required"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Present offer"
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store application in file"
+                }
+            ]
+        },
+        {
+            "activity_name": "Offer accepted?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if offer is accepted"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application accepted",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Accept application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Process revocation request"
+                }
+            ]
+        },
+        {
+            "activity_name": "Create offer revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate offer revocation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer revocation letter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send offer revocation letter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Revocation handled",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Handle offer revocation"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application status",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check application status"
+                }
+            ]
+        },
+        {
+            "activity_name": "Delete application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Remove application from records"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "No Match": [
+                13,
+                72.22222222222221
+            ],
+            "Granularity Difference": [
+                2,
+                11.11111111111111
+            ],
+            "Functional Equivalence": [
+                3,
+                16.666666666666664
+            ]
+        },
+        "average_confidence": 21.11111111111111,
+        "average_confidence_by_match_type": {
+            "No Match": 0.0,
+            "Granularity Difference": 70.0,
+            "Functional Equivalence": 80.0
+        },
+        "ground_truth_coverage": 62.06896551724138,
+        "response_coverage": 43.67816091954023,
+        "average_sequence_alignment": 64.27083333333333,
+        "average_overall_similarity_score": 19.375
+    }
+}

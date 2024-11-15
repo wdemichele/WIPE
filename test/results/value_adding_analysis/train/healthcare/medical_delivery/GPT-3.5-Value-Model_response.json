@@ -1,0 +1,180 @@
+{
+    "model": "GPT-3.5-Value-Model",
+    "response": [
+        {
+            "activity_name": "Check destination",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Unload package from pallet",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the destination of the package."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open package and pull out the packaging slip",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the destination of the package."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter purchase order number into ERP to check destination",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to checking the destination of the package."
+                }
+            ]
+        },
+        {
+            "activity_name": "Set package as unknown",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record unknown package in ERP",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to setting the package as unknown."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register package into ERP",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Enter information on packaging slip in ERP",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to registering the package into the ERP system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Write details on package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Write area and/or room number on package",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to writing details on the package.\")classify(\"VA\", \"Print delivery form\", \"Print delivery form\", \"Directly contributes to meeting customer needs by providing necessary information."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print delivery form",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Print delivery form",
+                    "classification": "BVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Secure form in plastic packet",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fold and palce in envelope",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        },
+        {
+            "activity_name": "Tap platstic packet to package",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Tap platstic packet to package",
+                    "classification": "NVA",
+                    "reasoning": null
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 9,
+        "correct_classifications": 0,
+        "accuracy": 0.0,
+        "misclassifications": [
+            {
+                "activity": "Check destination",
+                "substep": "Unload package from pallet",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to checking the destination of the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Open package and pull out the packaging slip",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to checking the destination of the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Check destination",
+                "substep": "Enter purchase order number into ERP to check destination",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to checking the destination of the package.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Set package as unknown",
+                "substep": "Record unknown package in ERP",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to setting the package as unknown.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Register package into ERP",
+                "substep": "Enter information on packaging slip in ERP",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to registering the package into the ERP system.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Write details on package",
+                "substep": "Write area and/or room number on package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Directly contributes to writing details on the package.\")classify(\"VA\", \"Print delivery form\", \"Print delivery form\", \"Directly contributes to meeting customer needs by providing necessary information.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Print delivery form",
+                "substep": "Print delivery form",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Secure form in plastic packet",
+                "substep": "Fold and palce in envelope",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Tap platstic packet to package",
+                "substep": "Tap platstic packet to package",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "NVA",
+                "gpt_reasoning": null,
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "Unclassified": {
+                "VA": 6,
+                "BVA": 1,
+                "NVA": 2
+            }
+        }
+    }
+}

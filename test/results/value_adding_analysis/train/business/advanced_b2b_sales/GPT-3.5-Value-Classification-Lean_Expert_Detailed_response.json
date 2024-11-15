@@ -1,0 +1,667 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Lean_Expert_Detailed",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Send marketing information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare relevant marketing materials",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a marketing package that the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Customize information based on application",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the marketing materials to tailor them to the specific applicant, adding value to the marketing package."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Send marketing package to applicant",
+                    "classification": "VA",
+                    "reasoning": "This step delivers the marketing package to the applicant, which is a direct value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create electronic response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive email response",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to receiving the response from the applicant, which is a value-adding activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log response in system",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the response is properly recorded in the system, which is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Format response for assessment",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the response into a format that can be easily assessed, adding value to the assessment process."
+                }
+            ]
+        },
+        {
+            "activity_name": "Process post response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive physical mail",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to receiving the response from the applicant, which is a value-adding activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Open and sort mail",
+                    "classification": "VA",
+                    "reasoning": "This step prepares the physical mail for further processing, which is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Scan documents into system",
+                    "classification": "VA",
+                    "reasoning": "This step transforms the physical documents into a digital format, adding value to the assessment process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Log response in system",
+                    "classification": "VA",
+                    "reasoning": "This step ensures that the response is properly recorded in the system, which is necessary for business operations but not directly valued by the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess response",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review response contents",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to understanding the content of the response, which is a value-adding activity."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify provided information",
+                    "classification": "VA",
+                    "reasoning": "This step ensures the accuracy of the provided information, which is necessary for business operations but not directly valued by the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Evaluate completeness of response",
+                    "classification": "VA",
+                    "reasoning": "This step assesses the completeness of the response, adding value to the assessment process."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Determine next steps based on assessment",
+                    "classification": "VA",
+                    "reasoning": "This step determines the appropriate next steps based on the assessment, which is a direct value-adding activity."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Identify available time slots",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by identifying the available time slots for scheduling an appointment."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Contact applicant to schedule appointment",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by contacting the applicant to schedule the appointment."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm appointment details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by confirming the details of the appointment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Send appointment reminder",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by sending a reminder for the scheduled appointment."
+                }
+            ]
+        },
+        {
+            "activity_name": "Prepare rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Document reasons for rejection",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer. It is required to document the reasons for rejection."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Draft rejection letter",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer. It is required to draft the rejection letter."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Review rejection for accuracy and completeness",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for business operations but not directly valued by the customer. It is required to review the rejection letter for accuracy and completeness."
+                }
+            ]
+        },
+        {
+            "activity_name": "Discuss application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Greet applicant and review purpose of meeting",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by greeting the applicant and reviewing the purpose of the meeting."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Go through application details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by going through the application details."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Clarify any unclear points",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by clarifying any unclear points in the application."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Gather additional information if needed",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by gathering additional information if needed."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Summarize discussion and next steps",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by summarizing the discussion and providing the next steps."
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle acceptance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review final application details",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by reviewing the final application details."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare acceptance documentation",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by preparing the acceptance documentation."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status to 'Accepted'",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by updating the application status to 'Accepted'."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send rejection",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Finalize rejection letter",
+                    "classification": "BVA",
+                    "reasoning": "Finalizing the rejection letter is necessary to provide a clear and concise explanation to the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send rejection notification to applicant",
+                    "classification": "BVA",
+                    "reasoning": "Sending a rejection notification to the applicant is necessary to inform them of the decision and provide closure."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status to 'Rejected'",
+                    "classification": "BVA",
+                    "reasoning": "Updating the application status to 'Rejected' is necessary for tracking the status of the application and providing accurate information to stakeholders."
+                }
+            ]
+        },
+        {
+            "activity_name": "Make offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer details",
+                    "classification": "BVA",
+                    "reasoning": "Preparing offer details is necessary to ensure that all relevant information is included in the offer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Calculate terms and conditions",
+                    "classification": "BVA",
+                    "reasoning": "Calculating the terms and conditions of the offer is necessary to provide accurate and fair terms to the applicant."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Draft offer document",
+                    "classification": "BVA",
+                    "reasoning": "Drafting the offer document is necessary to provide a formal and legally binding offer to the applicant."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review offer for accuracy",
+                    "classification": "BVA",
+                    "reasoning": "Reviewing the offer for accuracy is necessary to ensure that all details are correct and there are no errors or omissions."
+                }
+            ]
+        },
+        {
+            "activity_name": "File application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Organize all application documents",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for organizing and managing the application documents, ensuring easy access and retrieval."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Update application status",
+                    "classification": "BVA",
+                    "reasoning": "Updating the application status is necessary for tracking the progress of the application and providing timely updates to stakeholders."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Store application in appropriate system",
+                    "classification": "BVA",
+                    "reasoning": "Storing the application in the appropriate system ensures that it is securely stored and can be easily accessed by authorized personnel."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Ensure all data protection requirements are met",
+                    "classification": "BVA",
+                    "reasoning": "Ensuring data protection requirements are met is crucial for maintaining the privacy and security of applicant information, complying with regulations, and building trust with applicants."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare offer package",
+                    "classification": "BVA",
+                    "reasoning": "Preparing the offer package is necessary to include all relevant documents and information related to the offer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send offer to applicant",
+                    "classification": "BVA",
+                    "reasoning": "Sending the offer to the applicant is necessary to provide them with the offer details and give them an opportunity to accept or negotiate."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log offer sent in system",
+                    "classification": "BVA",
+                    "reasoning": "Logging the offer sent in the system is necessary for tracking the status of the offer and providing accurate information to stakeholders."
+                }
+            ]
+        },
+        {
+            "activity_name": "Handle revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive offer rejection from applicant",
+                    "classification": "NVA",
+                    "reasoning": "This step involves waiting for the applicant to reject the offer, which consumes time without adding value to the process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log rejection in system",
+                    "classification": "BVA",
+                    "reasoning": "Logging the rejection in the system is necessary for record-keeping and compliance purposes, but it does not directly contribute to the end product or service."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update application status",
+                    "classification": "BVA",
+                    "reasoning": "Updating the application status is necessary for tracking and reporting purposes, but it does not directly contribute to the end product or service."
+                }
+            ]
+        },
+        {
+            "activity_name": "Create offer revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Draft offer revocation document",
+                    "classification": "VA",
+                    "reasoning": "Drafting the offer revocation document directly contributes to creating the final product, which is the offer revocation package."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review revocation for accuracy",
+                    "classification": "BVA",
+                    "reasoning": "Reviewing the revocation for accuracy is necessary to ensure the quality and correctness of the offer revocation package, but it does not directly contribute to the end product or service."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Prepare any necessary explanations",
+                    "classification": "BVA",
+                    "reasoning": "Preparing any necessary explanations is important for providing clarity and context in the offer revocation package, but it does not directly contribute to the end product or service."
+                }
+            ]
+        },
+        {
+            "activity_name": "Send offer revocation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Finalize offer revocation package",
+                    "classification": "VA",
+                    "reasoning": "Finalizing the offer revocation package transforms the draft document into the final product that can be sent to the applicant."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Send revocation to applicant",
+                    "classification": "VA",
+                    "reasoning": "Sending the offer revocation to the applicant is a direct value-adding step as it delivers the final product to the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Log revocation sent in system",
+                    "classification": "BVA",
+                    "reasoning": "Logging the revocation sent in the system is necessary for record-keeping and compliance purposes, but it does not directly contribute to the end product or service."
+                }
+            ]
+        },
+        {
+            "activity_name": "Delete application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify application status is 'Rejected'",
+                    "classification": "BVA",
+                    "reasoning": "Verifying the application status is necessary to ensure that only rejected applications are deleted, reducing the risk of deleting the wrong application."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Remove application data from active systems",
+                    "classification": "NVA",
+                    "reasoning": "Removing application data from active systems consumes resources without directly adding value to the customer or business."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Archive or destroy physical documents if any",
+                    "classification": "NVA",
+                    "reasoning": "Archiving or destroying physical documents, if any, consumes resources without directly adding value to the customer or business."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Log deletion in compliance records",
+                    "classification": "BVA",
+                    "reasoning": "Logging the deletion in compliance records is necessary for record-keeping and compliance purposes, but it does not directly contribute to the end product or service."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 56,
+        "correct_classifications": 29,
+        "accuracy": 0.5178571428571429,
+        "misclassifications": [
+            {
+                "activity": "Send marketing information",
+                "substep": "Prepare relevant marketing materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a marketing package that the customer is willing to pay for.",
+                "ground_truth_reasoning": "Supports the process but doesn't directly assess application"
+            },
+            {
+                "activity": "Send marketing information",
+                "substep": "Customize information based on application",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the marketing materials to tailor them to the specific applicant, adding value to the marketing package.",
+                "ground_truth_reasoning": "Enhances customer experience but doesn't directly evaluate eligibility"
+            },
+            {
+                "activity": "Send marketing information",
+                "substep": "Send marketing package to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step delivers the marketing package to the applicant, which is a direct value-adding activity.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't affect application assessment"
+            },
+            {
+                "activity": "Create electronic response",
+                "substep": "Receive email response",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to receiving the response from the applicant, which is a value-adding activity.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly evaluate application"
+            },
+            {
+                "activity": "Create electronic response",
+                "substep": "Log response in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that the response is properly recorded in the system, which is necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Important for tracking but doesn't assess eligibility"
+            },
+            {
+                "activity": "Create electronic response",
+                "substep": "Format response for assessment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the response into a format that can be easily assessed, adding value to the assessment process.",
+                "ground_truth_reasoning": "Prepares information for evaluation but doesn't directly assess it"
+            },
+            {
+                "activity": "Process post response",
+                "substep": "Receive physical mail",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to receiving the response from the applicant, which is a value-adding activity.",
+                "ground_truth_reasoning": "Necessary for process but doesn't evaluate application"
+            },
+            {
+                "activity": "Process post response",
+                "substep": "Open and sort mail",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step prepares the physical mail for further processing, which is necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Organizes information but doesn't assess it"
+            },
+            {
+                "activity": "Process post response",
+                "substep": "Scan documents into system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step transforms the physical documents into a digital format, adding value to the assessment process.",
+                "ground_truth_reasoning": "Digitizes information for processing but doesn't evaluate it"
+            },
+            {
+                "activity": "Process post response",
+                "substep": "Log response in system",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step ensures that the response is properly recorded in the system, which is necessary for business operations but not directly valued by the customer.",
+                "ground_truth_reasoning": "Important for tracking but doesn't assess eligibility"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Identify available time slots",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by identifying the available time slots for scheduling an appointment.",
+                "ground_truth_reasoning": "Facilitates process but doesn't directly assess application"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Contact applicant to schedule appointment",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by contacting the applicant to schedule the appointment.",
+                "ground_truth_reasoning": "Necessary for process but doesn't evaluate eligibility"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Confirm appointment details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by confirming the details of the appointment.",
+                "ground_truth_reasoning": "Ensures smooth process but doesn't affect application decision"
+            },
+            {
+                "activity": "Make appointment",
+                "substep": "Send appointment reminder",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by sending a reminder for the scheduled appointment.",
+                "ground_truth_reasoning": "Improves efficiency but doesn't impact application assessment"
+            },
+            {
+                "activity": "Discuss application",
+                "substep": "Greet applicant and review purpose of meeting",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by greeting the applicant and reviewing the purpose of the meeting.",
+                "ground_truth_reasoning": "Sets context but doesn't directly assess application"
+            },
+            {
+                "activity": "Discuss application",
+                "substep": "Summarize discussion and next steps",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by summarizing the discussion and providing the next steps.",
+                "ground_truth_reasoning": "Ensures clarity but doesn't directly affect decision"
+            },
+            {
+                "activity": "Handle acceptance",
+                "substep": "Prepare acceptance documentation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by preparing the acceptance documentation.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change decision"
+            },
+            {
+                "activity": "Handle acceptance",
+                "substep": "Update application status to 'Accepted'",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step directly contributes to creating a product or service the customer is willing to pay for by updating the application status to 'Accepted'.",
+                "ground_truth_reasoning": "Important for tracking but doesn't affect decision"
+            },
+            {
+                "activity": "Make offer",
+                "substep": "Prepare offer details",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Preparing offer details is necessary to ensure that all relevant information is included in the offer.",
+                "ground_truth_reasoning": "Directly defines the value proposition to the applicant"
+            },
+            {
+                "activity": "Make offer",
+                "substep": "Calculate terms and conditions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Calculating the terms and conditions of the offer is necessary to provide accurate and fair terms to the applicant.",
+                "ground_truth_reasoning": "Crucial for determining the specifics of the offer"
+            },
+            {
+                "activity": "Make offer",
+                "substep": "Review offer for accuracy",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Reviewing the offer for accuracy is necessary to ensure that all details are correct and there are no errors or omissions.",
+                "ground_truth_reasoning": "Ensures correctness of the offer, directly impacting the outcome"
+            },
+            {
+                "activity": "Handle revocation",
+                "substep": "Receive offer rejection from applicant",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "This step involves waiting for the applicant to reject the offer, which consumes time without adding value to the process.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change initial decision"
+            },
+            {
+                "activity": "Create offer revocation",
+                "substep": "Draft offer revocation document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Drafting the offer revocation document directly contributes to creating the final product, which is the offer revocation package.",
+                "ground_truth_reasoning": "Necessary for process but doesn't change initial decision"
+            },
+            {
+                "activity": "Send offer revocation",
+                "substep": "Finalize offer revocation package",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Finalizing the offer revocation package transforms the draft document into the final product that can be sent to the applicant.",
+                "ground_truth_reasoning": "Assembles information but doesn't change revocation decision"
+            },
+            {
+                "activity": "Send offer revocation",
+                "substep": "Send revocation to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Sending the offer revocation to the applicant is a direct value-adding step as it delivers the final product to the customer.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter the decision"
+            },
+            {
+                "activity": "Delete application",
+                "substep": "Remove application data from active systems",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Removing application data from active systems consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": "Necessary for data management but doesn't affect decision"
+            },
+            {
+                "activity": "Delete application",
+                "substep": "Archive or destroy physical documents if any",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Archiving or destroying physical documents, if any, consumes resources without directly adding value to the customer or business.",
+                "ground_truth_reasoning": "Important for compliance but doesn't impact application outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 8,
+                "BVA": 3
+            },
+            "BVA": {
+                "VA": 21,
+                "BVA": 21,
+                "NVA": 3
+            },
+            "NVA": {}
+        }
+    }
+}

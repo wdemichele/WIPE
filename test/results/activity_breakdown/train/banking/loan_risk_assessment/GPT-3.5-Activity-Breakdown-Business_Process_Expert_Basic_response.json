@@ -1,0 +1,182 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Receive loan application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive loan application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial eligibility check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Perform initial eligibility check"
+                }
+            ]
+        },
+        {
+            "activity_name": "Eligibility decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if applicant is eligible"
+                }
+            ]
+        },
+        {
+            "activity_name": "Parallel Split",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Perform credit history check"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check applicant's income sources"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Appraise property to be mortgaged"
+                }
+            ]
+        },
+        {
+            "activity_name": "Credit history check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check applicant's credit history"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check applicant's income sources",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify applicant's income sources"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraisal of property to be mortgaged",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct appraisal of property"
+                }
+            ]
+        },
+        {
+            "activity_name": "Merge",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Merge credit check and income check results"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assess applicant's credit risk",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate applicant's credit risk"
+                }
+            ]
+        },
+        {
+            "activity_name": "Mortgageable decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Determine if mortgageable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Appraise other collateral",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct appraisal of other collateral"
+                }
+            ]
+        },
+        {
+            "activity_name": "Loan risk assessment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess loan risk"
+                }
+            ]
+        },
+        {
+            "activity_name": "Inform",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform customer of ineligibility"
+                }
+            ]
+        },
+        {
+            "activity_name": "Risk assessed",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete risk assessment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application ineligible",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "End application as ineligible"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                3,
+                27.27272727272727
+            ],
+            "No Match": [
+                7,
+                63.63636363636363
+            ],
+            "Identical Match": [
+                1,
+                9.090909090909092
+            ]
+        },
+        "average_confidence": 31.363636363636363,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 81.66666666666667,
+            "No Match": 0.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 73.33333333333333,
+        "response_coverage": 40.74074074074074,
+        "average_sequence_alignment": 54.629629629629626,
+        "average_overall_similarity_score": 24.258888888888887
+    }
+}

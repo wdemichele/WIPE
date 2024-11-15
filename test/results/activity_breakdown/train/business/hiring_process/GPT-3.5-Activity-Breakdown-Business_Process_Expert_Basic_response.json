@@ -1,0 +1,230 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Hand In Job Application",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Fill out job application form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit completed application"
+                }
+            ]
+        },
+        {
+            "activity_name": "Initial Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review application for basic qualifications"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check if candidate meets minimum requirements"
+                }
+            ]
+        },
+        {
+            "activity_name": "Telephonic Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct phone interview with candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Application Rejected",
+            "substeps": []
+        },
+        {
+            "activity_name": "Telephonic Screening Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate phone interview performance"
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify candidate's background information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Background Check Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess background check findings"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct in-person interview with candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Background Check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Perform detailed investigation into candidate's background"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screening Interview Result",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate candidate's performance in the interview"
+                }
+            ]
+        },
+        {
+            "activity_name": "Coding Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct technical coding interview with candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Frontend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct interview to assess frontend development skills"
+                }
+            ]
+        },
+        {
+            "activity_name": "ML Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct interview to assess machine learning knowledge"
+                }
+            ]
+        },
+        {
+            "activity_name": "Backend Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct interview to assess backend development skills"
+                }
+            ]
+        },
+        {
+            "activity_name": "Behavioral Interview",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct interview to assess candidate's behavior and soft skills"
+                }
+            ]
+        },
+        {
+            "activity_name": "Final Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate all interview results and assessments"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Make final hiring decision"
+                }
+            ]
+        },
+        {
+            "activity_name": "Make Job Offer",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare and extend job offer to selected candidate"
+                }
+            ]
+        },
+        {
+            "activity_name": "Candidate Decision",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Wait for candidate's decision on job offer"
+                }
+            ]
+        },
+        {
+            "activity_name": "End - Hired",
+            "substeps": []
+        },
+        {
+            "activity_name": "End - Not Hired",
+            "substeps": []
+        },
+        {
+            "activity_name": "Reconsider?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if rejected candidate should be reconsidered"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                4,
+                25.0
+            ],
+            "Granularity Difference": [
+                2,
+                12.5
+            ],
+            "No Match": [
+                9,
+                56.25
+            ],
+            "Process Alternative": [
+                1,
+                6.25
+            ]
+        },
+        "average_confidence": 36.5625,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.75,
+            "Granularity Difference": 85.0,
+            "No Match": 0.0,
+            "Process Alternative": 80.0
+        },
+        "ground_truth_coverage": 70.0,
+        "response_coverage": 56.36363636363636,
+        "average_sequence_alignment": 33.33333333333333,
+        "average_overall_similarity_score": 29.692307692307693
+    }
+}

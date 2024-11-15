@@ -1,0 +1,328 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Business_Consultant_Strategic",
+        "components": {
+            "role_description": "business_consultant",
+            "task_description": "standard",
+            "classification_types": "detailed",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "complex_process",
+            "additional_guidelines": "context_aware"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Enter prescription details",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive prescription from customer",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product/service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Log into pharmacy system",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to access necessary information."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input patient information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product/service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Enter medication details (name, dosage, quantity)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 5,
+                    "description": "Input prescriber information",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product/service the customer is willing to pay for."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform DUR (Drug Utilization Review)",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check for drug-drug interactions",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify appropriate dosage",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check for allergies",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Identify potential adverse effects",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                }
+            ]
+        },
+        {
+            "activity_name": "Perform thorough check",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review prescription details",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product/service the customer is willing to pay for."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate DUR alarms",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Consult with prescriber if necessary",
+                    "classification": "BVA",
+                    "reasoning": "Required by law to ensure patient safety."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Make professional judgment on proceeding",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to creating a product/service the customer is willing to pay for."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check insurance",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify patient's insurance information",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to ensure accurate billing."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Submit claim to insurance provider",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to seek reimbursement."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Process insurance response",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to determine coverage."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Calculate patient's co-pay (if applicable)",
+                    "classification": "BVA",
+                    "reasoning": "Required by company policy to determine patient's financial responsibility."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect drugs from shelves",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Locate prescribed medication in inventory",
+                    "classification": "VA",
+                    "reasoning": "Directly contributes to collecting the medication the customer needs."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify medication name and strength",
+                    "classification": "VA",
+                    "reasoning": "Ensures the medication is correct and safe for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Check expiration date",
+                    "classification": "BVA",
+                    "reasoning": "Required by regulations to ensure medication safety."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Retrieve correct quantity",
+                    "classification": "VA",
+                    "reasoning": "Provides the customer with the correct amount of medication."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Label medication container",
+                    "classification": "VA",
+                    "reasoning": "Ensures proper identification and usage of the medication."
+                }
+            ]
+        },
+        {
+            "activity_name": "Check quality",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify correct medication",
+                    "classification": "VA",
+                    "reasoning": "Ensures the customer receives the correct medication."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check medication appearance",
+                    "classification": "VA",
+                    "reasoning": "Verifies the medication's physical condition and integrity."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Confirm correct dosage and quantity",
+                    "classification": "VA",
+                    "reasoning": "Ensures the medication is accurately prepared for the customer."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Review label for accuracy",
+                    "classification": "VA",
+                    "reasoning": "Verifies that the medication label contains the correct information."
+                },
+                {
+                    "step_number": 5,
+                    "description": "Ensure proper packaging",
+                    "classification": "VA",
+                    "reasoning": "Ensures the medication is properly packaged for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Collect payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Inform patient of total cost",
+                    "classification": "VA",
+                    "reasoning": "Provides the customer with the necessary payment information."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Process payment (cash, card, or insurance co-pay)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 3,
+                    "description": "Issue receipt",
+                    "classification": "VA",
+                    "reasoning": "Provides the customer with a record of the payment."
+                },
+                {
+                    "step_number": 4,
+                    "description": "Update system with payment information",
+                    "classification": "BVA",
+                    "reasoning": "Necessary for financial reporting and record-keeping purposes."
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "total_substeps": 31,
+        "correct_classifications": 22,
+        "accuracy": 0.7096774193548387,
+        "misclassifications": [
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for drug-drug interactions",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Crucial for patient safety and effective treatment"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Verify appropriate dosage",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Essential for patient safety and treatment efficacy"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Check for allergies",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Critical for patient safety"
+            },
+            {
+                "activity": "Perform DUR (Drug Utilization Review)",
+                "substep": "Identify potential adverse effects",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Important for patient safety and informed decision-making"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Evaluate DUR alarms",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Critical for addressing potential safety issues"
+            },
+            {
+                "activity": "Perform thorough check",
+                "substep": "Consult with prescriber if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by law to ensure patient safety.",
+                "ground_truth_reasoning": "Resolves potential issues and ensures appropriate treatment"
+            },
+            {
+                "activity": "Collect drugs from shelves",
+                "substep": "Check expiration date",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Required by regulations to ensure medication safety.",
+                "ground_truth_reasoning": "Essential for patient safety and medication efficacy"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Inform patient of total cost",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Provides the customer with the necessary payment information.",
+                "ground_truth_reasoning": "Necessary for transaction but doesn't affect medication"
+            },
+            {
+                "activity": "Collect payment",
+                "substep": "Issue receipt",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Provides the customer with a record of the payment.",
+                "ground_truth_reasoning": "Important for record-keeping but doesn't affect medication"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 15,
+                "BVA": 7
+            },
+            "BVA": {
+                "BVA": 7,
+                "VA": 2
+            },
+            "NVA": {}
+        }
+    }
+}

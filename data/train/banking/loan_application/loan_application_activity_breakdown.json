@@ -1,0 +1,312 @@
+[
+    {
+        "activity_name": "Submit loan application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Fill out loan application form"
+            },
+            {
+                "step_number": 2,
+                "description": "Attach required documents"
+            },
+            {
+                "step_number": 3,
+                "description": "Submit application to Loan Officer"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check application completeness",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review all submitted documents"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify all required fields are filled"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine if application is complete or incomplete"
+            }
+        ]
+    },
+    {
+        "activity_name": "Return application to applicant",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Identify missing or incomplete information"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare return notice with required corrections"
+            },
+            {
+                "step_number": 3,
+                "description": "Send application back to applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check application details",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's personal information"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify loan amount and purpose"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate credit history check"
+            },
+            {
+                "step_number": 4,
+                "description": "Request property appraisal"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check credit history",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Request credit report from credit bureau"
+            },
+            {
+                "step_number": 2,
+                "description": "Review credit score and payment history"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare credit history report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess loan risk",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review credit history report"
+            },
+            {
+                "step_number": 2,
+                "description": "Consult risk rules database"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate risk score"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare risk assessment report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Appraise property",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Schedule property inspection"
+            },
+            {
+                "step_number": 2,
+                "description": "Conduct on-site property evaluation"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare property appraisal report"
+            }
+        ]
+    },
+    {
+        "activity_name": "Assess eligibility",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application details"
+            },
+            {
+                "step_number": 2,
+                "description": "Analyze credit history report"
+            },
+            {
+                "step_number": 3,
+                "description": "Evaluate risk assessment"
+            },
+            {
+                "step_number": 4,
+                "description": "Consider property appraisal"
+            },
+            {
+                "step_number": 5,
+                "description": "Make eligibility decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to applicant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare acceptance pack",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Compile loan terms and conditions"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare repayment schedule"
+            },
+            {
+                "step_number": 3,
+                "description": "Include necessary legal documents"
+            }
+        ]
+    },
+    {
+        "activity_name": "Check if home insurance quote is requested",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review application for insurance request"
+            },
+            {
+                "step_number": 2,
+                "description": "Determine if quote is needed"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send home insurance quote",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare home insurance quote"
+            },
+            {
+                "step_number": 2,
+                "description": "Include quote in acceptance pack"
+            }
+        ]
+    },
+    {
+        "activity_name": "Send acceptance pack",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review acceptance pack for completeness"
+            },
+            {
+                "step_number": 2,
+                "description": "Send pack to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Set 2-week timer for response"
+            }
+        ]
+    },
+    {
+        "activity_name": "Verify repayment agreement",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive applicant's response"
+            },
+            {
+                "step_number": 2,
+                "description": "Check if applicant agrees to terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Record applicant's decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "Cancel application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for cancellation"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status to 'Cancelled'"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify cancellation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare cancellation notice"
+            },
+            {
+                "step_number": 2,
+                "description": "Send notice to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Update internal records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Approve application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Finalize loan terms"
+            },
+            {
+                "step_number": 2,
+                "description": "Update application status to 'Approved'"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare approval documentation"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify approval",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate approval letter"
+            },
+            {
+                "step_number": 2,
+                "description": "Send approval notification to applicant"
+            },
+            {
+                "step_number": 3,
+                "description": "Initiate loan disbursement process"
+            }
+        ]
+    }
+]

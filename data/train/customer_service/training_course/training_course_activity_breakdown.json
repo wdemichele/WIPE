@@ -1,0 +1,259 @@
+[
+    {
+        "activity_name": "Review application and budget forms",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive application and budget forms"
+            },
+            {
+                "step_number": 2,
+                "description": "Review application details"
+            },
+            {
+                "step_number": 3,
+                "description": "Examine budget information"
+            }
+        ]
+    },
+    {
+        "activity_name": "Room booking",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check available rooms"
+            },
+            {
+                "step_number": 2,
+                "description": "Select appropriate room"
+            },
+            {
+                "step_number": 3,
+                "description": "Reserve room for course dates"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm room booking"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up account",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create new account in system"
+            },
+            {
+                "step_number": 2,
+                "description": "Input course details"
+            },
+            {
+                "step_number": 3,
+                "description": "Assign account permissions"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up course website",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create new website"
+            },
+            {
+                "step_number": 2,
+                "description": "Design website layout"
+            },
+            {
+                "step_number": 3,
+                "description": "Add course information"
+            },
+            {
+                "step_number": 4,
+                "description": "Publish website"
+            }
+        ]
+    },
+    {
+        "activity_name": "Registration website setup",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create registration website"
+            },
+            {
+                "step_number": 2,
+                "description": "Create registration form"
+            },
+            {
+                "step_number": 3,
+                "description": "Set up payment gateway"
+            }
+        ]
+    },
+    {
+        "activity_name": "Promote course",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Develop marketing materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Identify target audience"
+            },
+            {
+                "step_number": 3,
+                "description": "Distribute promotional content"
+            },
+            {
+                "step_number": 4,
+                "description": "Monitor marketing effectiveness"
+            }
+        ]
+    },
+    {
+        "activity_name": "Registration website closed",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Check registration deadline"
+            },
+            {
+                "step_number": 2,
+                "description": "Close registration portal"
+            },
+            {
+                "step_number": 3,
+                "description": "Update website with closure information"
+            },
+            {
+                "step_number": 4,
+                "description": "Prepare registration data for review"
+            }
+        ]
+    },
+    {
+        "activity_name": "Handle payments",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect payment information"
+            },
+            {
+                "step_number": 2,
+                "description": "Process payments"
+            },
+            {
+                "step_number": 3,
+                "description": "Issue receipts"
+            },
+            {
+                "step_number": 4,
+                "description": "Reconcile payment records"
+            }
+        ]
+    },
+    {
+        "activity_name": "Notify registered participants of cancellation",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Draft cancellation message"
+            },
+            {
+                "step_number": 2,
+                "description": "Compile list of registered participants"
+            },
+            {
+                "step_number": 3,
+                "description": "Send cancellation notifications"
+            },
+            {
+                "step_number": 4,
+                "description": "Process refunds if applicable"
+            }
+        ]
+    },
+    {
+        "activity_name": "Print name badges",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Collect participant information"
+            },
+            {
+                "step_number": 2,
+                "description": "Design badge template"
+            },
+            {
+                "step_number": 3,
+                "description": "Print badges"
+            },
+            {
+                "step_number": 4,
+                "description": "Organise badges for distribution"
+            }
+        ]
+    },
+    {
+        "activity_name": "Set up Blackboard website for students",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Create course shell in Blackboard"
+            },
+            {
+                "step_number": 2,
+                "description": "Upload course materials"
+            },
+            {
+                "step_number": 3,
+                "description": "Enroll registered students"
+            }
+        ]
+    },
+    {
+        "activity_name": "Catering arranging",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Determine catering requirements"
+            },
+            {
+                "step_number": 2,
+                "description": "Contact catering providers"
+            },
+            {
+                "step_number": 3,
+                "description": "Select menu options"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm catering order and logistics"
+            }
+        ]
+    },
+    {
+        "activity_name": "Course delivery",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Prepare course materials"
+            },
+            {
+                "step_number": 2,
+                "description": "Set up course venue"
+            },
+            {
+                "step_number": 3,
+                "description": "Conduct course sessions"
+            },
+            {
+                "step_number": 4,
+                "description": "Collect feedback from participants"
+            }
+        ]
+    }
+]

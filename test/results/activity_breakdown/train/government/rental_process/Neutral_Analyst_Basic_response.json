@@ -1,0 +1,215 @@
+{
+    "model": {
+        "name": "Neutral_Analyst_Basic",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Apply for Viewing Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit application form"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide required documents"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Wait for application review"
+                }
+            ]
+        },
+        {
+            "activity_name": "Set Appointment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Contact prospective tenant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Schedule viewing appointment"
+                }
+            ]
+        },
+        {
+            "activity_name": "Reject Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify prospective tenant of rejection"
+                }
+            ]
+        },
+        {
+            "activity_name": "View The Property",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visit the property for viewing"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand In The Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Submit completed paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check Paperwork",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Review submitted paperwork"
+                }
+            ]
+        },
+        {
+            "activity_name": "Screen Prospective Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Conduct initial screening"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess tenant's suitability"
+                }
+            ]
+        },
+        {
+            "activity_name": "Sign Contract",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare contract for signing"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review and sign the contract"
+                }
+            ]
+        },
+        {
+            "activity_name": "Extensive Screening",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Request additional information from tenant"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Conduct thorough background checks"
+                }
+            ]
+        },
+        {
+            "activity_name": "Move In",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Coordinate move-in logistics"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Provide keys to the tenant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Pay Rent",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive rent payment from tenant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Issue Warning",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Notify tenant of missed rent payment"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Document the warning issued"
+                }
+            ]
+        },
+        {
+            "activity_name": "Accept Late Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive late rent payment from tenant"
+                }
+            ]
+        },
+        {
+            "activity_name": "Evict Tenant",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Initiate eviction process"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Follow legal procedures for eviction"
+                }
+            ]
+        },
+        {
+            "activity_name": "Tenant Cancels Apartment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive cancellation notice from tenant"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                11,
+                40.74074074074074
+            ],
+            "No Match": [
+                9,
+                33.33333333333333
+            ],
+            "Granularity Difference": [
+                6,
+                22.22222222222222
+            ],
+            "Identical Match": [
+                1,
+                3.7037037037037033
+            ]
+        },
+        "average_confidence": 55.74074074074074,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 84.0909090909091,
+            "No Match": 0.0,
+            "Granularity Difference": 80.0,
+            "Identical Match": 100.0
+        },
+        "ground_truth_coverage": 92.3076923076923,
+        "response_coverage": 72.72727272727273,
+        "average_sequence_alignment": 60.0,
+        "average_overall_similarity_score": 60.333333333333336
+    }
+}

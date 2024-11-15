@@ -1,0 +1,213 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Answer notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Receive notice by phone"
+                }
+            ]
+        },
+        {
+            "activity_name": "Record notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Record notice details"
+                }
+            ]
+        },
+        {
+            "activity_name": "Store and print notice",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store notice information"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Print notice for reference"
+                }
+            ]
+        },
+        {
+            "activity_name": "Create patient file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if patient is known"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Create new patient file"
+                }
+            ]
+        },
+        {
+            "activity_name": "Close case",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Close the case"
+                }
+            ]
+        },
+        {
+            "activity_name": "Assign intakers",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assign intakers to the case"
+                }
+            ]
+        },
+        {
+            "activity_name": "Store assignment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Store assignment information"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand out cards",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Distribute cards to intakers"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ask for medical file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Check if medical file is required"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Request medical file"
+                }
+            ]
+        },
+        {
+            "activity_name": "Update patient file",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update patient file with received medical file"
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan meeting first intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule meeting date for first intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Plan meeting second intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Schedule meeting date for second intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Meet with first intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attend meeting with first intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete file with 1st information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update patient file with information from first intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Meet with second intaker",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Attend meeting with second intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Type out conversation",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Transcribe conversation with second intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Complete file with 2nd information",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Update patient file with information from second intaker"
+                }
+            ]
+        },
+        {
+            "activity_name": "Determine treatment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Decide on appropriate treatment"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                5,
+                21.73913043478261
+            ],
+            "Granularity Difference": [
+                15,
+                65.21739130434783
+            ],
+            "No Match": [
+                3,
+                13.043478260869565
+            ]
+        },
+        "average_confidence": 70.65217391304348,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 85.0,
+            "Granularity Difference": 80.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 100.0,
+        "response_coverage": 85.71428571428571,
+        "average_sequence_alignment": 32.59259259259259,
+        "average_overall_similarity_score": 78.88888888888889
+    }
+}

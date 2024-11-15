@@ -1,0 +1,70 @@
+{
+    "activities": [
+      {
+        "step": "Submit claim documentation",
+        "performer": "Customer",
+        "classification": "VA",
+        "reasoning": "Initiates the process and provides necessary information for claim processing"
+      },
+      {
+        "step": "Check completeness",
+        "performer": "Notification Department",
+        "classification": "BVA",
+        "reasoning": "Ensures all required information is present, reducing delays in later stages"
+      },
+      {
+        "step": "Register claim",
+        "performer": "Notification Department",
+        "classification": "BVA",
+        "reasoning": "Necessary for tracking and processing, but doesn't directly add value to the customer"
+      },
+      {
+        "step": "Reject claim (due to incompleteness)",
+        "performer": "Notification Department",
+        "classification": "NVA",
+        "reasoning": "Doesn't add value, but may be necessary due to customer error"
+      },
+      {
+        "step": "Check coverage",
+        "performer": "Handling Department",
+        "classification": "BVA",
+        "reasoning": "Crucial for the insurer, but from the customer's perspective, this should be a given"
+      },
+      {
+        "step": "Reject claim (not covered)",
+        "performer": "Handling Department",
+        "classification": "NVA",
+        "reasoning": "Doesn't add value to the customer, but may be necessary due to policy limitations"
+      },
+      {
+        "step": "Assess claim",
+        "performer": "Handling Department",
+        "classification": "VA",
+        "reasoning": "Core activity that determines the outcome of the claim"
+      },
+      {
+        "step": "Schedule payment",
+        "performer": "Handling Department",
+        "classification": "VA",
+        "reasoning": "Directly contributes to fulfilling the customer's claim"
+      },
+      {
+        "step": "Authorize repayment",
+        "performer": "Handling Department",
+        "classification": "BVA",
+        "reasoning": "Necessary for internal control, but doesn't directly add value from the customer's perspective"
+      },
+      {
+        "step": "Notify Customer",
+        "performer": "Car Insurer",
+        "classification": "VA",
+        "reasoning": "Provides crucial information to the customer about the claim outcome"
+      },
+      {
+        "step": "Receive authorization and payment details",
+        "performer": "Garage",
+        "classification": "BVA",
+        "reasoning": "Necessary for repair process, indirectly benefits the customer"
+      }
+    ]
+  }

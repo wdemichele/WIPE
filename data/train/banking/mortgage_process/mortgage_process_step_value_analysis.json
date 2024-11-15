@@ -1,0 +1,118 @@
+[
+    {
+        "activity_name": "CT1: Check financial coverage",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review applicant's financial information",
+                "classification": "VA",
+                "reasoning": "Directly contributes to assessing the applicant's financial situation"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify income sources",
+                "classification": "VA",
+                "reasoning": "Essential for confirming the applicant's ability to repay"
+            },
+            {
+                "step_number": 3,
+                "description": "Calculate debt-to-income ratio",
+                "classification": "VA",
+                "reasoning": "Key metric for determining loan affordability"
+            },
+            {
+                "step_number": 4,
+                "description": "Assess ability to repay mortgage",
+                "classification": "VA",
+                "reasoning": "Crucial for determining the applicant's creditworthiness"
+            }
+        ]
+    },
+    {
+        "activity_name": "CT2: Check property",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review property details",
+                "classification": "VA",
+                "reasoning": "Directly contributes to understanding the collateral"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify property value",
+                "classification": "VA",
+                "reasoning": "Critical for determining the loan-to-value ratio"
+            },
+            {
+                "step_number": 3,
+                "description": "Assess property condition",
+                "classification": "VA",
+                "reasoning": "Important for evaluating the quality of the collateral"
+            },
+            {
+                "step_number": 4,
+                "description": "Evaluate property location and market trends",
+                "classification": "VA",
+                "reasoning": "Crucial for assessing long-term value and risk"
+            }
+        ]
+    },
+    {
+        "activity_name": "AC: Accept mortgage application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review overall application",
+                "classification": "VA",
+                "reasoning": "Final assessment of all collected information"
+            },
+            {
+                "step_number": 2,
+                "description": "Confirm all criteria are met",
+                "classification": "VA",
+                "reasoning": "Crucial for ensuring the application meets all requirements"
+            },
+            {
+                "step_number": 3,
+                "description": "Prepare acceptance documentation",
+                "classification": "BVA",
+                "reasoning": "Necessary for process completion but doesn't change the decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify applicant of acceptance",
+                "classification": "BVA",
+                "reasoning": "Important for customer service but doesn't alter the decision"
+            }
+        ]
+    },
+    {
+        "activity_name": "AW: Reject mortgage application",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for rejection",
+                "classification": "BVA",
+                "reasoning": "Important for compliance and future reference but doesn't change the decision"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection letter",
+                "classification": "BVA",
+                "reasoning": "Necessary for communication but doesn't alter the outcome"
+            },
+            {
+                "step_number": 3,
+                "description": "Update application status to 'Rejected'",
+                "classification": "BVA",
+                "reasoning": "Required for record-keeping but doesn't affect the decision"
+            },
+            {
+                "step_number": 4,
+                "description": "Notify applicant of rejection",
+                "classification": "BVA",
+                "reasoning": "Important for customer service but doesn't change the outcome"
+            }
+        ]
+    }
+]

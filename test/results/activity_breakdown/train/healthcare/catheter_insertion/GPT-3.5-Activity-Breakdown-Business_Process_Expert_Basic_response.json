@@ -1,0 +1,475 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Business_Process_Expert_Basic",
+        "components": {
+            "role_description": "business_process_expert",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Prepare implements",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Gather necessary implements"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check implements for cleanliness"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Arrange implements in order of use"
+                }
+            ]
+        },
+        {
+            "activity_name": "Hand washing",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Wet hands with water"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Apply soap and lather hands"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Scrub hands for at least 20 seconds"
+                },
+                {
+                    "step_number": 4,
+                    "description": "Rinse hands thoroughly"
+                },
+                {
+                    "step_number": 5,
+                    "description": "Dry hands with a clean towel"
+                }
+            ]
+        },
+        {
+            "activity_name": "Get in sterile clothes",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Put on sterile gown"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Put on sterile gloves"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Put on sterile mask and cap"
+                }
+            ]
+        },
+        {
+            "activity_name": "Clean puncture area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Clean puncture area with antiseptic solution"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Allow solution to dry completely"
+                }
+            ]
+        },
+        {
+            "activity_name": "Drap puncture area",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Place sterile drapes around puncture area"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure drapes cover the entire area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Ultrasound configuration",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Turn on ultrasound machine"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Adjust settings for optimal image quality"
+                }
+            ]
+        },
+        {
+            "activity_name": "Gel in probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply ultrasound gel to the probe"
+                }
+            ]
+        },
+        {
+            "activity_name": "Cover probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Place sterile cover over the probe"
+                }
+            ]
+        },
+        {
+            "activity_name": "Put sterile gel",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply sterile gel to the puncture area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Position probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Hold the probe in the correct position"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure proper contact with the puncture area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Position patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assist patient into the desired position"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure patient is comfortable and stable"
+                }
+            ]
+        },
+        {
+            "activity_name": "Choose identification method",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Consider available identification methods"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate pros and cons of each method"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Select the most appropriate identification method"
+                }
+            ]
+        },
+        {
+            "activity_name": "Doppler identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Use Doppler ultrasound to identify target"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Listen for characteristic sound"
+                }
+            ]
+        },
+        {
+            "activity_name": "Anatomic identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Use anatomical landmarks to identify target"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Visualize target using ultrasound"
+                }
+            ]
+        },
+        {
+            "activity_name": "Compression identification",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Apply compression to identify target"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Observe for changes in blood flow"
+                }
+            ]
+        },
+        {
+            "activity_name": "Anesthetize",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administer local anesthesia to puncture site"
+                }
+            ]
+        },
+        {
+            "activity_name": "Proceed with puncture?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess readiness for puncture"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Evaluate patient's condition and consent"
+                }
+            ]
+        },
+        {
+            "activity_name": "Puncture",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insert needle into the puncture site"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Advance needle to desired depth"
+                }
+            ]
+        },
+        {
+            "activity_name": "Blood return",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Observe for blood return in the needle"
+                }
+            ]
+        },
+        {
+            "activity_name": "Successful?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess if blood return is successful"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for proper blood flow"
+                }
+            ]
+        },
+        {
+            "activity_name": "Drop probe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Remove the ultrasound probe from the puncture area"
+                }
+            ]
+        },
+        {
+            "activity_name": "Remove syringe",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Detach syringe from the needle"
+                }
+            ]
+        },
+        {
+            "activity_name": "Guidewire install",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insert guidewire through the needle"
+                }
+            ]
+        },
+        {
+            "activity_name": "Remove trocar",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Remove trocar from the needle"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check wire position",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess position of the guidewire"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure proper alignment with target"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check wire in long axis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visualize wire in long axis using ultrasound"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm correct position of the wire"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check wire in short axis",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Visualize wire in short axis using ultrasound"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm correct position of the wire"
+                }
+            ]
+        },
+        {
+            "activity_name": "Wire in good position",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Confirm proper placement of the guidewire"
+                }
+            ]
+        },
+        {
+            "activity_name": "Proceed with catheter?",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Evaluate readiness for catheter insertion"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Assess patient's condition and consent"
+                }
+            ]
+        },
+        {
+            "activity_name": "Widen pathway",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Dilate the puncture site to accommodate the catheter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Advance catheter",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Insert catheter over the guidewire"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Advance catheter to desired position"
+                }
+            ]
+        },
+        {
+            "activity_name": "Remove guidewire",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Withdraw the guidewire from the catheter"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check flow and reflow",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Assess blood flow through the catheter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Check for any obstructions or leaks"
+                }
+            ]
+        },
+        {
+            "activity_name": "Check catheter position",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Verify proper placement of the catheter"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Ensure alignment with target vessel"
+                }
+            ]
+        },
+        {
+            "activity_name": "End",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Complete the procedure"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Remove sterile clothing and dispose of waste"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Functional Equivalence": [
+                30,
+                54.54545454545454
+            ],
+            "Identical Match": [
+                2,
+                3.6363636363636362
+            ],
+            "Granularity Difference": [
+                4,
+                7.2727272727272725
+            ],
+            "No Match": [
+                19,
+                34.54545454545455
+            ]
+        },
+        "average_confidence": 54.09090909090909,
+        "average_confidence_by_match_type": {
+            "Functional Equivalence": 83.16666666666667,
+            "Identical Match": 100.0,
+            "Granularity Difference": 70.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 89.0909090909091,
+        "response_coverage": 71.7948717948718,
+        "average_sequence_alignment": 71.28205128205128,
+        "average_overall_similarity_score": 56.18615384615385
+    }
+}

@@ -1,0 +1,184 @@
+[
+    {
+        "activity_name": "Create claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initialize new claim in system"
+            },
+            {
+                "step_number": 2,
+                "description": "Assign unique claim identifier"
+            },
+            {
+                "step_number": 3,
+                "description": "Input initial claim details"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Review claim documentation"
+            },
+            {
+                "step_number": 2,
+                "description": "Enter detailed claim information"
+            },
+            {
+                "step_number": 3,
+                "description": "Attach supporting documents to claim record"
+            }
+        ]
+    },
+    {
+        "activity_name": "Decide on claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Evaluate claim details"
+            },
+            {
+                "step_number": 2,
+                "description": "Check claim against policy terms"
+            },
+            {
+                "step_number": 3,
+                "description": "Determine claim validity"
+            },
+            {
+                "step_number": 4,
+                "description": "Make decision on claim acceptance or rejection"
+            }
+        ]
+    },
+    {
+        "activity_name": "Offer benefit",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Calculate benefit amount"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare benefit offer document"
+            },
+            {
+                "step_number": 3,
+                "description": "Send benefit offer to claimant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Prepare claim discharge",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Generate claim discharge document"
+            },
+            {
+                "step_number": 2,
+                "description": "Review discharge for accuracy"
+            },
+            {
+                "step_number": 3,
+                "description": "Send discharge document to claimant for signature"
+            }
+        ]
+    },
+    {
+        "activity_name": "Record benefit payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Enter benefit payment details in system"
+            },
+            {
+                "step_number": 2,
+                "description": "Link payment record to claim"
+            },
+            {
+                "step_number": 3,
+                "description": "Update claim status to 'Payment Recorded'"
+            }
+        ]
+    },
+    {
+        "activity_name": "Close claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Verify all claim processes are complete"
+            },
+            {
+                "step_number": 2,
+                "description": "Update claim status to 'Closed'"
+            },
+            {
+                "step_number": 3,
+                "description": "Archive claim documents"
+            }
+        ]
+    },
+    {
+        "activity_name": "Operate outgoing payment",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Initiate payment process"
+            },
+            {
+                "step_number": 2,
+                "description": "Verify payment details"
+            },
+            {
+                "step_number": 3,
+                "description": "Execute payment transaction"
+            },
+            {
+                "step_number": 4,
+                "description": "Confirm successful payment"
+            }
+        ]
+    },
+    {
+        "activity_name": "Reject claim",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Document reasons for claim rejection"
+            },
+            {
+                "step_number": 2,
+                "description": "Prepare rejection notification"
+            },
+            {
+                "step_number": 3,
+                "description": "Send rejection notification to claimant"
+            }
+        ]
+    },
+    {
+        "activity_name": "Review claim rejection",
+        "substeps": [
+            {
+                "step_number": 1,
+                "description": "Receive rejection appeal from claimant"
+            },
+            {
+                "step_number": 2,
+                "description": "Re-examine claim details and rejection reasons"
+            },
+            {
+                "step_number": 3,
+                "description": "Consult with relevant departments if necessary"
+            },
+            {
+                "step_number": 4,
+                "description": "Make final decision on rejection"
+            }
+        ]
+    }
+]

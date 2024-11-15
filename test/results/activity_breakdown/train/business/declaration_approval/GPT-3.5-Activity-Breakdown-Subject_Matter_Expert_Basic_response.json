@@ -1,0 +1,198 @@
+{
+    "model": {
+        "name": "GPT-3.5-Activity-Breakdown-Subject_Matter_Expert_Basic",
+        "components": {
+            "role_description": "sme",
+            "task_description": "breakdown_substeps",
+            "guidelines": "standard_guidelines",
+            "output_format": "standard_output"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Declaration SUBMITTED by EMPLOYEE",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Employee submits declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver receives declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Pre-approver reviews declaration"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Pre-approver makes decision"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor receives declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Supervisor reviews declaration"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Supervisor makes decision"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by PRE_APPROVER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Pre-approver rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by MISSING",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Missing information identified"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Missing information communicated to employee"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by ADMINISTRATION",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration REJECTED by ADMINISTRATION",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Administration rejects declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FOR_APPROVAL by BUDGET OWNER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner receives declaration"
+                },
+                {
+                    "step_number": 2,
+                    "description": "Budget owner reviews declaration"
+                },
+                {
+                    "step_number": 3,
+                    "description": "Budget owner makes decision"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration APPROVED by BUDGET OWNER",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Budget owner approves declaration"
+                }
+            ]
+        },
+        {
+            "activity_name": "Declaration FINAL_APPROVED by SUPERVISOR",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Supervisor gives final approval"
+                }
+            ]
+        },
+        {
+            "activity_name": "Request Payment",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Payment request is made"
+                }
+            ]
+        },
+        {
+            "activity_name": "Payment Handled",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Payment is processed and handled"
+                }
+            ]
+        }
+    ],
+    "metrics": {
+        "match_type_distribution": {
+            "Granularity Difference": [
+                1,
+                4.166666666666666
+            ],
+            "Functional Equivalence": [
+                6,
+                25.0
+            ],
+            "Identical Match": [
+                4,
+                16.666666666666664
+            ],
+            "No Match": [
+                13,
+                54.166666666666664
+            ]
+        },
+        "average_confidence": 40.833333333333336,
+        "average_confidence_by_match_type": {
+            "Granularity Difference": 80.0,
+            "Functional Equivalence": 83.33333333333333,
+            "Identical Match": 100.0,
+            "No Match": 0.0
+        },
+        "ground_truth_coverage": 80.76923076923077,
+        "response_coverage": 60.37735849056604,
+        "average_sequence_alignment": 57.142857142857146,
+        "average_overall_similarity_score": 38.33357142857143
+    }
+}

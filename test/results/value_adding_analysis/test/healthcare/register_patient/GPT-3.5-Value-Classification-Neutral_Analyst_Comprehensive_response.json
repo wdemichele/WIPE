@@ -1,0 +1,153 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Neutral_Analyst_Comprehensive",
+        "components": {
+            "role_description": "neutral_analyst",
+            "task_description": "standard",
+            "classification_types": "basic",
+            "function_definition": "basic",
+            "parsing_instructions": "sequential",
+            "output_format": "basic"
+        }
+    },
+    "response": [
+        {
+            "activity_name": "Record the data of each patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Greet the patient and explain the registration process",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by providing a positive experience and ensuring the patient understands the registration process."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Prepare the registration form or system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to collect and organize patient information, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Begin collecting patient information",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by gathering the necessary data for their record."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register the SSN of the patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Ask the patient for their Social Security Number (SSN)",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by collecting their SSN, which is required for identification and record-keeping purposes."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Verify the SSN format for accuracy",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the accuracy of the SSN provided by the patient, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Input the SSN into the registration system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by securely storing their SSN in the registration system."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register the Name of the patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Ask the patient for their first name",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by collecting their name, which is required for identification and personalization purposes."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm the spelling of the name with the patient",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for the business to ensure the accuracy of the patient's name, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter the name into the registration system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's need by storing their name in the registration system for future reference.\")classify(\"VA\", \"Register the Surname of the patient\", \"Ask the patient for their surname (last name)\", \"This step directly contributes to meeting the customer's requirement of registering their surname."
+                }
+            ]
+        },
+        {
+            "activity_name": "Register the Surname of the patient",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Ask the patient for their surname (last name)",
+                    "classification": null,
+                    "reasoning": null
+                },
+                {
+                    "step_number": 2,
+                    "description": "Confirm the spelling of the surname with the patient",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of registering their surname."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Enter the surname into the registration system",
+                    "classification": "VA",
+                    "reasoning": "This step directly contributes to meeting the customer's requirement of registering their surname."
+                }
+            ]
+        },
+        {
+            "activity_name": "Print referral document",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Generate the referral document using the registered information",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for generating the referral document, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Review the document for accuracy and completeness",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for ensuring the quality of the referral document, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Print the referral document",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for producing a physical copy of the referral document, but it does not directly add value for the customer."
+                }
+            ]
+        },
+        {
+            "activity_name": "Archive the record in file system",
+            "substeps": [
+                {
+                    "step_number": 1,
+                    "description": "Prepare the patient's record for archiving",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for preparing the patient's record for archiving, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 2,
+                    "description": "Store the physical record in the appropriate file system",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for storing the physical record in the file system, but it does not directly add value for the customer."
+                },
+                {
+                    "step_number": 3,
+                    "description": "Update the database with the record's storage location",
+                    "classification": "BVA",
+                    "reasoning": "This step is necessary for updating the database with the record's storage location, but it does not directly add value for the customer."
+                }
+            ]
+        }
+    ]
+}
