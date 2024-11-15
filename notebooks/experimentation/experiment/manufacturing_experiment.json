@@ -1,0 +1,217 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "textbook",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "varied_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Check stock availability\nclassify(\"BVA\", \"Check stock availability\", \"Access inventory management system\", \"Necessary for retrieving stock information but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check stock availability\", \"Search product in database\", \"Essential for finding the product in the inventory but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check stock availability\", \"Verify current stock levels\", \"Crucial for ensuring accurate stock information but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check stock availability\", \"Update stock status\", \"Important for keeping the stock information up to date but doesn't directly impact the customer.\")\n\n# Retrieve product from warehouse\nclassify(\"BVA\", \"Retrieve product from warehouse\", \"Generate pick list\", \"Necessary for identifying the products to be retrieved but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Retrieve product from warehouse\", \"Locate product in warehouse\", \"Essential for finding the product in the warehouse but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Retrieve product from warehouse\", \"Pick product from shelf\", \"Crucial for physically retrieving the product but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Retrieve product from warehouse\", \"Update inventory records\", \"Important for keeping the inventory records accurate but doesn't directly impact the customer.\")\n\n# Check raw materials availability\nclassify(\"BVA\", \"Check raw materials availability\", \"Access raw materials inventory\", \"Necessary for retrieving information about raw materials but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check raw materials availability\", \"Check quantity of each required material\", \"Essential for determining the availability of raw materials but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check raw materials availability\", \"Determine if sufficient materials are available\", \"Crucial for assessing if there are enough materials but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Check raw materials availability\", \"Identify materials that need to be sourced\", \"Important for identifying materials that need to be procured but doesn't directly impact the customer.\")\n\n# Request raw materials from Supplier 1\nclassify(\"BVA\", \"Request raw materials from Supplier 1\", \"Prepare purchase order for Supplier 1\", \"Necessary for creating a purchase order but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 1\", \"Send purchase order to Supplier 1\", \"Essential for sending the purchase order to the supplier but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 1\", \"Confirm order receipt with Supplier 1\", \"Crucial for confirming the receipt of the order but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 1\", \"Schedule delivery of materials\", \"Important for arranging the delivery of materials but doesn't directly impact the customer.\")\n\n# Request raw materials from Supplier 2\nclassify(\"BVA\", \"Request raw materials from Supplier 2\", \"Prepare purchase order for Supplier 2\", \"Necessary for creating a purchase order but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 2\", \"Send purchase order to Supplier 2\", \"Essential for sending the purchase order to the supplier but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 2\", \"Confirm order receipt with Supplier 2\", \"Crucial for confirming the receipt of the order but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from Supplier 2\", \"Schedule delivery of materials\", \"Important for arranging the delivery of materials but doesn't directly impact the customer.\")# Obtain raw materials from Supplier 1\nclassify(\"BVA\", \"Obtain raw materials from Supplier 1\", \"Receive shipment from Supplier 1\", \"Essential for obtaining raw materials but doesn't directly impact the manufacturing process.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 1\", \"Inspect received materials\", \"Necessary to ensure the quality of the received materials.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 1\", \"Update inventory with new materials\", \"Crucial for accurate inventory management.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 1\", \"Store materials in appropriate location\", \"Important for efficient material handling and organization.\")\n\n# Obtain raw materials from Supplier 2\nclassify(\"BVA\", \"Obtain raw materials from Supplier 2\", \"Receive shipment from Supplier 2\", \"Essential for obtaining raw materials but doesn't directly impact the manufacturing process.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 2\", \"Inspect received materials\", \"Necessary to ensure the quality of the received materials.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 2\", \"Update inventory with new materials\", \"Crucial for accurate inventory management.\")\nclassify(\"BVA\", \"Obtain raw materials from Supplier 2\", \"Store materials in appropriate location\", \"Important for efficient material handling and organization.\")\n\n# Manufacture product\nclassify(\"VA\", \"Manufacture product\", \"Prepare manufacturing order\", \"Directly contributes to initiating the manufacturing process.\")\nclassify(\"VA\", \"Manufacture product\", \"Set up production line\", \"Directly enables the production of the product.\")\nclassify(\"VA\", \"Manufacture product\", \"Produce product\", \"Directly creates the product that customers will purchase.\")\nclassify(\"VA\", \"Manufacture product\", \"Perform quality control checks\", \"Directly ensures the quality of the manufactured product.\")\n\n# Confirm order\nclassify(\"BVA\", \"Confirm order\", \"Review order details\", \"Necessary for verifying the accuracy of the order.\")\nclassify(\"BVA\", \"Confirm order\", \"Verify product availability or completion\", \"Crucial for ensuring that the product is available or completed.\")\nclassify(\"BVA\", \"Confirm order\", \"Generate order confirmation\", \"Essential for confirming the order and initiating the next steps.\")\nclassify(\"BVA\", \"Confirm order\", \"Send confirmation to customer\", \"Important for providing the customer with order confirmation and updates.\")\n\n# Get shipment address\nclassify(\"BVA\", \"Get shipment address\", \"Retrieve customer information\", \"Necessary for obtaining the customer's shipping address.\")\nclassify(\"BVA\", \"Get shipment address\", \"Verify shipping address\", \"Crucial for ensuring the accuracy of the shipping address.\")\nclassify(\"BVA\", \"Get shipment address\", \"Confirm address with customer if necessary\", \"Important for resolving any discrepancies or confirming the address.\")\nclassify(\"BVA\", \"Get shipment address\", \"Update shipping information in order\", \"Essential for updating the order with the correct shipping information.\")# Emit invoice\nclassify(\"BVA\", \"Emit invoice\", \"Calculate total order cost\", \"Essential for generating accurate invoice.\")\nclassify(\"VA\", \"Emit invoice\", \"Generate invoice document\", \"Directly contributes to generating the invoice for the customer.\")\nclassify(\"BVA\", \"Emit invoice\", \"Review invoice for accuracy\", \"Necessary to ensure the invoice is correct before sending it to the customer.\")\nclassify(\"VA\", \"Emit invoice\", \"Send invoice to customer\", \"Directly provides the customer with the invoice for payment.\")\n\n# Ship product\nclassify(\"VA\", \"Ship product\", \"Package product for shipping\", \"Directly contributes to preparing the product for shipment.\")\nclassify(\"VA\", \"Ship product\", \"Generate shipping label\", \"Directly provides the necessary information for shipping the product.\")\nclassify(\"BVA\", \"Ship product\", \"Arrange carrier pickup\", \"Necessary for coordinating the pickup of the package by the carrier.\")\nclassify(\"VA\", \"Ship product\", \"Update order status to shipped\", \"Directly informs the customer that their order has been shipped.\")\n\n# Receive payment\nclassify(\"VA\", \"Receive payment\", \"Process payment\", \"Directly contributes to receiving payment from the customer.\")\nclassify(\"VA\", \"Receive payment\", \"Update order status to paid\", \"Directly informs the customer that their payment has been received.\")\n\n# Archive order\nclassify(\"BVA\", \"Archive order\", \"Verify order completion\", \"Necessary to ensure that the order has been fully processed before archiving it.\")\nclassify(\"BVA\", \"Archive order\", \"Transfer order to archive system\", \"Necessary for organizing and storing completed orders.\")\nclassify(\"VA\", \"Archive order\", \"Update order status to archived\", \"Directly informs the system that the order has been archived.\")",
+    "metrics": {
+        "total_substeps": 53,
+        "correct_classifications": 30,
+        "accuracy": 0.5660377358490566,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Verify current stock levels",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for ensuring accurate stock information but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment capability"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Pick product from shelf",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for physically retrieving the product but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "activity": "Check raw materials availability",
+                "substep": "Check quantity of each required material",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for determining the availability of raw materials but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Check raw materials availability",
+                "substep": "Determine if sufficient materials are available",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for assessing if there are enough materials but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Critical for production decision-making"
+            },
+            {
+                "activity": "Check raw materials availability",
+                "substep": "Identify materials that need to be sourced",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Important for identifying materials that need to be procured but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to maintaining production capability"
+            },
+            {
+                "activity": "Request raw materials from Supplier 1",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Important for arranging the delivery of materials but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Request raw materials from Supplier 2",
+                "substep": "Schedule delivery of materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Important for arranging the delivery of materials but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to production planning"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Receive shipment from Supplier 1",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for obtaining raw materials but doesn't directly impact the manufacturing process.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 1",
+                "substep": "Inspect received materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary to ensure the quality of the received materials.",
+                "ground_truth_reasoning": "Ensures quality of inputs, directly affecting product quality"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Receive shipment from Supplier 2",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for obtaining raw materials but doesn't directly impact the manufacturing process.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Obtain raw materials from Supplier 2",
+                "substep": "Inspect received materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary to ensure the quality of the received materials.",
+                "ground_truth_reasoning": "Ensures quality of inputs, directly affecting product quality"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Prepare manufacturing order",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to initiating the manufacturing process.",
+                "ground_truth_reasoning": "Facilitates production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Set up production line",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly enables the production of the product.",
+                "ground_truth_reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Verify product availability or completion",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for ensuring that the product is available or completed.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Verify shipping address",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Crucial for ensuring the accuracy of the shipping address.",
+                "ground_truth_reasoning": "Directly contributes to successful product delivery"
+            },
+            {
+                "activity": "Get shipment address",
+                "substep": "Confirm address with customer if necessary",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Important for resolving any discrepancies or confirming the address.",
+                "ground_truth_reasoning": "Ensures accurate delivery, directly affecting customer satisfaction"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Calculate total order cost",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for generating accurate invoice.",
+                "ground_truth_reasoning": "Directly relates to the value exchange with customer"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to generating the invoice for the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly provides the customer with the invoice for payment.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Generate shipping label",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly provides the necessary information for shipping the product.",
+                "ground_truth_reasoning": "Necessary for shipping but doesn't directly add value to product"
+            },
+            {
+                "activity": "Ship product",
+                "substep": "Update order status to shipped",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly informs the customer that their order has been shipped.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly informs the customer that their payment has been received.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Archive order",
+                "substep": "Update order status to archived",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly informs the system that the order has been archived.",
+                "ground_truth_reasoning": "Maintains system accuracy but doesn't directly add value to customer"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "BVA": 26,
+                "VA": 8
+            },
+            "VA": {
+                "BVA": 15,
+                "VA": 4
+            }
+        }
+    }
+}

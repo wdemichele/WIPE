@@ -1,0 +1,57 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "textbook",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "varied_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Cost planning\nclassify(\"BVA\", \"Cost planning\", \"Gather relevant financial data\", \"Essential for accurate cost estimation but doesn't directly impact the final cost plan.\")\nclassify(\"VA\", \"Cost planning\", \"Estimate project costs\", \"Directly contributes to determining the overall cost of the project.\")\nclassify(\"VA\", \"Cost planning\", \"Create cost breakdown structure\", \"Directly contributes to organizing and categorizing project costs.\")\nclassify(\"VA\", \"Cost planning\", \"Develop initial cost plan\", \"Directly contributes to creating the initial cost plan for the project.\")\n\n# Recalculation of costs\nclassify(\"BVA\", \"Recalculation of costs\", \"Review initial cost plan\", \"Essential for identifying areas for cost reduction or optimization.\")\nclassify(\"VA\", \"Recalculation of costs\", \"Identify areas for cost reduction or optimization\", \"Directly contributes to reducing or optimizing project costs.\")\nclassify(\"VA\", \"Recalculation of costs\", \"Adjust cost estimates\", \"Directly contributes to updating the cost plan based on new information.\")\nclassify(\"VA\", \"Recalculation of costs\", \"Update cost plan\", \"Directly contributes to creating an updated cost plan for the project.\")\n\n# Plan data transfer\nclassify(\"BVA\", \"Plan data transfer\", \"Prepare cost plan data for transfer\", \"Essential for transferring cost plan data to appropriate systems or departments.\")\nclassify(\"BVA\", \"Plan data transfer\", \"Identify relevant stakeholders for data sharing\", \"Essential for ensuring the right stakeholders receive the cost plan data.\")\nclassify(\"VA\", \"Plan data transfer\", \"Transfer cost plan data to appropriate systems or departments\", \"Directly contributes to sharing the cost plan data with the necessary parties.\")\n\n# Get approval for expenses\nclassify(\"BVA\", \"Get approval for expenses\", \"Compile finalized cost plan\", \"Essential for presenting a complete and accurate cost plan for approval.\")\nclassify(\"VA\", \"Get approval for expenses\", \"Present cost plan to approving authority\", \"Directly contributes to obtaining approval for the expenses.\")\nclassify(\"VA\", \"Get approval for expenses\", \"Address any questions or concerns\", \"Directly contributes to resolving any issues or concerns raised during the approval process.\")\nclassify(\"VA\", \"Get approval for expenses\", \"Obtain formal approval for expenses\", \"Directly contributes to obtaining the formal approval for the expenses.\")\nclassify(\"BVA\", \"Get approval for expenses\", \"Document approval decision\", \"Essential for maintaining a record of the approval decision for future reference.\")",
+    "metrics": {
+        "total_substeps": 16,
+        "correct_classifications": 13,
+        "accuracy": 0.8125,
+        "misclassifications": [
+            {
+                "activity": "Cost planning",
+                "substep": "Gather relevant financial data",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for accurate cost estimation but doesn't directly impact the final cost plan.",
+                "ground_truth_reasoning": "Directly contributes to accurate cost estimation"
+            },
+            {
+                "activity": "Recalculation of costs",
+                "substep": "Review initial cost plan",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for identifying areas for cost reduction or optimization.",
+                "ground_truth_reasoning": "Critical for identifying areas of improvement"
+            },
+            {
+                "activity": "Plan data transfer",
+                "substep": "Transfer cost plan data to appropriate systems or departments",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to sharing the cost plan data with the necessary parties.",
+                "ground_truth_reasoning": "Essential for process but doesn't add value to the plan itself"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "BVA": 2,
+                "VA": 9
+            },
+            "BVA": {
+                "BVA": 4,
+                "VA": 1
+            }
+        }
+    }
+}

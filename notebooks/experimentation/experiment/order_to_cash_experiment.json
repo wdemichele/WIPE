@@ -1,0 +1,217 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "textbook",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "varied_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Check stock availability\nclassify(\"BVA\", \"Check stock availability\", \"Access inventory management system\", \"Necessary for checking stock levels but doesn't directly impact the customer.\")\nclassify(\"VA\", \"Check stock availability\", \"Search for ordered product\", \"Directly contributes to finding the product the customer ordered.\")\nclassify(\"VA\", \"Check stock availability\", \"Verify current stock levels\", \"Directly contributes to assessing stock availability for the customer's order.\")\n\n# Retrieve product from warehouse\nclassify(\"BVA\", \"Retrieve product from warehouse\", \"Generate pick list\", \"Necessary for locating and picking the product but doesn't directly impact the customer.\")\nclassify(\"VA\", \"Retrieve product from warehouse\", \"Locate product in warehouse\", \"Directly contributes to finding the product in the warehouse.\")\nclassify(\"VA\", \"Retrieve product from warehouse\", \"Pick product from shelf\", \"Directly contributes to retrieving the product from the warehouse.\")\nclassify(\"VA\", \"Retrieve product from warehouse\", \"Update inventory records\", \"Directly contributes to maintaining accurate inventory records.\")\n\n# Check materials availability\nclassify(\"BVA\", \"Check materials availability\", \"Access raw materials inventory\", \"Necessary for checking materials availability but doesn't directly impact the customer.\")\nclassify(\"VA\", \"Check materials availability\", \"Check quantity of required materials\", \"Directly contributes to assessing the availability of required materials.\")\nclassify(\"VA\", \"Check materials availability\", \"Determine if sufficient materials are available\", \"Directly contributes to determining if there are enough materials for production.\")\n\n# Request raw materials from suppliers\nclassify(\"BVA\", \"Request raw materials from suppliers\", \"Identify needed materials\", \"Necessary for generating purchase orders but doesn't directly impact the customer.\")\nclassify(\"BVA\", \"Request raw materials from suppliers\", \"Select appropriate suppliers\", \"Necessary for generating purchase orders but doesn't directly impact the customer.\")\nclassify(\"VA\", \"Request raw materials from suppliers\", \"Generate purchase orders\", \"Directly contributes to requesting raw materials from suppliers.\")\nclassify(\"VA\", \"Request raw materials from suppliers\", \"Send purchase orders to suppliers\", \"Directly contributes to sending purchase orders to suppliers.\")\n\n# Obtain raw materials\nclassify(\"BVA\", \"Obtain raw materials\", \"Receive shipments from suppliers\", \"Necessary for obtaining raw materials but doesn't directly impact the customer.\")\nclassify(\"VA\", \"Obtain raw materials\", \"Inspect received materials\", \"Directly contributes to ensuring the quality of received materials.\")\nclassify(\"VA\", \"Obtain raw materials\", \"Update inventory with new materials\", \"Directly contributes to maintaining accurate inventory records.\")# Manufacture product\nclassify(\"VA\", \"Manufacture product\", \"Create production order\", \"Directly contributes to initiating the production process.\")\nclassify(\"VA\", \"Manufacture product\", \"Allocate resources and materials\", \"Enables the production process by ensuring necessary resources are available.\")\nclassify(\"VA\", \"Manufacture product\", \"Produce product\", \"Directly contributes to creating the product that customers will receive.\")\nclassify(\"VA\", \"Manufacture product\", \"Perform quality control checks\", \"Ensures the product meets quality standards before it is delivered to the customer.\")\n\n# Confirm order\nclassify(\"VA\", \"Confirm order\", \"Review order details\", \"Ensures the order is accurate and complete before proceeding.\")\nclassify(\"BVA\", \"Confirm order\", \"Verify product availability\", \"Essential for determining if the order can be fulfilled.\")\nclassify(\"VA\", \"Confirm order\", \"Generate order confirmation\", \"Creates a formal confirmation document for the customer.\")\nclassify(\"VA\", \"Confirm order\", \"Send confirmation to customer\", \"Notifies the customer that their order has been confirmed.\")\n\n# Escalate order confirmation\nclassify(\"VA\", \"Escalate order confirmation\", \"Identify reason for confirmation failure\", \"Determines the cause of the confirmation failure for further action.\")\nclassify(\"BVA\", \"Escalate order confirmation\", \"Forward issue to appropriate department or manager\", \"Ensures the issue is addressed by the appropriate personnel.\")\nclassify(\"BVA\", \"Escalate order confirmation\", \"Track escalation status\", \"Allows for monitoring and follow-up on the escalation process.\")\n\n# Emit invoice\nclassify(\"VA\", \"Emit invoice\", \"Calculate total order cost\", \"Determines the total cost of the order for billing purposes.\")\nclassify(\"VA\", \"Emit invoice\", \"Generate invoice document\", \"Creates a formal invoice document for the customer.\")\nclassify(\"VA\", \"Emit invoice\", \"Send invoice to customer\", \"Notifies the customer of the amount due and provides payment instructions.\")\n\n# Receive payment\nclassify(\"BVA\", \"Receive payment\", \"Monitor incoming payments\", \"Essential for tracking and reconciling payments.\")\nclassify(\"BVA\", \"Receive payment\", \"Match payment to invoice\", \"Ensures accurate allocation of payments to the corresponding invoices.\")\nclassify(\"VA\", \"Receive payment\", \"Process payment\", \"Completes the payment transaction and updates financial records.\")\nclassify(\"VA\", \"Receive payment\", \"Update order status to paid\", \"Indicates that the order has been successfully paid for.\")\n\n# Archive order\nclassify(\"BVA\", \"Archive order\", \"Collect all order-related documents\", \"Essential for record-keeping and compliance purposes.\")\nclassify(\"BVA\", \"Archive order\", \"Verify order completion\", \"Ensures that all necessary steps have been completed before archiving the order.\")\nclassify(\"BVA\", \"Archive order\", \"Transfer order to archive system\", \"Necessary for organizing and storing orders for future reference.\")\n\n# Determine cancellation penalty\nclassify(\"BVA\", \"Determine cancellation penalty\", \"Review order status\", \"Required to determine if the order is eligible for cancellation.\")\nclassify(\"BVA\", \"Determine cancellation penalty\", \"Check cancellation policy\", \"Necessary to understand the terms and conditions for cancellation.\")\nclassify(\"BVA\", \"Determine cancellation penalty\", \"Calculate applicable penalty\", \"Determines the amount of penalty to be charged based on the cancellation policy.\")\n\n# Notify penalty to customer\nclassify(\"BVA\", \"Notify penalty to customer\", \"Prepare penalty notification\", \"Creates a notification to inform the customer about the cancellation penalty.\")\nclassify(\"BVA\", \"Notify penalty to customer\", \"Send notification to customer\", \"Sends the prepared notification to the customer.\")\nclassify(\"BVA\", \"Notify penalty to customer\", \"Record notification in system\", \"Maintains a record of the notification for future reference.\")\n\n# Cancel order\nclassify(\"BVA\", \"Cancel order\", \"Update order status to cancelled\", \"Indicates that the order has been cancelled in the system.\")\nclassify(\"BVA\", \"Cancel order\", \"Reverse any inventory allocations\", \"Ensures that any inventory allocated for the cancelled order is released.\")\nclassify(\"BVA\", \"Cancel order\", \"Process cancellation penalty if applicable\", \"Applies the calculated cancellation penalty to the order if it is applicable.\")\nclassify(\"BVA\", \"Cancel order\", \"Notify relevant departments of cancellation\", \"Informs other departments about the cancellation for necessary actions.\")\n\n# Stop cancellation request\nclassify(\"BVA\", \"Stop cancellation request\", \"Update system to remove cancellation request\", \"Removes the cancellation request from the system.\")\nclassify(\"BVA\", \"Stop cancellation request\", \"Confirm continuation of order with customer\", \"Verifies with the customer if they still want to proceed with the order.\")\nclassify(\"BVA\", \"Stop cancellation request\", \"Resume normal order processing\", \"Restarts the regular order processing flow after the cancellation request is stopped.\")",
+    "metrics": {
+        "total_substeps": 51,
+        "correct_classifications": 28,
+        "accuracy": 0.5490196078431373,
+        "misclassifications": [
+            {
+                "activity": "Check stock availability",
+                "substep": "Search for ordered product",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to finding the product the customer ordered.",
+                "ground_truth_reasoning": "Required step but doesn't directly contribute to fulfillment"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Locate product in warehouse",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to finding the product in the warehouse.",
+                "ground_truth_reasoning": "Necessary step but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Retrieve product from warehouse",
+                "substep": "Update inventory records",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to maintaining accurate inventory records.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to customer"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Identify needed materials",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for generating purchase orders but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to maintaining production capability"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Generate purchase orders",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to requesting raw materials from suppliers.",
+                "ground_truth_reasoning": "Required for process but doesn't directly add value"
+            },
+            {
+                "activity": "Request raw materials from suppliers",
+                "substep": "Send purchase orders to suppliers",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to sending purchase orders to suppliers.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Obtain raw materials",
+                "substep": "Receive shipments from suppliers",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for obtaining raw materials but doesn't directly impact the customer.",
+                "ground_truth_reasoning": "Directly contributes to production capability"
+            },
+            {
+                "activity": "Obtain raw materials",
+                "substep": "Update inventory with new materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to maintaining accurate inventory records.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Create production order",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to initiating the production process.",
+                "ground_truth_reasoning": "Facilitates production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Manufacture product",
+                "substep": "Allocate resources and materials",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Enables the production process by ensuring necessary resources are available.",
+                "ground_truth_reasoning": "Necessary for production but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Review order details",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Ensures the order is accurate and complete before proceeding.",
+                "ground_truth_reasoning": "Ensures accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Verify product availability",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for determining if the order can be fulfilled.",
+                "ground_truth_reasoning": "Directly contributes to order fulfillment"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Generate order confirmation",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates a formal confirmation document for the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Confirm order",
+                "substep": "Send confirmation to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Notifies the customer that their order has been confirmed.",
+                "ground_truth_reasoning": "Improves customer experience but doesn't directly add value to product"
+            },
+            {
+                "activity": "Escalate order confirmation",
+                "substep": "Identify reason for confirmation failure",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Determines the cause of the confirmation failure for further action.",
+                "ground_truth_reasoning": "Helps resolve issues but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Generate invoice document",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Creates a formal invoice document for the customer.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Emit invoice",
+                "substep": "Send invoice to customer",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Notifies the customer of the amount due and provides payment instructions.",
+                "ground_truth_reasoning": "Necessary for process but doesn't directly add value to product"
+            },
+            {
+                "activity": "Receive payment",
+                "substep": "Update order status to paid",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Indicates that the order has been successfully paid for.",
+                "ground_truth_reasoning": "Maintains accuracy but doesn't directly add value to product"
+            },
+            {
+                "activity": "Determine cancellation penalty",
+                "substep": "Calculate applicable penalty",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Determines the amount of penalty to be charged based on the cancellation policy.",
+                "ground_truth_reasoning": "Directly determines financial impact for customer and company"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Reverse any inventory allocations",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Ensures that any inventory allocated for the cancelled order is released.",
+                "ground_truth_reasoning": "Directly impacts inventory management and future order fulfillment"
+            },
+            {
+                "activity": "Cancel order",
+                "substep": "Process cancellation penalty if applicable",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Applies the calculated cancellation penalty to the order if it is applicable.",
+                "ground_truth_reasoning": "Directly relates to the financial transaction with customer"
+            },
+            {
+                "activity": "Stop cancellation request",
+                "substep": "Confirm continuation of order with customer",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Verifies with the customer if they still want to proceed with the order.",
+                "ground_truth_reasoning": "Directly impacts customer satisfaction and order fulfillment"
+            },
+            {
+                "activity": "Stop cancellation request",
+                "substep": "Resume normal order processing",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Restarts the regular order processing flow after the cancellation request is stopped.",
+                "ground_truth_reasoning": "Directly contributes to fulfilling customer's order"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "BVA": 19,
+                "VA": 15
+            },
+            "VA": {
+                "VA": 9,
+                "BVA": 8
+            }
+        }
+    }
+}

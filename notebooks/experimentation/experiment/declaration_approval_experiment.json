@@ -1,0 +1,97 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "textbook",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "varied_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Declaration SUBMITTED by EMPLOYEE\nclassify(\"VA\", \"Declaration SUBMITTED by EMPLOYEE\", \"Employee fills out declaration form\", \"Directly contributes to the submission of the declaration.\")\nclassify(\"VA\", \"Declaration SUBMITTED by EMPLOYEE\", \"Employee attaches necessary documents\", \"Directly contributes to the submission of the declaration.\")\nclassify(\"VA\", \"Declaration SUBMITTED by EMPLOYEE\", \"Employee submits declaration\", \"Directly contributes to the submission of the declaration.\")\n\n# Declaration FOR_APPROVAL by PRE_APPROVER\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by PRE_APPROVER\", \"System routes declaration to pre-approver\", \"Necessary step for routing the declaration to the pre-approver.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by PRE_APPROVER\", \"Pre-approver notified of pending declaration\", \"Essential for ensuring the pre-approver is aware of the pending declaration.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by PRE_APPROVER\", \"Pre-approver reviews declaration\", \"Necessary step for the pre-approver to review the declaration.\")\n\n# Declaration FOR_APPROVAL by SUPERVISOR\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by SUPERVISOR\", \"System routes declaration to supervisor\", \"Necessary step for routing the declaration to the supervisor.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by SUPERVISOR\", \"Supervisor notified of pending declaration\", \"Essential for ensuring the supervisor is aware of the pending declaration.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by SUPERVISOR\", \"Supervisor reviews declaration\", \"Necessary step for the supervisor to review the declaration.\")\n\n# Declaration APPROVED by PRE_APPROVER\nclassify(\"BVA\", \"Declaration APPROVED by PRE_APPROVER\", \"Pre-approver approves declaration\", \"Necessary step for the pre-approver to approve the declaration.\")\nclassify(\"BVA\", \"Declaration APPROVED by PRE_APPROVER\", \"System updates declaration status\", \"Essential for updating the status of the declaration.\")\nclassify(\"BVA\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration forwarded to next approval stage\", \"Necessary step for forwarding the declaration to the next approval stage.\")\n\n# Declaration REJECTED by PRE_APPROVER\nclassify(\"BVA\", \"Declaration REJECTED by PRE_APPROVER\", \"Pre-approver rejects declaration\", \"Necessary step for the pre-approver to reject the declaration.\")\nclassify(\"BVA\", \"Declaration REJECTED by PRE_APPROVER\", \"System updates declaration status\", \"Essential for updating the status of the declaration.\")\nclassify(\"BVA\", \"Declaration REJECTED by PRE_APPROVER\", \"Employee notified of rejection\", \"Necessary step for notifying the employee of the rejection.\")# Declaration REJECTED by MISSING\nclassify(\"NVA\", \"Declaration REJECTED by MISSING\", \"Reviewer identifies missing information\", \"This step does not directly contribute to the application decision or support necessary business processes. It consumes resources without adding value.\")\nclassify(\"BVA\", \"Declaration REJECTED by MISSING\", \"System updates declaration status\", \"This step is necessary for updating the declaration status and maintaining accurate records, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by MISSING\", \"Employee notified of missing information\", \"This step is necessary for communication and ensuring that the employee is aware of the missing information, but it doesn't directly impact the application decision.\")\n\n# Declaration FOR_APPROVAL by ADMINISTRATION\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by ADMINISTRATION\", \"System routes declaration to administration\", \"This step is necessary for routing the declaration to the administration for approval, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by ADMINISTRATION\", \"Administration notified of pending declaration\", \"This step is necessary for communication and ensuring that the administration is aware of the pending declaration, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by ADMINISTRATION\", \"Administration reviews declaration\", \"This step is necessary for the administration to review the declaration and make an approval decision, but it doesn't directly impact the application decision.\")\n\n# Declaration REJECTED by SUPERVISOR\nclassify(\"BVA\", \"Declaration REJECTED by SUPERVISOR\", \"Supervisor rejects declaration\", \"This step is necessary for the supervisor to reject the declaration and provide feedback, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by SUPERVISOR\", \"System updates declaration status\", \"This step is necessary for updating the declaration status and maintaining accurate records, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by SUPERVISOR\", \"Employee notified of rejection\", \"This step is necessary for communication and ensuring that the employee is aware of the rejection, but it doesn't directly impact the application decision.\")\n\n# Declaration APPROVED by ADMINISTRATION\nclassify(\"BVA\", \"Declaration APPROVED by ADMINISTRATION\", \"Administration approves declaration\", \"This step is necessary for the administration to approve the declaration and move it to the next approval stage, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration APPROVED by ADMINISTRATION\", \"System updates declaration status\", \"This step is necessary for updating the declaration status and maintaining accurate records, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration forwarded to next approval stage\", \"This step is necessary for forwarding the declaration to the next approval stage, but it doesn't directly impact the application decision.\")\n\n# Declaration REJECTED by ADMINISTRATION\nclassify(\"BVA\", \"Declaration REJECTED by ADMINISTRATION\", \"Administration rejects declaration\", \"This step is necessary for the administration to reject the declaration and provide feedback, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by ADMINISTRATION\", \"System updates declaration status\", \"This step is necessary for updating the declaration status and maintaining accurate records, but it doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by ADMINISTRATION\", \"Employee notified of rejection\", \"This step is necessary for communication and ensuring that the employee is aware of the rejection, but it doesn't directly impact the application decision.\")# Declaration FOR_APPROVAL by BUDGET OWNER\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by BUDGET OWNER\", \"System routes declaration to budget owner\", \"This step is necessary for routing the declaration to the budget owner for approval.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by BUDGET OWNER\", \"Budget owner notified of pending declaration\", \"Notifying the budget owner ensures they are aware of the pending declaration and can review it in a timely manner.\")\nclassify(\"BVA\", \"Declaration FOR_APPROVAL by BUDGET OWNER\", \"Budget owner reviews declaration\", \"The budget owner's review is essential for assessing the declaration and making an informed approval decision.\")\n\n# Declaration APPROVED by BUDGET OWNER\nclassify(\"BVA\", \"Declaration APPROVED by BUDGET OWNER\", \"Budget owner approves declaration\", \"The budget owner's approval is necessary to move the declaration forward in the approval process.\")\nclassify(\"BVA\", \"Declaration APPROVED by BUDGET OWNER\", \"System updates declaration status\", \"Updating the declaration status in the system ensures accurate tracking and visibility of the approval progress.\")\nclassify(\"BVA\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration forwarded to final approval\", \"Forwarding the approved declaration to the final approval stage ensures it can proceed to the next step in the process.\")\n\n# Declaration REJECTED by BUDGET OWNER\nclassify(\"BVA\", \"Declaration REJECTED by BUDGET OWNER\", \"Budget owner rejects declaration\", \"The budget owner's rejection indicates that the declaration does not meet the necessary criteria for approval.\")\nclassify(\"BVA\", \"Declaration REJECTED by BUDGET OWNER\", \"System updates declaration status\", \"Updating the declaration status in the system ensures accurate tracking and visibility of the rejection.\")\nclassify(\"BVA\", \"Declaration REJECTED by BUDGET OWNER\", \"Employee notified of rejection\", \"Notifying the employee of the rejection allows them to take appropriate action or make necessary adjustments to the declaration.\")\n\n# Declaration FINAL_APPROVED by SUPERVISOR\nclassify(\"BVA\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Supervisor performs final review\", \"The supervisor's final review ensures that all necessary checks and balances have been completed before granting final approval.\")\nclassify(\"BVA\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Supervisor gives final approval\", \"The supervisor's final approval indicates that the declaration has met all requirements and can proceed to the next stage.\")\nclassify(\"BVA\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"System updates declaration as finally approved\", \"Updating the declaration status in the system ensures accurate tracking and visibility of the final approval.\")\n\n# Request Payment\nclassify(\"BVA\", \"Request Payment\", \"System generates payment request\", \"Generating the payment request is necessary to initiate the payment process.\")\nclassify(\"BVA\", \"Request Payment\", \"Payment request sent to finance department\", \"Sending the payment request to the finance department ensures that the request is processed and the payment is made.\")\n\n# Payment Handled\nclassify(\"BVA\", \"Payment Handled\", \"Finance department processes payment\", \"Essential for financial tracking but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Payment Handled\", \"Payment transferred to employee\", \"Necessary for transferring payment to the employee but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Payment Handled\", \"System updated with payment status\", \"Necessary for tracking payment status but doesn't directly impact the application decision.\")\n\n# Declaration REJECTED by EMPLOYEE\nclassify(\"BVA\", \"Declaration REJECTED by EMPLOYEE\", \"Employee reviews rejection reason\", \"Necessary for understanding the reason for rejection but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by EMPLOYEE\", \"Employee decides whether to resubmit\", \"Necessary for employee decision-making but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Declaration REJECTED by EMPLOYEE\", \"If resubmitting, employee updates declaration\", \"Necessary for updating the declaration if resubmission is required but doesn't directly impact the application decision.\")",
+    "metrics": {
+        "total_substeps": 21,
+        "correct_classifications": 13,
+        "accuracy": 0.6190476190476191,
+        "misclassifications": [
+            {
+                "activity": "Declaration FOR_APPROVAL by PRE_APPROVER",
+                "substep": "Pre-approver reviews declaration",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step for the pre-approver to review the declaration.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration FOR_APPROVAL by SUPERVISOR",
+                "substep": "Supervisor reviews declaration",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step for the supervisor to review the declaration.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration APPROVED by PRE_APPROVER",
+                "substep": "Pre-approver approves declaration",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step for the pre-approver to approve the declaration.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration REJECTED by PRE_APPROVER",
+                "substep": "Pre-approver rejects declaration",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step for the pre-approver to reject the declaration.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration REJECTED by PRE_APPROVER",
+                "substep": "Employee notified of rejection",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary step for notifying the employee of the rejection.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration REJECTED by MISSING",
+                "substep": "Reviewer identifies missing information",
+                "gpt_classification": "NVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step does not directly contribute to the application decision or support necessary business processes. It consumes resources without adding value.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration REJECTED by MISSING",
+                "substep": "Employee notified of missing information",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for communication and ensuring that the employee is aware of the missing information, but it doesn't directly impact the application decision.",
+                "ground_truth_reasoning": null
+            },
+            {
+                "activity": "Declaration FOR_APPROVAL by ADMINISTRATION",
+                "substep": "Administration reviews declaration",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "This step is necessary for the administration to review the declaration and make an approval decision, but it doesn't directly impact the application decision.",
+                "ground_truth_reasoning": null
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 3,
+                "BVA": 7,
+                "NVA": 1
+            },
+            "BVA": {
+                "BVA": 10
+            }
+        }
+    }
+}

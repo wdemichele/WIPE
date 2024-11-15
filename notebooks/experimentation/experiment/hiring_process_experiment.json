@@ -1,0 +1,112 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "textbook",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "varied_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Hand In Job Application\nclassify(\"VA\", \"Hand In Job Application\", \"Candidate prepares application materials\", \"Directly contributes to the submission of the application.\")\nclassify(\"VA\", \"Hand In Job Application\", \"Candidate submits application\", \"Directly contributes to the submission of the application.\")\nclassify(\"BVA\", \"Hand In Job Application\", \"HR receives and logs application\", \"Necessary for tracking and processing applications but doesn't directly impact the application decision.\")\n\n# Initial Screening\nclassify(\"BVA\", \"Initial Screening\", \"HR reviews application for completeness\", \"Necessary for ensuring all required information is provided but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Initial Screening\", \"HR checks if candidate meets basic qualifications\", \"Necessary for determining if the candidate meets the minimum requirements but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Initial Screening\", \"HR decides whether to proceed or reject\", \"Necessary for making the initial decision to proceed or reject the application but doesn't directly impact the application decision.\")\n\n# Telephonic Screening\nclassify(\"BVA\", \"Telephonic Screening\", \"HR schedules phone call with candidate\", \"Necessary for coordinating the phone interview but doesn't directly impact the application decision.\")\nclassify(\"VA\", \"Telephonic Screening\", \"HR conducts phone interview\", \"Directly contributes to assessing the candidate's qualifications and fit for the position.\")\nclassify(\"BVA\", \"Telephonic Screening\", \"HR evaluates candidate's responses\", \"Necessary for evaluating the candidate's performance during the phone interview but doesn't directly impact the application decision.\")\n\n# Background Check\nclassify(\"BVA\", \"Background Check\", \"HR initiates background check process\", \"Necessary for initiating the background check but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Background Check\", \"Third-party agency conducts check\", \"Necessary for conducting the background check but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Background Check\", \"HR reviews background check results\", \"Necessary for reviewing the background check results but doesn't directly impact the application decision.\")\n\n# Extensive Background Check\nclassify(\"BVA\", \"Extensive Background Check\", \"HR requests additional information from candidate\", \"Necessary for gathering additional information for the extensive background check but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Extensive Background Check\", \"Third-party agency conducts in-depth check\", \"Necessary for conducting the in-depth background check but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Extensive Background Check\", \"HR thoroughly reviews extensive check results\", \"Necessary for reviewing the extensive background check results but doesn't directly impact the application decision.\")# Screening Interview\nclassify(\"BVA\", \"Screening Interview\", \"HR schedules in-person or video interview\", \"Necessary for coordinating interview logistics but doesn't directly impact candidate evaluation.\")\nclassify(\"VA\", \"Screening Interview\", \"HR conducts screening interview\", \"Directly assesses candidate's qualifications and fit for the position.\")\nclassify(\"VA\", \"Screening Interview\", \"HR evaluates candidate's fit and qualifications\", \"Directly contributes to determining if the candidate should proceed to the next stage.\")\n\n# Coding Interview\nclassify(\"BVA\", \"Coding Interview\", \"Technical team prepares coding challenges\", \"Necessary for creating standardized coding tasks but doesn't directly assess candidate performance.\")\nclassify(\"VA\", \"Coding Interview\", \"Candidate completes coding tasks\", \"Directly evaluates candidate's coding skills and problem-solving abilities.\")\nclassify(\"VA\", \"Coding Interview\", \"Technical team evaluates coding performance\", \"Directly contributes to assessing the candidate's coding abilities and suitability for the role.\")\n\n# Frontend Interview\nclassify(\"BVA\", \"Frontend Interview\", \"Frontend team prepares specific questions/tasks\", \"Necessary for creating relevant interview questions but doesn't directly assess candidate performance.\")\nclassify(\"VA\", \"Frontend Interview\", \"Frontend team conducts interview\", \"Directly evaluates candidate's frontend development skills and knowledge.\")\nclassify(\"VA\", \"Frontend Interview\", \"Frontend team assesses candidate's skills\", \"Directly contributes to determining if the candidate has the required frontend skills for the position.\")\n\n# ML Interview\nclassify(\"BVA\", \"ML Interview\", \"ML team prepares specific questions/tasks\", \"Necessary for creating relevant interview questions but doesn't directly assess candidate performance.\")\nclassify(\"VA\", \"ML Interview\", \"ML team conducts interview\", \"Directly evaluates candidate's machine learning expertise and knowledge.\")\nclassify(\"VA\", \"ML Interview\", \"ML team evaluates candidate's ML expertise\", \"Directly contributes to determining if the candidate has the required ML skills for the position.\")\n\n# Backend Interview\nclassify(\"BVA\", \"Backend Interview\", \"Backend team prepares specific questions/tasks\", \"Necessary for creating relevant interview questions but doesn't directly assess candidate performance.\")\nclassify(\"VA\", \"Backend Interview\", \"Backend team conducts interview\", \"Directly evaluates candidate's backend development skills and knowledge.\")\nclassify(\"VA\", \"Backend Interview\", \"Backend team assesses candidate's skills\", \"Directly contributes to determining if the candidate has the required backend skills for the position.\")# Behavioral Interview\nclassify(\"BVA\", \"Behavioral Interview\", \"HR prepares behavioral questions\", \"Essential for assessing candidate's fit for the role but doesn't directly impact the application decision.\")\nclassify(\"VA\", \"Behavioral Interview\", \"HR conducts behavioral interview\", \"Directly contributes to assessing the candidate's skills and qualifications.\")\nclassify(\"BVA\", \"Behavioral Interview\", \"HR evaluates candidate's soft skills and cultural fit\", \"Necessary for evaluating the candidate's fit within the company culture but doesn't directly impact the application decision.\")\n\n# Make Job Offer\nclassify(\"BVA\", \"Make Job Offer\", \"HR prepares job offer package\", \"Essential for creating a comprehensive offer package but doesn't directly impact the application decision.\")\nclassify(\"VA\", \"Make Job Offer\", \"HR presents offer to candidate\", \"Directly contributes to the final decision-making process.\")\nclassify(\"BVA\", \"Make Job Offer\", \"HR answers any questions from candidate\", \"Necessary for providing additional information to the candidate but doesn't directly impact the application decision.\")\n\n# Application Rejected\nclassify(\"BVA\", \"Application Rejected\", \"HR prepares rejection notification\", \"Essential for notifying the candidate of the rejection but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Application Rejected\", \"HR sends rejection to candidate\", \"Necessary for communicating the rejection to the candidate but doesn't directly impact the application decision.\")\nclassify(\"BVA\", \"Application Rejected\", \"HR updates application status in system\", \"Necessary for maintaining accurate records but doesn't directly impact the application decision.\")",
+    "metrics": {
+        "total_substeps": 39,
+        "correct_classifications": 29,
+        "accuracy": 0.7435897435897436,
+        "misclassifications": [
+            {
+                "activity": "Initial Screening",
+                "substep": "HR checks if candidate meets basic qualifications",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for determining if the candidate meets the minimum requirements but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Directly contributes to identifying suitable candidates"
+            },
+            {
+                "activity": "Initial Screening",
+                "substep": "HR decides whether to proceed or reject",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for making the initial decision to proceed or reject the application but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Critical decision point in the selection process"
+            },
+            {
+                "activity": "Telephonic Screening",
+                "substep": "HR evaluates candidate's responses",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for evaluating the candidate's performance during the phone interview but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Critical for determining candidate's fit and progression in the hiring process"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "Third-party agency conducts check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for conducting the background check but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Provides crucial information for candidate evaluation"
+            },
+            {
+                "activity": "Background Check",
+                "substep": "HR reviews background check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for reviewing the background check results but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Direct evaluation of candidate's background, crucial for hiring decision"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "Third-party agency conducts in-depth check",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for conducting the in-depth background check but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Provides detailed information crucial for candidate evaluation"
+            },
+            {
+                "activity": "Extensive Background Check",
+                "substep": "HR thoroughly reviews extensive check results",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for reviewing the extensive background check results but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Critical evaluation of candidate's detailed background"
+            },
+            {
+                "activity": "Behavioral Interview",
+                "substep": "HR evaluates candidate's soft skills and cultural fit",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for evaluating the candidate's fit within the company culture but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Critical evaluation of candidate's non-technical qualities"
+            },
+            {
+                "activity": "Make Job Offer",
+                "substep": "HR answers any questions from candidate",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for providing additional information to the candidate but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Directly contributes to candidate's decision-making process"
+            },
+            {
+                "activity": "Application Rejected",
+                "substep": "HR sends rejection to candidate",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Necessary for communicating the rejection to the candidate but doesn't directly impact the application decision.",
+                "ground_truth_reasoning": "Provides closure to the candidate and maintains company reputation"
+            }
+        ],
+        "confusion_matrix": {
+            "VA": {
+                "VA": 15,
+                "BVA": 10
+            },
+            "BVA": {
+                "BVA": 14
+            }
+        }
+    }
+}

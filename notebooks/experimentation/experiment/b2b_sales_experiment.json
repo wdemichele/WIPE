@@ -1,0 +1,121 @@
+{
+    "model": {
+        "name": "GPT-3.5-Value-Classification-Experiment_Lean",
+        "components": {
+            "role_description": "lean_expert",
+            "task_description": "efficiency_focused",
+            "classification_types": "custom",
+            "function_definition": "detailed",
+            "parsing_instructions": "holistic",
+            "output_format": "structured",
+            "example_output": "custom_process",
+            "additional_guidelines": "lean_principles"
+        }
+    },
+    "response": "# Send marketing information\nclassify(\"BVA\", \"Send marketing information\", \"Prepare relevant marketing materials\", \"Necessary for creating customized marketing package.\")\nclassify(\"VA\", \"Send marketing information\", \"Customize information based on application\", \"Directly impacts the value of the marketing package to the applicant.\")\nclassify(\"VA\", \"Send marketing information\", \"Send marketing package to applicant\", \"Directly contributes to the delivery of marketing materials to the applicant.\")\n\n# Receive response\nclassify(\"BVA\", \"Receive response\", \"Monitor incoming communications\", \"Necessary for identifying applicant responses.\")\nclassify(\"VA\", \"Receive response\", \"Identify response from applicant\", \"Directly contributes to identifying the applicant's response.\")\nclassify(\"BVA\", \"Receive response\", \"Log response method (email or post)\", \"Essential for tracking and record-keeping purposes.\")\n\n# Assess application\nclassify(\"VA\", \"Assess application\", \"Review application details\", \"Directly impacts the decision-making process for application approval.\")\nclassify(\"VA\", \"Assess application\", \"Verify provided information\", \"Directly contributes to the accuracy and completeness of the application.\")\nclassify(\"VA\", \"Assess application\", \"Evaluate applicant's eligibility\", \"Directly impacts the decision-making process for application approval.\")\nclassify(\"BVA\", \"Assess application\", \"Determine if clarification is needed\", \"Essential for ensuring accurate and complete application information.\")\n\n# Send rejection\nclassify(\"BVA\", \"Send rejection\", \"Document reasons for rejection\", \"Necessary for record-keeping and compliance purposes.\")\nclassify(\"VA\", \"Send rejection\", \"Prepare rejection letter\", \"Directly contributes to the delivery of rejection notification to the applicant.\")\nclassify(\"VA\", \"Send rejection\", \"Send rejection notification to applicant\", \"Directly impacts the communication of the rejection decision to the applicant.\")\nclassify(\"BVA\", \"Send rejection\", \"Update application status to 'Rejected'\", \"Essential for tracking and reporting purposes.\")# Make appointment\nclassify(\"BVA\", \"Make appointment\", \"Identify available time slots\", \"Necessary for scheduling the appointment, but doesn't directly impact the application process.\")\nclassify(\"BVA\", \"Make appointment\", \"Contact applicant to schedule appointment\", \"Essential for arranging the appointment, but doesn't directly impact the application process.\")\nclassify(\"BVA\", \"Make appointment\", \"Confirm appointment details\", \"Ensures that both parties are aware of the appointment details, but doesn't directly impact the application process.\")\nclassify(\"BVA\", \"Make appointment\", \"Send appointment reminder\", \"Helps reduce no-shows and ensures the appointment is not forgotten, but doesn't directly impact the application process.\")\n\n# Discuss application\nclassify(\"VA\", \"Discuss application\", \"Review application with applicant\", \"Directly contributes to understanding the applicant's needs and assessing the application.\")\nclassify(\"BVA\", \"Discuss application\", \"Clarify any unclear points\", \"Essential for ensuring accurate information and understanding the applicant's needs.\")\nclassify(\"BVA\", \"Discuss application\", \"Gather additional information if needed\", \"Supports the decision-making process by obtaining any missing information.\")\nclassify(\"BVA\", \"Discuss application\", \"Update application with new information\", \"Ensures that the application reflects the latest information provided by the applicant.\")\n\n# Send offer\nclassify(\"VA\", \"Send offer\", \"Prepare offer details\", \"Directly contributes to creating a personalized offer for the applicant.\")\nclassify(\"VA\", \"Send offer\", \"Draft offer letter\", \"Directly contributes to creating a personalized offer for the applicant.\")\nclassify(\"BVA\", \"Send offer\", \"Review offer for accuracy\", \"Essential for ensuring the offer is accurate and meets the applicant's needs.\")\nclassify(\"BVA\", \"Send offer\", \"Send offer to applicant\", \"Essential for delivering the offer to the applicant.\")\n\n# File application\nclassify(\"BVA\", \"File application\", \"Organize all application documents\", \"Essential for maintaining an organized record of the application.\")\nclassify(\"BVA\", \"File application\", \"Update application status\", \"Essential for tracking the progress of the application.\")\nclassify(\"BVA\", \"File application\", \"Store application in appropriate system\", \"Essential for maintaining a centralized repository of applications.\")\nclassify(\"BVA\", \"File application\", \"Ensure all data protection requirements are met\", \"Essential for complying with data protection regulations and ensuring applicant privacy.\")",
+    "metrics": {
+        "total_substeps": 30,
+        "correct_classifications": 19,
+        "accuracy": 0.6333333333333333,
+        "misclassifications": [
+            {
+                "activity": "Send marketing information",
+                "substep": "Customize information based on application",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly impacts the value of the marketing package to the applicant.",
+                "ground_truth_reasoning": "Enhances customer experience but doesn't directly evaluate eligibility"
+            },
+            {
+                "activity": "Send marketing information",
+                "substep": "Send marketing package to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the delivery of marketing materials to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't affect application assessment"
+            },
+            {
+                "activity": "Receive response",
+                "substep": "Identify response from applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to identifying the applicant's response.",
+                "ground_truth_reasoning": "Important for process flow but doesn't assess eligibility"
+            },
+            {
+                "activity": "Assess application",
+                "substep": "Determine if clarification is needed",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for ensuring accurate and complete application information.",
+                "ground_truth_reasoning": "Directly impacts the quality of the assessment"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Prepare rejection letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to the delivery of rejection notification to the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't alter the outcome"
+            },
+            {
+                "activity": "Send rejection",
+                "substep": "Send rejection notification to applicant",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly impacts the communication of the rejection decision to the applicant.",
+                "ground_truth_reasoning": "Required for process completion but doesn't affect decision"
+            },
+            {
+                "activity": "Discuss application",
+                "substep": "Clarify any unclear points",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for ensuring accurate information and understanding the applicant's needs.",
+                "ground_truth_reasoning": "Crucial for accurate assessment of the application"
+            },
+            {
+                "activity": "Discuss application",
+                "substep": "Gather additional information if needed",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Supports the decision-making process by obtaining any missing information.",
+                "ground_truth_reasoning": "Directly impacts the quality of the assessment"
+            },
+            {
+                "activity": "Discuss application",
+                "substep": "Update application with new information",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Ensures that the application reflects the latest information provided by the applicant.",
+                "ground_truth_reasoning": "Ensures the most accurate and up-to-date information for decision-making"
+            },
+            {
+                "activity": "Send offer",
+                "substep": "Draft offer letter",
+                "gpt_classification": "VA",
+                "ground_truth_classification": "BVA",
+                "gpt_reasoning": "Directly contributes to creating a personalized offer for the applicant.",
+                "ground_truth_reasoning": "Necessary for communication but doesn't change offer terms"
+            },
+            {
+                "activity": "Send offer",
+                "substep": "Review offer for accuracy",
+                "gpt_classification": "BVA",
+                "ground_truth_classification": "VA",
+                "gpt_reasoning": "Essential for ensuring the offer is accurate and meets the applicant's needs.",
+                "ground_truth_reasoning": "Ensures correctness of the offer, directly impacting the outcome"
+            }
+        ],
+        "confusion_matrix": {
+            "BVA": {
+                "BVA": 14,
+                "VA": 6
+            },
+            "VA": {
+                "VA": 5,
+                "BVA": 5
+            }
+        }
+    }
+}

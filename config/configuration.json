@@ -1,0 +1,16 @@
+{
+    "root_directories": [
+        "C://Projects//Analyse//ml-entity-extraction"
+    ],
+    "azure_openai_endpoint2": "https://algo-gpt-3-turbo.openai.azure.com/",
+    "openai_api_version": "2024-05-01-preview",
+    "openai_api_key": "2a28c363f5d94de7b83e040335894868",
+    "openai_model": "gpt-35-turbo-16k",
+    "azure_openai_endpoint": "https://datascience-openai-local.openai.azure.com/",
+    "openai_api_key2": "212c4a17b4744c2c8096084d3f58a71f",
+    "openai_secondary_model": "gpt-4",
+    "gpt_4o_azure_openai_endpoint": "https://algo-gpt-3-turbo.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview",
+    "gpt_4o_openai_api_version": "api-version=2023-03-15-preview",
+    "gpt_4o_openai_api_key": "212c4a17b4744c2c8096084d3f58a71f",
+    "gpt_4o_openai_model": "gpt-4o"
+}
